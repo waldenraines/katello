@@ -81,6 +81,13 @@ class Api::V2::SystemsControllerTest < ActionController::TestCase
     assert_template 'api/v2/systems/tasks'
   end
 
+  def test_available_system_groups
+    get :available_system_groups, :organization_id => get_organization(:organization1).label
+
+    assert_response :success
+    assert_template 'api/v2/systems/available_system_groups'
+  end
+
   def test_add_system_groups
     expected_ids = @system_groups.collect {|group| group.id}
     post :add_system_groups, :id => @system.uuid,
