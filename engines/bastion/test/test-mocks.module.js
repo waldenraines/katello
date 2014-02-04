@@ -25,7 +25,7 @@ angular.module('Bastion.test-mocks').run(['$state', '$stateParams', '$rootScope'
 
 angular.module('Bastion.test-mocks').factory('MockResource', ['$q', function($q) {
     function resourceGenerator() {
-        var Resource, mockResource, successResponse, errorResponse;
+        var Resource, mockResource, successResponse, errorResponse, deferred;
 
         successResponse ={
             displayMessages: ['success']
@@ -39,12 +39,15 @@ angular.module('Bastion.test-mocks').factory('MockResource', ['$q', function($q)
             }
         };
 
+        deferred = $q.defer();
+
         mockResource = {
             id: 1,
             name: 'Test Resource',
             label: '',
             failed: false,
             readonly: false,
+            deferred: deferred,
             $get: function() {},
             $save: function(success, error) {
                 if (!this.failed) {
@@ -63,7 +66,7 @@ angular.module('Bastion.test-mocks').factory('MockResource', ['$q', function($q)
             $delete: function(callback) {
                 callback();
             },
-            $promise: $q.defer().promise
+            $promise: deferred.promise
         };
 
         Resource = function(parameters) {
