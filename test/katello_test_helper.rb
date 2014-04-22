@@ -89,6 +89,8 @@ module FixtureTestCase
     fixtures(:all)
 
     load "#{Katello::Engine.root}/app/policies/katello/permissions/gpg_key_permissions.rb"
+    load "#{Katello::Engine.root}/app/policies/katello/permissions/sync_plan_permissions.rb"
+
   end
 
   module ClassMethods
