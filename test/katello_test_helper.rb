@@ -88,7 +88,6 @@ module FixtureTestCase
     self.fixture_path = "#{Katello::Engine.root}/test/fixtures/models"
     fixtures(:all)
 
-    load "#{Katello::Engine.root}/app/policies/katello/permissions/gpg_key_permissions.rb"
   end
 
   module ClassMethods
