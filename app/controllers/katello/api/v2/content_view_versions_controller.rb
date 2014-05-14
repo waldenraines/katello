@@ -13,8 +13,7 @@
 module Katello
   class Api::V2::ContentViewVersionsController < Api::V2::ApiController
     before_filter :find_content_view_version, :only => [:show, :promote, :destroy]
-    before_filter :find_content_view
-    before_filter :find_environment, :only => [:promote]
+
     api :GET, "/content_view_versions", "List content view versions"
     api :GET, "/content_views/:content_view_id/content_view_versions", "List content view versions"
     param :content_view_id, :identifier, :desc => "Content view identifier", :required => true
@@ -29,6 +28,7 @@ module Katello
     api :GET, "/content_view_versions/:id", "Show content view version"
     param :id, :identifier, :desc => "Content view version identifier", :required => true
     def show
+      @version = ContentViewVersion.readable.find(params[:id])
       respond :resource => @version
     end
 
@@ -36,6 +36,9 @@ module Katello
     param :id, :identifier, :desc => "Content view version identifier", :required => true
     param :environment_id, :identifier
     def promote
+      # TODO: update with partha's delete/promote work
+      @version = ContentViewVersion.readable.find(params[:id])
+      @environment = KTEnvironment.readable.find(params[:environment_id])
       task = async_task(::Actions::Katello::ContentView::Promote, @version, @environment)
       respond_for_async :resource => task
     end
@@ -43,26 +46,9 @@ module Katello
     api :DELETE, "/content_view_versions/:id", "Remove content view version"
     param :id, :identifier, :desc => "Content view version identifier", :required => true
     def destroy
+      @version = ContentViewVersion.deletable.find(params[:id])
       task = async_task(::Actions::Katello::ContentViewVersion::Destroy, @version)
       respond_for_async :resource => task
-    end
-
-    private
-
-    def find_content_view_version
-      @version = ContentViewVersion.find(params[:id])
-    end
-
-    def find_content_view
-      @view = @version ? @version.content_view : ContentView.find(params[:content_view_id])
-      if @view.default? && params[:action] == "promote"
-        fail HttpErrors::BadRequest.new(_("The default content view cannot be promoted"))
-      end
-    end
-
-    def find_environment
-      return unless params.key?(:environment_id)
-      @environment = KTEnvironment.find(params[:environment_id])
     end
 
   end

@@ -167,7 +167,7 @@ module Katello
 
     def find_environment
       identifier = params.require(:id) || params.require(:environment).require(:id)
-      @environment = KTEnvironment.find(identifier)
+      @environment = KTEnvironment.readable.find(identifier)
       fail HttpErrors::NotFound, _("Couldn't find environment '%s'") % identifier.to_s if @environment.nil?
       @organization = @environment.organization
       @environment
@@ -175,7 +175,7 @@ module Katello
 
     def find_prior
       prior = params.require(:environment).require(:prior)
-      @prior = KTEnvironment.find(prior)
+      @prior = KTEnvironment.readable.find(prior)
       fail HttpErrors::NotFound, _("Couldn't find prior-environment '%s'") % prior.to_s if @prior.nil?
       @prior
     end
@@ -188,7 +188,7 @@ module Katello
     end
 
     def find_content_view
-      @content_view = ContentView.readable.find_by_id(params[:content_view_id])
+      @content_view = ContentView.readable.find(params[:content_view_id])
     end
   end
 

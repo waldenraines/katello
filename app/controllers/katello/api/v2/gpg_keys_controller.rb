@@ -15,7 +15,6 @@ module Katello
 
     before_filter :authorize
     before_filter :find_organization, :only => [:create]
-    before_filter :find_gpg_key, :only => [:show, :update, :destroy, :content]
 
     def_param_group :gpg_key do
       param :name, :identifier, :action_aware => true, :required => true, :desc => "identifier of the gpg key"
@@ -66,6 +65,7 @@ module Katello
     api :GET, "/gpg_keys/:id", "Show a gpg key"
     param :id, :identifier, :desc => "gpg key numeric identifier", :required => true
     def show
+      @gpg_key = GpgKey.readable.find(params[:id])
       respond_for_show(:resource => @gpg_key)
     end
 
@@ -73,6 +73,7 @@ module Katello
     param :id, :identifier, :desc => "gpg key numeric identifier", :required => true
     param_group :gpg_key
     def update
+      @gpg_key = GpgKey.editable.find(params[:id])
       @gpg_key.update_attributes!(gpg_key_params)
       respond_for_show({:resource => @gpg_key})
     end
@@ -80,6 +81,7 @@ module Katello
     api :DELETE, "/gpg_keys/:id", "Destroy a gpg key"
     param :id, :number, :desc => "gpg key numeric identifier", :required => true
     def destroy
+      @gpg_key = GpgKey.deletable.find(params[:id])
       @gpg_key.destroy
       respond_for_destroy
     end
@@ -88,6 +90,8 @@ module Katello
     param :id, :number, :desc => "gpg key numeric identifier", :required => true
     param :content, File, :required => true, :desc => "file contents", :required => true
     def content
+      @gpg_key = GpgKey.editable.find(params[:id])
+
       filepath = params.try(:[], :content).try(:path)
 
       if filepath
@@ -100,12 +104,6 @@ module Katello
     end
 
     protected
-
-    def find_gpg_key
-      @gpg_key = GpgKey.find(params[:id])
-    rescue ActiveRecord::RecordNotFound
-      raise HttpErrors::NotFound, _("Couldn't find GPG key '%s'") % params[:id]
-    end
 
     def gpg_key_params
       params.permit(:name, :content)

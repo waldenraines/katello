@@ -71,6 +71,7 @@ module Katello
 
     def find_content_view
       @view = ContentView.non_default.find(params[:content_view_id])
+      fail HttpErrors::Forbidden, _("You cannot access Content View with id=%s") % params[:content_view_id] unless @view.readable?
     end
 
     def find_puppet_module

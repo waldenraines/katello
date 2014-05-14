@@ -186,11 +186,11 @@ class Api::V2::SubscriptionsController < Api::V2::ApiController
   protected
 
   def find_system
-    @system = System.find_by_uuid!(params[:system_id]) if params[:system_id]
+    @system = System.readable.find_by_uuid!(params[:system_id]) if params[:system_id]
   end
 
   def find_activation_key
-    @activation_key = ActivationKey.find_by_id!(params[:activation_key_id]) if params[:activation_key_id]
+    @activation_key = ActivationKey.readable.find_by_id!(params[:activation_key_id]) if params[:activation_key_id]
   end
 
   def find_provider

@@ -16,9 +16,6 @@ module Katello
     before_filter :verify_presence_of_organization_or_environment, :only => [:index]
     before_filter :find_environment, :only => [:index, :create, :update]
     before_filter :find_optional_organization, :only => [:index, :create]
-    before_filter :find_activation_key, :only => [:show, :update, :destroy, :available_releases,
-                                                  :available_host_collections, :add_host_collections, :remove_host_collections]
-    before_filter :authorize
     before_filter :load_search_service, :only => [:index, :available_host_collections]
 
     wrap_parameters :include => (ActivationKey.attribute_names + %w(host_collection_ids service_level))
@@ -81,6 +78,8 @@ module Katello
     param :release_version, String, :desc => "content release version"
     param :service_level, String, :desc => "service level"
     def update
+      @activation_key = ActivationKey.editable.find(params[:id])
+
       @activation_key.update_attributes(activation_key_params)
       respond_for_show(:resource => @activation_key)
     end
@@ -88,6 +87,8 @@ module Katello
     api :DELETE, "/activation_keys/:id", "Destroy an activation key"
     param :id, :identifier, :desc => "ID of the activation key", :required => true
     def destroy
+      @activation_key = ActivationKey.deletable.find(params[:id])
+
       @activation_key.destroy
       respond_for_show(:resource => @activation_key)
     end
@@ -117,6 +118,8 @@ module Katello
     api :GET, "/activation_keys/:id/releases", "Show release versions available for an activation key"
     param :id, String, :desc => "ID of the activation key", :required => true
     def available_releases
+      @activation_key = ActivationKey.readable.find(params[:id])
+
       response = {
           :results => @activation_key.available_releases,
           :total => @activation_key.available_releases.size,
@@ -128,6 +131,8 @@ module Katello
     api :PUT, "/activation_keys/:id/host_collections"
     param :id, :identifier, :desc => "ID of the activation key", :required => true
     def add_host_collections
+      @activation_key = ActivationKey.readable.find(params[:id])
+
       ids = activation_key_params[:host_collection_ids]
       @activation_key.host_collection_ids = (@activation_key.host_collection_ids + ids).uniq
       @activation_key.save!
@@ -136,6 +141,8 @@ module Katello
 
     api :DELETE, "/activation_keys/:id/host_collections"
     def remove_host_collections
+      @activation_key = ActivationKey.readable.find(params[:id])
+
       ids = activation_key_params[:host_collection_ids]
       @activation_key.host_collection_ids = (@activation_key.host_collection_ids - ids).uniq
       @activation_key.save!
@@ -149,16 +156,10 @@ module Katello
       environment_id = params[:environment][:id] if !environment_id && params[:environment]
       return if !environment_id
 
-      @environment = KTEnvironment.find(environment_id)
+      @environment = KTEnvironment.readable.find(environment_id)
       fail HttpErrors::NotFound, _("Couldn't find environment '%s'") % params[:environment_id] if @environment.nil?
       @organization = @environment.organization
       @environment
-    end
-
-    def find_activation_key
-      @activation_key = ActivationKey.find(params[:id])
-      fail HttpErrors::NotFound, _("Couldn't find activation key '%s'") % params[:id] if @activation_key.nil?
-      @activation_key
     end
 
     def find_pool
@@ -170,7 +171,8 @@ module Katello
       @host_collections = []
       if ids
         ids.each do |host_collection_id|
-          host_collection = HostCollection.find(host_collection_id)
+          # TODO: remove org after #4076 is merged
+          host_collection = HostCollection.readable(@organization).find(host_collection_id)
           fail HttpErrors::NotFound, _("Couldn't find host collection '%s'") % host_collection_id if host_collection.nil?
           @host_collections << host_collection
         end

@@ -12,9 +12,7 @@
 
 module Katello
   class Api::V2::ContentViewsController < Api::V2::ApiController
-    before_filter :find_content_view, :except => [:index, :create]
     before_filter :find_organization, :only => [:index, :create]
-    before_filter :find_environment, :only => [:index, :remove_from_environment]
     before_filter :load_search_service, :only => [:index, :history, :available_puppet_modules,
                                                   :available_puppet_module_names]
     wrap_parameters :include => (ContentView.attribute_names + %w(repository_ids component_ids))
@@ -35,6 +33,8 @@ module Katello
     param :environment_id, :identifier, :desc => "environment identifier"
     param :nondefault, :bool, :desc => "Filter out default content views"
     def index
+      @environment = KTEnvironment.readable.find(params[:environment_id]) if params[:environment_id]
+
       options = sort_params
       options[:load_records?] = true
 
@@ -70,6 +70,12 @@ module Katello
     param :name, String, :desc => "New name for the content view"
     param_group :content_view
     def update
+      @view = ContentView.editable.find(params[:id])
+
+      if @view.default?
+        fail HttpErrors::BadRequest.new(_("The default content view cannot be edited."))
+      end
+
       @view.update_attributes!(view_params)
 
       respond :resource => @view
@@ -78,6 +84,12 @@ module Katello
     api :POST, "/content_views/:id/publish", "Publish a content view"
     param :id, :identifier, :desc => "Content view identifier", :required => true
     def publish
+      @view = ContentView.publishable.find(params[:id])
+
+      if @view.default?
+        fail HttpErrors::BadRequest.new(_("The default content view cannot be published."))
+      end
+
       task = async_task(::Actions::Katello::ContentView::Publish, @view)
       respond_for_async :resource => task
     end
@@ -85,6 +97,8 @@ module Katello
     api :GET, "/content_views/:id", "Show a content view"
     param :id, :number, :desc => "content view numeric identifier", :required => true
     def show
+      @view = ContentView.readable.find(params[:id])
+
       respond :resource => @view
     end
 
@@ -93,6 +107,8 @@ module Katello
     param :id, :identifier, :desc => "content view numeric identifier", :required => true
     param :name, String, :desc => "module name to restrict modules for", :required => false
     def available_puppet_modules
+      @view = ContentView.readable.find(params[:id])
+
       current_ids = @view.content_view_puppet_modules.map(&:uuid).reject{|p| p.nil?}
 
       repo_ids = @view.organization.library.puppet_repositories.pluck(:pulp_id)
@@ -114,6 +130,8 @@ module Katello
         "Get puppet modules names that are available to be added to the content view"
     param :id, :identifier, :desc => "content view numeric identifier", :required => true
     def available_puppet_module_names
+      @view = ContentView.readable.find(params[:id])
+
       current_names = @view.content_view_puppet_modules.map(&:name).reject{|p| p.nil?}
       repo_ids = @view.organization.library.puppet_repositories.pluck(:pulp_id)
       search_filters = [{ :terms => { :repoids => repo_ids } }]
@@ -131,6 +149,8 @@ module Katello
     api :GET, "/content_views/:id/history", "Show a content view's history"
     param :id, :number, :desc => "content view numeric identifier", :required => true
     def history
+      @view = ContentView.readable.find(params[:id])
+
       options = sort_params
       options[:load_records?] = true
       options[:filters] = [{:term => {:content_view_id => @view.id}}]
@@ -143,6 +163,10 @@ module Katello
     param :id, :number, :desc => "content view numeric identifier", :required => true
     param :environment_id, :number, :desc => "environment numeric identifier", :required => true
     def remove_from_environment
+      # TODO: update with partha's delete/promote work
+      @view = ContentView.readable.find(params[:id])
+      @environment = KTEnvironment.readable.find(params[:environment_id])
+
       task = async_task(::Actions::Katello::ContentView::RemoveFromEnvironment, @view, @environment)
       respond_for_async :resource => task
     end
@@ -156,6 +180,9 @@ module Katello
     param :key_content_view_id, :number, :desc => "content view to reassign orphaned activation keys to"
     param :key_environment_id, :number, :desc => "environment to reassign orphaned activation keys to"
     def remove
+      # TODO: update with partha's delete/promote work
+      @view = ContentView.readable.find(params[:id])
+
       cv_envs = ContentViewEnvironment.where(:environment_id => params[:environment_ids],
                                              :content_view_id => params[:id]
                                             )
@@ -181,29 +208,21 @@ module Katello
     api :DELETE, "/content_views/:id", "Delete a content view"
     param :id, :number, :desc => "content view numeric identifier", :required => true
     def destroy
+      if @view.default?
+        fail HttpErrors::BadRequest.new(_("The default content view cannot be deleted."))
+      end
+
+      @view = ContentView.deletable.find(params[:id])
       task = async_task(::Actions::Katello::ContentView::Destroy, @view)
       respond_for_async :resource => task
     end
 
     private
 
-    def find_content_view
-      @view = ContentView.find(params[:id])
-
-      if @view.default? && !%w(show history).include?(params[:action])
-        fail HttpErrors::BadRequest.new(_("The default content view cannot be edited, published, or deleted."))
-      end
-    end
-
     def view_params
       attrs = [:name, :description, {:repository_ids => []}, {:component_ids => []}]
       attrs.push(:label, :composite) if action_name == "create"
       params.require(:content_view).permit(*attrs)
-    end
-
-    def find_environment
-      return if !params.key?(:environment_id) && params[:action] == "index"
-      @environment = KTEnvironment.find(params[:environment_id])
     end
   end
 end

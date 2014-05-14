@@ -118,17 +118,18 @@ class Api::V2::ContentViewFiltersController < Api::V2::ApiController
   private
 
   def find_content_view
-    @view = ContentView.find(params[:content_view_id]) if params[:content_view_id]
+    @view = ContentView.readable.find(params[:content_view_id]) if params[:content_view_id]
   end
 
   def find_filter
     if @view
       @filter = @view.filters.find_by_id(params[:id])
-      fail HttpErrors::NotFound, _("Couldn't find ContentViewFilter with id=%s") % params[:id] unless @filter
     else
       @filter = ContentViewFilter.find(params[:id])
       @view = @filter.content_view
     end
+    fail HttpErrors::NotFound, _("Couldn't find ContentViewFilter with id=%s") % params[:id] unless @filter
+    fail HttpErrors::Forbidden, _("Cannot access ContentViewFilter with id=%s") % params[:id] unless @view.readable?
   end
 
   def filter_params

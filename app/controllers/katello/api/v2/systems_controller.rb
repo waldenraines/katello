@@ -335,7 +335,7 @@ class Api::V2::SystemsController < Api::V2::ApiController
   def find_environment
     return unless params.key?(:environment_id)
 
-    @environment = KTEnvironment.find(params[:environment_id])
+    @environment = KTEnvironment.readable.find(params[:environment_id])
     fail HttpErrors::NotFound, _("Couldn't find environment '%s'") % params[:environment_id] if @environment.nil?
     @organization = @environment.organization
     @environment
@@ -344,7 +344,8 @@ class Api::V2::SystemsController < Api::V2::ApiController
   def find_host_collection
     return unless params.key?(:host_collection_id)
 
-    @host_collection = HostCollection.find(params[:host_collection_id])
+    # TODO: remove org after #4076 is merged
+    @host_collection = HostCollection.readable(@organization).find(params[:host_collection_id])
   end
 
   def find_only_environment
@@ -387,7 +388,7 @@ class Api::V2::SystemsController < Api::V2::ApiController
         @content_view = cve.content_view
       else
         # assumption here is :content_view_id is passed as a separate attrib
-        @environment = KTEnvironment.find(params[:environment_id])
+        @environment = KTEnvironment.readable.find(params[:environment_id])
         @organization = @environment.organization
         fail HttpErrors::NotFound, _("Couldn't find environment '%s'") % params[:environment_id] if @environment.nil?
       end
@@ -462,7 +463,7 @@ class Api::V2::SystemsController < Api::V2::ApiController
     organization ||= @system.organization if @system
     organization ||= @environment.organization if @environment
     if cv_id && organization
-      @content_view = ContentView.readable.find_by_id(cv_id)
+      @content_view = ContentView.readable.find(cv_id)
       fail HttpErrors::NotFound, _("Couldn't find content view '%s'") % cv_id if @content_view.nil?
     else
       @content_view = nil

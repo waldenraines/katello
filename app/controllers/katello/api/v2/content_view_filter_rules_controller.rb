@@ -80,6 +80,7 @@ module Katello
 
     def find_filter
       @filter = ContentViewFilter.find(params[:content_view_filter_id])
+      fail HttpErrors::Forbidden, _("You cannot access ContentViewFilter with id=%s") % params[:content_view_filter_id] unless @filter.content_view.readable?
     end
 
     def find_rule

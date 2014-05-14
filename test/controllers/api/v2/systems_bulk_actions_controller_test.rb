@@ -26,6 +26,7 @@ class Api::V2::SystemsBulkActionsControllerTest < ActionController::TestCase
     @create_permission = :create_content_hosts
     @update_permission = :edit_content_hosts
     @destroy_permission = :destroy_content_hosts
+    @environment_content_view_permission = [@update_permission, :view_content_views, :view_lifecycle_environments]
   end
 
   def setup
@@ -192,7 +193,7 @@ class Api::V2::SystemsBulkActionsControllerTest < ActionController::TestCase
   end
 
   def test_environment_content_view_permission
-    good_perms = [@update_permission]
+    good_perms = [@environment_content_view_permission]
     bad_perms = [@view_permission, @destroy_permission, @create_permission]
 
     assert_protected_action(:environment_content_view, good_perms, bad_perms) do

@@ -47,28 +47,28 @@ class Api::ApiController < ::Api::BaseController
 
   def converted_controllers
     [
+      'katello/api/v1/candlepin_proxies',
       'katello/api/v2/activation_keys',
       'katello/api/v2/content_views',
       'katello/api/v2/content_view_filters',
       'katello/api/v2/content_view_filter_rules',
       'katello/api/v2/content_view_puppet_modules',
       'katello/api/v2/content_view_versions',
+      'katello/api/v2/environments',
       'katello/api/v2/gpg_keys',
       'katello/api/v2/sync_plans',
       'katello/api/v2/products',
-      'katello/api/v2/repositories',
       'katello/api/v2/products_bulk_actions',
+      'katello/api/v2/repositories',
       'katello/api/v2/repositories_bulk_actions',
       'katello/api/v2/content_uploads',
       'katello/api/v2/organizations',
       'katello/api/v2/subscriptions',
       'katello/api/v2/sync',
-      'katello/api/v2/environments',
       'katello/api/v2/systems',
       'katello/api/v2/system_packages',
       'katello/api/v2/system_errata',
-      'katello/api/v2/systems_bulk_actions',
-      'katello/api/v1/candlepin_proxies'
+      'katello/api/v2/systems_bulk_actions'
     ]
   end
 

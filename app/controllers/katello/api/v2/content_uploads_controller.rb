@@ -83,7 +83,7 @@ class Api::V2::ContentUploadsController < Api::V2::ApiController
   end
 
   def find_repository
-    @repo = Repository.find(params[:repository_id])
+    @repo = Repository.editable.find(params[:repository_id])
   end
 
 end

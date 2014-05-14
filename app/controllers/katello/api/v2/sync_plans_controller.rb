@@ -15,7 +15,6 @@ class Api::V2::SyncPlansController < Api::V2::ApiController
   respond_to :json
 
   before_filter :find_organization, :only => [:create, :index]
-  before_filter :find_plan, :only => [:update, :show, :destroy, :available_products, :add_products, :remove_products]
   before_filter :load_search_service, :only => [:index, :available_products]
 
   def_param_group :sync_plan do
@@ -55,6 +54,7 @@ class Api::V2::SyncPlansController < Api::V2::ApiController
   param :organization_id, :number, :desc => "Filter sync plans by organization name or label"
   param :id, :number, :desc => "sync plan numeric identifier", :required => true
   def show
+    @sync_plan = SyncPlan.readable.find_by_id(params[:id])
     respond_for_show(:resource => @sync_plan)
   end
 
@@ -81,6 +81,8 @@ class Api::V2::SyncPlansController < Api::V2::ApiController
   param :id, :number, :desc => "sync plan numeric identifier", :required => true
   param_group :sync_plan
   def update
+    @sync_plan = SyncPlan.editable.find_by_id(params[:id])
+
     sync_date = sync_plan_params.try(:[], :sync_date).try(:to_time)
 
     if !sync_date.nil? && !sync_date.kind_of?(Time)
@@ -99,6 +101,8 @@ class Api::V2::SyncPlansController < Api::V2::ApiController
   param :organization_id, :number, :desc => "Filter sync plans by organization name or label"
   param :id, :number, :desc => "sync plan numeric identifier"
   def destroy
+    @sync_plan = SyncPlan.deletable.find_by_id(params[:id])
+
     @sync_plan.destroy
     respond_for_show(:resource => @sync_plan)
   end
@@ -107,6 +111,8 @@ class Api::V2::SyncPlansController < Api::V2::ApiController
   param_group :search, Api::V2::ApiController
   param :name, String, :desc => "product name to filter by"
   def available_products
+    @sync_plan = SyncPlan.readable.find_by_id(params[:id])
+
     enabled_product_ids = Product.where(:organization_id => @organization).readable.select{|p| p.enabled?}.collect(&:id)
 
     filters = [:terms => {:id => enabled_product_ids - @sync_plan.product_ids}]
@@ -125,6 +131,8 @@ class Api::V2::SyncPlansController < Api::V2::ApiController
   param :id, String, :desc => "ID of the sync plan", :required => true
   param :product_ids, Array, :desc => "List of product ids to add to the sync plan", :required => true
   def add_products
+    @sync_plan = SyncPlan.readable.find_by_id(params[:id])
+
     ids = params[:product_ids]
     @products  = Product.where(:id => ids).editable
     @sync_plan.product_ids = (@sync_plan.product_ids + @products.collect { |p| p.id }).uniq
@@ -136,6 +144,8 @@ class Api::V2::SyncPlansController < Api::V2::ApiController
   param :id, String, :desc => "ID of the sync plan", :required => true
   param :product_ids, Array, :desc => "List of product ids to remove from the sync plan", :required => true
   def remove_products
+    @sync_plan = SyncPlan.readable.find_by_id(params[:id])
+
     ids = params[:product_ids]
     @products  = Product.where(:id => ids).editable
     @sync_plan.product_ids = (@sync_plan.product_ids - @products.collect { |p| p.id }).uniq
@@ -144,13 +154,6 @@ class Api::V2::SyncPlansController < Api::V2::ApiController
   end
 
   protected
-
-  def find_plan
-    @sync_plan = SyncPlan.find_by_id(params[:id])
-    fail HttpErrors::NotFound, _("Couldn't find sync plan '%{plan}' in organization '%{org}'") % { :plan => params[:id], :org => params[:organization_id] } if @sync_plan.nil?
-    @organization ||= @sync_plan.organization
-    @sync_plan
-  end
 
   def sync_plan_params
     params.require(:sync_plan).permit(:name, :description, :interval, :sync_date, :product_ids)

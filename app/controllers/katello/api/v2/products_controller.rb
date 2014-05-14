@@ -14,7 +14,6 @@ module Katello
   class Api::V2::ProductsController < Api::V2::ApiController
 
     before_filter :find_organization, :only => [:create]
-    before_filter :find_product, :only => [:update, :destroy, :show, :sync]
 
     resource_description do
       api_version "v2"
@@ -67,6 +66,7 @@ module Katello
     api :GET, "/products/:id", "Show a product"
     param :id, :number, :desc => "product numeric identifier", :required => true
     def show
+      @product = Product.readable.find(params[:id]) if params[:id]
       respond_for_show(:resource => @product)
     end
 
@@ -75,6 +75,8 @@ module Katello
     param_group :product
     param :name, String, :desc => "Product name"
     def update
+      @product = Product.editable.find(params[:id]) if params[:id]
+
       reset_gpg_keys = (product_params[:gpg_key_id] != @product.gpg_key_id)
       @product.reset_repo_gpgs! if reset_gpg_keys
       @product.update_attributes!(product_params)
@@ -85,6 +87,7 @@ module Katello
     api :DELETE, "/products/:id", "Destroy a product"
     param :id, :number, :desc => "product numeric identifier"
     def destroy
+      @product = Product.deletable.find(params[:id]) if params[:id]
       @product.destroy
 
       respond
@@ -93,14 +96,11 @@ module Katello
     api :POST, "/products/:id/sync", "Sync a repository"
     param :id, :identifier, :required => true, :desc => "product ID"
     def sync
+      @product = Product.syncable.find(params[:id]) if params[:id]
       respond_for_async(:resource => @product.sync)
     end
 
     protected
-
-    def find_product
-      @product = Product.find_by_id(params[:id]) if params[:id]
-    end
 
     def filter_by_subscription(ids = [], subscription_id = nil)
       @subscription = Pool.find_by_organization_and_id!(@organization, subscription_id)

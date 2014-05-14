@@ -81,7 +81,7 @@ class Api::V2::RepositoriesController < Api::V2::ApiController
     repository = @product.add_repo(params[:label], params[:name], params[:url],
                                    params[:content_type], params[:unprotected], gpg_key)
     sync_task(::Actions::Katello::Repository::Create, repository)
-    repository = Repository.find(repository.id)
+    repository = Repository.readable.find(repository.id)
     respond_for_show(:resource => repository)
   end
 
@@ -148,15 +148,15 @@ class Api::V2::RepositoriesController < Api::V2::ApiController
   protected
 
   def find_product
-    @product = Product.find(params[:product_id]) if params[:product_id]
+    @product = Product.readable.find(params[:product_id]) if params[:product_id]
   end
 
   def find_product_for_create
-    @product = Product.find(params[:product_id])
+    @product = Product.readable.find(params[:product_id])
   end
 
   def find_repository
-    @repository = Repository.find(params[:id])
+    @repository = Repository.readable.find(params[:id])
   end
 
   def find_gpg_key

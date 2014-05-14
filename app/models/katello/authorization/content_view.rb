@@ -27,6 +27,10 @@ module Katello
         authorized(:destroy_content_views)
       end
 
+      def publishable
+        authorized(:publish_content_views)
+      end
+
     end
 
     included do
