@@ -47,6 +47,7 @@ class Api::ApiController < ::Api::BaseController
 
   def converted_controllers
     [
+      'katello/api/v2/about',
       'katello/api/v2/activation_keys',
       'katello/api/v2/content_views',
       'katello/api/v2/content_view_filters',
