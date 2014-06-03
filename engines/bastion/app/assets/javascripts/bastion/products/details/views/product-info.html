@@ -86,13 +86,15 @@
 
     <div class="detail">
       <button class="btn btn-default"
+              ng-disabled="denied('create_sync_plans')"
               ui-sref="products.details.info.new-sync-plan">
         <i class="icon-plus"></i>
         <span translate>New Sync Plan</span>
       </button>
 
       <button class="btn btn-default"
-              ng-click="syncProduct()">
+              ng-click="syncProduct()"
+              ng-disabled="denied('sync_products', product)">
         <i class="icon-spinner icon-spin" ng-show="productSyncing"></i>
         <span ng-show="productSyncing" translate>Syncing...</span>
         <i ng-hide="productSyncing" class="icon-refresh"></i>

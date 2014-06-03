@@ -42,7 +42,7 @@
       <button class="btn btn-default fr"
               translate
               ng-click="confirm = true"
-              ng-disabled="confirm || table.numSelected == 0 || state.working || selected.environment === undefined || selected.contentView === undefined ">
+              ng-disabled="disableAssignButton(confirm)">
         Assign
       </button>
 

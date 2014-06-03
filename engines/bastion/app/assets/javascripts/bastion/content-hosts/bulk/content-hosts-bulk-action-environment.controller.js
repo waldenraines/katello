@@ -36,6 +36,12 @@ angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionEnviro
 
         $scope.environments = Organization.readableEnvironments({id: CurrentOrganization});
 
+        $scope.disableAssignButton = function (confirm) {
+            return confirm || $scope.table.numSelected === 0 || $scope.state.working ||
+                $scope.selected.environment === undefined || $scope.selected.contentView === undefined ||
+            $scope.denied('edit_content_hosts', $scope.contentHost);
+        };
+
         $scope.$watch('selected.environment', function (environment) {
             if (environment) {
                 $scope.fetchViews();

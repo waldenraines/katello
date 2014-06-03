@@ -11,14 +11,14 @@
         <input type="radio"
                ng-model="content.contentType"
                ng-change="updatePlaceholder(content.contentType)"
-               ng-disabled="content.confirm"
+               ng-disabled="content.confirm || denied('edit_content_hosts', contentHost)"
                value="package"/>
         <label for="package" translate>Package</label>
 
         <input type="radio"
                ng-model="content.contentType"
                ng-change="updatePlaceholder(content.contentType)"
-               ng-disabled="content.confirm"
+               ng-disabled="content.confirm || denied('edit_content_hosts', contentHost)"
                value="package_group"/>
         <label for="package_group" translate>Package Group</label>
 
@@ -38,14 +38,14 @@
         <button class="btn btn-default"
                 translate
                 ng-click="confirmContentAction('install', content)"
-                ng-disabled="!systemContentForm.$valid || content.confirm">
+                ng-disabled="!systemContentForm.$valid || content.confirm || denied('edit_content_hosts', contentHost)">
           Install
         </button>
 
         <button class="btn btn-default"
                 translate
                 ng-click="confirmContentAction('update', content)"
-                ng-disabled="!systemContentForm.$valid || content.confirm"
+                ng-disabled="!systemContentForm.$valid || content.confirm || denied('edit_content_hosts', contentHost)"
                 ng-hide="content.contentType == 'errata'">
           Update
         </button>
@@ -53,7 +53,7 @@
         <button class="btn btn-default"
                 translate
                 ng-click="confirmContentAction('remove', content)"
-                ng-disabled="!systemContentForm.$valid || content.confirm"
+                ng-disabled="!systemContentForm.$valid || content.confirm || denied('edit_content_hosts', contentHost)"
                 ng-hide="content.contentType == 'errata'">
           Remove
         </button>

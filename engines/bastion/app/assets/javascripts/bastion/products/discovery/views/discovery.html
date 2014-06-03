@@ -12,7 +12,7 @@
 
       <span class="input-group-btn input-group-lg">
         <button ng-show="!discovery.pending"
-               ng-disabled="!discovery.url"
+               ng-disabled="!discovery.url || denied('edit_products')"
                translate
                type="submit"
                class="btn btn-primary btn-lg">
@@ -20,7 +20,7 @@
         </button>
 
         <button type="button"
-                ng-disabled="discovery.working"
+                ng-disabled="discovery.working || denied('edit_products')"
                 ng-show="discovery.pending"
                 ng-click="cancelDiscovery()"
                 class="btn btn-primary btn-lg">
@@ -49,7 +49,7 @@
       <div ng-hide="system.readonly" class="fr">
          <button class="btn btn-primary"
                  translate
-                 ng-disabled="discoveryTable.getSelected().length == 0"
+                 ng-disabled="discoveryTable.getSelected().length == 0 || denied('create_products')"
                  ng-click="setupSelected()">
            Create Selected
          </button>

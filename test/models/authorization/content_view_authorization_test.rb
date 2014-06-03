@@ -25,18 +25,22 @@ module Katello
       refute_empty ContentView.readable
     end
 
-    def test_key_readable?
+    def test_content_view_readable?
       assert @view.readable?
     end
 
-    def test_key_editable?
+    def test_content_view_editable?
       assert @view.editable?
     end
 
-    def test_key_deletable?
+    def test_content_view_deletable?
       assert @view.deletable?
     end
 
+    def test_content_view_publishable?
+      assert @view.publishable?
+    end
+    
     def test_promotable?
       assert @view.promotable_or_removable?
     end
@@ -70,18 +74,22 @@ module Katello
       assert_empty ContentView.readable
     end
 
-    def test_key_readable?
+    def test_content_view_readable?
       refute @view.readable?
     end
 
-    def test_key_editable?
+    def test_content_view_editable?
       refute @view.editable?
     end
 
-    def test_key_deletable?
+    def test_content_view_deletable?
       refute @view.deletable?
     end
-
+    
+    def test_content_view_publishable?
+      refute @view.publishable?
+    end
+    
     def test_promotable?
       refute @view.promotable_or_removable?
     end

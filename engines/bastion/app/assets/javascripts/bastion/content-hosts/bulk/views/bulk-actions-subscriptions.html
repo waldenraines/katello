@@ -6,7 +6,7 @@
     <button class="btn"
             translate
             ng-click="subscription.confirm = true"
-            ng-disabled="subscription.workingMode">
+            ng-disabled="subscription.workingMode || denied('edit_content_hosts', contentHost)">
       Auto-attach available subscriptions to all content hosts
     </button>
 

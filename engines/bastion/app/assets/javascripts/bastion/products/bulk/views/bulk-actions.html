@@ -6,7 +6,7 @@
 
     <div class="fr">
       <button class="btn btn-default"
-              ng-disabled="product.readonly || removeProducts.workingMode"
+              ng-disabled="product.readonly || removeProducts.workingMode || denied('delete_products')"
               ng-click="openModal()"
               ng-hide="removeProducts.workingMode">
         <i class="icon-trash"></i>

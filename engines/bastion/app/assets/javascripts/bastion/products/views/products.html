@@ -17,7 +17,7 @@
       {{ "Repo Discovery" | translate }}
     </button>
 
-    <button class="btn btn-primary" ui-sref="products.new.form">
+    <button class="btn btn-primary" ui-sref="products.new.form" ng-disabled="denied('create_products')">
       <i class="icon-plus"></i>
       {{ "New Product" | translate }}
     </button>

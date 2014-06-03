@@ -54,8 +54,9 @@ angular.module('Bastion.host-collections').controller('HostCollectionAddContentH
         $scope.isAdding  = false;
         $scope.addContentHostsTable.closeItem = function () {};
 
-        $scope.showAddButton = function () {
-            return $scope.addContentHostsTable.numSelected === 0 || $scope.isAdding;
+        $scope.disableAddButton = function () {
+            return $scope.addContentHostsTable.numSelected === 0 || $scope.isAdding ||
+                $scope.denied('edit_content_hosts');
         };
 
         $scope.addSelected = function () {

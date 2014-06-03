@@ -3,6 +3,7 @@
   <div data-block="actions">
     <button class="btn btn-primary fr"
             ng-show="isState('content-views.details.filters.details.package_group.list')"
+            ng-disabled="denied('edit_content_views', contentView)"
             ng-click="removePackageGroups(filter)">
       <i class="icon-trash"></i>
       <span translate>Remove Package Group</span>
@@ -10,6 +11,7 @@
 
     <button class="btn btn-primary fr"
             ng-show="isState('content-views.details.filters.details.package_group.available')"
+            ng-disabled="denied('edit_content_views', contentView)"
             ng-click="addPackageGroups(filter)">
       <i class="icon-plus"></i>
       <span translate>Add Package Group</span>

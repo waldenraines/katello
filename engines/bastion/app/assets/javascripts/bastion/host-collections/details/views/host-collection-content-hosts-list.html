@@ -36,7 +36,7 @@
       <div ng-hide="hostCollection.readonly" class="nutupane-actions fr">
          <button class="btn btn-primary"
                  translate
-                 ng-disabled="contentHostsTable.getSelected().length == 0 || isRemoving"
+                 ng-disabled="contentHostsTable.getSelected().length == 0 || isRemoving || denied('edit_content_hosts')"
                  ng-click="removeSelected()">
            Remove Selected
          </button>

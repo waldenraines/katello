@@ -11,7 +11,7 @@
   <div ng-hide="contentHost.readonly" class="fr">
      <button class="btn btn-primary"
              translate
-             ng-disabled="errataTable.getSelected().length == 0"
+             ng-disabled="errataTable.getSelected().length == 0 || denied('edit_content_hosts', contentHost)"
              ng-click="applySelected()">
        Apply Selected
      </button>

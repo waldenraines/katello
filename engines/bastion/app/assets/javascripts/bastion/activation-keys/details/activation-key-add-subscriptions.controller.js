@@ -53,7 +53,8 @@ angular.module('Bastion.activation-keys').controller('ActivationKeyAddSubscripti
         });
 
         $scope.disableAddButton = function () {
-            return $scope.addSubscriptionsTable.numSelected === 0 || $scope.isAdding || !$scope.activationKey.permissions.editable;
+            return $scope.addSubscriptionsTable.numSelected === 0 || $scope.isAdding ||
+                $scope.denied('edit_activation_keys', $scope.activationKey);
         };
 
         $scope.addSelected = function () {

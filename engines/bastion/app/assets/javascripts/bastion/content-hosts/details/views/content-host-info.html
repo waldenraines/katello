@@ -10,7 +10,7 @@
         <span class="info-label" translate>Name</span>
         <span class="info-value"
               alch-edit-text="contentHost.name"
-              readonly="contentHost.readonly"
+              readonly="denied('edit_content_hosts', contentHost)"
               on-save="save(contentHost)">
         </span>
       </div>
@@ -24,7 +24,7 @@
         <span class="info-label" translate>Description</span>
         <span class="info-value"
               alch-edit-textarea="contentHost.description"
-              readonly="contentHost.readonly"
+              readonly="denied('edit_content_hosts', contentHost)"
               on-save="save(contentHost)">
         </span>
       </div>
@@ -87,7 +87,7 @@
         <span class="info-label" translate>Service Level</span>
         <span class="info-value"
               alch-edit-select="contentHost.service_level"
-              readonly="contentHost.readonly"
+              readonly="denied('edit_content_hosts', contentHost)"
               selector="contentHost.service_level"
               options="serviceLevels()"
               options-format="option for option in options"
@@ -192,7 +192,7 @@
         <span class="info-label" translate>Release Version</span>
         <span class="info-value"
               alch-edit-select="contentHost.release_ver"
-              readonly="contentHost.readonly"
+              readonly="denied('edit_content_hosts', contentHost)"
               selector="contentHost.release_ver"
               options="releaseVersions()"
               options-format="option for option in options"
@@ -206,7 +206,7 @@
         <span class="info-label" translate>Content View</span>
         <span class="info-value"
               alch-edit-select="contentHost.content_view.name"
-              readonly="contentHost.readonly"
+              readonly="denied('edit_content_hosts', contentHost)"
               selector="contentHost.content_view.id"
               options="contentViews()"
               on-cancel="cancelContentViewUpdate()"

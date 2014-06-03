@@ -26,13 +26,15 @@
 
       <button ng-if="isState('content-hosts.details.host-collections.list')"
               class="btn btn-default"
-              ng-disabled="hostCollectionsTable.numSelected == 0 || hostCollectionsTable.working"
+              ng-disabled="hostCollectionsTable.numSelected == 0 || hostCollectionsTable.working ||
+                          denied('edit_content_hosts', contentHost)"
               ng-click="removeHostCollections(contentHost)">
         {{ 'Remove Selected' | translate }}
       </button>
       <button ng-if="isState('content-hosts.details.host-collections.add')"
               class="btn btn-default"
-              ng-disabled="hostCollectionsTable.numSelected == 0 || hostCollectionsTable.working"
+              ng-disabled="hostCollectionsTable.numSelected == 0 || hostCollectionsTable.working ||
+                          denied('edit_content_hosts', contentHost)"
               ng-click="addHostCollections(contentHost)">
         {{ 'Add Selected' | translate }}
       </button>

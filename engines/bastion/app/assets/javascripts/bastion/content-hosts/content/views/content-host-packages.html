@@ -21,7 +21,10 @@
                ng-model="packageAction.term"/>
 
         <span class="input-group-btn">
-          <button class="btn btn-default" translate>Perform</button>
+          <button class="btn btn-default"
+                  ng-disabled="denied('edit_content_hosts', contentHost)"
+                  translate>
+            Perform</button>
         </span>
       </div>
     </form>
@@ -40,7 +43,7 @@
     </form>
     <span class="nutupane-info" translate>Showing {{ currentPackagesTable.resource.total }} Packages</span>
 
-    <div class="fr" ng-hide="contentHost.readonly">
+    <div class="fr" ng-disabled="denied('edit_content_hosts', contentHost)">
        <button class="btn btn-primary" translate ng-click="updateAll()">
          Update All
        </button>

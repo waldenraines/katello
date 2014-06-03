@@ -7,7 +7,7 @@
     <div class="fr">
       <button class="btn btn-default"
               translate
-              ng-disabled="contentHost.readonly || removingContentHosts"
+              ng-disabled="denied('destroy_content_hosts') || removingContentHosts"
               ng-click="openModal()"
               ng-hide="removingContentHosts">
         Unregister Content Hosts
