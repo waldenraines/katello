@@ -1,0 +1,56 @@
+<span page-title>{{ 'Apply Errata to Content Hosts' | translate }}</span>
+
+<div data-extend-template="layouts/details-nutupane.html">
+
+  <div data-block="header">
+    <h3 translate>Apply to Content Hosts</h3>
+  </div>
+
+  <div data-block="actions">
+    <button class="btn btn-primary"
+            ng-show="permitted('create_content_hosts') && stateIncludes('errata.details.content-hosts')"
+            ng-click="applyErrata()">
+      <i class="icon-signin leading-icon"></i>
+      <span translate>Apply Errata</span>
+    </button>
+  </div>
+
+  <div data-block="table">
+    <p class="alert alert-warning" data-i18n
+       ng-show="detailsTable.rows.length > 0 && stateIncludes('errata.details.content-hosts.unavailable')">
+      The Content View or Lifecycle Environment needs to be updated in order to make errata available to these hosts.
+    </p>
+
+    <p class="alert alert-info" ng-show="detailsTable.rows.length === 0" translate>
+      No Content Hosts match this Erratum.
+    </p>
+
+    <table class="table table-striped"
+           ng-class="{'table-mask': detailsTable.working}"
+           ng-show="detailsTable.rows.length > 0">
+      <thead>
+        <tr alch-table-head row-select>
+          <th alch-table-column="name" sortable><span translate>Name</span></th>
+          <th alch-table-column="os"><span translate>OS</span></th>
+          <th alch-table-column="environment" sortable><span translate>Environment</span></th>
+          <th alch-table-column="contentView"><span translate>Content View</span></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr alch-table-row ng-repeat="contentHost in detailsTable.rows" row-select="contentHost"
+            ng-controller="ContentHostStatusController">
+          <td alch-table-cell>
+            <a ui-sref="content-hosts.details.info({contentHostId: contentHost.uuid})">
+              {{ contentHost.name }}
+            </a>
+          </td>
+          <td alch-table-cell>{{ contentHost.distribution }}</td>
+          <td alch-table-cell>{{ contentHost.environment.name }}</td>
+          <td alch-table-cell>{{ contentHost.content_view.name || "" }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
