@@ -1,0 +1,21 @@
+<span page-title>{{ 'Apply Errata to Content Hosts' | translate }}</span>
+
+<div data-extend-template="layouts/details-nutupane.html">
+
+  <div data-block="header">
+    {{ 'Apply to Content Hosts' | translate }}
+  </div>
+
+  <div data-block="actions">
+    <button class="btn btn-primary"
+            ng-show="permitted('create_content_hosts')"
+            ng-click="applyErrata()">
+      <i class="icon-signin leading-icon"></i>
+      <span translate>Apply Errata</span>
+    </button>
+  </div>
+
+  <div data-block="table">
+    <div ng-include="'content-hosts/views/content-hosts-table-full.html'" onload="contentHostTable = detailsTable"></div>
+  </div>
+</div>

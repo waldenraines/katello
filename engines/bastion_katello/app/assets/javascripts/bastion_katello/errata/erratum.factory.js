@@ -23,7 +23,13 @@
 angular.module('Bastion.errata').factory('Erratum',
     ['BastionResource', function (BastionResource) {
 
-        return BastionResource('/api/v2/errata/:id/', {id: '@id'}, {});
+        return BastionResource('/api/v2/errata/:id/', {id: '@id'}, {
+            applicableContentHosts: {method: 'GET', transformResponse: function (data) {
+                var erratum = angular.fromJson(data),
+                    systems = erratum['systems_applicable'];
+                return {results: systems, subtotal: systems.length, total: systems.length};
+            }}
+        });
 
     }]
 );
