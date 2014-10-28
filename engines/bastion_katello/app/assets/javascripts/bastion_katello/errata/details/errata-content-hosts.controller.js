@@ -17,8 +17,6 @@
  *
  * @requires $scope
  * @requires translate
- * @requires Nutupane
- * @requires Erratum
  * @requires ContentHostsHelper
  * @requires ContentHostBulkAction
  * @requires CurrentOrganization
@@ -27,20 +25,17 @@
  *   Provides the functionality for the host collection details action pane.
  */
 angular.module('Bastion.errata').controller('ErrataContentHostsController',
-    ['$scope', 'translate', 'Nutupane', 'Erratum', 'ContentHostsHelper', 'ContentHostBulkAction', 'CurrentOrganization',
-    function ($scope, translate, Nutupane, Erratum, ContentHostsHelper, ContentHostBulkAction, CurrentOrganization) {
-        var nutupane = new Nutupane(Erratum, {id: $scope.$stateParams.errataId}, 'applicableContentHosts');
-        nutupane.table.closeItem = function () {};
-
-        $scope.detailsTable = nutupane.table;
-        $scope.detailsTable.getStatusColor = ContentHostsHelper.getStatusColor;
-        $scope.detailsTable.getProvisioningStatusColor = ContentHostsHelper.getProvisioningStatusColor;
-
+    ['$scope', 'translate', 'ContentHostsHelper', 'ContentHostBulkAction', 'CurrentOrganization',
+    function ($scope, translate, ContentHostsHelper, ContentHostBulkAction, CurrentOrganization) {
         $scope.successMessages = [];
         $scope.errorMessages = [];
 
+        $scope.detailsTable.getStatusColor = ContentHostsHelper.getStatusColor;
+        $scope.detailsTable.getProvisioningStatusColor = ContentHostsHelper.getProvisioningStatusColor;
+
+
         $scope.applyErrata = function () {
-            var params = nutupane.getAllSelectedResults(),
+            var params = $scope.nutupane.getAllSelectedResults(),
                 success, error;
 
             params['content_type'] = 'errata';
@@ -49,7 +44,7 @@ angular.module('Bastion.errata').controller('ErrataContentHostsController',
 
             success = function () {
                 $scope.successMessages = [translate("Successfully scheduled installation of errata")];
-                nutupane.refresh();
+                $scope.nutupane.refresh();
             };
 
             error = function (data) {

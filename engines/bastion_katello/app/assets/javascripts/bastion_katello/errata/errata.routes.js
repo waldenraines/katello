@@ -58,10 +58,27 @@ angular.module('Bastion.errata').config(['$stateProvider', function ($stateProvi
     })
 
     .state('errata.details.content-hosts', {
+        abstract: true,
         url: '/content-hosts',
         collapsed: true,
         permission: 'view_errata',
         controller: 'ErrataContentHostsController',
         templateUrl: 'errata/details/views/errata-details-content-hosts.html'
+    })
+    .state('errata.details.content-hosts.applicable', {
+        abstract: true,
+        url: '/applicable',
+        collapsed: true,
+        permission: 'view_errata',
+        controller: 'ErrataApplicableContentHostsController',
+        templateUrl: 'errata/details/views/errata-details-applicable-content-hosts.html'
+    })
+    .state('errata.details.content-hosts.available', {
+        abstract: true,
+        url: '/available',
+        collapsed: true,
+        permission: 'view_errata',
+        controller: 'ErrataAvailableContentHostsController',
+        templateUrl: 'errata/details/views/errata-details-available-content-hosts.html'
     });
 }]);

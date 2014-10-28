@@ -15,6 +15,26 @@
     </button>
   </div>
 
+  <nav>
+    <ul class="nav nav-tabs" ng-show=" permitted('edit_content_hosts')">
+      <li ng-class="{active: isState('errata.details.content-hosts.applicable')}">
+        <a ui-sref="errata.details.content-hosts.applicable">
+        <span translate>
+          Applicable
+        </span>
+        </a>
+      </li>
+
+      <li ng-class="{active: stateIncludes('errata.details.content-hosts.available')}">
+        <a ui-sref="errata.details.content-hosts.available">
+        <span translate>
+          Available
+        </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
   <div data-block="table">
     <div ng-include="'content-hosts/views/content-hosts-table-full.html'" onload="contentHostTable = detailsTable"></div>
   </div>
