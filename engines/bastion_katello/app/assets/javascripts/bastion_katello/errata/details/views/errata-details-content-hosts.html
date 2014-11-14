@@ -15,6 +15,17 @@
     </button>
   </div>
 
+  <div data-block="filters">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"
+               ng-change="toggleAvailable()"
+               translate> Only show content hosts where {{ errata.title }} is currently available in the host's Lifecycle Environment.
+
+      </label>
+    </div>
+  </div>
+
   <div data-block="table">
     <p class="alert alert-warning" data-i18n
        ng-show="detailsTable.rows.length > 0 && stateIncludes('errata.details.content-hosts.unavailable')">

@@ -44,6 +44,12 @@ angular.module('Bastion.errata').controller('ErrataContentHostsController',
         $scope.nutupane = nutupane;
         $scope.detailsTable = nutupane.table;
 
+        $scope.toggleAvailable = function () {
+            var restrictAvailable = nutupane.table.params['erratum_restrict_available'];
+            nutupane.table.params['erratum_restrict_available'] = !restrictAvailable;
+            nutupane.refresh();
+        };
+        
         $scope.applyErrata = function () {
             var params = $scope.nutupane.getAllSelectedResults(),
                 success, error;
