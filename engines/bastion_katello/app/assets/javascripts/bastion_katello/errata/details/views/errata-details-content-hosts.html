@@ -18,7 +18,7 @@
   <div data-block="filters">
     <div class="checkbox">
       <label>
-        <input type="checkbox" ng-change="toggleAvailable()">
+        <input type="checkbox" ng-model="errata.showAvailable" ng-change="toggleAvailable()">
         <span translate>Only show content hosts where {{ errata.title }} is currently available in the host's Lifecycle Environment.</span>
 
       </label>
