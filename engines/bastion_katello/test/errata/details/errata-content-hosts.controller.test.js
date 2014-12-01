@@ -34,6 +34,9 @@ describe('Controller: ErrataContentHostsController', function() {
                 return {include: [1, 2, 3]};
             };
             this.refresh = function () {};
+            this.load = function () {
+                return {then: function () {}}
+            };
         };
 
         ContentHost = {};

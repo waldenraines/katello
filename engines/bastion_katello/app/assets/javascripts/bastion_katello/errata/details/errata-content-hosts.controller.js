@@ -44,11 +44,26 @@ angular.module('Bastion.errata').controller('ErrataContentHostsController',
         $scope.nutupane = nutupane;
         $scope.detailsTable = nutupane.table;
 
+        $scope.environments = [];
+
+
+        nutupane.load().then(function (resource) {
+            angular.forEach(resource.results, function (contentHost) {
+                $scope.environments.push(contentHost.environment);
+            });
+        });
+
         $scope.toggleAvailable = function () {
             nutupane.table.params['erratum_restrict_available'] = $scope.errata.showAvailable;
             nutupane.refresh();
         };
-        
+
+        $scope.selectEnvironment = function () {
+            params['environment_id'] = $scope.environmentFilter;
+            nutupane.setParams = (params);
+            nutupane.refresh();
+        };
+
         $scope.applyErrata = function () {
             var params = $scope.nutupane.getAllSelectedResults(),
                 success, error;
