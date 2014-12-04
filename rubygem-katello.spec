@@ -33,7 +33,7 @@ Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
 URL: http://www.katello.org
-Source0: http://rubygems.org/downloads/%{gem_name}-%{version}.gem
+Source0: http://rubygems.org/downloads/%{gem_name}-%{version}.tar.gz
 
 %if "%{?scl}" == "ruby193"
 Requires: %{?scl_prefix}ruby-wrapper
