@@ -28,12 +28,12 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.1.0
+Version: 2.1.0.0
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
 URL: http://www.katello.org
-Source0: http://rubygems.org/downloads/%{gem_name}-%{version}.tar.gz
+Source0: http://rubygems.org/downloads/%{gem_name}-2.1.0.gem
 
 %if "%{?scl}" == "ruby193"
 Requires: %{?scl_prefix}ruby-wrapper
