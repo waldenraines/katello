@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.1.0.0
+Version: 2.1.0.1
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -236,6 +236,13 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Thu Dec 04 2014 Jason Montleon <jmontleo@redhat.com> 2.1.0.1-1
+- change to gembuilder and version tagger (jmontleo@redhat.com)
+- change source to a tar.gz (jmontleo@redhat.com)
+- Automatic commit of package [katello] minor release [2.1.0-1-sat].
+  (jmontleo@redhat.com)
+- decrement release before tagging (jmontleo@redhat.com)
+
 * Thu Dec 04 2014 Jason Montleon <jmontleo@redhat.com> 2.1.0-1
 - update rel-eng files and decrement release before tagging
   (jmontleo@redhat.com)
