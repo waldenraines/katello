@@ -154,8 +154,7 @@ BuildRequires: %{?scl_prefix}rubygem-jquery-ui-rails
 BuildRequires: %{?scl_prefix}rubygem-deface < 1.0.0
 BuildRequires: %{?scl_prefix}rubygem(uglifier) >= 1.0.3
 BuildRequires: %{?scl_prefix}rubygem-strong_parameters
-BuildRequires: %{?scl_prefix}rubygem-qpid_messaging >= 0.26.1
-BuildRequires: %{?scl_prefix}rubygem-qpid_messaging <= 0.28.1
+BuildRequires: %{?scl_prefix}rubygem-qpid_messaging = 0.22.0
 BuildRequires: %{?scl_prefix}rubygems
 BuildArch: noarch
 Provides: %{?scl_prefix}rubygem(katello) = %{version}
