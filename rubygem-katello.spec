@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: %{shortversion}.3
+Version: 2.1.0.4
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -234,6 +234,15 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
+* Mon Dec 08 2014 Jason Montleon <jmontleo@redhat.com> 2.1.0.4-1
+- fix versions for install paths (jmontleo@redhat.com)
+
+* Mon Dec 08 2014 Jason Montleon <jmontleo@redhat.com>
+- fix versions for install paths (jmontleo@redhat.com)
+
+* Mon Dec 08 2014 Jason Montleon <jmontleo@redhat.com>
+- fix versions for install paths (jmontleo@redhat.com)
+
 * Fri Dec 05 2014 Jason Montleon <jmontleo@redhat.com> 2.1.0.3-1
 - fix qpid_messaging build require version (jmontleo@redhat.com)
 
