@@ -2,7 +2,13 @@
 %{!?scl:%global pkg_name %{name}}
 
 %global gem_name katello
+
 %global shortversion 2.1.0
+%global gem_instdir %{gem_dir}/gems/%{gem_name}-%{shortversion}
+%global gem_cache %{gem_dir}/cache/%{gem_name}-%{shortversion}.gem
+%global gem_spec %{gem_dir}/specifications/%{gem_name}-%{shortversion}.gemspec
+%global gem_docdir %{gem_dir}/doc/%{gem_name}-%{shortversion}
+
 %global foreman_dir /usr/share/foreman
 %global foreman_bundlerd_dir %{foreman_dir}/bundler.d
 
