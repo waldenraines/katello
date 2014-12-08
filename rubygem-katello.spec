@@ -2,17 +2,17 @@
 %{!?scl:%global pkg_name %{name}}
 
 %global gem_name katello
-
+%global shortversion 2.1.0
 %global foreman_dir /usr/share/foreman
 %global foreman_bundlerd_dir %{foreman_dir}/bundler.d
 
 %if !("%{?scl}" == "ruby193" || 0%{?rhel} > 6 || 0%{?fedora} > 16)
 %global gem_dir /usr/lib/ruby/gems/1.8
-%global gem_instdir %{gem_dir}/gems/%{gem_name}-%{version}
+%global gem_instdir %{gem_dir}/gems/%{gem_name}-%{shortversion}
 %global gem_libdir %{gem_instdir}/lib
-%global gem_cache %{gem_dir}/cache/%{gem_name}-%{version}.gem
-%global gem_spec %{gem_dir}/specifications/%{gem_name}-%{version}.gemspec
-%global gem_docdir %{gem_dir}/doc/%{gem_name}-%{version}
+%global gem_cache %{gem_dir}/cache/%{gem_name}-%{shortversion}.gem
+%global gem_spec %{gem_dir}/specifications/%{gem_name}-%{shortversion}.gemspec
+%global gem_docdir %{gem_dir}/doc/%{gem_name}-%{shortversion}
 %endif
 
 %if "%{?scl}" == "ruby193"
@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.1.0.3
+Version: %{shortversion}.3
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -157,7 +157,7 @@ BuildRequires: %{?scl_prefix}rubygem-strong_parameters
 BuildRequires: %{?scl_prefix}rubygem-qpid_messaging = 0.22.0
 BuildRequires: %{?scl_prefix}rubygems
 BuildArch: noarch
-Provides: %{?scl_prefix}rubygem(katello) = %{version}
+Provides: %{?scl_prefix}rubygem(katello) = %{shortversion}
 
 %description
 Katello
@@ -171,7 +171,7 @@ Summary:    Documentation for rubygem-%{gem_name}
 This package contains documentation for rubygem-%{gem_name}.
 
 %prep
-%setup -n %{pkg_name}-%{version} -q -c -T
+%setup -n %{pkg_name}-%{shortversion} -q -c -T
 mkdir -p .%{gem_dir}
 %{?scl:scl enable %{scl} "}
 gem install --local --install-dir .%{gem_dir} --force %{SOURCE0}
@@ -231,7 +231,7 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{foreman_dir}/public/assets/bastion_katello
 
 %files doc
-%{gem_dir}/doc/%{gem_name}-%{version}
+%{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
 * Fri Dec 05 2014 Jason Montleon <jmontleo@redhat.com> 2.1.0.3-1
