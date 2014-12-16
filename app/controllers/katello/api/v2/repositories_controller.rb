@@ -70,6 +70,7 @@ module Katello
       options[:filters] << {:term => {:environment_id => params[:environment_id]}} if params[:environment_id]
       options[:filters] << {:term => {:content_view_ids => params[:content_view_id]}} if params[:content_view_id]
       if params[:content_view_version_id]
+        params[:content_view_version_id] = [ params[:content_view_version_id] ] unless params[:content_view_version_id].is_a?(Array)
         options[:filters] << {:terms => {:content_view_version_id => params[:content_view_version_id]}}
         unless params[:environment_id]
           options[:filters] << {:missing => {:field => :environment_id, :existence => true, :null_value => true}}
