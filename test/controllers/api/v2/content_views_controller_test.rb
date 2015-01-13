@@ -48,6 +48,7 @@ module Katello
       ContentView.any_instance.stubs(:reindex_on_association_change).returns(true)
       ContentViewVersion.any_instance.stubs(:package_count).returns(0)
       ContentViewVersion.any_instance.stubs(:errata_count).returns(0)
+      ContentViewVersion.any_instance.stubs(:puppet_module_count).returns(0)
 
       models
       permissions
@@ -106,6 +107,14 @@ module Katello
       assert_protected_action(:create, allowed_perms, denied_perms) do
         post :create, :name => "Test", :organization_id => @organization.id
       end
+    end
+
+    def test_create_with_non_json_request
+      @request.env['CONTENT_TYPE'] = 'application/x-www-form-urlencoded'
+      post :create, :name => "My View", :description => "Cool",
+        :organization_id => @organization.id
+
+      assert_response 415
     end
 
     def test_show

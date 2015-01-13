@@ -36,6 +36,16 @@ module Katello
     has_many :content_view_components, :inverse_of => :content_view_version, :dependent => :destroy
     has_many :composite_content_views, :through => :content_view_components, :source => :content_view
 
+    has_many :content_view_version_components, :inverse_of => :composite_version, :dependent => :destroy, :foreign_key => :composite_version_id,
+             :class_name => "Katello::ContentViewVersionComponent"
+    has_many :components, :through => :content_view_version_components, :source => :component_version,
+             :class_name => "Katello::ContentViewVersion", :inverse_of => :composites
+
+    has_many :content_view_version_composites, :inverse_of => :component_version, :dependent => :destroy, :foreign_key => :component_version_id,
+             :class_name => "Katello::ContentViewVersionComponent"
+    has_many :composites, :through => :content_view_version_composites, :source => :composite_version,
+             :class_name => "Katello::ContentViewVersion", :inverse_of => :components
+
     delegate :default, :default?, to: :content_view
 
     validates_lengths_from_database
@@ -43,8 +53,19 @@ module Katello
     scope :default_view, joins(:content_view).where("#{Katello::ContentView.table_name}.default" => true)
     scope :non_default_view, joins(:content_view).where("#{Katello::ContentView.table_name}.default" => false)
 
+    def self.component_of(versions)
+      joins(:content_view_version_composites).where("#{Katello::ContentViewVersionComponent.table_name}.composite_version_id" => versions)
+    end
+
     def self.with_library_repo(repo)
       joins(:repositories).where("#{Katello::Repository.table_name}.library_instance_id" => repo)
+    end
+
+    def self.for_version(version)
+      major, minor = version.to_s.split('.')
+      query = where(:major => major)
+      query.where(:minor => minor) if minor
+      query
     end
 
     def to_s
@@ -73,16 +94,20 @@ module Katello
       self.repositories.pluck(:minor).compact.uniq.sort
     end
 
+    def next_incremental_version
+      self.content_view.versions.where(:major => self.major).maximum(:minor) + 1
+    end
+
+    def version
+      "#{major}.#{minor}"
+    end
+
     def repos(env)
       self.repositories.in_environment(env)
     end
 
     def puppet_env(env)
       self.content_view_puppet_environments.in_environment(env).first
-    end
-
-    def puppet_modules
-      self.content_view_puppet_environments.first.puppet_modules
     end
 
     def archived_repos
@@ -153,8 +178,26 @@ module Katello
       repositories.archived.flat_map(&:packages)
     end
 
+    def puppet_module_count
+      PuppetModule.module_count([self.archive_puppet_environment])
+    end
+
     def package_count
       Package.package_count(self.repositories.archived)
+    end
+
+    def docker_image_count
+      image_counts = repositories.archived.docker_type.map do |repo|
+        repo.docker_images.count
+      end
+      image_counts.sum
+    end
+
+    def docker_tag_count
+      tag_counts = repositories.archived.docker_type.map do |repo|
+        repo.docker_tags.count
+      end
+      tag_counts.sum
     end
 
     def errata(errata_type = nil)

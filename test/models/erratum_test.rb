@@ -26,13 +26,23 @@ module Katello
 
   class ErratumTest < ErratumTestBase
     def test_repositories
-      assert_includes @security.repositories, @repo
+      assert_includes @security.repository_ids, @repo.id
     end
 
     def test_create
       uuid = 'foo'
       assert Erratum.create!(:uuid => uuid)
       assert Erratum.find_by_uuid(uuid)
+    end
+
+    def test_create_truncates_long_title
+      attrs = {:uuid => 'foo', :title => "This life, which had been the tomb of " \
+        "his virtue and of his honour is but a walking shadow; a poor player, " \
+        "that struts and frets his hour upon the stage, and then is heard no more: " \
+        "it is a tale told by an idiot, full of sound and fury, signifying nothing." \
+        " - William Shakespeare"}
+      assert Erratum.create!(attrs)
+      assert_equal Erratum.find_by_uuid(attrs[:uuid]).title.size, 255
     end
 
     def test_of_type
@@ -65,6 +75,17 @@ module Katello
       json = errata.attributes
       errata.update_from_json(json)
       assert_equal Erratum.find(errata).updated_at, last_updated
+    end
+
+    def test_update_from_json_truncates_title
+      errata = katello_errata(:security)
+      title = "There is a tide in the affairs of men, Which taken at the flood, leads on to " \
+        "fortune.  Omitted, all the voyage of their life is bound in shallows and in miseries. "\
+        "On such a full sea are we now afloat. And we must take the current when it serves, or "\
+        "lose our ventures. - William Shakespeare"
+      json = errata.attributes.merge('description' => 'an update', 'updated' => DateTime.now, 'title' => title)
+      errata.update_from_json(json)
+      assert_equal Erratum.find(errata).title.size, 255
     end
   end
 

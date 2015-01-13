@@ -10,25 +10,24 @@
 # have received a copy of GPLv2 along with this software; if not, see
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt.
 
-module Katello
-  module Glue::ElasticSearch::GpgKey
-    def self.included(base)
-      base.send :include, Ext::IndexedModel
+module Actions
+  module Katello
+    module Repository
+      class ErrataMail < Actions::EntryAction
+        def plan(repo)
+          last_updated = repo.repository_errata.order('updated_at ASC').last.try(:updated_at) || Time.now
+          plan_self(:repo => repo.id, :last_updated => last_updated.to_s)
+        end
 
-      base.class_eval do
-        index_options :extended_json => :extended_index_attrs,
-                      :json => {:only => [:id, :name, :organization_id]},
-                      :display_attrs => [:name, :content]
+        def run
+          ::User.current = ::User.anonymous_admin
+          MailNotification[:katello_sync_errata].deliver(:repo => input[:repo], :last_updated => input[:last_updated])
+        end
 
-        mapping do
-          indexes :name, :type => 'string', :analyzer => :kt_name_analyzer
-          indexes :name_sort, :type => 'string', :index => :not_analyzed
+        def finalize
+          ::User.current = nil
         end
       end
-    end
-
-    def extended_index_attrs
-      {:name_sort => name.downcase}
     end
   end
 end

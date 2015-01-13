@@ -29,6 +29,7 @@ module Katello
       @beta = KTEnvironment.find(katello_environments(:beta))
       @library_dev_staging_view = ContentView.find(katello_content_views(:library_dev_staging_view))
       @library_view = ContentView.find(katello_content_views(:library_view))
+      @composite_version = ContentViewVersion.find(katello_content_view_versions(:composite_view_version_1))
     end
 
     def permissions
@@ -36,6 +37,7 @@ module Katello
       @create_permission = :create_content_views
       @update_permission = :edit_content_views
       @destroy_permission = :destroy_content_views
+      @publish_permission = :publish_content_views
       @env_promote_permission = :promote_or_remove_content_views_to_environments
       @cv_promote_permission = :promote_or_remove_content_views
 
@@ -49,12 +51,13 @@ module Katello
       permissions
       ContentViewVersion.any_instance.stubs(:package_count).returns(0)
       ContentViewVersion.any_instance.stubs(:errata_count).returns(0)
+      ContentViewVersion.any_instance.stubs(:puppet_module_count).returns(0)
     end
 
     def test_index
       get :index
 
-      assert_response 404
+      assert_response :success
     end
 
     def test_index_with_content_view
@@ -77,9 +80,21 @@ module Katello
       assert_equal expected_version.id, results['results'][0]['id']
     end
 
+    def test_index_with_composite_id
+      component = @library_dev_staging_view.versions.first
+      @composite_version.components = [component]
+      @composite_version.save!
+
+      results = JSON.parse(get(:index, :composite_version_id => @composite_version.id).body)
+
+      assert_response :success
+      assert_template 'api/v2/content_view_versions/index'
+      assert_equal 1, results['results'].size
+      assert_equal component.id, results['results'][0]['id']
+    end
+
     def test_index_with_content_view_by_version
       expected_version = ContentViewVersion.find(katello_content_view_versions(:library_view_version_2))
-
       results = JSON.parse(get(:index, :content_view_id => @library_view.id, :version => 2).body)
 
       assert_response :success
@@ -181,9 +196,40 @@ module Katello
       assert_response 400
     end
 
+    def test_incremental_update
+      version = @library_dev_staging_view.versions.first
+      errata_id = Katello::Erratum.first.uuid
+      @controller.expects(:async_task).with(::Actions::Katello::ContentView::IncrementalUpdates,
+                                            [{:content_view_version => version, :environments => [@beta]}],
+                                            {'errata_ids' => [errata_id]}, true, nil).returns({})
+
+      put :incremental_update, :content_view_version_environments => [{:content_view_version_id => version.id, :environment_ids => [@beta.id]}],
+                               :add_content => {:errata_ids => [errata_id]}, :resolve_dependencies => true
+
+      assert_response :success
+    end
+
+    def test_incremental_update_protected
+      version = @library_dev_staging_view.versions.first
+      errata_id = Katello::Erratum.first.uuid
+
+      publish_permission = {:name => @publish_permission, :search => "name=\"#{version.content_view.name}\"" }
+      view_promote_permission = {:name => @cv_promote_permission, :search => "name=\"#{version.content_view.name}\""  }
+      environment_promote_permission = {:name => @env_promote_permission, :search => "name=\"#{@beta.name}\"" }
+
+      allowed_perms = [[publish_permission, view_promote_permission, environment_promote_permission]]
+      denied_perms =  [@view_permission, @create_permission, @update_permission, @cv_promote_permission,
+                       publish_permission, view_promote_permission, environment_promote_permission]
+
+      assert_protected_action(:incremental_update, allowed_perms, denied_perms) do
+        put :incremental_update, :content_view_version_environments => [{:content_view_version_id => version.id, :environment_ids => [@beta.id]}],
+                                 :add_content => {:errata_ids => [errata_id], :resolve_dependencies => true}
+      end
+    end
+
     def test_destroy_protected
       diff_view = ContentView.find(katello_content_views(:candlepin_default_cv))
-      diff_view_destroy_permission = {:name => @destroy_permission, :search => "name=\"#{diff_view.name}\"" }
+      diff_view_destroy_permission = {:name => @destroy_permission, :search => "name=\"#{diff_view.name}\""}
 
       allowed_perms = [@destroy_permission]
 

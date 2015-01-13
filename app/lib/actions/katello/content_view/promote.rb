@@ -32,7 +32,7 @@ module Actions
                 end
               end
 
-              plan_action(ContentViewPuppetEnvironment::CloneToEnvironment, version, environment)
+              plan_action(ContentViewPuppetEnvironment::Clone, version, :environment => environment)
 
               repos_to_delete(version, environment).each do |repo|
                 plan_action(Repository::Destroy, repo)
@@ -40,6 +40,7 @@ module Actions
             end
 
             plan_action(ContentView::UpdateEnvironment, version.content_view, environment)
+            plan_action(ContentView::ErrataMail, version.content_view, environment)
             plan_self(history_id: history.id, environment_id: environment.id, user_id: ::User.current.id,
                       environment_name: environment.name, content_view_id: version.content_view.id)
           end

@@ -12,9 +12,10 @@
         <span class="info-label" translate>CVEs</span>
         <span class="info-value">
           <span ng-repeat="cve in errata.cves">
-            <a href="cve.href">{{ cve.cve_id }}</a>
+            <a href="{{ cve.href }}">{{ cve.cve_id }}</a>
             <span ng-show="!$last">,</span>
           </span>
+          <span ng-show="errata.cves.length === 0" translate>N/A</span>
         </span>
       </div>
       <div class="detail">

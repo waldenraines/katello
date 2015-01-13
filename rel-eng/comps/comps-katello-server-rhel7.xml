@@ -60,6 +60,8 @@
        <packagereq type="default">ruby193-rubygem-flexmock</packagereq>
        <packagereq type="default">ruby193-rubygem-foreigner</packagereq>
        <packagereq type="default">ruby193-rubygem-foreman_api</packagereq>
+       <packagereq type="default">ruby193-rubygem-foreman_gutterball</packagereq>
+       <packagereq type="default">ruby193-rubygem-foreman_sam</packagereq>
        <packagereq type="default">ruby193-rubygem-foreman-tasks</packagereq>
        <packagereq type="default">ruby193-rubygem-fssm</packagereq>
        <packagereq type="default">ruby193-rubygem-gettext_i18n_rails</packagereq>
@@ -113,11 +115,15 @@
        <packagereq type="default">rubygem-hammer_cli_foreman_tasks</packagereq>
        <packagereq type="default">rubygem-hammer_cli_import</packagereq>
        <packagereq type="default">rubygem-hammer_cli_katello</packagereq>
-       <packagereq type="default">rubygem-katello_api</packagereq>
+       <packagereq type="default">rubygem-hammer_cli_sam</packagereq>
+       <packagereq type="default">rubygem-hammer_cli_gutterball</packagereq>
        <packagereq type="default">ruby193-rubygem-qpid_messaging</packagereq>
 
        <!-- katello installer packages -->
+       <packagereq type="default">katello-installer-base</packagereq>
        <packagereq type="default">katello-installer</packagereq>
+       <packagereq type="default">katello-devel-installer</packagereq>
+       <packagereq type="default">capsule-installer</packagereq>
        <packagereq type="default">rubygem-ansi</packagereq>
        <packagereq type="default">rubygem-clamp</packagereq>
        <packagereq type="default">rubygem-hashie</packagereq>
@@ -138,11 +144,9 @@
        <packagereq type="optional">python-inflector</packagereq>
        <packagereq type="optional">ruby193-rubygem-addressable</packagereq>
        <packagereq type="optional">ruby193-rubygem-crack</packagereq>
-       <packagereq type="optional">ruby193-rubygem-maruku</packagereq>
        <packagereq type="optional">ruby193-rubygem-rspec-rails</packagereq>
        <packagereq type="optional">ruby193-rubygem-syntax</packagereq>
        <packagereq type="optional">ruby193-rubygem-webmock</packagereq>
-
     </packagelist>
   </group>
   <group>
@@ -197,7 +201,6 @@
        <packagereq type="optional">ruby193-rubygem-ttfunk-doc</packagereq>
        <packagereq type="optional">ruby193-rubygem-uuidtools-doc</packagereq>
        <packagereq type="optional">ruby193-rubygem-webmock-doc</packagereq>
-       <packagereq type="optional">rubygem-katello_api-doc</packagereq>
     </packagelist>
   </group>
   <group>

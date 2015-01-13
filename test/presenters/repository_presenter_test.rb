@@ -1,4 +1,3 @@
-#
 # Copyright 2014 Red Hat, Inc.
 #
 # This software is licensed to you under the GNU General Public
@@ -10,24 +9,18 @@
 # have received a copy of GPLv2 along with this software; if not, see
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt.
 
-module Katello
-  module Glue::ElasticSearch::SyncPlan
-    def self.included(base)
-      base.send :include, Ext::IndexedModel
+require 'katello_test_helper'
 
-      base.class_eval do
-        index_options :extended_json => :extended_index_attrs,
-                      :display_attrs => [:name, :sync_date, :description, :interval]
-        mapping do
-          indexes :name, :type => 'string', :analyzer => :kt_name_analyzer
-          indexes :name_sort, :type => 'string', :index => :not_analyzed
-          indexes :sync_date, :type => 'date'
-        end
-      end
+module Katello
+  class RepositoryPresenterTest < ActiveSupport::TestCase
+    def setup
+      @presenter = RepositoryPresenter.new(katello_repositories(:fedora_17_x86_64))
     end
 
-    def extended_index_attrs
-      {:name_sort => name.downcase}
+    def test_content_view_environments
+      content_view_environments = @presenter.content_view_environments
+
+      assert_equal content_view_environments.length, 2
     end
   end
 end

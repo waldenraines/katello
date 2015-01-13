@@ -3,7 +3,7 @@
 
 %global gem_name katello
 
-%global shortversion 2.1.0
+%global shortversion 2.2.0
 %global gem_instdir %{gem_dir}/gems/%{gem_name}-%{shortversion}
 %global gem_cache %{gem_dir}/cache/%{gem_name}-%{shortversion}.gem
 %global gem_spec %{gem_dir}/specifications/%{gem_name}-%{shortversion}.gemspec
@@ -34,7 +34,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.1.0.6
+Version: 2.2.0.0
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -127,7 +127,6 @@ Requires: %{?scl_prefix}rubygem-justified
 Requires: %{?scl_prefix}rubygem-gettext_i18n_rails
 Requires: %{?scl_prefix}rubygem-i18n_data >= 0.2.6
 Requires: %{?scl_prefix}rubygem-apipie-rails >= 0.1.1
-Requires: %{?scl_prefix}rubygem-maruku
 Requires: %{?scl_prefix}rubygem-runcible >= 1.3.0
 Requires: %{?scl_prefix}rubygem-anemone
 Requires: %{?scl_prefix}rubygem-less-rails
@@ -135,7 +134,8 @@ Requires: %{?scl_prefix}rubygem-haml-rails
 Requires: %{?scl_prefix}rubygem-jquery-ui-rails
 Requires: %{?scl_prefix}rubygem-deface < 1.0.0
 Requires: %{?scl_prefix}rubygem-strong_parameters
-Requires: %{?scl_prefix}rubygem-qpid_messaging = 0.22.0
+Requires: %{?scl_prefix}rubygem-qpid_messaging >= 0.22.0
+Requires: %{?scl_prefix}rubygem-qpid_messaging <= 0.28.1
 BuildRequires: foreman >= 1.3.0
 BuildRequires: foreman-assets >= 1.7.0
 BuildRequires: %{?scl_prefix}rubygem-angular-rails-templates >= 0.0.4
@@ -145,13 +145,12 @@ BuildRequires: %{?scl_prefix}rubygem-tire => 0.6.2
 BuildRequires: %{?scl_prefix}rubygem-tire < 0.7
 BuildRequires: %{?scl_prefix}rubygem-logging >= 1.8.0
 BuildRequires: %{?scl_prefix}rubygem-hooks
-BuildRequires: %{?scl_prefix}rubygem-foreman_docker >= 0.1.0
+BuildRequires: %{?scl_prefix}rubygem-foreman_docker >= 0.2.0
 BuildRequires: %{?scl_prefix}rubygem-foreman-tasks >= 0.6.0
 BuildRequires: %{?scl_prefix}rubygem-justified
 BuildRequires: %{?scl_prefix}rubygem-gettext_i18n_rails
 BuildRequires: %{?scl_prefix}rubygem-i18n_data >= 0.2.6
 BuildRequires: %{?scl_prefix}rubygem-apipie-rails >= 0.1.1
-BuildRequires: %{?scl_prefix}rubygem-maruku
 BuildRequires: %{?scl_prefix}rubygem-runcible >= 1.3.0
 BuildRequires: %{?scl_prefix}rubygem-anemone
 BuildRequires: %{?scl_prefix}rubygem-less-rails
@@ -160,7 +159,8 @@ BuildRequires: %{?scl_prefix}rubygem-jquery-ui-rails
 BuildRequires: %{?scl_prefix}rubygem-deface < 1.0.0
 BuildRequires: %{?scl_prefix}rubygem(uglifier) >= 1.0.3
 BuildRequires: %{?scl_prefix}rubygem-strong_parameters
-BuildRequires: %{?scl_prefix}rubygem-qpid_messaging = 0.22.0
+BuildRequires: %{?scl_prefix}rubygem-qpid_messaging >= 0.22.0
+BuildRequires: %{?scl_prefix}rubygem-qpid_messaging <= 0.28.1
 BuildRequires: %{?scl_prefix}rubygems
 BuildArch: noarch
 Provides: %{?scl_prefix}rubygem(katello) = %{shortversion}
@@ -240,41 +240,96 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
-* Mon Dec 08 2014 Jason Montleon <jmontleo@redhat.com> 2.1.0.6-1
-- relax qpid_messaging dependency in gemspec (jmontleo@redhat.com)
+* Fri Dec 19 2014 David Davis <daviddavis@redhat.com> 2.2.0-1
+- fatal: bad revision 'rubygem-katello-2.2.0-1..HEAD'
 
-* Mon Dec 08 2014 Jason Montleon <jmontleo@redhat.com> 2.1.0.5-1
-- fix install paths for extended rpm version (jmontleo@redhat.com)
-
-* Mon Dec 08 2014 Jason Montleon <jmontleo@redhat.com> 2.1.0.4-1
-- fix versions for install paths (jmontleo@redhat.com)
-
-* Mon Dec 08 2014 Jason Montleon <jmontleo@redhat.com>
-- fix versions for install paths (jmontleo@redhat.com)
-
-* Mon Dec 08 2014 Jason Montleon <jmontleo@redhat.com>
-- fix versions for install paths (jmontleo@redhat.com)
-
-* Fri Dec 05 2014 Jason Montleon <jmontleo@redhat.com> 2.1.0.3-1
-- fix qpid_messaging build require version (jmontleo@redhat.com)
-
-* Fri Dec 05 2014 Jason Montleon <jmontleo@redhat.com> 2.1.0.2-1
-- correct version of qpid_messaging for version of qpid we ship in satellite
-  (jmontleo@redhat.com)
-
-* Thu Dec 04 2014 Jason Montleon <jmontleo@redhat.com> 2.1.0.1-1
-- change to gembuilder and version tagger (jmontleo@redhat.com)
-- change source to a tar.gz (jmontleo@redhat.com)
-- Automatic commit of package [katello] minor release [2.1.0-1-sat].
-  (jmontleo@redhat.com)
-- decrement release before tagging (jmontleo@redhat.com)
-
-* Thu Dec 04 2014 Jason Montleon <jmontleo@redhat.com> 2.1.0-1
-- update rel-eng files and decrement release before tagging
-  (jmontleo@redhat.com)
+* Fri Dec 19 2014 David Davis <daviddavis@redhat.com> 2.2.0-1
+- Merge pull request #4887 from jlsherrill/8770 (jlsherrill@gmail.com)
+- Merge pull request #4870 from jlsherrill/inc_update_api
+  (jlsherrill@gmail.com)
+- Merge pull request #4888 from jlsherrill/8598 (jlsherrill@gmail.com)
+- Merge pull request #4886 from jlsherrill/8768 (jlsherrill@gmail.com)
+- Merge pull request #4866 from ehelms/fixes-8655 (eric.d.helms@gmail.com)
+- Merge pull request #4876 from steveloranz/8687 (jlsherrill@gmail.com)
+- Merge pull request #4885 from daviddavis/temp/20141218174536
+  (daviddavis@redhat.com)
+- fixes #8768 - fixing pulp glue tests in live mode (jsherril@redhat.com)
+- fixes #8598 - fixing repository delete current user was not set during
+  finalize phase (jsherril@redhat.com)
+- fixes #8770 - delay node metadata sync to 2nd action (jsherril@redhat.com)
+- Merge pull request #4881 from stbenjam/8354 (stephen@bitbin.de)
+- Merge pull request #4882 from stbenjam/8703 (stephen@bitbin.de)
+- Fixes #8655: Show content view and environment pairings for library
+  repositories. (ericdhelms@gmail.com)
+- Fixes #8763 - Remove unnecessary ignore blocks (daviddavis@redhat.com)
+- Merge pull request #4829 from stbenjam/7480-fix (stephen@bitbin.de)
+- fixes #8703 - fix promotion notification mail (stbenjam@redhat.com)
+- fixes #8354 - truncate long erratum titles (stbenjam@redhat.com)
+- fixes #8687 - rewire sync_plan for scoped search (sloranz@xantham.com)
+- Merge pull request #4818 from waldenraines/7953 (walden@redhat.com)
+- Fixes #7953: add product/repositories list for an erratum.
+  (walden@redhat.com)
+- Merge pull request #4875 from steveloranz/rm7892 (jlsherrill@gmail.com)
+- Merge pull request #4873 from ehelms/refs-8679 (eric.d.helms@gmail.com)
+- fixes #8686 - rewire gpg_keys for scoped search (sloranz@xantham.com)
+- fixes #8188 - adding api to determine what inc update is needed
+  (jsherril@redhat.com)
+- Merge pull request #4844 from jlsherrill/inc_update (jlsherrill@gmail.com)
+- Merge pull request #4871 from jlsherrill/6637 (jlsherrill@gmail.com)
+- fixes #8306,8177,8180 - adding incremnetal update api (jsherril@redhat.com)
+- Merge pull request #4867 from ehelms/fixes-8668 (eric.d.helms@gmail.com)
+- Merge pull request #4872 from jlsherrill/maruku (jlsherrill@gmail.com)
+- Refs #8679: Update comps for new katello installer breakout.
+  (ericdhelms@gmail.com)
+- fixes #8681 - removing requirements for maruku (jsherril@redhat.com)
+- fixes #6637 - loosening url validation restrictions (jsherril@redhat.com)
+- Merge pull request #4863 from dustints/bonus_subs (dtsang@redhat.com)
+- Merge pull request #4869 from jlsherrill/8675 (jlsherrill@gmail.com)
+- Merge pull request #4862 from waldenraines/8626 (walden@redhat.com)
+- Fixes #8519 - Bonus subs not being reindexed (dtsang@redhat.com)
+- fixes #8675 - updating rubocop.yml for bastion_katello (jsherril@redhat.com)
+- Fixes #8626: ensure errata icons line up, BZ 1171310. (walden@redhat.com)
+- Merge pull request #4848 from cfouant/actkey-dynflow-update
+  (cfouant@redhat.com)
+- Fixes #8668: Hide 'Server' kickstart repositories from enablement.
+  (ericdhelms@gmail.com)
+- refs #8596 - adding foreman_sam and hammer-cli-sam to comps
+  (komidore64@gmail.com)
+- Merge pull request #4860 from komidore64/foreman-gutterball-comps
+  (komidore64@gmail.com)
+- Merge pull request #4859 from jlsherrill/8606 (jlsherrill@gmail.com)
+- refs #8584 - foreman-gutterball and gutterball to comps
+  (komidore64@gmail.com)
+- Merge pull request #4839 from cfouant/errors (cfouant@redhat.com)
+- Merge pull request #4855 from daviddavis/temp/20141208110820
+  (daviddavis@redhat.com)
+- Merge pull request #4833 from jlsherrill/8491 (jlsherrill@gmail.com)
+- fixes #7480 - disown foreman templates (stbenjam@redhat.com)
+- Merge pull request #4858 from jmontleon/relax-qpid_messagining-dependency
+  (jlsherrill@gmail.com)
+- fixes #8606 - fixing puppet module index (jsherril@redhat.com)
+- Fixes #8615 - relax qpid_messaging dependency (jmontleo@redhat.com)
+- Merge pull request #4852 from thomasmckay/7176-sub-host-guest
+  (thomasmckay@redhat.com)
+- fixes #7176 - display hypervisor/guest info for subscription
+  (thomasmckay@redhat.com)
+- BuildRequires needs to be updated as well (jmontleo@redhat.com)
+- Fixes #8610 - Adding search param to repo content api (daviddavis@redhat.com)
+- fixes #7667 - promotion errata mail notification (stbenjam@redhat.com)
+- fixes #7666 - sync errata mail notification (stbenjam@redhat.com)
+- fixes #7668 - host errata mail notification (stbenjam@redhat.com)
+- fixes #8480 - Adds default setting for act key autoattach, BZ 1166889
+  (cfouant@redhat.com)
+- fixes #8491 - removing puppet modules list from content view version api
+  (jsherril@redhat.com)
+- fixes #8588 - make repo indexing idempotent (stbenjam@redhat.com)
+- Fixes #7603,7792,7789 - Code to promote/publish dockered cv's
+  (paji@redhat.com)
 - Merge pull request #4845 from ehelms/fixes-8553 (eric.d.helms@gmail.com)
 - Merge pull request #4842 from daviddavis/temp/20141203185737
   (daviddavis@redhat.com)
+- fixes #8549 - Fixes subscription error messages for act key, BZ 1154619
+  (cfouant@redhat.com)
 - Merge pull request #4841 from stbenjam/7695 (stephen@bitbin.de)
 - Fixes #7845 - Allows user to delete custom product (aruzicka@redhat.com)
 - fixes #7695, #7677 - enable searching errata by issued/updated times

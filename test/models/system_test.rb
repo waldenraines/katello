@@ -103,41 +103,6 @@ module Katello
       @system.destroy
     end
 
-    def test_update_lifecycle_environment_and_content_view_updates_foreman_host
-      Environment.any_instance.stubs(:content_view_puppet_environment).returns(
-          ContentViewPuppetEnvironment.find(katello_content_view_puppet_environments(:dev_view_puppet_environment)))
-
-      ContentViewPuppetEnvironment.any_instance.stubs(:puppet_environment).returns(Environment.find(environments(:testing)))
-
-      # we are making an update to the system that should result in a change to the foreman host's puppet environment
-      @system.foreman_host.expects(:save!)
-      @system.save!
-    end
-
-    def test_update_lifecycle_environment_and_content_view_does_not_foreman_host
-      ContentViewPuppetEnvironment.any_instance.stubs(:puppet_environment).returns(Environment.find(environments(:testing)))
-
-      # we are making an update to the system that should NOT result in a change to the foreman host's puppet environment
-      # (by default, the fixtures have the foreman host associated with a puppet environment that has no
-      # content view or lifecycle environment; therefore, we should not alter it)
-      @system.foreman_host.expects(:save!).never
-      @system.save!
-    end
-
-    def test_update_lifecycle_environment_and_content_view_raises_error
-      Environment.any_instance.stubs(:content_view_puppet_environment).returns(
-          ContentViewPuppetEnvironment.find(katello_content_view_puppet_environments(:dev_view_puppet_environment)))
-
-      # unable to locate a foreman puppet environment that is associated with the content view
-      ContentViewPuppetEnvironment.any_instance.stubs(:puppet_environment).returns(nil)
-
-      # If a puppet environment cannot be found for the lifecycle environment + content view
-      # combination, then an error should be raised
-      assert_raises Errors::NotFound do
-        @system.save!
-      end
-    end
-
     def test_update_does_not_update_foreman_host
       foreman_host = FactoryGirl.create(:host)
       @system2 = System.find(katello_systems(:simple_server2))
@@ -196,6 +161,20 @@ module Katello
       assert_equal lib_applicable, @errata_system.applicable_errata
       refute_equal lib_applicable, @errata_system.available_errata
       assert_include @errata_system.available_errata, Erratum.find(katello_errata(:security))
+    end
+
+    def test_with_unavailable_errata
+      @view_repo = Katello::Repository.find(katello_repositories(:rhel_6_x86_64_library_view_1))
+      @errata_system.bound_repositories = [@view_repo]
+      @errata_system.save!
+
+      unavailable = @errata_system.applicable_errata - @errata_system.available_errata
+      refute_empty unavailable
+      systems = System.with_unavailable_errata([unavailable.first])
+      assert_include systems, @errata_system
+
+      systems = System.with_unavailable_errata([@errata_system.available_errata.first])
+      refute systems.include?(@errata_system)
     end
 
     def test_available_errata_other_view

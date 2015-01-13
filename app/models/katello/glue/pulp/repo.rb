@@ -322,10 +322,8 @@ module Katello
             erratum.update_from_json(erratum_json)
           end
         end
-        ActiveRecord::Base.transaction do
-          Katello::RepositoryErratum.where(:repository_id => self.id).delete_all
-          Katello::Erratum.insert_repository_associations(self, errata_ids)
-        end
+
+        Katello::Erratum.sync_repository_associations(self, errata_ids)
       end
 
       def errata_json
@@ -338,21 +336,16 @@ module Katello
         tmp_errata
       end
 
-      def index_db_docker_images(force = false)
-        ActiveRecord::Base.transaction do
-          docker_tags.destroy_all
+      def index_db_docker_images
+        docker_tags.destroy_all
 
-          if self.content_view.default? || force
-            docker_images_json.each do |image_json|
-              image = DockerImage.find_or_create_by_katello_uuid(image_json[:_id])
-              image.update_from_json(image_json)
-              create_docker_tags(image, image_json[:tags])
-            end
-          end
-
-          Katello::RepositoryDockerImage.where(:repository_id => self.id).delete_all
-          DockerImage.insert_repository_associations(self, docker_image_ids)
+        docker_images_json.each do |image_json|
+          image = DockerImage.find_or_create_by_uuid(image_json[:_id])
+          image.update_from_json(image_json)
+          create_docker_tags(image, image_json[:tags])
         end
+
+        DockerImage.sync_repository_associations(self, docker_image_ids)
       end
 
       def docker_images_json
@@ -377,7 +370,7 @@ module Katello
         return if tags.empty?
 
         tags.each do |tag|
-          DockerTag.find_or_create_by_katello_repository_id_and_docker_image_id_and_tag!(id, image.id, tag)
+          DockerTag.find_or_create_by_repository_id_and_docker_image_id_and_name!(id, image.id, tag)
         end
       end
 
@@ -469,6 +462,16 @@ module Katello
 
       def docker_image_ids
         Katello.pulp_server.extensions.repository.docker_image_ids(self.pulp_id)
+      end
+
+      def docker_image_count
+        self.docker_images.count
+      end
+
+      def docker_image_tag_hash
+        docker_tags.map do |tag|
+          {:tag => tag.name, :image_id => tag.docker_image.image_id}
+        end
       end
 
       def distribution?(id)

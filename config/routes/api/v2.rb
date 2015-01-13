@@ -94,6 +94,9 @@ Katello::Engine.routes.draw do
           member do
             post :promote
           end
+          collection do
+            post :incremental_update
+          end
         end
 
         api_resources :docker_images, :only => [:index, :show]
@@ -116,6 +119,7 @@ Katello::Engine.routes.draw do
 
         api_resources :gpg_keys, :only => [:index, :show, :create, :update, :destroy] do
           post :content, :on => :member
+          get :auto_complete_search, :on => :collection
         end
 
         api_resources :host_collections, :only => [:index, :show, :create, :update, :destroy] do
@@ -226,6 +230,9 @@ Katello::Engine.routes.draw do
               put :add_products
               put :remove_products
             end
+            collection do
+              get :auto_complete_search
+            end
           end
           api_resources :systems, :only => [:create] do
             get :report, :on => :collection
@@ -265,6 +272,7 @@ Katello::Engine.routes.draw do
             match '/bulk/remove_content' => 'systems_bulk_actions#remove_content', :via => :put
             match '/bulk/destroy' => 'systems_bulk_actions#destroy_systems', :via => :put
             match '/bulk/environment_content_view' => 'systems_bulk_actions#environment_content_view', :via => :put
+            match '/bulk/available_incremental_updates' => 'systems_bulk_actions#available_incremental_updates', :via => :post
           end
           resource :packages, :only => [], :controller => :system_packages do
             collection do
@@ -367,7 +375,9 @@ Katello::Engine.routes.draw do
           get :report, :on => :collection
         end
 
-        api_resources :sync_plans, :only => [:index, :show, :update, :destroy]
+        api_resources :sync_plans, :only => [:index, :show, :update, :destroy] do
+          get :auto_complete_search, :on => :collection
+        end
 
       end # module v2
 

@@ -45,11 +45,11 @@ templates.each do |template|
   ConfigTemplate.find_or_create_by_name(template).update_attributes(defaults.merge(template))
 end
 
-# Take ownership of Foreman templates we rely on
+# Make some Foreman templates default so they automatically get added to new orgs like our Katello templates
 templates = ["puppet.conf", "freeipa_register", "Kickstart default iPXE", "Kickstart default PXELinux", "PXELinux global default"]
 
 ConfigTemplate.where(:name => templates).each do |template|
-  template.update_attributes(defaults)
+  template.update_attribute(:default, true)
 end
 
 # Ensure all default templates are seeded into the first org and loc
@@ -134,4 +134,32 @@ Setting.find_by_name("dynflow_enable_console").update_attributes!(:value => true
 ["Pulp", "Pulp Node"].each do |input|
   f = Feature.find_or_create_by_name(input)
   fail "Unable to create proxy feature: #{format_errors f}" if f.nil? || f.errors.any?
+end
+
+# Mail Notifications
+notifications = [
+  {:name              => :katello_host_advisory,
+   :description       => N_('A summary of available and applicable errata for your hosts'),
+   :mailer            => 'Katello::ErrataMailer',
+   :method            => 'host_errata',
+   :subscription_type => 'report'
+  },
+
+  {:name              => :katello_sync_errata,
+   :description       => N_('A summary of new errata after a repository is synchronized'),
+   :mailer            => 'Katello::ErrataMailer',
+   :method            => 'sync_errata',
+   :subscription_type => 'alert'
+  },
+
+  {:name              => :katello_promote_errata,
+   :description       => N_('A post-promotion summary of hosts with available errata'),
+   :mailer            => 'Katello::ErrataMailer',
+   :method            => 'promote_errata',
+   :subscription_type => 'alert'
+  }
+]
+
+notifications.each do |notification|
+  ::MailNotification.find_or_create_by_name(notification)
 end

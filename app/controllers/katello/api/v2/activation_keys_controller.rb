@@ -59,7 +59,7 @@ module Katello
     api :PUT, "/activation_keys/:id", N_("Update an activation key")
     param :id, :identifier, :desc => N_("ID of the activation key"), :required => true
     param :organization_id, :number, :desc => N_("organization identifier"), :required => true
-    param :name, String, :desc => N_("name"), :required => true
+    param :name, String, :desc => N_("name"), :required => false
     param :description, String, :desc => N_("description")
     param :environment_id, :identifier, :desc => N_("environment id")
     param :content_view_id, :identifier, :desc => N_("content view id")
@@ -69,7 +69,7 @@ module Katello
     param :service_level, String, :desc => N_("service level")
     param :auto_attach, :bool, :desc => N_("auto attach subscriptions upon registration")
     def update
-      @activation_key.update_attributes!(activation_key_params)
+      sync_task(::Actions::Katello::ActivationKey::Update, @activation_key, activation_key_params)
       respond_for_show(:resource => @activation_key)
     end
 

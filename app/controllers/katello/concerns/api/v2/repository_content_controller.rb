@@ -33,6 +33,7 @@ module Katello
       param :content_view_filter_id, :identifier, :desc => N_("content view filter identifier")
       param :repository_id, :number, :desc => N_("repository identifier")
       param :environment_id, :number, :desc => N_("environment identifier")
+      param_group :search, ::Katello::Api::V2::ApiController
       def index
         options = sort_params
         options[:filters] = []
@@ -43,7 +44,16 @@ module Katello
         options = filter_by_environment(@environment, options) if @environment
         options = filter_by_content_view_filter(@filter, options) if @filter
 
-        respond(:collection => item_search(resource_class, params, options))
+        results = item_search(resource_class, params, options)
+        results[:results] = results[:results].map do  |item|
+          if resource_class.respond_to?(:new_from_search)
+            resource_class.new_from_search(item.as_json)
+          else
+            resource_class.new(item.as_json)
+          end
+        end
+
+        respond(:collection => results)
       end
 
       api :GET, "/:resource_id/:id", N_("Show :a_resource")
@@ -129,9 +139,9 @@ module Katello
           _("Package Group")
         when "Katello::PuppetModule"
           _("Puppet Module")
-        when "DockerImage"
+        when "Katello::DockerImage"
           _("Docker Image")
-        when "DockerTag"
+        when "Katello::DockerTag"
           _("Docker Tag")
         else
           fail "Can't find resource class: #{resource_class}"

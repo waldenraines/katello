@@ -75,8 +75,6 @@ module Katello
     before_create :fill_defaults
     after_create :init_default_custom_info
 
-    before_update :update_foreman_host, :if => proc { |r| r.environment_id_changed? || r.content_view_id_changed? }
-
     scope :in_environment, lambda { |env| where('environment_id = ?', env) unless env.nil? }
     scope :completer_scope, lambda { |options| readable(options[:organization_id]) }
     scope :by_uuids, lambda { |uuids| where(:uuid => uuids) }
@@ -93,6 +91,11 @@ module Katello
       ids_not_found = Set.new(uuids).subtract(systems.pluck(:uuid))
       fail Errors::NotFound, _("Systems [%s] not found.") % ids_not_found.to_a.join(',') unless ids_not_found.blank?
       systems.pluck(:id)
+    end
+
+    def self.with_unavailable_errata(errata)
+      subquery = Katello::Erratum.select("#{Katello::Erratum.table_name}.id").available_for_systems.where("#{Katello::SystemRepository.table_name}.system_id = #{System.table_name}.id").to_sql
+      self.joins(:applicable_errata).where("#{Katello::Erratum.table_name}.id" => errata).where("#{Katello::Erratum.table_name}.id NOT IN (#{subquery})").uniq
     end
 
     def add_host_collection(host_collection)
@@ -134,12 +137,13 @@ module Katello
     end
 
     def available_errata(env = nil, content_view = nil)
-      if env.nil? || content_view.nil?
-        self.applicable_errata.in_repositories(self.bound_repositories)
-      else
-        repos = Katello::Repository.in_environment(env).in_content_views([content_view])
-        self.applicable_errata.in_repositories(repos)
-      end
+      repos = if env && content_view
+                Katello::Repository.in_environment(env).in_content_views([content_view])
+              else
+                self.bound_repositories
+              end
+
+      self.applicable_errata.in_repositories(repos).uniq
     end
 
     def available_releases
@@ -348,26 +352,6 @@ module Katello
 
     def set_default_content_view
       self.content_view = self.environment.try(:default_content_view) unless self.content_view
-    end
-
-    def update_foreman_host
-      # If the lifecycle environment and/or content view are being changed for the content host
-      # (system), then we may also need to update the associated foreman host's puppet environment
-      if self.foreman_host &&
-         self.foreman_host.environment.lifecycle_environment &&
-         self.foreman_host.environment.content_view
-
-        if puppet_env = self.content_view.puppet_env(self.environment).try(:puppet_environment)
-          if puppet_env.id != self.foreman_host.environment_id
-            self.foreman_host.environment_id = puppet_env.id
-            self.foreman_host.save!
-          end
-        else
-          fail Errors::NotFound,
-               _("Couldn't find puppet environment associated with lifecycle environment '%{env}' and content view '%{view}'") %
-                   { :env => self.environment.name, :view => self.content_view.name }
-        end
-      end
     end
 
     # rubocop:disable SymbolName
