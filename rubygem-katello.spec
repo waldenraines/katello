@@ -34,7 +34,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.0
+Version: 2.2.0.1
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -240,6 +240,156 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
+* Tue Jan 13 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.1-1
+- Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge pull request #4865 from adamruzicka/dynflow-system-update
+  (jlsherrill@gmail.com)
+- Merge pull request #4899 from daviddavis/temp/20150106144038
+  (daviddavis@redhat.com)
+- Merge pull request #4864 from daviddavis/temp/20141209153047
+  (daviddavis@redhat.com)
+- Fixes #8632 - Redoing docker tables/fields (daviddavis@redhat.com)
+- Merge pull request #4896 from orrabin/8764 (daviddavis@redhat.com)
+- Merge pull request #4911 from jlsherrill/8904 (jlsherrill@gmail.com)
+- Merge pull request #4843 from ehelms/fixes-7691 (eric.d.helms@gmail.com)
+- refs #8764 - moving organization description to foreman core
+  (orabin@redhat.com)
+- fixes #8904 - fixing query breaking content view repo list
+  (jsherril@redhat.com)
+- Fixes #7691: Add repository filter to Errata list page.
+  (ericdhelms@gmail.com)
+- Merge pull request #4906 from waldenraines/8886 (walden@redhat.com)
+- refs #8635 - add hammer-cli-gutterball to comps (komidore64@gmail.com)
+- Merge pull request #4907 from waldenraines/8887 (walden@redhat.com)
+- Merge pull request #4877 from cfouant/remote-actions (cfouant@redhat.com)
+- Merge pull request #4897 from cfouant/required-name (cfouant@redhat.com)
+- Merge pull request #4879 from cfouant/lifecycle-environments
+  (cfouant@redhat.com)
+- Fixes #8887: returning correct CVE structure in rabl. (walden@redhat.com)
+- Fixes #8886: show N/A if no CVEs exist for errata. (walden@redhat.com)
+- Fixes #6184 - Dynflowizes system update. (aruzicka@redhat.com)
+- Fixes #8846 - Have the V2 api controller extend Api::V2::BaseController
+  (daviddavis@redhat.com)
+- Merge pull request #4903 from bkearney/bkearney/8858 (jlsherrill@gmail.com)
+- Merge pull request #4880 from parthaa/repo-index (parthaa@gmail.com)
+- Fixes #8858: Collect candlepin logs on RHEL7 (bkearney@redhat.com)
+- Merge pull request #4901 from ehelms/fixes-8594 (eric.d.helms@gmail.com)
+- Merge pull request #4900 from jlsherrill/8848 (jlsherrill@gmail.com)
+- Fixes #8594: Fix errata listing for content view filter regression.
+  (ericdhelms@gmail.com)
+- fixes #8848 - fixing content host errata list (jsherril@redhat.com)
+- Fixes #8743 - Repo Index returns promoted repos (paji@redhat.com)
+- Merge pull request #4878 from jlsherrill/8730 (jlsherrill@gmail.com)
+- fixes #8730 - keep track of components of composite content view versions
+  (jsherril@redhat.com)
+- fixes #8833 - Removes name requirement for act key update, BZ 1178928
+  (cfouant@redhat.com)
+- Merge pull request #4853 from
+  dustints/check_config_starting_listen_on_cp_event (dtsang@redhat.com)
+- refs #8575 - adding python-qpid-common to comps (jsherril@redhat.com)
+- Merge pull request #4838 from waldenraines/8482 (walden@redhat.com)
+- Merge pull request #4891 from stbenjam/8775 (stephen@bitbin.de)
+- fixes #8775 - ensure available errata are unique (stbenjam@redhat.com)
+- fixes #8776 - bumping gem version (jsherril@redhat.com)
+- Fixes #8771 - Remove katello_api from comps (daviddavis@redhat.com)
+- Automatic commit of package [katello] minor release [2.2.0-1].
+  (daviddavis@redhat.com)
+- Automatic commit of package [rubygem-katello] minor release [2.2.0-1].
+  (daviddavis@redhat.com)
+- Automatic commit of package [rubygem-katello] minor release [2.2.0-1].
+  (daviddavis@redhat.com)
+- Merge pull request #4887 from jlsherrill/8770 (jlsherrill@gmail.com)
+- Merge pull request #4870 from jlsherrill/inc_update_api
+  (jlsherrill@gmail.com)
+- Merge pull request #4888 from jlsherrill/8598 (jlsherrill@gmail.com)
+- Merge pull request #4886 from jlsherrill/8768 (jlsherrill@gmail.com)
+- Merge pull request #4866 from ehelms/fixes-8655 (eric.d.helms@gmail.com)
+- Merge pull request #4876 from steveloranz/8687 (jlsherrill@gmail.com)
+- Merge pull request #4885 from daviddavis/temp/20141218174536
+  (daviddavis@redhat.com)
+- fixes #8768 - fixing pulp glue tests in live mode (jsherril@redhat.com)
+- fixes #8598 - fixing repository delete current user was not set during
+  finalize phase (jsherril@redhat.com)
+- fixes #8770 - delay node metadata sync to 2nd action (jsherril@redhat.com)
+- Merge pull request #4881 from stbenjam/8354 (stephen@bitbin.de)
+- Merge pull request #4882 from stbenjam/8703 (stephen@bitbin.de)
+- Fixes #8655: Show content view and environment pairings for library
+  repositories. (ericdhelms@gmail.com)
+- Fixes #8763 - Remove unnecessary ignore blocks (daviddavis@redhat.com)
+- Merge pull request #4829 from stbenjam/7480-fix (stephen@bitbin.de)
+- fixes #8703 - fix promotion notification mail (stbenjam@redhat.com)
+- fixes #8354 - truncate long erratum titles (stbenjam@redhat.com)
+- fixes #8687 - rewire sync_plan for scoped search (sloranz@xantham.com)
+- Merge pull request #4818 from waldenraines/7953 (walden@redhat.com)
+- Fixes #7953: add product/repositories list for an erratum.
+  (walden@redhat.com)
+- fixes #8731 - sets feature flag for lifecycle environments, BZ1174944
+  (cfouant@redhat.com)
+- fixes #8729 - Sets feature flag on remote actions, BZ1174932
+  (cfouant@redhat.com)
+- Fixes #8482: add an environment filter to the errata content hosts page.
+  (walden@redhat.com)
+- Merge pull request #4875 from steveloranz/rm7892 (jlsherrill@gmail.com)
+- Merge pull request #4873 from ehelms/refs-8679 (eric.d.helms@gmail.com)
+- fixes #8686 - rewire gpg_keys for scoped search (sloranz@xantham.com)
+- fixes #8188 - adding api to determine what inc update is needed
+  (jsherril@redhat.com)
+- Merge pull request #4844 from jlsherrill/inc_update (jlsherrill@gmail.com)
+- Merge pull request #4871 from jlsherrill/6637 (jlsherrill@gmail.com)
+- fixes #8306,8177,8180 - adding incremnetal update api (jsherril@redhat.com)
+- Merge pull request #4867 from ehelms/fixes-8668 (eric.d.helms@gmail.com)
+- Merge pull request #4872 from jlsherrill/maruku (jlsherrill@gmail.com)
+- Refs #8679: Update comps for new katello installer breakout.
+  (ericdhelms@gmail.com)
+- fixes #8681 - removing requirements for maruku (jsherril@redhat.com)
+- fixes #6637 - loosening url validation restrictions (jsherril@redhat.com)
+- Merge pull request #4863 from dustints/bonus_subs (dtsang@redhat.com)
+- Merge pull request #4869 from jlsherrill/8675 (jlsherrill@gmail.com)
+- Merge pull request #4862 from waldenraines/8626 (walden@redhat.com)
+- Fixes #8519 - Bonus subs not being reindexed (dtsang@redhat.com)
+- fixes #8675 - updating rubocop.yml for bastion_katello (jsherril@redhat.com)
+- Fixes #8626: ensure errata icons line up, BZ 1171310. (walden@redhat.com)
+- Merge pull request #4848 from cfouant/actkey-dynflow-update
+  (cfouant@redhat.com)
+- Fixes #8668: Hide 'Server' kickstart repositories from enablement.
+  (ericdhelms@gmail.com)
+- refs #8596 - adding foreman_sam and hammer-cli-sam to comps
+  (komidore64@gmail.com)
+- Merge pull request #4860 from komidore64/foreman-gutterball-comps
+  (komidore64@gmail.com)
+- Merge pull request #4859 from jlsherrill/8606 (jlsherrill@gmail.com)
+- refs #8584 - foreman-gutterball and gutterball to comps
+  (komidore64@gmail.com)
+- Merge pull request #4839 from cfouant/errors (cfouant@redhat.com)
+- Merge pull request #4855 from daviddavis/temp/20141208110820
+  (daviddavis@redhat.com)
+- Merge pull request #4833 from jlsherrill/8491 (jlsherrill@gmail.com)
+- fixes #7480 - disown foreman templates (stbenjam@redhat.com)
+- Merge pull request #4858 from jmontleon/relax-qpid_messagining-dependency
+  (jlsherrill@gmail.com)
+- fixes #8606 - fixing puppet module index (jsherril@redhat.com)
+- Fixes #8615 - relax qpid_messaging dependency (jmontleo@redhat.com)
+- Merge pull request #4852 from thomasmckay/7176-sub-host-guest
+  (thomasmckay@redhat.com)
+- fixes #7176 - display hypervisor/guest info for subscription
+  (thomasmckay@redhat.com)
+- BuildRequires needs to be updated as well (jmontleo@redhat.com)
+- Fixes #8610 - Adding search param to repo content api (daviddavis@redhat.com)
+- fixes #7667 - promotion errata mail notification (stbenjam@redhat.com)
+- fixes #7666 - sync errata mail notification (stbenjam@redhat.com)
+- fixes #7668 - host errata mail notification (stbenjam@redhat.com)
+- Fixes #8552 - Don't initialize cp task if no qpid config (dtsang@redhat.com)
+- fixes #8480 - Adds default setting for act key autoattach, BZ 1166889
+  (cfouant@redhat.com)
+- fixes #8491 - removing puppet modules list from content view version api
+  (jsherril@redhat.com)
+- fixes #8588 - make repo indexing idempotent (stbenjam@redhat.com)
+- Fixes #7603,7792,7789 - Code to promote/publish dockered cv's
+  (paji@redhat.com)
+- fixes #8549 - Fixes subscription error messages for act key, BZ 1154619
+  (cfouant@redhat.com)
+
 * Fri Dec 19 2014 David Davis <daviddavis@redhat.com> 2.2.0-1
 - fatal: bad revision 'rubygem-katello-2.2.0-1..HEAD'
 
