@@ -24,7 +24,7 @@
 %global confdir common
 
 Name:           katello
-Version:        2.2.0
+Version:        2.2.0.1
 Release:        1%{?dist}
 Summary:        A package for managing application life-cycle for Linux systems
 BuildArch:      noarch
@@ -149,6 +149,13 @@ usermod -a -G katello-shared katello
 exit 0
 
 %changelog
+* Tue Jan 13 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.1-1
+- Fixes #8858: Collect candlepin logs on RHEL7 (bkearney@redhat.com)
+- Automatic commit of package [katello] minor release [2.2.0-1].
+  (daviddavis@redhat.com)
+- Automatic commit of package [rubygem-katello] minor release [2.2.0-1].
+  (daviddavis@redhat.com)
+
 * Fri Dec 19 2014 David Davis <daviddavis@redhat.com> 2.2.0-1
 - Automatic commit of package [rubygem-katello] minor release [2.2.0-1].
   (daviddavis@redhat.com)
