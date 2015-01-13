@@ -18,7 +18,7 @@
           <tr>
             <td align="center" valign="top">
               <div align="left">
-                <h2 style="font-weight: normal;"><b>KATELLO</b> PROMOTION SUMMARY</h2>
+                <h2 style="font-weight: normal;"><b>SATELLITE</b> PROMOTION SUMMARY</h2>
 
                 <% all_errata = @content_hosts.authorized_as(@user, :view_content_hosts).map(&:available_errata).flatten.sort_by(&:id).uniq %>
 

@@ -1,4 +1,4 @@
-<%= _("Katello Promotion Summary") %>
+<%= _("Satellite Promotion Summary") %>
 
 <% all_errata = @content_hosts.authorized_as(@user).map(&:available_errata).flatten.sort_by(&:id).uniq %>
 
