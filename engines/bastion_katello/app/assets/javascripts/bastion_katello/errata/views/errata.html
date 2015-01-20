@@ -6,7 +6,28 @@
     {{ 'Errata' | translate }}
   </div>
 
-  <div data-block="actions">
+  <div data-block="actions"></div>
+
+  <div data-block="filters">
+    <form>
+      <div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" ng-model="showApplicable" ng-change="toggleApplicable()"/>
+            <span translate>Only show Errata that have one or more Applicable Content Hosts.</span>
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" ng-model="showInstallable" ng-change="toggleInstallable()"/>
+            <span translate>Only show Errata that are Installable by one ore more Content Hosts</span>
+          </label>
+        </div>
+      </div>
+    </form>
   </div>
 
   <span class="input-group-addon" data-block="search-filter">
