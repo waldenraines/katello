@@ -34,7 +34,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.3
+Version: 2.2.0.4
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -242,6 +242,66 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
+* Tue Jan 20 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.4-1
+- Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge pull request #4936 from parthaa/content-counts (parthaa@gmail.com)
+- Merge pull request #4934 from parthaa/sync-bulk (parthaa@gmail.com)
+- Merge pull request #4933 from parthaa/version-details (parthaa@gmail.com)
+- Merge pull request #4939 from dustints/hc_update_name_opt (dtsang@redhat.com)
+- Fixes #8895: link to errata page from errata dashboard. (walden@redhat.com)
+- Merge pull request #4921 from cfouant/localization (cfouant@redhat.com)
+- Merge pull request #4908 from cfouant/auto-attach (cfouant@redhat.com)
+- Merge pull request #4917 from jlsherrill/8860 (jlsherrill@gmail.com)
+- Merge pull request #4924 from jlsherrill/8943 (jlsherrill@gmail.com)
+- Fixes #8960 - Handled ISE on bulk repos sync page (paji@redhat.com)
+- Fixes #8962 - CV page shows only non zero content counts in UI
+  (paji@redhat.com)
+- Fixes #8836 - CV Versions page shows docker info (paji@redhat.com)
+- Merge pull request #4915 from bkearney/bkearney/8931
+  (bryan.kearney@gmail.com)
+- Merge pull request #4925 from stbenjam/8353 (stephen@bitbin.de)
+- Fixes #8974 - HC make name optional on update (dtsang@redhat.com)
+- Fixes #8961 - Fixing a typo in the name of an action class (paji@redhat.com)
+- Merge pull request #4929 from ehelms/fixes-7755 (eric.d.helms@gmail.com)
+- Merge pull request #4918 from ehelms/refs-8934 (eric.d.helms@gmail.com)
+- Fixes #7755: Use product label to make media unique. (ericdhelms@gmail.com)
+- Refs #8934: Set menu links to disable turbo links support.
+  (ericdhelms@gmail.com)
+- fixes #8943 - do not perform post sync actions until after the sync is
+  finished (jsherril@redhat.com)
+- Merge pull request #4912 from jlsherrill/8326 (jlsherrill@gmail.com)
+- Merge pull request #4909 from thomasmckay/8893-katello-agent
+  (thomasmckay@redhat.com)
+- fixes #8353 - require all neccessary pulp packages in RPM
+  (stbenjam@redhat.com)
+- Merge pull request #4920 from daviddavis/temp/20150113150533
+  (daviddavis@redhat.com)
+- Fixes #8933 - Turn off content type check for routes (daviddavis@redhat.com)
+- fixes #8326 - fixing errata queries due to ambiguous sort
+  (jsherril@redhat.com)
+- Merge pull request #4919 from cfouant/revert-flags (cfouant@redhat.com)
+- fixes #8936 - fixes localization to help message, BZ1143859
+  (cfouant@redhat.com)
+- Merge pull request #4916 from waldenraines/8924 (walden@redhat.com)
+- fixes #8935 - reverts table columns for SAM feature flags
+  (cfouant@redhat.com)
+- Fixes #8924: add last_sync_words to sync plan rabl, bz 1130300.
+  (walden@redhat.com)
+- Merge pull request #4914 from bkearney/bkearney/8928
+  (bryan.kearney@gmail.com)
+- Merge pull request #4868 from cfouant/custom-products (cfouant@redhat.com)
+- fixes #8860 - fixing clean_backend_objects rake task (jsherril@redhat.com)
+- Fixes #8931 - Update the text for the filter to address typo
+  (bkearney@redhat.com)
+- Fixes #8928 : Text on publish screen is not grammatically correct
+  (bkearney@redhat.com)
+- fixes #8671, #8684 - Hides custom products from SAM users, hides gpg keys
+  from red hat products, BZ1173340, BZ1173764 (cfouant@redhat.com)
+- fixes #8893 - hide katello-agent info (thomasmckay@redhat.com)
+- fixes #8891 - adds auto-attach to api/cli output, BZ1180285
+  (cfouant@redhat.com)
+
 * Tue Jan 13 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.3-1
 - fixes BZ1161809 - brand e-mail notifications (stbenjam@redhat.com)
 - Automatic commit of package [katello] release [2.2.0.1-1-sat].
