@@ -34,7 +34,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.4
+Version: 2.2.0.5
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -242,6 +242,9 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
+* Wed Jan 21 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.5-1
+- relax qpid_messaging dependency to support MRG 3.1 (jmontleo@redhat.com)
+
 * Tue Jan 20 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.4-1
 - Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
   (jmontleo@redhat.com)
