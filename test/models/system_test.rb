@@ -12,6 +12,7 @@
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt.
 
 require File.expand_path("system_base", File.dirname(__FILE__))
+require 'support/host_support'
 
 module Katello
   class SystemClassTest < SystemTestBase
@@ -148,10 +149,10 @@ module Katello
     end
 
     def test_available_and_applicable_errta
-      assert_equal @errata_system.applicable_errata, @errata_system.available_errata
+      assert_equal @errata_system.applicable_errata, @errata_system.installable_errata
     end
 
-    def test_available_errata
+    def test_installable_errata
       lib_applicable = @errata_system.applicable_errata
 
       @view_repo = Katello::Repository.find(katello_repositories(:rhel_6_x86_64_library_view_1))
@@ -159,8 +160,8 @@ module Katello
       @errata_system.save!
 
       assert_equal lib_applicable, @errata_system.applicable_errata
-      refute_equal lib_applicable, @errata_system.available_errata
-      assert_include @errata_system.available_errata, Erratum.find(katello_errata(:security))
+      refute_equal lib_applicable, @errata_system.installable_errata
+      assert_include @errata_system.installable_errata, Erratum.find(katello_errata(:security))
     end
 
     def test_with_unavailable_errata
@@ -168,19 +169,81 @@ module Katello
       @errata_system.bound_repositories = [@view_repo]
       @errata_system.save!
 
-      unavailable = @errata_system.applicable_errata - @errata_system.available_errata
+      unavailable = @errata_system.applicable_errata - @errata_system.installable_errata
       refute_empty unavailable
       systems = System.with_unavailable_errata([unavailable.first])
       assert_include systems, @errata_system
 
-      systems = System.with_unavailable_errata([@errata_system.available_errata.first])
+      systems = System.with_unavailable_errata([@errata_system.installable_errata.first])
       refute systems.include?(@errata_system)
     end
 
     def test_available_errata_other_view
-      available_in_view = @errata_system.available_errata(@library, @library_view)
+      available_in_view = @errata_system.installable_errata(@library, @library_view)
       assert_equal 1, available_in_view.length
       assert_include available_in_view, Erratum.find(katello_errata(:security))
+    end
+  end
+
+  class SystemHostTest < SystemTestBase
+    def setup
+      super
+      foreman_host = FactoryGirl.create(:host)
+      @system.host_id = foreman_host.id
+      @system.content_view = @library_view
+      @system.environment = @library
+      @system.save!
+    end
+
+    def setup_puppet_env(view, environment)
+      puppet_env = ::Environment.create!(:name => 'blah')
+
+      cvpe = view.version(environment).puppet_env(environment)
+      cvpe.puppet_environment = puppet_env
+      cvpe.save!
+    end
+
+    def test_update_lifecycle_environment_and_content_view_updates_foreman_host
+      setup_puppet_env(@library_dev_staging_view, @dev)
+      Support::HostSupport.setup_host_for_view(@system.foreman_host, @library_view, @library, true)
+      @system.reload
+      @system.environment = @dev
+      @system.content_view = @library_dev_staging_view
+      @system.save!
+
+      host = Host.find(@system.foreman_host)
+      assert_equal host.lifecycle_environment, @dev
+      assert_equal host.content_view, @library_dev_staging_view
+      assert_equal host.environment.content_view, @library_dev_staging_view
+      assert_equal host.environment.lifecycle_environment, @dev
+    end
+
+    def test_update_content_view_mistmatch
+      Support::HostSupport.setup_host_for_view(@system.foreman_host, @library_dev_staging_view, @dev, true)
+
+      @system.foreman_host.update_column(:lifecycle_environment_id, @library) #now the host's puppet environment doesn't match its cv and lifecycle env
+      @system.reload
+
+      @system.content_view = @library_dev_staging_view
+      @system.save!
+
+      host = Host.find(@system.foreman_host)
+      assert_equal host.lifecycle_environment, @library
+      assert_equal host.content_view, @library_dev_staging_view
+      assert_equal host.environment.content_view, @library_dev_staging_view #puppet environment is not updated
+      assert_equal host.environment.lifecycle_environment, @dev
+    end
+
+    def test_update_lifecycle_environment_and_content_view_raises_error
+      Support::HostSupport.setup_host_for_view(@system.foreman_host, @library_dev_staging_view, @dev, true)
+
+      @system.content_view = @acme_default
+      @system.environment = @library
+      # If a puppet environment cannot be found for the lifecycle environment + content view
+      # combination, then an error should be raised
+      assert_raises Errors::NotFound do
+        @system.save!
+      end
     end
   end
 end

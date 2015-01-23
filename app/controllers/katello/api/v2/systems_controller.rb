@@ -193,7 +193,7 @@ module Katello
     api :PUT, "/systems/:id/refresh_subscriptions", N_("Trigger a refresh of subscriptions, auto-attaching if enabled"), :deprecated => true
     param :id, String, :desc => N_("UUID of the content host"), :required => true
     def refresh_subscriptions
-      @system.refresh_subscriptions
+      sync_task(::Actions::Katello::System::AutoAttachSubscriptions, @system)
       respond_for_show(:resource => @system)
     end
 
@@ -210,14 +210,14 @@ module Katello
         fail _("either both parameters 'content_view_id' and 'environment_id' should be specified or neither should be specified")
       end
 
-      errata = @system.available_errata(@environment, @content_view)
+      errata = @system.installable_errata(@environment, @content_view)
       response = {
         :records  => errata.sort_by { |e| e.issued }.reverse,
         :subtotal => errata.count,
         :total    => errata.count
       }
 
-      @available_errata_ids = @system.available_errata.pluck("#{Katello::Erratum.table_name}.id")
+      @installable_errata_ids = @system.installable_errata.pluck("#{Katello::Erratum.table_name}.id")
       respond_for_index :collection => response
     end
 

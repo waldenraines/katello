@@ -10,15 +10,22 @@
 # have received a copy of GPLv2 along with this software; if not, see
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt.
 
-Foreman::Application.routes.draw do
-  match "/api/v2/organizations/*all", to: proc { [404, {}, ['']] }
-  match "/api/v1/organizations/:id", via: :delete, to: proc { [404, {}, ['']] }
+module Actions
+  module Candlepin
+    module Consumer
+      class AutoAttachSubscriptions < Candlepin::Abstract
+        input_format do
+          param :uuid, String
+        end
 
-  resources :operatingsystems, :only => [] do
-    get 'available_kickstart_repo', :on => :member
-  end
+        def plan(system)
+          plan_self(:uuid => system.uuid)
+        end
 
-  resources :hosts, :only => [] do
-    get 'puppet_environment_for_content_view', :on => :collection
+        def run
+          ::Katello::Resources::Candlepin::Consumer.refresh_entitlements(input[:uuid])
+        end
+      end
+    end
   end
 end
