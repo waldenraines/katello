@@ -9,21 +9,15 @@
   <div data-block="actions"></div>
 
   <div data-block="filters">
-    <form>
-      <div>
-        <label class="checkbox-inline">
-          <input type="checkbox" ng-model="showApplicable" ng-change="toggleApplicable()"/>
-          <span translate>Only show Errata that have one or more Applicable Content Hosts.</span>
-        </label>
-      </div>
+    <label class="checkbox-inline">
+      <input type="checkbox" ng-model="showApplicable" ng-change="toggleApplicable()"/>
+      <span translate>Applicable</span>
+    </label>
 
-      <div>
-        <label class="checkbox-inline">
-          <input type="checkbox" ng-model="showInstallable" ng-change="toggleInstallable()"/>
-          <span translate>Only show Errata that are Installable by one ore more Content Hosts</span>
-        </label>
-      </div>
-    </form>
+    <label class="checkbox-inline">
+      <input type="checkbox" ng-model="showInstallable" ng-change="toggleInstallable()"/>
+      <span translate>Installable</span>
+    </label>
   </div>
 
   <span class="input-group-addon" data-block="search-filter">
