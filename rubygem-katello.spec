@@ -34,7 +34,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.5
+Version: 2.2.0.6
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -242,6 +242,42 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
+* Fri Jan 23 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.6-1
+- allow qpid_messaging 0.30 (jmontleo@redhat.com)
+- Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge pull request #4944 from daviddavis/9011 (daviddavis@redhat.com)
+- Merge pull request #4952 from bkearney/bkearney/9079 (jlsherrill@gmail.com)
+- Merge pull request #4943 from waldenraines/8652 (walden@redhat.com)
+- Fixes #9079 - Add /var/lib/mongodb to the foreman-debug collection
+  (bkearney@redhat.com)
+- Merge pull request #4926 from thomasmckay/8941-auto-attach
+  (thomasmckay@redhat.com)
+- fixes #8941 - dynflow refresh subscriptions (auto-attach)
+  (thomasmckay@redhat.com)
+- Merge pull request #4945 from waldenraines/7676 (walden@redhat.com)
+- Fixes #7676 - order dashboard errata list by errata updated date.
+  (walden@redhat.com)
+- Merge pull request #4910 from jlsherrill/8563 (jlsherrill@gmail.com)
+- Merge pull request #4946 from waldenraines/8870 (walden@redhat.com)
+- Merge pull request #4898 from jlsherrill/8574 (jlsherrill@gmail.com)
+- fixes #8174 - specify capsule-supported gpg key url (jsherril@redhat.com)
+- Fixes #8870 - add applicable systems errata count to errata list.
+  (walden@redhat.com)
+- Merge pull request #4922 from ehelms/fixes-8621 (eric.d.helms@gmail.com)
+- Merge pull request #4940 from waldenraines/8971 (walden@redhat.com)
+- Fixes #9011 - Skip deleting products during manifest actions
+  (daviddavis@redhat.com)
+- Fixes #8652: replace errata content search links (walden@redhat.com)
+- Fixes #8971: rename "Available" to "Installable" Errata, bz 1182604.
+  (walden@redhat.com)
+- fixes #8574 - separating host content view & life env from puppet env
+  (jsherril@redhat.com)
+- Fixes #8621: Set sync plan on product during repository creation.
+  (ericdhelms@gmail.com)
+- fixes #8563 - fetch package information in chunks when fetching file lists
+  (jsherril@redhat.com)
+
 * Wed Jan 21 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.5-1
 - relax qpid_messaging dependency to support MRG 3.1 (jmontleo@redhat.com)
 
