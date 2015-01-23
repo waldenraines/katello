@@ -9,7 +9,9 @@
   <div data-block="actions"></div>
 
   <div data-block="search-filter">
-    <select ng-model="repository" ng-options="repository.name for (id, repository) in repositories"></select>
+    <div class="col-sm-3">
+      <select class="form-control" ng-model="repository" ng-options="repository.name for (id, repository) in repositories"></select>
+    </div>
 
     <label class="checkbox-inline">
       <input type="checkbox" ng-model="showApplicable" ng-change="toggleApplicable()"/>
