@@ -8,7 +8,9 @@
 
   <div data-block="actions"></div>
 
-  <div data-block="filters">
+  <span class="input-group-addon" data-block="search-filter">
+    <select ng-model="repository" ng-options="repository.name for (id, repository) in repositories"></select>
+
     <label class="checkbox-inline">
       <input type="checkbox" ng-model="showApplicable" ng-change="toggleApplicable()"/>
       <span translate>Applicable</span>
@@ -18,10 +20,5 @@
       <input type="checkbox" ng-model="showInstallable" ng-change="toggleInstallable()"/>
       <span translate>Installable</span>
     </label>
-  </div>
-
-  <span class="input-group-addon" data-block="search-filter">
-    <select ng-model="repository" ng-options="repository.name for (id, repository) in repositories"></select>
   </span>
-
 </div>
