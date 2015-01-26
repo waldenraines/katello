@@ -6,11 +6,11 @@
 
 <section class="details" ng-show="selectedContentHosts">
   <div bst-alert success-messages="successMessages" error-messages="errorMessages"></div>
-  <h3 ng-show="errata" translate>Apply {{ errata.id }}</h3>
+  <h3 ng-show="errata" translate>Apply {{ errata.errata_id }}</h3>
 
   <section ng-hide="updates">
     <p translate ng-show="errata">
-      Apply {{ errata.id }} to {{ selectedContentHosts.included.ids.length }} Content Host(s)?
+      Apply {{ errata.errata_id }} to {{ selectedContentHosts.included.ids.length }} Content Host(s)?
     </p>
     <p translate ng-hide="errata">
       Apply {{ errataIds.length }} Errata to {{ selectedContentHosts.included.ids.length }} Content Host(s)?

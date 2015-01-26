@@ -16,6 +16,7 @@
  * @name  Bastion.errata.controller:ApplyErrataController
  *
  * @requires $scope
+ * @requires $window
  * @requires translate
  * @requires ContentHostBulkAction
  * @requires ContentViewVersion
@@ -25,9 +26,12 @@
  *   Display confirmation screen and apply Errata.
  */
 angular.module('Bastion.errata').controller('ApplyErrataController',
-    ['$scope', 'translate', 'ContentHostBulkAction', 'ContentViewVersion', 'CurrentOrganization',
-        function ($scope, translate, ContentHostBulkAction, ContentViewVersion, CurrentOrganization) {
+    ['$scope', '$window', 'translate', 'ContentHostBulkAction', 'ContentViewVersion', 'CurrentOrganization',
+        function ($scope, $window, translate, ContentHostBulkAction, ContentViewVersion, CurrentOrganization) {
             var applyErrata, incrementalUpdate;
+
+            $scope.successMessages = [];
+            $scope.errorMessages = [];
 
             incrementalUpdate = function () {
                 var success, error, params = {};
@@ -37,7 +41,7 @@ angular.module('Bastion.errata').controller('ApplyErrataController',
                 };
 
                 params['content_view_version_environments'] = [];
-		params['propagate_to_composites'] = true;
+                params['propagate_to_composites'] = true;
 
                 angular.forEach($scope.updates, function (update) {
                     var incrementalUpdate = {
@@ -49,8 +53,7 @@ angular.module('Bastion.errata').controller('ApplyErrataController',
                 });
 
                 success = function (response) {
-                    $scope.successMessages = [translate("Successfully scheduled installation of errata")];
-                    $scope.transitionTo('tasks.details', {taskId: response['id']});
+                    $window.location.href = '/foreman_tasks/tasks/' + response['id'];
                 };
 
                 error = function (response) {
