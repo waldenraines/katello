@@ -18,8 +18,10 @@
        <packagereq type="default">katello-all</packagereq>
        <packagereq type="default">katello-api-docs</packagereq>
        <packagereq type="default">katello-certs-tools</packagereq>
+       <packagereq type="default">katello-common</packagereq>
        <packagereq type="default">katello-repos</packagereq>
        <packagereq type="default">katello-repos-testing</packagereq>
+       <packagereq type="default">katello-sam</packagereq>
        <packagereq type="default">katello-utils</packagereq>
        <packagereq type="default">lucene4</packagereq>
        <packagereq type="default">lucene4-contrib</packagereq>
@@ -124,6 +126,7 @@
        <packagereq type="default">katello-installer</packagereq>
        <packagereq type="default">katello-devel-installer</packagereq>
        <packagereq type="default">capsule-installer</packagereq>
+       <packagereq type="default">sam-installer</packagereq>
        <packagereq type="default">rubygem-ansi</packagereq>
        <packagereq type="default">rubygem-clamp</packagereq>
        <packagereq type="default">rubygem-hashie</packagereq>
