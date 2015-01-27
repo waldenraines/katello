@@ -24,7 +24,7 @@
 %global confdir common
 
 Name:           katello
-Version:        2.2.0.1
+Version:        2.2.0.2
 Release:        1%{?dist}
 Summary:        A package for managing application life-cycle for Linux systems
 BuildArch:      noarch
@@ -186,6 +186,17 @@ Package that installs only the Subscription and basic Content Management parts o
 %files sam
 
 %changelog
+* Tue Jan 27 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.2-1
+- Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge pull request #4923 from mccun934/20150109-1447 (mmccune@gmail.com)
+- Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- refs 8213 - split out katello package into modular sub-packages
+  (mmccune@redhat.com)
+- Fixes #9079 - Add /var/lib/mongodb to the foreman-debug collection
+  (bkearney@redhat.com)
+
 * Tue Jan 13 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.1-1
 - Fixes #8858: Collect candlepin logs on RHEL7 (bkearney@redhat.com)
 - Automatic commit of package [katello] minor release [2.2.0-1].
