@@ -34,7 +34,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.6
+Version: 2.2.0.7
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -242,6 +242,32 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
+* Tue Jan 27 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.7-1
+- Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge pull request #4927 from steveloranz/8951 (eric.d.helms@gmail.com)
+- Merge pull request #4953 from jlsherrill/errataids (jlsherrill@gmail.com)
+- fixes #9051 - add errata_ids param to systems index (jsherril@redhat.com)
+- Merge pull request #4957 from daviddavis/rubocop28 (daviddavis@redhat.com)
+- Merge pull request #4954 from jlsherrill/clean (jlsherrill@gmail.com)
+- Merge pull request #4923 from mccun934/20150109-1447 (mmccune@gmail.com)
+- Refs #9099 - Update rubocop to 0.28 (daviddavis@redhat.com)
+- refs #8213 - add sam-installer to comps (mmccune@redhat.com)
+- Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge pull request #4883 from jlsherrill/inc_components
+  (jlsherrill@gmail.com)
+- Merge pull request #4951 from waldenraines/8307 (walden@redhat.com)
+- Fixes #8307 - allow filtering of Errata by available/installable.
+  (walden@redhat.com)
+- refs 8213 - split out katello package into modular sub-packages
+  (mmccune@redhat.com)
+- refs #8860 - updating clean backend objects to handle missing pulp entries
+  (jsherril@redhat.com)
+- Fixes #8951 - add host collection BZ1143029 (sloranz@xantham.com)
+- fixes #8194 - adding ability to update composites as part of a content view
+  update (jsherril@redhat.com)
+
 * Fri Jan 23 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.6-1
 - allow qpid_messaging 0.30 (jmontleo@redhat.com)
 - Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
