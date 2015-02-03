@@ -34,7 +34,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.8
+Version: 2.2.0.9
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -241,6 +241,15 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
+* Tue Feb 03 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.9-1
+- Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge pull request #4965 from ehelms/fixes-9167 (eric.d.helms@gmail.com)
+- Merge pull request #4967 from waldenraines/9181 (walden@redhat.com)
+- Fixes #9167: Fix chained scopes when using scoped_search in API
+  (ericdhelms@gmail.com)
+- Fixes #9181: fix sorting on Errata ID table column. (walden@redhat.com)
+
 * Tue Feb 03 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.8-1
 - Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
   (jmontleo@redhat.com)
