@@ -1,7 +1,7 @@
 <span page-title ng-model="errata">{{ 'Errata: ' | translate }} {{ errata.title }}</span>
 
 <div class="loading-mask loading-mask-panel" ng-show="panel.loading">
-  <i class="icon-spinner icon-spin"></i>
+  <i class="fa fa-spinner fa-spin"></i>
   {{ "Loading..." | translate }}
 </div>
 
@@ -12,7 +12,7 @@
 
     <div class="details-actions fr">
       <button class="btn btn-default" ui-sref="errata.index">
-        <i class="icon-remove"></i>
+        <i class="fa fa-remove"></i>
         {{ "Close" | translate }}
       </button>
     </div>
@@ -27,7 +27,7 @@
           </span>
         </a>
       </li>
-      <li ng-class="{active: isState('errata.details.content-hosts')}">
+      <li ng-class="{active: isState('errata.details.content-hosts') || isState('errata.details.apply')}">
         <a ui-sref="errata.details.content-hosts">
           <span translate>
             Content Hosts
@@ -44,7 +44,7 @@
     </ul>
   </nav>
 
-  <div bst-alert success-messages="successMessages" error-messages="errorMessages"></div>
+  <div bst-alerts success-messages="successMessages" error-messages="errorMessages"></div>
 
   <section ui-view></section>
 </section>

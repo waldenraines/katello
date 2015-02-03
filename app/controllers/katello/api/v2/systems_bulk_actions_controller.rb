@@ -12,6 +12,8 @@
 
 module Katello
   class Api::V2::SystemsBulkActionsController < Api::V2::ApiController
+    include Concerns::Api::V2::BulkSystemsExtensions
+
     before_filter :find_organization
     before_filter :find_host_collections, :only => [:bulk_add_host_collections, :bulk_remove_host_collections]
     before_filter :find_environment, :only => [:environment_content_view]
@@ -42,11 +44,11 @@ module Katello
 
     def_param_group :bulk_params do
       param :organization_id, :identifier, :required => true, :desc => N_("ID of the organization")
-      param :include, Hash, :required => true, :action_aware => true do
+      param :included, Hash, :required => true, :action_aware => true do
         param :search, String, :required => false, :desc => N_("Search string for systems to perform an action on")
         param :ids, Array, :required => false, :desc => N_("List of system ids to perform an action on")
       end
-      param :exclude, Hash, :required => true, :action_aware => true do
+      param :excluded, Hash, :required => true, :action_aware => true do
         param :ids, Array, :required => false, :desc => N_("List of system ids to exclude and not run an action on")
       end
     end
@@ -162,7 +164,7 @@ module Katello
     api :POST, "/systems/bulk/available_incremental_updates", N_("Given a set of systems and errata, lists the content view versions \
                                                                   and environments that need updating."), :deprecated => true
     param_group :bulk_params
-    param :errata_ids, :identifier, :desc => N_("List of Errata ids")
+    param :errata_ids, Array, :desc => N_("List of Errata ids")
     def available_incremental_updates
       version_environments = {}
       systems = System.with_non_installable_errata(@errata).where("#{System.table_name}.id" => @systems)
@@ -171,8 +173,10 @@ module Katello
         version_environment = version_environments[version] || {:content_view_version => version, :environments => []}
         version_environment[:environments] << system.environment unless version_environment[:environments].include?(system.environment)
         version_environment[:next_version] ||= version.next_incremental_version
+        version_environment[:content_host_count] = systems.count
         version_environments[version] = OpenStruct.new(version_environment)
       end
+
       respond_for_index :collection => version_environments.values, :template => :available_incremental_updates
     end
 
@@ -189,51 +193,15 @@ module Katello
     end
 
     def find_readable_systems
-      find_systems(:readable)
+      find_bulk_systems(:readable, params)
     end
 
     def find_editable_systems
-      find_systems(:editable)
+      find_bulk_systems(:editable, params)
     end
 
     def find_deletable_systems
-      find_systems(:deletable)
-    end
-
-    def find_systems(perm_method)
-      #works on a structure of param_group bulk_params and transforms it into a list of systems
-      params[:included] ||= {}
-      params[:excluded] ||= {}
-      @systems = []
-
-      unless params[:included][:ids].blank?
-        @systems = System.send(perm_method).where(:uuid => params[:included][:ids])
-        @systems.where('uuid not in (?)', params[:excluded]) unless params[:excluded][:ids].blank?
-      end
-
-      if params[:included][:search]
-        ids = find_system_ids_by_search(params[:included][:search])
-        search_systems = System.send(perm_method).where(:id => ids)
-        search_systems = search_systems.where('uuid not in (?)', params[:excluded][:ids]) unless params[:excluded][:ids].blank?
-        @systems += search_systems
-      end
-
-      if params[:included][:ids].blank? && params[:included][:search].nil?
-        fail HttpErrors::BadRequest, _("No systems have been specified.")
-      elsif @systems.empty?
-        fail HttpErrors::Forbidden, _("Action unauthorized to be performed on selected systems.")
-      end
-      @systems
-    end
-
-    def find_system_ids_by_search(search)
-      options = {
-        :filters       => System.readable_search_filters(@organization),
-        :load_records? => false,
-        :full_result => true,
-        :fields => [:id]
-      }
-      item_search(System, {:search => search}, options)[:results].collect { |i| i.id }
+      find_bulk_systems(:deletable, params)
     end
 
     def validate_host_collection_membership_limit
