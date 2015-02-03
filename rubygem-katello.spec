@@ -34,7 +34,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.7
+Version: 2.2.0.8
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -241,6 +241,54 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
+* Tue Feb 03 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.8-1
+- Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge pull request #4968 from waldenraines/8192 (walden@redhat.com)
+- Merge pull request #4969 from ehelms/refs-8190 (eric.d.helms@gmail.com)
+- Merge pull request #4760 from waldenraines/patternfly-upgrade
+  (walden@redhat.com)
+- Fixes #8192 - allow applying errata to CHs after incremental update.
+  (walden@redhat.com)
+- Refs #8190: Fix API docs to match intended params. (ericdhelms@gmail.com)
+- Merge pull request #4932 from parthaa/docker-repo-create (parthaa@gmail.com)
+- Merge pull request #4964 from stbenjam/9158 (eric.d.helms@gmail.com)
+- Merge pull request #4931 from waldenraines/8178-8189 (walden@redhat.com)
+- Fixes #8039 - upgrade patternfly to version 1.1.3. (walden@redhat.com)
+- Merge pull request #4904 from cfouant/actkey-dynflow-fix (cfouant@redhat.com)
+- Merge pull request #4856 from cfouant/ui-product-content (cfouant@redhat.com)
+- Merge pull request #4854 from cfouant/delete-actkey (cfouant@redhat.com)
+- Merge pull request #4956 from jlsherrill/def_org (jlsherrill@gmail.com)
+- Fixes #8178, 8189:  adding UI for incremental update. (walden@redhat.com)
+- Merge pull request #4966 from iNecas/issue/9174 (eric.d.helms@gmail.com)
+- Merge pull request #4960 from jlsherrill/9131 (jlsherrill@gmail.com)
+- Fixes 9174 - replace UUIDTools with SecureRandom (inecas@redhat.com)
+- fixes #9158 - do not find foreman host by mac (stbenjam@redhat.com)
+- Fixes #8959 - Repo create cleanup (paji@redhat.com)
+- Merge pull request #4947 from jlsherrill/inc_sys_update
+  (jlsherrill@gmail.com)
+- Merge pull request #4955 from steveloranz/8688 (jlsherrill@gmail.com)
+- fixes #8612 - Makes output consistent for deleting act key, BZ1171092
+  (cfouant@redhat.com)
+- Merge pull request #4941 from daviddavis/temp/20150115185155
+  (daviddavis@redhat.com)
+- fixes #8040 - Product content changes are updated in UI, BZ1112747
+  (cfouant@redhat.com)
+- Merge pull request #4949 from ehelms/refs-8756 (eric.d.helms@gmail.com)
+- Automatic commit of package [katello] release [2.2.0.2-1-sat].
+  (jmontleo@redhat.com)
+- Fixes #8958 - Show tag info for docker images (daviddavis@redhat.com)
+- fixes #9131 - publish content view was always using latest puppet module
+  (jsherril@redhat.com)
+- fixes #8191 - adding support for updating systems after an incremental update
+  (jsherril@redhat.com)
+- fixes #9105 - set default org for initial admin user (jsherril@redhat.com)
+- Fixes #8688 - Migrate environment to scoped search (sloranz@xantham.com)
+- Refs #7745: Support checking for custom header from RHSM proxied requests.
+  (ericdhelms@gmail.com)
+- fixes #8867 - fixes activation key dynflow update passing in nil variables
+  (cfouant@redhat.com)
+
 * Tue Jan 27 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.7-1
 - Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
   (jmontleo@redhat.com)
