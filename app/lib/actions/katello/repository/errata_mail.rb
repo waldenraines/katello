@@ -21,7 +21,7 @@ module Actions
 
         def run
           ::User.current = ::User.anonymous_admin
-          MailNotification[:katello_sync_errata].deliver(:repo => input[:repo], :last_updated => input[:last_updated])
+          MailNotification[:satellite_sync_errata].deliver(:repo => input[:repo], :last_updated => input[:last_updated])
         end
 
         def finalize

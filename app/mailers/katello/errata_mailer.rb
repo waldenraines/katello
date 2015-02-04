@@ -30,7 +30,7 @@ module Katello
       return unless (@repo = Katello::Repository.find(options[:repo])) && (last_updated = options[:last_updated].to_datetime)
 
       recipients = User.all.select do |user|
-        user.receives?(:katello_sync_errata) && user.can?(:view_products, @repo.product)
+        user.receives?(:satellite_sync_errata) && user.can?(:view_products, @repo.product)
       end
 
       fail Errors::NotFound, N_("No recipients found for %s sync report") % @repo.name unless recipients.any?
@@ -48,7 +48,7 @@ module Katello
         (environment = Katello::KTEnvironment.find(options[:environment]))
 
       recipients = User.all.select do |user|
-        user.receives?(:katello_promote_errata) && user.can?(:view_content_views, content_view)
+        user.receives?(:satellite_promote_errata) && user.can?(:view_content_views, content_view)
       end
 
       fail Errors::NotFound, N_("No recipients found for %s promotion summary") % content_view.name unless recipients.any?

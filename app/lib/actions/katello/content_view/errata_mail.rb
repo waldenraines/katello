@@ -19,8 +19,8 @@ module Actions
         end
 
         def run
-          MailNotification[:katello_promote_errata].deliver(:content_view => input[:content_view],
-                                                            :environment => input[:environment])
+          MailNotification[:satellite_promote_errata].deliver(:content_view => input[:content_view],
+                                                              :environment => input[:environment])
         end
       end
     end
