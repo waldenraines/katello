@@ -34,7 +34,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.9
+Version: 2.2.0.10
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -241,6 +241,10 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
+* Wed Feb 04 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.10-1
+- refs BZ1161809 - add'l required branding changes for email notifications
+  (stbenjam@redhat.com)
+
 * Tue Feb 03 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.9-1
 - Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
   (jmontleo@redhat.com)
