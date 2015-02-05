@@ -34,7 +34,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.10
+Version: 2.2.0.11
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -241,6 +241,10 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
+* Thu Feb 05 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.11-1
+- Fixes BZ#1186321 - use networking snippet in katello kickstart
+  (mhulan@redhat.com)
+
 * Wed Feb 04 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.10-1
 - refs BZ1161809 - add'l required branding changes for email notifications
   (stbenjam@redhat.com)
