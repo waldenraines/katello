@@ -43,6 +43,7 @@ Requires: %{name}-common = %{version}-%{release}
 Requires:       %{?scl_prefix}rubygem-foreman_bootdisk
 Requires:       %{?scl_prefix}rubygem-foreman_discovery
 Requires:       %{?scl_prefix}rubygem-foreman_hooks
+Requires:       %{?scl_prefix}rubygem-foreman-redhat_access
 Requires:       %{name}-installer
 Requires:       foreman-libvirt
 Requires:       foreman-ovirt
