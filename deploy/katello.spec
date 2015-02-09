@@ -24,7 +24,7 @@
 %global confdir common
 
 Name:           katello
-Version:        2.2.0.2
+Version:        2.2.0.3
 Release:        1%{?dist}
 Summary:        A package for managing application life-cycle for Linux systems
 BuildArch:      noarch
@@ -187,6 +187,9 @@ Package that installs only the Subscription and basic Content Management parts o
 %files sam
 
 %changelog
+* Mon Feb 09 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.3-1
+- add foreman_redhat_access to Requires (jmontleo@redhat.com)
+
 * Tue Jan 27 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.2-1
 - Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
   (jmontleo@redhat.com)
