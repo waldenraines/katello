@@ -34,7 +34,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.11
+Version: 2.2.0.12
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -241,6 +241,35 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
+* Tue Feb 10 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.12-1
+- Fixes #9176: display incremental update task in nutupane, bz 1188823.
+  (walden@redhat.com)
+- add foreman_redhat_access to Requires (jmontleo@redhat.com)
+- Fixes #9276 - Added some DockerTag tests (daviddavis@redhat.com)
+- fixes #9264 - fix for ambiguous col on errata content hosts
+  (jsherril@redhat.com)
+- Fixes #9238: fix errata icon classes post patternfly upgrade.
+  (walden@redhat.com)
+- Merge pull request #4978 from daviddavis/temp/20150204151524
+  (daviddavis@redhat.com)
+- Fixes #9224 - Not setting docker upstream name on clones
+  (daviddavis@redhat.com)
+- Fixes #9220 - fixing incremental update errors and button disable.
+  (walden@redhat.com)
+- Fixes #9219: close details pane when cancelling content host selection.
+  (walden@redhat.com)
+- Merge pull request #4930 from daviddavis/docker-ui (daviddavis@redhat.com)
+- fixes #9221 - fix scoped search call for environment (jsherril@redhat.com)
+- Fixes #7127 - Creating a docker tag page (daviddavis@redhat.com)
+- Merge pull request #4971 from ehelms/refs-9200 (eric.d.helms@gmail.com)
+- Merge pull request #4975 from parthaa/capsule-fix (parthaa@gmail.com)
+- Fixes #9209 - Default capsule now checked using Pulp feature
+  (paji@redhat.com)
+- Fixes #9206: Remove border-radius mixin that was removed in Foreman.
+  (ericdhelms@gmail.com)
+- Refs #9200: Discovery does not work with Foreman 1.8 currently.
+  (ericdhelms@gmail.com)
+
 * Thu Feb 05 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.11-1
 - Fixes BZ#1186321 - use networking snippet in katello kickstart
   (mhulan@redhat.com)
