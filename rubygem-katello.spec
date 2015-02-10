@@ -34,7 +34,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.12
+Version: 2.2.0.13
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -241,6 +241,22 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
+* Tue Feb 10 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.13-1
+- Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge pull request #4993 from waldenraines/9298 (walden@redhat.com)
+- Fixes #9298: only apply errata if box is checked, bz 1191214.
+  (walden@redhat.com)
+- Merge pull request #4992 from jlsherrill/9309 (jlsherrill@gmail.com)
+- Merge pull request #4913 from parthaa/docker-integration (parthaa@gmail.com)
+- Merge pull request #4991 from ehelms/fixes-8834 (eric.d.helms@gmail.com)
+- fixes #9309 - fix for NotImplementedError on tasks page (jsherril@redhat.com)
+- Merge pull request #4990 from dustints/org_destroy (dtsang@redhat.com)
+- Ref #9300: destroy ktenv should no longer call dis (dtsang@redhat.com)
+- Fixes #8834: Prevent empty composite list just after creating content view.
+  (ericdhelms@gmail.com)
+- Fixes #8918 - Katello UI to provision docker container (paji@redhat.com)
+
 * Tue Feb 10 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.12-1
 - Fixes #9176: display incremental update task in nutupane, bz 1188823.
   (walden@redhat.com)
