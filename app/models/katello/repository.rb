@@ -64,13 +64,12 @@ module Katello
     has_and_belongs_to_many :filters, :class_name => "Katello::ContentViewFilter",
                                       :join_table => :katello_content_view_filters_repositories,
                                       :foreign_key => :content_view_filter_id
-    belongs_to :content_view_version, :inverse_of => :repositories
+    belongs_to :content_view_version, :inverse_of => :repositories, :class_name => "Katello::ContentViewVersion"
 
     validates :product_id, :presence => true
     validates :pulp_id, :presence => true, :uniqueness => true, :if => proc { |r| r.name.present? }
     validates :checksum_type, :inclusion => {:in => CHECKSUM_TYPES, :allow_blank => true}
-    validates_with Validators::RepoDockerUpstreamValidator
-    validates :docker_upstream_name, :allow_nil => true, :if => :docker?, :format => {
+    validates :docker_upstream_name, :allow_blank => true, :if => :docker?, :format => {
       :with => /^([a-z0-9\-_]{4,30}\/)?[a-z0-9\-_\.]{3,30}$/,
       :message => (_("must be a valid docker name"))
     }
@@ -87,6 +86,7 @@ module Katello
       :allow_blank => false,
       :message => (_("must be one of the following: %s") % TYPES.join(', '))
     }
+    validate :ensure_valid_docker_attributes, :if => :docker?
 
     # TODO: remove this default scope
     # rubocop:disable Rails/DefaultScope
@@ -102,6 +102,8 @@ module Katello
     scope :non_puppet, where("content_type != ?", PUPPET_TYPE)
     scope :non_archived, where('environment_id is not NULL')
     scope :archived, where('environment_id is NULL')
+
+    scope :completer_scope, lambda { |options| options[table_name].call(self) }
 
     def organization
       if self.environment
@@ -189,9 +191,18 @@ module Katello
       !(redhat?)
     end
 
+    def library_instance?
+      library_instance.nil?
+    end
+
     def clones
       lib_id = self.library_instance_id || self.id
       Repository.where(:library_instance_id => lib_id)
+    end
+
+    def group
+      library_repo = library_instance? ? self : library_instance
+      clones << library_repo
     end
 
     #is the repo cloned in the specified environment
@@ -358,7 +369,6 @@ module Katello
                      :content_id => self.content_id,
                      :content_view_version => to_version,
                      :content_type => self.content_type,
-                     :docker_upstream_name => self.docker_upstream_name,
                      :unprotected => self.unprotected) do |clone|
         clone.checksum_type = self.checksum_type
         clone.pulp_id = clone.clone_id(to_env, content_view, version.try(:version))
@@ -489,6 +499,14 @@ module Katello
       # is currently being used for the name, it will be downcased for this content type.
       if self.content_type == Repository::DOCKER_TYPE
         self.pulp_id = self.pulp_id.downcase
+      end
+    end
+
+    def ensure_valid_docker_attributes
+      if url.blank? != docker_upstream_name.blank?
+        field = url.blank? ? :url : :docker_upstream_name
+        errors.add(field, N_("cannot be blank. Either provide all or no sync information."))
+        errors.add(:base, N_("Repository URL or Upstream Name is empty. Both are required for syncing from the upstream."))
       end
     end
   end
