@@ -62,6 +62,7 @@ angular.module('Bastion.errata').controller('ErrataController',
             };
 
             taskSearchComplete = function (results) {
+                console.log(results);
                 $scope.incrementalUpdateInProgress = results.length > 0;
                 Task.unregisterSearch(searchId);
             };
