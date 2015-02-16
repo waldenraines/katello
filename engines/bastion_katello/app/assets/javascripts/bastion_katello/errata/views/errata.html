@@ -4,8 +4,9 @@
 
   <div data-block="messages">
     <div bst-alert="info" ng-show="incrementalUpdateInProgress">
-      <p translate>
-        There is currently an Incremental Update in progress.  This update must finish before applying existing updates.
+      <p>
+        <span translate>There is currently an Incremental Update task in progress.  This update must finish before applying existing updates.</span>
+        <a href="/foreman_tasks/tasks/{{incrementalUpdates[0].id}}" translate>Check the status of the task.</a>
       </p>
     </div>
   </div>
