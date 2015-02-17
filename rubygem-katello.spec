@@ -34,7 +34,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.13
+Version: 2.2.0.14
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -241,6 +241,65 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{shortversion}
 
 %changelog
+* Tue Feb 17 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.14-1
+- Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Fixes #9166: show message if incremental update in progress, BZ 1193185.
+  (walden@redhat.com)
+- fixes #9201 - adds search options for content views index, BZ1188244
+  (cfouant@redhat.com)
+- fixes #9361 - correct logic to hide content hosts list on collection
+  (thomasmckay@redhat.com)
+- Merge branch 'SATELLITE-6.1.0' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/katello into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge pull request #4972 from cfouant/cv-search-options (cfouant@redhat.com)
+- fixes #9317 - only call foreman content update when needed
+  (jsherril@redhat.com)
+- fixes #9218 - extend hostgroups controller create/update to include katello
+  attrs (bbuckingham@redhat.com)
+- Merge pull request #5016 from mccun934/20150216-1957 (mmccune@gmail.com)
+- Merge pull request #5014 from waldenraines/9166 (walden@redhat.com)
+- ref #9179 - adding python-mongoengine for EL7 (mmccune@redhat.com)
+- Fixes #9166: show message if incremental update in progress, BZ 1193185.
+  (walden@redhat.com)
+- Merge pull request #4982 from jlsherrill/9120 (jlsherrill@gmail.com)
+- fixes #9120 - better feedback around composites for inc updates
+  (jsherril@redhat.com)
+- Merge pull request #4995 from jlsherrill/9317 (jlsherrill@gmail.com)
+- Fixes BZ#1193023 - apply network configuration during image provisioning
+  (mhulan@redhat.com)
+- Merge pull request #5008 from stbenjam/9363 (stephen@bitbin.de)
+- fixes #9317 - only call foreman content update when needed
+  (jsherril@redhat.com)
+- Merge pull request #5007 from thomasmckay/9361-host-collection
+  (thomasmckay@redhat.com)
+- Merge pull request #5003 from jlsherrill/8251 (jlsherrill@gmail.com)
+- Fixes #9370: Switch to ASCII 'x' to fix assets precompile.
+  (ericdhelms@gmail.com)
+- fixes #8251 - keeping track of and showing incremental update content
+  (jsherril@redhat.com)
+- fixes #9363 - syntax error in hash substitution in errata import task
+  (stbenjam@redhat.com)
+- fixes #9361 - correct logic to hide content hosts list on collection
+  (thomasmckay@redhat.com)
+- Merge pull request #4976 from bbuckingham/issue-9218 (bbuckingham@redhat.com)
+- Merge pull request #4999 from jlsherrill/9333 (jlsherrill@gmail.com)
+- Merge pull request #4994 from jlsherrill/9312 (jlsherrill@gmail.com)
+- fixes #9333 - fix bad action name on lifecycle env delete
+  (jsherril@redhat.com)
+- Merge pull request #4989 from jlsherrill/8180 (jlsherrill@gmail.com)
+- fixes #8180 - use dep solving for incremental updates (jsherril@redhat.com)
+- fixes #9312 - handle errata import with duplicate packages
+  (jsherril@redhat.com)
+- Merge pull request #4988 from ehelms/fixes-8938 (eric.d.helms@gmail.com)
+- Fixes #8938: Publish Red Hat repositories upon enablement.
+  (ericdhelms@gmail.com)
+- fixes #9218 - extend hostgroups controller create/update to include katello
+  attrs (bbuckingham@redhat.com)
+- fixes #9201 - adds search options for content views index, BZ1188244
+  (cfouant@redhat.com)
+
 * Tue Feb 10 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.13-1
 - Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
   (jmontleo@redhat.com)
