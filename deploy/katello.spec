@@ -43,6 +43,7 @@ Requires: %{name}-common = %{version}-%{release}
 Requires:       %{?scl_prefix}rubygem-foreman_bootdisk
 #Requires:       %{?scl_prefix}rubygem-foreman_discovery #http://projects.theforeman.org/issues/9200
 Requires:       %{?scl_prefix}rubygem-foreman_abrt
+Requires:       %{?scl_prefix}rubygem-foreman_discovery
 Requires:       %{?scl_prefix}rubygem-foreman_hooks
 Requires:       %{?scl_prefix}rubygem-foreman_openscap
 Requires:       %{?scl_prefix}rubygem-foreman-redhat_access
