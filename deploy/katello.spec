@@ -24,7 +24,7 @@
 %global confdir common
 
 Name:           katello
-Version:        2.2.0.4
+Version:        2.2.0.5
 Release:        1%{?dist}
 Summary:        A package for managing application life-cycle for Linux systems
 BuildArch:      noarch
@@ -192,6 +192,9 @@ Package that installs only the Subscription and basic Content Management parts o
 %files sam
 
 %changelog
+* Wed Feb 18 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.5-1
+- add dependency for foreman_discovery plugin (jmontleo@redhat.com)
+
 * Tue Feb 10 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.4-1
 - add Requires for plugins (jmontleo@redhat.com)
 - Refs #9200: Discovery does not work with Foreman 1.8 currently.
