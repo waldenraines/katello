@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.14
+Version: 2.2.0.15
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,23 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Feb 24 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.15-1
+- bump version for build (jmontleo@redhat.com)
+- Refs #8710 - created katello-debug sub-package (lzap+git@redhat.com)
+- Fixes #7088: set filter rule to updated rule on save. (walden@redhat.com)
+- Fixes #9471: fix JS error on content host errata page, BZ1194396
+  (walden@redhat.com)
+- fixes #9401 - refresh content view version list after deletion
+  (jsherril@redhat.com)
+- fixes #9330 - validates new name presence prior to dynflow, BZ1187539
+  (cfouant@redhat.com)
+- fixes #9343 - Actkey copies auto-attach preference, BZ1173724
+  (cfouant@redhat.com)
+- fixes #9416 - content view update - dynflow'ize it (bbuckingham@redhat.com)
+- Automatic commit of package [katello] release [2.2.0.5-1-sat].
+  (jmontleo@redhat.com)
+- add dependency for foreman_discovery plugin (jmontleo@redhat.com)
+
 * Tue Feb 17 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.14-1
 - Merge remote-tracking branch 'upstream/master' into SATELLITE-6.1.0
   (jmontleo@redhat.com)
