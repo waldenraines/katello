@@ -3,22 +3,16 @@
 
 %global gem_name katello
 
-%global shortversion 2.2.0
-%global gem_instdir %{gem_dir}/gems/%{gem_name}-%{shortversion}
-%global gem_cache %{gem_dir}/cache/%{gem_name}-%{shortversion}.gem
-%global gem_spec %{gem_dir}/specifications/%{gem_name}-%{shortversion}.gemspec
-%global gem_docdir %{gem_dir}/doc/%{gem_name}-%{shortversion}
-
 %global foreman_dir /usr/share/foreman
 %global foreman_bundlerd_dir %{foreman_dir}/bundler.d
 
 %if !("%{?scl}" == "ruby193" || 0%{?rhel} > 6 || 0%{?fedora} > 16)
 %global gem_dir /usr/lib/ruby/gems/1.8
-%global gem_instdir %{gem_dir}/gems/%{gem_name}-%{shortversion}
+%global gem_instdir %{gem_dir}/gems/%{gem_name}-%{version}
 %global gem_libdir %{gem_instdir}/lib
-%global gem_cache %{gem_dir}/cache/%{gem_name}-%{shortversion}.gem
-%global gem_spec %{gem_dir}/specifications/%{gem_name}-%{shortversion}.gemspec
-%global gem_docdir %{gem_dir}/doc/%{gem_name}-%{shortversion}
+%global gem_cache %{gem_dir}/cache/%{gem_name}-%{version}.gem
+%global gem_spec %{gem_dir}/specifications/%{gem_name}-%{version}.gemspec
+%global gem_docdir %{gem_dir}/doc/%{gem_name}-%{version}
 %endif
 
 %if "%{?scl}" == "ruby193"
@@ -39,7 +33,7 @@ Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
 URL: http://www.katello.org
-Source0: http://rubygems.org/downloads/%{gem_name}-%{shortversion}.gem
+Source0: http://rubygems.org/downloads/%{gem_name}-%{version}.gem
 
 %if "%{?scl}" == "ruby193"
 Requires: %{?scl_prefix}ruby-wrapper
@@ -164,7 +158,7 @@ BuildRequires: %{?scl_prefix}rubygem-qpid_messaging >= 0.22.0
 BuildRequires: %{?scl_prefix}rubygem-qpid_messaging <= 0.30.0
 BuildRequires: %{?scl_prefix}rubygems
 BuildArch: noarch
-Provides: %{?scl_prefix}rubygem(katello) = %{shortversion}
+Provides: %{?scl_prefix}rubygem(katello) = %{version}
 
 %description
 Katello
@@ -178,7 +172,7 @@ Summary:    Documentation for rubygem-%{gem_name}
 This package contains documentation for rubygem-%{gem_name}.
 
 %prep
-%setup -n %{pkg_name}-%{shortversion} -q -c -T
+%setup -n %{pkg_name}-%{version} -q -c -T
 mkdir -p .%{gem_dir}
 %{?scl:scl enable %{scl} "}
 gem install --local --install-dir .%{gem_dir} --force %{SOURCE0}
@@ -238,7 +232,7 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{foreman_dir}/public/assets/bastion_katello
 
 %files doc
-%{gem_dir}/doc/%{gem_name}-%{shortversion}
+%{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
 * Tue Feb 17 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.14-1
