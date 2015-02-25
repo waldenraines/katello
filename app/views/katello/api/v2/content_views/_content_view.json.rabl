@@ -23,7 +23,7 @@ child :environments => :environments do
 end
 
 child :repositories => :repositories do
-  attributes :id, :name, :label
+  attributes :id, :name, :label, :content_type
 end
 
 child :puppet_modules => :puppet_modules do
