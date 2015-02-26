@@ -320,6 +320,9 @@ $(document).ready(function (){
     KT.tipsy.custom.enable_forms_tooltips();
 
     KT.common.orgSwitcherSetup();
+
+    // Disable turbolinks
+    $(document).find('body').attr('data-no-turbolink', true);
 });
 
 /**
@@ -348,4 +351,10 @@ $(window).ready(function(){
     $.rails.confirm = function(message) {
         KT.common.customConfirm({message: message}); return false;
     };
+
+    // Disable turbolinks
+    if (window.Turbolinks) {
+        window.Turbolinks.pagesCached(0);
+    }
+
 });
