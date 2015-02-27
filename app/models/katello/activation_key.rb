@@ -117,12 +117,16 @@ module Katello
         pools = cp_pools.collect { |cp_pool| Pool.find_pool(cp_pool['id'], cp_pool) }
 
         pools.each do |pool|
-          Product.where(:cp_id => pool.product_id).each do |product|
-            if product.is_a? Katello::MarketingProduct
-              all_products += product.engineering_products
-            else
-              all_products << product
-            end
+          marketing_products = MarketingProduct.includes(:engineering_products, :marketing_engineering_products).
+              where(:cp_id => pool.product_id)
+          products = Product.where(:cp_id => pool.product_id).where('type != ?', "Katello::MarketingProduct")
+
+          marketing_products.each do |product|
+            all_products += product.engineering_products
+          end
+
+          products.each do |product|
+            all_products << product
           end
         end
       end
