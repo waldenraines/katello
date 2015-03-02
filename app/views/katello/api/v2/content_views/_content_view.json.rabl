@@ -24,6 +24,10 @@ end
 
 child :repositories => :repositories do
   attributes :id, :name, :label, :content_type
+
+  node :content_counts do |repo|
+    extends "katello/api/v2/repositories/_content_counts"
+  end
 end
 
 child :puppet_modules => :puppet_modules do
