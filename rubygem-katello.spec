@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.15
+Version: 2.2.0.16
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,42 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Mon Mar 02 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.16-1
+- Merge branch 'SATELLITE-6.1.0' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/katello into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge branch '1177609' into 'SATELLITE-6.1.0' (jmontleo@redhat.com)
+- Fixes #9484: fix bastion katello modal translations, BZ 1194691.
+  (walden@redhat.com)
+- Fixes #9474: display confirmation when applying errata to CH, BZ1160740.
+  (walden@redhat.com)
+- fixes #8956, #9337 - remove unused scripts and files from specfile
+  (mmccune@redhat.com)
+- Fixes #9564: limit components rabl to fix N+1 queries, BZ 1177609.
+  (walden@redhat.com)
+- fixes #9402 - allow removal of cv version with archive deletion
+  (jsherril@redhat.com)
+- Merge branch 'SATELLITE-6.1.0' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/katello into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge branch '1196339' into 'SATELLITE-6.1.0' (jmontleo@redhat.com)
+- fixes #8954 - speeding up product rabl rendering (jsherril@redhat.com)
+- Fixes #8387: Redirect users back to 403 page if no current organization.
+  (ericdhelms@gmail.com)
+- fixes #9405 - Attaches custom products when registering with activation key
+  (cfouant@redhat.com)
+- fixes #8892, #9340 - Validates content label and override value, BZ1173723,
+  BZ1187750 (cfouant@redhat.com)
+- Fixes #9511: update manifest upload styling to bootstrap 3, BZ1194531
+  (walden@redhat.com)
+- Fixes #9522: no row-select on tables without bulk actions, BZ 1173765.
+  (walden@redhat.com)
+- Fixes #9345: fix content view promotion in IE, BZ1168457. (walden@redhat.com)
+- Fixes #9534: fix N+1 queries on content view index. (walden@redhat.com)
+- Fixes #9528: fix JS error on content host errata table, BZ 1195760.
+  (walden@redhat.com)
+- fixes bz1196339 - do not install openscap by default (jsherril@redhat.com)
+
 * Tue Feb 24 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.15-1
 - bump version for build (jmontleo@redhat.com)
 - Refs #8710 - created katello-debug sub-package (lzap+git@redhat.com)
