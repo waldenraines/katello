@@ -45,10 +45,8 @@ Requires:       %{?scl_prefix}rubygem-foreman_bootdisk
 Requires:       %{?scl_prefix}rubygem-foreman_abrt
 Requires:       %{?scl_prefix}rubygem-foreman_discovery
 Requires:       %{?scl_prefix}rubygem-foreman_hooks
-Requires:       %{?scl_prefix}rubygem-foreman_openscap
 Requires:       %{?scl_prefix}rubygem-foreman-redhat_access
 Requires:       rubygem-smart_proxy_abrt
-Requires:       rubygem-smart_proxy_openscap
 Requires:       %{name}-installer
 Requires:       foreman-libvirt
 Requires:       foreman-ovirt
