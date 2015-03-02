@@ -15,8 +15,8 @@ attributes :content_id, :content_view_version_id, :library_instance_id
 attributes :product_type
 attributes :promoted? => :promoted
 
-child :content_counts do |repo|
-  extends 'katello/api/v2/repositories/_content_counts'
+node :content_counts do |repo|
+  partial("katello/api/v2/repositories/_content_counts", :object => repo)
 end
 
 node :permissions do |repo|
