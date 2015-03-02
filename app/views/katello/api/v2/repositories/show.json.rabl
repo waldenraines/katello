@@ -16,7 +16,7 @@ attributes :product_type
 attributes :promoted? => :promoted
 
 node :content_counts do |repo|
-  extends "katello/api/v2/repositories/_content_counts"
+  extends 'katello/api/v2/repositories/_content_counts'
 end
 
 node :permissions do |repo|
