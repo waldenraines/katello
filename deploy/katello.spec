@@ -24,7 +24,7 @@
 %global confdir common
 
 Name:           katello
-Version:        2.2.0.5
+Version:        2.2.0.6
 Release:        1%{?dist}
 Summary:        A package for managing application life-cycle for Linux systems
 BuildArch:      noarch
@@ -177,6 +177,13 @@ Package that installs only the Subscription and basic Content Management parts o
 %files sam
 
 %changelog
+* Mon Mar 02 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.6-1
+- fixes #8956, #9337 - remove unused scripts and files from specfile
+  (mmccune@redhat.com)
+- Merge branch '1196339' into 'SATELLITE-6.1.0' (jmontleo@redhat.com)
+- fixes bz1196339 - do not install openscap by default (jsherril@redhat.com)
+- Refs #8710 - created katello-debug sub-package (lzap+git@redhat.com)
+
 * Wed Feb 18 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.5-1
 - add dependency for foreman_discovery plugin (jmontleo@redhat.com)
 
