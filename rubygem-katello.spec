@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.16
+Version: 2.2.0.17
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,9 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Mon Mar 02 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.17-1
+- update version (jmontleo@redhat.com)
+
 * Mon Mar 02 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.16-1
 - Merge branch 'SATELLITE-6.1.0' of
   gitlab.sat.lab.tlv.redhat.com:satellite6/katello into SATELLITE-6.1.0
