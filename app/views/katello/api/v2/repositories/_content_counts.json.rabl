@@ -1,5 +1,5 @@
 {
-  :docker_image => object.docker_images.count,
+  :docker_image => 1,
   :docker_tag => object.docker_tags.count,
   :rpm => object.package_count,
   :package => object.package_count,
