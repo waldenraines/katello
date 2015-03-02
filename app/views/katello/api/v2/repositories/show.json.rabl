@@ -16,7 +16,7 @@ attributes :product_type
 attributes :promoted? => :promoted
 
 node :content_counts do |repo|
-  partial("katello/api/v2/repositories/content_counts", :repo => repo)
+  partial("katello/api/v2/repositories/content_counts", :object => repo)
 end
 
 node :permissions do |repo|
