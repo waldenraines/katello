@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.17
+Version: 2.2.0.18
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,15 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Mar 03 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.18-1
+- fixes #9622 - remove unused product rabl attribute (jsherril@redhat.com)
+- Fixes #9582: display content tab after content view is loaded BZ1196720.
+  (walden@redhat.com)
+- fixes #9585 - speed up enabling redhat repos (jsherril@redhat.com)
+- fixes #9467 - fix bulk errata apply list (jsherril@redhat.com)
+- Automatic commit of package [katello] release [2.2.0.6-1-sat].
+  (jmontleo@redhat.com)
+
 * Mon Mar 02 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.17-1
 - update version (jmontleo@redhat.com)
 
