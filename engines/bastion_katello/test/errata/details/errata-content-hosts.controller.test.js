@@ -28,7 +28,10 @@ describe('Controller: ErrataContentHostsController', function() {
         Nutupane = function() {
             this.table = {
                 params: {},
-                showColumns: function () {}
+                showColumns: function () {},
+                resource: {
+                    total: 1
+                }
             };
             this.enableSelectAllResults = function () {};
             this.getAllSelectedResults = function () {
