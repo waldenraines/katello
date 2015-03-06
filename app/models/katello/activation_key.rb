@@ -109,26 +109,23 @@ module Katello
       self.subscriptions(pools)
     end
 
+
     def products
       all_products = []
 
       cp_pools = self.get_key_pools
       if cp_pools
         pools = cp_pools.collect { |cp_pool| Pool.find_pool(cp_pool['id'], cp_pool) }
+        product_ids = pools.map(&:product_id)
+        marketing_products = MarketingProduct.includes(:engineering_products, :marketing_engineering_products).
+            where(:cp_id => product_ids)
+        products = Product.where(:cp_id => product_ids).where('type != ?',"Katello::MarketingProduct")
 
-        pools.each do |pool|
-          marketing_products = MarketingProduct.includes(:engineering_products, :marketing_engineering_products).
-              where(:cp_id => pool.product_id)
-          products = Product.where(:cp_id => pool.product_id).where('type != ?', "Katello::MarketingProduct")
-
-          marketing_products.each do |product|
-            all_products += product.engineering_products
-          end
-
-          products.each do |product|
-            all_products << product
-          end
+        marketing_products.each do |product|
+          all_products += product.engineering_products
         end
+
+        all_products += products
       end
 
       all_products
