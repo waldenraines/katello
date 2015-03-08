@@ -22,7 +22,7 @@ module Katello
       set_locale_for user
 
       mail(:to        => user.mail,
-           :subject   => _("Katello Host Advisory"),
+           :subject   => _("Satellite Host Advisory"),
            :date      => Time.zone.now)
     end
 
@@ -40,7 +40,7 @@ module Katello
       @errata_counts = errata_counts(all_errata)
       @errata = all_errata.take(100).group_by(&:errata_type)
 
-      group_mail(recipients, :subject => (_("Katello Sync Summary for %s") % @repo.name))
+      group_mail(recipients, :subject => (_("Satellite Sync Summary for %s") % @repo.name))
     end
 
     def promote_errata(options)
@@ -58,7 +58,7 @@ module Katello
 
       @content_hosts = Katello::System.where(:environment_id => environment.id, :content_view_id => content_view.id)
 
-      group_mail(recipients, :subject => (_("Katello Promotion Summary for %{content_view}") % {:content_view => content_view.name}))
+      group_mail(recipients, :subject => (_("Satellite Promotion Summary for %{content_view}") % {:content_view => content_view.name}))
     end
 
     private
