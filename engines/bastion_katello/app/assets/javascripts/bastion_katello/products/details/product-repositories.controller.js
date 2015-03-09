@@ -59,7 +59,7 @@ angular.module('Bastion.products').controller('ProductRepositoriesController',
             var params = getParams(), removalPromise, removeSuccess;
 
             removeSuccess = function (response) {
-                if (response.errors) {
+                if (response.errors && response.errors.length > 0) {
                     $scope.warningMessages = response.errors;
                     $scope.warningTaskId = response.task.id;
                 } else {
