@@ -42,11 +42,9 @@ Requires: %{name}-common = %{version}-%{release}
 #foreman plugins and optional packages
 Requires:       %{?scl_prefix}rubygem-foreman_bootdisk
 #Requires:       %{?scl_prefix}rubygem-foreman_discovery #http://projects.theforeman.org/issues/9200
-Requires:       %{?scl_prefix}rubygem-foreman_abrt
 Requires:       %{?scl_prefix}rubygem-foreman_discovery
 Requires:       %{?scl_prefix}rubygem-foreman_hooks
 Requires:       %{?scl_prefix}rubygem-foreman-redhat_access
-Requires:       rubygem-smart_proxy_abrt
 Requires:       %{name}-installer
 Requires:       foreman-libvirt
 Requires:       foreman-ovirt
