@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.19
+Version: 2.2.0.20
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,44 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Mar 10 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.20-1
+- update version (jmontleo@redhat.com)
+- fixes #9462,#9557,#9556 - various inherited hostgroup issues
+  (jsherril@redhat.com)
+- fixes #9404 - fix sync_plan add/del product action getting stuck
+  (jsherril@redhat.com)
+- fixes #9647 - speed up puppet class import (jsherril@redhat.com)
+- fixes #8728, #8756 - use capsule RPM for registering a content host
+  (stbenjam@redhat.com)
+- Fixes #9511: fix typo on manifest update page. (walden@redhat.com)
+- Fixes #9464: fix typo on content host errata counts display, BZ 1179465.
+  (walden@redhat.com)
+- Fixes #9608 add repository/puppet module to CV components BZ 1197836.
+  (walden@redhat.com)
+- Fixes #9580: fix N+1 queries on activation key list, BZ 1196742.
+  (walden@redhat.com)
+- fixes #9646 - call dynflow to update facts sent via rhsm and virt-who
+  (thomasmckay@redhat.com)
+- fixes #9422 - limit 24 hour guest subscription visibility
+  (thomasmckay@redhat.com)
+- fixes #9360 - set feature flag host collection actions
+  (thomasmckay@redhat.com)
+- fixes #7354 - corrected state permission for import manifest
+  (thomasmckay@redhat.com)
+- Merge branch 'BZ1161809-part-3' into 'SATELLITE-6.1.0' (jmontleo@redhat.com)
+- fixes #9502, #9503 - verify errata exist before application
+  (stbenjam@redhat.com)
+- Fixes #9610 - Docker Content now hidden for composite cv (paji@redhat.com)
+- Fixes #8448: Add content tabs to environment details page.
+  (ericdhelms@gmail.com)
+- fixes #9521 - activate and deactivate pulp nodes (jsherril@redhat.com)
+- fixes #9629 - fix env delete, as it no longer needs indexing
+  (jsherril@redhat.com)
+- fixes #9626 - sort package names on incremental update task details
+  (jsherril@redhat.com)
+- Remove abrt from katello.spec (bkearney@redhat.com)
+- BZ1161809 branding mail notifications (stbenjam@redhat.com)
+
 * Tue Mar 03 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.19-1
 - update version (jmontleo@redhat.com)
 
