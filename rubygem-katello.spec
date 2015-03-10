@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.20
+Version: 2.2.0.21
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,13 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Mar 10 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.21-1
+- update version (jmontleo@redhat.com)
+- Fixes #9670: show applicable errata message on CH errata page, BZ1194773.
+  (walden@redhat.com)
+- Automatic commit of package [katello] release [2.2.0.7-1-sat].
+  (jmontleo@redhat.com)
+
 * Tue Mar 10 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.20-1
 - update version (jmontleo@redhat.com)
 - fixes #9462,#9557,#9556 - various inherited hostgroup issues
