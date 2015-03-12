@@ -105,7 +105,7 @@ describe('Controller: ProductRepositoriesController', function() {
         var product = {id: 100, $resolved: true};
 
         $scope.denied = function (perm, prod) {
-            expect(perm).toBe("delete_products");
+            expect(perm).toBe("destroy_products");
             return true;
         };
         expect($scope.getRepositoriesNonDeletableReason(product)).toBe("permissions");
