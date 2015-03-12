@@ -16,6 +16,7 @@
  * @name  Bastion.content-views.controller:ContentViewPuppetModulesController
  *
  * @requires $scope
+ * @requires $location
  * @requires Nutupane
  * @requires ContentView
  *
@@ -23,17 +24,16 @@
  *   Provides functionality to the puppet modules name list.
  */
 angular.module('Bastion.content-views').controller('ContentViewPuppetModuleNamesController',
-    ['$scope', 'Nutupane', 'ContentView', function ($scope, Nutupane, ContentView) {
+    ['$scope', '$location', 'Nutupane', 'ContentView', function ($scope, $location, Nutupane, ContentView) {
+        var nutupane, params = {
+            id: $scope.$stateParams.contentViewId,
+            'paged':            true,
+            'search':           $location.search().search || ""
+        };
 
-        var nutupane = new Nutupane(
-            ContentView,
-            {id: $scope.$stateParams.contentViewId},
-            'availablePuppetModuleNames'
-        );
+        nutupane = new Nutupane(ContentView, params, 'availablePuppetModuleNames');
 
         $scope.detailsTable = nutupane.table;
-
-        nutupane.query();
 
         $scope.selectVersion = function (moduleName) {
             $scope.transitionTo('content-views.details.puppet-modules.versions',
