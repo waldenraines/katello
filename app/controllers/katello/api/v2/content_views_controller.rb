@@ -127,6 +127,7 @@ module Katello
     api :GET, "/content_views/:id/available_puppet_module_names",
         N_("Get puppet modules names that are available to be added to the content view")
     param :id, :identifier, :desc => N_("content view numeric identifier"), :required => true
+    param_group :search, Api::V2::ApiController
     def available_puppet_module_names
       current_names = @view.content_view_puppet_modules.map(&:name).reject { |p| p.nil? }
       repo_ids = @view.organization.library.puppet_repositories.pluck(:pulp_id)
