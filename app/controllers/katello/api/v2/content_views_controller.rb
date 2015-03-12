@@ -105,6 +105,7 @@ module Katello
         N_("Get puppet modules that are available to be added to the content view")
     param :id, :identifier, :desc => N_("content view numeric identifier"), :required => true
     param :name, String, :desc => N_("module name to restrict modules for"), :required => false
+    param_group :search, Api::V2::ApiController
     def available_puppet_modules
       current_ids = @view.content_view_puppet_modules.map(&:uuid).reject { |p| p.nil? }
 
