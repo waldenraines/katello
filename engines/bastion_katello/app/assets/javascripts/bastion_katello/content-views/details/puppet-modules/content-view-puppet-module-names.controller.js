@@ -33,7 +33,7 @@ angular.module('Bastion.content-views').controller('ContentViewPuppetModuleNames
 
         $scope.detailsTable = nutupane.table;
 
-        nutupane.load();
+        nutupane.query();
 
         $scope.selectVersion = function (moduleName) {
             $scope.transitionTo('content-views.details.puppet-modules.versions',
