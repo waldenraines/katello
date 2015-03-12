@@ -64,7 +64,7 @@ angular.module('Bastion.errata').controller('ErrataContentHostsController',
         };
 
         $scope.goToNextStep = function () {
-            $scope.$parent.numberOfContentHostsToUpdate = nutupane.table.resource.total;
+            $scope.$parent.numberOfContentHostsToUpdate = nutupane.table.allResultsSelectCount();
             $scope.$parent.selectedContentHosts = nutupane.getAllSelectedResults();
 
             if ($scope.errata) {
