@@ -33,6 +33,7 @@ describe('Controller: ErrataController', function() {
             this.setParams = function (params) {};
             this.getParams = function (params) { return {}; };
             this.refresh = function () {};
+            this.enableSelectAllResults = function () {};
             this.getAllSelectedResults = function () {};
         };
         Errata = {};
