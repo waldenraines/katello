@@ -26,7 +26,17 @@
 angular.module('Bastion.content-hosts').controller('ContentHostErrataController',
     ['$scope', 'translate', 'ContentHostErratum', 'Nutupane', 'Organization', 'Environment',
     function ($scope, translate, ContentHostErratum, Nutupane, Organization, Environment) {
-        var errataNutupane = new Nutupane(ContentHostErratum, {'id': $scope.$stateParams.contentHostId, searchTerm: $scope.$stateParams.getSearch}, 'get');
+        var errataNutupane, params = {
+            'id':  $scope.$stateParams.contentHostId,
+            'sort_by':          'updated',
+            'sort_order':       'DESC',
+            'paged':            true,
+            'errata_restrict_applicable': true,
+            searchTerm: $scope.$stateParams.getSearch
+        };
+
+
+        errataNutupane = new Nutupane(ContentHostErratum, params, 'get');
 
         errataNutupane.masterOnly = true;
         $scope.detailsTable = errataNutupane.table;
