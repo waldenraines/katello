@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.23
+Version: 2.2.0.24
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,17 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Mar 17 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.24-1
+- update version (jmontleo@redhat.com)
+- Fixes #9783:  ensure errata on dashboard are unique, BZ 1187704.
+  (walden@redhat.com)
+- Refs #9518, #9310 - Create containers in API using katello repos
+  (paji@redhat.com)
+- Refs #8710 - katello-debug script is no longer a symlink
+  (lzap+git@redhat.com)
+- fixes #9790 - Adds tool-tip to actkey UI upon env selection
+  (cfouant@redhat.com)
+
 * Tue Mar 17 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.23-1
 - Extract the strings for katello from a new internal server
   (bkearney@redhat.com)
