@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.22
+Version: 2.2.0.23
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,10 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Mar 17 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.23-1
+- Extract the strings for katello from a new internal server
+  (bkearney@redhat.com)
+
 * Tue Mar 17 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.22-1
 - update version (jmontleo@redhat.com)
 - Fixes #9698: use correct styling for association tables, BZ 1199626.
