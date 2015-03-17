@@ -24,7 +24,7 @@
 %global confdir common
 
 Name:           katello
-Version:        2.2.0.7
+Version:        2.2.0.8
 Release:        1%{?dist}
 Summary:        A package for managing application life-cycle for Linux systems
 BuildArch:      noarch
@@ -175,6 +175,10 @@ Package that installs only the Subscription and basic Content Management parts o
 %files sam
 
 %changelog
+* Tue Mar 17 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.8-1
+- Fixed #9530 - installer logs are collected again by debug script
+  (lzap+git@redhat.com)
+
 * Tue Mar 10 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.7-1
 - Remove abrt from katello.spec (bkearney@redhat.com)
 
