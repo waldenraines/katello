@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.21
+Version: 2.2.0.22
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,41 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Mar 17 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.22-1
+- update version (jmontleo@redhat.com)
+- Fixes #9698: use correct styling for association tables, BZ 1199626.
+  (walden@redhat.com)
+- Fixes #9658: correct CH count when applying errata, BZ1198815.
+  (walden@redhat.com)
+- Fixes #9730: show message when no CV versions exist, BZ1201410.
+  (walden@redhat.com)
+- Fixes #9731: show success/error messages when updating filter, BZ1201406.
+  (walden@redhat.com)
+- Fixes #9697: hide confirmation after bulk action or cancel, BZ 1199584.
+  (walden@redhat.com)
+- Fixes #9583: improve repository deletion responses BZ 1166365.
+  (walden@redhat.com)
+- Fixes #9737: fix CH filter for incremental update, BZ 1200441.
+  (walden@redhat.com)
+- fixes #9739 - replace reference to delete_products w/ destroy_products
+  permission (thomasmckay@redhat.com)
+- fixes #9681 - simplify presented content override choices
+  (thomasmckay@redhat.com)
+- fixes #9664 - Add links to sync errata mail header (stbenjam@redhat.com)
+- Fixed #9530 - installer logs are collected again by debug script
+  (lzap+git@redhat.com)
+- fixes #9577 - fixing host single and bulk delete (jsherril@redhat.com)
+- fixes #9566 - only destroy repo in finalize for direct repo deletes
+  (jsherril@redhat.com)
+- fixes #9722 - recognize and show errors on host content actions
+  (jsherril@redhat.com)
+- Fixes #9735: Fix package/puppet module incremental update.
+  (ericdhelms@gmail.com)
+- Fixes #9586: Content view comparison will provide results again.
+  (ericdhelms@gmail.com)
+- Fixes #9685: Allow searching on capital letters for Packages in CS.
+  (ericdhelms@gmail.com)
+
 * Tue Mar 10 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.21-1
 - update version (jmontleo@redhat.com)
 - Fixes #9670: show applicable errata message on CH errata page, BZ1194773.
