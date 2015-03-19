@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.25
+Version: 2.2.0.26
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,9 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Thu Mar 19 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.26-1
+- update version (jmontleo@redhat.com)
+
 * Thu Mar 19 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.25-1
 - fixes #9799 - changing structure of incremental update around composites
   (jsherril@redhat.com)
