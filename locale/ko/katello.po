@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: katello 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-17 08:24-0500\n"
-"PO-Revision-Date: 2015-03-15 10:07+0000\n"
+"PO-Revision-Date: 2015-03-19 01:59+0000\n"
 "Last-Translator: eukim <eukim@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 3.6.0\n"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author eukim
 msgid " Red Hat Repositories"
@@ -352,15 +352,15 @@ msgstr ""
 msgid ""
 "A large number of errata are unapplied in this content view, so only the "
 "first 100 are shown."
-msgstr ""
+msgstr "다수의 에라타가 이 컨텐츠 뷰에 적용되지 않아 처음 100 항목만 표시합니다. "
 
 msgid ""
 "A large number of errata were synced for this repository, so only the first "
 "100 are shown."
-msgstr ""
+msgstr "다수의 에라타가 이 리포지터리에 대해 동기화되어 있어 처음 100 항목만 표시합니다."
 
 msgid "A post-promotion summary of hosts with installable errata"
-msgstr ""
+msgstr "설치 가능한 에라타를 갖는 호스트의 승격 후 요약 "
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author eukim
 msgid ""
@@ -374,10 +374,10 @@ msgid "A service level for auto-healing process, e.g. SELF-SUPPORT"
 msgstr "auto-healing 프로세스의 서비스 레벨. 예: SELF-SUPPORT"
 
 msgid "A summary of available and applicable errata for your hosts"
-msgstr ""
+msgstr "호스트에 사용 가능하고 적용 가능한 에라타 요약 "
 
 msgid "A summary of new errata after a repository is synchronized"
-msgstr ""
+msgstr "리포지터리를 동기화한 후 새 에라타 요약 "
 
 msgid "Action not allowed for the default capsule."
 msgstr "기본값 capsule에 대해 작업을 허용하지 않습니다."
@@ -398,7 +398,7 @@ msgid "Activation keys and subscriptions can be managed"
 msgstr "활성키 및 서브스크립션을 관리할 수 있습니다 "
 
 msgid "Active only"
-msgstr ""
+msgstr "활성화된 경우에만 "
 
 # translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author eukim
 msgid "Add"
@@ -449,7 +449,7 @@ msgstr "패키지 추가 중..."
 msgid ""
 "After generating the incremental update, apply the changes to the specified "
 "systems.  Only Errata are supported currently."
-msgstr ""
+msgstr "증분 업데이트를 생성한 후 지정된 시스템에 변경 사항을 적용합니다. 현재 에라타만 지원되고 있습니다. "
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Alert"
@@ -632,10 +632,10 @@ msgid "CVE identifier"
 msgstr "CVE 식별자 "
 
 msgid "Calculate Applicable Errata based on a particular Content View"
-msgstr ""
+msgstr "특정 컨텐츠 뷰를 기반으로 적용 가능한 에라타 계산 "
 
 msgid "Calculate Applicable Errata based on a particular Environment"
-msgstr ""
+msgstr "특정 환경을 기반으로 적용 가능한 에라타 계산 "
 
 msgid "Can only remove content from within the Default Content View"
 msgstr "기본값 컨테츠 뷰에 있는 컨텐츠만 삭제할 수 있습니다 "
@@ -700,7 +700,7 @@ msgid "Cannot delete from %s, view does not exist there."
 msgstr "%s에서 삭제할 수 없습니다, 보기는 여기에 존재하지 않습니다."
 
 msgid "Cannot delete provider with attached products"
-msgstr ""
+msgstr "할당된 제품을 갖는 공급자를 삭제할 수 없습니다 "
 
 msgid "Cannot delete the default Location"
 msgstr "기본 위치를 삭제할 수 없습니다 "
@@ -713,7 +713,7 @@ msgstr "뷰가 환경에서 있어 삭제할 수 없습니다 "
 
 msgid ""
 "Cannot promote environment out of sequence. Use force to bypass restriction."
-msgstr ""
+msgstr "순서에 없는 환경을 승격할 수 없습니다. 강제를 사용하여 제한을 무시합니다. "
 
 msgid "Cannot publish default content view"
 msgstr "기본 컨텐츠 뷰를 공개할 수 없습니다 "
@@ -728,12 +728,12 @@ msgid ""
 msgstr "연결된 %{dependent}로 인해 환경 '%{env}'에서 '%{view}'을(를) 삭제할 수 없습니다: %{names}"
 
 msgid "Cannot remove content from a non-custom repository"
-msgstr ""
+msgstr "비-사용자 지정 리포지터리에서 컨텐츠를 삭제할 수 없습니다 "
 
 msgid ""
 "Cannot remove content view from environment. Content view '%{view}' is not "
 "in lifecycle environment '%{env}'."
-msgstr ""
+msgstr "환경에서 컨텐츠 뷰를 삭제할 수 없습니다. 컨텐츠 뷰 '%{view}'는 라이프 사이클 환경 '%{env}'에 없습니다. "
 
 msgid ""
 "Cannot retrieve repos from non-library environment '%s' without a content "
@@ -741,10 +741,10 @@ msgid ""
 msgstr "컨텐츠 뷰 없이 비 라이브러리 환경 '%s' 에서 리포지터리를 검색할 수 없습니다. "
 
 msgid "Cannot specify components for non-composite views"
-msgstr ""
+msgstr "비-복합적 뷰의 구성 요소를 지정할 수 없습니다"
 
 msgid "Cannot specify content for composite views"
-msgstr ""
+msgstr "복합적 뷰의 컨텐츠를 지정할 수 없습니다 "
 
 # translation auto-copied from project PressGang CCMS topics, version 1, document 30851-704293, author eukim
 msgid "Capsule"
@@ -852,10 +852,10 @@ msgid "Content View"
 msgstr "컨텐츠 보기 "
 
 msgid "Content View Version %{id} not in all specified environments %{envs}"
-msgstr ""
+msgstr "컨텐츠 뷰 버전 %{id}이 모든 지정된 환경 %{envs}에 없습니다 "
 
 msgid "Content View Version Ids to perform an incremental update on."
-msgstr ""
+msgstr "증분 업데이트를 수행하기 위한 컨텐츠 뷰 버전 ID입니다."
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author eukim
 msgid "Content View:"
@@ -885,7 +885,7 @@ msgid "Content view '%{view}' is not in environment '%{env}'"
 msgstr "컨텐츠 보기 '%{view}'가 환경 '%{env}'에 있지 않습니다 "
 
 msgid "Content view '%{view}' is not in lifecycle environment '%{env}'."
-msgstr ""
+msgstr "컨텐츠 뷰 '%{view}'가 라이프사이클 환경 '%{env}'에 없습니다. "
 
 msgid "Content view identifier"
 msgstr "컨텐츠 뷰 ID "
@@ -908,7 +908,7 @@ msgid "Copy"
 msgstr "복사"
 
 msgid "Copy an activation key"
-msgstr ""
+msgstr "활성키 복사 "
 
 msgid "Cores: %s"
 msgstr "코어: %s"
@@ -917,22 +917,22 @@ msgid "Could not delete organization '%s'."
 msgstr "조직 '%s'을 삭제할 수 없음. "
 
 msgid "Could not find %{content} with id '%{id}' in repository."
-msgstr ""
+msgstr "리포지터리에서 id '%{id}'를 갖는 %{content}을(를) 찾을 수 없습니다. "
 
 msgid "Could not find Environment with ids: %s"
-msgstr ""
+msgstr "다음의 ID를 갖는 환경을 찾을 수 없습니다: %s"
 
 msgid "Could not find Lifecycle Environment with id '%{id}'."
-msgstr ""
+msgstr "id '%{id}'인 라이프 사이클 환경을 찾을 수 없습니다."
 
 msgid "Could not find Repository for module %s."
 msgstr "모듈 %s의 리포지터리를 찾을 수 없습니다. "
 
 msgid "Could not find all specified errata ids: %s"
-msgstr ""
+msgstr "다음에 지정된 모든 에라타 ID를 찾을 수 없습니다: %s"
 
 msgid "Could not find errata with id: %s"
-msgstr ""
+msgstr "다음의 ID인 에라타를 찾을 수 없습니다: %s"
 
 msgid ""
 "Could not unarchive puppet module. Please make sure the puppet module has "
@@ -940,7 +940,7 @@ msgid ""
 msgstr "puppet 모듈을 압축 해제할 수 없습니다. puppet 모듈이 올바르게 압축되어 있는지 확인하십시오. "
 
 msgid "Couldn't find %{type} Filter with id %{id}"
-msgstr ""
+msgstr "ID %{id}인 %{type} 필터를 찾을 수 없습니다 "
 
 msgid "Couldn't find ContentViewFilter with id=%s"
 msgstr " id=%s인 컨텐츠 뷰 필터를 찾을 수 없습니다 "
@@ -1018,7 +1018,7 @@ msgstr "ID '%s'인 제품을 찾을 수 없음 "
 msgid ""
 "Couldn't find puppet environment associated with lifecycle environment "
 "'%{env}' and content view '%{view}'"
-msgstr ""
+msgstr "라이프 사이클 환경 '%{env}' 및 컨텐츠 뷰 '%{view}'에 관련된 puppet 환경을 찾을 수 없습니다 "
 
 msgid "Couldn't find repository '%s'"
 msgstr "리포지터리 '%s'를 찾을 수 없음 "
@@ -1135,7 +1135,7 @@ msgid "Debug RPMs"
 msgstr "디버그 RPM "
 
 msgid "Default PXElinux template for new Operating Systems"
-msgstr ""
+msgstr "새 운영 체제의 기본 PXElinux 템플릿 "
 
 msgid "Default System SLA"
 msgstr "기본값 시스템 SLA"
@@ -1147,16 +1147,16 @@ msgid "Default content view versions cannot be promoted"
 msgstr "기본값 컨텐츠 뷰 버전은 승격할 수 없습니다 "
 
 msgid "Default finish template for new Operating Systems"
-msgstr ""
+msgstr "새 운영 체제의 기본 최종 템플릿 "
 
 msgid "Default iPXE template for new Operating Systems"
-msgstr ""
+msgstr "새 운영 체제의 기본 iPXE 템플릿 "
 
 msgid "Default partitioning table for new Operating Systems"
-msgstr ""
+msgstr "새 운영 체제의 기본 파티션 설정 테이블 "
 
 msgid "Default provisioning template for new Operating Systems"
-msgstr ""
+msgstr "새 운영 체제의 기본 프로비저닝 템플릿 "
 
 msgid "Default user data for new Operating Systems"
 msgstr "새 운영 체제의 기본값 사용자 데이터 "
@@ -1225,7 +1225,7 @@ msgid "Description for the content view"
 msgstr "컨텐츠 뷰 설명 "
 
 msgid "Description for the new published content view version"
-msgstr ""
+msgstr "새로 공개된 컨텐츠 뷰 버전 설명 "
 
 msgid "Description of the content host"
 msgstr "컨텐츠 호스트 설명 "
@@ -1551,7 +1551,7 @@ msgid_plural "Failed to download %s packages."
 msgstr[0] "%s 패키지 다운로드에 실패했습니다 "
 
 msgid "Failed to find %{content} with id '%{id}'."
-msgstr ""
+msgstr "id '%{id}'인 %{content} 검색에 실패했습니다. "
 
 msgid "Fetch applicable errata for a system."
 msgstr "시스템에 적용 가능한 에라타를 가져옵니다. "
@@ -1576,10 +1576,10 @@ msgid "Filter by host collection"
 msgstr "호스트 컬렉션에 따라 필터링 "
 
 msgid "Filter by systems that need an Erratum by uuid"
-msgstr ""
+msgstr "uuid로 에라타를 필요로 하는 시스템에 의해 필터링 "
 
 msgid "Filter by systems that need any one of multiple Errata by uuid"
-msgstr ""
+msgstr "uuid로 여러 에라타 중 하나를 필요로 하는 시스템에 의해 필터링 "
 
 msgid "Filter content host by name"
 msgstr "이름에 따라 컨텐츠 호스트를 필터링 "
@@ -1622,20 +1622,20 @@ msgid "Filter sync plans by organization name or label"
 msgstr "조직 이름 또는 레이블에 따라 동기화 계획을 필터링 "
 
 msgid "Filter versions by environment"
-msgstr ""
+msgstr "환경에 따라 버전을 필터링 "
 
 msgid "Filter versions by version number"
-msgstr ""
+msgstr "버전 번호에 따라 버전을 필터링 "
 
 msgid "Filter versions that are components in the specified composite version"
-msgstr ""
+msgstr "지정된 복합 버전에 있는 구성 요소인 버전을 필터링 "
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author eukim
 msgid "Filter..."
 msgstr "필터..."
 
 msgid "For more information see "
-msgstr ""
+msgstr "보다 자세한 내용은 다음에서 참조하십시오 "
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author eukim
 msgid "GPG Key URL: "
@@ -1645,7 +1645,6 @@ msgstr "GPG 키 URL: "
 msgid "GPG Keys"
 msgstr "GPG 키 "
 
-#, fuzzy
 msgid "GPG keys"
 msgstr "GPG 키 "
 
@@ -1654,7 +1653,7 @@ msgid "Generate and Download"
 msgstr "생성 및 다운로드 "
 
 msgid "Generate and Synchronize Capsule Metadata for %s"
-msgstr ""
+msgstr "%s의 Capsule 메타데이터 생성 및 동기화 "
 
 msgid "Get content host reports for the environment"
 msgstr "환경의 컨텐츠 호스트 보고서 가져오기 "
@@ -1691,7 +1690,7 @@ msgid ""
 "Given a set of systems and errata, lists the content view versions           "
 "                                                        and environments "
 "that need updating."
-msgstr ""
+msgstr "지정된 시스템 및 에라타 세트에서 업데이트가 필요한 컨텐츠 뷰 버전 및 환경을 나열합니다."
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author eukim
 msgid "Go"
@@ -1704,7 +1703,7 @@ msgid "Host"
 msgstr "호스트 "
 
 msgid "Host Advisory"
-msgstr ""
+msgstr "호스트 권고 "
 
 msgid "Host Collection name"
 msgstr "호스트 컬렉션 이름 "
@@ -1725,7 +1724,7 @@ msgid "Host subscription details"
 msgstr "호스트 서브스크립션 정보 "
 
 msgid "Hosts with Installable Errata"
-msgstr ""
+msgstr "설치 가능한 에라타를 갖는 호스트 "
 
 msgid "How to order the sorted results (e.g. ASC for ascending)"
 msgstr "정렬된 결고를 정렬하는 방법 (예: 오름차순의 ASC) "
@@ -1748,7 +1747,7 @@ msgid "ID of a content view to show repositories in"
 msgstr "리포지터리에 표시할 컨텐츠 뷰 ID "
 
 msgid "ID of a content view version to show repositories in"
-msgstr ""
+msgstr "리포지터리를 표시한 컨텐츠 뷰 버전 ID"
 
 msgid "ID of a gpg key that will be assigned to this repository"
 msgstr "리포지터리에 할당할 GPG 키 ID "
@@ -1816,12 +1815,13 @@ msgstr "GPG 키 ID"
 msgid ""
 "If true, when adding the specified errata or packages, any needed "
 "dependencies will be copied as well."
-msgstr ""
+msgstr "True일 경우 지정된 에라타 또는 패키지를 추가하면 필요한 종속 패키지도 복사됩니다. "
 
 msgid ""
 "If true, will publish a new composite version using any specified "
 "content_view_version_id that has been promoted to a lifecycle environment."
 msgstr ""
+"True일 경우 라이프 사이클 환경으로 승격된 지정된 content_view_version_id를 사용하여 새 복합 버전이 공개됩니다. "
 
 msgid "Import Manifest"
 msgstr "매니페스트 가져오기 "
@@ -1837,10 +1837,10 @@ msgid "In Progress"
 msgstr "진행 중 "
 
 msgid "Incremental Update"
-msgstr ""
+msgstr "증분 업데이트 "
 
 msgid "Incremental Update incomplete."
-msgstr ""
+msgstr "증분 업데이트가 완료되지 않았습니다. "
 
 msgid "Informable Type must be one of the following [ %{list} ]"
 msgstr "정보 유형은 다음 중 하나이어야 합니다 [ %{list} ]"
@@ -1853,7 +1853,7 @@ msgid "Initial Registration Params"
 msgstr "초기 등록 매개 변수 "
 
 msgid "Install Applicable Errata"
-msgstr ""
+msgstr "적용 가능한 에라타 설치 "
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author eukim
 msgid "Install Finished"
@@ -1987,22 +1987,22 @@ msgid "Issued: "
 msgstr "발행됨: "
 
 msgid "Katello Host Advisory"
-msgstr ""
+msgstr "Katello 호스트 권고 "
 
 msgid "Katello Promotion Summary"
-msgstr ""
+msgstr "Katello 승격 요약 "
 
 msgid "Katello Promotion Summary for %{content_view}"
-msgstr ""
+msgstr "%{content_view}의 Katello 승격 요약 "
 
 msgid "Katello Support"
 msgstr "Katello 지원 "
 
 msgid "Katello Sync Summary"
-msgstr ""
+msgstr "Katello 동기화 요약 "
 
 msgid "Katello Sync Summary for %s"
-msgstr ""
+msgstr "%s의 Katello 동기화 요약 "
 
 msgid "Katello can be found on the same freenode channels used by Foreman."
 msgstr "Katello는 Foreman에 의해 사용되는 것과 동일한 freenode 채널에서 찾을 수 있습니다. "
@@ -2030,7 +2030,7 @@ msgid "Kickstarts"
 msgstr "킥스타트"
 
 msgid "Label of the content"
-msgstr ""
+msgstr "컨텐츠 레이블 "
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author eukim
 msgid "Last Checked in Date"
@@ -2048,10 +2048,10 @@ msgid "Level"
 msgstr "레벨 "
 
 msgid "Library lifecycle environments may not be deleted."
-msgstr ""
+msgstr "라이브러라 라이프사이클 환경은 삭제할 수 없습니다. "
 
 msgid "Library repository id to restrict comparisons to"
-msgstr ""
+msgstr "비교를 제한하기 위한 라이브러리 리포지터리 ID "
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author eukim
 msgid "License"
@@ -2069,26 +2069,29 @@ msgstr "라이프사이클 환경 "
 msgid ""
 "Lifecycle Environment %s has a successor.  Only the last lifecycle "
 "environment on a path can be deleted"
-msgstr ""
+msgstr "라이프 사이클 환경 %s에는 상속자가 있습니다. 경로의 마지막 라이프 사이클 환경만을 삭제할 수 있습니다 "
 
 msgid ""
 "Lifecycle Environment %s has associated Activation Keys. Please change or "
 "remove the associated Activation Keys before trying to delete this lifecycle "
 "environment."
 msgstr ""
+"라이프 사이클 환경 %s에는 연결된 활성키가 있습니다. 라이프 사이클 환경을 삭제하기 전 연결된 활성키를 변경 또는 삭제합니다."
 
 msgid ""
 "Lifecycle Environment %s has associated Content Hosts. Please unregister or "
 "move the associated Content Hosts before trying to delete this lifecycle "
 "environment."
 msgstr ""
+"라이프 사이클 환경 %s에는 연결된 컨텐츠 호스트가 있습니다. 라이프 사이클 환경을 삭제하기 전 연결된 컨텐츠 호스트를 등록 취소 또는 "
+"이동합니다. "
 
 msgid "Lifecycle Environments"
 msgstr "라이프사이클 환경 "
 
 msgid ""
 "Lifecycle environment '%{environment}' is not attached to this capsule."
-msgstr ""
+msgstr "라이프 사이클 환경 '%{environment}'이 capsule에 할당되어 있지 않습니다. "
 
 msgid ""
 "Lifecycle environments cannot be modifed on the default Smart Proxy.  The "
@@ -2104,104 +2107,104 @@ msgid "Limits"
 msgstr "제한 "
 
 msgid "List :resource_id"
-msgstr ""
+msgstr ":resource_id 나열 "
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author eukim
 msgid "List Actions"
-msgstr "작업 목록 "
+msgstr "작업 목록 나열 "
 
 msgid "List Candlepin events for the content host"
-msgstr ""
+msgstr "컨텐츠 호스트의 Candlepin 이벤트를 나열 "
 
 msgid "List a system's subscriptions"
-msgstr "시스템의 서브스크립션 목록 "
+msgstr "시스템의 서브스크립션 목록 나열"
 
 msgid "List activation keys"
-msgstr "활성키 목록 "
+msgstr "활성키 목록 나열 "
 
 msgid "List all :resource_id"
 msgstr "모두 나열 :resource_id "
 
 msgid "List all organizations"
-msgstr "전체 조직 목록 "
+msgstr "전체 조직 나열"
 
 msgid "List an activation key's subscriptions"
-msgstr "활성키의 서브스크립션 목록 "
+msgstr "활성키의 서브스크립션 목록 나열"
 
 msgid "List available subscriptions"
-msgstr "사용 가능한 서브스크립션 목록 "
+msgstr "사용 가능한 서브스크립션 목록 나열"
 
 msgid "List content hosts"
-msgstr "컨텐츠 호스트 목록 "
+msgstr "컨텐츠 호스트 목록 나열"
 
 msgid "List content hosts in a host collection"
-msgstr "호스트 컬렉션에 있는 컨텐츠 호스트 목록 "
+msgstr "호스트 컬렉션에 있는 컨텐츠 호스트 목록 나열"
 
 msgid "List content hosts in an organization"
-msgstr "조직에 있는 컨텐츠 호스트 목록 "
+msgstr "조직에 있는 컨텐츠 호스트 목록 나열"
 
 msgid "List content hosts in environment"
-msgstr "환경에 있는 컨텐츠 호스트 목록 "
+msgstr "환경에 있는 컨텐츠 호스트 목록 나열"
 
 msgid "List content hosts in the host collection"
-msgstr "호스트 컬렉션에 있는 컨텐츠 호스트 목록 "
+msgstr "호스트 컬렉션에 있는 컨텐츠 호스트 목록 나열"
 
 msgid "List content view puppet modules"
-msgstr "컨텐츠 뷰 puppet 모듈 목록 "
+msgstr "컨텐츠 뷰 puppet 모듈 목록 나열"
 
 msgid "List content view versions"
-msgstr "컨텐츠 뷰 버전 목록 "
+msgstr "컨텐츠 뷰 버전 목록 나열 "
 
 msgid "List content views"
-msgstr "컨텐츠 뷰 목록 "
+msgstr "컨텐츠 뷰 목록 나열 "
 
 msgid "List environment paths"
-msgstr "환경 경로 목록 "
+msgstr "환경 경로 목록 나열 "
 
 msgid "List environments in an organization"
-msgstr "조직에 있는 환경 목록 "
+msgstr "조직에 있는 환경 목록 나열 "
 
 msgid "List errata"
-msgstr "에라타 목록 "
+msgstr "에라타 나열 "
 
 msgid "List errata available for the content host"
-msgstr "컨텐츠 호스트에서 사용 가능한 에라타 목록 "
+msgstr "컨텐츠 호스트에서 사용 가능한 에라타 나열 "
 
 msgid "List filter rules"
-msgstr "필터 규칙 목록 "
+msgstr "필터 규칙 목록 나열 "
 
 msgid "List filters"
-msgstr "필터 목록 "
+msgstr "필터 목록 나열 "
 
 msgid "List gpg keys"
-msgstr "gpg 키 목록 "
+msgstr "gpg 키 목록 나열 "
 
 msgid "List host collections"
-msgstr "호스트 컬렉션 목록 "
+msgstr "호스트 컬렉션 목록 나열 "
 
 msgid "List host collections containing a content host"
-msgstr ""
+msgstr "컨텐츠 호스트가 있는 호스트 컬렉션을 나열 "
 
 msgid "List host collections in an activation key"
-msgstr ""
+msgstr "활성키에 있는 호스트 컬렉션을 나열 "
 
 msgid "List host collections the content host does not belong to"
-msgstr "컨텐츠 호스트가 속해 있지 않는 호스트 컬렉션 목록 "
+msgstr "컨텐츠 호스트가 속해 있지 않는 호스트 컬렉션 나열 "
 
 msgid "List host collections the system does not belong to"
-msgstr "시스템이 속해 있지 않는 호스트 컬렉션 목록 "
+msgstr "시스템이 속해 있지 않는 호스트 컬렉션 나열 "
 
 msgid "List host collections within an organization"
-msgstr ""
+msgstr "조직의 호스트 컬렉션을 나열 "
 
 msgid "List of Errata ids"
-msgstr ""
+msgstr "에라타 ID 목록 "
 
 msgid "List of Errata ids to install"
 msgstr "설치할 에라타 ID 목록 "
 
 msgid "List of component content view version ids for composite views"
-msgstr "복합 뷰의 구성 요소 컨텐츠 뷰 버전 ID 목록 나열 "
+msgstr "복합 뷰의 구성 요소 컨텐츠 뷰 버전 ID 목록 "
 
 msgid ""
 "List of content (e.g. package names, package group names or errata ids)"
@@ -2211,11 +2214,11 @@ msgid "List of content (e.g. package or package group names)"
 msgstr "컨텐츠 목록 (예: 패키지 또는 패키지 그룹 이름) "
 
 msgid "List of content host uuids to be in the host collection"
-msgstr ""
+msgstr "호스트 컬렉션에 있는 호스트 컬렉션 UUID 목록 "
 
 msgid ""
 "List of content host uuids to replace the content hosts in host collection"
-msgstr ""
+msgstr "호스트 컬렉션의 컨텐츠 호스트를 대체할 컨텐츠 호스트 UUID 목록 "
 
 msgid "List of enabled repo urls for the repo (Only first is used.)"
 msgstr "리포지터리의 활성화된 리포지터리 URL 목록 (첫 번째것만 사용됨)"
@@ -2275,7 +2278,7 @@ msgid "List organization subscriptions"
 msgstr "조직 서브스크립션 목록 나열 "
 
 msgid "List packages"
-msgstr ""
+msgstr "패키지 목록 나열 "
 
 msgid "List packages installed on the content host"
 msgstr "컨텐츠 호스트에 설치된 패키지 목록 나열 "
@@ -2364,7 +2367,7 @@ msgid "Name of Your Distributor:"
 msgstr "배포자 이름:"
 
 msgid "Name of new activation key"
-msgstr ""
+msgstr "새 활성키 이름 "
 
 msgid "Name of the content host"
 msgstr "컨텐츠 호스트 이름 "
@@ -2391,7 +2394,7 @@ msgid "Nest"
 msgstr "중첩 "
 
 msgid "Never Synced"
-msgstr ""
+msgstr "동기화하지 않음 "
 
 msgid "Never checked in"
 msgstr "한 번도 접속하지 않았습니다"
@@ -2400,10 +2403,10 @@ msgid "Never checked in."
 msgstr "한 번도 접속하지 않았습니다. "
 
 msgid "New Errata"
-msgstr ""
+msgstr "새 에라타 "
 
 msgid "New ISOs: %s"
-msgstr ""
+msgstr "새 ISO: %s"
 
 msgid "New content view name"
 msgstr "새 컨텐츠 뷰 이름 "
@@ -2416,7 +2419,7 @@ msgid "New host collection name"
 msgstr "새 호스트 컬렉션 이름 "
 
 msgid "New images: %{count}."
-msgstr ""
+msgstr "새 이미지: %{count}."
 
 msgid "New name for the content view"
 msgstr "새 컨텐츠 뷰 이름 "
@@ -2425,7 +2428,7 @@ msgid "New name for the repository"
 msgstr "새 리포지터리 이름 "
 
 msgid "New packages: %{count} (%{size})."
-msgstr ""
+msgstr "새 패키지: %{count} (%{size})."
 
 # translation auto-copied from project System-config-language, version f19, document system-config-language
 msgid "No"
@@ -2450,6 +2453,8 @@ msgid ""
 "No Version of Content View %{component} already exists as a component of the "
 "composite Content View %{composite} version %{version}"
 msgstr ""
+"컨텐츠 뷰 %{component}의 버전이 복합 컨텐츠 뷰 %{composite} 버전 %{version}의 구성 요소로 존재하지 "
+"않습니다 "
 
 msgid "No content has been provided."
 msgstr "제공된 컨텐츠가 없습니다. "
@@ -2458,7 +2463,7 @@ msgid "No content view history events found."
 msgstr "컨텐츠 뷰 기록 이벤트를 찾을 수 없습니다. "
 
 msgid "No content_view_version_ids provided"
-msgstr ""
+msgstr "content_view_version_ids가 지정되어 있지 않습니다 "
 
 msgid ""
 "No environments are currently available in this organization.  Please either "
@@ -2468,7 +2473,6 @@ msgstr ""
 "현재 이 조직에서 사용 가능한 환경이 없습니다. 조직에서 사용할 수 있는 환경을 추가하거나 환경이 사용자 디폴트로 설정된 조직을 "
 "선택합니다. "
 
-#, fuzzy
 msgid "No errors"
 msgstr "오류 없음 "
 
@@ -2488,7 +2492,7 @@ msgid "No new packages installed"
 msgstr "설치된 새 패키지가 없음 "
 
 msgid "No new packages."
-msgstr ""
+msgstr "새 패키지가 없습니다. "
 
 msgid "No package profile received for %s"
 msgstr "%s의 패키지 프로파일이 수신되지 않음 "
@@ -2525,10 +2529,10 @@ msgid "No recently synced products."
 msgstr "최근 동기화된 제품이 없음. "
 
 msgid "No recipients found for %s promotion summary"
-msgstr ""
+msgstr "%s 승격 요약의 수신 대상을 찾을 수 없습니다 "
 
 msgid "No recipients found for %s sync report"
-msgstr ""
+msgstr "%s 동기화 보고의 수신 대상을 찾을 수 없습니다 "
 
 msgid "No start time currently available."
 msgstr "현재 사용 가능한 시작 시간이 없습니다. "
@@ -2558,6 +2562,8 @@ msgid ""
 "promote this content to the relevant content view in order to make it "
 "available."
 msgstr ""
+"알림: 괄호 안의 숫자는 호스트에서 사용할 수 없는 라이브러리 환경에서 적용 가능한 모든 에라타를 반영합니다. 이 컨텐츠를 사용 가능하게 "
+"하려면 관련 컨텐츠 뷰로 승격시켜야 합니다. "
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Notifications"
@@ -2631,17 +2637,17 @@ msgstr "필요한 조직 "
 
 msgid ""
 "Organizations disabled, try allowing them in foreman/config/settings.yaml"
-msgstr ""
+msgstr "비활성화된 조직입니다. foreman/config/settings.yaml에서 이를 허용하십시오 "
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author eukim
 msgid "Other"
 msgstr "기타 "
 
 msgid "Override content for activation_key"
-msgstr ""
+msgstr "activation_key의 컨텐츠 덮어쓰기 "
 
 msgid "Override value 0/1"
-msgstr ""
+msgstr "값 0/1 덮어쓰기 "
 
 # translation auto-copied from project rhn-client-tools, version 6.5, document rhn-client-tools
 msgid "Package"
@@ -2802,9 +2808,8 @@ msgid "Pending"
 msgstr "보류 중 "
 
 msgid "Perform an Incremental Update on one or more Content View Versions"
-msgstr ""
+msgstr "하나 이상의 컨텐츠 뷰 버전에서 증분 업데이트를 수행 "
 
-#, fuzzy
 msgid ""
 "Permission Denied. User '%{user}' does not have permissions to access "
 "organization '%{org}'."
@@ -2829,15 +2834,14 @@ msgstr "메뉴의 왼쪽에 있는 선택기를 사용하여 조직을 선택하
 msgid "Please request the required privileges from an administrator."
 msgstr "관리자로 부터 필요한 권한을 요청하십시오. "
 
-#, fuzzy
 msgid "Pool %s has no product associated"
-msgstr "풀 %s에 연관된 제품이 없습니다 "
+msgstr "풀 %s에 연결된 제품이 없습니다 "
 
 msgid "Processing metadata"
 msgstr "메타데이터 처리 중 "
 
 msgid "Processing metadata."
-msgstr ""
+msgstr "메타데이터를 처리하고 있습니다. "
 
 # translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author eukim
 msgid "Product"
@@ -2860,7 +2864,7 @@ msgid "Product the repository belongs to"
 msgstr "리포지터리가 속한 제품 "
 
 msgid "Product with %{attribute} '%{id}' already exists in this organization."
-msgstr ""
+msgstr "%{attribute} '%{id}'인 제품이 이미 조직에 있습니다. "
 
 msgid "Products"
 msgstr "제품 "
@@ -2919,14 +2923,14 @@ msgid "Pulp task error"
 msgstr "Pulp 작업 오류 "
 
 msgid "Pulp task error.  Refer to task for more details."
-msgstr ""
+msgstr "Pulp 작업 오류입니다. 보다 자세한 내용은 작업에서 참조하십시오."
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Puppet Environment"
 msgstr "Puppet 환경 "
 
 msgid "Puppet Module"
-msgstr ""
+msgstr "Puppet 모듈 "
 
 msgid "Puppet Module '%s' found more than once. Please specify the author."
 msgstr "Puppet 모듈 '%s'을 하나 이상 발견했습니다. 저자를 지정하십시오. "
@@ -2950,7 +2954,7 @@ msgid "Quantity"
 msgstr "수량 "
 
 msgid "Quantity of this subscription to add"
-msgstr ""
+msgstr "추가할 서브스크립션 수 "
 
 msgid "Quantity of this subscriptions to add"
 msgstr "추가할 서브스크립션 수 "
@@ -2966,10 +2970,10 @@ msgid "Reason: %s"
 msgstr "원인: %s"
 
 msgid "Red Hat CDN URL"
-msgstr ""
+msgstr "Red Hat CDN URL"
 
 msgid "Red Hat Docker Registry URL"
-msgstr ""
+msgstr "Red Hat Docker 레지스트리 URL"
 
 # translation auto-copied from project Customer Portal Translations, version 004_messages, document messages, author eukim
 msgid "Red Hat Product"
@@ -3039,7 +3043,7 @@ msgid "Remove All"
 msgstr "모두 삭제 "
 
 msgid "Remove Content"
-msgstr ""
+msgstr "컨텐츠 삭제 "
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author eukim
 msgid "Remove Distributor"
@@ -3062,7 +3066,7 @@ msgid "Remove a puppet module from the content view"
 msgstr "컨텐츠 뷰에서 puppet 모듈 삭제 "
 
 msgid "Remove content hosts from the host collection"
-msgstr ""
+msgstr "호스트 컬렉션에서 컨텐츠 호스트 삭제 "
 
 msgid "Remove content on one or more systems"
 msgstr "하나 이상의 시스템에서 컨텐츠 삭제 "
@@ -3111,7 +3115,7 @@ msgid "Repositories"
 msgstr "리포지터리 "
 
 msgid "Repositories from published Content Views are not allowed."
-msgstr ""
+msgstr "공개된 컨텐츠 뷰에서 리포지터리는 허용되지 않습니다. "
 
 # translation auto-copied from project PressGang CCMS topics, version 1, document 30851-704293, author eukim
 msgid "Repository"
@@ -3120,10 +3124,10 @@ msgstr "리포지터리 "
 msgid ""
 "Repository %s cannot be deleted since it has already been included in a "
 "published Content View."
-msgstr ""
+msgstr "리포지터리 %s는 공개된 컨텐츠 뷰에 이미 포함되어 있으므로 삭제할 수 없습니다. "
 
 msgid "Repository %s cannot be deleted since they are Red Hat repositories."
-msgstr ""
+msgstr "리포지터리 %s은(는) Red Hat 리포지터리이기 때문에 삭제할 수 없습니다. "
 
 msgid "Repository Comparison"
 msgstr "리포지터리 비교 "
@@ -3135,13 +3139,15 @@ msgstr "리포지터리 세트"
 msgid ""
 "Repository URL or Upstream Name is empty. Both are required for syncing from "
 "the upstream."
-msgstr ""
+msgstr "리포지터리 URL 또는 업스트림 이름이 비어 있습니다. 두 가지 모두 업스트림에서 동기화해야 합니다. "
 
 msgid ""
 "Repository cannot be deleted since it has already been included in a "
 "published Content View. Please delete all Content View versions containing "
 "this repository before attempting to deleting it."
 msgstr ""
+"리포지터리는 공개된 컨텐츠 뷰에 이미 포함되어 있으므로 삭제할 수 없습니다. 삭제하기 전 리포지터리에 있는 모든 컨텐츠 뷰 버전을 "
+"삭제하십시오. "
 
 msgid "Repository cannot be disabled since it has already been promoted."
 msgstr "리포지터리는 이미 승격되었기 때문에 이를 비활성화할 수 없습니다. "
@@ -3162,7 +3168,7 @@ msgid "Repository id"
 msgstr "리포지터리 ID"
 
 msgid "Repository metadata publish"
-msgstr ""
+msgstr "리포지터리 메타데이터 공개 "
 
 msgid "Repository not found"
 msgstr "리포지터리를 찾을 수 없음 "
@@ -3203,11 +3209,13 @@ msgid ""
 "Return only systems where the Erratum specified by erratum_id or errata_ids "
 "is available to systems (default False)"
 msgstr ""
+"erratum_id 또는 errata_ids에 의해 지정된 에라타가 시스템에서 사용 가능한 시스템만을 반환합니다 (기본값 False)"
 
 msgid ""
 "Return only systems where the Erratum specified by erratum_id or errata_ids "
 "is unavailable to systems (default False)"
 msgstr ""
+"erratum_id 또는 errata_ids에 의해 지정된 에라타가 시스템에서 사용할 수 없는 시스템만을 반환합니다 (기본값 False)"
 
 msgid "Return subscriptions that don't overlap"
 msgstr "중복되지 않는 서브스크립션 반환 "
@@ -3334,19 +3342,19 @@ msgid "Select Repositories: "
 msgstr "리포지터리 선택: "
 
 msgid "Select a Capsule"
-msgstr ""
+msgstr "Capsule 선택 "
 
 msgid "Select a Content View"
-msgstr ""
+msgstr "컨텐츠 뷰 선택 "
 
 msgid "Select a Lifecycle Environment"
-msgstr ""
+msgstr "라이프 사이클 환경 선택 "
 
 msgid "Select a Repository"
-msgstr ""
+msgstr "리포지터리 선택 "
 
 msgid "Select a Tag"
-msgstr ""
+msgstr "태그 선택 "
 
 msgid "Select a repository"
 msgstr "리포지터리 선택 "
@@ -3360,7 +3368,7 @@ msgid "Select a view."
 msgstr "뷰를 선택합니다. "
 
 msgid "Select an Organization"
-msgstr ""
+msgstr "조직 선택 "
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Select hosts to assign to %s"
@@ -3370,16 +3378,17 @@ msgid ""
 "Selected content view has no repositories with Docker images. Please choose "
 "a different content view or life cycle environment."
 msgstr ""
+"선택된 컨텐츠 뷰에는 Docker 이미지를 갖는 리포지터리가 없습니다. 다른 컨텐츠 뷰 또는 라이프 사이클 환경을 선택하십시오. "
 
 msgid ""
 "Selected lifecycle environment has no content views. Please choose a "
 "different life cycle environment."
-msgstr ""
+msgstr "선택한 라이프 사이클 환경에는 컨텐츠 뷰가 없습니다. 다른 라이프 사이클 환경을 선택하십시오. "
 
 msgid ""
 "Selected organization has no capsules with Pulp or Pulp Node features. "
 "Please choose a different organization."
-msgstr ""
+msgstr "선택된 조직에는 Pulp 또는 Pulp 노드 기능을 갖는 Capsule이 없습니다. 다른 조직을 선택하십시오. "
 
 msgid "Service Level %s"
 msgstr "서비스 레벨 %s"
@@ -3404,7 +3413,7 @@ msgid "Show %s more line(s)"
 msgstr "%s 줄 이상 표시 "
 
 msgid "Show :a_resource"
-msgstr ""
+msgstr ":a_resource 표시 "
 
 msgid "Show a content host"
 msgstr "컨텐츠 호스트 표시 "
@@ -3450,7 +3459,7 @@ msgid "Show an ueber certificate for an organization"
 msgstr "조직의 ueber 인증서 표시 "
 
 msgid "Show content available for an activation key"
-msgstr ""
+msgstr "활성키에 사용 가능한 컨텐츠 표시 "
 
 msgid "Show content view version"
 msgstr "컨텐츠 뷰 버전 표시 "
@@ -3518,7 +3527,7 @@ msgid "Specify the environment"
 msgstr "환경 지정 "
 
 msgid "Specify the host collections as an array"
-msgstr ""
+msgstr "호스트 컬렉션을 배열로 지정 "
 
 msgid "Specify the organization"
 msgstr "조직 지정 "
@@ -3611,7 +3620,7 @@ msgstr "사용자 정의 정보가 성공적으로 삭제되었습니다 "
 msgid ""
 "Successfully initiated deletion for %s repositories, you are free to leave "
 "this page."
-msgstr ""
+msgstr "%s 리포지터리의 삭제가 성공적으로 시작되었습니다. 이 페이지를 나가도 상관 없습니다. "
 
 msgid "Successfully initiated removal of %s product(s)"
 msgstr "%s 제품의 삭제를 성공적으로 시작했습니다 "
@@ -3641,7 +3650,7 @@ msgid "Summary: "
 msgstr "요약: "
 
 msgid "Sychronize capsule content"
-msgstr ""
+msgstr "capsule 컨텐츠 동기화 "
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author eukim
 msgid "Sync Canceled"
@@ -3652,7 +3661,7 @@ msgid "Sync Cancelled"
 msgstr "동기화 취소됨 "
 
 msgid "Sync Incomplete"
-msgstr ""
+msgstr "동기화가 완료되지 않았습니다 "
 
 # translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Using_the_CloudForms_System_Engine_Dashboard
 msgid "Sync Overview"
@@ -3673,14 +3682,12 @@ msgstr "동기화가 완료되었습니다. "
 msgid "Sync one or more products"
 msgstr "하나 이상의 제품 동기화 "
 
-#, fuzzy
 msgid "Sync plan"
 msgstr "동기화 계획 "
 
 msgid "Sync plan identifier to attach"
 msgstr "첨부할 동기화 계획 ID "
 
-#, fuzzy
 msgid "Synchronize"
 msgstr "동기화 "
 
@@ -3692,7 +3699,7 @@ msgid "Synchronize repository"
 msgstr "리포지터리 동기화 "
 
 msgid "Syncing Complete."
-msgstr ""
+msgstr "동기화를 완료했습니다."
 
 msgid "System UUID"
 msgstr "시스템 UUID"
@@ -3726,7 +3733,7 @@ msgid "The default content view cannot be promoted"
 msgstr "기본값 컨텐츠 뷰는 승격할 수 없습니다 "
 
 msgid "The description for the new generated Content View Versions"
-msgstr ""
+msgstr "새로 생성된 컨텐츠 뷰 버전 설명 "
 
 msgid "The erratum filter rule end date is in an invalid format or type."
 msgstr "에라타 필터 규칙 종료 날짜가 잘못된 형식 또는 유형으로 되어 있습니다."
@@ -3738,7 +3745,7 @@ msgid "The erratum type must be an array. Invalid value provided"
 msgstr "에라타 유형은 어레이여야 합니다. 잘못된 값이 지정되었습니다 "
 
 msgid "The following hosts have errata that apply to them: "
-msgstr ""
+msgstr "다음 호스트에는 이에 적용되는 에라타가 있습니다: "
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author eukim
 msgid ""
@@ -3752,7 +3759,7 @@ msgstr ""
 msgid ""
 "The list of environments to promote the specified Content View Version to "
 "(replacing the older version)."
-msgstr ""
+msgstr "지정된 컨텐츠 뷰 버전을 승격하기 위한 (이전 버전으로 대체) 환경 목록입니다."
 
 msgid "The offset in the file where the content starts"
 msgstr "컨텐츠가 시작하는 파일의 오프셋 "
@@ -3761,21 +3768,25 @@ msgid ""
 "The promotion of %{content_view} to %{environment} has completed.  %{count} "
 "errata are available to your hosts."
 msgstr ""
+"%{content_view}의 %{environment}으로의 승격이 완료되었습니다.  %{count}개의 에라타를 호스트에서 사용할 수 "
+"있습니다. "
 
 msgid ""
 "The promotion of %{content_view} to <b>%{environment}</b> has completed.  "
 "%{count} needed errata are installable on your hosts."
 msgstr ""
+"%{content_view}의 <b>%{environment}</b>으로의 승격이 완료되었습니다. %{count}개의 필요한 에라타를 "
+"호스트에 설치할 수 있습니다. "
 
 msgid ""
 "The puppet environment %{name} is in use by %{count} Host Group(s) including "
 "%{names}"
-msgstr ""
+msgstr "puppet 환경 %{name}은(는) %{names}을 포함하여 %{count} 호스트 그룹에서 사용되고 있습니다 "
 
 msgid ""
 "The puppet environment %{name} is in use by %{count} Host(s) including "
 "%{names}"
-msgstr ""
+msgstr "puppet 환경 %{name}은(는) %{names}을 포함하여 %{count} 호스트에서 사용되고 있습니다 "
 
 msgid "The repository is already enabled"
 msgstr "리포지터리가 이미 활성화되어 있습니다 "
@@ -3783,7 +3794,7 @@ msgstr "리포지터리가 이미 활성화되어 있습니다 "
 msgid ""
 "The synchronization of \"%s\" has completed.  Below is a summary of new "
 "errata."
-msgstr ""
+msgstr "\"%s\"의 동기화가 완료되었습니다. 다음은 새 에라타 요약입니다. "
 
 msgid ""
 "The type of content.  The following types are supported: 'package' and "
@@ -3838,10 +3849,10 @@ msgid ""
 msgstr "'%s' 리포지터리에 대해 이미 활성 동기화 프로세스가 있습니다. 나중에 다시 시도해 보십시오. "
 
 msgid "There was an error attempting to enable or disable this repository:"
-msgstr ""
+msgstr "리포지터리를 활성 또는 비활성화하는 도중 오류가 발생했습니다: "
 
 msgid "There was an error attempting to retrieve the repository list:"
-msgstr ""
+msgstr "리포지터리 목록을 검색하는 도중 오류가 발생했습니다: "
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author eukim
 msgid "There was an error retrieving that row:"
@@ -3903,7 +3914,7 @@ msgid "Total Content Hosts"
 msgstr "총 컨텐츠 호스트 "
 
 msgid "Total module count: %s."
-msgstr ""
+msgstr "총 모듈 수: %s."
 
 msgid "Trigger a refresh of subscriptions, auto-attaching if enabled"
 msgstr "서브스크립션 새로고침 시작. 활성화되어 있을 경우 자동 첨부 "
@@ -3934,29 +3945,27 @@ msgstr "컨텐츠 호스트의 UUID "
 msgid "UUID of the system"
 msgstr "시스템의 UUID "
 
-#, fuzzy
 msgid "Unable to determine quantity for pool %s"
 msgstr "풀 %s의 수량을 지정할 수 없음 "
 
 msgid "Unable to fetch any capsules. Please try again."
-msgstr ""
+msgstr "capsule을 가져올 수 없습니다. 다시 시도하십시오. "
 
 msgid "Unable to fetch any life cycle environments. Please try again."
-msgstr ""
+msgstr "라이프 사이클 환경을 가져올 수 없습니다. 다시 시도하십시오. "
 
 msgid "Unable to fetch any repositories. Please try again."
-msgstr ""
+msgstr "리포지터리를 가져올 수 없습니다. 다시 시도하십시오. "
 
 msgid "Unable to fetch any tags. Please try again."
-msgstr ""
+msgstr "태그를 가져올 수 없습니다. 다시 시도하십시오. "
 
 msgid "Unable to fetch content views. Please try again."
-msgstr ""
+msgstr "컨텐츠 뷰를 가져올 수 없습니다. 다시 시도하십시오. "
 
 msgid "Unable to find errata with ids: %s."
-msgstr ""
+msgstr "다음의 ID인 에라타를 찾을 수 없습니다: %s."
 
-#, fuzzy
 msgid "Unable to find package %s"
 msgstr "패키지 %s를 찾을 수 없음 "
 
@@ -4002,10 +4011,10 @@ msgstr "%s를 동기화할 수 없습니다. 이 리포지터리에는 url 피�
 msgid ""
 "Unable to synchronize any repository. You either do not have the permission "
 "to synchronize or the selected repositories do not have a feed url."
-msgstr ""
+msgstr "리포지터리를 동기화할 수 없습니다. 동기화할 권한이 없거나 선택한 리포지터리에 피드 URL이  없을 수 있습니다. "
 
 msgid "Unapplied Errata"
-msgstr ""
+msgstr "적용되지 않은 에라타 "
 
 msgid "Unattach a subscription"
 msgstr "서브스크립션 할당 해제 "
@@ -4032,7 +4041,6 @@ msgstr "고유함 "
 msgid "Unknown"
 msgstr "알 수 없음 "
 
-#, fuzzy
 msgid "Unknown registration date"
 msgstr "알 수 없는 등록 날짜 "
 
@@ -4069,7 +4077,7 @@ msgid "Update a host collection"
 msgstr "호스트 컬렉션 업데이트 "
 
 msgid "Update a host group"
-msgstr ""
+msgstr "호스트 그룹 업데이트 "
 
 msgid "Update a puppet module associated with the content view"
 msgstr "컨텐츠 뷰에 연결된 puppet 모듈 업데이트 "
@@ -4083,7 +4091,7 @@ msgstr "동기화 계획 업데이트 "
 msgid ""
 "Update all editable and applicable systems, not just ones using the selected "
 "Content View Versions and Environments"
-msgstr ""
+msgstr "선택한 컨텐츠 뷰 버전 및 환경을 사용하는 시스템 뿐 만 아니라 편집가능하고 적용 가능한 모든 시스템을 업데이트합니다 "
 
 msgid "Update an activation key"
 msgstr "활성키 업데이트 "
@@ -4122,7 +4130,6 @@ msgstr "제품 업데이트 "
 msgid "Updating Package..."
 msgstr "패키지 업데이트 중..."
 
-#, fuzzy
 msgid "Updating package group..."
 msgstr "패키지 그룹 업데이트 중..."
 
@@ -4143,7 +4150,7 @@ msgid "Upload gpg key contents"
 msgstr "GPG 키 컨텐츠 업로드 "
 
 msgid "Upload into"
-msgstr ""
+msgstr "업로드 "
 
 msgid "Upload request id"
 msgstr "요청 ID 업로드 "
@@ -4155,7 +4162,6 @@ msgstr "업로드 중 "
 msgid "Upstream identity certificate not available"
 msgstr "업스트림 ID 인증서를 사용할 수 없습니다 "
 
-#, fuzzy
 msgid "Use Browser Locale"
 msgstr "브라우저 로케일 사용 "
 
@@ -4174,7 +4180,6 @@ msgstr "사용자 '%{user}'는 조직 '%{organization}'에 속해 있지 않습�
 msgid "User Notifications"
 msgstr "사용자 통지 "
 
-#, fuzzy
 msgid "User does not belong to an organization."
 msgstr "사용자가 조직에 속해 있지 않습니다. "
 
@@ -4257,7 +4262,6 @@ msgstr "주의"
 msgid "Welcome"
 msgstr "환영합니다"
 
-#, fuzzy
 msgid "Welcome Back"
 msgstr "환영합니다"
 
@@ -4275,10 +4279,10 @@ msgid "Yes"
 msgstr "예  "
 
 msgid "You are not allowed to promote to Environments %s"
-msgstr ""
+msgstr "환경 %s에 승격할 수 없습니다 "
 
 msgid "You are not allowed to publish Content View %s"
-msgstr ""
+msgstr "컨텐츠 뷰 %s을(를) 공개할 수 없습니다 "
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author eukim
 msgid "You are not authorised to perform this action."
@@ -4308,7 +4312,7 @@ msgid ""
 msgstr "현재 조직에 액세스할 수 있는 권한이 없습니다. 관리자에게 문의하여 조직에 액세스할 수 있는 권한을 받으십시오."
 
 msgid "You do not have permissions to delete %s"
-msgstr ""
+msgstr "%s을(를) 삭제할 권한이 없습니다 "
 
 msgid ""
 "You do not have valid credentials to access this system. Please contact your "
@@ -4366,19 +4370,19 @@ msgid ""
 msgstr "위젯의 제목을 클릭하고 해당 위젯을 다른 위치로 드래그하여 대시 보드를 재배치할 수 있습니다."
 
 msgid "a docker image"
-msgstr ""
+msgstr "Docker 이미지"
 
 msgid "a docker tag"
-msgstr ""
+msgstr "Docker 태그"
 
 msgid "a package"
-msgstr ""
+msgstr "패키지 "
 
 msgid "a package group"
-msgstr ""
+msgstr "패키지 그룹  "
 
 msgid "a puppet module"
-msgstr ""
+msgstr "Puppet 모듈 "
 
 msgid "activation key ID"
 msgstr "활성키 ID"
@@ -4389,7 +4393,6 @@ msgstr "활성키 ID "
 msgid "activation key name to filter by"
 msgstr "필터링할 활성키 이름 "
 
-#, fuzzy
 msgid "activation keys"
 msgstr "활성키 "
 
@@ -4409,16 +4412,16 @@ msgid "already taken"
 msgstr "이미 사용되고 있습니다 "
 
 msgid "an erratum"
-msgstr ""
+msgstr "에라타"
 
 msgid "an organization"
-msgstr ""
+msgstr "조직 "
 
 msgid "author of the puppet module"
 msgstr "puppet 모듈 저자 "
 
 msgid "auto attach subscriptions upon registration"
-msgstr ""
+msgstr "등록 시 서브스크립션을 자동으로 첨부 "
 
 msgid "base url to perform repo discovery on"
 msgstr "리포지터리 검색을 실행하기 위한 기본 url  "
@@ -4437,10 +4440,10 @@ msgid "cannot be blank"
 msgstr "빈 칸으로 비워 둘 수 없습니다 "
 
 msgid "cannot be blank. Either provide all or no sync information."
-msgstr ""
+msgstr "빈 칸으로 비워 둘 수 없습니다. 전체 동기화 정보를 제공하거나 동기화 정보를 제공하지 않습니다."
 
 msgid "cannot be changed."
-msgstr ""
+msgstr "변경할 수 없습니다."
 
 msgid "cannot be deleted if it has been promoted."
 msgstr "이미 승격되어 있을 경우 이를 삭제할 수 없습니다. "
@@ -4455,7 +4458,7 @@ msgid "cannot be nil"
 msgstr "nil이 될 수 없습니다 "
 
 msgid "cannot be set because unlimited content hosts is set"
-msgstr ""
+msgstr "무제한 컨텐츠 호스트가 설정되어 있기 때문에 설정할 수 없습니다 "
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author eukim
 msgid "cannot contain blank keynames"
@@ -4477,7 +4480,7 @@ msgstr "%s 자 이상을 포함시킬 수 없습니다 "
 
 msgid ""
 "checksum of the repository, currently 'sha1' & 'sha256' are supported.'"
-msgstr ""
+msgstr "리포지터리의 체크섬입니다. 현재 'sha1' & 'sha256'이 지원되고 있습니다."
 
 msgid "content release version"
 msgstr "컨텐츠 릴리즈 버전 "
@@ -4510,13 +4513,13 @@ msgid "content view to reassign orphaned systems to"
 msgstr "분리된 시스템을 재할당하기 위해 컨텐츠 보기 "
 
 msgid "content view version identifier"
-msgstr ""
+msgstr "컨텐츠 뷰 버전 ID "
 
 msgid "content view version identifiers to be deleted"
 msgstr "삭제할 컨텐츠 뷰 버전 ID "
 
 msgid "content view versions to compare"
-msgstr ""
+msgstr "비교할 컨텐츠 뷰 버전 "
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author eukim
 msgid "delete"
@@ -4539,9 +4542,10 @@ msgid ""
 "either both parameters 'content_view_id' and 'environment_id' should be "
 "specified or neither should be specified"
 msgstr ""
+"'content_view_id' 및 'environment_id' 매개 변수를 모두 지정하거나 또는 모두 지정하지 않거나 합니다"
 
 msgid "enables or disables synchronization"
-msgstr ""
+msgstr "동기화 활성화 또는 비활성화 "
 
 msgid "environment"
 msgstr "환경 "
@@ -4561,7 +4565,6 @@ msgstr "숫자로된 환경 ID "
 msgid "environment numeric identifiers to be removed"
 msgstr "제거할 숫자로된 환경 ID "
 
-#, fuzzy
 msgid "environment required"
 msgstr "필수 환경 "
 
@@ -4571,7 +4574,6 @@ msgstr "분리된 활성키를 재할당하기 위한 환경 "
 msgid "environment to reassign orphaned systems to"
 msgstr "분리된 시스템을 할당하기 위한 환경 "
 
-#, fuzzy
 msgid "environments"
 msgstr "환경 "
 
@@ -4610,10 +4612,10 @@ msgstr "이름이 포함환 환경만 필터링 "
 
 msgid ""
 "force content view promotion and bypass lifecycle environment restriction"
-msgstr ""
+msgstr "컨텐츠 뷰 승격 강제 및 라이프 사이클 환경 제한을 무시  "
 
 msgid "foreman-tasks service not running"
-msgstr ""
+msgstr "foreman-tasks 서비스가 실행되고 있지 않습니다 "
 
 msgid "found more than one activation key"
 msgstr "하나 이상의 활성키를 발견했습니다 "
@@ -4644,9 +4646,8 @@ msgid "identifier of the gpg key"
 msgstr "GPG 키 ID"
 
 msgid "ids to filter content by"
-msgstr ""
+msgstr "컨텐츠 필터링에 사용할 ID"
 
-#, fuzzy
 msgid "import"
 msgstr "가져오기 "
 
@@ -4679,10 +4680,10 @@ msgid "issue tracker"
 msgstr "문제 추적기 "
 
 msgid "katello_default cannot be changed."
-msgstr ""
+msgstr "katello_default는 변경할 수 없습니다. "
 
 msgid "label of the environment"
-msgstr ""
+msgstr "환경 레이블 "
 
 msgid "limit to only repositories of this time"
 msgstr "리포지터리로 제한 "
@@ -4711,13 +4712,13 @@ msgid "must be a positive integer value."
 msgstr "양의 정수 값이어야 합니다."
 
 msgid "must be a valid docker name"
-msgstr ""
+msgstr "올바른 Docker 이름이어야 합니다 "
 
 msgid "must be less than %d characters"
 msgstr "%d자 미만이어야 합니다"
 
 msgid "must be one of the following: %s"
-msgstr ""
+msgstr "다음 중 하나이어야 합니다: %s"
 
 msgid "must be unique within one organization"
 msgstr "하나의 조직 내에서 고유한 것이어야 함 "
@@ -4738,9 +4739,8 @@ msgstr "유효한 공개 GPG 키를 포함하고 있어야 합니다 "
 msgid "must contain valid Public GPG Key"
 msgstr "유효한 공개 GPG 키를 포함하고 있어야 합니다 "
 
-#, fuzzy
 msgid "must not contain leading or trailing white spaces."
-msgstr "선행 또는 후행 공백을 포함할 수 없음 "
+msgstr "선행 또는 후행 공백을 포함할 수 없습니다 "
 
 msgid "name"
 msgstr "이름 "
@@ -4767,7 +4767,7 @@ msgid "name of the repository"
 msgstr "리포지터리 이름 "
 
 msgid "name of the upstream docker repository"
-msgstr ""
+msgstr "업스트림 Docker 리포지터리 이름 "
 
 msgid "name: %s doesn't exist "
 msgstr "이름: %s이 존재하지 않습니다 "
@@ -4811,7 +4811,7 @@ msgid "package: version"
 msgstr "패키지: 버전 "
 
 msgid "package_ids is not an array"
-msgstr ""
+msgstr "package_ids는 배열이 아닙니다 "
 
 msgid "product name to filter by"
 msgstr "필터링할 제품 이름 "
@@ -4826,7 +4826,7 @@ msgid "puppet module ID"
 msgstr "Puppet 모듈 ID"
 
 msgid "puppet_module_ids is not an array"
-msgstr ""
+msgstr "puppet_module_ids는 배열이 아닙니다 "
 
 msgid "refresh"
 msgstr "새로 고침 "
@@ -4840,7 +4840,6 @@ msgstr "패키지 그룹 삭제 중..."
 msgid "removing package..."
 msgstr "패키지 삭제 중..."
 
-#, fuzzy
 msgid "removing packages..."
 msgstr "패키지 삭제 중..."
 
@@ -4878,10 +4877,10 @@ msgid "shared secret token"
 msgstr "공유된 비밀 토큰 "
 
 msgid "show only errata with one or more applicable systems"
-msgstr ""
+msgstr "하나 이상의 적용 가능한 시스템을 갖는 에라타만 표시 "
 
 msgid "show only errata with one or more installable systems"
-msgstr ""
+msgstr "하나 이상의 설치 가능한 시스템을 갖는 에라타만 표시 "
 
 msgid "show repositories in Library and the default content view"
 msgstr "라이브러리 및 기본값 컨텐츠 뷰에서 리포지터리 표시 "
@@ -4911,7 +4910,7 @@ msgid "systems"
 msgstr "시스템 "
 
 msgid "the failed task."
-msgstr ""
+msgstr "실패한 작업입니다. "
 
 msgid "the feed url of the original repository "
 msgstr "기존 리포지터리의 url 피드 "
@@ -4921,7 +4920,7 @@ msgid ""
 msgstr "다음 속성은 Red Hat 공급자 [ %s ]에 대해 업데이트될 수 없습니다 "
 
 msgid "the related failed task."
-msgstr ""
+msgstr "연관된 실패한 작업입니다."
 
 msgid "the uuid of the puppet module to associate"
 msgstr "연결할 puppet 모듈의 uuid "
@@ -4933,7 +4932,7 @@ msgid "type of filter (e.g. rpm, package_group, erratum)"
 msgstr "필터 유형 (예: rpm, package_group, erratum)"
 
 msgid "type of repo (either 'yum', 'puppet' or 'docker')"
-msgstr ""
+msgstr "리포지터리 유형 ('yum', 'puppet', 'docker'중 하나)"
 
 msgid "unique label"
 msgstr "고유한 레이블 "

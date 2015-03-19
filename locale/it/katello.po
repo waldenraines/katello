@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: katello 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-17 08:24-0500\n"
-"PO-Revision-Date: 2015-03-16 05:10+0000\n"
+"PO-Revision-Date: 2015-03-18 04:22+0000\n"
 "Last-Translator: fvalen <fvalen@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 3.6.0\n"
 
 msgid " Red Hat Repositories"
 msgstr "Repository di Red Hat"
@@ -1645,13 +1645,13 @@ msgstr "Fallito per il distributore(i):"
 
 msgid "Failed to download %s module."
 msgid_plural "Failed to download %s modules."
-msgstr[0] "Impossibile scaricare il modulo %s."
-msgstr[1] ""
+msgstr[0] "Impossibile scaricare %s modulo."
+msgstr[1] "Impossibile scaricare %s moduli."
 
 msgid "Failed to download %s package."
 msgid_plural "Failed to download %s packages."
-msgstr[0] "Impossibile scaricare il pacchetto %s."
-msgstr[1] ""
+msgstr[0] "Impossibile scaricare %s pacchetto."
+msgstr[1] "Impossibile scaricare %s pacchetti."
 
 msgid "Failed to find %{content} with id '%{id}'."
 msgstr "Impossibile trovare %{content} con id '%{id}'."
@@ -2987,13 +2987,12 @@ msgstr ""
 "Esegui un aggiornamento incrementale su una o più versioni della "
 "visualizzazione del contenuto"
 
-#, fuzzy
 msgid ""
 "Permission Denied. User '%{user}' does not have permissions to access "
 "organization '%{org}'."
 msgstr ""
 "Permesso negato. L'utente '%{user}' non presenta alcun permesso per accedere "
-"all'organizzazione '%{org}'."
+"all'organizzazione '%{org}'. "
 
 # translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Physical"
@@ -3016,9 +3015,8 @@ msgstr ""
 msgid "Please request the required privileges from an administrator."
 msgstr "Richiedere i privilegi necessari ad un amministratore."
 
-#, fuzzy
 msgid "Pool %s has no product associated"
-msgstr "Il pool %s non ha alcun prodotto associato"
+msgstr "Il pool %s non ha alcun prodotto associato "
 
 msgid "Processing metadata"
 msgstr "Processazione metadati"
@@ -3844,6 +3842,8 @@ msgid ""
 "Successfully initiated deletion for %s repositories, you are free to leave "
 "this page."
 msgstr ""
+"Iniziata con successo la rimozione di %s repository, ora è possibile "
+"abbandonare questa pagina."
 
 msgid "Successfully initiated removal of %s product(s)"
 msgstr "Inizializzata con successo la rimozione di %s prodotti"
@@ -3876,7 +3876,7 @@ msgid "Summary: "
 msgstr "Sommario:"
 
 msgid "Sychronize capsule content"
-msgstr ""
+msgstr "Sincronizza il contenuto del capsule"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
 msgid "Sync Canceled"
@@ -3887,7 +3887,7 @@ msgid "Sync Cancelled"
 msgstr "Sincronizzazione cancellata"
 
 msgid "Sync Incomplete"
-msgstr ""
+msgstr "Sincronizzazione non completata"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
 msgid "Sync Overview"
@@ -3929,7 +3929,7 @@ msgid "Synchronize repository"
 msgstr "Sincronizza repositorio"
 
 msgid "Syncing Complete."
-msgstr ""
+msgstr "Sincronizzazione completata"
 
 msgid "System UUID"
 msgstr "UUID del sistema"
@@ -3968,6 +3968,8 @@ msgstr "Impossibile avanzare la visualizzazione del contenuto predefinita."
 
 msgid "The description for the new generated Content View Versions"
 msgstr ""
+"Descrizione per le nuove versioni della visualizzazione del contenuto "
+"generato"
 
 msgid "The erratum filter rule end date is in an invalid format or type."
 msgstr ""
@@ -3985,7 +3987,7 @@ msgstr ""
 "valido"
 
 msgid "The following hosts have errata that apply to them: "
-msgstr ""
+msgstr "I seguenti host dispongono di errata da applicare:"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
 msgid ""
@@ -4002,6 +4004,8 @@ msgid ""
 "The list of environments to promote the specified Content View Version to "
 "(replacing the older version)."
 msgstr ""
+"L'elenco di ambienti nei quali promuovere le vesioni della visualizzazione "
+"del contenuto specificato (in sostituzione della versione più vecchia)."
 
 msgid "The offset in the file where the content starts"
 msgstr "L'offset nel file all'inizio del contenuto"
@@ -4010,29 +4014,38 @@ msgid ""
 "The promotion of %{content_view} to %{environment} has completed.  %{count} "
 "errata are available to your hosts."
 msgstr ""
+"L'avanzamento di %{content_view} in %{environment} è terminato. Sono "
+"disponibili %{count} errata per gli host."
 
 msgid ""
 "The promotion of %{content_view} to <b>%{environment}</b> has completed.  "
 "%{count} needed errata are installable on your hosts."
 msgstr ""
+"L'avanzamento di %{content_view} in <b>%{environment}</b> è terminato. È "
+"possibile installare %{count} errata necessari sugli host."
 
 msgid ""
 "The puppet environment %{name} is in use by %{count} Host Group(s) including "
 "%{names}"
 msgstr ""
+"L'ambiente puppet %{name} è utilizzato da %{count} gruppi di host, incluso "
+"%{names}"
 
 msgid ""
 "The puppet environment %{name} is in use by %{count} Host(s) including "
 "%{names}"
 msgstr ""
+"L'ambiente puppet %{name} è utilizzato da %{count} host, incluso %{names}"
 
 msgid "The repository is already enabled"
-msgstr "Il repositorio è già abilitato"
+msgstr "Il repository è già abilitato"
 
 msgid ""
 "The synchronization of \"%s\" has completed.  Below is a summary of new "
 "errata."
 msgstr ""
+"Il processo di sincronizzazione di \"%s\"  è terminato. Di seguito viene "
+"riportato un sommario del nuovo errata."
 
 msgid ""
 "The type of content.  The following types are supported: 'package' and "
@@ -4098,9 +4111,13 @@ msgstr ""
 
 msgid "There was an error attempting to enable or disable this repository:"
 msgstr ""
+"Si è verificato un errore durante il tentativo di abilitare o disabilitare "
+"questo repository:"
 
 msgid "There was an error attempting to retrieve the repository list:"
 msgstr ""
+"Si è verificato un errore durante il tentativo di recuperare l'elenco di "
+"repository:"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
 msgid "There was an error retrieving that row:"
@@ -4168,7 +4185,7 @@ msgid "Total Content Hosts"
 msgstr "Host di contenuto totali"
 
 msgid "Total module count: %s."
-msgstr ""
+msgstr "Conteggio totale dei moduli: %s."
 
 msgid "Trigger a refresh of subscriptions, auto-attaching if enabled"
 msgstr "Aggiorna le sottoscrizioni ed esegui auto-attach se abilitato"
@@ -4199,31 +4216,30 @@ msgstr "UUID dell'host di contenuto"
 msgid "UUID of the system"
 msgstr "UUID del sistema"
 
-#, fuzzy
 msgid "Unable to determine quantity for pool %s"
-msgstr "Impossibile determinare la quantità per il pool %s"
+msgstr "Impossibile determinare la quantità per il pool %s "
 
 msgid "Unable to fetch any capsules. Please try again."
-msgstr ""
+msgstr "Impossibile recuperare i capsule. Riprovare."
 
 msgid "Unable to fetch any life cycle environments. Please try again."
-msgstr ""
+msgstr "Impossibile ripristinare gli ambienti ciclo di vita. Riprovare."
 
 msgid "Unable to fetch any repositories. Please try again."
-msgstr ""
+msgstr "Impossibile recuperare qualsiasi repository. Riprovare."
 
 msgid "Unable to fetch any tags. Please try again."
-msgstr ""
+msgstr "Impossibile recuperare qualsiasi tag. Riprovare."
 
 msgid "Unable to fetch content views. Please try again."
 msgstr ""
+"Impossibile recuperare qualsiasi visualizzazione del contenuto. Riprovare."
 
 msgid "Unable to find errata with ids: %s."
-msgstr ""
+msgstr "Impossibile trovare errata con id: %s"
 
-#, fuzzy
 msgid "Unable to find package %s"
-msgstr "Impossibile trovare il pacchetto %s"
+msgstr "Impossibile trovare il pacchetto %s "
 
 msgid ""
 "Unable to perform removal. Please reassign any attached distributors first."
@@ -4273,9 +4289,12 @@ msgid ""
 "Unable to synchronize any repository. You either do not have the permission "
 "to synchronize or the selected repositories do not have a feed url."
 msgstr ""
+"Impossibile sincronizzare qualsiasi repository. Probabilmente non sei in "
+"possesso dei permessi necessari per la sincronizzazione, oppure i repository "
+"selezionati non dispongono di un url del feed."
 
 msgid "Unapplied Errata"
-msgstr ""
+msgstr "Errata non applicato"
 
 msgid "Unattach a subscription"
 msgstr "Rimuovi una sottoscrizione"
@@ -4302,9 +4321,8 @@ msgstr "Unico"
 msgid "Unknown"
 msgstr "Sconosciuto"
 
-#, fuzzy
 msgid "Unknown registration date"
-msgstr "Data di registrazione sconosciuta"
+msgstr "Data di registrazione sconosciuta "
 
 # translation auto-copied from project Customer Portal Translations, version RedHatCloudFormsLifeCycle, document RedHatCouldFormsLifeCycle.html, author fvalen
 msgid "Unlimited"
@@ -4341,7 +4359,7 @@ msgid "Update a host collection"
 msgstr "Aggiorna un insieme di host"
 
 msgid "Update a host group"
-msgstr ""
+msgstr "Aggiorna un gruppo di host"
 
 msgid "Update a puppet module associated with the content view"
 msgstr ""
@@ -4357,6 +4375,9 @@ msgid ""
 "Update all editable and applicable systems, not just ones using the selected "
 "Content View Versions and Environments"
 msgstr ""
+"Aggiorna tutti i sistemi modificabili e applicabili, non solo quelli che "
+"utilizzano gli ambienti e le versioni della visualizzazione del contenuto "
+"selezionata"
 
 msgid "Update an activation key"
 msgstr "Aggiorna una chiave di attivazione"
@@ -4416,7 +4437,7 @@ msgid "Upload gpg key contents"
 msgstr "Carica i contenuti della chiave gpg"
 
 msgid "Upload into"
-msgstr ""
+msgstr "Carica in"
 
 msgid "Upload request id"
 msgstr "Carica l'id delle richieste"
@@ -4428,9 +4449,8 @@ msgstr "Caricamento in corso"
 msgid "Upstream identity certificate not available"
 msgstr "Certificato identità upstream non disponibile"
 
-#, fuzzy
 msgid "Use Browser Locale"
-msgstr "Usa locale del browser"
+msgstr "Usa locale del browser "
 
 msgid "Use this as a source for installation and updates."
 msgstr "Usa questo come sorgente per gli aggiornamenti e l'installazione"
@@ -4450,9 +4470,8 @@ msgstr ""
 msgid "User Notifications"
 msgstr "Notifiche utente"
 
-#, fuzzy
 msgid "User does not belong to an organization."
-msgstr "L'utente non appartiene ad una organizzazione"
+msgstr "L'utente non appartiene ad una organizzazione "
 
 msgid "User must be logged in."
 msgstr "L'utente deve essere registrato."
@@ -4535,9 +4554,8 @@ msgstr "Attenzione"
 msgid "Welcome"
 msgstr "Benvenuto"
 
-#, fuzzy
 msgid "Welcome Back"
-msgstr "Bentornato"
+msgstr "Bentornato "
 
 msgid "When set to 'True' certificate will be re-issued"
 msgstr "Quando impostato su 'Vero' il certificato verrà riemesso"
@@ -4555,10 +4573,10 @@ msgid "Yes"
 msgstr "Si"
 
 msgid "You are not allowed to promote to Environments %s"
-msgstr ""
+msgstr "Non è possibile eseguire un avanzamanento negli ambienti %s"
 
 msgid "You are not allowed to publish Content View %s"
-msgstr ""
+msgstr "Non è possibile pubblicare la visualizzazione del contenuto %s"
 
 # translation auto-copied from project Katello, version 0.1v, document app, author fvalen
 msgid "You are not authorised to perform this action."
@@ -4597,7 +4615,7 @@ msgstr ""
 "l'amministratore per ottenere i permessi d'accesso ad una organizzazione."
 
 msgid "You do not have permissions to delete %s"
-msgstr ""
+msgstr "Non sei in possesso dei permessi necessari per eliminare %s"
 
 msgid ""
 "You do not have valid credentials to access this system. Please contact your "
@@ -4665,19 +4683,19 @@ msgstr ""
 "spostandolo su un'altra posizione."
 
 msgid "a docker image"
-msgstr ""
+msgstr "Una immagine Docker"
 
 msgid "a docker tag"
-msgstr ""
+msgstr "Un tag per il Docker"
 
 msgid "a package"
-msgstr ""
+msgstr "un pacchetto"
 
 msgid "a package group"
-msgstr ""
+msgstr "Un gruppo di pacchetti"
 
 msgid "a puppet module"
-msgstr ""
+msgstr "Un modulo puppet"
 
 msgid "activation key ID"
 msgstr "ID chiave di attivazione"
@@ -4707,16 +4725,16 @@ msgid "already taken"
 msgstr "già selezionato"
 
 msgid "an erratum"
-msgstr ""
+msgstr "un erratum"
 
 msgid "an organization"
-msgstr ""
+msgstr "una organizzazione"
 
 msgid "author of the puppet module"
 msgstr "autore del modulo puppet"
 
 msgid "auto attach subscriptions upon registration"
-msgstr ""
+msgstr "esegui l'auto attach delle sottoscrizioni previa registrazione"
 
 msgid "base url to perform repo discovery on"
 msgstr "url di base sul quale eseguire la scoperta dei repositori"
@@ -4732,15 +4750,16 @@ msgstr "non può essere vuoto"
 msgid "cannot be a binary file."
 msgstr "non può essere un file binario."
 
-#, fuzzy
 msgid "cannot be blank"
-msgstr "non può essere vuoto"
+msgstr "non può essere vuoto "
 
 msgid "cannot be blank. Either provide all or no sync information."
 msgstr ""
+"non può essere vuoto . Inserire tutte le informazioni necessarie, oppure non "
+"inserire alcuna informazione per la sincronizzazione"
 
 msgid "cannot be changed."
-msgstr ""
+msgstr "impossibile modificarlo."
 
 msgid "cannot be deleted if it has been promoted."
 msgstr "non può essere cancellato se è stato avanzato."
@@ -4756,6 +4775,7 @@ msgstr "non può essere zero"
 
 msgid "cannot be set because unlimited content hosts is set"
 msgstr ""
+"impossibile impostarlo poichè è stato impostato host di contenuto illimitati"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
 msgid "cannot contain blank keynames"
@@ -4781,6 +4801,7 @@ msgstr "non può avere più di %s caratteri"
 msgid ""
 "checksum of the repository, currently 'sha1' & 'sha256' are supported.'"
 msgstr ""
+"checksum del repository, attualmente 'sha1' & 'sha256' sono supportati.'"
 
 msgid "content release version"
 msgstr "Versione release del contenuto"
@@ -4815,14 +4836,14 @@ msgid "content view to reassign orphaned systems to"
 msgstr "visualizzazione del contenuto al quale riassegnare i sistemi orfani"
 
 msgid "content view version identifier"
-msgstr ""
+msgstr "identificatore versione visualizzazione del contenuto"
 
 msgid "content view version identifiers to be deleted"
 msgstr ""
 "identificatori versione per la visualizzazione del contenuto da cancellare"
 
 msgid "content view versions to compare"
-msgstr ""
+msgstr "versioni della visualizzazione del contenuto da confrontare"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
 msgid "delete"
@@ -4846,9 +4867,11 @@ msgid ""
 "either both parameters 'content_view_id' and 'environment_id' should be "
 "specified or neither should be specified"
 msgstr ""
+"entrambi i parametri 'content_view_id' e 'environment_id' devono essere "
+"specificati, in caso contrario non specificare alcun parametro"
 
 msgid "enables or disables synchronization"
-msgstr ""
+msgstr "abilita o disabilita la sincronizzazione"
 
 msgid "environment"
 msgstr "ambiente"
@@ -4917,9 +4940,11 @@ msgstr "filtra solo gli ambienti con questo nome"
 msgid ""
 "force content view promotion and bypass lifecycle environment restriction"
 msgstr ""
+"forza l'avanzamento della visualizzazione del contenuto e bypassa le "
+"restrizioni dell'ambiente ciclo di vita"
 
 msgid "foreman-tasks service not running"
-msgstr ""
+msgstr "il servizio foreman-tasks non è in esecuzione"
 
 msgid "found more than one activation key"
 msgstr "travata più di una chiave di attivazione"
@@ -4949,7 +4974,7 @@ msgid "identifier of the gpg key"
 msgstr "identificatore della chiave gpg"
 
 msgid "ids to filter content by"
-msgstr ""
+msgstr "id per filtrare il contenuto per"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
 msgid "import"
@@ -4983,10 +5008,10 @@ msgid "issue tracker"
 msgstr "emetti tracker"
 
 msgid "katello_default cannot be changed."
-msgstr ""
+msgstr "katello_default non può essere modificato."
 
 msgid "label of the environment"
-msgstr ""
+msgstr "etichetta dell'ambiente"
 
 msgid "limit to only repositories of this time"
 msgstr "limita ai soli repositori di questa ora"
@@ -5017,13 +5042,13 @@ msgid "must be a positive integer value."
 msgstr "deve essere un valore intero positivo."
 
 msgid "must be a valid docker name"
-msgstr ""
+msgstr "deve essere un nome docker valido"
 
 msgid "must be less than %d characters"
 msgstr "deve essere più piccolo di %d caratteri"
 
 msgid "must be one of the following: %s"
-msgstr ""
+msgstr "deve essere uno dei seguenti: %s"
 
 msgid "must be unique within one organization"
 msgstr "deve essere unico all'interno di una organizzazione"
@@ -5074,7 +5099,7 @@ msgid "name of the repository"
 msgstr "nome del repositorio"
 
 msgid "name of the upstream docker repository"
-msgstr ""
+msgstr "nome del repositorio docker dell'upstream"
 
 msgid "name: %s doesn't exist "
 msgstr "nome: %s non esiste"
@@ -5118,7 +5143,7 @@ msgid "package: version"
 msgstr "pacchetto: versione"
 
 msgid "package_ids is not an array"
-msgstr ""
+msgstr "package_ids non è un array"
 
 msgid "product name to filter by"
 msgstr "nome del prodotto da usare per il filtro"
@@ -5133,7 +5158,7 @@ msgid "puppet module ID"
 msgstr "ID modulo puppet"
 
 msgid "puppet_module_ids is not an array"
-msgstr ""
+msgstr "puppet_module_ids non è un array"
 
 msgid "refresh"
 msgstr "aggiorna"
@@ -5185,10 +5210,10 @@ msgid "shared secret token"
 msgstr "token segreto condiviso"
 
 msgid "show only errata with one or more applicable systems"
-msgstr ""
+msgstr "mostra solo l'errata con uno o più sistemi applicabili"
 
 msgid "show only errata with one or more installable systems"
-msgstr ""
+msgstr "mostra solo l'errata con uno o più sistemi installabili"
 
 msgid "show repositories in Library and the default content view"
 msgstr ""
@@ -5222,7 +5247,7 @@ msgid "systems"
 msgstr "sistemi"
 
 msgid "the failed task."
-msgstr ""
+msgstr "l'evento fallito."
 
 msgid "the feed url of the original repository "
 msgstr "url feed del repositorio originale"
@@ -5234,7 +5259,7 @@ msgstr ""
 "[ %s ]"
 
 msgid "the related failed task."
-msgstr ""
+msgstr "l'evento fallito relativo."
 
 msgid "the uuid of the puppet module to associate"
 msgstr "uuid del modulo puppet da associare"
@@ -5246,7 +5271,7 @@ msgid "type of filter (e.g. rpm, package_group, erratum)"
 msgstr "tipo di filtro (es. rpm, package_group, erratum)"
 
 msgid "type of repo (either 'yum', 'puppet' or 'docker')"
-msgstr ""
+msgstr "tipo di repo ('yum', 'puppet' o 'docker')"
 
 msgid "unique label"
 msgstr "etichetta unica"
