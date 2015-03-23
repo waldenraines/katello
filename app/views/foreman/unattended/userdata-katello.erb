@@ -1,11 +1,9 @@
 <%#
 kind: user_data
-name: Katello Kickstart default user data
+name: Satellite Kickstart default user data
 oses:
-- CentOS 6
-- CentOS 7
-- Fedora 19
-- Fedora 20
+- Red Hat Enterprise Linux 6
+- Red Hat Enterprise Linux 7
 -%>
 #cloud-config
 hostname: <%= @host.shortname %>
@@ -24,9 +22,9 @@ write_files:
 <%= indent 4 do
       snippet 'subscription_manager_registration'
     end %>
-<% if @host.respond_to?(:realm) && @host.otp && @host.realm && @host.realm.realm_type == "FreeIPA" -%>
+<% if @host.respond_to?(:realm) && @host.otp && @host.realm && @host.realm.realm_type == "Red Hat Identity Management" -%>
 <%= indent 4 do
-      snippet 'freeipa_register'
+      snippet 'idm_register'
     end %>
 <% end -%>
     # update all the base packages from the updates repository
