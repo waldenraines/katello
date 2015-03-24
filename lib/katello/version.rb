@@ -1,3 +1,3 @@
 module Katello
-  VERSION = "2.2.0.27"
+  VERSION = "2.2.0.29"
 end
