@@ -13,5 +13,9 @@
 module Katello
   class Api::ApiController < ::Api::BaseController
     include Concerns::Api::ApiController
+
+    def api_request?
+      true
+    end
   end
 end
