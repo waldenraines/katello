@@ -42,9 +42,9 @@ end
 
 defaults = {:vendor => "Katello", :default => true, :locked => true}
 
-templates = [{:name => "Katello Kickstart Default",           :source => "kickstart-katello.erb",      :template_kind => kinds[:provision]},
-             {:name => "Katello Kickstart Default User Data", :source => "userdata-katello.erb",       :template_kind => kinds[:user_data]},
-             {:name => "Katello Kickstart Default Finish",    :source => "finish-katello.erb",         :template_kind => kinds[:finish]},
+templates = [{:name => "Satellite Kickstart Default",           :source => "kickstart-katello_rhel.erb",      :template_kind => kinds[:provision]},
+             {:name => "Satellite Kickstart Default User Data", :source => "userdata-katello.erb",       :template_kind => kinds[:user_data]},
+             {:name => "Satellite Kickstart Default Finish",    :source => "finish-katello.erb",         :template_kind => kinds[:finish]},
              {:name => "subscription_manager_registration",   :source => "snippets/_subscription_manager_registration.erb", :snippet => true}]
 
 templates.each do |template|
@@ -53,7 +53,7 @@ templates.each do |template|
 end
 
 # Make some Foreman templates default so they automatically get added to new orgs like our Katello templates
-templates = ["puppet.conf", "freeipa_register", "Kickstart default iPXE", "Kickstart default PXELinux", "PXELinux global default"]
+templates = ["puppet.conf", "idm_register", "Kickstart default iPXE", "Kickstart default PXELinux", "PXELinux global default"]
 
 ConfigTemplate.where(:name => templates).each do |template|
   template.update_attribute(:default, true)
