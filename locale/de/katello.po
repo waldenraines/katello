@@ -4,7 +4,6 @@
 # 
 # Translators:
 # Miroslav Suchý <msuchy@redhat.com>, 2012-2013.
-# jdimanos <jdimanos@redhat.com>, 2013. #zanata
 # hpeters <hpeters@redhat.com>, 2014. #zanata
 # hpeters <hpeters@redhat.com>, 2015. #zanata
 # jdimanos <jdimanos@redhat.com>, 2015. #zanata
@@ -14,7 +13,7 @@ msgstr ""
 "Project-Id-Version: katello 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-17 08:24-0500\n"
-"PO-Revision-Date: 2015-03-10 05:51+0000\n"
+"PO-Revision-Date: 2015-03-18 05:04+0000\n"
 "Last-Translator: hpeters <hpeters@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 3.6.0\n"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author rgromans
 msgid " Red Hat Repositories"
@@ -325,7 +324,7 @@ msgid ": '%s' is a built-in environment"
 msgstr ": \"%s\" ist eine integrierte Umgebung"
 
 msgid ":a_resource identifier"
-msgstr ""
+msgstr ":a_resource identifier"
 
 msgid "A backend service [ %s ] is unreachable"
 msgstr "Ein Back-End-Dienst [ %s ] kann nicht erreicht werden"
@@ -465,7 +464,7 @@ msgid ""
 "Add all packages without Errata to the included/excluded list. (Package "
 "Filter only)"
 msgstr ""
-"Alle Pakete ohne Errata zur Einschluss-/Ausschlussliste hinzufügen. (nur "
+"Alle Pakete ohne Errata zur Einschluss-/Ausschlussliste hinzufügen (nur "
 "Paketfilter)"
 
 msgid "Add content host to the host collection"
@@ -590,7 +589,7 @@ msgstr "Verknüpfen"
 
 # translation auto-copied from project rhsm-web, version 0.0, document management, author jdimanos
 msgid "Attach a subscription"
-msgstr "Subskription anhängen"
+msgstr "Subskription verknüpfen"
 
 msgid "Attached Subscriptions"
 msgstr "Subskriptionen verknüpfen"
@@ -683,7 +682,7 @@ msgid "CDN loading error: access forbidden to %s"
 msgstr "CDN-Ladefehler: Zugriff auf %s verweigert"
 
 msgid "CVE identifier"
-msgstr "CVE-Kennung"
+msgstr "CVE-ID"
 
 msgid "Calculate Applicable Errata based on a particular Content View"
 msgstr ""
@@ -786,12 +785,11 @@ msgid "Cannot delete view while it exists in environments"
 msgstr ""
 "Ansicht kann nicht gelöscht werden, während sie in Umgebungen existiert"
 
-#, fuzzy
 msgid ""
 "Cannot promote environment out of sequence. Use force to bypass restriction."
 msgstr ""
-"Umgebung kann nicht in anderer Reihenfolge übertragen werden. Verwenden Sie "
-"\"force\", um diese Einschränkung zu umgehen"
+"Umgebung kann nicht in anderer Reihenfolge übertragen werden. Erzwingen Sie "
+"die Übertragung, um diese Einschränkung zu umgehen"
 
 msgid "Cannot publish default content view"
 msgstr "Standardinhaltsansicht kann nicht veröffentlicht werden"
@@ -965,9 +963,9 @@ msgid ""
 "and architecture. Multiple Kickstart trees of %{release} %{arch} were found "
 "in Repositories: %{repos}"
 msgstr ""
-"Inhaltsansichten dürfen nicht mehrere Kickstart-Bäume derselben Version und "
-"Architektur enthalten. Mehrere Kickstart-Bäume für %{release} %{arch} wurden "
-"in folgenden Repositorys gefunden: %{repos}"
+"Inhaltsansichten dürfen nicht mehrere Kickstart-Strukturen derselben Version "
+"und Architektur enthalten. Mehrere Kickstart-Strukturen für %{release} "
+"%{arch} wurden in folgenden Repositorys gefunden: %{repos}"
 
 msgid "Content files to upload. Can be a single file or array of files."
 msgstr ""
@@ -1182,7 +1180,7 @@ msgid "Create a product"
 msgstr "Produkt erstellen"
 
 msgid "Create a sync plan"
-msgstr "Syncronisationsplan erstellen"
+msgstr "Synchronisationsplan erstellen"
 
 msgid "Create an activation key"
 msgstr "Aktivierungsschlüssel erstellen"
@@ -1267,7 +1265,6 @@ msgid "Default content view versions cannot be promoted"
 msgstr ""
 "Standardmäßige Inhaltsansichtsversionen können nicht übertragen werden"
 
-#, fuzzy
 msgid "Default finish template for new Operating Systems"
 msgstr "Standardmäßige Abschlussvorlage für neue Betriebssysteme"
 
@@ -1585,7 +1582,7 @@ msgstr "Errata-ID"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Errata Install"
-msgstr "Errata-installation"
+msgstr "Errata-Installation"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Errata Install scheduled by %s"
@@ -1964,7 +1961,6 @@ msgstr ""
 "Falls \"true\", werden beim Hinzufügen der angegebenen Errata oder Pakete "
 "auch jegliche erforderlichen Abhängigkeiten kopiert."
 
-#, fuzzy
 msgid ""
 "If true, will publish a new composite version using any specified "
 "content_view_version_id that has been promoted to a lifecycle environment."
@@ -2011,7 +2007,7 @@ msgid "Install Finished"
 msgstr "Installation abgeschlossen"
 
 msgid "Install content on one or more systems"
-msgstr "Inhalte auf ein oder mehrere Systeme installieren"
+msgstr "Inhalte auf einem oder mehreren Systemen installieren"
 
 msgid "Install erratum"
 msgstr "Erratum installieren"
@@ -2292,7 +2288,7 @@ msgid "Limits"
 msgstr "Grenzen"
 
 msgid "List :resource_id"
-msgstr ""
+msgstr ":resource_id auflisten"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "List Actions"
@@ -2308,7 +2304,7 @@ msgid "List activation keys"
 msgstr "Aktivierungsschlüssel auflisten"
 
 msgid "List all :resource_id"
-msgstr "Alle Ressourcen-IDs auflisten"
+msgstr "Alle :resource_id auflisten"
 
 msgid "List all organizations"
 msgstr "Alle Organisationen auflisten"
@@ -2670,7 +2666,7 @@ msgid "No content view history events found."
 msgstr "Keine vergangenen Ereignisse der Inhaltsansicht gefunden."
 
 msgid "No content_view_version_ids provided"
-msgstr ""
+msgstr "Keine content_view_version_ids angegeben"
 
 msgid ""
 "No environments are currently available in this organization.  Please either "
@@ -2859,10 +2855,10 @@ msgid "Other"
 msgstr "Andere"
 
 msgid "Override content for activation_key"
-msgstr ""
+msgstr "Inhalt überschreiben für activation_key"
 
 msgid "Override value 0/1"
-msgstr ""
+msgstr "Überschreibungswert 0/1"
 
 # translation auto-copied from project rhn-client-tools, version 6.5, document rhn-client-tools
 msgid "Package"
@@ -3020,7 +3016,7 @@ msgstr "Pausiert"
 
 # translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Pending"
-msgstr "ausstehende"
+msgstr "Ausstehend"
 
 msgid "Perform an Incremental Update on one or more Content View Versions"
 msgstr ""
@@ -3111,9 +3107,9 @@ msgid ""
 "few yum repos."
 msgstr ""
 "Anbieter stellen viele Arten von Inhalten bereit, wie z. B. Pakete, Errata, "
-"Kickstart-Bäume und Installationsimages.  Ein Anbieter kann Ihre sämtlichen "
-"bezahlten Inhalte liefern, oder es kann sich einfach um ein lokales Yum-"
-"Repository handeln, das einige Yum-Repositorys bereitstellt."
+"Kickstart-Strukturen und Installationsimages.  Ein Anbieter kann Ihre "
+"sämtlichen bezahlten Inhalte liefern oder es kann sich einfach um ein "
+"lokales Yum-Repository handeln, das einige Yum-Repositorys bereitstellt."
 
 # translation auto-copied from project RHN Satellite UI, version 5.7, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource, author jdimanos
 msgid "Provides"
@@ -3121,7 +3117,7 @@ msgstr "Liefert"
 
 # translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Provides:"
-msgstr "Bietet:"
+msgstr "Liefert:"
 
 # translation auto-copied from project shotwell-core, version 0.14.1, document shotwell-core
 msgid "Publish"
@@ -3146,10 +3142,10 @@ msgstr ""
 "bitte versuchen Sie es später erneut."
 
 msgid "Pulp task error"
-msgstr "Pulp-Aufgabenfehler"
+msgstr "Pulp-Taskfehler"
 
 msgid "Pulp task error.  Refer to task for more details."
-msgstr "Pulp-Aufgabenfehler. Weitere Informationen in der Aufgabe."
+msgstr "Pulp-Taskfehler. Weitere Informationen in der Task."
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Puppet Environment"
@@ -3405,11 +3401,11 @@ msgstr "Repository-Konflikt: \"%{repo}\" ist in %{versions}."
 msgid ""
 "Repository has already been cloned to %{cv_name} in environment %{to_env}"
 msgstr ""
-"Repository wurde bereits kloned auf %{cv_name} in der Umgebung %{to_env}"
+"Repository wurde bereits geklont auf %{cv_name} in der Umgebung %{to_env}"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author rgromans
 msgid "Repository has already been promoted to %{to_env}"
-msgstr "Repository wurde bereits übertragen in %{to_env}"
+msgstr "Repository wurde bereits übertragen nach %{to_env}"
 
 msgid "Repository id"
 msgstr "Repository-ID"
@@ -3646,7 +3642,7 @@ msgid ""
 "Please choose a different organization."
 msgstr ""
 "Ausgewählte Organisation hat keine Capsules mit Pulp- oder Pulp-Node-"
-"Features. Bitte wählen Sie eine andere Organisation."
+"Funktionen. Bitte wählen Sie eine andere Organisation."
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Service Level %s"
@@ -3672,7 +3668,7 @@ msgid "Show %s more line(s)"
 msgstr "%s weitere Zeilen anzeigen"
 
 msgid "Show :a_resource"
-msgstr ""
+msgstr ":a_resource anzeigen"
 
 msgid "Show a content host"
 msgstr "Inhaltshost anzeigen"
@@ -4466,7 +4462,7 @@ msgstr "Informationen über aktivierte Repositorys aktualisieren"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author hedda
 msgid "Updates"
-msgstr "Updates"
+msgstr "Aktualisierungen"
 
 msgid "Updates a product"
 msgstr "Aktualisiert ein Produkt"
@@ -5028,7 +5024,7 @@ msgstr "Name der Hostsammlung, nach der gefiltert werden soll"
 
 # translation auto-copied from project Satellite6 Hammer CLI Katello, version 6.1, document hammer-cli-katello
 msgid "how often synchronization should run"
-msgstr "Wie häufig die Synchronisation ausführen"
+msgstr "Häufigkeit der Synchronisation"
 
 msgid "id of the gpg key that will be assigned to the new repository"
 msgstr "ID des GPG-Schlüssels, der diesem neuen Repository zugewiesen wird"
@@ -5077,7 +5073,7 @@ msgid "issue tracker"
 msgstr "Ticketsystem"
 
 msgid "katello_default cannot be changed."
-msgstr ""
+msgstr "katello_default kann nicht geändert werden."
 
 msgid "label of the environment"
 msgstr "Kennung der Umgebung"
@@ -5211,10 +5207,10 @@ msgid "package: version"
 msgstr "Paket: Version"
 
 msgid "package_ids is not an array"
-msgstr ""
+msgstr "package_ids ist kein Array"
 
 msgid "product name to filter by"
-msgstr "Name der Produkts, nach dem gefiltert werden soll"
+msgstr "Name des Produkts, nach dem gefiltert werden soll"
 
 msgid "product numeric identifier"
 msgstr "Numerische ID des Produkts"
@@ -5226,7 +5222,7 @@ msgid "puppet module ID"
 msgstr "Puppet-Modul-ID"
 
 msgid "puppet_module_ids is not an array"
-msgstr ""
+msgstr "puppet_module_ids ist kein Array"
 
 msgid "refresh"
 msgstr "aktualisieren"
@@ -5316,7 +5312,7 @@ msgid "systems"
 msgstr "Systeme"
 
 msgid "the failed task."
-msgstr "die fehlgeschlagene Aufgabe. "
+msgstr "die fehlgeschlagene Task. "
 
 msgid "the feed url of the original repository "
 msgstr "Feed-URL des originalen Repositorys"
@@ -5329,7 +5325,7 @@ msgstr ""
 "werden: [ %s ]"
 
 msgid "the related failed task."
-msgstr "die zugehörige fehlgeschlagene Aufgabe."
+msgstr "die zugehörige fehlgeschlagene Task."
 
 msgid "the uuid of the puppet module to associate"
 msgstr "UUID des zu verknüpfenden Puppet-Moduls"

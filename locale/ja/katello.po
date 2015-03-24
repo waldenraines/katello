@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: katello 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-17 08:24-0500\n"
-"PO-Revision-Date: 2015-03-12 05:02+0000\n"
+"PO-Revision-Date: 2015-03-18 05:09+0000\n"
 "Last-Translator: asasaki <asasaki@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 3.6.0\n"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid " Red Hat Repositories"
@@ -62,9 +62,8 @@ msgstr "%s の削除に成功しました。"
 msgid "%s ago"
 msgstr "%s 前"
 
-#, fuzzy
 msgid "%s for more details."
-msgstr "詳細については %s"
+msgstr "詳細は %s"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "%s is not a valid package name"
@@ -81,16 +80,16 @@ msgid "%{errata} (%{total} other errata)"
 msgstr "%{errata} (%{total} の他のエラータ)"
 
 msgid "%{errata} (%{total} other errata) install canceled"
-msgstr "%{errata} (%{total} の他の エラータ) のインストールが取り消されました"
+msgstr "%{errata} (%{total} の他のエラータ) のインストールが取り消されました"
 
 msgid "%{errata} (%{total} other errata) install failed"
-msgstr "%{errata} (%{total} の他の エラータ) のインストールが失敗しました"
+msgstr "%{errata} (%{total} の他のエラータ) のインストールが失敗しました"
 
 msgid "%{errata} (%{total} other errata) install timed out"
-msgstr "%{errata} (%{total} の他の エラータ) のインストールがタイムアウトになりました"
+msgstr "%{errata} (%{total} の他のエラータ) のインストールがタイムアウトになりました"
 
 msgid "%{errata} (%{total} other errata) installed"
-msgstr "%{errata} (%{total} の他の エラータ) がインストールされました"
+msgstr "%{errata} (%{total} の他のエラータ) がインストールされました"
 
 msgid "%{errata} erratum install canceled"
 msgstr "%{errata} エラータのインストールが取り消されました"
@@ -105,16 +104,16 @@ msgid "%{errata} erratum installed"
 msgstr "%{errata} エラータがインストールされました"
 
 msgid "%{group} (%{total} other package groups)"
-msgstr "%{group} (%{total} の他の パッケージグループ)"
+msgstr "%{group} (%{total} の他のパッケージグループ)"
 
 msgid "%{group} (%{total} other package groups) install canceled"
-msgstr "%{group} (%{total} の他の パッケージグループ) のインストールが取り消されました"
+msgstr "%{group} (%{total} の他のパッケージグループ) のインストールが取り消されました"
 
 msgid "%{group} (%{total} other package groups) install failed"
-msgstr "%{group} (%{total} の他の パッケージグループ) のインストールが失敗しました"
+msgstr "%{group} (%{total} の他のパッケージグループ) のインストールが失敗しました"
 
 msgid "%{group} (%{total} other package groups) install timed out"
-msgstr "%{group} (%{total} の他の パッケージグループ) のインストールがタイムアウトになりました"
+msgstr "%{group} (%{total} の他のパッケージグループ) のインストールがタイムアウトになりました"
 
 msgid "%{group} (%{total} other package groups) installed"
 msgstr "%{group} (%{total} の他のパッケージグループ) がインストールされました"
@@ -293,11 +292,11 @@ msgstr "+ 新規 %s"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "+ New Distributor"
-msgstr "+ 新規のディストリビューター"
+msgstr "+ 新規ディストリビューター"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "+ Yes"
-msgstr "+ はい"
+msgstr "+ Yes"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "400 - Invalid Parameters"
@@ -314,7 +313,6 @@ msgstr "404 - そのページは存在しないか、見つかりません!"
 msgid "500 Internal Server Error"
 msgstr "500 内部サーバーエラーです"
 
-#, fuzzy
 msgid ": '%s' is a built-in environment"
 msgstr ": '%s' は組み込み環境です"
 
@@ -366,15 +364,15 @@ msgstr ""
 msgid ""
 "A large number of errata are unapplied in this content view, so only the "
 "first 100 are shown."
-msgstr ""
+msgstr "多数のエラータがこのコンテンツビューに適用されていません。そのため、最初の 100 件のみが表示されています。"
 
 msgid ""
 "A large number of errata were synced for this repository, so only the first "
 "100 are shown."
-msgstr ""
+msgstr "多数のエラータがこのリポジトリーについて同期されました。そのため、最初の 100 件のみが表示されています。"
 
 msgid "A post-promotion summary of hosts with installable errata"
-msgstr ""
+msgstr "ホストとインストール可能なエラータのプロモーション後のサマリー"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid ""
@@ -388,10 +386,10 @@ msgid "A service level for auto-healing process, e.g. SELF-SUPPORT"
 msgstr "自動修復プロセスのサービスレベル。例: SELF-SUPPORT"
 
 msgid "A summary of available and applicable errata for your hosts"
-msgstr ""
+msgstr "ホストに利用可能かつ適用可能なエラータのサマリー"
 
 msgid "A summary of new errata after a repository is synchronized"
-msgstr ""
+msgstr "リポジトリーが同期された後の新規エラータのサマリー"
 
 msgid "Action not allowed for the default capsule."
 msgstr "デフォルトの Capsule で許可されないアクションです。"
@@ -412,7 +410,7 @@ msgid "Activation keys and subscriptions can be managed"
 msgstr "アクティベーションキーとサブスクリプションを管理できます"
 
 msgid "Active only"
-msgstr ""
+msgstr "実行中のみ"
 
 # translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author asasaki
 msgid "Add"
@@ -463,7 +461,7 @@ msgstr "パッケージを追加しています..."
 msgid ""
 "After generating the incremental update, apply the changes to the specified "
 "systems.  Only Errata are supported currently."
-msgstr ""
+msgstr "増分更新の生成後、指定されたシステムに変更を適用します。現在、エラータのみがサポートされています。"
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Alert"
@@ -518,7 +516,6 @@ msgstr "追加するサブスクリプションの配列"
 msgid "Array of upload ids to import"
 msgstr "インポートするアップロード ID の配列"
 
-#, fuzzy
 msgid ""
 "Assign the %{count} host with no %{taxonomy_single} to %{taxonomy_name}"
 msgid_plural ""
@@ -529,7 +526,7 @@ msgid "Assign the environment and content view to one or more systems"
 msgstr "環境およびコンテンツビューの 1 つ以上のシステムへの割り当て"
 
 msgid "At least one Content View Version must be specified"
-msgstr ""
+msgstr "1 つ以上のコンテンツビューバージョンを指定する必要があります"
 
 msgid "At least one activation key must be provided"
 msgstr "1 つ以上のアクティベーションキーが必要です。"
@@ -543,7 +540,7 @@ msgstr "1 つ以上のアクティベーションキーには、ライフサイ�
 msgid ""
 "At least one environment is required to create or register distributors in "
 "your current organization."
-msgstr "現在の組織内にディストリビューターを作成したり、登録を行ったりする場合は環境が少なくとも 1 つ必要になります。"
+msgstr "現在の組織内にディストリビューターを作成したり、登録を行ったりする場合は 1 つ以上の環境が必要になります。"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "At least one organization must exist."
@@ -646,16 +643,16 @@ msgid "CDN loading error: access forbidden to %s"
 msgstr "CDN のロード中のエラー: %s へのアクセスは許可されていません"
 
 msgid "CVE identifier"
-msgstr ""
+msgstr "CVE 識別子"
 
 msgid "Calculate Applicable Errata based on a particular Content View"
-msgstr ""
+msgstr "特定のコンテンツビューに基づく適用可能なエラータの計算"
 
 msgid "Calculate Applicable Errata based on a particular Environment"
-msgstr ""
+msgstr "特定の環境に基づく適用可能なエラータの計算"
 
 msgid "Can only remove content from within the Default Content View"
-msgstr ""
+msgstr "デフォルトコンテンツビューからコンテンツのみを削除できます"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Can't update the '%s' environment"
@@ -679,19 +676,19 @@ msgid "Candlepin Event"
 msgstr "Candlepin イベント"
 
 msgid "Cannot add %s repositories to a content view."
-msgstr ""
+msgstr "コンテンツビューに %s リポジトリーを追加できません。"
 
 msgid "Cannot add a repository from an Organization other than %s."
-msgstr ""
+msgstr "%s 以外に組織からリポジトリーを追加できません。"
 
 msgid "Cannot add component versions to a non-composite content view"
-msgstr "コンポーネントのバージョンを非複合ビューに追加できません"
+msgstr "コンポーネントのバージョンを非複合コンテンツビューに追加できません"
 
 msgid "Cannot add composite versions to a composite content view"
 msgstr "複合バージョンを複合コンテンツビューに追加できません"
 
 msgid "Cannot add composite versions to another composite content view"
-msgstr ""
+msgstr "複合バージョンを別の複合コンテンツビューに追加できません"
 
 msgid "Cannot add default content view to composite content view"
 msgstr "デフォルトのコンテンツビューを複合コンテンツビューに追加できません"
@@ -717,7 +714,7 @@ msgid "Cannot delete from %s, view does not exist there."
 msgstr "%s から削除できません。ビューはそこに存在しません。"
 
 msgid "Cannot delete provider with attached products"
-msgstr ""
+msgstr "割り当てられた製品を持つプロバイダーを削除できません"
 
 msgid "Cannot delete the default Location"
 msgstr "デフォルトロケーションを削除できません"
@@ -730,7 +727,7 @@ msgstr "ビューが環境に存在するため、削除することができま
 
 msgid ""
 "Cannot promote environment out of sequence. Use force to bypass restriction."
-msgstr ""
+msgstr "順序を外れた環境のプロモートを実行することができません。強制を使用して制限をバイパスしてください。"
 
 msgid "Cannot publish default content view"
 msgstr "デフォルトのコンテンツビューを公開できません"
@@ -749,7 +746,7 @@ msgstr "非カスタムリポジトリーからコンテンツを削除できま
 msgid ""
 "Cannot remove content view from environment. Content view '%{view}' is not "
 "in lifecycle environment '%{env}'."
-msgstr ""
+msgstr "環境からコンテンツビューを削除できません。コンテンツビュー '%{view}' はライフサイクル環境 '%{env}' にありません。"
 
 msgid ""
 "Cannot retrieve repos from non-library environment '%s' without a content "
@@ -834,7 +831,7 @@ msgstr "確認"
 
 # translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document appe-Glossary_of_Terms
 msgid "Content"
-msgstr "Content (コンテンツ)"
+msgstr "コンテンツ"
 
 msgid "Content Available From"
 msgstr "コンテンツの入手先"
@@ -870,7 +867,7 @@ msgid "Content View"
 msgstr "コンテンツビュー"
 
 msgid "Content View Version %{id} not in all specified environments %{envs}"
-msgstr ""
+msgstr "コンテンツビューのバージョン %{id} はすべての指定された環境 %{envs} にありません"
 
 msgid "Content View Version Ids to perform an incremental update on."
 msgstr "増分更新を実行するコンテンツビューのバージョン ID。 "
@@ -938,7 +935,7 @@ msgid "Could not find %{content} with id '%{id}' in repository."
 msgstr "リポジトリーに ID  '%{id}' の %{content} を見つけることができませんでした。"
 
 msgid "Could not find Environment with ids: %s"
-msgstr ""
+msgstr "以下の ID の環境を見つけることができませんでした: %s"
 
 msgid "Could not find Lifecycle Environment with id '%{id}'."
 msgstr "ID '%{id}' のライフサイクル環境を見つけることができませんでした。"
@@ -947,10 +944,10 @@ msgid "Could not find Repository for module %s."
 msgstr "モジュール %s のリポジトリーが見つかりませんでした。"
 
 msgid "Could not find all specified errata ids: %s"
-msgstr ""
+msgstr "以下の指定されたすべてのエラータ ID を見つけることができませんでした: %s"
 
 msgid "Could not find errata with id: %s"
-msgstr ""
+msgstr "以下の ID をエラータを見つけることができませんでした: %s"
 
 msgid ""
 "Could not unarchive puppet module. Please make sure the puppet module has "
@@ -958,7 +955,7 @@ msgid ""
 msgstr "puppet モジュールを解凍できませんでした。puppet モジュールが適切に圧縮されていることを確認してください。"
 
 msgid "Couldn't find %{type} Filter with id %{id}"
-msgstr ""
+msgstr "ID %{id} の %{type} フィルターを見つけることができませんでした"
 
 msgid "Couldn't find ContentViewFilter with id=%s"
 msgstr "id=%s のコンテンツビューフィルターは見つかりませんでした"
@@ -1016,7 +1013,6 @@ msgstr "コンテンツビューのバージョン '%s' を見つけることが
 msgid "Couldn't find environment '%s'"
 msgstr "環境 '%s' が見つかりませんでした"
 
-#, fuzzy
 msgid "Couldn't find gpg key '%s'"
 msgstr "GPG キー '%s' が見つかりませんでした"
 
@@ -1034,19 +1030,20 @@ msgstr "製品 '%s' が見つかりませんでした"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Couldn't find product with id '%s'"
-msgstr "ID が '%s' の製品が見つかりませんでした"
+msgstr "ID  '%s' の製品が見つかりませんでした"
 
 msgid ""
 "Couldn't find puppet environment associated with lifecycle environment "
 "'%{env}' and content view '%{view}'"
 msgstr ""
+"ライフサイクル環境 '%{env}' とコンテンツビュー '%{view}' に関連付けられた Puppet 環境を見つけることができませんでした"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Couldn't find repository '%s'"
 msgstr "リポジトリー '%s' が見つかりませんでした"
 
 msgid "Couldn't find repository set with id '%s'."
-msgstr "ID が '%s' のリポジトリーが見つかりませんでした。"
+msgstr "ID  '%s' のリポジトリーが見つかりませんでした。"
 
 msgid "Couldn't find subject of synchronization"
 msgstr "同期の件名が見つかりませんでした"
@@ -1069,7 +1066,7 @@ msgid "Create a custom repository"
 msgstr "カスタムリポジトリーの作成"
 
 msgid "Create a filter for a content view"
-msgstr "コンテンツビューのファイルの作成"
+msgstr "コンテンツビューのフィルターの作成"
 
 msgid ""
 "Create a filter rule. The parameters included should be based upon the "
@@ -1113,7 +1110,7 @@ msgstr "作成済み (UTC)"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Created / Last Checked In"
-msgstr "最終チェックイン"
+msgstr "作成 / 最終チェックイン"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Critical"
@@ -1160,7 +1157,7 @@ msgid "Debug RPMs"
 msgstr "RPM のデバッグ"
 
 msgid "Default PXElinux template for new Operating Systems"
-msgstr ""
+msgstr "新規オペレーティングシステムのデフォルトの PXElinux テンプレート"
 
 msgid "Default System SLA"
 msgstr "デフォルトのシステム SLA"
@@ -1172,19 +1169,19 @@ msgid "Default content view versions cannot be promoted"
 msgstr "デフォルトコンテンツビューのバージョンはプロモートできません"
 
 msgid "Default finish template for new Operating Systems"
-msgstr ""
+msgstr "新規オペレーティングシステムのデフォルト最終テンプレート"
 
 msgid "Default iPXE template for new Operating Systems"
-msgstr ""
+msgstr "新規オペレーティングシステムのデフォルト iPXE テンプレート"
 
 msgid "Default partitioning table for new Operating Systems"
-msgstr ""
+msgstr "新規オペレーティングシステムのデフォルトパーティションテーブル"
 
 msgid "Default provisioning template for new Operating Systems"
-msgstr ""
+msgstr "新規オペレーティングシステムのデフォルトプロビジョニングテーブル"
 
 msgid "Default user data for new Operating Systems"
-msgstr ""
+msgstr "新規オペレーティングシステムのデフォルトユーザーデータ"
 
 # translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Delete"
@@ -1203,7 +1200,7 @@ msgid "Delete All"
 msgstr "すべてを削除"
 
 msgid "Delete Lifecycle Environment"
-msgstr ""
+msgstr "ライフサイクル環境の削除"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Delete Manifest"
@@ -1244,23 +1241,23 @@ msgstr "依存関係: "
 
 # translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman, author nnakakit
 msgid "Description"
-msgstr "詳細"
+msgstr "説明"
 
 msgid "Description for the content view"
-msgstr "コンテンツビューについての詳細"
+msgstr "コンテンツビューについての説明"
 
 msgid "Description for the new published content view version"
-msgstr ""
+msgstr "新規に公開されたコンテンツビューバージョンの説明"
 
 msgid "Description of the content host"
-msgstr "コンテンツホストについての詳細"
+msgstr "コンテンツホストについての説明"
 
 # translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author asasaki
 msgid "Description:"
-msgstr "詳細:"
+msgstr "説明:"
 
 msgid "Description: "
-msgstr "詳細: "
+msgstr "説明: "
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Destroy"
@@ -1270,7 +1267,7 @@ msgid "Destroy Content Host"
 msgstr "コンテンツホストの破棄"
 
 msgid "Destroy Host"
-msgstr ""
+msgstr "ホストの破棄"
 
 msgid "Destroy a custom repository"
 msgstr "カスタムリポジトリーの破棄"
@@ -1338,7 +1335,7 @@ msgid "Distribution '%s' not found within the repository"
 msgstr "ディストリビューション '%s' がリポジトリー内に見つかりません"
 
 msgid "Distribution with id '%s' not found"
-msgstr "ID が '%s' のディストリビューションが見つかりません"
+msgstr "ID  '%s' のディストリビューションが見つかりません"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Distributor"
@@ -1385,17 +1382,17 @@ msgid ""
 msgstr "この製品内のすべてのリポジトリーに対するキーとしてこの GPG キーを設定しますか?"
 
 msgid "Docker Image"
-msgstr ""
+msgstr "Docker イメージ"
 
 # translation auto-copied from project Customer Portal Translations, version 012_June_RHEL, document downloads.html, author asasaki
 msgid "Docker Images"
 msgstr "Docker イメージ"
 
 msgid "Docker Tag"
-msgstr ""
+msgstr "Docker タグ"
 
 msgid "Docker Tags"
-msgstr ""
+msgstr "Docker タグ"
 
 # translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "Download"
@@ -1499,7 +1496,7 @@ msgid "Errata types array \\['security', 'bugfix', 'enhancement'\\]"
 msgstr "エラータタイプの配列 \\['security', 'bugfix', 'enhancement'\\]"
 
 msgid "Erratum"
-msgstr ""
+msgstr "エラータ"
 
 msgid "Erratum Install Canceled"
 msgstr "エラータのインストールが取り消されました"
@@ -1573,14 +1570,14 @@ msgstr "ディストリビューターに対して失敗しました:"
 
 msgid "Failed to download %s module."
 msgid_plural "Failed to download %s modules."
-msgstr[0] ""
+msgstr[0] "%s モジュールのダウンロードに失敗しました。"
 
 msgid "Failed to download %s package."
 msgid_plural "Failed to download %s packages."
-msgstr[0] ""
+msgstr[0] "%s パッケージのダウンロードに失敗しました。"
 
 msgid "Failed to find %{content} with id '%{id}'."
-msgstr ""
+msgstr "ID '%{id}' の %{content} の検索に失敗しました。"
 
 msgid "Fetch applicable errata for a system."
 msgstr "システムの適用可能なエラータを取得します。"
@@ -1605,10 +1602,10 @@ msgid "Filter by host collection"
 msgstr "ホストコレクションでフィルター"
 
 msgid "Filter by systems that need an Erratum by uuid"
-msgstr ""
+msgstr "エラータを必要とするシステムおよび UUID でフィルター"
 
 msgid "Filter by systems that need any one of multiple Errata by uuid"
-msgstr ""
+msgstr "複数のエラータのいずれかを必要とするシステムおよび UUID でフィルター"
 
 msgid "Filter content host by name"
 msgstr "名前でコンテンツホストをフィルター"
@@ -1651,20 +1648,20 @@ msgid "Filter sync plans by organization name or label"
 msgstr "組織名またはラベルで同期プランをフィルター"
 
 msgid "Filter versions by environment"
-msgstr ""
+msgstr "環境でバージョンをフィルター"
 
 msgid "Filter versions by version number"
-msgstr ""
+msgstr "バージョン番号でバージョンをフィルター"
 
 msgid "Filter versions that are components in the specified composite version"
-msgstr ""
+msgstr "指定された複合バージョンのコンポーネントであるバージョンをフィルター"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Filter..."
 msgstr "フィルター..."
 
 msgid "For more information see "
-msgstr ""
+msgstr "詳細は、以下を参照してください: "
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "GPG Key URL: "
@@ -1674,7 +1671,6 @@ msgstr "GPG キー URL:"
 msgid "GPG Keys"
 msgstr "GPG キー"
 
-#, fuzzy
 msgid "GPG keys"
 msgstr "GPG キー"
 
@@ -1683,7 +1679,7 @@ msgid "Generate and Download"
 msgstr "生成してダウンロード"
 
 msgid "Generate and Synchronize Capsule Metadata for %s"
-msgstr ""
+msgstr "%s　の Capsule メタデータの生成および同期"
 
 msgid "Get content host reports for the environment"
 msgstr "環境についてのコンテンツホストのレポートを取得"
@@ -1720,7 +1716,7 @@ msgid ""
 "Given a set of systems and errata, lists the content view versions           "
 "                                                        and environments "
 "that need updating."
-msgstr ""
+msgstr "システムおよびエラータのセットに基づいて、更新の必要なコンテンツビューのバージョンおよび環境を一覧表示します。"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Go"
@@ -1755,7 +1751,7 @@ msgid "Host subscription details"
 msgstr "ホストサブスクリプションの詳細"
 
 msgid "Hosts with Installable Errata"
-msgstr ""
+msgstr "インストール可能なエラータを持つホスト"
 
 msgid "How to order the sorted results (e.g. ASC for ascending)"
 msgstr "ソートされた結果を順序付ける方法 (例:  ascending (昇順) の ASC)"
@@ -1846,12 +1842,14 @@ msgstr "GPG キーの ID"
 msgid ""
 "If true, when adding the specified errata or packages, any needed "
 "dependencies will be copied as well."
-msgstr ""
+msgstr "true の場合、指定されたエラータまたはパッケージを追加すると、必要な依存関係もコピーされます。"
 
 msgid ""
 "If true, will publish a new composite version using any specified "
 "content_view_version_id that has been promoted to a lifecycle environment."
 msgstr ""
+"true の場合、ライフサイクル環境にプロモートされている指定された content_view_version_id "
+"を使用して新規の複合バージョンが公開されます。"
 
 msgid "Import Manifest"
 msgstr "マニフェストのインポート"
@@ -1870,7 +1868,7 @@ msgid "Incremental Update"
 msgstr "増分更新"
 
 msgid "Incremental Update incomplete."
-msgstr ""
+msgstr "増分更新が完了していません。"
 
 msgid "Informable Type must be one of the following [ %{list} ]"
 msgstr "情報タイプは以下のいずれかでなければなりません [ %{list} ]"
@@ -1981,7 +1979,7 @@ msgid ""
 "tuple as 'min_version' or 'max_version'"
 msgstr ""
 "無効なフィルタールールが指定されました。'version' を 'min_version' または 'max_version' "
-"と同じ組みで指定することはできません"
+"と同じ組で指定することはできません"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid ""
@@ -2015,11 +2013,11 @@ msgstr "問題トラッカー"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Issued"
-msgstr "発行済み"
+msgstr "発行"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Issued: "
-msgstr "発行済み: "
+msgstr "発行: "
 
 msgid "Katello Host Advisory"
 msgstr "Katello ホストアドバイザリー"
@@ -2085,7 +2083,6 @@ msgstr "レベル"
 msgid "Library lifecycle environments may not be deleted."
 msgstr "ライブラリーのライフサイクル環境は削除できません。"
 
-#, fuzzy
 msgid "Library repository id to restrict comparisons to"
 msgstr "比較を制限するためのライブラリーのリポジトリー ID "
 
@@ -2107,19 +2104,23 @@ msgstr "ライフサイクル環境"
 msgid ""
 "Lifecycle Environment %s has a successor.  Only the last lifecycle "
 "environment on a path can be deleted"
-msgstr ""
+msgstr "ライフサイクル環境 %s には後継があります。パス上の最後のライフサイクル環境のみを削除できます。"
 
 msgid ""
 "Lifecycle Environment %s has associated Activation Keys. Please change or "
 "remove the associated Activation Keys before trying to delete this lifecycle "
 "environment."
 msgstr ""
+"ライフサイクル環境 %s "
+"には関連付けられたアクティベーションキーがあります。このライフサイクル環境を削除する前に、関連付けられたアクティベーションキーの変更または削除を行なってください。"
 
 msgid ""
 "Lifecycle Environment %s has associated Content Hosts. Please unregister or "
 "move the associated Content Hosts before trying to delete this lifecycle "
 "environment."
 msgstr ""
+"ライフサイクル環境 %s "
+"には関連付けられたコンテンツホストがあります。ライフサイクル環境を￥削除する前に、関連付けられたコンテンツホストの登録解除または移動を行なってください。"
 
 # translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document chap-Configuring_Organizations_Locations_and_Lifecycle_Environments, author asasaki
 msgid "Lifecycle Environments"
@@ -2127,7 +2128,7 @@ msgstr "ライフサイクル環境"
 
 msgid ""
 "Lifecycle environment '%{environment}' is not attached to this capsule."
-msgstr ""
+msgstr "ライフサイクル環境 '%{environment}' はこの Capsule に割り当てられていません。"
 
 msgid ""
 "Lifecycle environments cannot be modifed on the default Smart Proxy.  The "
@@ -2143,14 +2144,14 @@ msgid "Limits"
 msgstr "制限"
 
 msgid "List :resource_id"
-msgstr ":resource_id の一覧"
+msgstr ":resource_id を一覧表示"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "List Actions"
 msgstr "アクションを一覧表示"
 
 msgid "List Candlepin events for the content host"
-msgstr "コンテンツホストの Candlepin イベントの一覧"
+msgstr "コンテンツホストの Candlepin イベントを一覧表示"
 
 msgid "List a system's subscriptions"
 msgstr "システムのサブスクリプションを一覧表示"
@@ -2219,10 +2220,10 @@ msgid "List host collections"
 msgstr "ホストコレクションを一覧表示"
 
 msgid "List host collections containing a content host"
-msgstr "コンテンツホストを含むホストコレクションの一覧"
+msgstr "コンテンツホストを含むホストコレクションを一覧表示"
 
 msgid "List host collections in an activation key"
-msgstr "アクティベーションキー内のホストコレクションの一覧"
+msgstr "アクティベーションキー内のホストコレクションを一覧表示"
 
 msgid "List host collections the content host does not belong to"
 msgstr "コンテンツホストが属さないホストコレクションを一覧表示"
@@ -2231,7 +2232,7 @@ msgid "List host collections the system does not belong to"
 msgstr "システムが属さないホストコレクションを一覧表示"
 
 msgid "List host collections within an organization"
-msgstr "組織内のホストコレクションの一覧"
+msgstr "組織内のホストコレクションを一覧表示"
 
 msgid "List of Errata ids"
 msgstr "エラータ ID の一覧"
@@ -2240,14 +2241,14 @@ msgid "List of Errata ids to install"
 msgstr "インストールするエラータ ID の一覧表示"
 
 msgid "List of component content view version ids for composite views"
-msgstr "複合ビューのコンポーネントコンテンツのバージョン ID の一覧表示"
+msgstr "複合ビューのコンポーネントコンテンツのバージョン ID の一覧"
 
 msgid ""
 "List of content (e.g. package names, package group names or errata ids)"
-msgstr "コンテンツの一覧表示 (例: パッケージ名、パッケージグループ名またはエラータ ID)"
+msgstr "コンテンツの一覧 (例: パッケージ名、パッケージグループ名またはエラータ ID)"
 
 msgid "List of content (e.g. package or package group names)"
-msgstr "コンテンツの一覧表示 (例: パッケージ名、パッケージグループ名)"
+msgstr "コンテンツの一覧 (例: パッケージ名、パッケージグループ名)"
 
 msgid "List of content host uuids to be in the host collection"
 msgstr "ホストコレクションに入るコンテンツホスト UUID の一覧"
@@ -2257,58 +2258,58 @@ msgid ""
 msgstr "ホストコレクション内のコンテンツホストに置き換わるコンテンツホスト UUID の一覧"
 
 msgid "List of enabled repo urls for the repo (Only first is used.)"
-msgstr "リポジトリーの有効にされたリポジトリー URL の一覧表示 (最初のものだけが使用される。)"
+msgstr "リポジトリーの有効にされたリポジトリー URL の一覧 (最初のものだけが使用される。)"
 
 msgid "List of enabled repositories"
-msgstr "有効にされたリポジトリーの一覧表示"
+msgstr "有効にされたリポジトリーの一覧"
 
 msgid "List of host collection IDs to associate with activation key"
-msgstr "アクティベーションキーに関連付けるホストコレクション ID の一覧表示"
+msgstr "アクティベーションキーに関連付けるホストコレクション ID の一覧"
 
 msgid "List of host collection IDs to disassociate from the activation key"
-msgstr "アクティベーションキーから関連付けを解除するホストコレクション ID の一覧表示"
+msgstr "アクティベーションキーから関連付けを解除するホストコレクション ID の一覧"
 
 msgid "List of host collection ids"
-msgstr "ホストコレクション ID の一覧表示"
+msgstr "ホストコレクション ID の一覧"
 
 msgid "List of package group names"
-msgstr "パッケージグループ名の一覧表示"
+msgstr "パッケージグループ名の一覧"
 
 msgid "List of package names"
-msgstr "パッケージ名の一覧表示"
+msgstr "パッケージ名の一覧"
 
 msgid "List of product ids"
-msgstr "製品 ID の一覧表示"
+msgstr "製品 ID の一覧"
 
 msgid "List of product ids to add to the sync plan"
-msgstr "同期プランに追加する製品 ID の一覧表示"
+msgstr "同期プランに追加する製品 ID の一覧"
 
 msgid "List of product ids to remove from the sync plan"
-msgstr "同期プランから削除する製品 ID の一覧表示"
+msgstr "同期プランから削除する製品 ID の一覧"
 
 msgid "List of products in an organization"
-msgstr "組織の製品を一覧表示"
+msgstr "組織内の製品の一覧"
 
 msgid "List of products installed on the content host"
-msgstr "コンテンツホストにインストールされた製品の一覧表示"
+msgstr "コンテンツホストにインストールされた製品の一覧"
 
 msgid "List of repositories for a content view"
-msgstr "コンテンツビューのリポジトリーの一覧表示"
+msgstr "コンテンツビューのリポジトリーの一覧"
 
 msgid "List of repository ids"
-msgstr "リポジトリー ID の一覧表示"
+msgstr "リポジトリー ID の一覧"
 
 msgid "List of subscription products in a subscription"
-msgstr "サブスクリプションのサブスクリプション製品を一覧表示"
+msgstr "サブスクリプション内のサブスクリプション製品の一覧"
 
 msgid "List of subscription products in an activation key"
-msgstr "アクティベーションキーのサブスクリプション製品を一覧表示"
+msgstr "アクティベーションキー内のサブスクリプション製品の一覧"
 
 msgid "List of system ids to exclude and not run an action on"
-msgstr "除外するシステム ID 、およびアクションを実行しないシステム ID の一覧表示"
+msgstr "除外するシステム ID、およびアクションを実行しないシステム ID の一覧"
 
 msgid "List of system ids to perform an action on"
-msgstr "アクションを実行するシステム ID の一覧表示"
+msgstr "アクションを実行するシステム ID の一覧"
 
 msgid "List organization subscriptions"
 msgstr "組織サブスクリプションの一覧表示"
@@ -2367,7 +2368,7 @@ msgid "Match pools to installed"
 msgstr "プールのインストール済みとの一致"
 
 msgid "Max Content Hosts (%{limit}) reached for activation key '%{name}'"
-msgstr "アクティベーションキー '%{name}' に対して最大コンテンツホスト (%{limit}) に達しました"
+msgstr "アクティベーションキー '%{name}' に対してコンテンツホストの最大数 (%{limit}) に達しました"
 
 msgid "Maximum number of content hosts exceeded for host collection(s): %s"
 msgstr "ホストコレクションに対してコンテンツホスト数が最大値を超えました: %s"
@@ -2422,7 +2423,7 @@ msgid "Name: %{module_name}, Version: %{version}"
 msgstr "名前: %{module_name}、バージョン: %{version}"
 
 msgid "Names and labels must be unique across all organizations"
-msgstr "名前とラベルは全組織で一意である必要があります"
+msgstr "名前とラベルはすべての組織間で一意である必要があります"
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Nest"
@@ -2444,14 +2445,14 @@ msgid "New ISOs: %s"
 msgstr "新規 ISO: %s"
 
 msgid "New content view name"
-msgstr "新しいコンテンツビューの名前"
+msgstr "新規コンテンツビューの名前"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "New distributor"
-msgstr "新規のディストリビューター"
+msgstr "新規ディストリビューター"
 
 msgid "New host collection name"
-msgstr "新しいホストコレクションの名前"
+msgstr "新規ホストコレクションの名前"
 
 msgid "New images: %{count}."
 msgstr "新規イメージ: %{count}。"
@@ -2467,7 +2468,7 @@ msgstr "新規パッケージ: %{count} (%{size})。"
 
 # translation auto-copied from project PressGang CCMS topics, version 1, document 10186-726104, author myamamot
 msgid "No"
-msgstr "いいえ"
+msgstr "No"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "No Content View"
@@ -2482,12 +2483,14 @@ msgstr ""
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "No Service Level Preference"
-msgstr "設定"
+msgstr "サービスレベルの設定がありません"
 
 msgid ""
 "No Version of Content View %{component} already exists as a component of the "
 "composite Content View %{composite} version %{version}"
 msgstr ""
+"コンテンツビュー %{component} のいずれのバージョンも、複合コンテンツビュー %{composite} のバージョン %{version} "
+"のコンポーネントとして存在しません"
 
 msgid "No content has been provided."
 msgstr "コンテンツが提供されていません"
@@ -2504,9 +2507,8 @@ msgid ""
 "add some to the organization or select an organization that has an "
 "environment to set user default."
 msgstr ""
-"この組織で現在利用できる環境がありません。組織に利用できる環境を追加するか、またはデフォルトでユーザーに設定できる環境を持っている別の組織を選択してください。"
+"この組織で現在利用できる環境がありません。組織に利用できる環境を追加するか、またはユーザーのデフォルトを設定できる環境のある別の組織を選択してください。"
 
-#, fuzzy
 msgid "No errors"
 msgstr "エラーはありません"
 
@@ -2514,22 +2516,22 @@ msgid "No events matching your search criteria."
 msgstr "検索条件に一致するイベントはありません。"
 
 msgid "No file uploaded"
-msgstr "フィルがアップロードされませんでした"
+msgstr "ファイルがアップロードされていません"
 
 msgid "No host collections found."
 msgstr "ホストコレクションが見つかりません"
 
 msgid "No manifest file uploaded"
-msgstr "マニフェストファイルがアップロードされました"
+msgstr "マニフェストファイルがアップロードされていません"
 
 msgid "No new packages installed"
-msgstr "インストール済みの新しいパッケージはありません"
+msgstr "インストール済みの新規パッケージはありません"
 
 msgid "No new packages."
 msgstr "新規パッケージがありません。"
 
 msgid "No package profile received for %s"
-msgstr " %s のパッケージプロファイルを受け取っていません"
+msgstr " %s のパッケージプロファイルが受信されていません"
 
 msgid "No package uuids provided"
 msgstr "パッケージ UUID が指定されていません"
@@ -2596,6 +2598,8 @@ msgid ""
 "promote this content to the relevant content view in order to make it "
 "available."
 msgstr ""
+"注記: "
+"括弧内の数字は、ホストで利用できないライブラリー環境にあるすべての適用可能なエラータを反映しています。このコンテンツを利用可能にするには、関連するコンテンツビューにこれをプロモートする必要があります。"
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Notifications"
@@ -2616,15 +2620,15 @@ msgid "Ok"
 msgstr "OK"
 
 msgid "One of parameters [ %s ] required but not specified."
-msgstr "[ %s ] パラメーターのいずれかが必要ですが指定されていません。"
+msgstr "[ %s ] パラメーターのいずれかが必要ですが、指定されていません。"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "One or more of the groups provided has an action pending."
-msgstr "1 つ以上のグループに保留中のアクションがあります。"
+msgstr "1 つ以上の指定されるグループに保留中のアクションがあります。"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "One or more of the packages provided has an action pending."
-msgstr "1 つ以上のパッケージに保留中のアクションがあります。"
+msgstr "1 つ以上の指定されるパッケージに保留中のアクションがあります。"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "One or more package names are invalid."
@@ -2671,7 +2675,7 @@ msgstr "必要な組織"
 
 msgid ""
 "Organizations disabled, try allowing them in foreman/config/settings.yaml"
-msgstr ""
+msgstr "無効にされた組織です。foreman/config/settings.yaml でそれらの許可を試行してください。"
 
 # translation auto-copied from project PressGang CCMS topics, version 1, document 38695-678029, author jito
 msgid "Other"
@@ -2847,9 +2851,8 @@ msgid "Pending"
 msgstr "保留"
 
 msgid "Perform an Incremental Update on one or more Content View Versions"
-msgstr ""
+msgstr "1 つ以上のコンテンツビューバージョンで増分更新を実行"
 
-#, fuzzy
 msgid ""
 "Permission Denied. User '%{user}' does not have permissions to access "
 "organization '%{org}'."
@@ -2874,7 +2877,6 @@ msgstr "メニューの一番左側にあるセレクターを使用して組織
 msgid "Please request the required privileges from an administrator."
 msgstr "管理者に必要な特権を要求してください。"
 
-#, fuzzy
 msgid "Pool %s has no product associated"
 msgstr "プール %s に関連付けられている製品はありません。"
 
@@ -2882,7 +2884,7 @@ msgid "Processing metadata"
 msgstr "メタデータの処理中"
 
 msgid "Processing metadata."
-msgstr ""
+msgstr "メタデータの処理中です。"
 
 # translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author asasaki
 msgid "Product"
@@ -2896,7 +2898,7 @@ msgid "Product and Repositories"
 msgstr "製品およびリポジトリー"
 
 msgid "Product description"
-msgstr "製品の詳細"
+msgstr "製品の説明"
 
 msgid "Product name"
 msgstr "製品名"
@@ -2905,7 +2907,7 @@ msgid "Product the repository belongs to"
 msgstr "リポジトリーが属する製品"
 
 msgid "Product with %{attribute} '%{id}' already exists in this organization."
-msgstr ""
+msgstr "%{attribute} '%{id}' の製品がこの組織にすでにあります。"
 
 msgid "Products"
 msgstr "製品"
@@ -2964,21 +2966,21 @@ msgid "Pulp task error"
 msgstr "Pulp タスクのエラー"
 
 msgid "Pulp task error.  Refer to task for more details."
-msgstr ""
+msgstr "Pulp タスクのエラーです。詳細はタスクを参照してください。"
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Puppet Environment"
 msgstr "Puppet 環境"
 
 msgid "Puppet Module"
-msgstr ""
+msgstr "Puppet モジュール"
 
 msgid "Puppet Module '%s' found more than once. Please specify the author."
 msgstr "Puppet モジュール '%s' が複数回見つかりました。作成者を指定してください。"
 
 msgid ""
 "Puppet Module with name='%{name}' and author='%{author}' does not exist"
-msgstr "name='%{name}' および author='%{author}' の Puppet モジュールは存在しません"
+msgstr "name='%{name}' および author='%{author}' の Puppet モジュールはありません"
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Puppet Modules"
@@ -2995,7 +2997,7 @@ msgid "Quantity"
 msgstr "数量"
 
 msgid "Quantity of this subscription to add"
-msgstr ""
+msgstr "追加するこのサブスクリプションの数量"
 
 msgid "Quantity of this subscriptions to add"
 msgstr "追加するこのサブスクリプションの数量"
@@ -3012,10 +3014,10 @@ msgid "Reason: %s"
 msgstr "理由: %s"
 
 msgid "Red Hat CDN URL"
-msgstr ""
+msgstr "Red Hat CDN URL"
 
 msgid "Red Hat Docker Registry URL"
-msgstr ""
+msgstr "Red Hat Docker レジストリー URL"
 
 # translation auto-copied from project Customer Portal Translations, version 004_messages, document messages, author asasaki
 msgid "Red Hat Product"
@@ -3086,7 +3088,7 @@ msgid "Remove All"
 msgstr "すべてを削除"
 
 msgid "Remove Content"
-msgstr ""
+msgstr "コンテンツの削除"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Remove Distributor"
@@ -3109,7 +3111,7 @@ msgid "Remove a puppet module from the content view"
 msgstr "コンテンツビューから Puppet モジュールを削除"
 
 msgid "Remove content hosts from the host collection"
-msgstr ""
+msgstr "ホストコレクションからコンテンツホストを削除"
 
 msgid "Remove content on one or more systems"
 msgstr "1 つ以上のシステムのコンテンツを削除"
@@ -3158,7 +3160,7 @@ msgid "Repositories"
 msgstr "リポジトリー"
 
 msgid "Repositories from published Content Views are not allowed."
-msgstr ""
+msgstr "公開されたコンテンツビューからのリポジトリーは許可されません。"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Repository"
@@ -3167,10 +3169,10 @@ msgstr "リポジトリー"
 msgid ""
 "Repository %s cannot be deleted since it has already been included in a "
 "published Content View."
-msgstr ""
+msgstr "リポジトリー %s は公開されたコンテンツビューにすでに含まれるため、削除できません。"
 
 msgid "Repository %s cannot be deleted since they are Red Hat repositories."
-msgstr ""
+msgstr "リポジトリー %s は Red Hat リポジトリーであるため、削除できません。"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Repository Comparison"
@@ -3183,13 +3185,14 @@ msgstr "リポジトリーセット"
 msgid ""
 "Repository URL or Upstream Name is empty. Both are required for syncing from "
 "the upstream."
-msgstr ""
+msgstr "リポジトリー URL またはアップストリーム名は空です。これらの両方は、アップストリームの同期に必要です。"
 
 msgid ""
 "Repository cannot be deleted since it has already been included in a "
 "published Content View. Please delete all Content View versions containing "
 "this repository before attempting to deleting it."
 msgstr ""
+"リポジトリーは公開されたコンテンツビューにすでに含まれるため、削除できません。この削除を試行する前にこのリポジトリーに含まれるすべてのコンテンツビューバージョンを削除してください。"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Repository cannot be disabled since it has already been promoted."
@@ -3211,7 +3214,7 @@ msgid "Repository id"
 msgstr "リポジトリー ID"
 
 msgid "Repository metadata publish"
-msgstr ""
+msgstr "リポジトリーメタデータの公開"
 
 msgid "Repository not found"
 msgstr "リポジトリーが見つかりません"
@@ -3252,11 +3255,13 @@ msgid ""
 "Return only systems where the Erratum specified by erratum_id or errata_ids "
 "is available to systems (default False)"
 msgstr ""
+"erratum_id または errata_ids で指定されたエラータがシステムで利用できるシステムのみを戻します (デフォルトは False)"
 
 msgid ""
 "Return only systems where the Erratum specified by erratum_id or errata_ids "
 "is unavailable to systems (default False)"
 msgstr ""
+"erratum_id または errata_ids で指定されたエラータがシステムで利用できないシステムのみを戻します (デフォルトは False)"
 
 msgid "Return subscriptions that don't overlap"
 msgstr "重複しないサブスクリプションを戻す"
@@ -3321,7 +3326,7 @@ msgid "Search string"
 msgstr "検索文字列"
 
 msgid "Search string for systems to perform an action on"
-msgstr "アクションを実行するシステムの文字列"
+msgstr "アクションを実行するシステムの文字列の検索"
 
 # translation auto-copied from project yelp, version 3.8.1, document yelp
 msgid "Search..."
@@ -3385,19 +3390,19 @@ msgid "Select Repositories: "
 msgstr "リポジトリーの選択:"
 
 msgid "Select a Capsule"
-msgstr ""
+msgstr "Capsule の選択"
 
 msgid "Select a Content View"
-msgstr ""
+msgstr "コンテンツビューの選択"
 
 msgid "Select a Lifecycle Environment"
-msgstr ""
+msgstr "ライフサイクル環境の選択"
 
 msgid "Select a Repository"
-msgstr ""
+msgstr "リポジトリーの選択"
 
 msgid "Select a Tag"
-msgstr ""
+msgstr "タグの選択"
 
 msgid "Select a repository"
 msgstr "リポジトリーの選択"
@@ -3411,7 +3416,7 @@ msgid "Select a view."
 msgstr "ビューを選択します。"
 
 msgid "Select an Organization"
-msgstr ""
+msgstr "組織の選択"
 
 msgid "Select hosts to assign to %s"
 msgstr "%s に割り当てるホストの選択"
@@ -3420,16 +3425,17 @@ msgid ""
 "Selected content view has no repositories with Docker images. Please choose "
 "a different content view or life cycle environment."
 msgstr ""
+"選択されたコンテンツビューには Docker イメージを持つリポジトリーがありません。別のコンテンツビューまたはライフサイクル環境を選択してください。"
 
 msgid ""
 "Selected lifecycle environment has no content views. Please choose a "
 "different life cycle environment."
-msgstr ""
+msgstr "選択されたライフサイクル環境にはコンテンツビューがありません。別のライフサイクル環境を選択してください。"
 
 msgid ""
 "Selected organization has no capsules with Pulp or Pulp Node features. "
 "Please choose a different organization."
-msgstr ""
+msgstr "選択された組織には Pulp または Pulp ノード機能を持つ Capsule がありません。別の組織を選択してください。"
 
 msgid "Service Level %s"
 msgstr "サービスレベル %s"
@@ -3454,7 +3460,7 @@ msgid "Show %s more line(s)"
 msgstr "%s 行以上を表示"
 
 msgid "Show :a_resource"
-msgstr ""
+msgstr ":a_resource の表示"
 
 msgid "Show a content host"
 msgstr "コンテンツホストの表示"
@@ -3500,7 +3506,7 @@ msgid "Show an ueber certificate for an organization"
 msgstr "組織の ueber 証明書の表示"
 
 msgid "Show content available for an activation key"
-msgstr ""
+msgstr "アクティベーションキーに利用可能なコンテンツの表示"
 
 msgid "Show content view version"
 msgstr "コンテンツビューバージョンの表示"
@@ -3513,11 +3519,11 @@ msgstr "フィルタールール情報の表示"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Show only results that do not exist in all selected columns."
-msgstr "選択した全コラムに存在しない結果だけを表示します。"
+msgstr "選択したすべてのコラムに存在しない結果だけを表示します。"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Show only results that exist in all selected columns."
-msgstr "選択した全コラムに存在する結果のみを表示します。"
+msgstr "選択したすべてのコラムに存在する結果のみを表示します。"
 
 msgid "Show organization"
 msgstr "組織の表示"
@@ -3568,7 +3574,7 @@ msgid "Specify the environment"
 msgstr "環境の指定"
 
 msgid "Specify the host collections as an array"
-msgstr ""
+msgstr "ホストコレクションを配列として指定"
 
 msgid "Specify the organization"
 msgstr "組織の指定"
@@ -3660,13 +3666,13 @@ msgstr "カスタム情報が正常に削除されました"
 msgid ""
 "Successfully initiated deletion for %s repositories, you are free to leave "
 "this page."
-msgstr ""
+msgstr "%s リポジトリーの削除が正常に開始されました。このページを出ても構いません。"
 
 msgid "Successfully initiated removal of %s product(s)"
 msgstr "%s の削除が正常に開始されました"
 
 msgid "Successfully reassigned %{count} content host(s) to %{cv} in %{env}."
-msgstr "%{count} コンテンツホストが %{env} の %{cv} に正常に再割り当てられました。"
+msgstr "%{count} コンテンツホストの %{env} の %{cv} への再割当てが正常に行なわれました。"
 
 msgid "Successfully removed %s Content Host(s)."
 msgstr "%s コンテンツホストが正常に削除されました。"
@@ -3690,7 +3696,7 @@ msgid "Summary: "
 msgstr "サマリー: "
 
 msgid "Sychronize capsule content"
-msgstr ""
+msgstr "Capsule コンテンツの同期"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Sync Canceled"
@@ -3701,7 +3707,7 @@ msgid "Sync Cancelled"
 msgstr "同期が取り消されました"
 
 msgid "Sync Incomplete"
-msgstr ""
+msgstr "同期が完了していません"
 
 # translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Using_the_CloudForms_System_Engine_Dashboard
 msgid "Sync Overview"
@@ -3719,7 +3725,7 @@ msgstr "リポジトリーの同期"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Sync complete."
-msgstr "同期完了"
+msgstr "同期が完了しました。"
 
 msgid "Sync one or more products"
 msgstr "1 つ以上の製品の同期"
@@ -3787,7 +3793,7 @@ msgid "The erratum type must be an array. Invalid value provided"
 msgstr "エラータタイプは配列でなくてはなりません。無効な値が指定されました"
 
 msgid "The following hosts have errata that apply to them: "
-msgstr ""
+msgstr "以下のホストにはこれらに適用されるエラータがあります:"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid ""
@@ -3801,7 +3807,7 @@ msgstr ""
 msgid ""
 "The list of environments to promote the specified Content View Version to "
 "(replacing the older version)."
-msgstr ""
+msgstr "指定されたコンテンツビューバージョンをプロモートする (古いバージョンに置き換わる) 環境の一覧です。"
 
 msgid "The offset in the file where the content starts"
 msgstr "コンテンツが開始するファイル内のオフセット"
@@ -3810,21 +3816,24 @@ msgid ""
 "The promotion of %{content_view} to %{environment} has completed.  %{count} "
 "errata are available to your hosts."
 msgstr ""
+"%{content_view} の %{environment} へのプロモーションが完了しました。%{count} エラータはホストで利用できます。"
 
 msgid ""
 "The promotion of %{content_view} to <b>%{environment}</b> has completed.  "
 "%{count} needed errata are installable on your hosts."
 msgstr ""
+"%{content_view} の <b>%{environment}</b> へのプロモーションが完了しました。%{count} "
+"件の必要なエラータをホストにインストールできます。"
 
 msgid ""
 "The puppet environment %{name} is in use by %{count} Host Group(s) including "
 "%{names}"
-msgstr ""
+msgstr "Puppet 環境 %{name} は %{count} ホストグループで使用されています (%{names} を含む)"
 
 msgid ""
 "The puppet environment %{name} is in use by %{count} Host(s) including "
 "%{names}"
-msgstr ""
+msgstr "Puppet 環境 %{name} は %{count} ホストで使用されています (%{names} を含む)"
 
 msgid "The repository is already enabled"
 msgstr "リポジトリー がすでに有効にされています"
@@ -3867,7 +3876,7 @@ msgstr "利用可能なサブスクリプションはありません。"
 msgid ""
 "There are no products or repositories enabled. Try enabling via %{custom} or "
 "%{redhat}."
-msgstr "有効な製品またはリポジトリーはありません。%{custom} または %{redhat} による有効化を試行してください。"
+msgstr "有効な製品またはリポジトリーはありません。%{custom} または %{redhat} から有効にするように試行してください。"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "There are no products to display."
@@ -3888,10 +3897,10 @@ msgid ""
 msgstr "'%s' リポジトリーにはすでにアクティブな同期プロセスがあります。後で再試行してください"
 
 msgid "There was an error attempting to enable or disable this repository:"
-msgstr ""
+msgstr "このリポジトリーの有効化/無効化の試行中にエラーが発生しました:"
 
 msgid "There was an error attempting to retrieve the repository list:"
-msgstr ""
+msgstr "リポジトリー一覧取得の試行中にエラーが発生しました:"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "There was an error retrieving that row:"
@@ -3985,27 +3994,26 @@ msgstr "コンテンツホストの UUID"
 msgid "UUID of the system"
 msgstr "システムの UUID"
 
-#, fuzzy
 msgid "Unable to determine quantity for pool %s"
 msgstr "プール %s の数量を決定できません"
 
 msgid "Unable to fetch any capsules. Please try again."
-msgstr ""
+msgstr "Capsule を取得できません。もう一度やり直してください。"
 
 msgid "Unable to fetch any life cycle environments. Please try again."
-msgstr ""
+msgstr "ライフサイクル環境を取得できません。もう一度やり直してください。"
 
 msgid "Unable to fetch any repositories. Please try again."
-msgstr ""
+msgstr "リポジトリーを取得できません。もう一度やり直してください。"
 
 msgid "Unable to fetch any tags. Please try again."
-msgstr ""
+msgstr "タグを取得できません。もう一度やり直してください。"
 
 msgid "Unable to fetch content views. Please try again."
-msgstr ""
+msgstr "コンテンツビューを取得できません。もう一度やり直してください。"
 
 msgid "Unable to find errata with ids: %s."
-msgstr ""
+msgstr "以下の ID のエラータを取得できません: %s"
 
 msgid "Unable to find package %s"
 msgstr "パッケージ %s が見つかりません"
@@ -4053,10 +4061,10 @@ msgstr "%s を同期できません。このリポジトリーにはフィード
 msgid ""
 "Unable to synchronize any repository. You either do not have the permission "
 "to synchronize or the selected repositories do not have a feed url."
-msgstr ""
+msgstr "リポジトリーを同期できません。同期するパーミッションがないか、または選択されたリポジトリーにはフィード URL がないかのいずれかです。"
 
 msgid "Unapplied Errata"
-msgstr ""
+msgstr "適用されないエラータ"
 
 msgid "Unattach a subscription"
 msgstr "サブスクリプションの割り当て解除"
@@ -4083,7 +4091,6 @@ msgstr "固有"
 msgid "Unknown"
 msgstr "不明"
 
-#, fuzzy
 msgid "Unknown registration date"
 msgstr "不明な登録日"
 
@@ -4134,7 +4141,7 @@ msgstr "同期プランの更新"
 msgid ""
 "Update all editable and applicable systems, not just ones using the selected "
 "Content View Versions and Environments"
-msgstr ""
+msgstr "選択されたコンテンツビューバージョンおよび環境を使用するシステムだけでなく、すべての編集可能で適用可能なシステムを更新します。"
 
 msgid "Update an activation key"
 msgstr "アクティベーションキーの更新"
@@ -4193,7 +4200,7 @@ msgid "Upload gpg key contents"
 msgstr "GPG キーコンテンツのアップロード"
 
 msgid "Upload into"
-msgstr ""
+msgstr "情報のアップロード"
 
 msgid "Upload request id"
 msgstr "要求 ID のアップロード"
@@ -4224,7 +4231,6 @@ msgstr "ユーザー '%{user}' は組織 '%{organization}' に属していませ
 msgid "User Notifications"
 msgstr "ユーザー通知"
 
-#, fuzzy
 msgid "User does not belong to an organization."
 msgstr "ユーザーは組織に属していません。"
 
@@ -4305,9 +4311,8 @@ msgstr "警告"
 msgid "Welcome"
 msgstr "ようこそ"
 
-#, fuzzy
 msgid "Welcome Back"
-msgstr "おかえりなさい"
+msgstr "ようこそ"
 
 msgid "When set to 'True' certificate will be re-issued"
 msgstr "「True」に設定されると、証明書が再発行されます"
@@ -4320,13 +4325,13 @@ msgstr "すべての結果を表示するかどうか"
 
 # translation auto-copied from project PressGang CCMS topics, version 1, document 10186-726104, author myamamot
 msgid "Yes"
-msgstr "はい"
+msgstr "Yes"
 
 msgid "You are not allowed to promote to Environments %s"
-msgstr ""
+msgstr "環境 %s にプロモートすることはできません"
 
 msgid "You are not allowed to publish Content View %s"
-msgstr ""
+msgstr "コンテンツビュー %s を公開することはできません"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "You are not authorised to perform this action."
@@ -4357,7 +4362,7 @@ msgid ""
 msgstr "現在アクセスできる組織がありません。管理者に連絡して組織にアクセスできるパーミッションを取得してください。"
 
 msgid "You do not have permissions to delete %s"
-msgstr ""
+msgstr "%s を削除するパーミッションがありません。"
 
 msgid ""
 "You do not have valid credentials to access this system. Please contact your "
@@ -4369,15 +4374,15 @@ msgid ""
 "You have entered an incorrect username/password combination, or your account "
 "may currently be disabled. Please try again or contact your administrator."
 msgstr ""
-"入力したユーザー名とパスワードの組み合わせが誤っているか、または 現在ユーザーのアカウントが無効になっている可能性があります。 "
-"後で再試行するか、または管理者に連絡してください。"
+"入力したユーザー名とパスワードの組み合わせが誤っているか、または "
+"現在ユーザーのアカウントが無効になっている可能性があります。もう一度やり直すか、または管理者に連絡してください。"
 
 msgid "You have not set a default organization on the user %s."
 msgstr "ユーザー %s にデフォルト組織を設定していません。"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "You may have mistyped the address or the page may have moved."
-msgstr "アドレスの入力間違いか、ページが移動した可能性があります。"
+msgstr "アドレスの入力間違いか、またはページが移動した可能性があります。"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "You might want to log out and log back in again to clear your cookies."
@@ -4410,8 +4415,7 @@ msgid ""
 "organization has been deleted or your permissions revoked, please log back "
 "in to continue."
 msgstr ""
-"現在の組織は無効になりました。 組織が削除されたか、またはユーザーのパーミッションが取り消された可能性があります。 "
-"ログインし直してから続行してください。"
+"現在の組織は無効になりました。組織が削除されたか、またはユーザーのパーミッションが取り消された可能性があります。ログインし直してから続行してください。"
 
 msgid ""
 "Your dashboard can be rearranged by clicking on a widget's title and "
@@ -4470,26 +4474,25 @@ msgid "author of the puppet module"
 msgstr "Puppet モジュールの作成者"
 
 msgid "auto attach subscriptions upon registration"
-msgstr ""
+msgstr "登録時のサブスクリプションの自動割り当て"
 
 msgid "base url to perform repo discovery on"
 msgstr "リポジトリー検出を実行するベース URL"
 
 msgid "can the activation key have unlimited content hosts"
-msgstr "アクティベーションキーに無制限のコンテンツホストを設定可能"
+msgstr "アクティベーションキーに無制限のコンテンツホストが設定可能"
 
 msgid "can't be blank"
 msgstr "空白にしないでください"
 
 msgid "cannot be a binary file."
-msgstr "バイナリーファイルは指定できません"
+msgstr "バイナリーファイルは指定できません。"
 
-#, fuzzy
 msgid "cannot be blank"
-msgstr "空白にしないでください"
+msgstr "空白にすることはできません"
 
 msgid "cannot be blank. Either provide all or no sync information."
-msgstr ""
+msgstr "空白にすることはできません。すべてまたはゼロの同期情報を指定します。"
 
 msgid "cannot be changed."
 msgstr "変更できません。"
@@ -4507,7 +4510,7 @@ msgid "cannot be nil"
 msgstr "Nill にしないでください"
 
 msgid "cannot be set because unlimited content hosts is set"
-msgstr ""
+msgstr "無制限のコンテンツホストが設定されているため設定できません"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "cannot contain blank keynames"
@@ -4529,7 +4532,7 @@ msgstr "%s を超える文字を含めることはできません"
 
 msgid ""
 "checksum of the repository, currently 'sha1' & 'sha256' are supported.'"
-msgstr ""
+msgstr "リポジトリーのチェックサムです。現在、'sha1' & 'sha256' がサポートされています。"
 
 msgid "content release version"
 msgstr "コンテンツリリースバージョン"
@@ -4562,13 +4565,13 @@ msgid "content view to reassign orphaned systems to"
 msgstr "孤立したシステムを再度割り当てるコンテンツビュー"
 
 msgid "content view version identifier"
-msgstr ""
+msgstr "コンテンツビューバージョン ID"
 
 msgid "content view version identifiers to be deleted"
 msgstr "削除するコンテンツビューバージョン ID"
 
 msgid "content view versions to compare"
-msgstr ""
+msgstr "比較するコンテンツビューバージョン"
 
 # translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "delete"
@@ -4576,13 +4579,13 @@ msgstr "削除"
 
 # translation auto-copied from project anaconda, version 19.31.34, document anaconda
 msgid "description"
-msgstr "詳細"
+msgstr "説明"
 
 msgid "description of the environment"
-msgstr "環境の詳細"
+msgstr "環境の説明"
 
 msgid "description of the filter"
-msgstr "フィルターの詳細"
+msgstr "フィルターの説明"
 
 # translation auto-copied from project rhsm-web, version 0.0, document management
 msgid "distributors"
@@ -4592,6 +4595,7 @@ msgid ""
 "either both parameters 'content_view_id' and 'environment_id' should be "
 "specified or neither should be specified"
 msgstr ""
+"'content_view_id' および 'environment_id' パラメーターの両方を指定するか、どちらも指定しないかのいずれかにします。"
 
 msgid "enables or disables synchronization"
 msgstr "同期の有効化または無効化"
@@ -4615,9 +4619,8 @@ msgstr "環境の数値 ID"
 msgid "environment numeric identifiers to be removed"
 msgstr "削除する環境の数値 ID"
 
-#, fuzzy
 msgid "environment required"
-msgstr "必須の環境"
+msgstr "必要な環境"
 
 msgid "environment to reassign orphaned activation keys to"
 msgstr "孤立したアクティベーションキーを再度割り当てる環境"
@@ -4625,7 +4628,6 @@ msgstr "孤立したアクティベーションキーを再度割り当てる環
 msgid "environment to reassign orphaned systems to"
 msgstr "孤立したシステムを再度割り当てる環境"
 
-#, fuzzy
 msgid "environments"
 msgstr "環境"
 
@@ -4664,10 +4666,10 @@ msgstr "この名前を含む環境のみをフィルター"
 
 msgid ""
 "force content view promotion and bypass lifecycle environment restriction"
-msgstr ""
+msgstr "コンテンツビューのプロモートを強制およびライフサイクル環境の制限をバイパス"
 
 msgid "foreman-tasks service not running"
-msgstr ""
+msgstr "foreman-tasks サービスが実行されていません"
 
 msgid "found more than one activation key"
 msgstr "複数のアクティベーションが見つかりました"
@@ -4686,7 +4688,7 @@ msgid "here"
 msgstr "こちら"
 
 msgid "host collection name to filter by"
-msgstr "フィルターするホストコレクション名"
+msgstr "フィルターに使用するホストコレクション名"
 
 msgid "how often synchronization should run"
 msgstr "同期の実行頻度"
@@ -4698,11 +4700,11 @@ msgid "identifier of the gpg key"
 msgstr "GPG キーの ID"
 
 msgid "ids to filter content by"
-msgstr ""
+msgstr "コンテンツのフィルターに使用する ID"
 
 # translation auto-copied from project PressGang CCMS topics, version 1, document 11565-301230
 msgid "import"
-msgstr "import"
+msgstr "インポート"
 
 msgid "installing errata..."
 msgstr "エラータをインストールしています..."
@@ -4733,19 +4735,19 @@ msgid "issue tracker"
 msgstr "問題トラッカー"
 
 msgid "katello_default cannot be changed."
-msgstr ""
+msgstr "katello_default を変更することはできません。"
 
 msgid "label of the environment"
-msgstr ""
+msgstr "環境のラベル"
 
 msgid "limit to only repositories of this time"
 msgstr "今回のリポジトリーのみに制限"
 
 msgid "list of packages names"
-msgstr "パッケージ名の一覧表示"
+msgstr "パッケージ名の一覧"
 
 msgid "list of repository ids"
-msgstr "リポジトリー ID の一覧表示"
+msgstr "リポジトリー ID の一覧"
 
 msgid "maximum number of registered content hosts"
 msgstr "登録されたコンテンツホストの最大数"
@@ -4766,17 +4768,17 @@ msgid "must be a positive integer value."
 msgstr "正の整数値でなければなりません。"
 
 msgid "must be a valid docker name"
-msgstr ""
+msgstr "有効な Docker 名である必要があります"
 
 msgid "must be less than %d characters"
 msgstr "%d 文字以上である必要があります。"
 
 msgid "must be one of the following: %s"
-msgstr ""
+msgstr "以下のいずれかでなければなりません: %s"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "must be unique within one organization"
-msgstr "1 組織内で一意である必要があります"
+msgstr "1 つの組織内で一意である必要があります"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "must contain '%s'"
@@ -4824,7 +4826,7 @@ msgid "name of the repository"
 msgstr "リポジトリーの名前"
 
 msgid "name of the upstream docker repository"
-msgstr ""
+msgstr "アップストリーム Docker リポジトリー"
 
 msgid "name: %s doesn't exist "
 msgstr "名前: %s は存在しません"
@@ -4846,7 +4848,7 @@ msgid "of Unlimited"
 msgstr "(無制限)"
 
 msgid "of environment must be unique within one organization"
-msgstr "環境名は 1 組織内で一意である必要があります"
+msgstr "環境名は 1 つの組織内で一意である必要があります"
 
 msgid "organization ID"
 msgstr "組織 ID"
@@ -4867,10 +4869,10 @@ msgid "package: version"
 msgstr "パッケージ: バージョン"
 
 msgid "package_ids is not an array"
-msgstr ""
+msgstr "package_ids は配列ではありません"
 
 msgid "product name to filter by"
-msgstr "フィルターする製品名"
+msgstr "フィルターに使用する製品名"
 
 msgid "product numeric identifier"
 msgstr "製品の数値 ID"
@@ -4882,7 +4884,7 @@ msgid "puppet module ID"
 msgstr "Puppet モジュール ID"
 
 msgid "puppet_module_ids is not an array"
-msgstr ""
+msgstr "puppet_module_ids は配列ではありません"
 
 msgid "refresh"
 msgstr "更新"
@@ -4896,7 +4898,6 @@ msgstr "パッケージグループを削除しています..."
 msgid "removing package..."
 msgstr "パッケージを削除しています..."
 
-#, fuzzy
 msgid "removing packages..."
 msgstr "パッケージを削除しています..."
 
@@ -4934,10 +4935,10 @@ msgid "shared secret token"
 msgstr "共有秘密トークン"
 
 msgid "show only errata with one or more applicable systems"
-msgstr ""
+msgstr "1 つ以上の適用可能なシステムでエラータのみを表示"
 
 msgid "show only errata with one or more installable systems"
-msgstr ""
+msgstr "1 つ以上のインストール可能なシステムでエラータのみを表示"
 
 msgid "show repositories in Library and the default content view"
 msgstr "ライブラリーのリポジトリーおよびデフォルトコンテンツビューの表示"
@@ -4951,7 +4952,7 @@ msgid "start datetime of synchronization"
 msgstr "同期の開始日時"
 
 msgid "sync plan description"
-msgstr "同期プランの詳細"
+msgstr "同期プランの説明"
 
 msgid "sync plan name"
 msgstr "同期プラン名"
@@ -4967,7 +4968,7 @@ msgid "systems"
 msgstr "システム"
 
 msgid "the failed task."
-msgstr ""
+msgstr "失敗したタスク。"
 
 msgid "the feed url of the original repository "
 msgstr "元のリポジトリーのフィード URL"

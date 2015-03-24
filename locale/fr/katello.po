@@ -15,15 +15,15 @@ msgstr ""
 "Project-Id-Version: katello 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-17 08:24-0500\n"
-"PO-Revision-Date: 2015-02-24 04:21+0000\n"
-"Last-Translator: Sam Friedmann <sfriedma@redhat.com>\n"
+"PO-Revision-Date: 2015-03-19 02:56+0000\n"
+"Last-Translator: jcarbone <jcarbone@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 3.6.0\n"
 
 msgid " Red Hat Repositories"
 msgstr " Référentiels Red Hat"
@@ -48,7 +48,7 @@ msgid "%s Distributors Removed Successfully"
 msgstr "Suppression de %s distributeurs réussie"
 
 msgid "%s Errata"
-msgstr ""
+msgstr "%s Errata"
 
 msgid "%s Removed Successfully"
 msgstr "Suppression de %s réussie"
@@ -56,7 +56,6 @@ msgstr "Suppression de %s réussie"
 msgid "%s ago"
 msgstr "il y a %s"
 
-#, fuzzy
 msgid "%s for more details."
 msgstr "%s pour plus de détails."
 
@@ -331,7 +330,7 @@ msgid ": '%s' is a built-in environment"
 msgstr ": « %s » est un environnement intégré"
 
 msgid ":a_resource identifier"
-msgstr ""
+msgstr ":a_resource identifier"
 
 msgid "A backend service [ %s ] is unreachable"
 msgstr "Un service d'arrière-plan [ %s ] est injoignable"
@@ -383,14 +382,18 @@ msgid ""
 "A large number of errata are unapplied in this content view, so only the "
 "first 100 are shown."
 msgstr ""
+"Un grand nombre d'errata n'est pas appliqué dans cet affichage de contenu. "
+"Seuls les 100 premiers sont affichés."
 
 msgid ""
 "A large number of errata were synced for this repository, so only the first "
 "100 are shown."
 msgstr ""
+"Un grand nombre d'errata on été synchronisés pour ce référentiel. Seuls les "
+"100 premiers sont affichés."
 
 msgid "A post-promotion summary of hosts with installable errata"
-msgstr ""
+msgstr "Un sommaire des hôtes post-promotion avec errata installables"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author samfreemanz
 msgid ""
@@ -406,10 +409,11 @@ msgstr ""
 "Un niveau de service pour le processus de auto-healing, ex : SELF-SUPPORT"
 
 msgid "A summary of available and applicable errata for your hosts"
-msgstr ""
+msgstr "Un sommaire d'errata disponibles et applicables pour vos hôtes"
 
 msgid "A summary of new errata after a repository is synchronized"
 msgstr ""
+"Un sommaire de nouveaux errata après la synchronisation d'un référentiel"
 
 msgid "Action not allowed for the default capsule."
 msgstr "Action non autorisée pour la capsule par défaut."
@@ -429,8 +433,9 @@ msgstr "La clé d'activation avec l'UUID %s est introuvable"
 msgid "Activation keys and subscriptions can be managed"
 msgstr "Les clés d'activation et les abonnements peuvent être gérés"
 
+#, fuzzy
 msgid "Active only"
-msgstr ""
+msgstr "Actives uniquement"
 
 # translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author Sam Friedmann
 msgid "Add"
@@ -463,7 +468,7 @@ msgstr ""
 "paquet uniquement)."
 
 msgid "Add content host to the host collection"
-msgstr ""
+msgstr "Ajouter l'hôte de contenu à la collection d'hôtes"
 
 msgid "Add one or more host collections to one or more content hosts"
 msgstr ""
@@ -474,7 +479,7 @@ msgid "Add products to sync plan"
 msgstr "Ajouter des produits au plan de synchronisation"
 
 msgid "Added Content:"
-msgstr ""
+msgstr "Contenu ajouté :"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author samfreemanz
 msgid "Adding Package Group..."
@@ -488,6 +493,8 @@ msgid ""
 "After generating the incremental update, apply the changes to the specified "
 "systems.  Only Errata are supported currently."
 msgstr ""
+"Après avoir effectué la mise à jour croissante, appliquer les modifications "
+"aux systèmes spécifiés. Seuls les erratas sont actuellement pris en charge."
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Alert"
@@ -534,7 +541,7 @@ msgid "Are you sure?"
 msgstr "Êtes-vous sûr ?"
 
 msgid "Array of content host ids"
-msgstr ""
+msgstr "Ensemble d'ID d'hôtes de contenu"
 
 msgid "Array of subscriptions to add"
 msgstr "Ensemble d'abonnements à ajouter"
@@ -558,7 +565,7 @@ msgstr ""
 "systèmes"
 
 msgid "At least one Content View Version must be specified"
-msgstr ""
+msgstr "Au moins une version d'affichage de contenu doit être spécifiée"
 
 msgid "At least one activation key must be provided"
 msgstr "Au moins une clé d'activation doit être fournie"
@@ -610,8 +617,9 @@ msgstr ""
 "Attachement automatique des abonnements disponibles à tous les systèmes "
 "d'une organisation. Une opération synchrone."
 
+#, fuzzy
 msgid "Auto-attach subscriptions"
-msgstr ""
+msgstr "Abonnements auto-attach"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Auto-complete Product"
@@ -678,16 +686,19 @@ msgid "CDN loading error: access forbidden to %s"
 msgstr "Erreur de chargement CDN : accès interdit à %s"
 
 msgid "CVE identifier"
-msgstr ""
+msgstr "Identifiant CVE"
 
 msgid "Calculate Applicable Errata based on a particular Content View"
 msgstr ""
+"Calculer les errata applicables selon un affichage de contenu particulier"
 
 msgid "Calculate Applicable Errata based on a particular Environment"
-msgstr ""
+msgstr "Calculer les errata applicables selon un environnement particulier"
 
 msgid "Can only remove content from within the Default Content View"
 msgstr ""
+"Peut uniquement supprimer les contenus à partir de l'Affichage de contenu "
+"par défaut"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author samfreemanz
 msgid "Can't update the '%s' environment"
@@ -705,16 +716,18 @@ msgid "Cancelled"
 msgstr "Annulé"
 
 msgid "Cancelled."
-msgstr ""
+msgstr "Annulé."
 
 msgid "Candlepin Event"
 msgstr "Événement Candlepin"
 
 msgid "Cannot add %s repositories to a content view."
-msgstr ""
+msgstr "Impossible d'ajouter %s référentiels à un affichage de contenu."
 
 msgid "Cannot add a repository from an Organization other than %s."
 msgstr ""
+"Impossible d'ajouter un référentiel à partir d'une organisation autre que %s."
+""
 
 msgid "Cannot add component versions to a non-composite content view"
 msgstr ""
@@ -728,6 +741,8 @@ msgstr ""
 
 msgid "Cannot add composite versions to another composite content view"
 msgstr ""
+"Impossible d'ajouter des versions composites à un autre affichage de contenu "
+"composite"
 
 msgid "Cannot add default content view to composite content view"
 msgstr ""
@@ -762,10 +777,10 @@ msgid "Cannot delete from %s, view does not exist there."
 msgstr "Impossible de supprimer à partir de %s, l'affichage n'y existe pas."
 
 msgid "Cannot delete provider with attached products"
-msgstr ""
+msgstr "Impossible de supprimer le fournisseur avec les produits joints"
 
 msgid "Cannot delete the default Location"
-msgstr ""
+msgstr "Impossible de supprimer l'emplacement par défaut"
 
 msgid "Cannot delete version while it is in environments: %s"
 msgstr ""
@@ -780,6 +795,8 @@ msgstr ""
 msgid ""
 "Cannot promote environment out of sequence. Use force to bypass restriction."
 msgstr ""
+"Impossible de promouvoir l'environnement hors séquence. Forcez le "
+"contournement de la restriction."
 
 msgid "Cannot publish default content view"
 msgstr "Impossible de publier l'affichage du contenu par défaut"
@@ -796,12 +813,15 @@ msgstr ""
 "%{dependent}: %{names} associés."
 
 msgid "Cannot remove content from a non-custom repository"
-msgstr ""
+msgstr "Impossible de supprimer le contenu d'un référentiel non personnalisé."
 
 msgid ""
 "Cannot remove content view from environment. Content view '%{view}' is not "
 "in lifecycle environment '%{env}'."
 msgstr ""
+"Impossible de supprimer l'affichage de contenu de l'environnement. "
+"L'affichage de contenu '%{view}' ne se trouve pas dans l'environnement de "
+"cycle de vie '%{env}'."
 
 msgid ""
 "Cannot retrieve repos from non-library environment '%s' without a content "
@@ -812,9 +832,10 @@ msgstr ""
 
 msgid "Cannot specify components for non-composite views"
 msgstr ""
+"Impossible d'indiquer des composants pour les affichages non-composite"
 
 msgid "Cannot specify content for composite views"
-msgstr ""
+msgstr "Impossible d'indiquer du contenu pour les affichages composite"
 
 # translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document appe-Glossary_of_Terms
 msgid "Capsule"
@@ -923,9 +944,13 @@ msgstr "Affichage de contenu"
 
 msgid "Content View Version %{id} not in all specified environments %{envs}"
 msgstr ""
+"La version d'affichage de contenu %{id} ne se trouve pas dans tous les "
+"environnements %{envs} indiqués"
 
 msgid "Content View Version Ids to perform an incremental update on."
 msgstr ""
+"Les ID de version d'affichage de contenu sur lesquels effectuer une mise à "
+"jour croissante."
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author samfreemanz
 msgid "Content View:"
@@ -962,6 +987,8 @@ msgstr ""
 
 msgid "Content view '%{view}' is not in lifecycle environment '%{env}'."
 msgstr ""
+"L'affichage de contenu « %{view} » ne se trouve pas dans l'environnement de "
+"cycle de vie « %{env} »."
 
 msgid "Content view identifier"
 msgstr "Identifiant d'affichage du contenu"
@@ -984,7 +1011,7 @@ msgid "Copy"
 msgstr "Copier"
 
 msgid "Copy an activation key"
-msgstr ""
+msgstr "Copier une clé d'activation"
 
 msgid "Cores: %s"
 msgstr "Noyaux : %s"
@@ -994,21 +1021,23 @@ msgstr "Suppression de l'organisation '%s' impossible."
 
 msgid "Could not find %{content} with id '%{id}' in repository."
 msgstr ""
+"Impossible de trouver %{content} avec l'ID '%{id}' dans le référentiel."
 
 msgid "Could not find Environment with ids: %s"
-msgstr ""
+msgstr "Impossible de trouver un Environnement avec les ID : %s"
 
 msgid "Could not find Lifecycle Environment with id '%{id}'."
 msgstr ""
+"Impossible de trouver un Environnement de cycle de vie avec l'ID '%{id}'."
 
 msgid "Could not find Repository for module %s."
 msgstr "Impossible de trouver le référentiel pour le module %s."
 
 msgid "Could not find all specified errata ids: %s"
-msgstr ""
+msgstr "Impossible de trouver tous les ID d'errata indiqués : %s"
 
 msgid "Could not find errata with id: %s"
-msgstr ""
+msgstr "Impossible de trouver des erratas avec l'ID : %s"
 
 msgid ""
 "Could not unarchive puppet module. Please make sure the puppet module has "
@@ -1018,7 +1047,7 @@ msgstr ""
 "module puppet a été compressé correctement."
 
 msgid "Couldn't find %{type} Filter with id %{id}"
-msgstr ""
+msgstr "Impossible de trouver le Filtre %{type} avec l'ID %{id}"
 
 msgid "Couldn't find ContentViewFilter with id=%s"
 msgstr "Le filtre d'affichage du contenu avec l'ID =%s est introuvable"
@@ -1069,10 +1098,10 @@ msgid "Couldn't find content view '%s'"
 msgstr "L'affichage de contenu « %s » est introuvable"
 
 msgid "Couldn't find content view version '%s'"
-msgstr ""
+msgstr "Impossible de trouver la version d'affichage de contenu '%s'"
 
 msgid "Couldn't find content view versions '%s'"
-msgstr ""
+msgstr "Impossible de trouver les versions d'affichage de contenu '%s'"
 
 msgid "Couldn't find environment '%s'"
 msgstr "Environnement « %s » introuvable"
@@ -1090,7 +1119,7 @@ msgid "Couldn't find prior-environment '%s'"
 msgstr "Le pré-environnement  '%s' est introuvable"
 
 msgid "Couldn't find product '%s'"
-msgstr ""
+msgstr "Impossible de trouver le produit '%s'"
 
 msgid "Couldn't find product with id '%s'"
 msgstr "Le produit avec l'ID « %s » est introuvable"
@@ -1099,6 +1128,8 @@ msgid ""
 "Couldn't find puppet environment associated with lifecycle environment "
 "'%{env}' and content view '%{view}'"
 msgstr ""
+"Impossible de trouver un environnement puppet associé à l'environnement de "
+"cycle de vie '%{env}' et l'affichage de contenu '%{view}'"
 
 msgid "Couldn't find repository '%s'"
 msgstr "Référentiel « %s » introuvable"
@@ -1223,7 +1254,7 @@ msgid "Debug RPMs"
 msgstr "Déboguer les RPM"
 
 msgid "Default PXElinux template for new Operating Systems"
-msgstr ""
+msgstr "Modèle PXElinux par défaut pour les nouveaux systèmes d'exploitation"
 
 msgid "Default System SLA"
 msgstr "SLA du système par défaut"
@@ -1236,20 +1267,26 @@ msgstr ""
 "Les versions de l'affichage du contenu par défaut ne peuvent pas être "
 "promues"
 
+#, fuzzy
 msgid "Default finish template for new Operating Systems"
-msgstr ""
+msgstr "Modèles finish par défaut pour les nouveaux systèmes d'exploitation"
 
 msgid "Default iPXE template for new Operating Systems"
-msgstr ""
+msgstr "Modèle iPXE par défaut pour les nouveaux systèmes d'exploitation"
 
 msgid "Default partitioning table for new Operating Systems"
 msgstr ""
+"Table de partitionnement par défaut pour les nouveaux systèmes "
+"d'exploitation"
 
 msgid "Default provisioning template for new Operating Systems"
 msgstr ""
+"Modèles de provisionnement par défaut pour les nouveaux systèmes "
+"d'exploitation"
 
 msgid "Default user data for new Operating Systems"
 msgstr ""
+"Données d'utilisateur par défaut pour les nouveaux systèmes d'exploitation"
 
 # translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Delete"
@@ -1267,7 +1304,7 @@ msgid "Delete All"
 msgstr "Tout supprimer"
 
 msgid "Delete Lifecycle Environment"
-msgstr ""
+msgstr "Supprimer l'environnement de cycle de vie"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author samfreemanz
 msgid "Delete Manifest"
@@ -1315,7 +1352,7 @@ msgid "Description for the content view"
 msgstr "Description de l'affichage du contenu"
 
 msgid "Description for the new published content view version"
-msgstr ""
+msgstr "Description de la version d'affichage de contenu récemment publiée"
 
 msgid "Description of the content host"
 msgstr "Description de l'hôte du contenu"
@@ -1334,7 +1371,7 @@ msgid "Destroy Content Host"
 msgstr "Détruire l'hôte du contenu"
 
 msgid "Destroy Host"
-msgstr ""
+msgstr "Détruire l'hôte"
 
 msgid "Destroy a custom repository"
 msgstr "Détruire un référentiel personnalisé"
@@ -1451,17 +1488,17 @@ msgstr ""
 "dans ce produit ?"
 
 msgid "Docker Image"
-msgstr ""
+msgstr "Image Docker"
 
 # translation auto-copied from project Customer Portal Translations, version 012_June_RHEL, document downloads.html, author Sam Friedmann
 msgid "Docker Images"
 msgstr "Docker Images"
 
 msgid "Docker Tag"
-msgstr ""
+msgstr "Balise Docker"
 
 msgid "Docker Tags"
-msgstr ""
+msgstr "Balises Docker"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author samfreemanz
 msgid "Download"
@@ -1564,7 +1601,7 @@ msgid "Errata types array \\['security', 'bugfix', 'enhancement'\\]"
 msgstr "Ensemble de types d'errata \\['security', 'bugfix', 'enhancement'\\]"
 
 msgid "Erratum"
-msgstr ""
+msgstr "Erratum"
 
 msgid "Erratum Install Canceled"
 msgstr "Installation de l'erratum annulée"
@@ -1639,16 +1676,16 @@ msgstr "Échec sur distributeur(s) :"
 
 msgid "Failed to download %s module."
 msgid_plural "Failed to download %s modules."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Le téléchargement du module %s a échoué."
+msgstr[1] "Le téléchargement des modules %s a échoué."
 
 msgid "Failed to download %s package."
 msgid_plural "Failed to download %s packages."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Le téléchargement du package %s a échoué."
+msgstr[1] "Le téléchargement des packages %s a échoué."
 
 msgid "Failed to find %{content} with id '%{id}'."
-msgstr ""
+msgstr "%{content} avec l'ID '%{id}' est introuvable."
 
 msgid "Fetch applicable errata for a system."
 msgstr "Récupérer les erratas applicables pour un système."
@@ -1673,10 +1710,10 @@ msgid "Filter by host collection"
 msgstr "Filtrer par collection d'hôte"
 
 msgid "Filter by systems that need an Erratum by uuid"
-msgstr ""
+msgstr "Filtrer par systèmes nécessitant un erratum par uuid"
 
 msgid "Filter by systems that need any one of multiple Errata by uuid"
-msgstr ""
+msgstr "Filtrer par systèmes nécessitant l'un des multiples errata par uuid"
 
 msgid "Filter content host by name"
 msgstr "Filtre l'hôte de contenu par nom"
@@ -1721,20 +1758,20 @@ msgstr ""
 "l'organisation"
 
 msgid "Filter versions by environment"
-msgstr ""
+msgstr "Filtrer les versions par environnement"
 
 msgid "Filter versions by version number"
-msgstr ""
+msgstr "Filtrer les versions par numéro de version"
 
 msgid "Filter versions that are components in the specified composite version"
-msgstr ""
+msgstr "Filtrer les versions composantes dans la version composite spécifiée."
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author samfreemanz
 msgid "Filter..."
 msgstr "Filtre..."
 
 msgid "For more information see "
-msgstr ""
+msgstr "Pour plus d'informations, veuillez consulter :"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author samfreemanz
 msgid "GPG Key URL: "
@@ -1744,7 +1781,6 @@ msgstr "URL de la clé GPG :"
 msgid "GPG Keys"
 msgstr "Clés GPG"
 
-#, fuzzy
 msgid "GPG keys"
 msgstr "Clés GPG"
 
@@ -1753,7 +1789,7 @@ msgid "Generate and Download"
 msgstr "Générer et télécharger"
 
 msgid "Generate and Synchronize Capsule Metadata for %s"
-msgstr ""
+msgstr "Générer et synchroniser les métadonnées de capsule pour %s"
 
 msgid "Get content host reports for the environment"
 msgstr "Obtenir les rapports d'hôte de contenu pour l'environnement"
@@ -1797,6 +1833,9 @@ msgid ""
 "                                                        and environments "
 "that need updating."
 msgstr ""
+"Given a set of systems and errata, lists the content view versions           "
+"                                                        and environments "
+"that need updating."
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Go"
@@ -1809,7 +1848,7 @@ msgid "Host"
 msgstr "Hôte"
 
 msgid "Host Advisory"
-msgstr ""
+msgstr "Alerte hôte"
 
 msgid "Host Collection name"
 msgstr "Nom de la collection d'hôtes"
@@ -1833,7 +1872,7 @@ msgid "Host subscription details"
 msgstr "Détails de l'abonnement de l'hôte"
 
 msgid "Hosts with Installable Errata"
-msgstr ""
+msgstr "Hôtes avec errata installables"
 
 msgid "How to order the sorted results (e.g. ASC for ascending)"
 msgstr ""
@@ -1859,6 +1898,8 @@ msgstr "ID d'un affichage de contenu dans lequel afficher les référentiels"
 
 msgid "ID of a content view version to show repositories in"
 msgstr ""
+"ID d'une version d'affichage de contenu sur laquelle afficher les "
+"référentiels"
 
 msgid "ID of a gpg key that will be assigned to this repository"
 msgstr "ID d'une clé gpg qui sera assignée à ce référentiel"
@@ -1927,11 +1968,16 @@ msgid ""
 "If true, when adding the specified errata or packages, any needed "
 "dependencies will be copied as well."
 msgstr ""
+"Si défini comme « true », toute dépendance nécessaire sera copiée lors de "
+"l'ajout des errata ou package spécifiés."
 
 msgid ""
 "If true, will publish a new composite version using any specified "
 "content_view_version_id that has been promoted to a lifecycle environment."
 msgstr ""
+"Si défini comme « true », une nouvelle version composite sera publiée à "
+"l'aide d'un content_view_version_id spécifié ayant été promu à un "
+"environnement de cycle de vie."
 
 msgid "Import Manifest"
 msgstr "Importer le manifeste"
@@ -1948,10 +1994,10 @@ msgid "In Progress"
 msgstr "En cours"
 
 msgid "Incremental Update"
-msgstr ""
+msgstr "Mise à jour croissante"
 
 msgid "Incremental Update incomplete."
-msgstr ""
+msgstr "Mise à jour croissante incomplète."
 
 msgid "Informable Type must be one of the following [ %{list} ]"
 msgstr "Le type Informable doit être l'un de [ %{list} ]"
@@ -1964,7 +2010,7 @@ msgid "Initial Registration Params"
 msgstr "Paramètres d'enregistrement initial"
 
 msgid "Install Applicable Errata"
-msgstr ""
+msgstr "Installer des errata applicables"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Install Finished"
@@ -2110,22 +2156,22 @@ msgid "Issued: "
 msgstr "Émis : "
 
 msgid "Katello Host Advisory"
-msgstr ""
+msgstr "Alerte Hôte Katello"
 
 msgid "Katello Promotion Summary"
-msgstr ""
+msgstr "Sommaire de Promotion Katello"
 
 msgid "Katello Promotion Summary for %{content_view}"
-msgstr ""
+msgstr "Sommaire de promotion Katello pour %{content_view}"
 
 msgid "Katello Support"
 msgstr "Support Katello"
 
 msgid "Katello Sync Summary"
-msgstr ""
+msgstr "Sommaire de Synchronisation de Katello"
 
 msgid "Katello Sync Summary for %s"
-msgstr ""
+msgstr "Sommaire de Synchronisation de Katello"
 
 msgid "Katello can be found on the same freenode channels used by Foreman."
 msgstr "Katello se trouve sur les mêmes canaux freenode utilisés par Foreman."
@@ -2156,7 +2202,7 @@ msgid "Kickstarts"
 msgstr "Kickstarts"
 
 msgid "Label of the content"
-msgstr ""
+msgstr "Étiquette du contenu"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author samfreemanz
 msgid "Last Checked in Date"
@@ -2175,9 +2221,11 @@ msgstr "Niveau"
 
 msgid "Library lifecycle environments may not be deleted."
 msgstr ""
+"Les environnements de cycle de vie de la bibliothèque ne peuvent pas être "
+"supprimés."
 
 msgid "Library repository id to restrict comparisons to"
-msgstr ""
+msgstr "ID de référentiel de bibliothèque pour restreindre les comparaisons à"
 
 # translation auto-copied from project gtk3, version 3.8.2, document gtk30
 msgid "License"
@@ -2197,19 +2245,25 @@ msgstr "Environnement de cycle de vie"
 msgid ""
 "Lifecycle Environment %s has a successor.  Only the last lifecycle "
 "environment on a path can be deleted"
-msgstr ""
+msgstr "L'environnement de cycle de vie %s a un successeur. "
 
 msgid ""
 "Lifecycle Environment %s has associated Activation Keys. Please change or "
 "remove the associated Activation Keys before trying to delete this lifecycle "
 "environment."
 msgstr ""
+"L'environnement de cycle de vie %s a associé les Clés d'Activation. Veuillez "
+"changer ou supprimer les clés d'activation avant de tenter de supprimer cet "
+"environnement de cycle de vie."
 
 msgid ""
 "Lifecycle Environment %s has associated Content Hosts. Please unregister or "
 "move the associated Content Hosts before trying to delete this lifecycle "
 "environment."
 msgstr ""
+"L'environnement de cycle de vie %s a associé les Hôtes de Contenu. Veuillez "
+"supprimer l'abonnement ou déplacer les Hôtes de Contenu associés avant de "
+"tenter de supprimer cet environnement de cycle de vie."
 
 # translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document chap-Configuring_Organizations_Locations_and_Lifecycle_Environments, author jcarbone
 msgid "Lifecycle Environments"
@@ -2218,6 +2272,8 @@ msgstr "Environnements de cycle de vie"
 msgid ""
 "Lifecycle environment '%{environment}' is not attached to this capsule."
 msgstr ""
+"L'environnement de cycle de vie '%{environment}' n'est pas joint à cette "
+"capsule."
 
 msgid ""
 "Lifecycle environments cannot be modifed on the default Smart Proxy.  The "
@@ -2235,14 +2291,14 @@ msgid "Limits"
 msgstr "Limites"
 
 msgid "List :resource_id"
-msgstr ""
+msgstr "List :resource_id"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author samfreemanz
 msgid "List Actions"
 msgstr "Répertorier les actions"
 
 msgid "List Candlepin events for the content host"
-msgstr ""
+msgstr "Énumérer les événements Candlepin pour l'hôte de contenu"
 
 msgid "List a system's subscriptions"
 msgstr "Répertorier les abonnements d'un système"
@@ -2311,10 +2367,10 @@ msgid "List host collections"
 msgstr "Répertorier les collections d'hôtes"
 
 msgid "List host collections containing a content host"
-msgstr ""
+msgstr "Énumérer les collections d'hôtes contenant un hôte de contenu."
 
 msgid "List host collections in an activation key"
-msgstr ""
+msgstr "Énumérer les collections d'hôtes dans une clé d'activation"
 
 msgid "List host collections the content host does not belong to"
 msgstr ""
@@ -2326,10 +2382,10 @@ msgstr ""
 "Répertorier les collections d'hôtes auxquelles le système n'appartient pas"
 
 msgid "List host collections within an organization"
-msgstr ""
+msgstr "Énumérer les collections d'hôtes dans une organisation"
 
 msgid "List of Errata ids"
-msgstr ""
+msgstr "Énumérer les ID d'errata"
 
 msgid "List of Errata ids to install"
 msgstr "Liste d'id d'erratas à installer"
@@ -2349,11 +2405,13 @@ msgid "List of content (e.g. package or package group names)"
 msgstr "Liste de contenu (ex : noms de paquet ou de groupe de paquets)"
 
 msgid "List of content host uuids to be in the host collection"
-msgstr ""
+msgstr "Liste des uuid d'hôte de contenu à avoir dans une collection d'hôtes"
 
 msgid ""
 "List of content host uuids to replace the content hosts in host collection"
 msgstr ""
+"Liste d'uuid d'ID d'hôtes de contenu pour remplacer les hôtes de contenu "
+"dans la collection d'hôtes"
 
 msgid "List of enabled repo urls for the repo (Only first is used.)"
 msgstr ""
@@ -2416,7 +2474,7 @@ msgid "List organization subscriptions"
 msgstr "Répertorier les abonnements d'organisation"
 
 msgid "List packages"
-msgstr ""
+msgstr "Énumérer les packages"
 
 msgid "List packages installed on the content host"
 msgstr "Répertorier le paquets installés sur l'hôte de contenu"
@@ -2514,7 +2572,7 @@ msgid "Name of Your Distributor:"
 msgstr "Nom de votre distributeur :"
 
 msgid "Name of new activation key"
-msgstr ""
+msgstr "Nom de la nouvelle clé d'activation"
 
 msgid "Name of the content host"
 msgstr "Nom de l'hôte du contenu"
@@ -2541,7 +2599,7 @@ msgid "Nest"
 msgstr "Imbriquer"
 
 msgid "Never Synced"
-msgstr ""
+msgstr "Jamais synchronisé"
 
 msgid "Never checked in"
 msgstr "Jamais enregistré"
@@ -2550,10 +2608,10 @@ msgid "Never checked in."
 msgstr "Jamais enregistré."
 
 msgid "New Errata"
-msgstr ""
+msgstr "Nouveaux errata"
 
 msgid "New ISOs: %s"
-msgstr ""
+msgstr "Nouveau ISO : %s"
 
 msgid "New content view name"
 msgstr "Nouveau nom de l'affichage de contenu"
@@ -2566,7 +2624,7 @@ msgid "New host collection name"
 msgstr "Nouveau nom de la collection d'hôtes"
 
 msgid "New images: %{count}."
-msgstr ""
+msgstr "Nouvelles images : %{count}."
 
 msgid "New name for the content view"
 msgstr "Nouveau nom de l'affichage du contenu"
@@ -2575,7 +2633,7 @@ msgid "New name for the repository"
 msgstr "Nouveau nom du référentiel"
 
 msgid "New packages: %{count} (%{size})."
-msgstr ""
+msgstr "Nouveaux packages : %{count} (%{size})."
 
 # translation auto-copied from project Customer Portal Translations, version RedHatCloudFormsLifeCycle, document RedHatCouldFormsLifeCycle.html, author Sam Friedmann
 msgid "No"
@@ -2600,6 +2658,9 @@ msgid ""
 "No Version of Content View %{component} already exists as a component of the "
 "composite Content View %{composite} version %{version}"
 msgstr ""
+"Aucune version d'affichage de contenu %{component} existe en tant que "
+"composant de l'affichage de contenu composite %{composite} version "
+"%{version}"
 
 msgid "No content has been provided."
 msgstr "Aucun contenu n'a été fourni"
@@ -2608,7 +2669,7 @@ msgid "No content view history events found."
 msgstr "Aucun historique d'affichage de contenu n'a été trouvé."
 
 msgid "No content_view_version_ids provided"
-msgstr ""
+msgstr "Aucun content_view_version_ids fourni"
 
 msgid ""
 "No environments are currently available in this organization.  Please either "
@@ -2620,7 +2681,6 @@ msgstr ""
 "organisation qui possède un environnement pour définir le défaut de "
 "l'utilisateur."
 
-#, fuzzy
 msgid "No errors"
 msgstr "Aucune erreur"
 
@@ -2641,7 +2701,7 @@ msgid "No new packages installed"
 msgstr "Aucun nouveau paquet installé"
 
 msgid "No new packages."
-msgstr ""
+msgstr "Aucun nouveau package."
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "No package profile received for %s"
@@ -2681,10 +2741,10 @@ msgid "No recently synced products."
 msgstr "Aucun produit récemment synchronisé."
 
 msgid "No recipients found for %s promotion summary"
-msgstr ""
+msgstr "Aucun destinataire trouvé pour le sommaire de la promotion %s"
 
 msgid "No recipients found for %s sync report"
-msgstr ""
+msgstr "Aucun destinataire trouvé pour le rapport de synchronisation %s"
 
 msgid "No start time currently available."
 msgstr "Aucune date de début disponible actuellement"
@@ -2716,6 +2776,10 @@ msgid ""
 "promote this content to the relevant content view in order to make it "
 "available."
 msgstr ""
+"Remarque : le nombre indiqué entre parenthèses reflète tous les errata "
+"applicables de l'environnement de la bibliothèque et indisponibles à l'hôte. "
+"Vous devez promouvoir ce contenu vers l'affichage de contenu approprié afin "
+"de le rendre disponible."
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Notifications"
@@ -2790,16 +2854,18 @@ msgstr "Organisation requise"
 msgid ""
 "Organizations disabled, try allowing them in foreman/config/settings.yaml"
 msgstr ""
+"Organisations désactivées, tentez de les activer dans foreman/config/"
+"settings.yaml"
 
 # translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.1, document jasperserver_messages
 msgid "Other"
 msgstr "Autres"
 
 msgid "Override content for activation_key"
-msgstr ""
+msgstr "Annuler le contenu pour la clé d'activation"
 
 msgid "Override value 0/1"
-msgstr ""
+msgstr "Annuler la valeur 0/1"
 
 # translation auto-copied from project rhn-client-tools, version 6.5, document rhn-client-tools
 msgid "Package"
@@ -2996,8 +3062,9 @@ msgstr "En cours"
 
 msgid "Perform an Incremental Update on one or more Content View Versions"
 msgstr ""
+"Effectuer une mise à jour croissante sur une ou plusieurs versions "
+"d'affichage de contenu."
 
-#, fuzzy
 msgid ""
 "Permission Denied. User '%{user}' does not have permissions to access "
 "organization '%{org}'."
@@ -3026,15 +3093,14 @@ msgstr ""
 msgid "Please request the required privileges from an administrator."
 msgstr "Merci de demander les privilèges requis à un administrateur."
 
-#, fuzzy
 msgid "Pool %s has no product associated"
-msgstr "Aucun produit n'est associé au pool %s "
+msgstr "Aucun produit n'est associé au pool %s"
 
 msgid "Processing metadata"
 msgstr "Traitement des métadonnées"
 
 msgid "Processing metadata."
-msgstr ""
+msgstr "Traitement des métadonnées."
 
 # translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author Sam Friedmann
 msgid "Product"
@@ -3058,6 +3124,7 @@ msgstr "Produit auquel le référentiel appartient"
 
 msgid "Product with %{attribute} '%{id}' already exists in this organization."
 msgstr ""
+"Un produit avec %{attribute} '%{id}' existe déjà dans cette organisation."
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author samfreemanz
 msgid "Products"
@@ -3072,7 +3139,6 @@ msgstr "Promouvoir une version de vue de contenu"
 msgid "Promoted to %{environment}"
 msgstr "Promu vers %{environment}"
 
-#, fuzzy
 msgid "Promotion"
 msgstr "Promotion"
 
@@ -3123,13 +3189,14 @@ msgstr "Erreur de tâche pulp"
 
 msgid "Pulp task error.  Refer to task for more details."
 msgstr ""
+"Erreur de tâche pulp. Veuillez consulter la tâche pour plus de détails."
 
 # translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Puppet Environment"
 msgstr "Environnement Puppet"
 
 msgid "Puppet Module"
-msgstr ""
+msgstr "Module Puppet"
 
 msgid "Puppet Module '%s' found more than once. Please specify the author."
 msgstr ""
@@ -3155,7 +3222,7 @@ msgid "Quantity"
 msgstr "Quantité"
 
 msgid "Quantity of this subscription to add"
-msgstr ""
+msgstr "Nombre de ces abonnements à ajouter."
 
 msgid "Quantity of this subscriptions to add"
 msgstr "Quantité de cet abonnement à ajouter"
@@ -3172,9 +3239,11 @@ msgstr "Raison : %s"
 
 msgid "Red Hat CDN URL"
 msgstr ""
+"URL du CDN (« Content Distribution Network », réseau de distribution de "
+"contenu)  de Red Hat"
 
 msgid "Red Hat Docker Registry URL"
-msgstr ""
+msgstr "URL du registre de Red Hat Docker"
 
 # translation auto-copied from project Customer Portal Translations, version 004_messages, document messages, author Sam Friedmann
 msgid "Red Hat Product"
@@ -3246,7 +3315,7 @@ msgid "Remove All"
 msgstr "Tout supprimer"
 
 msgid "Remove Content"
-msgstr ""
+msgstr "Supprimer le contenu"
 
 # translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author samfreemanz
 msgid "Remove Distributor"
@@ -3269,7 +3338,7 @@ msgid "Remove a puppet module from the content view"
 msgstr "Supprimer un module puppet de l'affichage du contenu"
 
 msgid "Remove content hosts from the host collection"
-msgstr ""
+msgstr "Supprimer les hôtes de contenu de la collection d'hôtes"
 
 msgid "Remove content on one or more systems"
 msgstr "Supprimer le contenu d'un ou plusieurs systèmes"
@@ -3325,6 +3394,7 @@ msgstr "Référentiels"
 
 msgid "Repositories from published Content Views are not allowed."
 msgstr ""
+"Les référentiels des affichages de contenu publiés ne sont pas autorisés."
 
 # translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document appe-Glossary_of_Terms
 msgid "Repository"
@@ -3334,9 +3404,13 @@ msgid ""
 "Repository %s cannot be deleted since it has already been included in a "
 "published Content View."
 msgstr ""
+"Le référentiel %s ne peut pas être supprimé car il a déjà été inclus dans un "
+"affichage de contenu publié."
 
 msgid "Repository %s cannot be deleted since they are Red Hat repositories."
 msgstr ""
+"Le référentiel %s ne peut pas être supprimé car il s'agit de référentiels "
+"Red Hat."
 
 msgid "Repository Comparison"
 msgstr "Comparaison de référentiels"
@@ -3349,12 +3423,18 @@ msgid ""
 "Repository URL or Upstream Name is empty. Both are required for syncing from "
 "the upstream."
 msgstr ""
+"L'URL de référentiel ou Nom en amont est vide. Ils sont tous les deux requis "
+"pour synchroniser en amont."
 
 msgid ""
 "Repository cannot be deleted since it has already been included in a "
 "published Content View. Please delete all Content View versions containing "
 "this repository before attempting to deleting it."
 msgstr ""
+"Le référentiel ne peut pas être supprimé car il a déjà été inclus dans un "
+"affichage de contenu publié. Veuillez supprimer toutes les versions "
+"d'affichage de contenu contenant ce référentiel avant de tenter de le "
+"supprimer."
 
 msgid "Repository cannot be disabled since it has already been promoted."
 msgstr "Le référentiel ne peut pas être désactivé car il a déjà été promu."
@@ -3377,7 +3457,7 @@ msgid "Repository id"
 msgstr "Id de référentiel"
 
 msgid "Repository metadata publish"
-msgstr ""
+msgstr "Métadonnées de référentiel publiées"
 
 msgid "Repository not found"
 msgstr "Référentiel introuvable"
@@ -3421,11 +3501,15 @@ msgid ""
 "Return only systems where the Erratum specified by erratum_id or errata_ids "
 "is available to systems (default False)"
 msgstr ""
+"Affiche uniquement les systèmes où l'erratum indiqué par erratum_id ou "
+"errata_ids est disponible aux systèmes (default False)"
 
 msgid ""
 "Return only systems where the Erratum specified by erratum_id or errata_ids "
 "is unavailable to systems (default False)"
 msgstr ""
+"Affiche uniquement les systèmes où l'erratum indiqué par erratum_id ou "
+"errata_ids est indisponible aux systèmes (default False)"
 
 msgid "Return subscriptions that don't overlap"
 msgstr "Renvoyer les abonnements qui ne se superposent pas"
@@ -3553,19 +3637,19 @@ msgid "Select Repositories: "
 msgstr "Sélectionner les référentiels :"
 
 msgid "Select a Capsule"
-msgstr ""
+msgstr "Sélectionner une capsule"
 
 msgid "Select a Content View"
-msgstr ""
+msgstr "Sélectionner un affichage de contenu"
 
 msgid "Select a Lifecycle Environment"
-msgstr ""
+msgstr "Sélectionner un environnement de cycle de vie"
 
 msgid "Select a Repository"
-msgstr ""
+msgstr "Sélectionner un référentiel"
 
 msgid "Select a Tag"
-msgstr ""
+msgstr "Sélectionner une balise"
 
 msgid "Select a repository"
 msgstr "Sélectionner un référentiel"
@@ -3581,7 +3665,7 @@ msgid "Select a view."
 msgstr "Sélectionner un affichage"
 
 msgid "Select an Organization"
-msgstr ""
+msgstr "Sélectionner une organisation"
 
 msgid "Select hosts to assign to %s"
 msgstr "Sélectionner les hôtes à assigner à %s"
@@ -3590,16 +3674,24 @@ msgid ""
 "Selected content view has no repositories with Docker images. Please choose "
 "a different content view or life cycle environment."
 msgstr ""
+"L'affichage de contenu sélectionné ne contient pas de référentiels avec les "
+"images Docker. Veuillez sélectionner un autre affichage de contenu ou "
+"environnement de cycle de vie."
 
 msgid ""
 "Selected lifecycle environment has no content views. Please choose a "
 "different life cycle environment."
 msgstr ""
+"L'environnement de cycle de vie sélectionné ne contient pas d'affichage du "
+"contenu. Veuillez sélectionner un autre environnement de cycle de vie. "
 
 msgid ""
 "Selected organization has no capsules with Pulp or Pulp Node features. "
 "Please choose a different organization."
 msgstr ""
+"L'organisation sélectionnée ne contient aucune capsule avec des "
+"fonctionnalités Pulp ou Pulp Node. Veuillez sélectionner une autre "
+"organisation."
 
 msgid "Service Level %s"
 msgstr "Niveau de service %s"
@@ -3674,7 +3766,7 @@ msgid "Show an ueber certificate for an organization"
 msgstr "Afficher un certificat ueber pour une organisation"
 
 msgid "Show content available for an activation key"
-msgstr ""
+msgstr "Afficher le contenu disponible pour une clé d'activation"
 
 msgid "Show content view version"
 msgstr "Afficher la version de l'affichage de contenu"
@@ -3748,7 +3840,7 @@ msgid "Specify the environment"
 msgstr "Spécifier l'environnement"
 
 msgid "Specify the host collections as an array"
-msgstr ""
+msgstr "Spécifier les collections d'hôtes en tant qu'ensemble"
 
 msgid "Specify the organization"
 msgstr "Spécifier l'organisation"
@@ -3854,6 +3946,8 @@ msgid ""
 "Successfully initiated deletion for %s repositories, you are free to leave "
 "this page."
 msgstr ""
+"Suppression démarrée pour les référentiels %s. Vous pouvez quitter cette "
+"page."
 
 msgid "Successfully initiated removal of %s product(s)"
 msgstr "La suppression de %s produit(s) a été initiée avec succès"
@@ -3887,7 +3981,7 @@ msgid "Summary: "
 msgstr "Résumé :"
 
 msgid "Sychronize capsule content"
-msgstr ""
+msgstr "Synchroniser le contenu de la capsule"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author samfreemanz
 msgid "Sync Canceled"
@@ -3898,7 +3992,7 @@ msgid "Sync Cancelled"
 msgstr "Synchronisation annulée"
 
 msgid "Sync Incomplete"
-msgstr ""
+msgstr "Synchronisation incomplète"
 
 # translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Using_the_CloudForms_System_Engine_Dashboard
 msgid "Sync Overview"
@@ -3937,7 +4031,7 @@ msgid "Synchronize repository"
 msgstr "Synchroniser les référentiels"
 
 msgid "Syncing Complete."
-msgstr ""
+msgstr "Synchronisation complète."
 
 msgid "System UUID"
 msgstr "UUID de système"
@@ -3976,6 +4070,7 @@ msgstr "L'affichage de contenu par défaut ne peut pas être promu"
 
 msgid "The description for the new generated Content View Versions"
 msgstr ""
+"Description pour les nouvelles Versions d'affichage de contenu générées"
 
 msgid "The erratum filter rule end date is in an invalid format or type."
 msgstr ""
@@ -3991,7 +4086,7 @@ msgid "The erratum type must be an array. Invalid value provided"
 msgstr "Le type d'erratum doit être une matrice. Valeur non valide fournie"
 
 msgid "The following hosts have errata that apply to them: "
-msgstr ""
+msgstr "Les hôtes suivants contiennent des errata à appliquer :"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author samfreemanz
 msgid ""
@@ -4008,6 +4103,8 @@ msgid ""
 "The list of environments to promote the specified Content View Version to "
 "(replacing the older version)."
 msgstr ""
+"La liste des environnements vers lesquels promouvoir la version d'affichage "
+"de contenu spécifiée (en remplacement de l'ancienne version)."
 
 msgid "The offset in the file where the content starts"
 msgstr "L'offset dans le fichier où le contenu commence"
