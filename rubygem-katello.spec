@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.28
+Version: 2.2.0.29
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,9 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Mar 24 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.29-1
+- increment version (jmontleo@redhat.com)
+
 * Tue Mar 24 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.28-1
 - update version (jmontleo@redhat.com)
 - fixes #9802 - convert system bulk errata action to dynflow
