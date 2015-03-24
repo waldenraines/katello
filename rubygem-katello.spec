@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.26
+Version: 2.2.0.28
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,27 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Mar 24 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.28-1
+- update version (jmontleo@redhat.com)
+- fixes #9802 - convert system bulk errata action to dynflow
+  (jsherril@redhat.com)
+- Fixes #9732: Incorrect apiepie docs for incremental update.
+  (ericdhelms@gmail.com)
+- Fixes #9755 - Adding docker_images method to cvv (daviddavis@redhat.com)
+- fixes #9798 - don't plan CVPE deletion if this is the default version,
+  BZ1076568 (komidore64@gmail.com)
+- Fixes #bz1202993 - Katello templates branding (sshtein@redhat.com)
+- 98+ percent on all strings (bkearney@redhat.com)
+
+* Tue Mar 24 2015 Jason Montleon <jmontleo@redhat.com>
+- update version (jmontleo@redhat.com)
+- fixes #9802 - convert system bulk errata action to dynflow
+- Fixes #9732: Incorrect apiepie docs for incremental update.
+- Fixes #9755 - Adding docker_images method to cvv (daviddavis@redhat.com)
+- fixes #9798 - don't plan CVPE deletion if this is the default version,
+- Fixes #bz1202993 - Katello templates branding (sshtein@redhat.com)
+- 98+ percent on all strings (bkearney@redhat.com)
+
 * Thu Mar 19 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.26-1
 - update version (jmontleo@redhat.com)
 
