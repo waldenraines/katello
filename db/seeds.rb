@@ -53,7 +53,8 @@ templates.each do |template|
 end
 
 # Make some Foreman templates default so they automatically get added to new orgs like our Katello templates
-templates = ["puppet.conf", "idm_register", "Kickstart default iPXE", "Kickstart default PXELinux", "PXELinux global default"]
+templates = ["puppet.conf", "idm_register", "Kickstart default iPXE", "Kickstart default PXELinux", "PXELinux global default", "kickstart_networking_setup",
+             "PXELinux default local boot"]
 
 ConfigTemplate.where(:name => templates).each do |template|
   template.update_attribute(:default, true)
