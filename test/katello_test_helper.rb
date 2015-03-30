@@ -153,6 +153,23 @@ class ActiveSupport::TestCase
   include FactoryGirl::Syntax::Methods
   include FixtureTestCase
 
+  def self.run_as_admin
+    User.current = User.find(@loaded_fixtures['users']['admin']['id'])
+    User.current.remote_id = User.current.login
+    yield
+    User.current = nil
+  end
+
+  def set_user(user = nil)
+    user ||= users(:admin)
+    user = User.find(user) if user.id
+    unless user.remote_id
+      user.remote_id = user.admin? ? 'admin' : user.login
+      user.save!
+    end
+    User.current = user
+  end
+
   def get_organization(org = nil)
     saved_user = User.current
     User.current = User.find(users(:admin))
