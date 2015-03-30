@@ -45,6 +45,7 @@ defaults = {:vendor => "Katello", :default => true, :locked => true}
 templates = [{:name => "Satellite Kickstart Default",           :source => "kickstart-katello_rhel.erb",      :template_kind => kinds[:provision]},
              {:name => "Satellite Kickstart Default User Data", :source => "userdata-katello.erb",       :template_kind => kinds[:user_data]},
              {:name => "Satellite Kickstart Default Finish",    :source => "finish-katello.erb",         :template_kind => kinds[:finish]},
+             {:name => "idm_register",                          :source => "snippets/idm_register.erb",  :snippet => true},
              {:name => "subscription_manager_registration",   :source => "snippets/_subscription_manager_registration.erb", :snippet => true}]
 
 templates.each do |template|
