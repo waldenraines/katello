@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.30
+Version: 2.2.0.31
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,18 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Mar 31 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.31-1
+- increment version (jmontleo@redhat.com)
+- Fixes #9927:  add missing no row messages, BZ 1206611. (walden@redhat.com)
+- Fixes #9839: show no rows message if table isn't working BZ 1203851.
+  (walden@redhat.com)
+- 1133618 - Marked Capsule Settings area (paji@redhat.com)
+- fixes #9914 - fixing uninitialized constant error on incremental update
+  (jsherril@redhat.com)
+- fixes #9750 - always reindex errata packages (jsherril@redhat.com)
+- Fixes #bz1202993 - Katello templates branding (sshtein@redhat.com)
+- fixes BZ1205731 - mark additional templates default (stbenjam@redhat.com)
+
 * Tue Mar 24 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.30-1
 - increment version (jmontleo@redhat.com)
 - fixes #9883 - making auto attach run after consumer update
