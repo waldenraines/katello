@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.34
+Version: 2.2.0.35
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,9 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Apr 07 2015 Mike McCune <mmccune@redhat.com> 2.2.0.35-1
+- update version (mmccune@redhat.com)
+
 * Tue Apr 07 2015 Mike McCune <mmccune@redhat.com> 2.2.0.34-1
 - bz1208188 - updating repo-id to match new sat-tools (dtsang@redhat.com)
 
