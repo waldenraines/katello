@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.35
+Version: 2.2.0.36
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,58 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Apr 21 2015 Mike McCune <mmccune@redhat.com> 2.2.0.36-1
+- fixes #9655 - reindex content hosts and ignore warnings
+  (thomasmckay@redhat.com)
+- Fixes #9867: Update katello-remove for latest packages.
+  (ericdhelms@gmail.com)
+- Fixes #9818: Properly propogate enabled state for sync plans to Pulp.
+  (ericdhelms@gmail.com)
+- Fixes #9866: Properly remove Pulp sync schedule from products.
+  (ericdhelms@gmail.com)
+- Fixes #9376: Calculate next_sync time properly based on UTC.
+  (ericdhelms@gmail.com)
+- Fixes #9872: Properly destroy systems that are of type Hypervisor.
+  (ericdhelms@gmail.com)
+- fixes #10012 - properly display conent host tasks (jsherril@redhat.com)
+- Fixes #9741 - Fixed a puppet module count error in a CVV (paji@redhat.com)
+- fixes #9478 - update system env and cv in candlepin on cv remove
+  (jsherril@redhat.com)
+- fixes #9899 - reindex all org subscriptions during manifest destroy
+  (jsherril@redhat.com)
+- Fixes #9890 - Add content_view_id to systems API (daviddavis@redhat.com)
+- Fixes #9902 - Updated incorrect cv association (paji@redhat.com)
+- Fixes #9915: Backend cleanup script handles uebercert and hypervisors.
+  (ericdhelms@gmail.com)
+- fixes #9951 - fixing package update during inc update (jsherril@redhat.com)
+- fixes #9984 - remove required flag from DELETE /subscriptions apipie
+  (thomasmckay@redhat.com)
+- fixes #9792 - unregister content host UI modal blank (thomasmckay@redhat.com)
+- Fixes #9608: correct repository count, BZ 1197836. (walden@redhat.com)
+- Fixes #9933: use correct param for search BZ1205855. (walden@redhat.com)
+- Fixes #9913: ensure unique count on errata CH counts, BZ1206329.
+  (walden@redhat.com)
+- Fixes #9992: fix no rows message on errata CH page BZ 1208216.
+  (walden@redhat.com)
+- Fixes #10011: fix long URI error when applying errata BZ 1208678.
+  (walden@redhat.com)
+- Fixes #10140: allow sync plans start date to be editable, BZ 1177901.
+  (walden@redhat.com)
+- fixes #9786 - fixing searching and adding pagination to hosts errata
+  (jsherril@redhat.com)
+- Fixes #9934: do not refresh errata on initial load BZ 1206704.
+  (walden@redhat.com)
+- Fixes #9423 - Fix updating of docker upstream name (daviddavis@redhat.com)
+- fixes #9889 - hides delete option when values are nil, BZ1186514
+  (cfouant@redhat.com)
+- fixes #9898 - Activation Key hint more explicit in registration page,
+  BZ1201425 (cfouant@redhat.com)
+- fixes #9876 - Adds product content override values to act key API, BZ1180282
+  (cfouant@redhat.com)
+- fixes #10127 - remove dynflow stacktrace when unregistering, BZ 1208100
+  (komidore64@gmail.com)
+- refs #9628 - change prior to prior_id, BZ1189478 (komidore64@gmail.com)
+
 * Tue Apr 07 2015 Mike McCune <mmccune@redhat.com> 2.2.0.35-1
 - update version (mmccune@redhat.com)
 
