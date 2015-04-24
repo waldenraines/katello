@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.36
+Version: 2.2.0.37
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,9 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Fri Apr 24 2015 Mike McCune <mmccune@redhat.com> 2.2.0.37-1
+- bump version (mmccune@redhat.com)
+
 * Tue Apr 21 2015 Mike McCune <mmccune@redhat.com> 2.2.0.36-1
 - fixes #9655 - reindex content hosts and ignore warnings
   (thomasmckay@redhat.com)
