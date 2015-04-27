@@ -35,15 +35,22 @@ module Actions
         end
 
         def run
-          output[:results] = cdn_var_substitutor.substitute_vars(content.contentUrl).map do |(substitutions, path)|
-            prepare_result(substitutions, path)
-          end
+          output[:results] = fetch_results
         end
 
         private
 
+        def fetch_results
+          substitutor = cdn_var_substitutor
+          return [] unless substitutor
+          substitutor.substitute_vars(content.contentUrl).map do |(substitutions, path)|
+            prepare_result(substitutions, path)
+          end
+        end
+
         def cdn_var_substitutor
-          product.cdn_resource.substitutor
+          return unless (cdn_resource = product.cdn_resource)
+          cdn_resource.substitutor
         end
 
         def prepare_result(substitutions, _path)
