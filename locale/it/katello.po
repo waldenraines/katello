@@ -10,10 +10,10 @@
 # fvalen <fvalen@redhat.com>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: katello 1.0.0\n"
+"Project-Id-Version: version 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-17 08:24-0500\n"
-"PO-Revision-Date: 2015-03-18 04:22+0000\n"
+"POT-Creation-Date: 2015-04-22 13:27-0400\n"
+"PO-Revision-Date: 2015-04-28 12:59+0000\n"
 "Last-Translator: fvalen <fvalen@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,24 +26,27 @@ msgstr ""
 msgid " Red Hat Repositories"
 msgstr "Repository di Red Hat"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid " environment cannot be set to an environment already on its path"
 msgstr ""
 "l'ambiente non può essere impostato su un ambiente già presente nel proprio "
 "percorso"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid " items selected."
 msgstr "elementi selezionati."
 
 msgid ""
-"\"comma separated values. The value will be available in templates as @host."
-"params['#{kt_ak_label}']\""
+"\"comma separated values. The value will be available in templates as "
+"@host.params['#{kt_ak_label}']\""
 msgstr ""
 "\"valori separati da virgole. IL valore sarà disponibile nei template come "
 "@host.params['#{kt_ak_label}']\""
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "%s Distributors Removed Successfully"
 msgstr "%s Distributori rimossi con successo"
 
@@ -62,7 +65,8 @@ msgstr "%s per maggiori informazioni. "
 msgid "%s is not a valid package name"
 msgstr "%s non è un nome del pacchetto valido "
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "%{app_name} Version: %{version}"
 msgstr "%{app_name} Versione: %{version}"
 
@@ -256,36 +260,42 @@ msgstr "%{substitutions} non sono sottoscrizioni valide per %{content_url}"
 
 msgid "'%s' did not meet the current search criteria and is not being shown."
 msgstr ""
-"'%s' non ha soddisfatto i criteri di ricerca correnti e non è stato mostrato."
-""
+"'%s' non ha soddisfatto i criteri di ricerca correnti e non è stato "
+"mostrato."
 
 msgid "'%s' no longer matches the current search criteria."
 msgstr "'%s' non corrisponde più ai criteri di ricerca correnti."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "(%X of %Y repositories selected)"
 msgstr "(%X di %Y repositori selezionati)"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "(Entire product selected)"
 msgstr "(Prodotto intero selezionato)"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "(Load %X More)"
 msgstr "(Carica altri %X)"
 
 msgid "(Orphaned)"
 msgstr "(Orfano)"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "+ Add"
 msgstr "+ Aggiungi"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "+ New %s"
 msgstr "+ Nuovo %s"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "+ New Distributor"
 msgstr "+ Nuovo distributore"
 
@@ -293,22 +303,26 @@ msgstr "+ Nuovo distributore"
 msgid "+ Yes"
 msgstr "+ Si"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "400 - Invalid Parameters"
 msgstr "400 - Parametri non validi"
 
 msgid "403 - Permission Denied"
 msgstr "403 - Permesso negato"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "404 - That page doesn't exist or is missing!"
 msgstr "404 - Quella pagina non esiste o risulta mancante!"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "500 Internal Server Error"
 msgstr "500 Errore server interno"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid ": '%s' is a built-in environment"
 msgstr ": '%s' è un ambiente interno"
 
@@ -321,7 +335,8 @@ msgstr "Impossibile raggiungere un servizio backend [ %s ]"
 msgid "A content_type must be provided."
 msgstr "È necessario fornire un tipo_contenuto."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid ""
 "A label was not provided during environment creation; therefore, a label of "
 "'%{label}' was automatically assigned. If you would like a different label, "
@@ -332,29 +347,32 @@ msgstr ""
 "'%{label}'. Se desideri una etichetta diversa cancellare l'ambiente e "
 "crearne uno nuovo con l'etichetta desiderata."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid ""
-"A label was not provided during organization creation; therefore, a label of "
-"'%{label}' was automatically assigned. If you would like a different label, "
-"please delete the organization and recreate it with the desired label."
+"A label was not provided during organization creation; therefore, a label of"
+" '%{label}' was automatically assigned. If you would like a different label,"
+" please delete the organization and recreate it with the desired label."
 msgstr ""
 "Non è stata fornita alcuna etichetta durante il processo di creazione "
 "dell'organizzazione, quindi è stata assegnata automaticamente una etichetta "
 "'%{label}'. Se desideri una etichetta diversa cancellare l'organizzazione e "
 "crearne una nuova con l'etichetta desiderata."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid ""
 "A label was not provided during product creation; therefore, a label of "
 "'%{label}' was automatically assigned. If you would like a different label, "
 "please delete the product and recreate it with the desired label."
 msgstr ""
 "Non è stata fornita alcuna etichetta durante il processo di creazione del "
-"prodotto, quindi è stata assegnata automaticamente una etichetta '%{label}'. "
-"Se desideri una etichetta diversa cancellare il prodotto e crearne uno nuovo "
-"con l'etichetta desiderata."
+"prodotto, quindi è stata assegnata automaticamente una etichetta '%{label}'."
+" Se desideri una etichetta diversa cancellare il prodotto e crearne uno "
+"nuovo con l'etichetta desiderata."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid ""
 "A label was not provided during repository creation; therefore, a label of "
 "'%{label}' was automatically assigned. If you would like a different label, "
@@ -379,10 +397,11 @@ msgstr ""
 "Un numero molto grande di errata è stato sincronizzato per questo "
 "repository, e per questo vengono visualizzati solo i primi 100."
 
-msgid "A post-promotion summary of hosts with installable errata"
-msgstr "Un sommario post-avanzamento di host con errata installabili"
+msgid "A post-promotion summary of hosts with available errata"
+msgstr "Un sommario post-avanzamento di host con errata disponibili"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid ""
 "A request has been received by Katello server '%{url}' to retrieve the "
 "logins for email '%{email}'. The following is a list of those logins:"
@@ -399,6 +418,9 @@ msgstr "Un sommario di errata disponibili e applicabili per gli host"
 
 msgid "A summary of new errata after a repository is synchronized"
 msgstr "Un sommario di nuovi errata dopo la sincronizzazione di un repository"
+
+msgid "Abstract async task"
+msgstr "Evento asinc astratto"
 
 msgid "Action not allowed for the default capsule."
 msgstr "Azione non permessa per il capsule predefinito."
@@ -421,16 +443,21 @@ msgstr "È possibile gestire le chiavi di attivazione e le sottoscrizioni."
 msgid "Active only"
 msgstr "Solo attivo"
 
-# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author fvalen
+# translation auto-copied from project Customer Portal Translations, version
+# Portal-Case-Management, document Template, author fvalen
 msgid "Add"
 msgstr "Aggiungi"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Add All"
 msgstr "Aggiungi tutti"
 
 msgid "Add Products and Repositories:"
 msgstr "Aggiungi prodotti e repositori:"
+
+msgid "Add Sync Plan Products"
+msgstr "Aggiungi prodotti per la programmazione della sincronizzazione"
 
 msgid "Add a puppet module to the content view"
 msgstr "Aggiungi un modulo puppet alla visualizzazione del contenuto"
@@ -454,11 +481,17 @@ msgstr ""
 msgid "Add content host to the host collection"
 msgstr "Aggiungi host di contenuto nell'insieme di host"
 
+msgid "Add lifecycle environment"
+msgstr "Aggiungi ambiente ciclo di vita"
+
 msgid "Add one or more host collections to one or more content hosts"
 msgstr "Aggiungi uno o più insiemi ad uno o più host di contenuto"
 
 msgid "Add products to sync plan"
 msgstr "Aggiungi i prodotti alla programmazione per la sincronizzazione"
+
+msgid "Add repository"
+msgstr "Aggiungere il repository"
 
 msgid "Added Content:"
 msgstr "Contenuto aggiunto:"
@@ -476,15 +509,18 @@ msgstr ""
 "Dopo aver generato l'aggiornamento incrementale, applica le modifiche sui "
 "sistemi specificati. Attualmente sono supportati solo gli errata."
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman, author fvalen
+# translation auto-copied from project Satellite6 Foreman, version 6.0,
+# document foreman, author fvalen
 msgid "Alert"
 msgstr "Allerta"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "All Content Views"
 msgstr "Visualizzazione di tutti i contenuti"
 
-# translation auto-copied from project Customer Portal Translations, version 004_messages, document messages
+# translation auto-copied from project Customer Portal Translations, version
+# 004_messages, document messages
 msgid "All Products"
 msgstr "Tutti i prodotti"
 
@@ -492,7 +528,8 @@ msgstr "Tutti i prodotti"
 msgid "All Repos"
 msgstr "Tutti i repo"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "All Repositories"
 msgstr "Tutti i repositori"
 
@@ -508,15 +545,18 @@ msgstr "Architettura"
 msgid "Architecture: "
 msgstr "Architettura:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Are you sure you want to delete the %X selected distributor(s)?"
 msgstr "Sei sicuro di voler cancellare il %X distributore selezionato?"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Are you sure you want to remove this distributor?"
 msgstr "Sei sicuro di voler rimuovere questo distributore?"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 msgid "Are you sure?"
 msgstr "Sei sicuro?"
 
@@ -554,7 +594,8 @@ msgstr ""
 "Almeno una chiave di attivazione deve avere un ambiente ciclo di vita e una "
 "visualizzazione del contenuto"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid ""
 "At least one environment is required to create or register distributors in "
 "your current organization."
@@ -565,19 +606,23 @@ msgstr ""
 msgid "At least one organization must exist."
 msgstr "Deve essere presente almeno una organizzazione."
 
-# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
+# translation auto-copied from project Subscription Manager, version 1.8.X,
+# document keys
 msgid "Attach"
 msgstr "Associa"
 
-# translation auto-copied from project rhsm-web, version 0.0, document management, author fvalen
+# translation auto-copied from project rhsm-web, version 0.0, document
+# management, author fvalen
 msgid "Attach a subscription"
 msgstr "Aggiungi una sottoscrizione "
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Attached Subscriptions"
 msgstr "Sottoscrizioni associate"
 
-# translation auto-copied from project nautilus, version 3.8.2, document nautilus
+# translation auto-copied from project nautilus, version 3.8.2, document
+# nautilus
 msgid "Author"
 msgstr "Autore"
 
@@ -586,6 +631,9 @@ msgstr "Autore/Release"
 
 msgid "Author: "
 msgstr "Autore:"
+
+msgid "Auto attach subscriptions"
+msgstr "esegui l'auto attach delle sottoscrizioni"
 
 msgid ""
 "Auto-attach available subscriptions to all systems within an organization. "
@@ -601,7 +649,8 @@ msgstr "Esegui auto-attach per le sottoscrizioni"
 msgid "Auto-complete Product"
 msgstr "Completa-automaticamente il prodotto"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Auto-complete View"
 msgstr "Visualizzazione completameno-auto"
 
@@ -609,14 +658,16 @@ msgstr "Visualizzazione completameno-auto"
 msgid "Auto-complete repository"
 msgstr "Completa-automaticamente il repositorio"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 msgid "Available Subscriptions"
 msgstr "Sottoscrizioni disponibili"
 
 msgid "Available search fields:"
 msgstr "Campi di ricerca disponibili:"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 msgid "Back"
 msgstr "Indietro"
 
@@ -633,24 +684,31 @@ msgstr "Architettura di base da disabilitare"
 msgid "Basearch to enable"
 msgstr "Architettura di base da abilitare"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Beta"
 msgstr "Beta"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document
+# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "Bug Fix"
 msgstr "Bug Fix"
 
-# translation auto-copied from project Satellite6 Bastion Katello, version 6.1, document bastion_katello
+# translation auto-copied from project Satellite6 Bastion Katello, version
+# 6.1, document bastion_katello
 msgid "Bugfix"
 msgstr "Bugfix"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Build Host"
 msgstr "Host di compilazione"
 
 msgid "Build Host:"
 msgstr "Host di compilazione:"
+
+msgid "Bulk action"
+msgstr "Operazioni in gruppo"
 
 msgid "CDN loading error: %s not found"
 msgstr "Errore di caricamento di CDN: %s non trovato"
@@ -674,14 +732,16 @@ msgstr "Calcola l'Errata applicabile in base ad un ambiente particolare"
 
 msgid "Can only remove content from within the Default Content View"
 msgstr ""
-"È possibile rimuovere il contenuto solo da una Visualizzazione del contenuto "
-"predefinito"
+"È possibile rimuovere il contenuto solo da una Visualizzazione del contenuto"
+" predefinito"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Can't update the '%s' environment"
 msgstr "Impossibile aggiornare l'ambiente '%s'"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.0,
+# document foreman
 msgid "Cancel"
 msgstr "Cancella"
 
@@ -708,8 +768,8 @@ msgstr ""
 
 msgid "Cannot add component versions to a non-composite content view"
 msgstr ""
-"Impossibile aggiungere le versioni del componente ad una visualizzazione del "
-"contenuto non-composita"
+"Impossibile aggiungere le versioni del componente ad una visualizzazione del"
+" contenuto non-composita"
 
 msgid "Cannot add composite versions to a composite content view"
 msgstr ""
@@ -718,8 +778,8 @@ msgstr ""
 
 msgid "Cannot add composite versions to another composite content view"
 msgstr ""
-"Impossibile aggiungere le versioni composite ad un'altra visualizzazione del "
-"contenuto composita"
+"Impossibile aggiungere le versioni composite ad un'altra visualizzazione del"
+" contenuto composita"
 
 msgid "Cannot add default content view to composite content view"
 msgstr ""
@@ -735,8 +795,8 @@ msgid ""
 "Cannot clone repository from %{from_env} to %{to_env}. They are not "
 "sequential."
 msgstr ""
-"Impossibile clonare il repositorio da %{from_env} a %{to_env}. Essi non sono "
-"sequenziali."
+"Impossibile clonare il repositorio da %{from_env} a %{to_env}. Essi non sono"
+" sequenziali."
 
 msgid "Cannot delete '%{view}' due to associated %{dependent}: %{names}."
 msgstr ""
@@ -749,7 +809,8 @@ msgstr ""
 "Impossibile rimuovere i Prodotti di Red Hat o i prodotti con repositori "
 "pubblicati in una visualizzazione del contenuto"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Cannot delete from %s, view does not exist there."
 msgstr "Impossibile eseguire la rimozione da %s, la visuale non esiste."
 
@@ -759,12 +820,22 @@ msgstr "Impossibile rimuovere un provider con i rispettivi prodotti"
 msgid "Cannot delete the default Location"
 msgstr "Impossibile rimuovere la Località predefinita"
 
+msgid "Cannot delete version while it is in environment %s"
+msgstr "Impossibile rimuovere una versione se presente nell'ambiente %s"
+
 msgid "Cannot delete version while it is in environments: %s"
 msgstr "Impossibile rimuovere una versione se presente negli ambienti: %s"
 
 msgid "Cannot delete view while it exists in environments"
 msgstr ""
 "Impossibile cancellare la visuale mentre la stessa abbandona gli ambienti"
+
+msgid ""
+"Cannot perform an incremental update on a Composite Content View Version "
+"(%{name} version version %{version}"
+msgstr ""
+"Impossibile eseguire un aggiornamento incrementale su una versione della "
+"Visualizzazione del contenuto composita  (%{name} version version %{version}"
 
 msgid ""
 "Cannot promote environment out of sequence. Use force to bypass restriction."
@@ -775,7 +846,8 @@ msgstr ""
 msgid "Cannot publish default content view"
 msgstr "Impossibile pubblicare la visualizzazione del contenuto predefinita"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Cannot register a system to the '%s' environment"
 msgstr "Impossibile registrare un sistema con l'ambiente '%s'"
 
@@ -802,8 +874,8 @@ msgid ""
 "Cannot retrieve repos from non-library environment '%s' without a content "
 "view."
 msgstr ""
-"Impossibile ripristinare i repositori da un ambiente non-libreria '%s' senza "
-"una visualizzazione del contenuto."
+"Impossibile ripristinare i repositori da un ambiente non-libreria '%s' senza"
+" una visualizzazione del contenuto."
 
 msgid "Cannot specify components for non-composite views"
 msgstr ""
@@ -812,77 +884,94 @@ msgstr ""
 msgid "Cannot specify content for composite views"
 msgstr "Impossibile specificare il contenuto per le visualizzazioni composite"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document appe-Glossary_of_Terms, author fvalen
+# translation auto-copied from project Red Hat Satellite User Guide, version
+# 6.0, document appe-Glossary_of_Terms, author fvalen
 msgid "Capsule"
 msgstr "Capsule"
+
+msgid "Capsule Settings"
+msgstr "Impostazioni Capsule"
 
 msgid "Changelog for %s"
 msgstr "Changelog per %s"
 
-# translation auto-copied from project [RHEL][SysAdmin] Migration Planning Guide, version 7.0, document Pkg-New_Packages, author fvalen
+# translation auto-copied from project [RHEL][SysAdmin] Migration Planning
+# Guide, version 7.0, document Pkg-New_Packages, author fvalen
 msgid "Changes"
 msgstr "Modifiche"
 
-# translation auto-copied from project rhsm-web, version 0.0, document management
+# translation auto-copied from project rhsm-web, version 0.0, document
+# management
 msgid "Checked In"
 msgstr "Registrato"
 
 msgid "Checksums: "
 msgstr "Checksum: "
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Choose Environment:"
 msgstr "Seleziona ambiente:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Choose a product.."
 msgstr "Seleziona un prodotto.."
 
 msgid "Choose a repository:"
 msgstr "Seleziona un repositorio:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Clear the Search"
 msgstr "Rimuovi la ricerca"
 
 msgid "Click on the widget title text to drag and drop."
 msgstr "Fare clic sul testo del titolo del widget per il trascina e rilascia"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Click to edit"
 msgstr "Seleziona per la modifica"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document
+# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "Clone"
 msgstr "Clona"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 msgid "Close"
 msgstr "Chiudi"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Collapse"
 msgstr "Comprimi"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Collapse All"
 msgstr "Comprimi tutto"
 
 msgid "Compare Selected"
 msgstr "Confronta selezionato"
 
-# translation auto-copied from project [RHEL] [STORAGE] DM Multipath, version 6.4, document MPIO_Overview
+# translation auto-copied from project [RHEL] [STORAGE] DM Multipath, version
+# 6.4, document MPIO_Overview
 msgid "Component"
 msgstr "Componente"
 
 msgid "Composite content view"
 msgstr "Visualizzazione contenuto composita"
 
-# translation auto-copied from project gnome-packagekit, version 3.8.2, document gnome-packagekit
+# translation auto-copied from project gnome-packagekit, version 3.8.2,
+# document gnome-packagekit
 msgid "Confirmation"
 msgstr "Conferma"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document appe-Glossary_of_Terms, author fvalen
+# translation auto-copied from project Red Hat Satellite User Guide, version
+# 6.0, document appe-Glossary_of_Terms, author fvalen
 msgid "Content"
 msgstr "Contenuto"
 
@@ -892,14 +981,16 @@ msgstr "Contenuto disponibile da"
 msgid "Content Dashboard"
 msgstr "Dashboard del contenuto"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Content Download URL: "
 msgstr "URL per scaricare il contenuto:"
 
 msgid "Content Host"
 msgstr "Host di contenuto"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Using_the_CloudForms_System_Engine_Dashboard
+# translation auto-copied from project Red Hat Satellite User Guide, version
+# 6.0, document Using_the_CloudForms_System_Engine_Dashboard
 msgid "Content Host Subscription Status"
 msgstr "Stato sottoscrizione dell'host di contenuto"
 
@@ -915,7 +1006,8 @@ msgstr "Ricerca contenuto"
 msgid "Content Source"
 msgstr "Sorgente contenuto"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Content View"
 msgstr "Visualizzazione contenuto"
 
@@ -924,20 +1016,26 @@ msgstr ""
 "La versione della visualizzazione del contenuto %{id} non è presente in "
 "tutti gli ambienti %{envs} specificati"
 
-msgid "Content View Version Ids to perform an incremental update on."
+msgid ""
+"Content View Version Ids to perform an incremental update on.  May contain "
+"composites as well as one or more components to update."
 msgstr ""
-"ID versioni della visualizzazione del contenuto sulle quali eseguire un "
-"aggiornamento incrementale.  "
+"ID versione della visualizzazione del contenuto sulla quale eseguire un "
+"aggiornamento incrementale. Può avere elementi compositi e uno o più "
+"elementi da aggiornare. "
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Content View:"
 msgstr "Visualizzazione contenuto:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Content Views"
 msgstr "Visualizzazioni contenuto"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Content Views Overview"
 msgstr "Panoramica visualizzazioni contenuto"
 
@@ -946,8 +1044,8 @@ msgid ""
 "and architecture. Multiple Kickstart trees of %{release} %{arch} were found "
 "in Repositories: %{repos}"
 msgstr ""
-"Le visualizzazioni del contenuto non possono avere alberi kickstart multipli "
-"con la stessa versione e architettura. Sono presenti alberi kickstart "
+"Le visualizzazioni del contenuto non possono avere alberi kickstart multipli"
+" con la stessa versione e architettura. Sono presenti alberi kickstart "
 "multipli %{release} %{arch} nei repositori: %{repos}"
 
 msgid "Content files to upload. Can be a single file or array of files."
@@ -955,7 +1053,11 @@ msgstr ""
 "File di contenuto da caricare. Può essere un file singolo o un insieme di "
 "file."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+msgid "Content override parameters"
+msgstr "Impossibile sovrascrivere i parametri"
+
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Content view '%{view}' is not in environment '%{env}'"
 msgstr ""
 "La visualizzazione del contenuto '%{view}' non è presente nell'ambiente "
@@ -978,11 +1080,13 @@ msgstr "Indentificatore numerico per la visualizzazione del contenuto"
 msgid "Content view version identifier"
 msgstr "Indentificatore versione della visualizzazione del contenuto"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 msgid "Contract"
 msgstr "Contratto"
 
-# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document
+# gnome-control-center-2.0
 msgid "Copy"
 msgstr "Copia"
 
@@ -997,6 +1101,13 @@ msgstr "Impossibile cancellare l'organizzazione '%s'."
 
 msgid "Could not find %{content} with id '%{id}' in repository."
 msgstr "Impossibile trovare  %{content} con id '%{id}' nel repository."
+
+msgid ""
+"Could not find Content Host with exact name '%s', verify the Capsule is "
+"registered with that name."
+msgstr ""
+"Impossibile trovare l'host di contenuto con un nome '%s' identico, verifica "
+"che Capsule sia registrato con quel nome."
 
 msgid "Could not find Environment with ids: %s"
 msgstr "Impossibile trovare l'ambiente con id: %s"
@@ -1068,7 +1179,8 @@ msgstr ""
 msgid "Couldn't find content host environment '%s'"
 msgstr "Impossibile trovare l'ambiente dell'host di contenuto '%s'"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Couldn't find content view '%s'"
 msgstr "Impossibile trovare la visualizzazione del contenuto '%s'"
 
@@ -1082,6 +1194,9 @@ msgstr ""
 
 msgid "Couldn't find environment '%s'"
 msgstr "Impossibile trovare l'ambiente '%s'"
+
+msgid "Couldn't find errata ids '%s'"
+msgstr "Impossibile trovare gli id '%s' dell'errata"
 
 msgid "Couldn't find gpg key '%s'"
 msgstr "Impossibile trovare la chiave gpg '%s'"
@@ -1105,8 +1220,8 @@ msgid ""
 "Couldn't find puppet environment associated with lifecycle environment "
 "'%{env}' and content view '%{view}'"
 msgstr ""
-"Impossibile trovare l'ambiente puppet associato con l'ambiente ciclo di vita "
-"'%{env}' e visualizzazione del contenuto '%{view}'"
+"Impossibile trovare l'ambiente puppet associato con l'ambiente ciclo di vita"
+" '%{env}' e visualizzazione del contenuto '%{view}'"
 
 msgid "Couldn't find repository '%s'"
 msgstr "Impossibile trovare il repositorio '%s'"
@@ -1125,7 +1240,8 @@ msgstr ""
 msgid "Couldn't find system '%s'"
 msgstr "Impossibile trovare il sistema '%s'"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author fvalen
+# translation auto-copied from project NetworkManager, version 0.9.9.0,
+# document NetworkManager, author fvalen
 msgid "Create"
 msgstr "Crea"
 
@@ -1172,33 +1288,41 @@ msgstr "Crea un ambiente in una organizzazione"
 msgid "Create an upload request"
 msgstr "Crea una richiesta di ricarica"
 
+msgid "Create architecture"
+msgstr "Crea architettura"
+
 msgid "Create organization"
 msgstr "Crea organizzazione"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Created (UTC)"
 msgstr "Creato (UTC)"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Created / Last Checked In"
 msgstr "Creato / Ultima registrazione"
 
-# translation auto-copied from project evolution-data-server, version 3.8.4, document evolution-data-server-3.8, author fvalen
+# translation auto-copied from project evolution-data-server, version 3.8.4,
+# document evolution-data-server-3.8, author fvalen
 msgid "Critical"
 msgstr "Critico"
 
 msgid "Current Subscription Totals"
 msgstr "Totale corrente delle sottoscrizioni"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Current Subscriptions"
 msgstr "Sottoscrizioni correnti"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Current organization is being deleted, switch to a different one."
 msgstr ""
-"L'organizzazione attuale è stata cancellata. Smistarsi su una organizzazione "
-"diversa."
+"L'organizzazione attuale è stata cancellata. Smistarsi su una organizzazione"
+" diversa."
 
 msgid "Custom Content Repositories"
 msgstr "Repositori del contenuto personalizzati"
@@ -1206,25 +1330,29 @@ msgstr "Repositori del contenuto personalizzati"
 msgid "Custom Content Repository Product"
 msgstr "Prodotto repositorio del contenuto personalizzato"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Custom Information"
 msgstr "Informazioni personalizzate"
 
 msgid "Custom repositories cannot be disabled."
 msgstr "Impossibile disabilitare i repositori personalizzati."
 
-# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document
+# evolution-3.8
 msgid "Date"
 msgstr "Data"
 
 msgid "Date format is incorrect."
 msgstr "Il formato della data non è corretto."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Debug Certificate"
 msgstr "Certificato di debug"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Debug RPMs"
 msgstr "Debug RPM"
 
@@ -1257,25 +1385,29 @@ msgstr "Template provisioning predefinito per nuovi Sistemi operativi"
 msgid "Default user data for new Operating Systems"
 msgstr "Dati utente predefinito per nuovi Sistemi operativi"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 msgid "Delete"
 msgstr "Cancella"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 msgid "Delete %s?"
 msgstr "Cancella %s?"
 
 msgid "Delete Activation Key"
 msgstr "Cancella chiave di attivazione"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Delete All"
 msgstr "Cancella tutto"
 
 msgid "Delete Lifecycle Environment"
 msgstr "Cancella ambiente ciclo di vita"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Delete Manifest"
 msgstr "Cancella il manifesto"
 
@@ -1297,6 +1429,9 @@ msgstr "Cancella organizzazione"
 msgid "Delete an upload request"
 msgstr "Cancella richiesta di ricarica"
 
+msgid "Delete architecture"
+msgstr "Cancella architettura"
+
 msgid "Delete manifest from Red Hat provider"
 msgstr "Cancella manifesto dal provider Red Hat"
 
@@ -1312,7 +1447,8 @@ msgstr "Rimosso da %{environment}"
 msgid "Dependencies: "
 msgstr "Dipendenze:"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 msgid "Description"
 msgstr "Descrizione"
 
@@ -1327,7 +1463,8 @@ msgstr ""
 msgid "Description of the content host"
 msgstr "Descrizione host di contenuto"
 
-# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author fvalen
+# translation auto-copied from project Customer Portal Translations, version
+# Portal-Case-Management, document Template, author fvalen
 msgid "Description:"
 msgstr "Descrizione:"
 
@@ -1379,15 +1516,19 @@ msgstr "Elimina uno o più sistemi"
 msgid "Details"
 msgstr "Dettagli"
 
-# translation auto-copied from project RHN Satellite UI, version 5.7, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource, author fvalen
+# translation auto-copied from project RHN Satellite UI, version 5.7, document
+# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource, author
+# fvalen
 msgid "Difference"
 msgstr "Differenza"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Difference:"
 msgstr "Differenza:"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author fvalen
+# translation auto-copied from project Satellite6 Foreman Discovery, version
+# 6.1, document foreman_discovery, author fvalen
 msgid "Disable"
 msgstr "Disabilita"
 
@@ -1397,11 +1538,13 @@ msgstr "Disabilita un repositorio dall'insieme"
 msgid "Discover Repositories"
 msgstr "Trova repositori"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman, author fvalen
+# translation auto-copied from project Satellite6 Foreman, version 6.0,
+# document foreman, author fvalen
 msgid "Display"
 msgstr "Display"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document
+# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "Distribution"
 msgstr "Distribuzione"
 
@@ -1411,45 +1554,54 @@ msgstr "Distribuzione '%s' non trovata all'interno del repositorio"
 msgid "Distribution with id '%s' not found"
 msgstr "Distribuzione con id '%s' non trovata"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Distributor"
 msgstr "Distributore"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Distributor '%s' was created."
 msgstr "È stato creato il distributore '%s'."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Distributor '%s' was updated."
 msgstr "È stato aggiornato il distributore '%s'."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Distributor Events"
 msgstr "Eventi del distributore"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Distributor Info"
 msgstr "Informazioni del distributore"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Distributor Properties"
 msgstr "Proprietà del distributore"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Distributor subscriptions updated."
 msgstr "Sottoscrizioni del distributore aggiornate."
 
 msgid "Distributor with uuid %s not found"
 msgstr "Distributore con uuid %s non trovato"
 
-# translation auto-copied from project rhsm-web, version 0.0, document management
+# translation auto-copied from project rhsm-web, version 0.0, document
+# management
 msgid "Distributors"
 msgstr "Distributori"
 
 msgid "Do not include this array of content views"
 msgstr "Non includere questo insieme di visualizzazioni del contenuto"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid ""
 "Do you want to set this GPG Key as the key for all repositories within this "
 "product?"
@@ -1460,7 +1612,8 @@ msgstr ""
 msgid "Docker Image"
 msgstr "Immagine Docker"
 
-# translation auto-copied from project Customer Portal Translations, version 012_June_RHEL, document downloads.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version
+# 012_June_RHEL, document downloads.html, author fvalen
 msgid "Docker Images"
 msgstr "Immagini Docker"
 
@@ -1470,11 +1623,13 @@ msgstr "Tag Docker"
 msgid "Docker Tags"
 msgstr "Tag Docker"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Download"
 msgstr "Scarica"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Download Manifest"
 msgstr "Scarica manifesto"
 
@@ -1485,13 +1640,22 @@ msgstr "Scarica un certificato di debug"
 msgid "Duration"
 msgstr "Durata"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-
+# applet
 msgid "Edit"
 msgstr "Modifica"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman, author fvalen
+# translation auto-copied from project Satellite6 Foreman, version 6.0,
+# document foreman, author fvalen
 msgid "Edit Environment"
 msgstr "Modifica ambiente"
+
+msgid ""
+"Either both parameters 'content_view_id' and 'environment_id' should be "
+"specified or neither should be specified"
+msgstr ""
+"entrambi i parametri 'content_view_id' e 'environment_id' devono essere "
+"specificati, in caso contrario non specificare alcun parametro"
 
 msgid "Either environments or versions must be specified."
 msgstr "È necessario specificare gli ambienti o le versioni."
@@ -1503,7 +1667,8 @@ msgstr ""
 msgid "Either packages or groups  must be provided"
 msgstr "È necessario fornire i pacchetti o i gruppi"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author fvalen
+# translation auto-copied from project Satellite6 Foreman Discovery, version
+# 6.1, document foreman_discovery, author fvalen
 msgid "Enable"
 msgstr "Abilita"
 
@@ -1514,15 +1679,19 @@ msgstr "Abilita i repositori di Red Hat"
 msgid "Enable a repository from the set"
 msgstr "Abilita un repositorio dall'insieme"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Enabled by Default: "
 msgstr "Abilitato per impostazione predefinita:"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document
+# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "Enabled?"
 msgstr "Abilitato?"
 
-# translation auto-copied from project Customer Portal Translations, version RHJBossMiddlewareOperationsNetworkProduc, document RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version
+# RHJBossMiddlewareOperationsNetworkProduc, document
+# RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
 msgid "End"
 msgstr "Fine"
 
@@ -1543,14 +1712,16 @@ msgstr "Ambiente"
 msgid "Environment cannot be in its own promotion path"
 msgstr "L'ambiente non può trovarsi sul proprio percorso di avanzamento"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 msgid "Environment:"
 msgstr "Ambiente:"
 
 msgid "Errata"
 msgstr "Errata"
 
-# translation auto-copied from project Satellite6 Hammer CLI Katello, version 6.1, document hammer-cli-katello
+# translation auto-copied from project Satellite6 Hammer CLI Katello, version
+# 6.1, document hammer-cli-katello
 msgid "Errata ID"
 msgstr "ID errata"
 
@@ -1566,10 +1737,14 @@ msgstr "Panoramica errata"
 msgid "Errata id of the erratum (RHSA-2012:108)"
 msgstr "id errata dell'erratum (RHSA-2012:108)"
 
+msgid "Errata mail"
+msgstr "Posta per l'Errata"
+
 msgid "Errata types array \\['security', 'bugfix', 'enhancement'\\]"
 msgstr "Insieme tipi di errata \\['security', 'bugfix', 'enhancement'\\]"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Erratum"
 msgstr "Erratum"
 
@@ -1593,11 +1768,13 @@ msgstr "Errore"
 msgid "Error on Install"
 msgstr "Errore durante l'installazione"
 
-# translation auto-copied from project firewalld, version 0.3.8, document firewalld
+# translation auto-copied from project firewalld, version 0.3.8, document
+# firewalld
 msgid "Error:"
 msgstr "Errore:"
 
-# translation auto-copied from project RHN Satellite Reference Guide, version 5.6, document Troubleshooting
+# translation auto-copied from project RHN Satellite Reference Guide, version
+# 5.6, document Troubleshooting
 msgid "Errors"
 msgstr "Errori"
 
@@ -1609,11 +1786,13 @@ msgstr "Evento"
 msgid "Example Searches:"
 msgstr "Esempio di ricerche:"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Expand"
 msgstr "Espandi"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Expand All"
 msgstr "Espandi tutti"
 
@@ -1623,13 +1802,14 @@ msgid ""
 "within are discovered and may be enabled individually."
 msgstr ""
 "Espandi ogni prodotto di Red Hat per esaminare i diversi set di repositori "
-"disponibili. Durante la loro abilitazione sarà possibile visualizzarli, e se "
-"necessario, abilitarli. "
+"disponibili. Durante la loro abilitazione sarà possibile visualizzarli, e se"
+" necessario, abilitarli. "
 
 msgid "Expected attribute is missing:"
 msgstr "L'attributo previsto risulta mancante:"
 
-# translation auto-copied from project libvirt, version 1.1.1, document libvirt
+# translation auto-copied from project libvirt, version 1.1.1, document
+# libvirt
 msgid "FAIL"
 msgstr "FAIL"
 
@@ -1637,9 +1817,10 @@ msgid "Facts successfully updated."
 msgstr "Eventi aggiornati con successo."
 
 msgid "Failed"
-msgstr "Fallito"
+msgstr "Fallita"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Failed for distributor(s):"
 msgstr "Fallito per il distributore(i):"
 
@@ -1656,13 +1837,17 @@ msgstr[1] "Impossibile scaricare %s pacchetti."
 msgid "Failed to find %{content} with id '%{id}'."
 msgstr "Impossibile trovare %{content} con id '%{id}'."
 
+msgid "Features refreshed"
+msgstr "Funzionalità aggiornate"
+
 msgid "Fetch applicable errata for a system."
 msgstr "Recupera errata applicabile per un sistema."
 
 msgid "Field to sort the results on"
 msgstr "Campo nel quale ordinare i risultati"
 
-# translation auto-copied from project policycoreutils, version 2.1.14, document policycoreutils, author fvalen
+# translation auto-copied from project policycoreutils, version 2.1.14,
+# document policycoreutils, author fvalen
 msgid "File Name"
 msgstr "Nome del file"
 
@@ -1671,6 +1856,9 @@ msgstr "File: %{file_name}, Checksum: %{checksum}"
 
 msgid "Files for %s"
 msgstr "File per %s"
+
+msgid "Filter by content view"
+msgstr "Filtra per visualizzazione del contenuto"
 
 msgid "Filter by environment"
 msgstr "Filtra per ambiente"
@@ -1696,7 +1884,8 @@ msgstr "Filtra host di contenuto per uuid"
 msgid "Filter content view filters by name"
 msgstr "Filtra i filtri di visualizzazione del contenuto per nome"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Filter on loaded Events..."
 msgstr "Filtra sugli eventi caricati..."
 
@@ -1735,25 +1924,29 @@ msgstr "Filtra versioni per numero della versione"
 msgid "Filter versions that are components in the specified composite version"
 msgstr "Filtra versioni componenti nella versione composita specificata"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Filter..."
 msgstr "Filtro..."
 
 msgid "For more information see "
 msgstr "Per maggiori informazioni consulta"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "GPG Key URL: "
 msgstr "URL chiave GPG:"
 
-# translation auto-copied from project PressGang CCMS topics, version 1, document 31337-708757, author fvalen
+# translation auto-copied from project PressGang CCMS topics, version 1,
+# document 31337-708757, author fvalen
 msgid "GPG Keys"
 msgstr "Chiavi GPG"
 
 msgid "GPG keys"
 msgstr "Chiavi GPG "
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Generate and Download"
 msgstr "Genera e scarica"
 
@@ -1797,15 +1990,16 @@ msgid "Get status of synchronisation for given repository"
 msgstr "Ottieni lo stato della sincronizzazione per un dato repositorio"
 
 msgid ""
-"Given a set of systems and errata, lists the content view versions           "
-"                                                        and environments "
-"that need updating."
+"Given a set of systems and errata, lists the content view versions"
+"                                                                   and "
+"environments that need updating."
 msgstr ""
 "Dato un insieme di sistemi ed errata, elenca le versioni della "
 "visualizzazione del contenuto e gli ambienti che necessitano di un "
 "aggiornamento."
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/java/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document
+# java/code/src/com/redhat/rhn/frontend/strings/java/StringResource
 msgid "Go"
 msgstr "Vai"
 
@@ -1846,14 +2040,16 @@ msgstr "Come ordinare i risultati (es. ASC per ascendente)"
 msgid "Hypervisor"
 msgstr "Hypervisor"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Hypervisor does not support this action"
 msgstr "L'hypervisor non supporta questa azione"
 
 msgid "Hypervisors do not have software products"
 msgstr "L'hypervisors non possiede prodotti software"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 msgid "ID"
 msgstr "ID"
 
@@ -1905,7 +2101,8 @@ msgstr "ID dell'insieme di repositori da abilitare"
 msgid "ID of the sync plan"
 msgstr "ID del programma di sincronizzazione"
 
-# translation auto-copied from project Customer Portal Translations, version management_page, document Management_Prototype.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version
+# management_page, document Management_Prototype.html, author fvalen
 msgid "ID:"
 msgstr "ID:"
 
@@ -1915,11 +2112,13 @@ msgstr "ID: %s non esiste"
 msgid "IDs of the virtual guests running on this content host"
 msgstr "ID dei guest virtuali in esecuzione su questo host di contenuto"
 
-# translation auto-copied from project gnome-contacts, version 3.8.2, document gnome-contacts
+# translation auto-copied from project gnome-contacts, version 3.8.2, document
+# gnome-contacts
 msgid "IRC"
 msgstr "IRC"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "ISOs"
 msgstr "ISO"
 
@@ -1933,8 +2132,8 @@ msgid ""
 "If true, when adding the specified errata or packages, any needed "
 "dependencies will be copied as well."
 msgstr ""
-"Se su true, durante l'aggiunta dei pacchetti o errata specificati, qualsiasi "
-"dipendenza verrà copiata."
+"Se su true, durante l'aggiunta dei pacchetti o errata specificati, qualsiasi"
+" dipendenza verrà copiata."
 
 msgid ""
 "If true, will publish a new composite version using any specified "
@@ -1946,6 +2145,9 @@ msgstr ""
 msgid "Import Manifest"
 msgstr "Importa manifesto"
 
+msgid "Import facts"
+msgstr "Importa gli eventi"
+
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Import in progress (%M)"
 msgstr "Processo di importazione in corso (%M)"
@@ -1953,7 +2155,8 @@ msgstr "Processo di importazione in corso (%M)"
 msgid "Import uploads into a repository"
 msgstr "Importa caricamento in un repositorio"
 
-# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document
+# evolution-3.8
 msgid "In Progress"
 msgstr "In corso"
 
@@ -1963,10 +2166,21 @@ msgstr "Aggiornamento incrementale"
 msgid "Incremental Update incomplete."
 msgstr "Aggiornamento incrementale non completato."
 
+msgid ""
+"Incremental update specified for composite %{name} version %{version}, but "
+"no components updated."
+msgstr ""
+"Aggiornamento incrementale specificato per versione %{version} composita "
+"%{name}, ma nessun componente aggiornato."
+
+msgid "Index errata"
+msgstr "Indice errata"
+
 msgid "Informable Type must be one of the following [ %{list} ]"
 msgstr "Tipo di informazioni deve essere una delle seguenti [ %{list} ]"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Initial Creation Params"
 msgstr "Parametri creazione iniziale"
 
@@ -1995,11 +2209,13 @@ msgstr "installa gruppo di pacchetti"
 msgid "Install packages remotely"
 msgstr "Installazione pacchetti remota"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document
+# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "Installed Packages"
 msgstr "Pacchetti installati"
 
-# translation auto-copied from project anaconda, version 19.31.34, document anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document
+# anaconda
 msgid "Installing"
 msgstr "Installazione in corso"
 
@@ -2012,24 +2228,31 @@ msgstr "installazione gruppo di pacchetti in corso..."
 msgid "Installing Package..."
 msgstr "installazione pacchetto in corso..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Insufficient Subscriptions"
 msgstr "Sottoscrizioni non sufficienti"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Intersection"
 msgstr "Intersezione"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Intersection:"
 msgstr "Intersezione:"
 
 msgid "Interval"
 msgstr "Intervallo"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Invalid Subscriptions"
 msgstr "Sottoscrizioni non valide"
+
+msgid "Invalid content label: %s"
+msgstr "Etichetta contenuto non valida: %s"
 
 msgid "Invalid content type %s"
 msgstr "Tipo di contenuto %s non valido"
@@ -2084,7 +2307,8 @@ msgstr ""
 "Parametri non validi inviati nella richiesta per questa operazione. "
 "Contattare un amministratore di sistema."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid ""
 "Invalid parameters sent. You may have mistyped the address. If you continue "
 "having trouble with this, please contact an Administrator."
@@ -2109,7 +2333,8 @@ msgstr ""
 msgid "Issue tracker"
 msgstr "Emetti tracker"
 
-# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document
+# evolution-3.8
 msgid "Issued"
 msgstr "Emesso"
 
@@ -2117,23 +2342,8 @@ msgstr "Emesso"
 msgid "Issued: "
 msgstr "Emesso: "
 
-msgid "Katello Host Advisory"
-msgstr "Advisory host di katello"
-
-msgid "Katello Promotion Summary"
-msgstr "Sommario avanzamento di katello"
-
-msgid "Katello Promotion Summary for %{content_view}"
-msgstr "Sommario avanzamento di katello per %{content_view}"
-
 msgid "Katello Support"
 msgstr "Supporto di katello"
-
-msgid "Katello Sync Summary"
-msgstr "Sommario sincronizzazione di katello"
-
-msgid "Katello Sync Summary for %s"
-msgstr "Sommario sincronizzazione di katello per %s"
 
 msgid "Katello can be found on the same freenode channels used by Foreman."
 msgstr "Katello è disponibile sugli stessi canali freenode usati da Foreman."
@@ -2158,25 +2368,29 @@ msgstr "Hash chiave-valore degli eventi specifici all'host di contenuto"
 msgid "Keyname"
 msgstr "Nome chiave"
 
-# translation auto-copied from project RHN Satellite Installation Guide, version 5.6, document Importing_and_Synchronizing
+# translation auto-copied from project RHN Satellite Installation Guide,
+# version 5.6, document Importing_and_Synchronizing
 msgid "Kickstarts"
 msgstr "Kickstart"
 
 msgid "Label of the content"
 msgstr "Etichetta del contenuto"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Last Checked in Date"
 msgstr "Data ultima registrazione"
 
 msgid "Last check-in time of this content host"
 msgstr "Ultimo orario di registrazione di questo host di contenuto"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Latest Notifications"
 msgstr "Ultimissime notifiche"
 
-# translation auto-copied from project empathy, version 3.8.3, document empathy
+# translation auto-copied from project empathy, version 3.8.3, document
+# empathy
 msgid "Level"
 msgstr "Livello"
 
@@ -2190,7 +2404,8 @@ msgstr "ID repository della Libreria per limitare i confronti"
 msgid "License"
 msgstr "Licenza"
 
-# translation auto-copied from project system-config-printer, version 1.4.1, document system-config-printer
+# translation auto-copied from project system-config-printer, version 1.4.1,
+# document system-config-printer
 msgid "License:"
 msgstr "Licenza:"
 
@@ -2209,12 +2424,12 @@ msgstr ""
 
 msgid ""
 "Lifecycle Environment %s has associated Activation Keys. Please change or "
-"remove the associated Activation Keys before trying to delete this lifecycle "
-"environment."
+"remove the associated Activation Keys before trying to delete this lifecycle"
+" environment."
 msgstr ""
-"Sono state associate le chiavi di attivazione all'ambiente ciclo di vita %s. "
-"Modificare o rimuovere le chiavi di attivazione associate prima di provare a "
-"cancellare questo ambiente."
+"Sono state associate le chiavi di attivazione all'ambiente ciclo di vita %s."
+" Modificare o rimuovere le chiavi di attivazione associate prima di provare "
+"a cancellare questo ambiente."
 
 msgid ""
 "Lifecycle Environment %s has associated Content Hosts. Please unregister or "
@@ -2244,14 +2459,16 @@ msgstr ""
 msgid "Lifecyle Environments"
 msgstr "Ambienti ciclo di vita"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Limits"
 msgstr "Limiti"
 
 msgid "List :resource_id"
 msgstr "Elenca :resource_id"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "List Actions"
 msgstr "Elenca azioni"
 
@@ -2290,6 +2507,13 @@ msgstr "Elenca gli host di contenuto in un ambiente"
 
 msgid "List content hosts in the host collection"
 msgstr "Elenca gli host di contenuto nell'insieme di host"
+
+msgid ""
+"List content hosts when you have a query string parameter that will cause a "
+"414."
+msgstr ""
+"Elenca gli host di contenuto quando è presente un parametro della stringa "
+"d'interrogazione che causa un 414."
 
 msgid "List content view puppet modules"
 msgstr "Elenca i moduli puppet per la visualizzazione del contenuto"
@@ -2475,11 +2699,13 @@ msgstr "Imposta questa come tua organizzazione predefinita."
 msgid "Manage Environments"
 msgstr "Gestisci gli ambienti."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Manifest %s failed"
 msgstr "Manifesto %s fallito"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Manifest subscriptions unchanged from previous"
 msgstr "Sottoscrizioni del manifesto non modificate dalla versione precedente"
 
@@ -2504,8 +2730,8 @@ msgstr "Numero massimo di host di contenuto nell'insieme di host"
 msgid ""
 "May not add a type or date range rule to a filter that has existing rules."
 msgstr ""
-"Impossibile aggiungere una regola sulle date o sulla tipologia, ad un filtro "
-"con regole esistenti."
+"Impossibile aggiungere una regola sulle date o sulla tipologia, ad un filtro"
+" con regole esistenti."
 
 msgid ""
 "May not add an id rule to a filter that has an existing type or date range "
@@ -2514,15 +2740,18 @@ msgstr ""
 "Impossibile aggiungere una regola per l'id ad un filtro con una regola "
 "esistente sulle date o sulla tipologia."
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 msgid "Message"
 msgstr "Messaggio"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "More >>"
 msgstr "Più >>"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "More..."
 msgstr "Più..."
 
@@ -2541,7 +2770,8 @@ msgstr "Nome dell'host di contenuto"
 msgid "Name of the content view"
 msgstr "Nome visualizzazione dei contenuti"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 msgid "Name:"
 msgstr "Nome:"
 
@@ -2551,7 +2781,8 @@ msgstr "Nome:"
 msgid "Name: %{module_name}, Version: %{version}"
 msgstr "Nome: %{module_name}, Versione: %{version}"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Names and labels must be unique across all organizations"
 msgstr "Nomi ed etichette devono essere unici su tutte le organizzazioni"
 
@@ -2561,7 +2792,8 @@ msgstr "Nido"
 msgid "Never Synced"
 msgstr "Mai sincronizzato"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Never checked in"
 msgstr "Mai eseguita la registrazione"
 
@@ -2577,7 +2809,8 @@ msgstr "Nuove ISO: %s"
 msgid "New content view name"
 msgstr "Nuovo nome per la visualizzazione del contenuto"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "New distributor"
 msgstr "Nuovo distributore"
 
@@ -2586,6 +2819,9 @@ msgstr "Nuovo nome per l'insieme di host"
 
 msgid "New images: %{count}."
 msgstr "Nuove immagini: %{count}."
+
+msgid "New name cannot be blank"
+msgstr "Il nuovo nome non può essere vuoto"
 
 msgid "New name for the content view"
 msgstr "Nuovo nome per la visualizzazione del contenuto"
@@ -2596,31 +2832,34 @@ msgstr "Nuovo nome per il repositorio"
 msgid "New packages: %{count} (%{size})."
 msgstr "Nuovi pacchetti: %{count} (%{size})."
 
-# translation auto-copied from project Customer Portal Translations, version RHJBossMiddlewareOperationsNetworkProduc, document RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version
+# RHJBossMiddlewareOperationsNetworkProduc, document
+# RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
 msgid "No"
 msgstr "No"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "No Content View"
 msgstr "Nessuna visualizzazione del contenuto"
 
 msgid ""
-"No Red Hat products currently exist, please import a manifest <a href='/"
-"subscriptions'>here</a> to receive Red Hat content."
+"No Red Hat products currently exist, please import a manifest <a "
+"href='/subscriptions'>here</a> to receive Red Hat content."
 msgstr ""
-"Non esiste alcun prodotto di Red Hat, importare un manifesto <a href='/"
-"subscriptions'>qui</a> per ricevere il contenuto di Red Hat."
+"Non esiste alcun prodotto di Red Hat, importare un manifesto <a "
+"href='/subscriptions'>qui</a> per ricevere il contenuto di Red Hat."
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "No Service Level Preference"
 msgstr "Nessuna preferenza del livello del servizio"
 
 msgid ""
-"No Version of Content View %{component} already exists as a component of the "
-"composite Content View %{composite} version %{version}"
+"No Version of Content View %{component} already exists as a component of the"
+" composite Content View %{composite} version %{version}"
 msgstr ""
-"Nessuna versione della visualizzazione del contenuto %{component} esiste già "
-"come componente della visualizzazione del contenuto composita %{composite} "
+"Nessuna versione della visualizzazione del contenuto %{component} esiste già"
+" come componente della visualizzazione del contenuto composita %{composite} "
 "con versione %{version}"
 
 msgid "No content has been provided."
@@ -2628,15 +2867,15 @@ msgstr "Non è stato fornito alcun contenuto."
 
 msgid "No content view history events found."
 msgstr ""
-"Non è stato trovato alcun evento per la cronologia della visualizzazione del "
-"contenuto."
+"Non è stato trovato alcun evento per la cronologia della visualizzazione del"
+" contenuto."
 
 msgid "No content_view_version_ids provided"
 msgstr "Nessun content_view_version_ids fornito"
 
 msgid ""
-"No environments are currently available in this organization.  Please either "
-"add some to the organization or select an organization that has an "
+"No environments are currently available in this organization.  Please either"
+" add some to the organization or select an organization that has an "
 "environment to set user default."
 msgstr ""
 "Nessun ambiente è attualmente disponibile in questa organizzazione. "
@@ -2670,7 +2909,8 @@ msgstr "Nessun profilo del pacchetto ricevuto per %s"
 msgid "No package uuids provided"
 msgstr "Nessun uuid del pacchetto fornito"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "No packages are currently filtered."
 msgstr "Attualmente nessun pacchetto è stato filtrato."
 
@@ -2680,11 +2920,13 @@ msgstr "Nessun pacchetto rimosso"
 msgid "No packages updated"
 msgstr "Nessun pacchetto aggiornato"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "No products are available containing this content type."
 msgstr "Nessun prodotto disponibile con questo tipo di contenuto."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "No products or repositories are currently associated."
 msgstr "Nessun prodotto o repositori sono attualmente associati."
 
@@ -2694,7 +2936,8 @@ msgstr "Nessun prodotto o repositorio selezionato."
 msgid "No puppet repository selected."
 msgstr "Nessun repositorio puppet selezionato."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "No recently synced products."
 msgstr "Nessun prodotto recentemente sincronizzato."
 
@@ -2707,7 +2950,8 @@ msgstr "Nessun destinatario trovato per la notifica della sinc %s"
 msgid "No start time currently available."
 msgstr "Attualmente non è disponibile alcun orario d'inizio."
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document
+# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "No systems found."
 msgstr "Nessun sistema trovato."
 
@@ -2738,7 +2982,8 @@ msgstr ""
 "questo contenuto alla visualizzazione del contenuto rilevante per renderlo "
 "disponibile."
 
-# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document
+# gnome-control-center-2.0
 msgid "Notifications"
 msgstr "Notifiche"
 
@@ -2748,26 +2993,31 @@ msgstr "Numero di risultati per pagina da ritornare"
 msgid "Number of sockets must be higher than 0 for system %s"
 msgstr "Il numero di socket deve essere maggiore di 0 per il sistema %s"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author fvalen
+# translation auto-copied from project NetworkManager, version 0.9.9.0,
+# document NetworkManager, author fvalen
 msgid "OK"
 msgstr "OK"
 
-# translation auto-copied from project system-config-language, version 1.4.0, document system-config-language, author fvalen
+# translation auto-copied from project system-config-language, version 1.4.0,
+# document system-config-language, author fvalen
 msgid "Ok"
 msgstr "Ok"
 
 msgid "One of parameters [ %s ] required but not specified."
 msgstr "Uno dei parametri [ %s ] necessario ma non specificato."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "One or more of the groups provided has an action pending."
 msgstr "Uno o più gruppi forniti ha una azione in sospeso."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "One or more of the packages provided has an action pending."
 msgstr "Uno o più pacchetti forniti ha una azione in sospeso."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "One or more package names are invalid."
 msgstr "Uno o più nomi dei pacchetti non sono validi."
 
@@ -2780,7 +3030,8 @@ msgstr "È possibile creare solo %s favoriti."
 msgid "Only one Red Hat provider permitted for an Organization"
 msgstr "Per una organizzazione è permesso solo un provider di Red Hat"
 
-# translation auto-copied from project [RHEL] [SECURITY] Security Guide, version 6.4, document Tcp_Wrappers, author fvalen
+# translation auto-copied from project [RHEL] [SECURITY] Security Guide,
+# version 6.4, document Tcp_Wrappers, author fvalen
 msgid "Operators"
 msgstr "Operatori"
 
@@ -2811,24 +3062,27 @@ msgstr "Organizzazione necessaria"
 msgid ""
 "Organizations disabled, try allowing them in foreman/config/settings.yaml"
 msgstr ""
-"Organizzazioni disabilitate, prova ad abilitarle in foreman/config/settings."
-"yaml"
+"Organizzazioni disabilitate, prova ad abilitarle in "
+"foreman/config/settings.yaml"
 
-# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document
+# gnome-control-center-2.0
 msgid "Other"
 msgstr "Altro"
 
 msgid "Override content for activation_key"
 msgstr "Esegui l'override del contenuto per activation_key"
 
-msgid "Override value 0/1"
-msgstr "Esegui override del valore 0/1"
+msgid "Override to 0/1, or 'default'"
+msgstr "Esegui override su 0/1, o 'default'"
 
-# translation auto-copied from project rhn-client-tools, version 6.5, document rhn-client-tools
+# translation auto-copied from project rhn-client-tools, version 6.5, document
+# rhn-client-tools
 msgid "Package"
 msgstr "Pacchetto"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Package Group"
 msgstr "Gruppo di pacchetti"
 
@@ -2931,19 +3185,23 @@ msgstr "Aggiornamento pacchetto scaduto"
 msgid "Package Update scheduled by %s"
 msgstr "Aggiornamento pacchetto programmato per il %s"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Package group update canceled"
 msgstr "Aggiornamento gruppo di pacchetti cancellato"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Package group update complete"
 msgstr "Aggiornamento gruppo di pacchetti completato"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Package group update failed"
 msgstr "Aggiornamento gruppo di pacchetti fallito"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Package group update timed out"
 msgstr "Aggiornamento gruppo di pacchetti scaduto"
 
@@ -2970,15 +3228,18 @@ msgstr "Pacchetti:"
 msgid "Page number, starting at 1"
 msgstr "Numero pagina, iniziando da 1"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 msgid "Parameters"
 msgstr "Parametri"
 
-# translation auto-copied from project virt-manager, version 0.10.0, document virt-manager
+# translation auto-copied from project virt-manager, version 0.10.0, document
+# virt-manager
 msgid "Paused"
 msgstr "In pausa"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 msgid "Pending"
 msgstr "In attesa"
 
@@ -2991,10 +3252,11 @@ msgid ""
 "Permission Denied. User '%{user}' does not have permissions to access "
 "organization '%{org}'."
 msgstr ""
-"Permesso negato. L'utente '%{user}' non presenta alcun permesso per accedere "
-"all'organizzazione '%{org}'. "
+"Permesso negato. L'utente '%{user}' non presenta alcun permesso per accedere"
+" all'organizzazione '%{org}'. "
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 msgid "Physical"
 msgstr "Fisico"
 
@@ -3011,7 +3273,8 @@ msgstr ""
 "Scegliere una organizzazione usando il selettore posizionato nella parte "
 "sinistra del menu."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Please request the required privileges from an administrator."
 msgstr "Richiedere i privilegi necessari ad un amministratore."
 
@@ -3024,11 +3287,13 @@ msgstr "Processazione metadati"
 msgid "Processing metadata."
 msgstr "Processazione metadati."
 
-# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author fvalen
+# translation auto-copied from project Customer Portal Translations, version
+# Portal-Case-Management, document Template, author fvalen
 msgid "Product"
 msgstr "Prodotto"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Product Name: "
 msgstr "Nome prodotto:"
 
@@ -3063,28 +3328,32 @@ msgstr "Avanzato a %{environment}"
 msgid "Promotion"
 msgstr "Avanzamento"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid ""
 "Providers provide many types of content such as packages, errata, kickstart "
 "trees, and installation disc images.  A provider may be delivering all of "
 "your paid content or it could simply be a local yum repository providing a "
 "few yum repos."
 msgstr ""
-"I provider forniscono diversi tipi di contenuto come ad esempio i pacchetti, "
-"gli errata, gli alberi kickstart e le immagini del disco per l'installazione."
-" Un provider è in grado di assegnare tutto il contenuto acquistato o può "
-"semplicemente essere un repositorio yum locale il quale fornisce alcuni "
-"repositori yum."
+"I provider forniscono diversi tipi di contenuto come ad esempio i pacchetti,"
+" gli errata, gli alberi kickstart e le immagini del disco per "
+"l'installazione. Un provider è in grado di assegnare tutto il contenuto "
+"acquistato o può semplicemente essere un repositorio yum locale il quale "
+"fornisce alcuni repositori yum."
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Provides"
 msgstr "Fornisce"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 msgid "Provides:"
 msgstr "Fornisce:"
 
-# translation auto-copied from project shotwell-core, version 0.14.1, document shotwell-core
+# translation auto-copied from project shotwell-core, version 0.14.1, document
+# shotwell-core
 msgid "Publish"
 msgstr "Pubblica"
 
@@ -3094,11 +3363,13 @@ msgstr "Pubblica una visualizzazione del contenuto"
 msgid "Published new version"
 msgstr "Nuova versione pubblicata"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Pulp not running"
 msgstr "Pulp non in esecuzione"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid ""
 "Pulp service unavailable during creating repository '%s', please try again "
 "later."
@@ -3135,7 +3406,8 @@ msgstr "Moduli puppet (%s)"
 msgid "Puppet module conflict: '%{mod}' is in %{versions}."
 msgstr "Conflitto modulo puppet: '%{mod}' è in %{versions}."
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 msgid "Quantity"
 msgstr "Quantità"
 
@@ -3148,7 +3420,8 @@ msgstr "Quantità di questa sottoscrizione da aggiungere"
 msgid "RAM: %s GB"
 msgstr "RAM: %s GB"
 
-# translation auto-copied from project RHN Satellite Installation Guide, version 5.6, document Importing_and_Synchronizing
+# translation auto-copied from project RHN Satellite Installation Guide,
+# version 5.6, document Importing_and_Synchronizing
 msgid "RPMs"
 msgstr "RPM"
 
@@ -3179,7 +3452,8 @@ msgstr "Il provider di Red Hat non può essere cancellato"
 msgid "Red Hat repositories cannot be manipulated."
 msgstr "I repositori di Red Hat non possono essere alterati."
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document
+# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "References:"
 msgstr "Riferimenti:"
 
@@ -3194,7 +3468,8 @@ msgid "Refresh previously imported manifest for Red Hat provider"
 msgstr ""
 "Aggiorna il manifesto precedentemente importato per il provider di Red Hat"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Refreshing"
 msgstr "Ricarica in corso"
 
@@ -3204,7 +3479,8 @@ msgstr "Registra un host di contenuto"
 msgid "Register a content host in environment"
 msgstr "Registra un host di contenuto nell'ambiente"
 
-# translation auto-copied from project CFSE-cli, version sam-1.2, document keys, author fvalen
+# translation auto-copied from project CFSE-cli, version sam-1.2, document
+# keys, author fvalen
 msgid "Registered"
 msgstr "Registrati"
 
@@ -3220,22 +3496,26 @@ msgstr "Releasever da abilitare"
 msgid "Reload data"
 msgstr "Ricarica i dati"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author fvalen
+# translation auto-copied from project NetworkManager, version 0.9.9.0,
+# document NetworkManager, author fvalen
 msgid "Remove"
 msgstr "Rimuovi"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Remove All"
 msgstr "Rimuovi tutti"
 
 msgid "Remove Content"
 msgstr "Rimuovi contenuto"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Remove Distributor"
 msgstr "Rimuovi distributore"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Remove Distributor(s)"
 msgstr "Rimuovi distributori"
 
@@ -3260,8 +3540,14 @@ msgstr "Rimuovi il contenuto su uno o più sistemi"
 msgid "Remove content view version"
 msgstr "Rimuovi la versione della visualizzazione del contenuto"
 
+msgid "Remove docker images"
+msgstr "Rimuovi immagini del Docker"
+
 msgid "Remove from Environment"
 msgstr "Rimuovi dall'ambiente"
+
+msgid "Remove lifecycle environment"
+msgstr "Rimuovi ambiente ciclo di vita"
 
 msgid "Remove one or more host collections from one or more content hosts"
 msgstr "Rimuovi uno o più insiemi di host da uno o più host di contenuto"
@@ -3275,9 +3561,12 @@ msgstr "Rimuovi gruppo di pacchetti"
 msgid "Remove products from sync plan"
 msgstr "Rimuovi prodotti dalla programmazione per la sincronizzazione"
 
+msgid "Remove repository"
+msgstr "Rimuovi repositorio"
+
 msgid ""
-"Remove versions and/or environments from a content view and reassign systems "
-"and keys"
+"Remove versions and/or environments from a content view and reassign systems"
+" and keys"
 msgstr ""
 "Rimuovi le versioni e/o gli ambienti da una visualizzazione del contenuto e "
 "riassegna sistemi e chiavi"
@@ -3294,11 +3583,13 @@ msgstr "Rendering 404:"
 msgid "Rendering 500:"
 msgstr "Rendering 500:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Repo Type: "
 msgstr "Tipo di repo:"
 
-# translation auto-copied from project Cloudforms System Engine User Guide, version 1.0, document Repositories, author fvalen
+# translation auto-copied from project Cloudforms System Engine User Guide,
+# version 1.0, document Repositories, author fvalen
 msgid "Repositories"
 msgstr "Repositori"
 
@@ -3307,7 +3598,8 @@ msgstr ""
 "Non sono permessi i repository delle Visualizzazioni del contenuto "
 "pubblicate."
 
-# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document appe-Glossary_of_Terms
+# translation auto-copied from project Red Hat Satellite User Guide, version
+# 6.0, document appe-Glossary_of_Terms
 msgid "Repository"
 msgstr "Repository"
 
@@ -3326,13 +3618,14 @@ msgstr ""
 msgid "Repository Comparison"
 msgstr "Confronto repositorio"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Repository Set"
 msgstr "Insieme del repositorio"
 
 msgid ""
-"Repository URL or Upstream Name is empty. Both are required for syncing from "
-"the upstream."
+"Repository URL or Upstream Name is empty. Both are required for syncing from"
+" the upstream."
 msgstr ""
 "URL del repository o Nome upstream vuoto. Entrambi sono necessari per la "
 "sincronizzazione con l'upstream."
@@ -3353,13 +3646,15 @@ msgstr ""
 msgid "Repository conflict: '%{repo}' is in %{versions}."
 msgstr "Conflitto repositorio: '%{repo}' è in %{versions}."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid ""
 "Repository has already been cloned to %{cv_name} in environment %{to_env}"
 msgstr ""
 "Il repositorio è già stato clonato per %{cv_name} nell'ambiente %{to_env}"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Repository has already been promoted to %{to_env}"
 msgstr "Il repositorio è stato avanzato su %{to_env}"
 
@@ -3375,16 +3670,19 @@ msgstr "Repositorio non trovato"
 msgid "Repository set name to search on"
 msgstr "Nome insieme repositori da cercare"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Repository sets are not available for custom products."
 msgstr ""
 "Gli insiemi di repositori non sono applicabili ai prodotti personalizzati."
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/java/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document
+# java/code/src/com/redhat/rhn/frontend/strings/java/StringResource
 msgid "Request"
 msgstr "Richiesta"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Requires"
 msgstr "Ha bisogno di"
 
@@ -3394,11 +3692,13 @@ msgstr "Necessita:"
 msgid "Resource %s does not support custom information"
 msgstr "La risorsa %s non supporta le informazioni personalizzate"
 
-# translation auto-copied from project CFSE-cli, version sam-1.2, document keys, author fvalen
+# translation auto-copied from project CFSE-cli, version sam-1.2, document
+# keys, author fvalen
 msgid "Result"
 msgstr "Risultato"
 
-# translation auto-copied from project gnome-color-manager, version 3.8.2, document gnome-color-manager
+# translation auto-copied from project gnome-color-manager, version 3.8.2,
+# document gnome-color-manager
 msgid "Results"
 msgstr "Risultati"
 
@@ -3409,15 +3709,15 @@ msgid ""
 "Return only systems where the Erratum specified by erratum_id or errata_ids "
 "is available to systems (default False)"
 msgstr ""
-"Ritorna solo i sistemi dove l'Erratum specificato da erratum_id o errata_ids "
-"è disponibile ai sistemi (default su False)"
+"Ritorna solo i sistemi dove l'Erratum specificato da erratum_id o errata_ids"
+" è disponibile ai sistemi (default su False)"
 
 msgid ""
 "Return only systems where the Erratum specified by erratum_id or errata_ids "
 "is unavailable to systems (default False)"
 msgstr ""
-"Ritorna solo i sistemi dove l'Erratum specificato da erratum_id o errata_ids "
-"non è disponibile ai sistemi (default su False)"
+"Ritorna solo i sistemi dove l'Erratum specificato da erratum_id o errata_ids"
+" non è disponibile ai sistemi (default su False)"
 
 msgid "Return subscriptions that don't overlap"
 msgstr "Ritorna le sottoscrizioni che non si sovrappongono"
@@ -3430,40 +3730,62 @@ msgstr "Ritorna le sottoscrizioni che corrispondono al sistema"
 
 msgid "Return the content of a repo gpg key, used directly by yum"
 msgstr ""
-"Ritorna il contenuto di una chiave gpg del repositorio usata direttamente da "
-"yum"
+"Ritorna il contenuto di una chiave gpg del repositorio usata direttamente da"
+" yum"
 
 msgid "Route does not exist:"
 msgstr "Ciclo non esistente:"
 
-# translation auto-copied from project virt-manager, version 0.10.0, document virt-manager
+# translation auto-copied from project virt-manager, version 0.10.0, document
+# virt-manager
 msgid "Running"
 msgstr "In esecuzione"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 msgid "SLA"
 msgstr "SLA"
 
-# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author fvalen
+msgid "Satellite Host Advisory"
+msgstr "Advisory host di Satellite"
+
+msgid "Satellite Promotion Summary"
+msgstr "Sommario avanzamento di Satellite"
+
+msgid "Satellite Promotion Summary for %{content_view}"
+msgstr "Sommario avanzamento di Satellite per %{content_view}"
+
+msgid "Satellite Sync Summary"
+msgstr "Sommario sincronizzazione di Satellite"
+
+msgid "Satellite Sync Summary for %s"
+msgstr "Sommario sincronizzazione di Satellite per %s"
+
+# translation auto-copied from project Customer Portal Translations, version
+# Portal-Case-Management, document Template, author fvalen
 msgid "Save"
 msgstr "Salva"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Save as Favorite"
 msgstr "Salva come favorito"
 
-# translation auto-copied from project virt-manager, version 0.10.0, document virt-manager, author fvalen
+# translation auto-copied from project virt-manager, version 0.10.0, document
+# virt-manager, author fvalen
 msgid "Saved"
 msgstr "Salvato"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Saving..."
 msgstr "Salvataggio in corso..."
 
 msgid "Schedule errata for installation"
 msgstr "Programma l'errata all'installazione"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 msgid "Search"
 msgstr "Cerca"
 
@@ -3526,21 +3848,24 @@ msgstr "Inizio ricerca con kernel:"
 msgid "Security"
 msgstr "Sicurezza"
 
-# translation auto-copied from project gnote, version 3.8.1, document gnote, author fvalen
+# translation auto-copied from project gnote, version 3.8.1, document gnote,
+# author fvalen
 msgid "Select All"
 msgstr "Seleziona tutto"
 
 msgid "Select Content View"
 msgstr "Seleziona visualizzazione contenuto"
 
-# translation auto-copied from project gnote, version 3.8.1, document gnote, author fvalen
+# translation auto-copied from project gnote, version 3.8.1, document gnote,
+# author fvalen
 msgid "Select None"
 msgstr "Seleziona nessuno"
 
 msgid "Select Organization"
 msgstr "Seleziona organizzazione"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Select Repositories: "
 msgstr "Seleziona repositori:"
 
@@ -3590,8 +3915,8 @@ msgid ""
 "Selected lifecycle environment has no content views. Please choose a "
 "different life cycle environment."
 msgstr ""
-"L'ambiente ciclo di vita selezionato non presenta alcuna visualizzazione del "
-"contenuto. Selezionare un altro ambiente del ciclo di vita."
+"L'ambiente ciclo di vita selezionato non presenta alcuna visualizzazione del"
+" contenuto. Selezionare un altro ambiente del ciclo di vita."
 
 msgid ""
 "Selected organization has no capsules with Pulp or Pulp Node features. "
@@ -3611,7 +3936,8 @@ msgstr "Severità"
 msgid "Shared"
 msgstr "Condiviso"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author fvalen
+# translation auto-copied from project NetworkManager, version 0.9.9.0,
+# document NetworkManager, author fvalen
 msgid "Show"
 msgstr "Mostra"
 
@@ -3658,8 +3984,8 @@ msgstr "Mostra una programmazione della sincronizzazione"
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Show all results regardless of which columns they exist in."
 msgstr ""
-"Mostra tutti i risultati senza tener in considerazione le rispettive colonne."
-""
+"Mostra tutti i risultati senza tener in considerazione le rispettive "
+"colonne."
 
 msgid "Show an activation key"
 msgstr "Mostra una chiave di attivazione"
@@ -3706,29 +4032,33 @@ msgstr "Mostra lo stato del sistema e dei suoi componenti secondari"
 msgid "Shows version information"
 msgstr "Mostra le informazioni sulla versione"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Signature"
 msgstr "Firma"
 
 msgid "Signature:"
 msgstr "Firma:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Sockets: %s"
 msgstr "Socket: %s"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid ""
 "Sorry about that! It seems something went wrong.  If you continue having "
 "trouble with this, please contact an Administrator."
 msgstr ""
-"Spiacenti! Si è verificato un errore. Se continui ad avere problemi contatta "
-"un Amministratore."
+"Spiacenti! Si è verificato un errore. Se continui ad avere problemi contatta"
+" un Amministratore."
 
 msgid "Sort field and order, eg. 'name DESC'"
 msgstr "Campo e ordine per la ricerca, es. 'nome DISC'"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Source RPMs"
 msgstr "RPM sorgenti"
 
@@ -3747,29 +4077,35 @@ msgstr "Specifica gli insiemi host come un array"
 msgid "Specify the organization"
 msgstr "Specifica l'organizzazione"
 
-# translation auto-copied from project Customer Portal Translations, version RHJBossMiddlewareOperationsNetworkProduc, document RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version
+# RHJBossMiddlewareOperationsNetworkProduc, document
+# RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
 msgid "Start"
 msgstr "Inizio"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 msgid "Start Date"
 msgstr "Data d'inizio"
 
 msgid "Start Date and Time can't be blank"
 msgstr "La data e l'ora d'inizio non possono essere lasciati vuoti"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Start Time"
 msgstr "Ora d'inizio"
 
 msgid "Start date that Errata was issued on to filter by"
 msgstr "Data inizio emissione dell'errata da filtrare per la ricerca "
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 msgid "Status"
 msgstr "Stato"
 
-# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
+# translation auto-copied from project Subscription Manager, version 1.8.X,
+# document keys
 msgid "Subscription"
 msgstr "Sottoscrizione"
 
@@ -3785,7 +4121,8 @@ msgstr "Identificatore sottoscrizione"
 msgid "Subscription manifest %{action} for provider '%{name}' failed"
 msgstr "%{action} manifesto sottoscrizione per il provider '%{name}' fallita"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Subscription manifest deleted successfully for provider '%s'."
 msgstr ""
 "Manifesto di sottoscrizione rimosso con successo per il provider '%s'. "
@@ -3793,7 +4130,8 @@ msgstr ""
 msgid "Subscription manifest file"
 msgstr "File manifesto della sottoscrizione"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Subscription manifest import for provider '%s' skipped"
 msgstr "Importazione manifesto sottoscrizione per il provider '%s' saltata"
 
@@ -3813,7 +4151,8 @@ msgstr ""
 msgid "Success"
 msgstr "Con successo"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Successful for distributor(s): "
 msgstr "Con successo per i distributori:"
 
@@ -3838,13 +4177,6 @@ msgstr "Informazioni personalizzate create con successo"
 msgid "Successfully deleted custom information"
 msgstr "Informazioni personalizzate cancellate con successo"
 
-msgid ""
-"Successfully initiated deletion for %s repositories, you are free to leave "
-"this page."
-msgstr ""
-"Iniziata con successo la rimozione di %s repository, ora è possibile "
-"abbandonare questa pagina."
-
 msgid "Successfully initiated removal of %s product(s)"
 msgstr "Inizializzata con successo la rimozione di %s prodotti"
 
@@ -3868,7 +4200,8 @@ msgstr ""
 msgid "Successfully updated custom information"
 msgstr "Informazioni personalizzate aggiornate con successo"
 
-# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author fvalen
+# translation auto-copied from project Customer Portal Translations, version
+# Portal-Case-Management, document Template, author fvalen
 msgid "Summary"
 msgstr "Sommario"
 
@@ -3878,40 +4211,47 @@ msgstr "Sommario:"
 msgid "Sychronize capsule content"
 msgstr "Sincronizza il contenuto del capsule"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Sync Canceled"
 msgstr "Sincronizzazione cancellata"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Sync Cancelled"
 msgstr "Sincronizzazione cancellata"
 
 msgid "Sync Incomplete"
 msgstr "Sincronizzazione non completata"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Sync Overview"
 msgstr "Panoramica sincronizzazione"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Sync Plans"
 msgstr "Programmazione sincronizzazione"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Sync Status"
 msgstr "Stato della sincronizzazione"
 
 msgid "Sync a repository"
 msgstr "Sincronizza un repositorio"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Sync complete."
 msgstr "Sincronizzazione completa."
 
 msgid "Sync one or more products"
 msgstr "Sincronizza uno o più prodotti"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Sync plan"
 msgstr "Programmazione sincronizzazione"
 
@@ -3921,7 +4261,8 @@ msgstr "identificatore programmazione della sincronizzazione da assegnare"
 msgid "Synchronize"
 msgstr "Sincronizza"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Synchronize Now"
 msgstr "Sincronizza ora"
 
@@ -3937,14 +4278,16 @@ msgstr "UUID del sistema"
 msgid "Systems [%s] not found."
 msgstr "Sistemi [%s] non trovati."
 
-# translation auto-copied from project shotwell-core, version 0.14.1, document shotwell-core
+# translation auto-copied from project shotwell-core, version 0.14.1, document
+# shotwell-core
 msgid "Tag"
 msgstr "Etichetta"
 
 msgid "Tag List: "
 msgstr "Elenco tag:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "The '%s' environment cannot contain a changeset!"
 msgstr "L'ambiente '%s' non può contenere un changeset!"
 
@@ -3973,8 +4316,8 @@ msgstr ""
 
 msgid "The erratum filter rule end date is in an invalid format or type."
 msgstr ""
-"La data di fine della regola del filtro dell'erratum non ha un formato o una "
-"tipologia valida."
+"La data di fine della regola del filtro dell'erratum non ha un formato o una"
+" tipologia valida."
 
 msgid "The erratum filter rule start date is in an invalid format or type."
 msgstr ""
@@ -3989,11 +4332,13 @@ msgstr ""
 msgid "The following hosts have errata that apply to them: "
 msgstr "I seguenti host dispongono di errata da applicare:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid ""
-"The label requested is already used by another %s; therefore, a unique label "
-"was assigned.  If you would like a different label, please delete the %s and "
-"recreate it with a unique label.  Requested label: %s, Assigned label: %s"
+"The label requested is already used by another %s; therefore, a unique label"
+" was assigned.  If you would like a different label, please delete the %s "
+"and recreate it with a unique label.  Requested label: %s, Assigned label: "
+"%s"
 msgstr ""
 "L'etichetta richiesta è già usata da un altro %s; per questo motivo è stata "
 "assegnata una etichetta unica. Se ne desideri una diversa cancellare %s e "
@@ -4025,8 +4370,8 @@ msgstr ""
 "possibile installare %{count} errata necessari sugli host."
 
 msgid ""
-"The puppet environment %{name} is in use by %{count} Host Group(s) including "
-"%{names}"
+"The puppet environment %{name} is in use by %{count} Host Group(s) including"
+" %{names}"
 msgstr ""
 "L'ambiente puppet %{name} è utilizzato da %{count} gruppi di host, incluso "
 "%{names}"
@@ -4061,7 +4406,8 @@ msgstr ""
 "Il tipo di contenuto. Sono supportati i seguenti tipi: 'package' e "
 "'package_group' e 'errata'."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "There are currently no subscriptions attached to the distributor"
 msgstr "Attualmente non sono state assegnate sottoscrizioni al distributore"
 
@@ -4070,26 +4416,30 @@ msgid ""
 msgstr ""
 "Non è presente alcun errata da applicare agli host di contenuto registrati."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "There are no events to display."
 msgstr "Non è presente alcun evento da visualizzare."
 
 msgid "There are no files in this package."
 msgstr "Non è presente alcun file in questo pacchetto."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "There are no more subscriptions available."
 msgstr "Non è più presente alcuna sottoscrizione disponibile."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid ""
-"There are no products or repositories enabled. Try enabling via %{custom} or "
-"%{redhat}."
+"There are no products or repositories enabled. Try enabling via %{custom} or"
+" %{redhat}."
 msgstr ""
 "Non è stato abilitato alcun prodotto o repositorio. Provare ad abilitarli "
 "tramite %{custom} o %{redhat}."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "There are no products to display."
 msgstr "Non è presente alcun prodotto da visualizzare."
 
@@ -4119,7 +4469,8 @@ msgstr ""
 "Si è verificato un errore durante il tentativo di recuperare l'elenco di "
 "repository:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "There was an error retrieving that row:"
 msgstr "Si è verificato un errore durante il ripristino della riga:"
 
@@ -4153,11 +4504,13 @@ msgstr ""
 "Ciò sovrascriverà qualsiasi chiave GPG precedentemente associata con un "
 "repositorio all'interno di questo prodotto"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Time"
 msgstr "Ora"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Title"
 msgstr "Titolo"
 
@@ -4165,12 +4518,13 @@ msgstr "Titolo"
 msgid "Title: "
 msgstr "Titolo: "
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid ""
-"To view the details of an item on the left, simply click on a single row.<br/"
-"><br/>To select multiple rows, hold the Control Key and click multiple rows."
-"<br/><br/>If you don't need this help anymore, please click the close button "
-"in the top right of this box."
+"To view the details of an item on the left, simply click on a single "
+"row.<br/><br/>To select multiple rows, hold the Control Key and click "
+"multiple rows.<br/><br/>If you don't need this help anymore, please click "
+"the close button in the top right of this box."
 msgstr ""
 "Per visualizzare i dettagli di un elemento sulla sinistra fare clic sulla "
 "singola riga.<br/><br/>Per selezionare righe multiple tenere premuto il "
@@ -4190,7 +4544,8 @@ msgstr "Conteggio totale dei moduli: %s."
 msgid "Trigger a refresh of subscriptions, auto-attaching if enabled"
 msgstr "Aggiorna le sottoscrizioni ed esegui auto-attach se abilitato"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 msgid "Type"
 msgstr "Tipo"
 
@@ -4203,7 +4558,8 @@ msgstr "Tipo di host di contenuto, deve essere sempre 'system'"
 msgid "URL for post sync notification from pulp"
 msgstr "URL per le notifiche post sincronizzazione di pulp"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 msgid "UUID"
 msgstr "UUID"
 
@@ -4290,8 +4646,8 @@ msgid ""
 "to synchronize or the selected repositories do not have a feed url."
 msgstr ""
 "Impossibile sincronizzare qualsiasi repository. Probabilmente non sei in "
-"possesso dei permessi necessari per la sincronizzazione, oppure i repository "
-"selezionati non dispongono di un url del feed."
+"possesso dei permessi necessari per la sincronizzazione, oppure i repository"
+" selezionati non dispongono di un url del feed."
 
 msgid "Unapplied Errata"
 msgstr "Errata non applicato"
@@ -4317,27 +4673,40 @@ msgstr "Unione:"
 msgid "Unique"
 msgstr "Unico"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman, author fvalen
+# translation auto-copied from project Satellite6 Foreman, version 6.0,
+# document foreman, author fvalen
 msgid "Unknown"
 msgstr "Sconosciuto"
 
 msgid "Unknown registration date"
 msgstr "Data di registrazione sconosciuta "
 
-# translation auto-copied from project Customer Portal Translations, version RedHatCloudFormsLifeCycle, document RedHatCouldFormsLifeCycle.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version
+# RedHatCloudFormsLifeCycle, document RedHatCouldFormsLifeCycle.html, author
+# fvalen
 msgid "Unlimited"
 msgstr "Illimitato"
 
 msgid "Unregister a content host"
 msgstr "Rimozione registrazione host di contenuto"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Unsupported URL protocol %s."
 msgstr "Protocollo URL non supportato %s."
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Up to date"
 msgstr "Aggiornato"
+
+msgid "Update"
+msgstr "Aggiorna"
+
+msgid "Update Sync Plan"
+msgstr "Aggiorna programmazione sincronizzazione"
+
+msgid "Update Sync Plan Products"
+msgstr "Aggiorna prodotti per la programmazione della sincronizzazione"
 
 msgid "Update a content view"
 msgstr "Aggiorna una visualizzazione del contenuto"
@@ -4372,8 +4741,8 @@ msgid "Update a sync plan"
 msgstr "Aggiorna programmazione sincronizzazione"
 
 msgid ""
-"Update all editable and applicable systems, not just ones using the selected "
-"Content View Versions and Environments"
+"Update all editable and applicable systems, not just ones using the selected"
+" Content View Versions and Environments"
 msgstr ""
 "Aggiorna tutti i sistemi modificabili e applicabili, non solo quelli che "
 "utilizzano gli ambienti e le versioni della visualizzazione del contenuto "
@@ -4387,6 +4756,9 @@ msgstr "Aggiorna un ambiente"
 
 msgid "Update an environment in an organization"
 msgstr "Aggiorna ambiente in una organizzazione"
+
+msgid "Update architecture"
+msgstr "Aggiorna architettura"
 
 msgid "Update content host information"
 msgstr "Aggiorna informazioni host di contenuto"
@@ -4406,7 +4778,11 @@ msgstr "Aggiornamento pacchetti remoto"
 msgid "Update the information about enabled repositories"
 msgstr "Aggiorna le informazioni sui repositori abilitati"
 
-# translation auto-copied from project anaconda, version 19.31.34, document anaconda, author fvalen
+msgid "Update without content"
+msgstr "Aggiorna senza contenuto"
+
+# translation auto-copied from project anaconda, version 19.31.34, document
+# anaconda, author fvalen
 msgid "Updates"
 msgstr "Aggiornamenti"
 
@@ -4416,11 +4792,13 @@ msgstr "Aggiorna un prodotto"
 msgid "Updating Package..."
 msgstr "Aggiornamento pacchetto in corso..."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "Updating package group..."
 msgstr "Aggiornamento gruppo di pacchetti..."
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Upload"
 msgstr "Carica"
 
@@ -4442,7 +4820,8 @@ msgstr "Carica in"
 msgid "Upload request id"
 msgstr "Carica l'id delle richieste"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Uploading"
 msgstr "Caricamento in corso"
 
@@ -4466,7 +4845,8 @@ msgid "User '%{user}' does not belong to Organization '%{organization}'."
 msgstr ""
 "L'utente '%{user}' non appartiene all'organizzazione '%{organization}'."
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "User Notifications"
 msgstr "Notifiche utente"
 
@@ -4476,7 +4856,8 @@ msgstr "L'utente non appartiene ad una organizzazione "
 msgid "User must be logged in."
 msgstr "L'utente deve essere registrato."
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid ""
 "User notifications lists all notifications generated by a user as well as "
 "global notifications that are sent to all users."
@@ -4484,31 +4865,41 @@ msgstr ""
 "Le Notifiche utente elencano tutte le notifiche generate da un utente "
 "insieme alle notifiche globali inviate a tutti gli utenti."
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "Validation Failed:"
 msgstr "Convalida fallita:"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 msgid "Value"
 msgstr "Valore"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman
+msgid "Value must be 0/1, or 'default'"
+msgstr "Il valore deve essere 0/1, o 'default'"
+
+# translation auto-copied from project Satellite6 Foreman, version 6.0,
+# document foreman
 msgid "Version"
 msgstr "Versione"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 msgid "Version:"
 msgstr "Versione:"
 
-# translation auto-copied from project rhn-client-tools, version 6.5, document rhn-client-tools
+# translation auto-copied from project rhn-client-tools, version 6.5, document
+# rhn-client-tools
 msgid "Version: "
 msgstr "Versione:"
 
-# translation auto-copied from project libpeas, version 1.8.0, document libpeas
+# translation auto-copied from project libpeas, version 1.8.0, document
+# libpeas
 msgid "View"
 msgstr "Visualizza"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "View %{view} has not been promoted to %{env}"
 msgstr "La visualizzazione %{view} non è stata avanzata su %{env}"
 
@@ -4530,24 +4921,29 @@ msgstr "Visualizzazione %X di %Y risultati"
 msgid "Viewing %X of %Y results (%Z Total)"
 msgstr "Visualizzazione %X di %Y risultati (%Z in totale)"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "Viewing %{current} of %{results} results (%{items} Total %{name})"
 msgstr ""
 "Visualizzazione %{current} di %{results} risultati (Totale %{items} %{name})"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet, author fvalen
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-
+# applet, author fvalen
 msgid "Virtual"
 msgstr "Virtuale"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document
+# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "Virtual Guest"
 msgstr "Guest virtuale"
 
-# translation auto-copied from project evolution-data-server, version el6, document evolution-data-server-2.32
+# translation auto-copied from project evolution-data-server, version el6,
+# document evolution-data-server-2.32
 msgid "Waiting"
 msgstr "In attesa"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.0,
+# document foreman
 msgid "Warning"
 msgstr "Attenzione"
 
@@ -4568,7 +4964,9 @@ msgstr ""
 msgid "Whether or not to show all results"
 msgstr "Indica se mostrare tutti i risultati"
 
-# translation auto-copied from project Customer Portal Translations, version RHJBossMiddlewareOperationsNetworkProduc, document RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version
+# RHJBossMiddlewareOperationsNetworkProduc, document
+# RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
 msgid "Yes"
 msgstr "Si"
 
@@ -4578,7 +4976,8 @@ msgstr "Non è possibile eseguire un avanzamanento negli ambienti %s"
 msgid "You are not allowed to publish Content View %s"
 msgstr "Non è possibile pubblicare la visualizzazione del contenuto %s"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "You are not authorised to perform this action."
 msgstr "Non sei autorizzato ad eseguire questa azione."
 
@@ -4606,7 +5005,8 @@ msgstr ""
 "Impossibile impostare parent_id sull'organizzazione. Questa funzione è "
 "disabilitata."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid ""
 "You do not currently have access to any organizations.  Please contact an "
 "administrator to get permission to access an organization."
@@ -4618,15 +5018,15 @@ msgid "You do not have permissions to delete %s"
 msgstr "Non sei in possesso dei permessi necessari per eliminare %s"
 
 msgid ""
-"You do not have valid credentials to access this system. Please contact your "
-"administrator."
+"You do not have valid credentials to access this system. Please contact your"
+" administrator."
 msgstr ""
 "Non sei in possesso di credenziali valide per accedere a questo sistema. "
 "Contatta il tuo amministratore."
 
 msgid ""
-"You have entered an incorrect username/password combination, or your account "
-"may currently be disabled. Please try again or contact your administrator."
+"You have entered an incorrect username/password combination, or your account"
+" may currently be disabled. Please try again or contact your administrator."
 msgstr ""
 "Hai inserito una combinazione password/nome utente incorretta, o il tuo "
 "account è stato disabilitato. Riprovare o contattare il tuo amministratore."
@@ -4634,11 +5034,13 @@ msgstr ""
 msgid "You have not set a default organization on the user %s."
 msgstr "Non hai impostato una organizzazione predefinita per l'utente %s."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "You may have mistyped the address or the page may have moved."
 msgstr "Hai digitato erroneamente l'indirizzo o la pagina è stata spostata."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "You might want to log out and log back in again to clear your cookies."
 msgstr ""
 "Esci e poi esegui nuovamente la registrazione per azzerare i tuoi cookie."
@@ -4646,7 +5048,8 @@ msgstr ""
 msgid "You must be logged in to access that page."
 msgstr "Per accedere quella pagina è necessario essere registrati."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid ""
 "You need to create an environment for this org before you can create a "
 "distributor."
@@ -4667,8 +5070,8 @@ msgid "You were not allowed to sync %s"
 msgstr "Non puoi sincronizzare %s"
 
 msgid ""
-"Your current organization is no longer valid. It is possible that either the "
-"organization has been deleted or your permissions revoked, please log back "
+"Your current organization is no longer valid. It is possible that either the"
+" organization has been deleted or your permissions revoked, please log back "
 "in to continue."
 msgstr ""
 "La tua organizzazione attuale non è più valida. Forse l'organizzazione è "
@@ -4755,8 +5158,8 @@ msgstr "non può essere vuoto "
 
 msgid "cannot be blank. Either provide all or no sync information."
 msgstr ""
-"non può essere vuoto . Inserire tutte le informazioni necessarie, oppure non "
-"inserire alcuna informazione per la sincronizzazione"
+"non può essere vuoto . Inserire tutte le informazioni necessarie, oppure non"
+" inserire alcuna informazione per la sincronizzazione"
 
 msgid "cannot be changed."
 msgstr "impossibile modificarlo."
@@ -4777,7 +5180,8 @@ msgid "cannot be set because unlimited content hosts is set"
 msgstr ""
 "impossibile impostarlo poichè è stato impostato host di contenuto illimitati"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "cannot contain blank keynames"
 msgstr "non può contenere nomi chiave vuoti"
 
@@ -4794,7 +5198,8 @@ msgstr ""
 "non può contenere i filtri dei repositori che non appartengono a questa "
 "visualizzazione del contenuto"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "cannot contain more than %s characters"
 msgstr "non può avere più di %s caratteri"
 
@@ -4845,11 +5250,13 @@ msgstr ""
 msgid "content view versions to compare"
 msgstr "versioni della visualizzazione del contenuto da confrontare"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "delete"
 msgstr "cancella"
 
-# translation auto-copied from project webkitgtk3, version 2.0.3, document webkitgtk3, author fvalen
+# translation auto-copied from project webkitgtk3, version 2.0.3, document
+# webkitgtk3, author fvalen
 msgid "description"
 msgstr "descrizione"
 
@@ -4859,16 +5266,10 @@ msgstr "descrizione dell'ambiente"
 msgid "description of the filter"
 msgstr "descrizione del filtro"
 
-# translation auto-copied from project rhsm-web, version 0.0, document management
+# translation auto-copied from project rhsm-web, version 0.0, document
+# management
 msgid "distributors"
 msgstr "distributori"
-
-msgid ""
-"either both parameters 'content_view_id' and 'environment_id' should be "
-"specified or neither should be specified"
-msgstr ""
-"entrambi i parametri 'content_view_id' e 'environment_id' devono essere "
-"specificati, in caso contrario non specificare alcun parametro"
 
 msgid "enables or disables synchronization"
 msgstr "abilita o disabilita la sincronizzazione"
@@ -4891,7 +5292,8 @@ msgstr "identificatore numerico ambiente"
 msgid "environment numeric identifiers to be removed"
 msgstr "identificatori numerici ambiente da rimuovere"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "environment required"
 msgstr "ambiente necessario"
 
@@ -4976,7 +5378,8 @@ msgstr "identificatore della chiave gpg"
 msgid "ids to filter content by"
 msgstr "id per filtrare il contenuto per"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "import"
 msgstr "importa"
 
@@ -5053,7 +5456,8 @@ msgstr "deve essere uno dei seguenti: %s"
 msgid "must be unique within one organization"
 msgstr "deve essere unico all'interno di una organizzazione"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "must contain '%s'"
 msgstr "deve avere '%s'"
 
@@ -5069,11 +5473,13 @@ msgstr "deve avere una chiave GPG pubblica valida"
 msgid "must contain valid Public GPG Key"
 msgstr "deve avere una chiave GPG pubblica valida"
 
-# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app,
+# author fvalen
 msgid "must not contain leading or trailing white spaces."
 msgstr "non deve avere spazi iniziali o finali."
 
-# translation auto-copied from project anaconda, version 19.31.34, document anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document
+# anaconda
 msgid "name"
 msgstr "nome"
 
@@ -5116,11 +5522,13 @@ msgstr "oggetti interessati con successo"
 msgid "obtain manifest history for subscriptions"
 msgstr "ottieni la cronologia del manifesto per le sottoscrizioni"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "of Unlimited"
 msgstr "di Illimitato"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "of environment must be unique within one organization"
 msgstr "ambiente deve essere unico all'interno di una organizzazione"
 
@@ -5172,7 +5580,8 @@ msgstr "rimozione gruppi di pacchetti in corso..."
 msgid "removing package..."
 msgstr "Rimozione pacchetto in corso..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app, author fvalen
+# translation auto-copied from project CFSE, version sam-1.2, document app,
+# author fvalen
 msgid "removing packages..."
 msgstr "Rimozione pacchetti in corso..."
 
@@ -5221,11 +5630,11 @@ msgstr ""
 "predefinita"
 
 msgid ""
-"specifies if content should be included or excluded, default: inclusion="
-"false"
+"specifies if content should be included or excluded, default: "
+"inclusion=false"
 msgstr ""
-"specifica se il contenuto deve essere incluso o escluso, default: inclusion="
-"false"
+"specifica se il contenuto deve essere incluso o escluso, default: "
+"inclusion=false"
 
 msgid "start datetime of synchronization"
 msgstr "data - ora d'inizio per la sincronizzazione"
@@ -5242,7 +5651,8 @@ msgstr "identificatore numerico per la programmazione della sincronizzazione"
 msgid "system identifier"
 msgstr "identificatore del sistema"
 
-# translation auto-copied from project rhsm-web, version 0.0, document management
+# translation auto-copied from project rhsm-web, version 0.0, document
+# management
 msgid "systems"
 msgstr "sistemi"
 
@@ -5255,8 +5665,8 @@ msgstr "url feed del repositorio originale"
 msgid ""
 "the following attributes can not be updated for the Red Hat provider: [ %s ]"
 msgstr ""
-"i seguenti attributi non possono essere caricati per il provider di Red Hat: "
-"[ %s ]"
+"i seguenti attributi non possono essere caricati per il provider di Red Hat:"
+" [ %s ]"
 
 msgid "the related failed task."
 msgstr "l'evento fallito relativo."
@@ -5291,6 +5701,7 @@ msgstr "Aggiornamento pacchetti in corso..."
 msgid "url not defined."
 msgstr "url non definito."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author fvalen
 msgid "version %s"
 msgstr "versione %s"
