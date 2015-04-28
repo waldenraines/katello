@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.37
+Version: 2.2.0.38
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,16 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Apr 28 2015 Mike McCune <mmccune@redhat.com> 2.2.0.38-1
+- Add in bastion strings from zanata. All but french are done
+  (bkearney@redhat.com)
+- Add in strings from zanata. All but french are done (bkearney@redhat.com)
+- fixes #10246 - hypervisors do not have pulp record (thomasmckay@redhat.com)
+- Fixes #10258: hide "published at" section if puppet BZ 1131940.
+  (walden@redhat.com)
+- fixes #10218 - incorrect usage of subscription guest host uuid
+  (thomasmckay@redhat.com)
+
 * Fri Apr 24 2015 Mike McCune <mmccune@redhat.com> 2.2.0.37-1
 - bump version (mmccune@redhat.com)
 
