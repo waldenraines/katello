@@ -7,16 +7,15 @@
 # ldelima <ldelima@redhat.com>, 2015. #zanata
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2015-03-18 01:28+0000\n"
+"PO-Revision-Date: 2015-04-23 02:07+0000\n"
 "Last-Translator: gcintra <gcintra@redhat.com>\n"
 "Language-Team: Portuguese (Brazil)\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Language: pt-BR\n"
-"X-Generator: Zanata 3.6.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Zanata 3.6.0\n"
 
 #: app/assets/javascripts/bastion_katello/activation-keys/activationKeyConsumed.filter.js
 #: app/assets/javascripts/bastion_katello/subscriptions/subscriptionConsumed.filter.js
@@ -40,6 +39,15 @@ msgstr "(Nem todas as Chaves de Ativação são editáveis)"
 msgid "(Not all Content Hosts editable )"
 msgstr "(Nem todas as Máquinas de Conteúdo são editáveis)"
 
+#: app/assets/javascripts/bastion_katello/errata/views/apply-errata-confirm.html
+msgid ""
+"* These marked Content View Versions are from Composite Content Views.  "
+"Their components needing updating are listed underneath."
+msgstr ""
+"*Estas Versões de Visualização de Conteúdo marcadas, são de Visualizações de"
+" Conteúdo de Composição. Seus componentes que precisam ser atualizados são "
+"listados abaixo."
+
 #: app/assets/javascripts/bastion_katello/products/new/views/product-new-form.html
 msgid "+ New Sync Plan"
 msgstr "+ Novo Plano de Sinc"
@@ -58,13 +66,38 @@ msgid_plural "{{ contentHost.virtual_guests.length }} Content Hosts"
 msgstr[0] "1 Host de Conteúdo"
 msgstr[1] "{{ contentHost.virtual_guests.length }} Hosts de Conteúdo "
 
+#: app/assets/javascripts/bastion_katello/products/views/partials/product-table-sync-status.html
+msgid "1 repository sync has errors."
+msgid_plural "{{ product.sync_summary.error}} repository syncs have errors."
+msgstr[0] "1 sincronização de repositório apresenta erros."
+msgstr[1] ""
+"{{ product.sync_summary.error}} sincronizações de repositório apresentam "
+"erros."
+
+#: app/assets/javascripts/bastion_katello/products/views/partials/product-table-sync-status.html
+msgid "1 repository sync in progress."
+msgid_plural ""
+"{{ product.sync_summary.pending}} repository syncs in progress.."
+msgstr[0] "1 sincronização de repositório está em desenvolvimento."
+msgstr[1] ""
+"{{ product.sync_summary.error}} sincronizações de repositório está em "
+"desenvolvimento."
+
+#: app/assets/javascripts/bastion_katello/products/views/partials/product-table-sync-status.html
+msgid "1 successfully synced repository."
+msgid_plural ""
+"{{ product.sync_summary.success}} successfully synced repositories."
+msgstr[0] "1 repositório sincronizado com sucesso."
+msgstr[1] ""
+"{{ product.sync_summary.success}} repositórios sincronizados com sucesso."
+
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-versions.html
 msgid ""
-"<a ui-sref=\"content-views.details.version.details({versionId: version."
-"id})\">Version {{ version.version }}</a>"
+"<a ui-sref=\"content-views.details.version.details({versionId: "
+"version.id})\">Version {{ version.version }}</a>"
 msgstr ""
-"<a ui-sref=\"content-views.details.version.details({versionId: version."
-"id})\">Version {{ version.version }}</a>"
+"<a ui-sref=\"content-views.details.version.details({versionId: "
+"version.id})\">Version {{ version.version }}</a>"
 
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-associations-activation-keys.html
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-associations-content-hosts.html
@@ -90,15 +123,13 @@ msgstr ""
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-activation-keys.html
 msgid ""
 "<span translate=\"\">\n"
-"        If you would prefer to move portions of these Activation Keys to "
-"different content views or Lifecycle Environments click\n"
+"        If you would prefer to move portions of these Activation Keys to different content views or Lifecycle Environments click\n"
 "      </span>\n"
 "      <a ui-sref=\"activation-keys.index({})\" translate=\"\">here</a>\n"
 "      <span translate=\"\">to manage them individually.</span>"
 msgstr ""
 "<span translate=\"\">\n"
-"       Caso você prefira mover as partes destas Chaves de Ativação para uma "
-"visualização de conteúdo diferente ou clique em Ambientes de Ciclo de Vida\n"
+"       Caso você prefira mover as partes destas Chaves de Ativação para uma visualização de conteúdo diferente ou clique em Ambientes de Ciclo de Vida\n"
 "      </span>\n"
 "      <a ui-sref=\"activation-keys.index({})\" translate=\"\">aqui</a>\n"
 "      <span translate=\"\">para gerenciá-los individualmente.</span>"
@@ -110,17 +141,14 @@ msgstr ""
 
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-publish.html
 msgid ""
-"A new version of {{ contentView.name }} will be created and promoted to the "
-"Library environment.\n"
-"    It can be promoted to other environments from the Versions tab of this "
-"Content View."
+"A new version of {{ contentView.name }} will be created and promoted to the Library environment.\n"
+"    It can be promoted to other environments from the Versions tab of this Content View."
 msgstr ""
-"Uma nova versão do {{ contentView.name }}  será criado e promovido para o "
-"ambiente da biblioteca.    \n"
-"Ele pode ser promovido para outros ambientes da aba Versões desta "
-"Visualização de Conteúdo."
+"Uma nova versão do {{ contentView.name }}  será criado e promovido para o ambiente da biblioteca.    \n"
+"Ele pode ser promovido para outros ambientes da aba Versões desta Visualização de Conteúdo."
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions-list.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-add-subscriptions.html
@@ -129,12 +157,14 @@ msgstr ""
 msgid "Account"
 msgstr "Conta"
 
-# translation auto-copied from project rhsm-web, version 0.0, document management
+# translation auto-copied from project rhsm-web, version 0.0, document
+# management
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-info.html
 msgid "Account Number"
 msgstr "Número da Conta"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details-history.html
 msgid "Action"
 msgstr "Ação"
@@ -143,7 +173,8 @@ msgstr "Ação"
 msgid "Action Type"
 msgstr "Tipo de Ação"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/content-view-deletion.html
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/views/content-view-puppet-module-names.html
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/views/content-view-puppet-module-versions.html
@@ -168,6 +199,10 @@ msgstr[1] "Chaves de Ativação"
 msgid "Activation Key Content"
 msgstr "Conteúdo de Chave de Ativação"
 
+#: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions.html
+msgid "Activation Key Type:"
+msgstr "Tipo de Chave de Ativação:"
+
 #: app/assets/javascripts/bastion_katello/activation-keys/details/activation-key-details.controller.js
 msgid "Activation Key removed."
 msgstr "Chave de Ativação removida."
@@ -176,7 +211,8 @@ msgstr "Chave de Ativação removida."
 msgid "Activation Key updated"
 msgstr "Chave de Ativação atualizada"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-details.html
 msgid "Activation Key:"
 msgstr "Chave de Ativação:"
@@ -185,7 +221,8 @@ msgstr "Chave de Ativação:"
 msgid "Activation Key: {{ activationKey.name }}"
 msgstr "Chave de Ativação:  {{ activationKey.name }}"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/activation-keys/views/activation-keys.html
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-breadcrumb.html
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-confirm.html
@@ -201,7 +238,8 @@ msgstr "Chaves de Ativação para Subscrição"
 msgid "Activation Keys using Version {{ version.version }}"
 msgstr "Chaves de Ativação usando a Versão  {{ version.version }}"
 
-# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author gcintra
+# translation auto-copied from project Customer Portal Translations, version
+# Portal-Case-Management, document Template, author gcintra
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-host-collections.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-subscriptions.html
@@ -229,7 +267,8 @@ msgstr "Adicionar Visualizações de Conteúdo"
 msgid "Add Errata"
 msgstr "Adicionar Errata"
 
-# translation auto-copied from project Red Hat Subscription Asset Manager, version 1.2, document Organizations, author gcintra
+# translation auto-copied from project Red Hat Subscription Asset Manager,
+# version 1.2, document Organizations, author gcintra
 #: app/assets/javascripts/bastion_katello/environments/views/environments.html
 msgid "Add New Environment"
 msgstr "Adicione Novo Ambiente"
@@ -250,13 +289,16 @@ msgstr "Adicionar Novo Repositório"
 msgid "Add Package Group"
 msgstr "Adicionar Grupo de Pacote"
 
-# translation auto-copied from project Cloudforms System Engine User Guide, version 1.1, document topics/Adding_Repositories_to_System_Templates, author gcintra
+# translation auto-copied from project Cloudforms System Engine User Guide,
+# version 1.1, document topics/Adding_Repositories_to_System_Templates, author
+# gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-docker-repositories.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-repositories.html
 msgid "Add Repositories"
 msgstr "Adicionar Repositórios"
 
-# translation auto-copied from project rhsm-web, version 0.0, document management
+# translation auto-copied from project rhsm-web, version 0.0, document
+# management
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-host-collections-table.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-add-subscriptions.html
@@ -287,11 +329,10 @@ msgid "Added %x products to sync plan \"%y\"."
 msgstr "Foram adicionados produtos %x para plano de sincronização \"%y\"."
 
 #: app/assets/javascripts/bastion_katello/environments/views/new-environment.html
-msgid ""
-"Adding Lifecycle Environment to the end of \"{{ priorEnvironment.name }}\""
+msgid "Adding Lifecycle Environment to the end of \"{{ priorEnvironment.name }}\""
 msgstr ""
-"Adicionando Ambiente de Ciclo de Vida ao final de \"{{ priorEnvironment.name "
-"}}\""
+"Adicionando Ambiente de Ciclo de Vida ao final de \"{{ priorEnvironment.name"
+" }}\""
 
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid "Advanced Information"
@@ -329,18 +370,28 @@ msgstr "Repositórios afetados"
 msgid "Affected repositories have been updated."
 msgstr "Repositórios afetados foram atualizados."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
+#: app/assets/javascripts/bastion_katello/environments/details/environment-content.controller.js
+msgid "All Content Views"
+msgstr "Todas as Visualizações de Conteúdo"
+
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/content-view-repositories.service.js
 msgid "All Products"
 msgstr "Todos os Produtos"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-views/versions/content-view-version-content.controller.js
+#: app/assets/javascripts/bastion_katello/environments/details/environment-content.controller.js
 #: app/assets/javascripts/bastion_katello/errata/errata.controller.js
 msgid "All Repositories"
 msgstr "Todos os Repositórios"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/package-filter-details.html
 msgid "All Versions"
 msgstr "Todas as Versões"
@@ -444,11 +495,21 @@ msgstr "Errata Aplicável"
 msgid "Applicable hosts for {{ erratum.errata_id }}"
 msgstr "Hosts aplicáveis para  {{ erratum.errata_id }}"
 
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-
+# applet
+#: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-errata.html
+msgid "Apply"
+msgstr "Aplicar"
+
 #: app/assets/javascripts/bastion_katello/errata/views/apply-errata-confirm.html
 #: app/assets/javascripts/bastion_katello/errata/views/apply-errata.html
 #: app/assets/javascripts/bastion_katello/errata/views/errata.html
 msgid "Apply Errata"
 msgstr "Aplicar Errata"
+
+#: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-errata.html
+msgid "Apply Errata to Content Host \"{{contentHost.name}}\"?"
+msgstr "Aplicar Errata ao Host de Conteúdo  \"{{contentHost.name}}\"?"
 
 #: app/assets/javascripts/bastion_katello/errata/details/views/errata-details-content-hosts.html
 msgid "Apply Errata to Content Hosts"
@@ -476,19 +537,19 @@ msgstr "Aplicar {{ errata.errata_id }}"
 
 #: app/assets/javascripts/bastion_katello/errata/views/apply-errata-confirm.html
 msgid ""
-"Apply {{ errata.errata_id }} to {{ selectedContentHosts.included.ids.length "
-"}} Content Host(s)?"
+"Apply {{ errata.errata_id }} to {{ numberOfContentHostsToUpdate }} Content "
+"Host(s)?"
 msgstr ""
-"Aplicar {{ errata.errata_id }} to {{ selectedContentHosts.included.ids."
-"length }} Host(s) de Conteúdo?"
+"Aplicar {{ errata.errata_id }} ao {{ numberOfContentHostsToUpdate }} Host(s)"
+" de Conteúdo?"
 
 #: app/assets/javascripts/bastion_katello/errata/views/apply-errata-confirm.html
 msgid ""
-"Apply {{ errataIds.length }} Errata to {{ selectedContentHosts.included.ids."
-"length }} Content Host(s)?"
+"Apply {{ errataIds.length }} Errata to {{ numberOfContentHostsToUpdate }} "
+"Content Host(s)?"
 msgstr ""
-"Aplicar {{ errataIds.length }} Errata to {{ selectedContentHosts.included."
-"ids.length }} Hosts de Conteúdo(s)?"
+"Aplicar {{ errataIds.length }} Errata to {{ numberOfContentHostsToUpdate }} "
+"Hosts de Conteúdo(s)?"
 
 #: app/assets/javascripts/bastion_katello/errata/views/apply-errata-confirm.html
 msgid "Applying"
@@ -498,9 +559,11 @@ msgstr "Aplicando"
 msgid "Applying Bulk Errata Update"
 msgstr "Aplicando Atualização da Errata em Massa"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-packages.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-packages.html
 msgid "Arch"
 msgstr "Arq"
 
@@ -520,13 +583,21 @@ msgstr ""
 "Você tem certeza de que deseja adicionar o(s) host(s) de conteúdo(s) {{ "
 "table.numSelected }} selecionado(s) à(s) coleção(ões) escolhida(s)?"
 
+#: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-errata.html
+msgid ""
+"Are you sure you want to apply Errata to content host \"{{ contentHost.name "
+"}}\"?"
+msgstr ""
+"Você tem certeza de que deseja aplicar Errata ao host de conteúdo \"{{ "
+"contentHost.name }}\"?"
+
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-errata.html
 msgid ""
 "Are you sure you want to apply the {{ detailsTable.numSelected }} selected "
 "errata to the content hosts chosen?"
 msgstr ""
-"Você tem certeza de que deseja aplicar a errata selecionada {{ detailsTable."
-"numSelected }} aos host de conteúdo escolhido(s)?"
+"Você tem certeza de que deseja aplicar a errata selecionada {{ "
+"detailsTable.numSelected }} aos host de conteúdo escolhido(s)?"
 
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-environment.html
 msgid ""
@@ -534,9 +605,9 @@ msgid ""
 "selected to {{ selected.contentView.name }} in {{ selected.environment.name "
 "}}?"
 msgstr ""
-"Você tem certeza de que deseja atribuir o(s) host(s) de conteúdo(s) {{ table."
-"numSelected }} selecionado(s) ao(s) {{ selected.contentView.name }} em {{ "
-"selected.environment.name }}?"
+"Você tem certeza de que deseja atribuir o(s) host(s) de conteúdo(s) {{ "
+"table.numSelected }} selecionado(s) ao(s) {{ selected.contentView.name }} em"
+" {{ selected.environment.name }}?"
 
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-subscriptions.html
 msgid ""
@@ -560,33 +631,64 @@ msgstr ""
 "Você tem certeza de que deseja instalar o {{ content.content }} no(s) "
 "sistema(s) {{ getSelectedSystemIds().length }} selecionado(s)?"
 
-#: app/assets/javascripts/bastion_katello/gpg-keys/details/views/gpg-key-details.html
-msgid "Are you sure you want to remove GPG key ' + gpgKey.name + '?"
-msgstr ""
-"Você tem certeza de que deseja remover a chave GPG ' + gpgKey.name + '?"
-
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-details.html
 msgid ""
-"Are you sure you want to remove activation key ' + activationKey.name + '?"
+"Are you sure you want to remove Activation Key \"{{ activationKey.name }}\"?"
 msgstr ""
-"Você tem certeza de que deseja remover a chave de ativação ' + activationKey."
-"name + '?"
+"Você tem certeza de que deseja remover a Chave de Ativação \"{{ "
+"activationKey.name }}\"?"
+
+#: app/assets/javascripts/bastion_katello/gpg-keys/details/views/gpg-key-details.html
+msgid "Are you sure you want to remove GPG key {{ gpgKey.name }}?"
+msgstr "Você tem certeza de que deseja remover a chave GPG {{ gpgKey.name }}?"
 
 #: app/assets/javascripts/bastion_katello/host-collections/details/views/host-collection-details.html
 msgid ""
-"Are you sure you want to remove host collection ' + hostCollection.name + '?"
+"Are you sure you want to remove Host Collection \"{{ hostCollection.name "
+"}}\"?"
 msgstr ""
-"Você tem certeza de que deseja remover a coleção do host ' + hostCollection."
-"name + '?"
+"Você tem certeza de que deseja remover o Host Collection \"{{ "
+"hostCollection.name }}\"?"
+
+#: app/assets/javascripts/bastion_katello/sync-plans/details/views/sync-plan-details.html
+msgid "Are you sure you want to remove Sync Plan \"{{ syncPlan.name }}\"?"
+msgstr ""
+"Você tem certeza de que deseja remover o Sync Plan \"{{ syncPlan.name }}\"?"
+
+#: app/assets/javascripts/bastion_katello/products/details/views/product-details.html
+msgid "Are you sure you want to remove product \"{{ product.name }}\"?"
+msgstr "Você tem certeza de que deseja remover o produto \"{{ product.name }}\"?"
+
+#: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
+msgid "Are you sure you want to remove repository \"{{ repository.name }}\"?"
+msgstr ""
+"Você tem certeza de que deseja remover repositório \"{{ repository.name "
+"}}\"?"
+
+#: app/assets/javascripts/bastion_katello/products/bulk/views/bulk-actions.html
+msgid ""
+"Are you sure you want to remove the {{ productTable.getSelected().length }} "
+"products(s) selected?"
+msgstr ""
+"Você tem certeza de que deseja remover o(s) produto(s) {{ "
+"productTable.getSelected().length }} selecionado(s)?"
+
+#: app/assets/javascripts/bastion_katello/products/details/views/product-repositories.html
+msgid ""
+"Are you sure you want to remove the {{ repositoriesTable.numSelected }} "
+"repositories selected?"
+msgstr ""
+"Você tem certeza de que deseja remover os repositórios {{ "
+"repositoriesTable.numSelected }} selecionados?"
 
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-host-collections.html
 msgid ""
 "Are you sure you want to remove the {{ table.numSelected }} content host(s) "
 "selected from the host collection(s) chosen?"
 msgstr ""
-"Você tem certeza de que deseja remover o(s) host(s) de conteúdo(s) {{ table."
-"numSelected }} content host(s) selecionado(s) a partir da(s) coleção (ões) "
-"escolhida(s)?"
+"Você tem certeza de que deseja remover o(s) host(s) de conteúdo(s) {{ "
+"table.numSelected }} content host(s) selecionado(s) a partir da(s) coleção "
+"(ões) escolhida(s)?"
 
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-packages.html
 msgid ""
@@ -595,6 +697,21 @@ msgid ""
 msgstr ""
 "Você tem certeza de que deseja remover o {{ content.content }} do(s) "
 "sistema(s) {{ getSelectedSystemIds().length }} selecionado(s)?"
+
+#: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-details.html
+msgid ""
+"Are you sure you want to unregister content host \"{{ contentHost.name }}\"?"
+msgstr ""
+"Você tem certeza de que deseja cancelar o registro do host de conteúdo \"{{ "
+"contentHost.name }}\"?"
+
+#: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions.html
+msgid ""
+"Are you sure you want to unregister the {{ contentHostTable.numSelected }} "
+"content host(s) selected?"
+msgstr ""
+"Você tem certeza de que deseja cancelar o registro do host de conteúdo {{ "
+"contentHostTable.numSelected }} selecionado?"
 
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-packages.html
 msgid ""
@@ -613,10 +730,11 @@ msgstr[0] ""
 "Como parte desta remoção, a Versão de Visualização de Conteúdo 1 será "
 "removida."
 msgstr[1] ""
-"Como parte desta remoção, as Versões de Visualização de Conteúdo {{ versions."
-"length }} serão removidas."
+"Como parte desta remoção, as Versões de Visualização de Conteúdo {{ "
+"versions.length }} serão removidas."
 
-# translation auto-copied from project oVirt, version ovirt-3.5, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants
+# translation auto-copied from project oVirt, version ovirt-3.5, document
+# frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-environment.html
 msgid "Assign"
 msgstr "Atribuir"
@@ -648,7 +766,8 @@ msgid ""
 msgstr ""
 "Ao menos um produto precisa ser selecionado para realizar uma ação em massa."
 
-# translation auto-copied from project oVirt, version ovirt-3.5, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants
+# translation auto-copied from project oVirt, version ovirt-3.5, document
+# frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions-list.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-add-subscriptions.html
@@ -661,16 +780,18 @@ msgstr "Conectado"
 msgid "Attached to Content Hosts"
 msgstr "Anexado aos Hosts de Conteúdo"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/views/content-view-puppet-module-versions.html
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/views/content-view-puppet-modules.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-versions.html
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-puppet-modules.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-puppet-modules.html
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-manage-puppet-modules.html
 msgid "Author"
 msgstr "Autor"
 
-#: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-info.html
+#: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-subscriptions.html
 msgid "Auto-Attach"
@@ -680,7 +801,8 @@ msgstr "Auto-conectar"
 msgid "Auto-attach available subscriptions to all content hosts"
 msgstr "Subscrições Auto-Attach diponíveis à todos os hosts de conteúdo."
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-
+# applet
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/subscriptions/subscriptionAttachAmountFilter.filter.js
@@ -697,7 +819,8 @@ msgstr ""
 msgid "Available Puppet Modules for Content View:"
 msgstr "Módulos Puppet Disponíveis para a Visualização de Conteúdo:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-activation-keys.html
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-confirm.html
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-content-hosts.html
@@ -733,7 +856,8 @@ msgstr "Retornar à Lista de Repositório"
 msgid "Back to Version List"
 msgstr "Retornar à Lista de Versão"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 #: app/assets/javascripts/bastion_katello/docker-tags/details/views/docker-tags-details.html
 #: app/assets/javascripts/bastion_katello/products/details/views/product-info.html
@@ -744,13 +868,13 @@ msgstr "Informações Básicas"
 
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-products.html
 msgid ""
-"Below are the product's repository content sets currently available for this "
-"subscription. For Red Hat subscriptions, additional content can be made "
+"Below are the product's repository content sets currently available for this"
+" subscription. For Red Hat subscriptions, additional content can be made "
 "available through the"
 msgstr ""
 "Abaixo seguem os conjuntos de conteúdo de repositórios de produtos "
-"disponíveis atualmente para esta subscrição. Para as subscrições da Red Hat, "
-"o conteúdo adicional pode ser disponibilizado através do"
+"disponíveis atualmente para esta subscrição. Para as subscrições da Red Hat,"
+" o conteúdo adicional pode ser disponibilizado através do"
 
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-products.html
 msgid ""
@@ -774,7 +898,8 @@ msgstr ""
 "subscrições da Red Hat, o conteúdo adicional pode ser disponibilizado "
 "através do"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-errata.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-errata.html
@@ -811,7 +936,8 @@ msgstr "Produtos de Sinc em Massa"
 msgid "CVEs"
 msgstr "CVEs"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version
+# 6.1, document foreman_discovery
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-details.html
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/content-view-deletion.html
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-activation-keys.html
@@ -827,7 +953,8 @@ msgstr "CVEs"
 msgid "Cancel"
 msgstr "Cancelar"
 
-# translation auto-copied from project anaconda, version 19.31.34, document anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document
+# anaconda
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-host-collections-table.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/host-collections-table.html
 msgid "Capacity"
@@ -852,8 +979,8 @@ msgid ""
 "Changing default settings requires subscription-manager version 1.10 or "
 "newer to be installed on this host."
 msgstr ""
-"Mudar as configurações padrão requer uma versão 1.10 do subscription-manager "
-"ou mais recente instalado neste host."
+"Mudar as configurações padrão requer uma versão 1.10 do subscription-manager"
+" ou mais recente instalado neste host."
 
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid "Checkin"
@@ -869,11 +996,24 @@ msgstr ""
 "Escolha um ambiente de ciclo de vida a partir dos caminhos de promoção "
 "disponíveis."
 
+#: app/assets/javascripts/bastion_katello/errata/views/errata.html
+msgid "Click here to check the status of the task."
+msgstr "Clique aqui para verificar o estado da tarefa."
+
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-errata.html
 msgid "Click here to refresh."
 msgstr "Clique aqui para atualizar."
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+#: app/assets/javascripts/bastion_katello/products/details/views/product-repositories.html
+msgid "Click here to see the task for the successful removals."
+msgstr "Clique aqui para ver a tarefa para remoções bem sucedidas."
+
+#: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-errata.html
+msgid "Click here to select Errata for an Incremental Update."
+msgstr "Clique aqui para selecionar Errata para uma Atualização Adicional."
+
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-details.html
 #: app/assets/javascripts/bastion_katello/activation-keys/new/views/activation-key-new.html
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions.html
@@ -909,26 +1049,37 @@ msgstr "Ações de Coleção"
 msgid "Completely remove version?"
 msgstr "Remover completamente a versão?"
 
-# translation auto-copied from project PressGang CCMS topics, version 1, document 30481-632191, author ldelima
+# translation auto-copied from project PressGang CCMS topics, version 1,
+# document 30481-632191, author ldelima
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version.html
 msgid "Components"
 msgstr "Componentes"
 
+#: app/assets/javascripts/bastion_katello/errata/views/apply-errata-confirm.html
+msgid "Components:"
+msgstr "Componentes:"
+
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details.html
 msgid "Composite Content View {{ contentView.name }}"
 msgstr "Visualização de Conteúdo de Composição {{ contentView.name }}?"
+
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-content-views.html
+msgid "Composite View"
+msgstr "Visualização de Composição"
 
 #: app/assets/javascripts/bastion_katello/content-views/new/views/content-view-new.html
 #: app/assets/javascripts/bastion_katello/content-views/views/content-views-table-full.html
 msgid "Composite View?"
 msgstr "Visualização de Composição?"
 
-# translation auto-copied from project Satellite6 Katello, version 6.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version 6.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-info.html
 msgid "Composite?"
 msgstr "Composição?"
 
-# translation auto-copied from project PressGang CCMS topics, version 1, document 3764-431867, author ldelima
+# translation auto-copied from project PressGang CCMS topics, version 1,
+# document 3764-431867, author ldelima
 #: app/assets/javascripts/bastion_katello/errata/views/apply-errata-confirm.html
 msgid "Confirm"
 msgstr "Confirmação"
@@ -941,12 +1092,14 @@ msgstr "Confirmar Remover"
 msgid "Confirm Version Removal: Version {{ version.version }}"
 msgstr "Confirmar Remoção da Versão: Versão  {{ version.version }}"
 
-# translation auto-copied from project gnome-packagekit, version 3.8.2, document gnome-packagekit
+# translation auto-copied from project gnome-packagekit, version 3.8.2,
+# document gnome-packagekit
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-breadcrumb.html
 msgid "Confirmation"
 msgstr "Confirmação"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/activation-keys/views/activation-keys-table-full.html
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-info.html
 #: app/assets/javascripts/bastion_katello/subscriptions/views/subscriptions-table-collapsed.html
@@ -954,11 +1107,8 @@ msgstr "Confirmação"
 msgid "Consumed"
 msgstr "Consumido"
 
-#: app/assets/javascripts/bastion_katello/content-hosts/views/register.html
-msgid "Consuming Content From a Capsule"
-msgstr "Consumir o Conteúdo de uma Capsula"
-
-# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document appe-Glossary_of_Terms, author gcintra
+# translation auto-copied from project Red Hat Satellite User Guide, version
+# 6.0, document appe-Glossary_of_Terms, author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/filter-repositories.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-composite-available-content-views.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-composite-content-views-list.html
@@ -1089,14 +1239,16 @@ msgstr "Hosts de Conteúdo para:"
 msgid "Content Hosts using Version {{ version.version }}"
 msgstr "Hosts de Conteúdo usando a Versão  {{ version.version }}"
 
-# translation auto-copied from project oVirt, version ovirt-3.5, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants
+# translation auto-copied from project oVirt, version ovirt-3.5, document
+# frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/filters.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/new-filter.html
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
 msgid "Content Type"
 msgstr "Tipo de Conteúdo"
 
-# translation auto-copied from project Satellite6 Katello, version 6.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version 6.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-associations-content-hosts.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-info.html
 #: app/assets/javascripts/bastion_katello/activation-keys/new/views/activation-key-new.html
@@ -1113,7 +1265,8 @@ msgstr "Tipo de Conteúdo"
 msgid "Content View"
 msgstr "Visualização de Conteúdo"
 
-# translation auto-copied from project Satellite6 Hammer CLI Katello, version 6.1, document hammer-cli-katello
+# translation auto-copied from project Satellite6 Hammer CLI Katello, version
+# 6.1, document hammer-cli-katello
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-components.html
 msgid "Content View Name"
 msgstr "Nome de visualização de conteúdo"
@@ -1126,7 +1279,8 @@ msgstr "Versão de Visualização de Conteúdo"
 msgid "Content View updated."
 msgstr "Visualização de Conteúdo atualizada"
 
-# translation auto-copied from project Satellite6 Katello, version 6.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version 6.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-environment.html
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-activation-keys.html
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-content-hosts.html
@@ -1134,10 +1288,12 @@ msgstr "Visualização de Conteúdo atualizada"
 msgid "Content View:"
 msgstr "Visualização de Conteúdo:"
 
-# translation auto-copied from project Satellite6 Katello, version 6.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version 6.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details.html
 #: app/assets/javascripts/bastion_katello/content-views/views/content-views.html
 #: app/assets/javascripts/bastion_katello/environments/views/environments.html
+#: app/assets/javascripts/bastion_katello/environments/content.service.js
 msgid "Content Views"
 msgstr "Visualização de Conteúdo"
 
@@ -1159,7 +1315,8 @@ msgstr "O  Conteúdo foi carregado com êxito"
 msgid "Contents"
 msgstr "Conteúdos"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions-list.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-add-subscriptions.html
@@ -1168,12 +1325,14 @@ msgstr "Conteúdos"
 msgid "Contract"
 msgstr "Contrato"
 
-# translation auto-copied from project subscription-manager, version 1.8.13, document subscription-manager
+# translation auto-copied from project subscription-manager, version 1.8.13,
+# document subscription-manager
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-info.html
 msgid "Contract Number"
 msgstr "Número de Contrato"
 
-# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document
+# gnome-control-center-2.0
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-details.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details.html
 #: app/assets/javascripts/bastion_katello/host-collections/details/views/host-collection-details.html
@@ -1197,12 +1356,14 @@ msgstr "Copiar Visualização"
 msgid "Cores per Socket"
 msgstr "Núcleos para Soquete"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/details/subscription-details.controller.js
 msgid "Cores: %s"
 msgstr "Núcleos: %s"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author gcintra
+# translation auto-copied from project NetworkManager, version 0.9.9.0,
+# document NetworkManager, author gcintra
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-details.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details.html
 #: app/assets/javascripts/bastion_katello/host-collections/details/views/host-collection-details.html
@@ -1213,7 +1374,8 @@ msgstr "Criar"
 msgid "Create New View"
 msgstr "Criar Nova Visualização"
 
-# translation auto-copied from project Satellite6 Katello, version 6.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version 6.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/products/discovery/views/discovery-create.html
 msgid "Create Repositories"
 msgstr "Criar repositórios"
@@ -1222,7 +1384,8 @@ msgstr "Criar repositórios"
 msgid "Create Repositories Within:"
 msgstr "Criar Repositórios Dentro:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/products/details/views/product-repositories.html
 msgid "Create Repository"
 msgstr "Criar Repositório"
@@ -1243,7 +1406,8 @@ msgstr "Criar Nova Visualização"
 msgid "Create view from existing views"
 msgstr "Criar Visualizações de visualizações Existentes"
 
-# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document
+# evolution-3.8
 #: app/assets/javascripts/bastion_katello/errata/errata-severity.filter.js
 msgid "Critical"
 msgstr "Crítico"
@@ -1260,7 +1424,8 @@ msgstr "Subscrições atuais para Chave de Ativação:"
 msgid "Currently Selected Puppet Modules"
 msgstr "Módulos Puppet Selecionado Atualmente"
 
-# translation auto-copied from project Satellite6 Katello, version 6.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version 6.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid "Custom Information"
 msgstr "Informação Padronizada"
@@ -1272,7 +1437,8 @@ msgstr ""
 "Diariamente em  {{ product.sync_plan.sync_date | date:'mediumTime' }} "
 "(Server Time)"
 
-# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document
+# evolution-3.8
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-events.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details-history.html
 #: app/assets/javascripts/bastion_katello/tasks/views/tasks-table.html
@@ -1280,18 +1446,21 @@ msgstr ""
 msgid "Date"
 msgstr "Data"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/products/details/product-repositories.controller.js
 #: app/assets/javascripts/bastion_katello/repositories/details/repository-details-info.controller.js
 msgid "Default"
 msgstr "Padrão"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/content-view-deletion.html
 msgid "Delete"
 msgstr "Remover"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-import.html
 msgid "Delete Manifest"
 msgstr "Remover Manifesto"
@@ -1320,12 +1489,14 @@ msgstr "Removendo de ambientes %count"
 msgid "Deleting from 1 environment."
 msgstr "Removendo de 1 ambiente"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/content-view-versions.controller.js
 msgid "Deletion from %s"
 msgstr "Remoção de %s"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
+# 6.1, document hammer-cli-foreman
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-host-collections-table.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-info.html
 #: app/assets/javascripts/bastion_katello/activation-keys/new/views/activation-key-new.html
@@ -1361,12 +1532,14 @@ msgstr "Remoção de %s"
 msgid "Description"
 msgstr "Descrição"
 
-# translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.5-branded, document jasperserver_messages
+# translation auto-copied from project oVirt Engine jrs Branding, version
+# JRS-5.5-branded, document jasperserver_messages
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/package-filter-details.html
 msgid "Detail"
 msgstr "Detalhe"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-details.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-details.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
@@ -1400,7 +1573,8 @@ msgstr "Detalhes para Visualização de Contéudo:"
 msgid "Details for Product:"
 msgstr "Detalhes para Produto:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author ldelima
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author ldelima
 #: app/assets/javascripts/bastion_katello/products/discovery/views/discovery.html
 msgid "Discover"
 msgstr "Descoberta"
@@ -1413,7 +1587,8 @@ msgstr "URLs descobertas"
 msgid "Docker Content"
 msgstr "Conteúdo do Docker"
 
-# translation auto-copied from project Customer Portal Translations, version 012_June_RHEL, document downloads.html, author gcintra
+# translation auto-copied from project Customer Portal Translations, version
+# 012_June_RHEL, document downloads.html, author gcintra
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
 msgid "Docker Images"
 msgstr "Imagens Docker"
@@ -1430,8 +1605,8 @@ msgstr "Repositórios do Docker"
 msgid ""
 "Docker Repositories <div>{{ library.counts.docker_repositories || 0 }}</div>"
 msgstr ""
-"Repositórios do Docker <div>{{ library.counts.docker_repositories || 0 }}</"
-"div>"
+"Repositórios do Docker <div>{{ library.counts.docker_repositories || 0 "
+"}}</div>"
 
 #: app/assets/javascripts/bastion_katello/docker-tags/details/views/docker-tags-details.html
 msgid "Docker Tag:"
@@ -1439,6 +1614,7 @@ msgstr "Docker Tag:"
 
 #: app/assets/javascripts/bastion_katello/docker-tags/views/docker-tags.html
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
+#: app/assets/javascripts/bastion_katello/environments/content.service.js
 msgid "Docker Tags"
 msgstr "Docker Tags"
 
@@ -1450,29 +1626,34 @@ msgstr ""
 "Geração de metadados de Docker foi iniciado no pano de fundo. Clique \n"
 "em  <a ng-href=\"{{ taskUrl() }}\">Here</a> para monitorar o progresso."
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/package-filter-details.html
 msgid "Edit"
 msgstr "Editar"
 
-# translation auto-copied from project Satellite6 Katello, version 6.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version 6.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-products.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-products.html
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-products.html
 msgid "Enabled?"
 msgstr "Habilitado?"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/date-type-errata.html
 msgid "End Date"
 msgstr "Data Final"
 
-# translation auto-copied from project evolution, version el6, document evolution-2.32
+# translation auto-copied from project evolution, version el6, document
+# evolution-2.32
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-info.html
 msgid "Ends"
 msgstr "Termina"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-errata.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/date-type-errata.html
@@ -1491,7 +1672,8 @@ msgstr "insira um Nome de Grupo de Pacote..."
 msgid "Enter Package Name(s)..."
 msgstr "Insira Nome(s) de Pacote"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-associations-content-hosts.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-info.html
 #: app/assets/javascripts/bastion_katello/activation-keys/new/views/activation-key-new.html
@@ -1519,7 +1701,8 @@ msgstr "Ambiente Salvo"
 msgid "Environment: {{ environment.name }}"
 msgstr "Ambiente: {{ environment.name }}"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
+# 6.1, document hammer-cli-foreman
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-confirm.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-versions.html
 #: app/assets/javascripts/bastion_katello/content-views/views/content-views-table-full.html
@@ -1539,14 +1722,15 @@ msgstr "Ambientes:"
 msgid "Equal To"
 msgstr "Igual a"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-details.html
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version.html
-#: app/assets/javascripts/bastion_katello/environments/details/views/environment.html
 #: app/assets/javascripts/bastion_katello/errata/views/errata.html
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/filter-helper.service.js
+#: app/assets/javascripts/bastion_katello/environments/content.service.js
 msgid "Errata"
 msgstr "Errata"
 
@@ -1563,7 +1747,8 @@ msgstr "Detalhes da Errata"
 msgid "Errata Filter:"
 msgstr "Filtro da Errata:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/errata-filter-details.html
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-errata.html
 #: app/assets/javascripts/bastion_katello/environments/details/views/environment-errata.html
@@ -1646,12 +1831,14 @@ msgstr "Erro ao atualizar manifesto."
 msgid "Event"
 msgstr "Evento"
 
-# translation auto-copied from project shotwell-core, version 0.14.1, document shotwell-core
+# translation auto-copied from project shotwell-core, version 0.14.1, document
+# shotwell-core
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-details.html
 msgid "Events"
 msgstr "Eventos"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/new-filter.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/filter-helper.service.js
 msgid "Exclude"
@@ -1669,7 +1856,8 @@ msgstr "Itens existentes"
 msgid "Existing Product"
 msgstr "Produto Existente"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions-list.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-add-subscriptions.html
@@ -1678,7 +1866,8 @@ msgstr "Produto Existente"
 msgid "Expires"
 msgstr "Expira"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-packages.html
 msgid "Failed"
 msgstr "Falhou"
@@ -1687,7 +1876,8 @@ msgstr "Falhou"
 msgid "File too large. Please use the CLI instead."
 msgstr "Arquivo muito grande. Por favor use o CLI."
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-host-collections-table.html
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-packages.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
@@ -1717,18 +1907,21 @@ msgstr "Filtro salvo"
 msgid "Filter information for:"
 msgstr "Informações de filtro para:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-composite-available-content-views.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-composite-content-views-list.html
 msgid "Filter..."
 msgstr "Filtro..."
 
-# translation auto-copied from project rhsm-web, version 0.0, document management
+# translation auto-copied from project rhsm-web, version 0.0, document
+# management
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/filter-details.html
 msgid "Filter:"
 msgstr "Filtro:"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/filter-details.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/filters.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details.html
@@ -1759,7 +1952,8 @@ msgstr ""
 "Para sistemas operacionais como o Red Hat Enterprise Linux 5 ou CentOS 5 "
 "recomendamos que utilize o sha1."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/products/details/views/product-info.html
 #: app/assets/javascripts/bastion_katello/products/discovery/views/discovery-create.html
 #: app/assets/javascripts/bastion_katello/products/new/views/product-new-form.html
@@ -1780,17 +1974,20 @@ msgstr "Chave GPG foi carregada com sucesso"
 msgid "GPG Key {{ gpgKey.name }}"
 msgstr "Chave GPG {{ gpgKey.name }}"
 
-# translation auto-copied from project PressGang CCMS topics, version 1, document 31337-708757, author gcintra
+# translation auto-copied from project PressGang CCMS topics, version 1,
+# document 31337-708757, author gcintra
 #: app/assets/javascripts/bastion_katello/gpg-keys/views/gpg-keys.html
 msgid "GPG Keys"
 msgstr "Chaves GPG"
 
-# translation auto-copied from project [RHEL] [SECURITY] SELinux Managing Confined Services Guide, version 6.4, document References, author gcintra
+# translation auto-copied from project [RHEL] [SECURITY] SELinux Managing
+# Confined Services Guide, version 6.4, document References, author gcintra
 #: app/assets/javascripts/bastion_katello/repositories/new/views/repository-new.html
 msgid "General Information"
 msgstr "Informações Gerais"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-details.html
 msgid "Generated On"
 msgstr "Gerar em"
@@ -1827,7 +2024,8 @@ msgstr "Esconder as Chaves de Ativação Afetadas"
 msgid "Hide affected Content Hosts"
 msgstr "Esconder Hosts de Conteúdo Afetados"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details.html
 msgid "History"
 msgstr "Histórico"
@@ -1882,12 +2080,14 @@ msgstr "Coleções de Máquina para:"
 msgid "Host Count"
 msgstr "Contagem de Host"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
+# 6.1, document hammer-cli-foreman
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-provisioning-info.html
 msgid "Host Group"
 msgstr "Grupo de Host"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author gcintra
+# translation auto-copied from project NetworkManager, version 0.9.9.0,
+# document NetworkManager, author gcintra
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid "Hostname"
 msgstr "Hostname"
@@ -1900,17 +2100,20 @@ msgstr ""
 "A cada hora em {{ product.sync_plan.sync_date | date:'m' }} minutos e {{ "
 "product.sync_plan.sync_date | date:'s' }} segundos"
 
-# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document
+# gnome-control-center-2.0
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid "IPv4 Address"
 msgstr "Endereço IPv4"
 
-# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document
+# gnome-control-center-2.0
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid "IPv6 Address"
 msgstr "Endereço IPv6"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
+# 6.1, document hammer-cli-foreman
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-errata.html
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-errata.html
 msgid "Id"
@@ -1923,8 +2126,8 @@ msgid ""
 "activationKeyLink() }}\">here</a> to manage them individually."
 msgstr ""
 "se você preferir transferir partes destas Chaves de Ativação para "
-"visualizações de conteúdo diferentes ou Ambientes de Ciclo de Vida clique em "
-"  <a href=\"{{ activationKeyLink() }}\">here</a> para gerenciá-los "
+"visualizações de conteúdo diferentes ou Ambientes de Ciclo de Vida clique em"
+"   <a href=\"{{ activationKeyLink() }}\">here</a> para gerenciá-los "
 "individualmente."
 
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-activation-keys.html
@@ -1933,8 +2136,8 @@ msgid ""
 "content views or Lifecycle Environments click"
 msgstr ""
 "se você preferir transferir partes destas Chaves de Ativação para "
-"visualizações de conteúdo diferentes ou Ambientes de Ciclo de Vida clique em "
-""
+"visualizações de conteúdo diferentes ou Ambientes de Ciclo de Vida clique em"
+" "
 
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-content-hosts.html
 msgid ""
@@ -1947,35 +2150,40 @@ msgstr ""
 "contentHostsLink() }}\">here</a>  para gerenciar estes Hosts de conteúdo em "
 "massa."
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
+# 6.1, document hammer-cli-foreman
 #: app/assets/javascripts/bastion_katello/docker-tags/details/views/docker-tags-details.html
 msgid "Image"
 msgstr "Imagem"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-manage-docker-images.html
 msgid "Image ID"
 msgstr "ID de Imagem"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest.html
 msgid "Import History"
 msgstr "Importar Histórico"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/errata/errata-severity.filter.js
 msgid "Important"
 msgstr "Importante"
 
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-composite-available-content-views.html
 msgid ""
-"In order to add a content view to a composite view you must first publish an "
-"initial version of the content view."
+"In order to add a content view to a composite view you must first publish an"
+" initial version of the content view."
 msgstr ""
-"Para adicionar uma visualização de conteúdo a uma visualização de composição "
-"você deve primeiro publicar uma versão inicial de visualização de conteúdo."
+"Para adicionar uma visualização de conteúdo a uma visualização de composição"
+" você deve primeiro publicar uma versão inicial de visualização de conteúdo."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/new-filter.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/filter-helper.service.js
 msgid "Include"
@@ -1993,7 +2201,8 @@ msgstr "Incluído em Chaves de Ativação"
 msgid "Incremental Update"
 msgstr "Atualização Incremental"
 
-# translation auto-copied from project anaconda, version 19.31.34, document anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document
+# anaconda
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-packages.html
 msgid "Install"
 msgstr "Instalar"
@@ -2004,11 +2213,14 @@ msgstr "Instalar Selecionado"
 
 #: app/assets/javascripts/bastion_katello/content-hosts/views/register.html
 msgid ""
-"Install the pre-built bootstrap RPM. This will configure the host to use "
-"this server."
+"Install katello-agent for remote actions and displaying errata information:"
 msgstr ""
-"Instalar o RPM do bootstrap pré-construído. Isto irá configurar o host para "
-"usar este serviço."
+"Instalar katello-agent para ações remotas e exibição de informações de "
+"errata:"
+
+#: app/assets/javascripts/bastion_katello/content-hosts/views/register.html
+msgid "Install the pre-built bootstrap RPM:"
+msgstr "Instalar o RPM do bootstrap pré-construído:"
 
 #: app/assets/javascripts/bastion_katello/errata/views/errata.html
 msgid "Installable"
@@ -2020,7 +2232,8 @@ msgstr "Instaláveis"
 msgid "Installable Errata"
 msgstr "Errata Instalável"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid "Installed"
 msgstr "Instalado"
@@ -2029,27 +2242,32 @@ msgstr "Instalado"
 msgid "Installed Package"
 msgstr "Pacote instalado"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-packages.html
 msgid "Installed Packages"
 msgstr "Pacotes Instalados"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid "Installed Products"
 msgstr "Produtos Instalados"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-info.html
 msgid "Instance-based"
 msgstr "Baseado em instância"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid "Interfaces"
 msgstr "Interfaces"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/products/bulk/views/bulk-actions-sync-plan.html
 #: app/assets/javascripts/bastion_katello/sync-plans/details/views/sync-plan-info.html
 #: app/assets/javascripts/bastion_katello/sync-plans/new/views/new-sync-plan-form.html
@@ -2057,7 +2275,8 @@ msgstr "Interfaces"
 msgid "Interval"
 msgstr "Intervalo"
 
-# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document
+# evolution-3.8
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-errata.html
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/errata-details.html
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-errata.html
@@ -2071,7 +2290,8 @@ msgstr "Emitido"
 msgid "Katello Agent"
 msgstr "Agente do Katello "
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-info.html
 #: app/assets/javascripts/bastion_katello/content-views/new/views/content-view-new.html
 #: app/assets/javascripts/bastion_katello/environments/details/views/environment-details.html
@@ -2089,6 +2309,7 @@ msgid "Last Checkin"
 msgstr "Último Checkin"
 
 #: app/assets/javascripts/bastion_katello/content-views/views/content-views-table-full.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-content-views.html
 msgid "Last Published"
 msgstr "Último Publicado"
 
@@ -2104,7 +2325,8 @@ msgstr "Último Relatório de Puppet"
 msgid "Last Sync"
 msgstr "Última Sinc"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-details.html
 msgid "Last Updated"
 msgstr "Atualizado Em"
@@ -2114,8 +2336,8 @@ msgid "Last Updated On"
 msgstr "Atualizado em"
 
 #: app/assets/javascripts/bastion_katello/products/views/partials/product-table-sync-status.html
-msgid "Last synced {{ product.last_sync_words }} ago"
-msgstr "Última sincronização  {{ product.last_sync_words }} atrás"
+msgid "Last synced {{ product.last_sync_words }} ago."
+msgstr "Última sincronização  {{ product.last_sync_words }} atrás."
 
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/content-view-puppet-modules.controller.js
 msgid "Latest (Currently %s)"
@@ -2125,7 +2347,8 @@ msgstr "Mais recente (Atualmente %s)"
 msgid "Less Than"
 msgstr "Menor do que"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document appe-Glossary_of_Terms, author gcintra
+# translation auto-copied from project Red Hat Satellite User Guide, version
+# 6.0, document appe-Glossary_of_Terms, author gcintra
 #: app/assets/javascripts/bastion_katello/environments/views/environments.html
 msgid "Library"
 msgstr "Biblioteca"
@@ -2137,8 +2360,8 @@ msgstr "Conteúdo de Biblioteca Sincronizado "
 #: app/assets/javascripts/bastion_katello/environments/views/new-environment.html
 msgid ""
 "Lifecycle Environment \"{{ priorEnvironment.name }}\" exists within the "
-"middle of a path. New Lifecycle Environments can only be added to the end of "
-"a path."
+"middle of a path. New Lifecycle Environments can only be added to the end of"
+" a path."
 msgstr ""
 "Ambiente de Ciclo de Vida \"{{ priorEnvironment.name }}\" existe dentro do "
 "meio de um caminho. Ambientes Novos de Ciclo de Vida só podem ser "
@@ -2148,14 +2371,18 @@ msgstr ""
 msgid "Lifecycle Environment Paths"
 msgstr "Caminho de Ambiente de Ciclo de Vida"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document chap-Configuring_Organizations_Locations_and_Lifecycle_Environments, author gcintra
+# translation auto-copied from project Red Hat Satellite User Guide, version
+# 6.0, document chap-
+# Configuring_Organizations_Locations_and_Lifecycle_Environments, author
+# gcintra
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/content-view-deletion.html
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-activation-keys.html
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-breadcrumb.html
 msgid "Lifecycle Environments"
 msgstr "Ambientes de Ciclo de Vida"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/activation-keys/new/views/activation-key-new.html
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-host-collections.html
 #: app/assets/javascripts/bastion_katello/host-collections/new/views/host-collection-new-form.html
@@ -2163,13 +2390,15 @@ msgstr "Ambientes de Ciclo de Vida"
 msgid "Limit"
 msgstr "Limite"
 
-# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document
+# evolution-3.8
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-info.html
 #: app/assets/javascripts/bastion_katello/host-collections/details/views/host-collection-info.html
 msgid "Limit:"
 msgstr "Limite:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-info.html
 msgid "Limits"
 msgstr "Limites"
@@ -2192,7 +2421,8 @@ msgstr "Listar/Remover"
 msgid "Loading Environment Paths..."
 msgstr "Carregando Caminhos de Ambiente..."
 
-# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document
+# evolution-3.8
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-details.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-host-collections-table.html
@@ -2244,7 +2474,8 @@ msgstr "Gerenciar Imagens de Docker para o Repositório:"
 msgid "Manage Manifest"
 msgstr "Gerenciar Manifesto"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
 msgid "Manage Packages"
 msgstr "Gerenciar Pacotes"
@@ -2261,7 +2492,8 @@ msgstr "Gerenciar Módulos do Puppet"
 msgid "Manage Puppet Modules for Repository:"
 msgstr "Gerenciar Módulos do Puppet para Repositório:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-import.html
 msgid "Manifest History"
 msgstr "Histórico do Manifesto"
@@ -2278,18 +2510,21 @@ msgstr "Manifesto importado com sucesso"
 msgid "Manifest successfully refreshed."
 msgstr "Manifesto atualizado com sucesso."
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
+# 6.1, document hammer-cli-foreman
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-events.html
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-import-history.html
 msgid "Message"
 msgstr "Mensagem"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version
+# 6.1, document foreman_discovery
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-provisioning-info.html
 msgid "Model"
 msgstr "Modelo"
 
-# translation auto-copied from project PressGang CCMS topics, version 1, document 13447-377339, author ldelima
+# translation auto-copied from project PressGang CCMS topics, version 1,
+# document 13447-377339, author ldelima
 #: app/assets/javascripts/bastion_katello/errata/errata-severity.filter.js
 msgid "Moderate"
 msgstr "Moderada"
@@ -2303,22 +2538,26 @@ msgstr "Foi removido o módulo %s da visualização de conteúdo"
 msgid "Module List"
 msgstr "Lista de Módulo"
 
-# translation auto-copied from project policycoreutils, version 2.1.14, document policycoreutils, author gcintra
+# translation auto-copied from project policycoreutils, version 2.1.14,
+# document policycoreutils, author gcintra
 #: app/assets/javascripts/bastion_katello/tasks/views/task-details.html
 msgid "More Details"
 msgstr "Mais detalhes"
 
-# translation auto-copied from project policycoreutils, version 2.1.14, document policycoreutils, author gcintra
+# translation auto-copied from project policycoreutils, version 2.1.14,
+# document policycoreutils, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-import.html
 msgid "More..."
 msgstr "Mais..."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-info.html
 msgid "Multi-entitlement"
 msgstr "Direitos à Serviços Múltiplos"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0, document locale/foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.0,
+# document locale/foreman
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/filter-repositories.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-docker-repositories.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-repositories.html
@@ -2329,7 +2568,8 @@ msgstr "Direitos à Serviços Múltiplos"
 msgid "N/A"
 msgstr "Não está disponível"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-associations-content-hosts.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-host-collections-table.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-info.html
@@ -2368,7 +2608,12 @@ msgstr "Não está disponível"
 #: app/assets/javascripts/bastion_katello/content-views/views/content-views-table-full.html
 #: app/assets/javascripts/bastion_katello/docker-tags/views/docker-tags-table-collapsed.html
 #: app/assets/javascripts/bastion_katello/docker-tags/views/docker-tags-table-full.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-content-views.html
 #: app/assets/javascripts/bastion_katello/environments/details/views/environment-details.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-docker.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-packages.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-puppet-modules.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-repositories.html
 #: app/assets/javascripts/bastion_katello/environments/views/new-environment.html
 #: app/assets/javascripts/bastion_katello/errata/details/views/errata-details-content-hosts.html
 #: app/assets/javascripts/bastion_katello/errata/details/views/errata-details-repositories.html
@@ -2412,10 +2657,11 @@ msgid ""
 "Name of the upstream repository you want to sync. Example: 'busybox' or "
 "'fedora/ssh'."
 msgstr ""
-"Nome do repositório de upstream que deseja sincronizar. Exemplo: \"busybox\" "
-"ou \"fedora / ssh '. "
+"Nome do repositório de upstream que deseja sincronizar. Exemplo: \"busybox\""
+" ou \"fedora / ssh '. "
 
-# translation auto-copied from project RHEL Installation Guide, version 7.0, document S390_References, author gcintra
+# translation auto-copied from project RHEL Installation Guide, version 7.0,
+# document S390_References, author gcintra
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid "Networking"
 msgstr "Networking"
@@ -2424,7 +2670,8 @@ msgstr "Networking"
 msgid "Never synced"
 msgstr "Nunca sincronizado"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/activation-keys/new/views/activation-key-new.html
 #: app/assets/javascripts/bastion_katello/activation-keys/views/activation-keys.html
 msgid "New Activation Key"
@@ -2434,7 +2681,8 @@ msgstr "Nova Chave de Ativação"
 msgid "New Content View"
 msgstr "Nova Visualização de Conteúdo"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/environments/views/new-environment.html
 msgid "New Environment"
 msgstr "Novo Ambiente"
@@ -2443,7 +2691,8 @@ msgstr "Novo Ambiente"
 msgid "New Environment Path"
 msgstr "Novo Caminho de Ambiente"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/filters.html
 msgid "New Filter"
 msgstr "Novo Filtro"
@@ -2452,7 +2701,8 @@ msgstr "Novo Filtro"
 msgid "New Filter for Content View:"
 msgstr "Novo Filtro para Visualização de Conteúdo"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/gpg-keys/new/views/gpg-key-new.html
 msgid "New GPG Key"
 msgstr "Nova Chave GPG"
@@ -2466,7 +2716,8 @@ msgstr "Nova Chave GPG"
 msgid "New Host Collection"
 msgstr "Nova Coleção de Host"
 
-# translation auto-copied from project oVirt, version ovirt-3.5, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants
+# translation auto-copied from project oVirt, version ovirt-3.5, document
+# frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-details.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details.html
 #: app/assets/javascripts/bastion_katello/host-collections/details/views/host-collection-details.html
@@ -2483,7 +2734,9 @@ msgstr "NovoProduto"
 msgid "New Repository"
 msgstr "Novo Repositório"
 
-# translation auto-copied from project Cloudforms System Engine User Guide, version 1.1, document topics/Creating_a_New_Synchronization_Plan, author gcintra
+# translation auto-copied from project Cloudforms System Engine User Guide,
+# version 1.1, document topics/Creating_a_New_Synchronization_Plan, author
+# gcintra
 #: app/assets/javascripts/bastion_katello/products/details/views/product-info.html
 #: app/assets/javascripts/bastion_katello/sync-plans/new/views/new-sync-plan.html
 #: app/assets/javascripts/bastion_katello/sync-plans/views/sync-plans.html
@@ -2494,7 +2747,8 @@ msgstr "Novo Plano de Sincronização"
 msgid "New sync plan successfully created."
 msgstr "Novo Plano de sinc criado com sucesso."
 
-# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author gcintra
+# translation auto-copied from project Customer Portal Translations, version
+# Portal-Case-Management, document Template, author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-activation-keys.html
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-content-hosts.html
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-environments.html
@@ -2509,7 +2763,9 @@ msgstr "Próximo"
 msgid "Next Sync"
 msgstr "Próxima Sinc"
 
-# translation auto-copied from project Customer Portal Translations, version RHJBossMiddlewareOperationsNetworkProduc, document RHJBossMiddlewareOperationsNetworkProductUpdate.html, author gcintra
+# translation auto-copied from project Customer Portal Translations, version
+# RHJBossMiddlewareOperationsNetworkProduc, document
+# RHJBossMiddlewareOperationsNetworkProductUpdate.html, author gcintra
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-environment.html
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-errata.html
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-host-collections.html
@@ -2517,6 +2773,7 @@ msgstr "Próxima Sinc"
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-subscriptions.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-info.html
 #: app/assets/javascripts/bastion_katello/content-views/views/content-views-table-full.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-content-views.html
 #: app/assets/javascripts/bastion_katello/subscriptions/subscriptions.controller.js
 msgid "No"
 msgstr "Não"
@@ -2526,8 +2783,8 @@ msgid ""
 "No \"Edit\" permissions on some of the Activation Keys in that Lifecycle "
 "Environment."
 msgstr ""
-"Não há permissões 'Editar' em algumas Chaves de Ativação naquele Ambiente de "
-"Ciclo de Vida."
+"Não há permissões 'Editar' em algumas Chaves de Ativação naquele Ambiente de"
+" Ciclo de Vida."
 
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-environments.html
 msgid ""
@@ -2592,16 +2849,17 @@ msgstr "Nenhuma chave de ativação foi afetada."
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid ""
 "No alternate release version choices are available. The available releases "
-"are based upon what is available in \"{{ contentHost.content_view.name }}\", "
-"the selected <a href=\"/content_views\">content view</a> this content host "
+"are based upon what is available in \"{{ contentHost.content_view.name }}\","
+" the selected <a href=\"/content_views\">content view</a> this content host "
 "is attached to for the given <a href=\"/lifecycle_environments\">lifecycle "
 "environment</a>, \"{{ contentHost.environment.name }}\"."
 msgstr ""
 "Não há escolhas de versão de lançamento alternada disponíveis. Os "
 "lançamentos disponíveis são baseados no que estiver disponível na  {{ "
-"contentHost.content_view.name }}\", a visualização de conteúdo <a href=\"/"
-"content_views\">selecionada</a> que este host de conteúdo está anexado para "
-"o ciclo de vida<a href=\"/lifecycle_environments\">fornecido</a>, \"{{ "
+"contentHost.content_view.name }}\", a visualização de conteúdo <a "
+"href=\"/content_views\">selecionada</a> que este host de conteúdo está "
+"anexado para o ciclo de vida<a "
+"href=\"/lifecycle_environments\">fornecido</a>, \"{{ "
 "contentHost.environment.name }}\"."
 
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-environment.html
@@ -2616,8 +2874,8 @@ msgstr "Nenhuma coleção de host"
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-provisioning-info.html
 msgid "No provisioning details are available for this content host."
 msgstr ""
-"Nenhum detalhe de provisionamento está disponível para este host de conteúdo."
-""
+"Nenhum detalhe de provisionamento está disponível para este host de "
+"conteúdo."
 
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-products.html
 msgid "No repository content provided through subscriptions."
@@ -2633,12 +2891,14 @@ msgstr "Nenhum conteúdo de repositório fornecido através desta subscrição."
 msgid "No repository content."
 msgstr "Nenhum conteúdo de repositório."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-import.html
 msgid "No subscription manifest imported"
 msgstr "Nenhum manifesto de subscrição importado"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/products/views/products-table-full.html
 msgid "None"
 msgstr "Nenhum"
@@ -2659,12 +2919,14 @@ msgstr "Não instalado"
 msgid "Not yet published"
 msgstr "Não foi ainda publicado"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid "Number of CPUs"
 msgstr "Número de CPUs"
 
-# translation auto-copied from project empathy, version 3.8.3, document empathy
+# translation auto-copied from project empathy, version 3.8.3, document
+# empathy
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 #: app/assets/javascripts/bastion_katello/content-hosts/views/content-hosts-table-full.html
 #: app/assets/javascripts/bastion_katello/errata/details/views/errata-details-content-hosts.html
@@ -2683,13 +2945,14 @@ msgstr ""
 
 #: app/assets/javascripts/bastion_katello/errata/details/views/errata-details-content-hosts.html
 msgid ""
-"Only show content hosts where {{ errata.title }} is currently available in "
-"the host's Lifecycle Environment."
+"Only show content hosts where {{ errata.title }} is currently installable in"
+" the host's Lifecycle Environment."
 msgstr ""
-"Apenas mostrar hosts de conteúdo, onde {{ errata.title }} estiver atualmente "
-"disponível em Ambiente de Ciclo de Vida do host.'"
+"Apenas mostrar hosts de conteúdo, onde {{ errata.title }} estiver atualmente"
+" instalável em Ambiente de Ciclo de Vida do host.'"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
+# 6.1, document hammer-cli-foreman
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-provisioning-info.html
 msgid "Operating System"
 msgstr "Sistema Operacional"
@@ -2698,7 +2961,8 @@ msgstr "Sistema Operacional"
 msgid "Options:"
 msgstr "Opções:"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/gpg-keys/views/gpg-keys-table-full.html
 msgid "Organization"
 msgstr "Organização"
@@ -2717,7 +2981,8 @@ msgstr "Sobrepor para Não"
 msgid "Override to Yes"
 msgstr "Sobrepor para Sim"
 
-# translation auto-copied from project rhn-client-tools, version 6.5, document rhn-client-tools
+# translation auto-copied from project rhn-client-tools, version 6.5, document
+# rhn-client-tools
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-packages.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/new-filter.html
 msgid "Package"
@@ -2731,7 +2996,8 @@ msgstr "Ações de Pacote"
 msgid "Package Filter:"
 msgstr "Filtro de Pacote:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-packages.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/new-filter.html
 msgid "Package Group"
@@ -2749,14 +3015,16 @@ msgstr "Grupo de Pacote foi adicionado com sucesso."
 msgid "Package Group successfully removed."
 msgstr "Grupo de Pacote foi removido com sucesso."
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version.html
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/filter-helper.service.js
 msgid "Package Groups"
 msgstr "Grupos de Pacote"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-packages.html
 msgid "Package Install"
 msgstr "Instalar Pacote"
@@ -2765,17 +3033,20 @@ msgstr "Instalar Pacote"
 msgid "Package Installation, Removal, and Update"
 msgstr "Instalação do Pacote, Remoção e Atualização."
 
-# translation auto-copied from project [RHEL] [DEV] Developer Guide, version 6.4, document ch-lib-compat, author gcintra
+# translation auto-copied from project [RHEL] [DEV] Developer Guide, version
+# 6.4, document ch-lib-compat, author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/package-filter-details.html
 msgid "Package Name"
 msgstr "Nome do Pacote"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-packages.html
 msgid "Package Remove"
 msgstr "Remover Pacote"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-packages.html
 msgid "Package Update"
 msgstr "Atualizar Pacote"
@@ -2800,7 +3071,8 @@ msgstr "Pacote atualizado com sucesso."
 msgid "Package/Group Name"
 msgstr "Pacote/Nome do Grupo"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions.html
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/errata-details.html
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/errata-details.html
@@ -2809,6 +3081,7 @@ msgstr "Pacote/Nome do Grupo"
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version.html
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/filter-helper.service.js
+#: app/assets/javascripts/bastion_katello/environments/content.service.js
 msgid "Packages"
 msgstr "Pacotes"
 
@@ -2824,7 +3097,8 @@ msgstr "Pacotes para:"
 msgid "Packages in {{ repository.name }}"
 msgstr "Pacotes em {{ repository.name }}"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
+# 6.1, document hammer-cli-foreman
 #: app/assets/javascripts/bastion_katello/tasks/views/task-details.html
 msgid "Parameters"
 msgstr "Parâmetros"
@@ -2837,7 +3111,8 @@ msgstr "Colar o Conteúdo da Chave GPG"
 msgid "Paste contents..."
 msgstr "Colar conteúdo..."
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-subscriptions.html
 msgid "Paused"
 msgstr "Pausado"
@@ -2846,7 +3121,8 @@ msgstr "Pausado"
 msgid "Perform"
 msgstr "Desempenhar"
 
-# translation auto-copied from project Satellite6 Katello, version 6.0, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/subscriptions/views/subscription-type.html
 msgid "Physical"
 msgstr "Físico"
@@ -2856,16 +3132,16 @@ msgid ""
 "Please select a Lifecycle Environment and Content View to move the affected "
 "Activation Keys to:"
 msgstr ""
-"Por favor selecionar um Ambiente de Ciclo de Vida e Visualização de Conteúdo "
-"para mover as Chaves de Ativação afetadas para:"
+"Por favor selecionar um Ambiente de Ciclo de Vida e Visualização de Conteúdo"
+" para mover as Chaves de Ativação afetadas para:"
 
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-content-hosts.html
 msgid ""
-"Please select a Lifecycle Environment and Content View to move these Content "
-"Hosts to:"
+"Please select a Lifecycle Environment and Content View to move these Content"
+" Hosts to:"
 msgstr ""
-"Por favor selecionar um Ambiente de Ciclo de Vida e Visualização de Conteúdo "
-"para mover estes Host de Conteúdo para:"
+"Por favor selecionar um Ambiente de Ciclo de Vida e Visualização de Conteúdo"
+" para mover estes Host de Conteúdo para:"
 
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-activation-keys.html
 msgid "Please select a Lifecycle Environment."
@@ -2877,6 +3153,11 @@ msgstr "Por favor selecionar um Ambiente de Ciclo de Vida."
 msgid "Please select an environment."
 msgstr "Por favor selecione um Ambiente."
 
+#: app/assets/javascripts/bastion_katello/organizations/views/organization-selector.html
+msgid "Please select one from the list below and you will be redirected."
+msgstr ""
+"Por favor, selecione um a partir da lista abaixo e você será redirecionado."
+
 #: app/assets/javascripts/bastion_katello/products/bulk/views/bulk-actions-sync.html
 msgid "Press 'Sync Now' below to begin syncing the following product(s)."
 msgstr ""
@@ -2887,13 +3168,15 @@ msgstr ""
 msgid "Previous Environment (%e/%cv)"
 msgstr "Ambiente Anterior (%e/%cv)"
 
-# translation auto-copied from project system-config-printer, version 1.4.1, document system-config-printer
+# translation auto-copied from project system-config-printer, version 1.4.1,
+# document system-config-printer
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions.html
 #: app/assets/javascripts/bastion_katello/errata/views/apply-errata.html
 msgid "Processing"
 msgstr "Processando"
 
-# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author gcintra
+# translation auto-copied from project Customer Portal Translations, version
+# Portal-Case-Management, document Template, author gcintra
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/filter-repositories.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/package-group-filter-details.html
@@ -2902,6 +3185,8 @@ msgstr "Processando"
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-docker.html
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-yum.html
 #: app/assets/javascripts/bastion_katello/docker-tags/details/views/docker-tags-details.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-docker.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-repositories.html
 #: app/assets/javascripts/bastion_katello/errata/details/views/errata-details-repositories.html
 #: app/assets/javascripts/bastion_katello/gpg-keys/details/views/gpg-key-repositories.html
 msgid "Product"
@@ -2967,7 +3252,8 @@ msgstr "Informações de Produto para:"
 msgid "Product {{ product.name }}"
 msgstr "Produto  {{ product.name }}"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/gpg-keys/details/views/gpg-key-details.html
 #: app/assets/javascripts/bastion_katello/gpg-keys/details/views/gpg-key-products.html
 #: app/assets/javascripts/bastion_katello/products/views/products.html
@@ -2979,7 +3265,8 @@ msgstr "Produtos"
 msgid "Products <div>{{ library.counts.products || 0 }}</div>"
 msgstr "Produtos <div>{{ library.counts.products || 0 }}</div>"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document appe-Glossary_of_Terms, author gcintra
+# translation auto-copied from project Red Hat Satellite User Guide, version
+# 6.0, document appe-Glossary_of_Terms, author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-versions.html
 msgid "Promote"
 msgstr "Promover"
@@ -3013,7 +3300,8 @@ msgstr "Promovendo para ambiente 1"
 msgid "Promotion History"
 msgstr "Histórico de Promoção"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-info.html
 msgid "Provided Products"
 msgstr "Produtos Fornecidos"
@@ -3044,7 +3332,8 @@ msgstr "Publicar Via HTTP"
 msgid "Publish via HTTPS"
 msgstr "Publicar Via HTTPS"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-views/details/content-view-versions.controller.js
 msgid "Published"
 msgstr "Publicado"
@@ -3070,15 +3359,18 @@ msgstr "Publicando e promovendo para ambientes de %count"
 msgid "Publishing and promoting to 1 environment."
 msgstr "Publicando e promovendo para ambiente 1"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-provisioning-info.html
 msgid "Puppet Environment"
 msgstr "Ambiente Puppet"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details.html
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version.html
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
+#: app/assets/javascripts/bastion_katello/environments/content.service.js
 msgid "Puppet Modules"
 msgstr "Módulos puppet"
 
@@ -3101,14 +3393,13 @@ msgstr "Foi adicionado o módulo puppet à visualização de conteúdo"
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-manage-puppet-modules.html
 msgid ""
 "Puppet module metadata generation has been initiated in the background.\n"
-"        Click <a ng-href=\"{{ taskUrl() }}\">Here</a> to monitor the "
-"progress."
+"        Click <a ng-href=\"{{ taskUrl() }}\">Here</a> to monitor the progress."
 msgstr ""
 "Geração de metadados de Módulo de Puppet foi iniciada no pano de fundo. \n"
-"Clique em  <a ng-href=\"{{ taskUrl() }}\">Here</a> para monitorar o "
-"progresso."
+"Clique em  <a ng-href=\"{{ taskUrl() }}\">Here</a> para monitorar o progresso."
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions-list.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-add-subscriptions.html
@@ -3116,18 +3407,21 @@ msgstr ""
 msgid "Quantity"
 msgstr "Quantidade"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-associations-content-hosts.html
 msgid "RAM (GB)"
 msgstr "RAM (GB)"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/details/subscription-details.controller.js
 msgid "RAM: %s GB"
 msgstr "RAM: %s GB"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/package-filter-details.html
 msgid "Range"
 msgstr "Classe"
@@ -3149,7 +3443,8 @@ msgstr "Red Hat CDN URL"
 msgid "Red Hat Docker Registry URL"
 msgstr "Red Hat Docker Registry URL"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-import.html
 msgid "Red Hat Provider Details"
 msgstr "Detalhes do Provedor da Red Hat"
@@ -3163,7 +3458,8 @@ msgstr "Página de Repositórios da Red Hat"
 msgid "Red Hat Repositories page."
 msgstr "Página de Repositórios da Red Hat."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-import.html
 msgid "Refresh Manifest"
 msgstr "Atualizar Manifesto"
@@ -3203,13 +3499,16 @@ msgstr "Registrado por"
 msgid "Registry URL"
 msgstr "URL de Registro"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-packages.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-packages.html
 msgid "Release"
 msgstr "Lançamento"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-associations-content-hosts.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-info.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
@@ -3217,7 +3516,8 @@ msgstr "Lançamento"
 msgid "Release Version"
 msgstr "Versão de Lançamento"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author gcintra
+# translation auto-copied from project NetworkManager, version 0.9.9.0,
+# document NetworkManager, author gcintra
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-details.html
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-packages.html
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-packages.html
@@ -3227,8 +3527,8 @@ msgid "Remove"
 msgstr "Remover"
 
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-details.html
-msgid "Remove Activation Key ' + activationKey.name + '?"
-msgstr "Remover a chave de ativação ' + activationKey.name + '?"
+msgid "Remove Activation Key \"{{ activationKey.name }}\"?"
+msgstr "Remover a Chave de Ativação \"{{ activationKey.name }}\"?"
 
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/content-view-deletion.html
 msgid "Remove Content View"
@@ -3254,18 +3554,19 @@ msgstr "Remover Filtros"
 msgid "Remove From"
 msgstr "Remover a partir de"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/gpg-keys/details/views/gpg-key-details.html
 msgid "Remove GPG Key"
 msgstr "Remover Chave GPG"
 
 #: app/assets/javascripts/bastion_katello/gpg-keys/details/views/gpg-key-details.html
-msgid "Remove GPG Key ' + gpgKey.name + '?"
-msgstr "Remover Chave GPG  ' + gpgKey.name + '?"
+msgid "Remove GPG Key {{ gpgKey.name }}"
+msgstr "Remover Chave GPG {{ gpgKey.name }}"
 
 #: app/assets/javascripts/bastion_katello/host-collections/details/views/host-collection-details.html
-msgid "Remove Host Collection ' + hostCollection.name + '?"
-msgstr "Remover a coleção do host ' + hostCollection.name + '?"
+msgid "Remove Host Collection \"{{ hostCollection.name }}\"?"
+msgstr "Remover o Host Collection \"{{ hostCollection.name }}\"?"
 
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/views/content-view-puppet-modules.html
 msgid "Remove Module"
@@ -3280,10 +3581,16 @@ msgstr "Remover Grupo de Pacote"
 msgid "Remove Packages"
 msgstr "Remover pacotes"
 
-# translation auto-copied from project Cloudforms System Engine User Guide, version 1.0, document topics/Tasks/Cloud/CFSE_RemoveProductFromTemplate, author gcintra
+# translation auto-copied from project Cloudforms System Engine User Guide,
+# version 1.0, document topics/Tasks/Cloud/CFSE_RemoveProductFromTemplate,
+# author gcintra
 #: app/assets/javascripts/bastion_katello/products/details/views/product-details.html
 msgid "Remove Product"
 msgstr "Remover Produto"
+
+#: app/assets/javascripts/bastion_katello/products/details/views/product-details.html
+msgid "Remove Product \"{{ product.name }}\"?"
+msgstr "Remover o Produto \"{{ product.name }}\"?"
 
 #: app/assets/javascripts/bastion_katello/products/bulk/views/bulk-actions.html
 msgid "Remove Products"
@@ -3293,19 +3600,27 @@ msgstr "Remover Produtos"
 msgid "Remove Puppet Modules"
 msgstr "Remover Módulos do Puppet"
 
-# translation auto-copied from project Cloudforms System Engine User Guide, version 1.1, document topics/Removing_Repositories_from_System_Templates, author gcintra
+# translation auto-copied from project Cloudforms System Engine User Guide,
+# version 1.1, document topics/Removing_Repositories_from_System_Templates,
+# author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-docker-repositories.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-repositories.html
 #: app/assets/javascripts/bastion_katello/products/details/views/product-repositories.html
 msgid "Remove Repositories"
 msgstr "Remover Repositórios"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
 msgid "Remove Repository"
 msgstr "Remover Repositório"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+#: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
+msgid "Remove Repository \"{{ repository.name }}\"?"
+msgstr "Remover Repositório \"{{ repository.name }}\"?"
+
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-host-collections-table.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions-list.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-subscriptions-list.html
@@ -3319,10 +3634,15 @@ msgstr "Remover Selecionado"
 msgid "Remove Successful."
 msgstr "Remoção foi bem sucedido"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/sync-plans/details/views/sync-plan-details.html
 msgid "Remove Sync Plan"
 msgstr "Remover Plano de Sincronização"
+
+#: app/assets/javascripts/bastion_katello/sync-plans/details/views/sync-plan-details.html
+msgid "Remove Sync Plan \"{{ syncPlan.name }}\"?"
+msgstr "Remover o Sync Plan \"{{ syncPlan.name }}\"?"
 
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/content-view-deletion.html
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-activation-keys.html
@@ -3338,6 +3658,14 @@ msgstr "Remover Confirmação de Versão"
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details.html
 msgid "Remove View"
 msgstr "Remover Visualização"
+
+#: app/assets/javascripts/bastion_katello/products/bulk/views/bulk-actions.html
+msgid "Remove {{ productTable.getSelected().length }} Products?"
+msgstr "Remover Produtos {{ productTable.getSelected().length }}?"
+
+#: app/assets/javascripts/bastion_katello/products/details/views/product-repositories.html
+msgid "Remove {{ repositoriesTable.numSelected  }} Repositories?"
+msgstr "Remover os Repositórios  {{ repositoriesTable.numSelected  }} ?"
 
 #: app/assets/javascripts/bastion_katello/activation-keys/details/activation-key-host-collections.controller.js
 msgid "Removed %x host collections from activation key \"%y\"."
@@ -3371,10 +3699,12 @@ msgstr "Descoberta do Repositório"
 msgid "Repo Type"
 msgstr "Tipo de repo"
 
-# translation auto-copied from project Cloudforms System Engine User Guide, version 1.0, document Repositories, author gcintra
+# translation auto-copied from project Cloudforms System Engine User Guide,
+# version 1.0, document Repositories, author gcintra
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/views/content-view-puppet-module-versions.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details.html
 #: app/assets/javascripts/bastion_katello/content-views/views/content-views-table-full.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-content-views.html
 #: app/assets/javascripts/bastion_katello/errata/details/views/errata-details.html
 #: app/assets/javascripts/bastion_katello/gpg-keys/details/views/gpg-key-details.html
 #: app/assets/javascripts/bastion_katello/gpg-keys/details/views/gpg-key-products.html
@@ -3408,13 +3738,19 @@ msgstr "Repositórios para Filtrar:"
 msgid "Repositories for Product:"
 msgstr "Repositórios para Produto:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/package-group-filter-details.html
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-docker.html
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-package-groups.html
 #: app/assets/javascripts/bastion_katello/docker-tags/details/views/docker-tags-details.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-docker.html
 msgid "Repository"
 msgstr "Repositório"
+
+#: app/assets/javascripts/bastion_katello/repositories/details/repository-details-info.controller.js
+msgid "Repository \"%s\" successfully deleted"
+msgstr "Repositório \"%s\" excluído com êxito"
 
 #: app/assets/javascripts/bastion_katello/repositories/new/new-repository.controller.js
 msgid "Repository %s successfully created."
@@ -3424,7 +3760,8 @@ msgstr "Repositório %s foi criado com sucesso."
 msgid "Repository Count"
 msgstr "Contagem do Repositório"
 
-# translation auto-copied from project Satellite6 Katello, version 6.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version 6.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/products/discovery/views/discovery.html
 msgid "Repository Discovery"
 msgstr "Descoberta do Repositório"
@@ -3450,41 +3787,57 @@ msgstr "URL do repositório"
 msgid "Repository:"
 msgstr "Repositório:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-info.html
 msgid "Required Host"
 msgstr "Host Requerido"
 
-# translation auto-copied from project Red Hat Satellite Installation Guide, version 6.0, document chap-Uninstalling_Red_Hat_Satellite_Server_and_Capsule_Server
+# translation auto-copied from project Red Hat Satellite Installation Guide,
+# version 6.0, document chap-
+# Uninstalling_Red_Hat_Satellite_Server_and_Capsule_Server
 #: app/assets/javascripts/bastion_katello/tasks/views/task-details.html
 msgid "Result"
 msgstr "Resultado"
 
-# translation auto-copied from project gnome-color-manager, version 3.8.2, document gnome-color-manager
+# translation auto-copied from project gnome-color-manager, version 3.8.2,
+# document gnome-color-manager
 #: app/assets/javascripts/bastion_katello/products/discovery/views/discovery.html
 msgid "Results"
 msgstr "Resultados"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-details.html
 msgid "Rules Source"
 msgstr "Fonte de regras"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-details.html
 msgid "Rules Version"
 msgstr "Versão de regras"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-subscriptions.html
 msgid "Run Auto-Attach"
 msgstr "Executar Auto-Attach"
+
+#: app/assets/javascripts/bastion_katello/content-hosts/views/register.html
+msgid ""
+"Run subscription-manager in a console on the client host.  You may use an "
+"Activation Key to register:"
+msgstr ""
+"Execute o subscription-manager em um console em um host de cliente. Você "
+"pode usar uma Chave de Ativação para registrar:"
 
 #: app/assets/javascripts/bastion_katello/content-hosts/details/content-host-details.controller.js
 msgid "Save Successful."
 msgstr "Foi salvo com sucesso"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions-list.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-add-subscriptions.html
@@ -3494,7 +3847,8 @@ msgstr "Foi salvo com sucesso"
 msgid "Search..."
 msgstr "Buscar..."
 
-# translation auto-copied from project Customer Portal Translations, version management_page, document Management_Prototype.html, author gcintra
+# translation auto-copied from project Customer Portal Translations, version
+# management_page, document Management_Prototype.html, author gcintra
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-errata.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/date-type-errata.html
@@ -3526,6 +3880,10 @@ msgstr "Selecionar Módulo"
 msgid "Select Version"
 msgstr "Selecionar Versão"
 
+#: app/assets/javascripts/bastion_katello/content-hosts/views/register.html
+msgid "Select a Content Source:"
+msgstr "Selecione uma Fonte de Conteúdo:"
+
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/views/content-view-puppet-module-names.html
 msgid "Select a Version"
 msgstr "Selecionar uma Versão"
@@ -3533,6 +3891,12 @@ msgstr "Selecionar uma Versão"
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/views/content-view-puppet-module-versions.html
 msgid "Select an Available Version of {{ $stateParams.moduleName }}"
 msgstr "Selecionar uma Versão Disponível do  {{ $stateParams.moduleName }}"
+
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello, author gcintra
+#: app/assets/javascripts/bastion_katello/organizations/views/organization-selector.html
+msgid "Select an Organization"
+msgstr "Selecionar uma organização"
 
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/views/content-view-puppet-modules.html
 msgid "Select new version"
@@ -3546,10 +3910,6 @@ msgstr ""
 "Selecionar os Ambientes de Ciclo de Vida de onde você deseja remover a "
 "Versão {{ version.version }}:"
 
-#: app/assets/javascripts/bastion_katello/content-hosts/views/register.html
-msgid "Selected Capsule:"
-msgstr "Selecionar Capsula:"
-
 #: app/assets/javascripts/bastion_katello/products/discovery/views/discovery-create.html
 msgid "Selected URLs:"
 msgstr "URLs Selecionadas:"
@@ -3561,15 +3921,16 @@ msgid ""
 "from all Lifecycle Environments in order to select this option."
 msgstr ""
 "A seleção dessa opção resultará na versão que está sendo completamente "
-"excluída e não estará disponível para a promoção. A versão deve ser removida "
-"de todos os ambientes de ciclo de vida, para que possa selecionar essa opção."
-""
+"excluída e não estará disponível para a promoção. A versão deve ser removida"
+" de todos os ambientes de ciclo de vida, para que possa selecionar essa "
+"opção."
 
 #: app/assets/javascripts/bastion_katello/products/discovery/views/discovery-create.html
 msgid "Serve via HTTP."
 msgstr "Servir via HTTP."
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-associations-content-hosts.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-info.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
@@ -3579,7 +3940,8 @@ msgstr "Servir via HTTP."
 msgid "Service Level"
 msgstr "Nível de Serviço"
 
-# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author gcintra
+# translation auto-copied from project Customer Portal Translations, version
+# Portal-Case-Management, document Template, author gcintra
 #: app/assets/javascripts/bastion_katello/errata/details/views/errata-details-info.html
 msgid "Severity"
 msgstr "Gravidade"
@@ -3598,33 +3960,34 @@ msgstr "Exibir a partir de:"
 
 #: app/assets/javascripts/bastion_katello/host-collections/details/views/host-collection-add-content-hosts.html
 msgid ""
-"Showing {{ addContentHostsTable.rows.length }} of {{ addContentHostsTable."
-"resource.subtotal }} ({{ addContentHostsTable.resource.total }} Total) "
-"Content Hosts"
+"Showing {{ addContentHostsTable.rows.length }} of {{ "
+"addContentHostsTable.resource.subtotal }} ({{ "
+"addContentHostsTable.resource.total }} Total) Content Hosts"
 msgstr ""
-"Exibindo {{ addContentHostsTable.rows.length }} de {{ addContentHostsTable."
-"resource.subtotal }} ({{ addContentHostsTable.resource.total }} Total) Hosts "
-"de Conteúdo"
+"Exibindo {{ addContentHostsTable.rows.length }} de {{ "
+"addContentHostsTable.resource.subtotal }} ({{ "
+"addContentHostsTable.resource.total }} Total) Hosts de Conteúdo"
 
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-add-subscriptions.html
 msgid ""
-"Showing {{ addSubscriptionsTable.rows.length }} of {{ addSubscriptionsTable."
-"resource.subtotal }} ({{ addSubscriptionsTable.resource.total }} Total) "
-"Subscriptions"
+"Showing {{ addSubscriptionsTable.rows.length }} of {{ "
+"addSubscriptionsTable.resource.subtotal }} ({{ "
+"addSubscriptionsTable.resource.total }} Total) Subscriptions"
 msgstr ""
-"Exibindo {{ addSubscriptionsTable.rows.length }} de {{ addSubscriptionsTable."
-"resource.subtotal }} ({{ addSubscriptionsTable.resource.total }} Total) "
-"Subscrições"
+"Exibindo {{ addSubscriptionsTable.rows.length }} de {{ "
+"addSubscriptionsTable.resource.subtotal }} ({{ "
+"addSubscriptionsTable.resource.total }} Total) Subscrições"
 
 #: app/assets/javascripts/bastion_katello/host-collections/details/views/host-collection-content-hosts-list.html
 msgid ""
-"Showing {{ contentHostsTable.rows.length }} of {{ contentHostsTable.resource."
-"subtotal }} ({{ contentHostsTable.resource.total }} Total) Content Hosts"
+"Showing {{ contentHostsTable.rows.length }} of {{ "
+"contentHostsTable.resource.subtotal }} ({{ contentHostsTable.resource.total "
+"}} Total) Content Hosts"
 msgstr ""
-"Exibindo {{ contentHostsTable.rows.length }} de {{ contentHostsTable."
-"resource.subtotal }} ({{ contentHostsTable.resource.total }} Total) Hosts de "
-"Conteúdo"
+"Exibindo {{ contentHostsTable.rows.length }} de {{ "
+"contentHostsTable.resource.subtotal }} ({{ contentHostsTable.resource.total "
+"}} Total) Hosts de Conteúdo"
 
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-packages.html
 msgid "Showing {{ currentPackagesTable.resource.total }} Packages"
@@ -3633,38 +3996,51 @@ msgstr "Exibindo Pacotes {{ currentPackagesTable.resource.total }} "
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions-list.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-subscriptions-list.html
 msgid ""
-"Showing {{ subscriptionsTable.rows.length }} of {{ subscriptionsTable."
-"resource.subtotal }} ({{ subscriptionsTable.resource.total }} Total) "
-"Subscriptions"
+"Showing {{ subscriptionsTable.rows.length }} of {{ "
+"subscriptionsTable.resource.subtotal }} ({{ "
+"subscriptionsTable.resource.total }} Total) Subscriptions"
 msgstr ""
-"Exibir {{ subscriptionsTable.rows.length }} of {{ subscriptionsTable."
-"resource.subtotal }} ({{ subscriptionsTable.resource.total }} Total) "
-"Subscrições"
+"Exibir {{ subscriptionsTable.rows.length }} of {{ "
+"subscriptionsTable.resource.subtotal }} ({{ "
+"subscriptionsTable.resource.total }} Total) Subscrições"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-associations-content-hosts.html
 msgid "Sockets"
 msgstr "Soquetes"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/details/subscription-details.controller.js
 msgid "Sockets: %s"
 msgstr "Soquetes: %s"
 
-# translation auto-copied from project RHEL Virtualization Deployment and Administration Guide, version 7.0, document App_Bridge_Device
+# translation auto-copied from project RHEL Virtualization Deployment and
+# Administration Guide, version 7.0, document App_Bridge_Device
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/errata-details.html
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/errata-details.html
 #: app/assets/javascripts/bastion_katello/errata/details/views/errata-details-info.html
 msgid "Solution"
 msgstr "Solução"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+#: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-errata.html
+msgid ""
+"Some of the Errata shown below may not be installable as they are not in this Content Host's\n"
+"          Content View and Lifecycle Environment.  In order to apply such Errata an Incremental Update is required."
+msgstr ""
+"Algumas Erratas exibidas abaixo podem não ser instaláveis pois não se encontram na Visualização de Conteúdo e Ambiente de Ciclo de Vida\n"
+"    do Host de Conteúdo. Para aplicar tal Errata, é necessário uma Atualização Adicional."
+
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-info.html
 msgid "Stacking ID"
 msgstr "Empilhando o ID"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/date-type-errata.html
 #: app/assets/javascripts/bastion_katello/products/bulk/views/bulk-actions-sync-plan.html
 #: app/assets/javascripts/bastion_katello/sync-plans/details/views/sync-plan-info.html
@@ -3672,7 +4048,8 @@ msgstr "Empilhando o ID"
 msgid "Start Date"
 msgstr "Data de Início"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/sync-plans/new/views/new-sync-plan-form.html
 msgid "Start Time"
 msgstr "Hora inicial"
@@ -3681,12 +4058,14 @@ msgstr "Hora inicial"
 msgid "Started At"
 msgstr "Iniciou em"
 
-# translation auto-copied from project gnome-packagekit, version 3.8.2, document gnome-packagekit
+# translation auto-copied from project gnome-packagekit, version 3.8.2,
+# document gnome-packagekit
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-subscriptions.html
 msgid "Starting"
 msgstr "Iniciando"
 
-# translation auto-copied from project evolution, version el6, document evolution-2.32
+# translation auto-copied from project evolution, version el6, document
+# evolution-2.32
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions-list.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-add-subscriptions.html
@@ -3696,12 +4075,14 @@ msgstr "Iniciando"
 msgid "Starts"
 msgstr "Começa"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/tasks/views/task-details.html
 msgid "State"
 msgstr "Estado"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
+# 6.1, document hammer-cli-foreman
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-provisioning-info.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-subscriptions.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details-history.html
@@ -3711,29 +4092,34 @@ msgstr "Estado"
 msgid "Status"
 msgstr "Status"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-subscriptions.html
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-details.html
 msgid "Subscription Details"
 msgstr "Detalhes de Subscrição"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-info.html
 msgid "Subscription Info"
 msgstr "Info da Subscrição"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-import.html
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest.html
 msgid "Subscription Manifest"
 msgstr "Manifesto da Subscrição"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-details.html
 msgid "Subscription Server Details"
 msgstr "Detalhes de Servidor de Subscrição"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-associations-content-hosts.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 #: app/assets/javascripts/bastion_katello/content-hosts/views/content-hosts-table-full.html
@@ -3741,7 +4127,8 @@ msgstr "Detalhes de Servidor de Subscrição"
 msgid "Subscription Status"
 msgstr "Status de Subscrição"
 
-# translation auto-copied from project Customer Portal Translations, version management_page, document Management_Prototype.html, author gcintra
+# translation auto-copied from project Customer Portal Translations, version
+# management_page, document Management_Prototype.html, author gcintra
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-details.html
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-details.html
@@ -3770,7 +4157,8 @@ msgstr "Remoção de pacote agendada com sucesso"
 msgid "Succesfully scheduled package update"
 msgstr "Atualização de pacote agendada com sucesso"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-packages.html
 msgid "Success"
 msgstr "Sucesso"
@@ -3834,14 +4222,6 @@ msgstr "Info padronizada removida com sucesso."
 msgid "Successfully saved custom info."
 msgstr "Info padronizada salva com sucesso."
 
-#: app/assets/javascripts/bastion_katello/content-hosts/bulk/content-hosts-bulk-action-errata.controller.js
-msgid "Successfully scheduled installation of %s errata ."
-msgstr "Instalação armazenada de %s errata com sucesso."
-
-#: app/assets/javascripts/bastion_katello/errata/apply-errata.controller.js
-msgid "Successfully scheduled installation of errata"
-msgstr "Instalação agendada de errata bem sucedida"
-
 #: app/assets/javascripts/bastion_katello/content-hosts/details/content-host-details-info.controller.js
 msgid "Successfully updated custom info."
 msgstr "Info padronizada atualizada com sucesso."
@@ -3850,12 +4230,14 @@ msgstr "Info padronizada atualizada com sucesso."
 msgid "Successfully updated subscriptions."
 msgstr "Subscrições atualizadas com sucesso."
 
-# translation auto-copied from project PressGang CCMS topics, version 1, document 31393-681179, author ldelima
+# translation auto-copied from project PressGang CCMS topics, version 1,
+# document 31393-681179, author ldelima
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/views/content-view-puppet-module-versions.html
 msgid "Summary"
 msgstr "Sumário"
 
-# translation auto-copied from project Red Hat Satellite Installation Guide, version 6.0, document Prerequisites3
+# translation auto-copied from project Red Hat Satellite Installation Guide,
+# version 6.0, document Prerequisites3
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions-list.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-add-subscriptions.html
@@ -3865,7 +4247,8 @@ msgstr "Sumário"
 msgid "Support Level"
 msgstr "Nível de Suporte"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-info.html
 msgid "Support Type"
 msgstr "Tipo de Suporte"
@@ -3913,7 +4296,8 @@ msgstr "Plano de Sinc {{ syncPlan.name }}"
 msgid "Sync Plan:"
 msgstr "Plano de Sinc:"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/sync-plans/views/sync-plans.html
 msgid "Sync Plans"
 msgstr "Planos de Sincronização"
@@ -3925,7 +4309,8 @@ msgstr "Planos de Sincronização"
 msgid "Sync State"
 msgstr "Estado de Sinc"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/filter-repositories.html
 #: app/assets/javascripts/bastion_katello/products/details/views/product-info.html
 #: app/assets/javascripts/bastion_katello/products/details/views/product-repositories.html
@@ -3945,13 +4330,15 @@ msgstr "Sincronizado manualmente, nenhum intervalo foi definido."
 msgid "Syncing..."
 msgstr "Sincronizando..."
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-docker.html
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-manage-docker-images.html
 msgid "Tags"
 msgstr "Marcações"
 
-# translation auto-copied from project anaconda, version 19.31.34, document anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document
+# anaconda
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-events.html
 msgid "Target"
 msgstr "Alvo"
@@ -3960,7 +4347,8 @@ msgstr "Alvo"
 msgid "Task Details"
 msgstr "Detalhes de Tarefa"
 
-# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document
+# evolution-3.8
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-details.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details.html
 #: app/assets/javascripts/bastion_katello/products/details/views/product-details.html
@@ -3972,11 +4360,15 @@ msgstr "Tarefas"
 msgid "Tasks for Content View:"
 msgstr "Tarefas para Visualização de Conteúdo:"
 
+#: app/assets/javascripts/bastion_katello/subscriptions/views/subscription-type.html
+msgid "Temporary"
+msgstr "Temporário"
+
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-activation-keys.html
 msgid ""
 "The Activation Keys listed below are currently using this Content View "
-"Version.  Before deleting the Version you must move these Activation Keys to "
-"a Lifecycle Environment where this Version is not in use."
+"Version.  Before deleting the Version you must move these Activation Keys to"
+" a Lifecycle Environment where this Version is not in use."
 msgstr ""
 "As Chaves de Ativação listadas abaixo estão usando esta Versão de "
 "Visualização de Conteúdo. Antes de apagar a versão,  mova essas chaves de "
@@ -3985,13 +4377,21 @@ msgstr ""
 
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-content-hosts.html
 msgid ""
-"The Content Hosts listed below are currently using this Content View Version."
-"  Before removing the version you must move these Content Hosts to an "
-"environment where this version is not in use."
+"The Content Hosts listed below are currently using this Content View "
+"Version.  Before removing the version you must move these Content Hosts to "
+"an environment where this version is not in use."
 msgstr ""
 "Os hosts de conteúdo listados abaixo estão utilizando esta Versão de "
 "Visualização de Conteúdo. Antes de remover a versão, mova esses hosts de "
 "conteúdo para um ambiente onde esta versão não esteja sendo utilizada."
+
+#: app/assets/javascripts/bastion_katello/errata/details/views/errata-details-content-hosts.html
+msgid ""
+"The Content View or Lifecycle Environment needs to be updated in order to "
+"make errata available to these hosts."
+msgstr ""
+"O Visualizador de Conteúdo ou Ambiente de Ciclo de Vida precisa ser "
+"atualizado para disponibilizar a errata à estes hosts."
 
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-confirm.html
 msgid ""
@@ -4003,8 +4403,8 @@ msgstr ""
 
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-confirm.html
 msgid ""
-"The archive of this Version will not be deleted.  This Version will still be "
-"available to be promoted to a Lifecycle Environment."
+"The archive of this Version will not be deleted.  This Version will still be"
+" available to be promoted to a Lifecycle Environment."
 msgstr ""
 "O arquivo desta versão não será excluído. Esta versão ainda estará "
 "disponível para ser promovida para um Ambiente de Ciclo de vida."
@@ -4019,40 +4419,41 @@ msgstr ""
 
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid ""
-"The host requires being attached to a content view and the environment you "
-"have chosen has no content views promoted to it.\n"
-"            See the <a href=\"/content_views\">content views page</a> to "
-"manage and promote a content view."
+"The host requires being attached to a content view and the environment you have chosen has no content views promoted to it.\n"
+"            See the <a href=\"/content_views\">content views page</a> to manage and promote a content view."
 msgstr ""
-"O host exige ser anexado a uma exibição de conteúdo e que o ambiente que "
-"você escolheu não tenha visualizações de conteúdo promovidos a ele.\n"
-"                Veja a  <a href=\"/content_views\">content views page</a> "
-"para gerenciar e promover a exibição de conteúdo."
+"O host exige ser anexado a uma exibição de conteúdo e que o ambiente que você escolheu não tenha visualizações de conteúdo promovidos a ele.\n"
+"                Veja a  <a href=\"/content_views\">content views page</a> para gerenciar e promover a exibição de conteúdo."
 
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-errata.html
 msgid ""
 "The katello-agent package is required to manage errata on this Host.\n"
-"    Please install the katello-agent package to manage errata on\n"
-"    {{ contentHost.name }}."
+"      Please install the katello-agent package to manage errata on\n"
+"      {{ contentHost.name }}."
 msgstr ""
-"O pacote Katello-agent é necessário para gerenciar errata neste host.\n"
-"      Por favor, instale o pacote Katello-agent para gerenciar errata no\n"
-"        {{ contentHost.name }}."
+"O pacote katello-agent precisa gerenciar errata neste Host.\n"
+"   Por favor instale o pacote katello-agent para gerenciar a errata no\n"
+"     {{ contentHost.name }}."
 
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-packages.html
 msgid ""
 "The katello-agent package is required to manage packages on this Host.\n"
 "      Please install the katello-agent package to manage packages on\n"
-"      {{ contentHost.name }}. To install the package, connect directly to "
-"the\n"
+"      {{ contentHost.name }}. To install the package, connect directly to the\n"
 "      host from a terminal and use yum."
 msgstr ""
 " O pacote Katello-agent é necessário para gerenciar pacotes neste host.\n"
-"          Por favor, instale o pacote Katello-agent para gerenciar pacotes "
-"em\n"
-"          {{ contentHost.name }}. Para instalar o pacote, conecte-se "
-"diretamente ao\n"
+"          Por favor, instale o pacote Katello-agent para gerenciar pacotes em\n"
+"          {{ contentHost.name }}. Para instalar o pacote, conecte-se diretamente ao\n"
 "          host de um terminal e use o yum."
+
+#: app/assets/javascripts/bastion_katello/organizations/views/organization-selector.html
+msgid ""
+"The page you are attempting to access requires selecting a specific "
+"organization."
+msgstr ""
+"A página que você está tentando acessar requer a seleção de uma organização "
+"específica."
 
 #: app/assets/javascripts/bastion_katello/activation-keys/new/views/activation-key-new.html
 msgid ""
@@ -4082,37 +4483,77 @@ msgstr ""
 msgid "There are no Content Views in this Environment."
 msgstr "Não existem Visualizações de Conteúdo neste Ambiente"
 
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-content-views.html
+msgid "There are no Content Views that match the criteria."
+msgstr "Não existem Visualizações de Conteúdo que coincide com o critério."
+
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-docker.html
+msgid "There are no Docker Tags that match the criteria."
+msgstr "Não existem Marcações de Docker que coincidem com este critério."
+
+#: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-errata.html
+msgid "There are no Errata associated with this Content Host to display."
+msgstr "Não existem Erratas associadas ao Host de Conteúdo para exibir."
+
+#: app/assets/javascripts/bastion_katello/errata/views/errata.html
+msgid ""
+"There are no Errata in this organization.  Create one or more Products with "
+"Errata to view Errata on this page."
+msgstr ""
+"Não existem Erratas nesta organização. Crie um ou mais Produtos com a Errata"
+" para visualizar a Errata nesta página."
+
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-errata.html
+msgid "There are no Errata that match the criteria."
+msgstr "Não existem Erratas que coincidem com este critério."
+
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-errata.html
 msgid "There are no Errata to display."
 msgstr "Não existem Erratas para exibir"
 
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-host-collections.html
 msgid ""
-"There are no Host Collections available. You can create new Host Collections "
-"after selecting 'Host Collections' under 'Hosts' in main menu."
+"There are no Host Collections available. You can create new Host Collections"
+" after selecting 'Host Collections' under 'Hosts' in main menu."
 msgstr ""
-"Nao existe nenhuma  Coleção de Host disponível. Você pode adicionar Coleções "
-"de Host  após a seleção de 'Host Collections' em \"Hosts\"no menu principal."
+"Nao existe nenhuma  Coleção de Host disponível. Você pode adicionar Coleções"
+" de Host  após a seleção de 'Host Collections' em \"Hosts\"no menu "
+"principal."
+
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-packages.html
+msgid "There are no Packages that match the criteria."
+msgstr "Não existem Pacotes que coincidam com este critério."
+
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-puppet-modules.html
+msgid "There are no Puppet Modules that match the criteria."
+msgstr "Não existem Módulos de Puppet que coincidam com este critério."
+
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-repositories.html
+msgid "There are no Yum Repositories that match the criteria."
+msgstr "Não existem Repositórios Yum que coincidam com este critério."
+
+#: app/assets/javascripts/bastion_katello/errata/views/errata.html
+msgid ""
+"There is currently an Incremental Update task in progress.  This update must"
+" finish before applying existing updates."
+msgstr ""
+"Existe atualmente uma tarefa de Atualização Adicional em desenvolvimento. "
+"Esta atualização deve ser concluída antes de aplicar as atualizações "
+"existentes."
+
+#: app/assets/javascripts/bastion_katello/products/details/views/product-repositories.html
+msgid "There were errors while removing the following Repositories:"
+msgstr "Foram encontrados alguns erros ao remover os seguintes Repositórios:"
 
 #: app/assets/javascripts/bastion_katello/errata/views/apply-errata-confirm.html
 msgid ""
-"These Errata are not Installable via your published Content View versions "
-"running on the selected hosts.  The new Content View Versions (specified "
-"below)\n"
-"      will be created which will make this Errata Installable in the host's "
-"Environment.  This new version will replace the current version in your "
-"host's Lifecycle\n"
-"      Environment.  To install these errata immediately on hosts after "
-"publishing check the box below."
+"These Errata are not Installable via your published Content View versions running on the selected hosts.  The new Content View Versions (specified below)\n"
+"      will be created which will make this Errata Installable in the host's Environment.  This new version will replace the current version in your host's Lifecycle\n"
+"      Environment.  To install these errata immediately on hosts after publishing check the box below."
 msgstr ""
-"Estas Errata não são instaláveis através de suas versões de Visualização de "
-"Conteúdo nos hosts selecionados. A nova versão de Visualização de Conteúdo "
-"(especificado abaixo)\n"
-"       será criada, o que tornará esta Errata instalável no Ambiente do host."
-" Esta nova versão irá substituir a versão atual do ciclo de vida do seu "
-"Ambiente de Ciclo de Vida do \n"
-"       host. Para instalar estas errata imediatamente em hosts após a "
-"publicação selecione a caixa abaixo."
+"Estas Errata não são instaláveis através de suas versões de Visualização de Conteúdo nos hosts selecionados. A nova versão de Visualização de Conteúdo (especificado abaixo)\n"
+"       será criada, o que tornará esta Errata instalável no Ambiente do host. Esta nova versão irá substituir a versão atual do ciclo de vida do seu Ambiente de Ciclo de Vida do \n"
+"       host. Para instalar estas errata imediatamente em hosts após a publicação selecione a caixa abaixo."
 
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-products.html
 msgid ""
@@ -4121,13 +4562,22 @@ msgstr ""
 "Este Host de Conteúdo não está anexado à qualquer subscrição que forneça "
 "conteúdo"
 
+#: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-versions.html
+msgid ""
+"This Content View does not have any versions, create your first Content View"
+" Version by using the \"Publish New Version\" button on the right."
+msgstr ""
+"Esta Visualização de Conteúdo não possui nenhuma versão, crie sua primeira "
+"Versão de Visualização de Conteúdo utilizando o botão \"Publicar Nova "
+"Versão\" à direita."
+
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-environments.html
 msgid ""
 "This Version cannot be deleted from some of the Lifecycle Environments due "
 "to one of the reasons below."
 msgstr ""
-"Esta Versão não pode ser removida de alguns Ambienes de Ciclo de Vida devido "
-"à uma destas razões abaixo:"
+"Esta Versão não pode ser removida de alguns Ambienes de Ciclo de Vida devido"
+" à uma destas razões abaixo:"
 
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-environments.html
 msgid "This Version is not associated with any Lifecycle Environments."
@@ -4142,15 +4592,15 @@ msgstr ""
 msgid ""
 "This activation key may be used during system registration. For example:"
 msgstr ""
-"Esta chave de ativação pode ser utilizada durante o registro de sistema. Por "
-"exemplo:"
+"Esta chave de ativação pode ser utilizada durante o registro de sistema. Por"
+" exemplo:"
 
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/filter-repositories.html
 msgid ""
 "This filter applies only to a subset of repositories in the content view."
 msgstr ""
-"Este filtro se aplica somente ao subconjunto de repositórios na visualização "
-"de conteúdo."
+"Este filtro se aplica somente ao subconjunto de repositórios na visualização"
+" de conteúdo."
 
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/filter-repositories.html
 msgid ""
@@ -4172,12 +4622,14 @@ msgstr "Esta subscrição não está anexada à qualquer hosts de conteúdo."
 msgid "This version will be removed from:"
 msgstr "Esta versão será removida de:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-import-history.html
 msgid "Time"
 msgstr "Tempo"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-errata.html
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/errata-details.html
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-errata.html
@@ -4190,18 +4642,16 @@ msgid "Title"
 msgstr "Título"
 
 #: app/assets/javascripts/bastion_katello/content-hosts/views/register.html
-msgid ""
-"To register a content host to this server, run the following commands within "
-"a console on the client host."
+msgid "To register a content host to this server, follow these steps."
 msgstr ""
-"Para registrar um host de conteúdo a este servidor, execute os seguintes "
-"comandos dentro de um console em um host de conteúdo cliente."
+"Para registrar um host de conteúdo à este servidor, siga estes passos."
 
 #: app/assets/javascripts/bastion_katello/errata/details/views/errata-details-info.html
 msgid "Topic"
 msgstr "Tópico"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
+# 6.1, document hammer-cli-foreman
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-add-subscriptions.html
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions-list.html
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-errata.html
@@ -4228,7 +4678,8 @@ msgstr "Tópico"
 msgid "Type"
 msgstr "Tipo"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
+# 6.1, document hammer-cli-foreman
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
 #: app/assets/javascripts/bastion_katello/repositories/new/views/repository-new.html
 msgid "URL"
@@ -4236,17 +4687,18 @@ msgstr "URL"
 
 #: app/assets/javascripts/bastion_katello/repositories/new/views/repository-new.html
 msgid ""
-"URL of the registry you want to sync. Example: https://registry.hub.docker."
-"com"
+"URL of the registry you want to sync. Example: "
+"https://registry.hub.docker.com"
 msgstr ""
-"URL do registro que você deseja sincronizar. Exemplo: https://registry.hub."
-"docker.com"
+"URL do registro que você deseja sincronizar. Exemplo: "
+"https://registry.hub.docker.com"
 
 #: app/assets/javascripts/bastion_katello/products/discovery/views/discovery.html
 msgid "URL to discover"
 msgstr "URL para descrobrir"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
+# 6.1, document hammer-cli-foreman
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid "UUID"
 msgstr "UUID"
@@ -4270,16 +4722,28 @@ msgstr "Hosts de Conteúdo Ilimitados:"
 msgid "Unregister Content Host"
 msgstr "Cancelar registro de Host de Conteúdo"
 
+#: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-details.html
+msgid "Unregister Content Host \"{{contentHost.name}}\"?"
+msgstr "Cancele o Registro do Host de Conteúdo \"{{contentHost.name}}\"?"
+
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions.html
 msgid "Unregister Content Hosts"
 msgstr "Cancelar registro de Hosts de Conteúdo"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+#: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions.html
+msgid "Unregister {{ contentHostTable.numSelected  }} Content Hosts?"
+msgstr ""
+"Cancelar o registro dos Hosts de Conteúdo  {{ contentHostTable.numSelected  "
+"}} ?"
+
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-packages.html
 msgid "Update"
 msgstr "Atualizar"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/content-host-packages.html
 msgid "Update All"
 msgstr "Atualizar Todos"
@@ -4292,7 +4756,8 @@ msgstr "Atualizar Repositórios"
 msgid "Update Sync Plan"
 msgstr "Atualizar Plano de Sinc"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/errata-details.html
 #: app/assets/javascripts/bastion_katello/content-hosts/content/views/errata-details.html
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/filters.html
@@ -4311,12 +4776,14 @@ msgstr "Filtro de errata atualizado - "
 msgid "Updated override to \"%x\"."
 msgstr "Sobreposição atualizada para \"%x\"."
 
-# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document
+# evolution-3.8
 #: app/assets/javascripts/bastion_katello/products/bulk/views/bulk-actions-sync-plan.html
 msgid "Updating..."
 msgstr "Atualizando..."
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/gpg-keys/details/views/gpg-key-info.html
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-import.html
@@ -4332,7 +4799,8 @@ msgstr "Carregar a Imagem de Docker"
 msgid "Upload GPG Key"
 msgstr "Carregar a Chave GPG"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-import.html
 msgid "Upload New Manifest"
 msgstr "Carregar Manifesto Novo"
@@ -4361,15 +4829,17 @@ msgid "Upstream Subscription"
 msgstr "Subscrição de Upstream"
 
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-import.html
-msgid "Upstream Subscription Managment Application"
+msgid "Upstream Subscription Management Application"
 msgstr "Aplicativo de Gerenciamento de Subscrição Upstream"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-details.html
 msgid "Upstream Type"
 msgstr "Tipo de Upstream"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/subscriptions/manifest/views/manifest-details.html
 msgid "Upstream User"
 msgstr "Usuário de Upstream"
@@ -4377,15 +4847,6 @@ msgstr "Usuário de Upstream"
 #: app/assets/javascripts/bastion_katello/content-views/content-view.factory.js
 msgid "Use Latest (currently %s)"
 msgstr "Utilizar o Mais Recente (atualmente %s)"
-
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
-#: app/assets/javascripts/bastion_katello/content-hosts/views/register.html
-msgid "Use Subscription Manager to register."
-msgstr "Use o Gerenciador de Subscrição para registrar."
-
-#: app/assets/javascripts/bastion_katello/content-hosts/views/register.html
-msgid "Use an Activation Key to register."
-msgstr "Usar uma Chave de Ativação para registrar."
 
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid ""
@@ -4395,14 +4856,16 @@ msgstr ""
 "Usar o botão de cancelar na seleção de visualização de conteúdo para "
 "reverter sua seleção de ambiente."
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
+# 6.1, document hammer-cli-foreman
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details-history.html
 #: app/assets/javascripts/bastion_katello/tasks/views/task-details.html
 #: app/assets/javascripts/bastion_katello/tasks/views/tasks-table.html
 msgid "User"
 msgstr "Usuário"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1,
+# document katello
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/content-view-deletion.html
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/views/content-view-puppet-module-versions.html
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/views/content-view-puppet-modules.html
@@ -4414,20 +4877,28 @@ msgstr "Usuário"
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-components.html
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-details.html
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version-packages.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-packages.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-puppet-modules.html
 #: app/assets/javascripts/bastion_katello/errata/views/apply-errata-confirm.html
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-manage-puppet-modules.html
 msgid "Version"
 msgstr "Versão"
 
-# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document
+# gnome-control-center-2.0
 #: app/assets/javascripts/bastion_katello/content-views/details/content-view-composite-content-views-list.controller.js
 msgid "Version %s"
 msgstr "Versão %s"
 
-# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document
+# evolution-3.8
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-composite-available-content-views.html
 msgid "Version 1"
 msgstr "Versão 1"
+
+#: app/assets/javascripts/bastion_katello/content-views/details/content-view-versions.controller.js
+msgid "Version Deletion"
+msgstr "Remoção da Versão"
 
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-publish.html
 msgid "Version Details"
@@ -4437,12 +4908,14 @@ msgstr "Detalhes da Versão"
 msgid "Version {{ version.version }}"
 msgstr "Versão {{ version.version }}"
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+# translation auto-copied from project subscription-manager, version 1.10.10,
+# document keys
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version.html
 msgid "Version:"
 msgstr "Versão:"
 
-# translation auto-copied from project Zanata server, version master, document zanata-war/src/main/resources/messages, author Marcelo Barbosa
+# translation auto-copied from project Zanata server, version master, document
+# zanata-war/src/main/resources/messages, author Marcelo Barbosa
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-details.html
 #: app/assets/javascripts/bastion_katello/content-views/versions/views/content-view-version.html
 msgid "Versions"
@@ -4460,7 +4933,8 @@ msgstr "Versões para Módulo Puppet:"
 msgid "View Details"
 msgstr "Visualizar Detalhes"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet, author ldelima
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-
+# applet, author ldelima
 #: app/assets/javascripts/bastion_katello/subscriptions/details/views/subscription-associations-content-hosts.html
 #: app/assets/javascripts/bastion_katello/subscriptions/views/subscription-type.html
 msgid "Virtual"
@@ -4480,18 +4954,28 @@ msgstr "Host Virtual"
 
 #: app/assets/javascripts/bastion_katello/products/details/partials/sync-status.html
 msgid ""
-"Weekly on {{ product.sync_plan.sync_date | date:'EEEE' }} at {{ product."
-"sync_plan.sync_date | date:'mediumTime' }} (Server Time)"
+"Weekly on {{ product.sync_plan.sync_date | date:'EEEE' }} at {{ "
+"product.sync_plan.sync_date | date:'mediumTime' }} (Server Time)"
 msgstr ""
 "Semanalmente em  {{ product.sync_plan.sync_date | date:'EEEE' }} em {{ "
 "product.sync_plan.sync_date | date:'mediumTime' }} (Tempo do Servidor)"
+
+#: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-subscriptions.html
+msgid ""
+"When Auto Attach is disabled, registering systems will be attached to all "
+"associated subscriptions."
+msgstr ""
+"Quando o Auto Attach é desabilitado, o registro de sistemas será anexado à "
+"todas as subscrições associadas."
 
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-subscriptions.html
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-subscriptions.html
 msgid "Working"
 msgstr "Funcionando"
 
-# translation auto-copied from project Customer Portal Translations, version RHJBossMiddlewareOperationsNetworkProduc, document RHJBossMiddlewareOperationsNetworkProductUpdate.html, author gcintra
+# translation auto-copied from project Customer Portal Translations, version
+# RHJBossMiddlewareOperationsNetworkProduc, document
+# RHJBossMiddlewareOperationsNetworkProductUpdate.html, author gcintra
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-environment.html
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-errata.html
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-host-collections.html
@@ -4499,6 +4983,7 @@ msgstr "Funcionando"
 #: app/assets/javascripts/bastion_katello/content-hosts/bulk/views/bulk-actions-subscriptions.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-info.html
 #: app/assets/javascripts/bastion_katello/content-views/views/content-views-table-full.html
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment-content-views.html
 #: app/assets/javascripts/bastion_katello/subscriptions/subscriptions.controller.js
 msgid "Yes"
 msgstr "Sim"
@@ -4513,8 +4998,8 @@ msgid ""
 "You cannot remove these repositories because they belong to a Red Hat "
 "product."
 msgstr ""
-"Você não pode remover estes repositórios porque eles pertencem ao produto da "
-"Red Hat."
+"Você não pode remover estes repositórios porque eles pertencem ao produto da"
+" Red Hat."
 
 #: app/assets/javascripts/bastion_katello/products/details/views/product-repositories.html
 msgid ""
@@ -4544,8 +5029,8 @@ msgstr ""
 
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
 msgid ""
-"You cannot remove this repository because it was published to a content view."
-""
+"You cannot remove this repository because it was published to a content "
+"view."
 msgstr ""
 "Você não pode remover este repositório porque ele foi publicado à "
 "visualização de conteúdo."
@@ -4563,7 +5048,7 @@ msgstr ""
 "No momento você não tem nenhum pacote instalado. Você pode usar ações do "
 "pacote acima desta mensagem para instalar novos pacotes."
 
-#: app/assets/javascripts/bastion_katello/activation-keys/views/activation-keys-table-full.html
+#: app/assets/javascripts/bastion_katello/activation-keys/views/activation-keys.html
 msgid ""
 "You currently don't have any Activation Keys, you can add Activation Keys "
 "using the button on the right."
@@ -4581,29 +5066,33 @@ msgstr ""
 
 #: app/assets/javascripts/bastion_katello/host-collections/details/views/host-collection-add-content-hosts.html
 msgid ""
-"You currently don't have any Content Hosts, you can create new Content Hosts "
-"by selecting Contents Host from main menu and then clicking the button on "
+"You currently don't have any Content Hosts, you can create new Content Hosts"
+" by selecting Contents Host from main menu and then clicking the button on "
 "the right."
 msgstr ""
-"No momento você não tem nenhum host de conteúdo, você pode criar novos hosts "
-"de conteúdo, selecionando Host de Conteúdo do menu principal e, em seguida, "
-"clique no botão à direita."
+"No momento você não tem nenhum host de conteúdo, você pode criar novos hosts"
+" de conteúdo, selecionando Host de Conteúdo do menu principal e, em seguida,"
+" clique no botão à direita."
 
-#: app/assets/javascripts/bastion_katello/content-hosts/views/content-hosts-table-full.html
+#: app/assets/javascripts/bastion_katello/content-hosts/views/content-hosts.html
 msgid ""
-"You currently don't have any Content Hosts, you can register Content Hosts "
+"You currently don't have any Content Hosts, you can register one by clicking"
+" the button on the right and following the instructions."
+msgstr ""
+"No momento você não tem nenhum Host de Conteúdo, você pode registrar um "
+"utilizando o botão à direita e seguindo as instruções."
+
+#: app/assets/javascripts/bastion_katello/content-views/views/content-views.html
+msgid ""
+"You currently don't have any Content Views.  A Content View can be added by "
 "using the button on the right."
 msgstr ""
-"No momento você não tem nenhum Host de Conteúdo, você pode registrar Hosts "
-"de Conteúdo utilizando o botão à direita."
+"No momento você não tem nenhuma Visualização de Conteúdo. Pode-se adicionar "
+"uma Visualização de Conteúdo utilizando o botão à direita."
 
-#: app/assets/javascripts/bastion_katello/content-views/views/content-views-table-full.html
-msgid ""
-"You currently don't have any Content Views, you can create Content View "
-"using the button on the right."
-msgstr ""
-"No momento você não tem nenhuma Visualização de Conteúdo, você pode criar  "
-"Visualização de Conteúdo utilizando o botão à direita."
+#: app/assets/javascripts/bastion_katello/docker-tags/views/docker-tags.html
+msgid "You currently don't have any Docker Tags."
+msgstr "Você não possui nenhuma Marcação de Docker atualmente."
 
 #: app/assets/javascripts/bastion_katello/content-views/details/filters/views/filters.html
 msgid ""
@@ -4613,21 +5102,21 @@ msgstr ""
 "Você não possui atualmente nenhum Filtro incluso nesta Visualização de "
 "Conteúdo, você pode adicionar um novo Filtro utilizando o botão à direita."
 
-#: app/assets/javascripts/bastion_katello/gpg-keys/views/gpg-keys-table-full.html
+#: app/assets/javascripts/bastion_katello/gpg-keys/views/gpg-keys.html
 msgid ""
-"You currently don't have any Gpg keys, you can add Gpg keys using the button "
-"on the right."
+"You currently don't have any Gpg keys, you can add Gpg keys using the button"
+" on the right."
 msgstr ""
-"No momento você não tem nenhuma chave GPG, você pode adicionar as chaves GPG "
-"usando o botão à direita."
+"No momento você não tem nenhuma chave GPG, você pode adicionar as chaves GPG"
+" usando o botão à direita."
 
-#: app/assets/javascripts/bastion_katello/host-collections/views/host-collections-table-full.html
+#: app/assets/javascripts/bastion_katello/host-collections/views/host-collections.html
 msgid ""
 "You currently don't have any Host Collections, you can add Host Collections "
 "using the button on the right."
 msgstr ""
-"No momento você não tem nenhuma Coleção de Host, você pode adicionar Coleção "
-"de Host utilizando o botão à direita."
+"No momento você não tem nenhuma Coleção de Host, você pode adicionar Coleção"
+" de Host utilizando o botão à direita."
 
 #: app/assets/javascripts/bastion_katello/gpg-keys/details/views/gpg-key-products.html
 msgid "You currently don't have any Products associated with this Gpg Key."
@@ -4641,14 +5130,14 @@ msgstr ""
 "No momento você não tem nenhum produto para assinar, você pode adicionar os "
 "produtos após a seleção de 'produtos' sob 'Conteúdo' no menu principal."
 
-#: app/assets/javascripts/bastion_katello/products/views/products-table-full.html
+#: app/assets/javascripts/bastion_katello/products/views/products.html
 msgid ""
-"You currently don't have any Products<span bst-feature-flag="
-"\"custom_products\">, you can add Products using the button on the right</"
-"span>."
+"You currently don't have any Products<span bst-feature-"
+"flag=\"custom_products\">, you can add Products using the button on the "
+"right</span>."
 msgstr ""
-"No momento você não possui nenhum produto <span bst-feature-flag="
-"\"custom_products\">, você pode adicionar os produtos usando o botão à "
+"No momento você não possui nenhum produto <span bst-feature-"
+"flag=\"custom_products\">, você pode adicionar os produtos usando o botão à "
 "direita</span>."
 
 #: app/assets/javascripts/bastion_katello/content-views/details/puppet-modules/views/content-view-puppet-modules.html
@@ -4656,9 +5145,9 @@ msgid ""
 "You currently don't have any Puppet Modules included in this Content View, "
 "you can add Puppet Modules using the button on the right."
 msgstr ""
-"No momento você não possui nenhum Módulos Puppet incluído nesta visualização "
-"de conteúdo, você pode adicionar Puppet Módulos utilizando o botão à direita."
-""
+"No momento você não possui nenhum Módulos Puppet incluído nesta visualização"
+" de conteúdo, você pode adicionar Puppet Módulos utilizando o botão à "
+"direita."
 
 #: app/assets/javascripts/bastion_katello/gpg-keys/details/views/gpg-key-repositories.html
 msgid ""
@@ -4671,8 +5160,8 @@ msgid ""
 "You currently don't have any Repositories included in this Product, you can "
 "add Repositories using the button on the right."
 msgstr ""
-"No momento você não tem nenhum Repositório incluído neste produto, você pode "
-"adicionar Repositórios usando o botão à direita."
+"No momento você não tem nenhum Repositório incluído neste produto, você pode"
+" adicionar Repositórios usando o botão à direita."
 
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-subscriptions-list.html
 msgid ""
@@ -4683,11 +5172,11 @@ msgstr ""
 "Conteúdo, você pode adicionar assinaturas depois de selecionar a opção "
 "\"Adicionar\"."
 
-#: app/assets/javascripts/bastion_katello/subscriptions/views/subscriptions-table-full.html
+#: app/assets/javascripts/bastion_katello/subscriptions/views/subscriptions.html
 msgid ""
 "You currently don't have any Subscriptions, you can add Subscriptions by "
-"importing a manifest using the button on the right labeled 'Manage Manifest'."
-""
+"importing a manifest using the button on the right labeled 'Manage "
+"Manifest'."
 msgstr ""
 "No momento você não tem nenhuma Assinatura, você pode adicionar assinaturas "
 "importando um manifesto usando o botão à direita chamado \"Gerenciar "
@@ -4701,6 +5190,14 @@ msgstr ""
 " No momento você não tem nenhum plano de sincronização, você pode adicionar "
 "Planos de sincronização usando o botão do lado direito."
 
+#: app/assets/javascripts/bastion_katello/sync-plans/views/sync-plans.html
+msgid ""
+"You currently don't have any Sync Plans.  A Sync Plan can be created by "
+"using the button on the right."
+msgstr ""
+" No momento você não tem nenhum plano de sincronização. Pode-se criar um "
+"Plano de Sincronização usando o botão do lado direito."
+
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid "You do not have any Installed Products"
 msgstr "Você não possui qualquer Produto Instalado"
@@ -4709,6 +5206,12 @@ msgstr "Você não possui qualquer Produto Instalado"
 msgid "You don't have any custom information, add some above"
 msgstr ""
 "Você não possui qualquer informação padronizada, adicione alguns acima"
+
+#: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-info.html
+msgid "You must select a content view in order to save your environment."
+msgstr ""
+"Você precisa selecionar uma visualização de conteúdo para salvar seu "
+"ambiente."
 
 #: app/assets/javascripts/bastion_katello/content-hosts/details/views/content-host-info.html
 msgid ""
@@ -4769,33 +5272,40 @@ msgstr ""
 
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-manage-packages.html
 msgid ""
-"Yum metadata generation has been initiated in the background.  Click <a href="
-"\"{{ taskUrl() }}\">Here</a> to monitor the progress."
+"Yum metadata generation has been initiated in the background.  Click <a "
+"href=\"{{ taskUrl() }}\">Here</a> to monitor the progress."
 msgstr ""
-"Geração de metadados Yum foi iniciada no pano de fundo. Clique em  <a href="
-"\"{{ taskUrl() }}\">Here</a> para monitorar o progresso."
+"Geração de metadados Yum foi iniciada no pano de fundo. Clique em  <a "
+"href=\"{{ taskUrl() }}\">Here</a> para monitorar o progresso."
 
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-docker-repositories.html
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-repositories.html
 msgid "add some repositories."
 msgstr "adicionar alguns repositórios"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/sync-plans/details/sync-plan-details-info.controller.js
 #: app/assets/javascripts/bastion_katello/sync-plans/new/new-sync-plan.controller.js
 msgid "daily"
 msgstr "por dia"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1,
+# document foreman
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-activation-keys.html
 msgid "here"
 msgstr "aqui"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author gcintra
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello, author gcintra
 #: app/assets/javascripts/bastion_katello/sync-plans/details/sync-plan-details-info.controller.js
 #: app/assets/javascripts/bastion_katello/sync-plans/new/new-sync-plan.controller.js
 msgid "hourly"
 msgstr "por hora"
+
+#: app/assets/javascripts/bastion_katello/content-hosts/views/register.html
+msgid "or authenticate with a username and password:"
+msgstr "ou autenticar com um username e senha:"
 
 #: app/assets/javascripts/bastion_katello/activation-keys/details/views/activation-key-info.html
 msgid ""
@@ -4813,12 +5323,14 @@ msgstr "detalhes da tarefa"
 msgid "to manage them individually."
 msgstr "para gerencia-los individualmente"
 
-# translation auto-copied from project PressGang CCMS topics, version 1, document 10738-495177, author ldelima
+# translation auto-copied from project PressGang CCMS topics, version 1,
+# document 10738-495177, author ldelima
 #: app/assets/javascripts/bastion_katello/repositories/details/views/repository-info.html
 msgid "true"
 msgstr "verdadeiro"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
+# document katello
 #: app/assets/javascripts/bastion_katello/sync-plans/details/sync-plan-details-info.controller.js
 #: app/assets/javascripts/bastion_katello/sync-plans/new/new-sync-plan.controller.js
 msgid "weekly"
@@ -4843,17 +5355,11 @@ msgstr "{{ contentHostsTable.numSelected }} Selecionado"
 
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/content-view-deletion.html
 msgid ""
-"{{ contentView.name }} cannot be deleted as one or more Content View "
-"Versions are still promoted to a Lifecycle Environment.\n"
-"      Each Content View Version must be removed from their Lifecycle "
-"Environments before the Content View can be deleted."
+"{{ contentView.name }} cannot be deleted as one or more Content View Versions are still promoted to a Lifecycle Environment.\n"
+"      Each Content View Version must be removed from their Lifecycle Environments before the Content View can be deleted."
 msgstr ""
-"{{ contentView.name }} não pode ser apagado, pois um ou mais  Versões de "
-"Visualização de Conteúdo ainda estão promovidas a um Ambiente de Ciclo de "
-"Vida.\n"
-"       Cada Versão de Visualização de Conteúdo deve ser removida de seus "
-"Ambientes de Ciclo de Vida antes que a visualização de conteúdo seja apagada."
-""
+"{{ contentView.name }} não pode ser apagado, pois um ou mais  Versões de Visualização de Conteúdo ainda estão promovidas a um Ambiente de Ciclo de Vida.\n"
+"       Cada Versão de Visualização de Conteúdo deve ser removida de seus Ambientes de Ciclo de Vida antes que a visualização de conteúdo seja apagada."
 
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-composite-available-content-views.html
 msgid "{{ contentView.puppet_modules.length || 0 }} Puppet Modules"
@@ -4864,8 +5370,8 @@ msgid "{{ contentView.repositories.length || 0 }} Repositories"
 msgstr "{{ contentView.repositories.length || 0 }} Repositórios"
 
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-composite-content-views-list.html
-msgid "{{ contentViewVersion.puppet_modules.length || 0 }} Puppet Modules"
-msgstr "{{ contentViewVersion.puppet_modules.length || 0 }} Módulos do Puppet"
+msgid "{{ contentViewVersion.puppet_module_count || 0 }} Puppet Modules"
+msgstr "{{ contentViewVersion.puppet_module_count || 0 }} Puppet Modules"
 
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-composite-content-views-list.html
 msgid "{{ contentViewVersion.repositories.length || 0 }} Repositories"
@@ -4902,8 +5408,8 @@ msgstr "{{ package.removeTask.affected_units }} pacote removido"
 
 #: app/assets/javascripts/bastion_katello/products/details/views/product-info.html
 msgid ""
-"{{ product.last_sync_words }} Ago ({{ product.sync_status.finish_time | date:"
-"'medium' }} Local Time)"
+"{{ product.last_sync_words }} Ago ({{ product.sync_status.finish_time | "
+"date:'medium' }} Local Time)"
 msgstr ""
 "{{ product.last_sync_words }} Atrás ({{ product.sync_status.finish_time | "
 "date:'medium' }} Horário Local)"
@@ -4988,28 +5494,26 @@ msgstr "{{ subscriptionsTable.numSelected }} Selecionado"
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-confirm.html
 msgid ""
 "{{ totalActivationKeyCount() }} Activation Keys will be moved to {{ "
-"deleteOptions.activationKeys.contentView.name }} in {{ deleteOptions."
-"activationKeys.environment.name }}"
+"deleteOptions.activationKeys.contentView.name }} in {{ "
+"deleteOptions.activationKeys.environment.name }}"
 msgstr ""
 "{{ totalActivationKeyCount() }} Chave de Ativação será movida para {{ "
-"deleteOptions.activationKeys.contentView.name }} em {{ deleteOptions."
-"activationKeys.environment.name }}"
+"deleteOptions.activationKeys.contentView.name }} em {{ "
+"deleteOptions.activationKeys.environment.name }}"
 
 #: app/assets/javascripts/bastion_katello/content-views/deletion/views/version-deletion-confirm.html
 msgid ""
-"{{ totalHostCount() }} Content Hosts will be moved to {{ deleteOptions."
-"contentHosts.contentView.name }} in {{ deleteOptions.contentHosts."
-"environment.name }}"
+"{{ totalHostCount() }} Content Hosts will be moved to {{ "
+"deleteOptions.contentHosts.contentView.name }} in {{ "
+"deleteOptions.contentHosts.environment.name }}"
 msgstr ""
-"{{ totalHostCount() }} Hosts de Conteúdo será movido para {{ deleteOptions."
-"contentHosts.contentView.name }} em {{ deleteOptions.contentHosts."
-"environment.name }}"
+"{{ totalHostCount() }} Hosts de Conteúdo será movido para {{ "
+"deleteOptions.contentHosts.contentView.name }} em {{ "
+"deleteOptions.contentHosts.environment.name }}"
 
-#: app/assets/javascripts/bastion_katello/products/views/partials/product-table-sync-status.html
-msgid "{{ value.length }} repository"
-msgid_plural "{{ value.length }} repositories"
-msgstr[0] "{{ value.length }} repositório"
-msgstr[1] "{{ value.length }} repositórios"
+#: app/assets/javascripts/bastion_katello/environments/details/views/environment.html
+msgid "{{ type.display }}"
+msgstr "{{ type.display }}"
 
 #: app/assets/javascripts/bastion_katello/content-views/details/views/content-view-versions.html
 msgid "{{ version.docker_image_count }} Docker Images"
