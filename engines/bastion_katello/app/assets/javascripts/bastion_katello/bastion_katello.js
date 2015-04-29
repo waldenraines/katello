@@ -10,6 +10,8 @@
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt.
  */
 
+//= require "bastion_katello/i18n/translations.js"
+
 //= require "bastion_katello/host-collections/host-collections.module.js"
 //= require_tree "./host-collections"
 
