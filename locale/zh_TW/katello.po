@@ -23,41 +23,35 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Zanata 3.6.0\n"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid " Red Hat Repositories"
 msgstr "Red Hat 軟體庫"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid " environment cannot be set to an environment already on its path"
 msgstr "環境無法設置為已在其路徑上的環境"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid " items selected."
 msgstr "項目已選擇。"
 
 msgid ""
-"\"comma separated values. The value will be available in templates as "
-"@host.params['#{kt_ak_label}']\""
+"\"comma separated values. The value will be available in templates as @host."
+"params['#{kt_ak_label}']\""
 msgstr "「用逗號隔開的值。這個值可用於模版中，如 @host.params['#{kt_ak_label}']」"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "%s Distributors Removed Successfully"
 msgstr "已成功移除了 %s 個 distributor"
 
 msgid "%s Errata"
 msgstr "%s 勘誤"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "%s Removed Successfully"
 msgstr "%s 已成功移除"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "%s ago"
 msgstr "%s 之前"
 
@@ -65,81 +59,66 @@ msgstr "%s 之前"
 msgid "%s for more details."
 msgstr "%s 以取得更多詳細資訊。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "%s is not a valid package name"
 msgstr "%s 不是個有效的套件名稱"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "%{app_name} Version: %{version}"
 msgstr "%{app_name} 版本：%{version}"
 
 msgid "%{content_view_name}, version %{content_view_version}"
 msgstr "%{content_view_name}，版本 %{content_view_version}"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "%{errata} (%{total} other errata)"
 msgstr "%{errata}（%{total} 個其它勘誤）"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "%{errata} (%{total} other errata) install canceled"
 msgstr "%{errata}（%{total} 個其它勘誤）安裝程序已取消"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "%{errata} (%{total} other errata) install failed"
 msgstr "%{errata}（%{total} 個其它勘誤）安裝程序失敗"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "%{errata} (%{total} other errata) install timed out"
 msgstr "%{errata}（%{total} 個其它勘誤）安裝逾時"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "%{errata} (%{total} other errata) installed"
 msgstr "%{errata}（%{total} 個其它勘誤）已安裝"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "%{errata} erratum install canceled"
 msgstr "%{errata} 勘誤安裝已取消"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "%{errata} erratum install failed"
 msgstr "%{errata} 勘誤安裝失敗"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "%{errata} erratum install timed out"
 msgstr "%{errata} 勘誤安裝逾時"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "%{errata} erratum installed"
 msgstr "已安裝 %{errata} 個勘誤"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "%{group} (%{total} other package groups)"
 msgstr "%{group}（%{total} 個其它套件群組）"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "%{group} (%{total} other package groups) install canceled"
 msgstr "%{group}（%{total} 個其它套件群組）安裝已取消"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "%{group} (%{total} other package groups) install failed"
 msgstr "%{group}（%{total} 個其它套件群組）安裝失敗"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "%{group} (%{total} other package groups) install timed out"
 msgstr "%{group}（%{total} 個其它套件群組）安裝逾時"
 
@@ -206,8 +185,7 @@ msgstr "%{group} 套件群組更新逾時"
 msgid "%{group} package group updated"
 msgstr "已更新 %{group} 套件群組"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "%{name} (Registered: %{time})"
 msgstr "%{name}（已註冊：%{time}）"
 
@@ -280,8 +258,7 @@ msgstr "%{package} 套件更新逾時"
 msgid "%{package} package updated"
 msgstr "%{package} 套件已更新"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "%{repo} (Product: %{product})"
 msgstr "%{repo} (產品: %{product})"
 
@@ -291,46 +268,38 @@ msgstr "%{sla}"
 msgid "%{substitutions} are not valid substitutions for %{content_url}"
 msgstr "%{substitutions} 訂閱對於 %{content_url} 無效"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "'%s' did not meet the current search criteria and is not being shown."
 msgstr "「%s」並不符合目前的搜尋條件，因此不會顯示。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "'%s' no longer matches the current search criteria."
 msgstr "「%s」不再符合現有的搜尋條件。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "(%X of %Y repositories selected)"
 msgstr "（選擇了 %X 個軟體庫，總數為 %Y）"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "(Entire product selected)"
 msgstr "（已選擇了整個產品）"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "(Load %X More)"
 msgstr "（多載入 %X 個）"
 
 msgid "(Orphaned)"
 msgstr "（已孤立）"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "+ Add"
 msgstr "+ 新增"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "+ New %s"
 msgstr "+ 新增 %s"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "+ New Distributor"
 msgstr "+ 新增 Distributor"
 
@@ -338,26 +307,22 @@ msgstr "+ 新增 Distributor"
 msgid "+ Yes"
 msgstr "+ 是"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "400 - Invalid Parameters"
 msgstr "400 - 參數無效"
 
 msgid "403 - Permission Denied"
 msgstr "403 - 權限被拒絕"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "404 - That page doesn't exist or is missing!"
 msgstr "404 - 該網頁不存在或已遺失！"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "500 Internal Server Error"
 msgstr "500 內部伺服器錯誤"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid ": '%s' is a built-in environment"
 msgstr "：'%s' 乃內建的環境"
 
@@ -370,8 +335,7 @@ msgstr "無法連上後端服務 [ %s ]"
 msgid "A content_type must be provided."
 msgstr "必須提供 content_type。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid ""
 "A label was not provided during environment creation; therefore, a label of "
 "'%{label}' was automatically assigned. If you would like a different label, "
@@ -379,17 +343,15 @@ msgid ""
 msgstr ""
 "建立環境時並未提供標籤；因此已自動指定了一個標籤 '%{label}'。若您希望使用不同的標籤，請刪除環境並以您希望使用的標籤重新建立環境。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid ""
-"A label was not provided during organization creation; therefore, a label of"
-" '%{label}' was automatically assigned. If you would like a different label,"
-" please delete the organization and recreate it with the desired label."
+"A label was not provided during organization creation; therefore, a label of "
+"'%{label}' was automatically assigned. If you would like a different label, "
+"please delete the organization and recreate it with the desired label."
 msgstr ""
 "建立組織時並未提供標籤；因此已自動指定了一個標籤 '%{label}'。若您希望使用不同的標籤，請刪除組織並以您希望使用的標籤重新建立組織。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid ""
 "A label was not provided during product creation; therefore, a label of "
 "'%{label}' was automatically assigned. If you would like a different label, "
@@ -397,8 +359,7 @@ msgid ""
 msgstr ""
 "建立產品時並未提供標籤；因此已自動指定了一個標籤 '%{label}'。若您希望使用不同的標籤，請刪除產品並以您希望使用的標籤重新建立產品。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid ""
 "A label was not provided during repository creation; therefore, a label of "
 "'%{label}' was automatically assigned. If you would like a different label, "
@@ -419,8 +380,7 @@ msgstr "此軟體庫已同步許多勘誤，因此只顯示了前 100 個。"
 msgid "A post-promotion summary of hosts with available errata"
 msgstr "主機推送後的摘要與可用的勘誤"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid ""
 "A request has been received by Katello server '%{url}' to retrieve the "
 "logins for email '%{email}'. The following is a list of those logins:"
@@ -444,8 +404,7 @@ msgstr "預設的 capsule 不允許此動作。"
 msgid "Action unauthorized to be performed on selected systems."
 msgstr "動作允許在選擇的系統上執行。"
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys, author snowlet
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys, author snowlet
 msgid "Activation Keys"
 msgstr "啟動金鑰"
 
@@ -461,13 +420,11 @@ msgstr "可管理啟動金鑰與訂閱"
 msgid "Active only"
 msgstr "只有啟用的"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager, author tchuang
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author tchuang
 msgid "Add"
 msgstr "新增"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Add All"
 msgstr "全部新增"
 
@@ -512,13 +469,11 @@ msgstr "新增軟體庫"
 msgid "Added Content:"
 msgstr "已新增內容："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Adding Package Group..."
 msgstr "正在新增套件群組..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Adding Package..."
 msgstr "正在新增套件..."
 
@@ -527,13 +482,11 @@ msgid ""
 "systems.  Only Errata are supported currently."
 msgstr "產生累進更新後，將變更套用到指定的系統上。目前僅支援勘誤。"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0,
-# document foreman, author snowlet
+# translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman, author snowlet
 msgid "Alert"
 msgstr "警示"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "All Content Views"
 msgstr "所有內容視域"
 
@@ -545,8 +498,7 @@ msgstr "所有產品"
 msgid "All Repos"
 msgstr "所有軟體庫"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "All Repositories"
 msgstr "所有軟體庫"
 
@@ -556,26 +508,22 @@ msgstr "所有軟體庫"
 msgid "Any number of facts about this content host"
 msgstr "有關於此內容主機的任意數量詳情"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Architecture"
 msgstr "架構"
 
 msgid "Architecture: "
 msgstr "架構："
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Are you sure you want to delete the %X selected distributor(s)?"
 msgstr "您是否確定要刪除 %X 個已選擇的 distributor？"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Are you sure you want to remove this distributor?"
 msgstr "您是否確定要移除此 distributor？"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Are you sure?"
 msgstr "您是否確定？"
 
@@ -600,8 +548,7 @@ msgstr "為一或更多部系統指定環境和內容視域"
 msgid "At least one Content View Version must be specified"
 msgstr "必須指定至少一個內容視域版本"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "At least one activation key must be provided"
 msgstr "必須提供至少一組啟動金鑰"
 
@@ -610,33 +557,28 @@ msgid ""
 "view assigned to it"
 msgstr "至少必須有一組被指定了生命週期環境和內容視域的啟動金鑰"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid ""
 "At least one environment is required to create or register distributors in "
 "your current organization."
 msgstr "要在您目前的組織中建立或註冊 distributor，您需要至少一個環境。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "At least one organization must exist."
 msgstr "至少必須存在一個組織。"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 30851-704293, author ccheng
+# translation auto-copied from project PressGang CCMS topics, version 1, document 30851-704293, author ccheng
 msgid "Attach"
 msgstr "連接"
 
 msgid "Attach a subscription"
 msgstr "連接一組訂閱服務"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Attached Subscriptions"
 msgstr "已連接的訂閱服務"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Author"
 msgstr "作者"
 
@@ -661,8 +603,7 @@ msgstr "自動連接訂閱服務"
 msgid "Auto-complete Product"
 msgstr "自動完成產品"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Auto-complete View"
 msgstr "自動完成檢視"
 
@@ -670,16 +611,14 @@ msgstr "自動完成檢視"
 msgid "Auto-complete repository"
 msgstr "自動完成軟體庫"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Available Subscriptions"
 msgstr "可用的訂閱"
 
 msgid "Available search fields:"
 msgstr "可用的搜尋欄位："
 
-# translation auto-copied from project Satellite6 Foreman Docker, version 6.1,
-# document locale/foreman_docker
+# translation auto-copied from project Satellite6 Foreman Docker, version 6.1, document locale/foreman_docker
 msgid "Back"
 msgstr "上一步"
 
@@ -696,8 +635,7 @@ msgstr "停用 Basearch"
 msgid "Basearch to enable"
 msgstr "啟用 Basearch"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Beta"
 msgstr "Beta"
 
@@ -705,13 +643,11 @@ msgstr "Beta"
 msgid "Bug Fix"
 msgstr "錯誤修正"
 
-# translation auto-copied from project Satellite6 Bastion Katello, version
-# 6.1, document bastion_katello
+# translation auto-copied from project Satellite6 Bastion Katello, version 6.1, document bastion_katello
 msgid "Bugfix"
 msgstr "Bugfix"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Build Host"
 msgstr "組建主機"
 
@@ -721,18 +657,15 @@ msgstr "組建主機："
 msgid "Bulk action"
 msgstr "批次動作"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "CDN loading error: %s not found"
 msgstr "CDN 載入錯誤：找不到 %s"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "CDN loading error: access denied to %s"
 msgstr "CDN 載入錯誤：拒絕存取 %s"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "CDN loading error: access forbidden to %s"
 msgstr "CDN 載入錯誤：%s 被禁止存取"
 
@@ -748,29 +681,25 @@ msgstr "根據特定環境，計算可套用的勘誤"
 msgid "Can only remove content from within the Default Content View"
 msgstr "只能從預設的內容視域移除內容"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Can't update the '%s' environment"
 msgstr "無法更新 '%s' 環境"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Cancel"
 msgstr "取消"
 
 msgid "Cancel repository discovery"
 msgstr "取消軟體庫搜尋"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Cancelled"
 msgstr "已取消"
 
 msgid "Cancelled."
 msgstr "已取消。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Candlepin Event"
 msgstr "Candlepin 事件"
 
@@ -808,8 +737,7 @@ msgid ""
 "a Content View"
 msgstr "無法刪除一項 Red Hat 產品或是其軟體庫已在內容視域中發佈的產品"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Cannot delete from %s, view does not exist there."
 msgstr "無法由 %s 進行刪除，視域不存在此。"
 
@@ -840,8 +768,7 @@ msgstr "無法推送不照順序的環境。使用「force」來跳過限制。"
 msgid "Cannot publish default content view"
 msgstr "無法發佈預設內容視域"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Cannot register a system to the '%s' environment"
 msgstr "無法向 '%s' 環境註冊系統"
 
@@ -869,8 +796,7 @@ msgstr "無法為非複合檢視指定元件"
 msgid "Cannot specify content for composite views"
 msgstr "無法為複合檢視指定內容"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document chap-Introduction_to_Red_Hat_Satellite
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document chap-Introduction_to_Red_Hat_Satellite
 msgid "Capsule"
 msgstr "Capsule"
 
@@ -883,78 +809,66 @@ msgstr "%s 的 changelog"
 msgid "Changes"
 msgstr "變更"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Checked In"
 msgstr "已簽入"
 
 msgid "Checksums: "
 msgstr "Checksum："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Choose Environment:"
 msgstr "選擇環境："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Choose a product.."
 msgstr "選擇產品.."
 
 msgid "Choose a repository:"
 msgstr "選擇軟體庫："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Clear the Search"
 msgstr "清除搜尋"
 
 msgid "Click on the widget title text to drag and drop."
 msgstr "點選 widget 的標題文字以進行拖放"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Click to edit"
 msgstr "點選以編輯"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Clone"
 msgstr "複製"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Close"
 msgstr "關閉"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Collapse"
 msgstr "收回"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Collapse All"
 msgstr "全部收回"
 
 msgid "Compare Selected"
 msgstr "比較已選擇的項目"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Component"
 msgstr "元件"
 
 msgid "Composite content view"
 msgstr "複合式內容視域"
 
-# translation auto-copied from project gnome-packagekit, version 3.8.2,
-# document gnome-packagekit
+# translation auto-copied from project gnome-packagekit, version 3.8.2, document gnome-packagekit
 msgid "Confirmation"
 msgstr "確認"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 30851-704293, author ccheng
+# translation auto-copied from project PressGang CCMS topics, version 1, document 30851-704293, author ccheng
 msgid "Content"
 msgstr "內容"
 
@@ -964,8 +878,7 @@ msgstr "內容位於"
 msgid "Content Dashboard"
 msgstr "內容控制面板"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Content Download URL: "
 msgstr "內容下載 URL："
 
@@ -988,8 +901,7 @@ msgstr "內容搜尋"
 msgid "Content Source"
 msgstr "內容來源"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 30851-704293, author ccheng
+# translation auto-copied from project PressGang CCMS topics, version 1, document 30851-704293, author ccheng
 msgid "Content View"
 msgstr "內容視域"
 
@@ -1001,18 +913,15 @@ msgid ""
 "composites as well as one or more components to update."
 msgstr "欲對其進行遞增更新的內容視域版本之 ID。能包含複合式視域版本以及一或更多個欲更新的元件。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Content View:"
 msgstr "內容視域："
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Content Views"
 msgstr "內容視域"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Content Views Overview"
 msgstr "內容視域總覽"
 
@@ -1030,8 +939,7 @@ msgstr "欲上傳的內容檔案。能夠是單一檔案或檔案集。"
 msgid "Content override parameters"
 msgstr "內容覆寫參數"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Content view '%{view}' is not in environment '%{env}'"
 msgstr "內容視域 '%{view}' 不在 '%{env}' 環境中"
 
@@ -1050,13 +958,11 @@ msgstr "內容視域的數字識別子"
 msgid "Content view version identifier"
 msgstr "內容視域的版本識別子"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Contract"
 msgstr "合約"
 
-# translation auto-copied from project control-center, version 3.8.6, document
-# gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
 msgid "Copy"
 msgstr "複製"
 
@@ -1066,8 +972,7 @@ msgstr "複製啟動金鑰"
 msgid "Cores: %s"
 msgstr "核心：%s"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Could not delete organization '%s'."
 msgstr "無法刪除組織 '%s'。"
 
@@ -1146,8 +1051,7 @@ msgstr "找不到內容主機的內容視域 id「%s」"
 msgid "Couldn't find content host environment '%s'"
 msgstr "找不到內容主機環境「%s」"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Couldn't find content view '%s'"
 msgstr "找不到內容視域 '%s'"
 
@@ -1157,8 +1061,7 @@ msgstr "找不到內容視域版本 '%s'"
 msgid "Couldn't find content view versions '%s'"
 msgstr "找不到內容視域版本 '%s'"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Couldn't find environment '%s'"
 msgstr "找不到環境 '%s'"
 
@@ -1197,13 +1100,11 @@ msgstr "找不到軟體庫「%s」"
 msgid "Couldn't find repository set with id '%s'."
 msgstr "找不到 id 為「%s」的軟體庫集。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author dchen
+# translation auto-copied from project CFSE, version sam-1.2, document app, author dchen
 msgid "Couldn't find subject of synchronization"
 msgstr "找不到要同步的東西"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Couldn't find sync plan '%{plan}' in organization '%{org}'"
 msgstr "在「%{org}」組織中找不到同步計劃「%{plan}」"
 
@@ -1211,8 +1112,7 @@ msgstr "在「%{org}」組織中找不到同步計劃「%{plan}」"
 msgid "Couldn't find system '%s'"
 msgstr "找不到系統「%s」"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager, author ccheng
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author ccheng
 msgid "Create"
 msgstr "建立"
 
@@ -1263,13 +1163,11 @@ msgstr "建立架構"
 msgid "Create organization"
 msgstr "建立組織"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Created (UTC)"
 msgstr "已建立（UTC）"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Created / Last Checked In"
 msgstr "已建立 / 最後一次簽入"
 
@@ -1280,13 +1178,11 @@ msgstr "重大"
 msgid "Current Subscription Totals"
 msgstr "目前的訂閱總數"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Current Subscriptions"
 msgstr "目前的訂閱"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Current organization is being deleted, switch to a different one."
 msgstr "目前的組織正被刪除中，請切換至另一個組織。"
 
@@ -1297,31 +1193,26 @@ msgstr "自訂內容軟體庫"
 msgid "Custom Content Repository Product"
 msgstr "自訂內容軟體庫產品"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Custom Information"
 msgstr "自訂資訊"
 
 msgid "Custom repositories cannot be disabled."
 msgstr "無法停用自訂的軟體庫。"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Date"
 msgstr "日期"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Date format is incorrect."
 msgstr "日期格式不正確。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Debug Certificate"
 msgstr "除錯憑證"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Debug RPMs"
 msgstr "除錯 RPM"
 
@@ -1352,8 +1243,7 @@ msgstr "給新作業系統使用的預設佈建模版"
 msgid "Default user data for new Operating Systems"
 msgstr "給新作業系統使用的預設使用者資料"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Delete"
 msgstr "刪除"
 
@@ -1363,16 +1253,14 @@ msgstr "是否刪除 %s？"
 msgid "Delete Activation Key"
 msgstr "刪除啟動金鑰"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Delete All"
 msgstr "全部刪除"
 
 msgid "Delete Lifecycle Environment"
 msgstr "刪除生命週期環境"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Delete Manifest"
 msgstr "刪除清單"
 
@@ -1412,8 +1300,7 @@ msgstr "已從 %{environment} 中刪除"
 msgid "Dependencies: "
 msgstr "相依性："
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Description"
 msgstr "描述"
 
@@ -1426,16 +1313,14 @@ msgstr "新公布的內容視域版本之描述"
 msgid "Description of the content host"
 msgstr "內容主機的描述"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Description:"
 msgstr "描述："
 
 msgid "Description: "
 msgstr "描述："
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Destroy"
 msgstr "銷毀"
 
@@ -1478,8 +1363,7 @@ msgstr "銷毀一或更多個軟體庫"
 msgid "Destroy one or more systems"
 msgstr "銷毀一或更多部系統"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Details"
 msgstr "詳細資料"
 
@@ -1487,13 +1371,11 @@ msgstr "詳細資料"
 msgid "Difference"
 msgstr "差異"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Difference:"
 msgstr "差異："
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author ccheng
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author ccheng
 msgid "Disable"
 msgstr "停用"
 
@@ -1503,72 +1385,60 @@ msgstr "停用軟體庫"
 msgid "Discover Repositories"
 msgstr "尋找軟體庫"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Display"
 msgstr "顯示"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Distribution"
 msgstr "Distribution"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Distribution '%s' not found within the repository"
 msgstr "軟體庫中找不到 Distribution「%s」"
 
 msgid "Distribution with id '%s' not found"
 msgstr "找不到 ID 為「%s」的 Distribution"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Distributor"
 msgstr "Distributor"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Distributor '%s' was created."
 msgstr "Distributor '%s' 已建立。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Distributor '%s' was updated."
 msgstr "Distributor '%s' 已更新。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Distributor Events"
 msgstr "Distributor 事件"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Distributor Info"
 msgstr "Distributor 資訊"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Distributor Properties"
 msgstr "Distributor 屬性"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Distributor subscriptions updated."
 msgstr "已更新 Distributor 訂閱。"
 
 msgid "Distributor with uuid %s not found"
 msgstr "找不到 uuid 為「%s」的 Distributor"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Distributors"
 msgstr "Distributor"
 
 msgid "Do not include this array of content views"
 msgstr "不包含此內容視域集"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid ""
 "Do you want to set this GPG Key as the key for all repositories within this "
 "product?"
@@ -1586,31 +1456,26 @@ msgstr "Docker 標籤"
 msgid "Docker Tags"
 msgstr "Docker 標籤"
 
-# translation auto-copied from project xdg-user-dirs, version 0.15, document
-# xdg-user-dirs
+# translation auto-copied from project xdg-user-dirs, version 0.15, document xdg-user-dirs
 msgid "Download"
 msgstr "下載"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Download Manifest"
 msgstr "下載清單"
 
 msgid "Download a debug certificate"
 msgstr "下載除錯憑證"
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys, author snowlet
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys, author snowlet
 msgid "Duration"
 msgstr "持續時間"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Edit"
 msgstr "編輯"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Edit Environment"
 msgstr "編輯環境"
 
@@ -1622,18 +1487,15 @@ msgstr "必須同時指定 'content_view_id' 和 'environment_id' 參數，或�
 msgid "Either environments or versions must be specified."
 msgstr "必須指定環境或版本。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Either organization ID or environment ID needs to be specified"
 msgstr "必須指定組織 ID 或環境 ID"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Either packages or groups  must be provided"
 msgstr "必須提供套件或群組"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author ccheng
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author ccheng
 msgid "Enable"
 msgstr "啟用"
 
@@ -1644,18 +1506,15 @@ msgstr "啟用 Red Hat 軟體庫"
 msgid "Enable a repository from the set"
 msgstr "啟用一個軟體庫"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Enabled by Default: "
 msgstr "就預設值啟用："
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Enabled?"
 msgstr "已啟用？"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "End"
 msgstr "結束"
 
@@ -1670,38 +1529,31 @@ msgstr "增強"
 msgid "Env: "
 msgstr "環境： "
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Environment"
 msgstr "環境"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Environment cannot be in its own promotion path"
 msgstr "環境不能位於自己的推送路徑上"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Environment:"
 msgstr "環境："
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys, author snowlet
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys, author snowlet
 msgid "Errata"
 msgstr "勘誤"
 
-# translation auto-copied from project Satellite6 Hammer CLI Katello, version
-# 6.1, document hammer-cli-katello
+# translation auto-copied from project Satellite6 Hammer CLI Katello, version 6.1, document hammer-cli-katello
 msgid "Errata ID"
 msgstr "勘誤 ID"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Errata Install"
 msgstr "安裝勘誤"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Errata Install scheduled by %s"
 msgstr "由 %s 排程安裝勘誤"
 
@@ -1720,8 +1572,7 @@ msgstr "勘誤類型陣列 \\['security', 'bugfix', 'enhancement'\\]"
 msgid "Erratum"
 msgstr "勘誤"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Erratum Install Canceled"
 msgstr "勘誤安裝已取消"
 
@@ -1737,8 +1588,7 @@ msgstr "勘誤安裝失敗"
 msgid "Erratum Install Timed Out"
 msgstr "勘誤安裝逾時"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Error"
 msgstr "錯誤"
 
@@ -1746,13 +1596,11 @@ msgstr "錯誤"
 msgid "Error on Install"
 msgstr "安裝發生錯誤"
 
-# translation auto-copied from project firewalld, version 0.3.8, document
-# firewalld
+# translation auto-copied from project firewalld, version 0.3.8, document firewalld
 msgid "Error:"
 msgstr "錯誤："
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Errors"
 msgstr "錯誤"
 
@@ -1764,13 +1612,11 @@ msgstr "事件"
 msgid "Example Searches:"
 msgstr "範例搜尋："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Expand"
 msgstr "展開"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Expand All"
 msgstr "全部展開"
 
@@ -1780,26 +1626,22 @@ msgid ""
 "within are discovered and may be enabled individually."
 msgstr "展開以下每個 Red Hat 產品，以檢視可用的軟體庫設置。啟用軟體庫設置時，會探索不同的軟體庫，並分別啟用之。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Expected attribute is missing:"
 msgstr "預期的屬性遺失："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "FAIL"
 msgstr "失敗"
 
 msgid "Facts successfully updated."
 msgstr "詳情已成功更新。"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Failed"
 msgstr "失敗"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Failed for distributor(s):"
 msgstr "這些 Distributor 已失敗："
 
@@ -1823,8 +1665,7 @@ msgstr "為系統截取適用的勘誤。"
 msgid "Field to sort the results on"
 msgstr "用來排序結果的欄位"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "File Name"
 msgstr "檔案名稱"
 
@@ -1861,8 +1702,7 @@ msgstr "以 uuid 來篩選內容主機"
 msgid "Filter content view filters by name"
 msgstr "以名稱來篩選內容視域篩選器"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Filter on loaded Events..."
 msgstr "已載入之事件的篩選器..."
 
@@ -1899,29 +1739,25 @@ msgstr "透過版本編號篩選版本"
 msgid "Filter versions that are components in the specified composite version"
 msgstr "篩選在特定複合版本中的元件版本"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Filter..."
 msgstr "篩選…"
 
 msgid "For more information see "
 msgstr "欲知詳情，請見"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "GPG Key URL: "
 msgstr "GPG 金鑰 URL："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "GPG Keys"
 msgstr "GPG 金鑰"
 
 msgid "GPG keys"
 msgstr "GPG 金鑰"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Generate and Download"
 msgstr "產生與下載"
 
@@ -1960,9 +1796,9 @@ msgid "Get status of synchronisation for given repository"
 msgstr "為指定的軟體庫取得同步化的狀態"
 
 msgid ""
-"Given a set of systems and errata, lists the content view versions"
-"                                                                   and "
-"environments that need updating."
+"Given a set of systems and errata, lists the content view versions           "
+"                                                        and environments "
+"that need updating."
 msgstr "給定一組系統與勘誤，列出需要更新的內容視域版本與環境。"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
@@ -1972,8 +1808,7 @@ msgstr "確定"
 msgid "Hash version of 'order' param"
 msgstr "「order」參數的雜湊版本"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Host"
 msgstr "主機"
 
@@ -2004,23 +1839,19 @@ msgstr "主機與可安裝的勘誤"
 msgid "How to order the sorted results (e.g. ASC for ascending)"
 msgstr "如何排序結果的順序（比方說 ASC 從下到上）"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Hypervisor"
 msgstr "Hypervisor"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Hypervisor does not support this action"
 msgstr "Hypervisor 並不支援此動作"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Hypervisors do not have software products"
 msgstr "Hypervisors 沒有軟體產品"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager, author tchuang
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author tchuang
 msgid "ID"
 msgstr "ID"
 
@@ -2072,21 +1903,18 @@ msgstr "同步計劃的 ID"
 msgid "ID:"
 msgstr "ID："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "ID: %s doesn't exist "
 msgstr "ID：%s 不存在"
 
 msgid "IDs of the virtual guests running on this content host"
 msgstr "在此內容主機上執行的虛擬客座之 ID"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "IRC"
 msgstr "IRC"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "ISOs"
 msgstr "ISO"
 
@@ -2119,8 +1947,7 @@ msgstr "匯入正在進行中（%M）"
 msgid "Import uploads into a repository"
 msgstr "將上傳內容匯入軟體庫中"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "In Progress"
 msgstr "進行中"
 
@@ -2141,13 +1968,11 @@ msgstr "索引勘誤"
 msgid "Informable Type must be one of the following [ %{list} ]"
 msgstr "Informable Type 必須是以下 [ %{list} ] 其中之一"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Initial Creation Params"
 msgstr "初始建立參數"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Initial Registration Params"
 msgstr "初始註冊參數"
 
@@ -2164,8 +1989,7 @@ msgstr "在一或更多部系統上安裝內容"
 msgid "Install erratum"
 msgstr "安裝勘誤"
 
-# translation auto-copied from project gnome-packagekit, version 3.8.2,
-# document gnome-packagekit
+# translation auto-copied from project gnome-packagekit, version 3.8.2, document gnome-packagekit
 msgid "Install package"
 msgstr "安裝套件"
 
@@ -2175,13 +1999,11 @@ msgstr "安裝套件群組"
 msgid "Install packages remotely"
 msgstr "遠端安裝套件"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Installed Packages"
 msgstr "已安裝的套件"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Installing"
 msgstr "正在安裝"
 
@@ -2197,28 +2019,23 @@ msgstr "正在安裝套件群組..."
 msgid "Installing Package..."
 msgstr "正在安裝套件..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Insufficient Subscriptions"
 msgstr "不足的訂閱數"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Intersection"
 msgstr "交叉"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Intersection:"
 msgstr "交叉："
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys, author snowlet
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys, author snowlet
 msgid "Interval"
 msgstr "間隔"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Invalid Subscriptions"
 msgstr "無效的訂閱"
 
@@ -2260,15 +2077,13 @@ msgid ""
 "tuple as 'min_version' or 'max_version'"
 msgstr "指定了無效的篩選器規則，'version' 不可指定為與 'min_version' 或 'max_version' 相同的變數值組"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid ""
 "Invalid parameters sent in the request for this operation. Please contact a "
 "system administrator."
 msgstr "此作業的請求中傳送了無效的參數。請聯絡系統管理員。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid ""
 "Invalid parameters sent. You may have mistyped the address. If you continue "
 "having trouble with this, please contact an Administrator."
@@ -2284,13 +2099,11 @@ msgid ""
 "metadata.json file and is properly compressed."
 msgstr "無效的 puppet 模組。請確認 puppet 模組包含了一個 metadata.json 檔案並且已正確壓縮。"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Issue tracker"
 msgstr "問題追蹤器"
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys, author snowlet
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys, author snowlet
 msgid "Issued"
 msgstr "已簽發"
 
@@ -2326,21 +2139,18 @@ msgstr "Kickstart"
 msgid "Label of the content"
 msgstr "內容的標籤"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Last Checked in Date"
 msgstr "上一次簽入的日期"
 
 msgid "Last check-in time of this content host"
 msgstr "此內容主機最後簽入的時間"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Latest Notifications"
 msgstr "最新的通知"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Level"
 msgstr "等級"
 
@@ -2350,8 +2160,7 @@ msgstr "不可刪除函式庫生命週期環境。"
 msgid "Library repository id to restrict comparisons to"
 msgstr "欲限制比較的函式庫軟體庫 ID"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "License"
 msgstr "授權"
 
@@ -2371,8 +2180,8 @@ msgstr "生命週期環境 %s 擁有後置項。僅能刪除路徑上最後的�
 
 msgid ""
 "Lifecycle Environment %s has associated Activation Keys. Please change or "
-"remove the associated Activation Keys before trying to delete this lifecycle"
-" environment."
+"remove the associated Activation Keys before trying to delete this lifecycle "
+"environment."
 msgstr "生命週期環境 %s 含有相聯的啟動金鑰。請在嘗試刪除此生命週期環境前，更改或移除相聯的啟動金鑰。"
 
 msgid ""
@@ -2396,16 +2205,14 @@ msgstr "生命週期環境在預設的智慧協定上不可修改。來自於所
 msgid "Lifecyle Environments"
 msgstr "生命週期環境"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Limits"
 msgstr "限制"
 
 msgid "List :resource_id"
 msgstr "列出：resource_id"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "List Actions"
 msgstr "列出動作"
 
@@ -2599,8 +2406,7 @@ msgstr "列出產品的軟體庫集。"
 msgid "List sync plans"
 msgstr "列出同步計劃"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Mailing lists"
 msgstr "郵件清單"
 
@@ -2618,13 +2424,11 @@ msgstr "將此作為您的預設組織。"
 msgid "Manage Environments"
 msgstr "管理環境"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Manifest %s failed"
 msgstr "清單 %s 失敗"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Manifest subscriptions unchanged from previous"
 msgstr "清單訂閱沒有改變，跟之前的一樣"
 
@@ -2652,28 +2456,23 @@ msgid ""
 "rule."
 msgstr "不可將一項 id 規則加入含有既有類型，或日期範圍規則的篩選器。"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Message"
 msgstr "訊息"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "More >>"
 msgstr "更多 >>"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "More..."
 msgstr "更多…"
 
-# translation auto-copied from project Satellite6 Hammer CLI Katello, version
-# 6.1, document hammer-cli-katello
+# translation auto-copied from project Satellite6 Hammer CLI Katello, version 6.1, document hammer-cli-katello
 msgid "Name"
 msgstr "名稱"
 
-# auto translated by TM merge from project: Satellite6 Katello, version:
-# Sam-1.3.0, DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: Sam-1.3.0, DocId: katello
 msgid "Name of Your Distributor:"
 msgstr "Distributor 的名稱："
 
@@ -2686,39 +2485,33 @@ msgstr "內容主機的名稱"
 msgid "Name of the content view"
 msgstr "內容視域的名稱"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Name:"
 msgstr "名稱："
 
-# auto translated by TM merge from project: Satellite6 Katello, version: 6.0,
-# DocId: katello
+# auto translated by TM merge from project: Satellite6 Katello, version: 6.0, DocId: katello
 msgid "Name: "
 msgstr "名稱："
 
 msgid "Name: %{module_name}, Version: %{version}"
 msgstr "名稱：%{module_name}，版本：%{version}"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Names and labels must be unique across all organizations"
 msgstr "所有組織之間的名稱與標籤皆必須是獨特的"
 
-# auto translated by TM merge from project: Satellite6 Foreman, version: 6.0,
-# DocId: foreman
+# auto translated by TM merge from project: Satellite6 Foreman, version: 6.0, DocId: foreman
 msgid "Nest"
 msgstr "巢狀"
 
 msgid "Never Synced"
 msgstr "從未同步"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Never checked in"
 msgstr "從未簽入"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Never checked in."
 msgstr "從未簽入。"
 
@@ -2731,8 +2524,7 @@ msgstr "新 ISO：%s"
 msgid "New content view name"
 msgstr "新的內容視域名稱"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "New distributor"
 msgstr "新增 Distributor"
 
@@ -2754,19 +2546,17 @@ msgstr "軟體庫的新名稱"
 msgid "New packages: %{count} (%{size})."
 msgstr "新套件：%{count} (%{size})。"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "No"
 msgstr "否"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "No Content View"
 msgstr "沒有內容視域"
 
 msgid ""
-"No Red Hat products currently exist, please import a manifest <a "
-"href='/subscriptions'>here</a> to receive Red Hat content."
+"No Red Hat products currently exist, please import a manifest <a href='/"
+"subscriptions'>here</a> to receive Red Hat content."
 msgstr "目前不存在 Red Hat 產品，請從<a href='/subscriptions'>這裡</a>匯入清單以取得 Red Hat 內容。"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
@@ -2774,8 +2564,8 @@ msgid "No Service Level Preference"
 msgstr "無服務等級偏好設定"
 
 msgid ""
-"No Version of Content View %{component} already exists as a component of the"
-" composite Content View %{composite} version %{version}"
+"No Version of Content View %{component} already exists as a component of the "
+"composite Content View %{composite} version %{version}"
 msgstr "複合式內容視域 % {composite} 版本 %{version} 中沒有作為其元件的既有 %{component} 內容視域版本。"
 
 msgid "No content has been provided."
@@ -2787,21 +2577,18 @@ msgstr "找不到內容視域的歷史事件。"
 msgid "No content_view_version_ids provided"
 msgstr "未提供 content_view_version_ids"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid ""
-"No environments are currently available in this organization.  Please either"
-" add some to the organization or select an organization that has an "
+"No environments are currently available in this organization.  Please either "
+"add some to the organization or select an organization that has an "
 "environment to set user default."
 msgstr "此組織中目前沒有可用的環境。請在組織中新增環境，或是選擇一個含有環境的組織，以設置使用者預設值。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "No errors"
 msgstr "無錯誤"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "No events matching your search criteria."
 msgstr "沒有符合搜尋條件的事件。"
 
@@ -2814,8 +2601,7 @@ msgstr "找不到主機集項目。"
 msgid "No manifest file uploaded"
 msgstr "未上傳清單檔案"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "No new packages installed"
 msgstr "未安裝新的套件"
 
@@ -2829,28 +2615,23 @@ msgstr "%s 未收到套件設定檔"
 msgid "No package uuids provided"
 msgstr "未提供套件 UUID"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "No packages are currently filtered."
 msgstr "目前沒有已篩選的套件。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "No packages removed"
 msgstr "未移除任何套件"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "No packages updated"
 msgstr "未更新任何套件"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "No products are available containing this content type."
 msgstr "沒有可用產品包含此內容類型。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "No products or repositories are currently associated."
 msgstr "目前沒有相聯的產品或軟體庫。"
 
@@ -2860,8 +2641,7 @@ msgstr "未選擇產品或軟體庫。"
 msgid "No puppet repository selected."
 msgstr "未選擇 puppet 軟體庫。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "No recently synced products."
 msgstr "沒有最近同步的產品。"
 
@@ -2874,8 +2654,7 @@ msgstr "未找到 %s 同步報告的收件者"
 msgid "No start time currently available."
 msgstr "目前沒有可選的開始時間。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "No systems found."
 msgstr "找不到系統。"
 
@@ -2888,8 +2667,7 @@ msgstr "所選環境中找不到檢視項目。"
 msgid "Non-system event"
 msgstr "非系統事件"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "None"
 msgstr "無"
 
@@ -2903,67 +2681,56 @@ msgid ""
 "available."
 msgstr "請注意：括號中的數字反映了來自於主機所無法使用之函式庫環境中的所有可套用勘誤。您將需要推送此內容至相關的內容視域，方能使用它。"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Notifications"
 msgstr "通知"
 
 msgid "Number of results per page to return"
 msgstr "每頁要傳回的結果數量"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Number of sockets must be higher than 0 for system %s"
 msgstr "系統 %s 的 socket 數量必須高於 0"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "OK"
 msgstr "確定"
 
-# translation auto-copied from project system-config-language, version 1.4.0,
-# document system-config-language, author ccheng
+# translation auto-copied from project system-config-language, version 1.4.0, document system-config-language, author ccheng
 msgid "Ok"
 msgstr "確定"
 
 msgid "One of parameters [ %s ] required but not specified."
 msgstr "需要其中一項 [%s] 參數，不過尚未指定。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "One or more of the groups provided has an action pending."
 msgstr "一或更多個所提供的群組，含有等待處理的動作。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author dchen
+# translation auto-copied from project CFSE, version sam-1.2, document app, author dchen
 msgid "One or more of the packages provided has an action pending."
 msgstr "一或更多個所提供的套件，含有等待處理的動作。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "One or more package names are invalid."
 msgstr "一或更多組套件名稱無效。"
 
 msgid "One or more packages failed to sync properly."
 msgstr "一或更多個套件無法正確同步。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Only %s favorites may be created."
 msgstr "只建立了 %s 個我的最愛。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Only one Red Hat provider permitted for an Organization"
 msgstr "一個組織只能有一個 Red Hat 供應者"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Operators"
 msgstr "操作器"
 
-# translation auto-copied from project Satellite6 Hammer CLI Katello, version
-# 6.1, document hammer-cli-katello
+# translation auto-copied from project Satellite6 Hammer CLI Katello, version 6.1, document hammer-cli-katello
 msgid "Organization"
 msgstr "組織"
 
@@ -2993,8 +2760,7 @@ msgid ""
 "Organizations disabled, try allowing them in foreman/config/settings.yaml"
 msgstr "組織已停用，請嘗試在 foreman/config/settings.yaml 中啟用它們"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Other"
 msgstr "其它"
 
@@ -3004,23 +2770,19 @@ msgstr "置換 activation_key 的內容"
 msgid "Override to 0/1, or 'default'"
 msgstr "覆寫為 0/1，或是 'default'"
 
-# translation auto-copied from project rhn-client-tools, version 6.5, document
-# rhn-client-tools
+# translation auto-copied from project rhn-client-tools, version 6.5, document rhn-client-tools
 msgid "Package"
 msgstr "套件"
 
-# translation auto-copied from project Satellite6 Bastion Katello, version
-# 6.1, document bastion_katello
+# translation auto-copied from project Satellite6 Bastion Katello, version 6.1, document bastion_katello
 msgid "Package Group"
 msgstr "套件群組"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Package Group Install"
 msgstr "套件群組安裝"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Package Group Install Canceled"
 msgstr "套件群組安裝程序已取消"
 
@@ -3036,18 +2798,15 @@ msgstr "套件群組安裝失敗"
 msgid "Package Group Install Timed Out"
 msgstr "套件群組安裝逾時"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Package Group Install scheduled by %s"
 msgstr "套件群組安裝，由 %s 排程"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Package Group Remove"
 msgstr "套件群組移除"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Package Group Remove Canceled"
 msgstr "套件群組移除程序已取消"
 
@@ -3063,33 +2822,27 @@ msgstr "套件群組移除失敗"
 msgid "Package Group Remove Timed Out"
 msgstr "套件群組移除逾時"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Package Group Remove scheduled by %s"
 msgstr "套件群組移除，由 %s 排程"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Package Group Update"
 msgstr "套件群組更新"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Package Group Update scheduled by %s"
 msgstr "套件群組更新，由 %s 排程"
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys, author snowlet
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys, author snowlet
 msgid "Package Groups"
 msgstr "套件群組"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Package Install"
 msgstr "套件安裝"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Package Install Canceled"
 msgstr "套件安裝程序已取消"
 
@@ -3105,18 +2858,15 @@ msgstr "套件安裝失敗"
 msgid "Package Install Timed Out"
 msgstr "套件安裝逾時"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Package Install scheduled by %s"
 msgstr "套件安裝，由 %s 排程"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Package Remove"
 msgstr "套件移除"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Package Remove Canceled"
 msgstr "套件移除程序已取消"
 
@@ -3132,18 +2882,15 @@ msgstr "套件移除失敗"
 msgid "Package Remove Timed Out"
 msgstr "套件移除逾時"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Package Remove scheduled by %s"
 msgstr "套件移除，由 %s 排程"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Package Update"
 msgstr "套件更新"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Package Update Canceled"
 msgstr "套件更新程序已取消"
 
@@ -3159,28 +2906,23 @@ msgstr "套件更新失敗"
 msgid "Package Update Timed Out"
 msgstr "套件更新逾時"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Package Update scheduled by %s"
 msgstr "套件更新，由 %s 排程"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Package group update canceled"
 msgstr "已取消套件群組更新"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Package group update complete"
 msgstr "已完成套件群組更新"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Package group update failed"
 msgstr "套件群組更新失敗"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Package group update timed out"
 msgstr "套件群組更新逾時"
 
@@ -3190,8 +2932,7 @@ msgstr "套件安裝失敗：\"%{package}\" "
 msgid "Package installation: \"%{package}\" "
 msgstr "安裝套件：\"%{package}\" "
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys, author snowlet
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys, author snowlet
 msgid "Packages"
 msgstr "套件"
 
@@ -3199,8 +2940,7 @@ msgstr "套件"
 msgid "Packages (%s)"
 msgstr "套件（%s）"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Packages must be provided"
 msgstr "必須提供套件"
 
@@ -3211,26 +2951,22 @@ msgstr "套件："
 msgid "Page number, starting at 1"
 msgstr "頁數，從 1 開始"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Parameters"
 msgstr "參數"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Paused"
 msgstr "已暫停"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Pending"
 msgstr "等待處理中"
 
 msgid "Perform an Incremental Update on one or more Content View Versions"
 msgstr "在一或更多個內容視域版本上執行一項遞增更新"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid ""
 "Permission Denied. User '%{user}' does not have permissions to access "
 "organization '%{org}'."
@@ -3250,13 +2986,11 @@ msgid ""
 "the menu."
 msgstr "請用選單最左方的選擇器，選擇組織。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Please request the required privileges from an administrator."
 msgstr "請透過管理員取得必要的存取權限。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Pool %s has no product associated"
 msgstr "集區 %s 沒有相聯的產品"
 
@@ -3266,13 +3000,11 @@ msgstr "處理 metadata"
 msgid "Processing metadata."
 msgstr "處理 metadata。"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 30851-704293, author ccheng
+# translation auto-copied from project PressGang CCMS topics, version 1, document 30851-704293, author ccheng
 msgid "Product"
 msgstr "產品"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Product Name: "
 msgstr "產品名稱："
 
@@ -3291,8 +3023,7 @@ msgstr "產品的軟體庫屬於"
 msgid "Product with %{attribute} '%{id}' already exists in this organization."
 msgstr "此組織中早已存在含有 %{attribute} '%{id}' 的產品。"
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys, author snowlet
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys, author snowlet
 msgid "Products"
 msgstr "產品"
 
@@ -3308,8 +3039,7 @@ msgstr "已推送至 %{environment}"
 msgid "Promotion"
 msgstr "推送"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid ""
 "Providers provide many types of content such as packages, errata, kickstart "
 "trees, and installation disc images.  A provider may be delivering all of "
@@ -3319,16 +3049,14 @@ msgstr ""
 "供應方提供許多類型的內容（例如套件、勘誤、kickstart 目錄樹，以及安裝光碟映像）。供應者可能會提供您所有的付費內容，或是僅作為一個本機 yum "
 "軟體庫，以提供數個 yum repo。"
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys, author snowlet
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys, author snowlet
 msgid "Provides"
 msgstr "供應方"
 
 msgid "Provides:"
 msgstr "供應："
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Publish"
 msgstr "發行"
 
@@ -3338,13 +3066,11 @@ msgstr "出版內容視域"
 msgid "Published new version"
 msgstr "已出版的新版本"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Pulp not running"
 msgstr "Pulp 並不在執行中"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid ""
 "Pulp service unavailable during creating repository '%s', please try again "
 "later."
@@ -3378,8 +3104,7 @@ msgstr "Puppet 模組（%s）"
 msgid "Puppet module conflict: '%{mod}' is in %{versions}."
 msgstr "Puppet 模組有衝突：'%{mod}' 的版本為 %{versions}。"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Quantity"
 msgstr "數量"
 
@@ -3392,8 +3117,7 @@ msgstr "要新增此訂閱的數量"
 msgid "RAM: %s GB"
 msgstr "記憶體：%s GB"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "RPMs"
 msgstr "RPM"
 
@@ -3421,8 +3145,7 @@ msgstr "Red Hat 訂閱服務"
 msgid "Red Hat products cannot be manipulated."
 msgstr "不能操控 Red Hat 產品"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Red Hat provider can not be deleted"
 msgstr "不能刪除 Red Hat 供應者"
 
@@ -3443,8 +3166,7 @@ msgstr "更新結果"
 msgid "Refresh previously imported manifest for Red Hat provider"
 msgstr "為 Red Hat 供應者更新之前匯入的清單"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Refreshing"
 msgstr "更新中"
 
@@ -3470,26 +3192,22 @@ msgstr "要啟用的發行版本"
 msgid "Reload data"
 msgstr "重新載入資料"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager, author ccheng
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author ccheng
 msgid "Remove"
 msgstr "移除"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Remove All"
 msgstr "全部移除"
 
 msgid "Remove Content"
 msgstr "移除內容"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Remove Distributor"
 msgstr "移除 Distributor"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Remove Distributor(s)"
 msgstr "移除 Distributor"
 
@@ -3539,45 +3257,38 @@ msgid "Remove repository"
 msgstr "移除軟體庫"
 
 msgid ""
-"Remove versions and/or environments from a content view and reassign systems"
-" and keys"
+"Remove versions and/or environments from a content view and reassign systems "
+"and keys"
 msgstr "從內容視域中移除版本且（或）環境，並重新指定系統與金鑰"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Removing Package Group..."
 msgstr "正在移除套件群組..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Removing Package..."
 msgstr "正在移除套件..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Rendering 404:"
 msgstr "正在處理 404："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Rendering 500:"
 msgstr "正在處理 505："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Repo Type: "
 msgstr "軟體庫類型："
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys, author tchuang
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys, author tchuang
 msgid "Repositories"
 msgstr "軟體庫"
 
 msgid "Repositories from published Content Views are not allowed."
 msgstr "不允許來自於已發行之內容視域的軟體庫。"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 30851-704293, author ccheng
+# translation auto-copied from project PressGang CCMS topics, version 1, document 30851-704293, author ccheng
 msgid "Repository"
 msgstr "軟體庫"
 
@@ -3593,14 +3304,13 @@ msgstr "無法刪除軟體庫 %s，因為它們乃 Red Hat 軟體庫。"
 msgid "Repository Comparison"
 msgstr "軟體庫比對"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Repository Set"
 msgstr "軟體庫集"
 
 msgid ""
-"Repository URL or Upstream Name is empty. Both are required for syncing from"
-" the upstream."
+"Repository URL or Upstream Name is empty. Both are required for syncing from "
+"the upstream."
 msgstr "「軟體庫網址」或是「上游名稱」空白。若要與上游進行同步，這兩項資訊皆需要提供。"
 
 msgid ""
@@ -3609,22 +3319,19 @@ msgid ""
 "this repository before attempting to deleting it."
 msgstr "無法刪除軟體庫，因為它已被包含在一個已發佈的內容視域中。請在嘗試刪除此軟體庫之前，刪除所有包含了此軟體庫的內容視域版本。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Repository cannot be disabled since it has already been promoted."
 msgstr "軟體庫無法停用，因為該軟體庫已推送。"
 
 msgid "Repository conflict: '%{repo}' is in %{versions}."
 msgstr "軟體庫衝突：'%{repo}' 的版本為 %{versions}。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid ""
 "Repository has already been cloned to %{cv_name} in environment %{to_env}"
 msgstr "軟體庫已經複製給 %{cv_name} 於環境 %{to_env} 中"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Repository has already been promoted to %{to_env}"
 msgstr "軟體庫已經推送至 %{to_env}"
 
@@ -3640,18 +3347,15 @@ msgstr "找不到軟體庫"
 msgid "Repository set name to search on"
 msgstr "要搜尋的軟體庫組之名稱"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Repository sets are not available for custom products."
 msgstr "對自訂產品來說，軟體庫設置無法使用。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Request"
 msgstr "請求"
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys, author snowlet
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys, author snowlet
 msgid "Requires"
 msgstr "需要"
 
@@ -3661,13 +3365,11 @@ msgstr "需要："
 msgid "Resource %s does not support custom information"
 msgstr "資源 %s 並不支援自訂資訊"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document chap-Accessing_Red_Hat_Satellite
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document chap-Accessing_Red_Hat_Satellite
 msgid "Result"
 msgstr "結果"
 
-# translation auto-copied from project gnome-color-manager, version 3.8.2,
-# document gnome-color-manager
+# translation auto-copied from project gnome-color-manager, version 3.8.2, document gnome-color-manager
 msgid "Results"
 msgstr "結果"
 
@@ -3696,18 +3398,15 @@ msgstr "回傳符合系統的訂閱服務"
 msgid "Return the content of a repo gpg key, used directly by yum"
 msgstr "回傳軟體庫 GPG 金鑰的內容，直接由 yum 所使用"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Route does not exist:"
 msgstr "路線不存在："
 
-# translation auto-copied from project virt-manager, version 0.10.0, document
-# virt-manager
+# translation auto-copied from project virt-manager, version 0.10.0, document virt-manager
 msgid "Running"
 msgstr "執行中"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "SLA"
 msgstr "SLA"
 
@@ -3726,31 +3425,26 @@ msgstr "Satellite 同步摘要"
 msgid "Satellite Sync Summary for %s"
 msgstr "%s 的 Satellite 同步摘要"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Save"
 msgstr "儲存"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Save as Favorite"
 msgstr "儲存為我的最愛"
 
-# translation auto-copied from project virt-manager, version 0.10.0, document
-# virt-manager
+# translation auto-copied from project virt-manager, version 0.10.0, document virt-manager
 msgid "Saved"
 msgstr "已儲存"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Saving..."
 msgstr "儲存中…"
 
 msgid "Schedule errata for installation"
 msgstr "為安裝排程勘誤"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Search"
 msgstr "搜尋"
 
@@ -3771,8 +3465,7 @@ msgstr "搜尋字串"
 msgid "Search string for systems to perform an action on"
 msgstr "搜尋用以進行動作之系統的字串"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Search..."
 msgstr "搜尋..."
 
@@ -3814,26 +3507,22 @@ msgstr "由 kernel 開始進行搜尋："
 msgid "Security"
 msgstr "安全性"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Select All"
 msgstr "全部選擇"
 
 msgid "Select Content View"
 msgstr "選擇內容視域"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Select None"
 msgstr "全部不選擇"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Select Organization"
 msgstr "選擇組織"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Select Repositories: "
 msgstr "選擇軟體庫："
 
@@ -3892,13 +3581,11 @@ msgstr "服務等級 %s"
 msgid "Severity"
 msgstr "嚴重性"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager, author tchuang
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author tchuang
 msgid "Shared"
 msgstr "共享"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager, author tchuang
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author tchuang
 msgid "Show"
 msgstr "顯示"
 
@@ -3990,21 +3677,18 @@ msgstr "顯示系統狀態及其子元件"
 msgid "Shows version information"
 msgstr "顯示版本資訊"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Signature"
 msgstr "簽章"
 
 msgid "Signature:"
 msgstr "簽章："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Sockets: %s"
 msgstr "插槽：%s"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid ""
 "Sorry about that! It seems something went wrong.  If you continue having "
 "trouble with this, please contact an Administrator."
@@ -4013,8 +3697,7 @@ msgstr "很抱歉，有些地方出錯了。如果您繼續遇到此問題，請
 msgid "Sort field and order, eg. 'name DESC'"
 msgstr "排序欄位與次序，例如「name DESC」"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Source RPMs"
 msgstr "來源 RPM"
 
@@ -4033,36 +3716,30 @@ msgstr "以陣列來指定主機集"
 msgid "Specify the organization"
 msgstr "指定組織"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Start"
 msgstr "起始"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Start Date"
 msgstr "起始日期"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Start Date and Time can't be blank"
 msgstr "起始日期與時間不能留白"
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys, author snowlet
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys, author snowlet
 msgid "Start Time"
 msgstr "起始時間"
 
 msgid "Start date that Errata was issued on to filter by"
 msgstr "篩選，透過勘誤發出的開始日期"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Status"
 msgstr "狀態"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 30851-704293, author ccheng
+# translation auto-copied from project PressGang CCMS topics, version 1, document 30851-704293, author ccheng
 msgid "Subscription"
 msgstr "訂閱"
 
@@ -4078,16 +3755,14 @@ msgstr "訂閱識別子"
 msgid "Subscription manifest %{action} for provider '%{name}' failed"
 msgstr "給供應者 '%{name} '訂閱清單 %{action} 失敗"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Subscription manifest deleted successfully for provider '%s'."
 msgstr "供應方 '%s' 的訂閱清單已成功刪除。"
 
 msgid "Subscription manifest file"
 msgstr "訂閱清單檔案"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "Subscription manifest import for provider '%s' skipped"
 msgstr "已省略匯入供應方 '%s' 的訂閱資訊清單"
 
@@ -4104,13 +3779,11 @@ msgstr "訂閱狀態"
 msgid "Subscriptions information based on selected activation keys:"
 msgstr "根基於啟動金鑰的訂閱資訊："
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Success"
 msgstr "成功"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Successful for distributor(s): "
 msgstr "這些 distributor 已成功："
 
@@ -4151,8 +3824,7 @@ msgstr "已成功移除 %{count} 台內容主機，從主機集項目 %{host_col
 msgid "Successfully updated custom information"
 msgstr "已成功上傳自訂資訊"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Summary"
 msgstr "摘要"
 
@@ -4162,47 +3834,40 @@ msgstr "摘要："
 msgid "Sychronize capsule content"
 msgstr "同步 capsule 的內容"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Sync Canceled"
 msgstr "已取消同步"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Sync Cancelled"
 msgstr "已取消同步"
 
 msgid "Sync Incomplete"
 msgstr "同步未完成"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Sync Overview"
 msgstr "同步總覽"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Sync Plans"
 msgstr "同步計劃"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Sync Status"
 msgstr "同步的狀態"
 
 msgid "Sync a repository"
 msgstr "同步軟體庫"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Sync complete."
 msgstr "完成同步。"
 
 msgid "Sync one or more products"
 msgstr "同步一或多項產品"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Sync plan"
 msgstr "同步計劃"
 
@@ -4212,8 +3877,7 @@ msgstr "同步要連接的計畫識別子"
 msgid "Synchronize"
 msgstr "同步"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Synchronize Now"
 msgstr "立即同步"
 
@@ -4230,24 +3894,21 @@ msgstr "系統 UUID"
 msgid "Systems [%s] not found."
 msgstr "找不到系統 [%s]。"
 
-# translation auto-copied from project shotwell-core, version 0.14.1, document
-# shotwell-core
+# translation auto-copied from project shotwell-core, version 0.14.1, document shotwell-core
 msgid "Tag"
 msgstr "標籤"
 
 msgid "Tag List: "
 msgstr "標籤清單："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "The '%s' environment cannot contain a changeset!"
 msgstr "'%s' 環境不可包含變更集！"
 
 msgid "The actual file contents"
 msgstr "實際的檔案內容"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid ""
 "The current organization cannot be deleted. Please switch to a different "
 "organization before deleting."
@@ -4274,13 +3935,11 @@ msgstr "勘誤類型必須是陣列。提供的值無效"
 msgid "The following hosts have errata that apply to them: "
 msgstr "下列主機含有套用至它們的勘誤："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid ""
-"The label requested is already used by another %s; therefore, a unique label"
-" was assigned.  If you would like a different label, please delete the %s "
-"and recreate it with a unique label.  Requested label: %s, Assigned label: "
-"%s"
+"The label requested is already used by another %s; therefore, a unique label "
+"was assigned.  If you would like a different label, please delete the %s and "
+"recreate it with a unique label.  Requested label: %s, Assigned label: %s"
 msgstr ""
 "要求的標籤已經由 %s 所使用；因此已指定了一組獨一無二的標籤。如果您想要使用不同的標籤，請刪除 %s "
 "標籤，然後用其它名稱重新建立。要求的標籤：%s，指定的標籤：%s"
@@ -4305,8 +3964,8 @@ msgstr ""
 "推送 %{content_view} 至 <b>%{environment}</b> 的程序已完成。您的主機可安裝 %{count} 個必要的勘誤。"
 
 msgid ""
-"The puppet environment %{name} is in use by %{count} Host Group(s) including"
-" %{names}"
+"The puppet environment %{name} is in use by %{count} Host Group(s) including "
+"%{names}"
 msgstr "Puppet 環境 %{name} 目前正被 %{count} 主機群組使用中，包括 %{names}"
 
 msgid ""
@@ -4332,8 +3991,7 @@ msgid ""
 "'package_group' and 'errata'."
 msgstr "內容的類型。支援以下類型；「package」（套件）、「package_group」（套件群組）與「errata」（勘誤）。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "There are currently no subscriptions attached to the distributor"
 msgstr "目前沒有訂閱連接至此 distributor"
 
@@ -4341,28 +3999,24 @@ msgid ""
 "There are no errata that need to be applied to registered content hosts."
 msgstr "沒有需要套用至已註冊之內容主機的勘誤。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "There are no events to display."
 msgstr "沒有可顯示的事件。"
 
 msgid "There are no files in this package."
 msgstr "此套件中沒有檔案。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "There are no more subscriptions available."
 msgstr "沒有更多的可用訂閱。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid ""
-"There are no products or repositories enabled. Try enabling via %{custom} or"
-" %{redhat}."
+"There are no products or repositories enabled. Try enabling via %{custom} or "
+"%{redhat}."
 msgstr "並未啟用產品或軟體庫。請透過 %{custom} 或 %{redhat} 來啟用。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "There are no products to display."
 msgstr "沒有產品可供顯示。"
 
@@ -4373,8 +4027,7 @@ msgid ""
 msgstr ""
 "未指定環境或是版本，或是指定了無效的環境/版本。請檢查 environment_ids 和 content_view_version_ids 參數。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid ""
 "There is already an active sync process for the '%s' repository. Please try "
 "again later"
@@ -4386,13 +4039,11 @@ msgstr "嘗試啟用或停用此軟體庫時發生了錯誤："
 msgid "There was an error attempting to retrieve the repository list:"
 msgstr "嘗試擷取軟體清單時發生了錯誤："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "There was an error retrieving that row:"
 msgstr "擷取該列時發生了錯誤："
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "This action doesn't support pacakge groups"
 msgstr "這項動作不支援套件群組"
 
@@ -4420,13 +4071,11 @@ msgid ""
 "this product"
 msgstr "這將會置換所有已與此產品中的軟體庫相聯的 GPG 金鑰"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Time"
 msgstr "時間"
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys
 msgid "Title"
 msgstr "提示"
 
@@ -4434,16 +4083,15 @@ msgstr "提示"
 msgid "Title: "
 msgstr "標題： "
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid ""
-"To view the details of an item on the left, simply click on a single "
-"row.<br/><br/>To select multiple rows, hold the Control Key and click "
-"multiple rows.<br/><br/>If you don't need this help anymore, please click "
-"the close button in the top right of this box."
+"To view the details of an item on the left, simply click on a single row.<br/"
+"><br/>To select multiple rows, hold the Control Key and click multiple rows."
+"<br/><br/>If you don't need this help anymore, please click the close button "
+"in the top right of this box."
 msgstr ""
-"要檢視左方物品的詳細資料，請按下單一行。<br/><br/>要選擇多行，請按下 Control "
-"鍵再點選各行。<br/><br/>如果您不需要這求助畫面，請按下本方塊右上角的關閉按鈕。"
+"要檢視左方物品的詳細資料，請按下單一行。<br/><br/>要選擇多行，請按下 Control 鍵再點選各行。<br/><br/"
+">如果您不需要這求助畫面，請按下本方塊右上角的關閉按鈕。"
 
 msgid "Token invalid during sync_complete."
 msgstr "sync_complete 過程中的 token 錯誤。"
@@ -4457,8 +4105,7 @@ msgstr "模組總數：%s。"
 msgid "Trigger a refresh of subscriptions, auto-attaching if enabled"
 msgstr "啟動更新訂閱，若啟用的話則一併自動連結"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Type"
 msgstr "類型"
 
@@ -4471,8 +4118,7 @@ msgstr "內容主機的類型，永遠應該是「system」"
 msgid "URL for post sync notification from pulp"
 msgstr "來自 pulp 的同步後通知的網址"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "UUID"
 msgstr "UUID"
 
@@ -4485,8 +4131,7 @@ msgstr "內容主機的 UUID"
 msgid "UUID of the system"
 msgstr "系統的 UUID"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Unable to determine quantity for pool %s"
 msgstr "無法決定集區 %s 的數量"
 
@@ -4508,8 +4153,7 @@ msgstr "無法取得內容視域。請重新嘗試。"
 msgid "Unable to find errata with ids: %s."
 msgstr "找不到 id 為 %s 的勘誤。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Unable to find package %s"
 msgstr "找不到套件 %s"
 
@@ -4539,8 +4183,7 @@ msgid ""
 "system_environment_id."
 msgstr "無法重新指定系統。請檢查 system_content_view_id 與 system_environment_id。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid ""
 "Unable to retrieve release versions from Repository URL %{url}. Error "
 "message: %{error}"
@@ -4578,26 +4221,22 @@ msgstr "結合："
 msgid "Unique"
 msgstr "獨特"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Unknown"
 msgstr "不明"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Unknown registration date"
 msgstr "未知的註冊日期"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Unlimited"
 msgstr "無限制"
 
 msgid "Unregister a content host"
 msgstr "取消註冊內容主機"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Unsupported URL protocol %s."
 msgstr "不支援的 URL 通訊協定 %s。"
 
@@ -4644,8 +4283,8 @@ msgid "Update a sync plan"
 msgstr "更新同步計畫"
 
 msgid ""
-"Update all editable and applicable systems, not just ones using the selected"
-" Content View Versions and Environments"
+"Update all editable and applicable systems, not just ones using the selected "
+"Content View Versions and Environments"
 msgstr "更新所有可編輯和可套用的系統，而不只是使用了已選擇之內容視域版本和環境的系統"
 
 msgid "Update an activation key"
@@ -4681,26 +4320,22 @@ msgstr "更新關於啟用軟體庫的資訊"
 msgid "Update without content"
 msgstr "在無內容的情況下更新"
 
-# translation auto-copied from project anaconda, version 19.31.34, document
-# anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document anaconda
 msgid "Updates"
 msgstr "更新"
 
 msgid "Updates a product"
 msgstr "更新產品"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Updating Package..."
 msgstr "正在更新套件……"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "Updating package group..."
 msgstr "更新套件群組......"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Upload"
 msgstr "上傳"
 
@@ -4722,16 +4357,14 @@ msgstr "上傳入"
 msgid "Upload request id"
 msgstr "上傳需求 ID"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Uploading"
 msgstr "上傳中"
 
 msgid "Upstream identity certificate not available"
 msgstr "沒有上游身份憑證"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Use Browser Locale"
 msgstr "使用瀏覽器語言設定"
 
@@ -4746,61 +4379,51 @@ msgstr "使用者「%s」並未指定組織 ID，並且沒有預設的組織。"
 msgid "User '%{user}' does not belong to Organization '%{organization}'."
 msgstr "使用者 '%{user}' 並不屬於組織 '%{organization}'。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "User Notifications"
 msgstr "使用者提示"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "User does not belong to an organization."
 msgstr "使用者並不屬於組織。"
 
 msgid "User must be logged in."
 msgstr "使用者必須登入。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid ""
 "User notifications lists all notifications generated by a user as well as "
 "global notifications that are sent to all users."
 msgstr "使用者通知會列出所有由使用者所產生的通知，以及發送給所有使用者的全域通知。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "Validation Failed:"
 msgstr "驗證失敗："
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Value"
 msgstr "值"
 
 msgid "Value must be 0/1, or 'default'"
 msgstr "值必須是 0/1，或是 'default'"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Version"
 msgstr "版本"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Version:"
 msgstr "版本："
 
-# translation auto-copied from project rhn-client-tools, version 6.5, document
-# rhn-client-tools
+# translation auto-copied from project rhn-client-tools, version 6.5, document rhn-client-tools
 msgid "Version: "
 msgstr "版本："
 
-# translation auto-copied from project libpeas, version 1.8.0, document
-# libpeas
+# translation auto-copied from project libpeas, version 1.8.0, document libpeas
 msgid "View"
 msgstr "檢視"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "View %{view} has not been promoted to %{env}"
 msgstr "檢視 %{view} 並未被推送到 %{env}"
 
@@ -4822,13 +4445,11 @@ msgstr "檢視 %X 項結果，總數為 %Y 項"
 msgid "Viewing %X of %Y results (%Z Total)"
 msgstr "檢視 %Y 之 %X 個結果（總共 %Z 個勘誤）"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "Viewing %{current} of %{results} results (%{items} Total %{name})"
 msgstr "正在檢視 %{results} 之 %{current} 項結果（%{items} 總數 %{name}）"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-
-# applet, author ccheng
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet, author ccheng
 msgid "Virtual"
 msgstr "虛擬"
 
@@ -4836,13 +4457,11 @@ msgstr "虛擬"
 msgid "Virtual Guest"
 msgstr "虛擬客座端"
 
-# translation auto-copied from project Satellite6 Katello CLI, version 6.0,
-# document keys, author snowlet
+# translation auto-copied from project Satellite6 Katello CLI, version 6.0, document keys, author snowlet
 msgid "Waiting"
 msgstr "等待中"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Warning"
 msgstr "警告"
 
@@ -4862,8 +4481,7 @@ msgstr "主機集項目是否有無上限的內容主機"
 msgid "Whether or not to show all results"
 msgstr "是否顯示所有結果"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Yes"
 msgstr "是"
 
@@ -4873,8 +4491,7 @@ msgstr "您不允許推送至環境 %s"
 msgid "You are not allowed to publish Content View %s"
 msgstr "您不允許發佈內容視域 %s"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "You are not authorised to perform this action."
 msgstr "無權進行此項動作。"
 
@@ -4894,8 +4511,7 @@ msgstr "您不能設置組織的父組織。這項功能已停用。"
 msgid "You cannot set an organization's parent_id. This feature is disabled."
 msgstr "您不能設置組織的 parent_id。這項功能已停用。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid ""
 "You do not currently have access to any organizations.  Please contact an "
 "administrator to get permission to access an organization."
@@ -4904,40 +4520,34 @@ msgstr "您目前無法存取任何組織。請聯絡系統管理員取得存取
 msgid "You do not have permissions to delete %s"
 msgstr "您沒有刪除 %s 的權限"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid ""
-"You do not have valid credentials to access this system. Please contact your"
-" administrator."
+"You do not have valid credentials to access this system. Please contact your "
+"administrator."
 msgstr "您沒有足夠的權限存取此系統。請聯絡系統管理員。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid ""
-"You have entered an incorrect username/password combination, or your account"
-" may currently be disabled. Please try again or contact your administrator."
+"You have entered an incorrect username/password combination, or your account "
+"may currently be disabled. Please try again or contact your administrator."
 msgstr "您輸入了錯誤的使用者名稱/密碼，或是您的帳號可能目前無法使用。請重新嘗試，或聯絡您的管理員。"
 
 msgid "You have not set a default organization on the user %s."
 msgstr "您並未為使用者 %s 設置預設組織。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "You may have mistyped the address or the page may have moved."
 msgstr "位址輸入錯誤，或網頁已經移往他處。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "You might want to log out and log back in again to clear your cookies."
 msgstr "請重新登入，以清除 cookies。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "You must be logged in to access that page."
 msgstr "您必須先登入，才能存取該網頁。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid ""
 "You need to create an environment for this org before you can create a "
 "distributor."
@@ -4957,8 +4567,8 @@ msgstr "不允許同步 %s"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid ""
-"Your current organization is no longer valid. It is possible that either the"
-" organization has been deleted or your permissions revoked, please log back "
+"Your current organization is no longer valid. It is possible that either the "
+"organization has been deleted or your permissions revoked, please log back "
 "in to continue."
 msgstr "您目前的組織已無效。這可能是因為組織已被刪除，或是您的權限已被移除，請重新登入以繼續進行。"
 
@@ -4994,18 +4604,15 @@ msgstr "要篩選的啟動金鑰名稱，透過"
 msgid "activation keys"
 msgstr "啟動金鑰"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "all packages"
 msgstr "所有套件"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "all packages update"
 msgstr "所有套件更新"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "all packages update failed"
 msgstr "所有套件更新皆失敗了"
 
@@ -5033,18 +4640,15 @@ msgstr "進行軟體庫復原的基礎網址"
 msgid "can the activation key have unlimited content hosts"
 msgstr "啟動金鑰可否擁有無上限的內容主機"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "can't be blank"
 msgstr "不能留白"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "cannot be a binary file."
 msgstr "不能是二進位檔案。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "cannot be blank"
 msgstr "不可留白"
 
@@ -5069,8 +4673,7 @@ msgstr "不能留白"
 msgid "cannot be set because unlimited content hosts is set"
 msgstr "因為設置了無限制的內容主機，因此無法設置"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "cannot contain blank keynames"
 msgstr "不能包含空白的金鑰名稱"
 
@@ -5084,8 +4687,7 @@ msgid ""
 "cannot contain filters whose repositories do not belong to this content view"
 msgstr "無法包含不屬於此內容視域的篩選器"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "cannot contain more than %s characters"
 msgstr "不可包含超過 %s 個字元"
 
@@ -5132,13 +4734,11 @@ msgstr "要刪除的內容視域版本識別子"
 msgid "content view versions to compare"
 msgstr "欲進行比較的內容視域版本"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "delete"
 msgstr "刪除"
 
-# translation auto-copied from project webkitgtk3, version 2.0.3, document
-# webkitgtk3
+# translation auto-copied from project webkitgtk3, version 2.0.3, document webkitgtk3
 msgid "description"
 msgstr "描述"
 
@@ -5157,8 +4757,7 @@ msgstr "啟用或停用同步"
 msgid "environment"
 msgstr "環境"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "environment can only have one child"
 msgstr "環境只能有一個子環境"
 
@@ -5174,8 +4773,7 @@ msgstr "環境的數字識別子"
 msgid "environment numeric identifiers to be removed"
 msgstr "要移除之環境的數字識別子"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "environment required"
 msgstr "所需的環境"
 
@@ -5258,51 +4856,42 @@ msgstr "GPG 金鑰的識別子"
 msgid "ids to filter content by"
 msgstr "用來篩選內容的 ID"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "import"
 msgstr "匯入"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "installing errata..."
 msgstr "正在安裝勘誤..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "installing erratum..."
 msgstr "正在安裝勘誤..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "installing package group..."
 msgstr "正在安裝套件群組..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "installing package groups..."
 msgstr "正在安裝套件群組..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "installing package..."
 msgstr "正在安裝套件..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "installing packages..."
 msgstr "正在安裝套件..."
 
 msgid "is already attached to the capsule"
 msgstr "已連至 capsule"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "is invalid"
 msgstr "無效"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "issue tracker"
 msgstr "問題追蹤器"
 
@@ -5349,21 +4938,18 @@ msgstr "必須少於 %d 個字元。"
 msgid "must be one of the following: %s"
 msgstr "必須是以下其中之一：%s"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "must be unique within one organization"
 msgstr "必須在組織中是獨一無二的"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "must contain '%s'"
 msgstr "必須包含 '%s'"
 
 msgid "must contain GPG Key"
 msgstr "必須包含 GPG 金鑰"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "must contain at least %s character"
 msgstr "必須包含至少 %s 個字元"
 
@@ -5373,13 +4959,11 @@ msgstr "必須包含正確的公開 GPG 金鑰"
 msgid "must contain valid Public GPG Key"
 msgstr "必須包含正確的公開 GPG 金鑰"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid "must not contain leading or trailing white spaces."
 msgstr "前、後都不可包含空白字元。"
 
-# translation auto-copied from project anaconda, version 19.31.34, document
-# anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document anaconda
 msgid "name"
 msgstr "名稱"
 
@@ -5407,8 +4991,7 @@ msgstr "軟體庫名稱"
 msgid "name of the upstream docker repository"
 msgstr "上游 docker 軟體庫的名稱"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "name: %s doesn't exist "
 msgstr "名稱：%s 不存在"
 
@@ -5424,13 +5007,11 @@ msgstr "已成功影響物件"
 msgid "obtain manifest history for subscriptions"
 msgstr "取得給訂閱服務使用的清單歷史"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author Chester Cheng
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author Chester Cheng
 msgid "of Unlimited"
 msgstr "沒有上限"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "of environment must be unique within one organization"
 msgstr "一個組織中的環境名稱必須是獨特的"
 
@@ -5473,23 +5054,19 @@ msgstr "puppet_module_ids 不是個陣列"
 msgid "refresh"
 msgstr "更新"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "removing package group..."
 msgstr "正在移除套件群組..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "removing package groups..."
 msgstr "正在移除套件群組..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "removing package..."
 msgstr "正在移除套件..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "removing packages..."
 msgstr "正在移除套件..."
 
@@ -5536,8 +5113,8 @@ msgid "show repositories in Library and the default content view"
 msgstr "在函示庫與預設內容視域中顯示軟體庫"
 
 msgid ""
-"specifies if content should be included or excluded, default: "
-"inclusion=false"
+"specifies if content should be included or excluded, default: inclusion="
+"false"
 msgstr "指定要納入或排除內容，預設值：inclusion=false"
 
 msgid "start datetime of synchronization"
@@ -5564,8 +5141,7 @@ msgstr "失敗的任務。"
 msgid "the feed url of the original repository "
 msgstr "原始軟體庫的發送網址"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author snowlet
+# translation auto-copied from project CFSE, version sam-1.2, document app, author snowlet
 msgid ""
 "the following attributes can not be updated for the Red Hat provider: [ %s ]"
 msgstr "Red Hat 供應者的以下屬性可以更新：[ %s ]"
@@ -5588,30 +5164,25 @@ msgstr "軟體庫類型（'yum'、'puppet' 或是 'docker'）"
 msgid "unique label"
 msgstr "獨一無二的標籤"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "updating package group..."
 msgstr "正在更新套件群組..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "updating package groups..."
 msgstr "正在更新套件群組..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "updating package..."
 msgstr "正在更新套件..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author tchuang
+# translation auto-copied from project CFSE, version sam-1.2, document app, author tchuang
 msgid "updating packages..."
 msgstr "正在更新套件..."
 
 msgid "url not defined."
 msgstr "未定義網址"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author tchuang
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author tchuang
 msgid "version %s"
 msgstr "版本 %s"

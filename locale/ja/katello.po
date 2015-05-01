@@ -32,34 +32,30 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Zanata 3.6.0\n"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid " Red Hat Repositories"
 msgstr " Red Hat リポジトリー"
 
 msgid " environment cannot be set to an environment already on its path"
 msgstr " 環境はそのパスにある環境に設定できません"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid " items selected."
 msgstr "項目が選択されています。"
 
 msgid ""
-"\"comma separated values. The value will be available in templates as "
-"@host.params['#{kt_ak_label}']\""
+"\"comma separated values. The value will be available in templates as @host."
+"params['#{kt_ak_label}']\""
 msgstr "\"コンマ区切りの値です。この値は @host.params['#{kt_ak_label}'] のようにテンプレートで使用できます\""
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "%s Distributors Removed Successfully"
 msgstr "%s ディストリビューターの削除に成功しました"
 
 msgid "%s Errata"
 msgstr "%s エラータ"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author htaira
+# translation auto-copied from project CFSE, version sam-1.2, document app, author htaira
 msgid "%s Removed Successfully"
 msgstr "%s の削除に成功しました。"
 
@@ -69,13 +65,11 @@ msgstr "%s 前"
 msgid "%s for more details."
 msgstr "詳細は %s"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "%s is not a valid package name"
 msgstr "%s は有効なパッケージ名ではありません"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "%{app_name} Version: %{version}"
 msgstr "%{app_name} バージョン: %{version}"
 
@@ -265,69 +259,57 @@ msgstr "%{sla}"
 msgid "%{substitutions} are not valid substitutions for %{content_url}"
 msgstr "%{substitutions} は %{content_url} の有効な置き換えではありません"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "'%s' did not meet the current search criteria and is not being shown."
 msgstr "'%s' は現在の検索条件を満たしていなかったため表示されません。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "'%s' no longer matches the current search criteria."
 msgstr "'%s' は現在の検索条件には一致しなくなりました。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "(%X of %Y repositories selected)"
 msgstr "(%X の選択済みリポジトリー、合計: %Y)"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "(Entire product selected)"
 msgstr "(選択済みの製品全体)"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "(Load %X More)"
 msgstr "(%X 超をロード)"
 
 msgid "(Orphaned)"
 msgstr "(単独)"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "+ Add"
 msgstr "+ 追加"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "+ New %s"
 msgstr "+ 新規 %s"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "+ New Distributor"
 msgstr "+ 新規ディストリビューター"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "+ Yes"
 msgstr "+ Yes"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "400 - Invalid Parameters"
 msgstr "400 - 無効なパラメーターです"
 
 msgid "403 - Permission Denied"
 msgstr "403 - パーミッションが拒否されました"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "404 - That page doesn't exist or is missing!"
 msgstr "404 - そのページは存在しないか、見つかりません!"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "500 Internal Server Error"
 msgstr "500 内部サーバーエラーです"
 
@@ -343,8 +325,7 @@ msgstr "バックエンドサービス [ %s ] には到達不能です"
 msgid "A content_type must be provided."
 msgstr "content_type を指定する必要があります。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid ""
 "A label was not provided during environment creation; therefore, a label of "
 "'%{label}' was automatically assigned. If you would like a different label, "
@@ -353,18 +334,16 @@ msgstr ""
 "環境の作成時にラベルが提供されませんでした。このため、'%{label}' "
 "のラベルが自動的に割り当てられました。別のラベルにしたい場合は環境を削除してから、必要なラベルで作成し直してください。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid ""
-"A label was not provided during organization creation; therefore, a label of"
-" '%{label}' was automatically assigned. If you would like a different label,"
-" please delete the organization and recreate it with the desired label."
+"A label was not provided during organization creation; therefore, a label of "
+"'%{label}' was automatically assigned. If you would like a different label, "
+"please delete the organization and recreate it with the desired label."
 msgstr ""
 "組織の作成時にラベルが提供されませんでした。このため、'%{label}' "
 "のラベルが自動的に割り当てられました。別のラベルにしたい場合は組織を削除してから、必要なラベルで作成し直してください。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid ""
 "A label was not provided during product creation; therefore, a label of "
 "'%{label}' was automatically assigned. If you would like a different label, "
@@ -373,8 +352,7 @@ msgstr ""
 "製品の作成時にラベルが提供されませんでした。このため、'%{label}' "
 "のラベルが自動的に割り当てられました。別のラベルにしたい場合は製品を削除してから、必要なラベルで作成し直してください。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid ""
 "A label was not provided during repository creation; therefore, a label of "
 "'%{label}' was automatically assigned. If you would like a different label, "
@@ -396,8 +374,7 @@ msgstr "多数のエラータがこのリポジトリーについて同期され
 msgid "A post-promotion summary of hosts with available errata"
 msgstr "ホストと利用可能なエラータのプロモーション後の要約"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid ""
 "A request has been received by Katello server '%{url}' to retrieve the "
 "logins for email '%{email}'. The following is a list of those logins:"
@@ -438,13 +415,11 @@ msgstr "アクティベーションキーとサブスクリプションを管理
 msgid "Active only"
 msgstr "実行中のみ"
 
-# translation auto-copied from project Customer Portal Translations, version
-# Portal-Case-Management, document Template, author asasaki
+# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author asasaki
 msgid "Add"
 msgstr "追加"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Add All"
 msgstr "すべてを追加"
 
@@ -500,28 +475,23 @@ msgid ""
 "systems.  Only Errata are supported currently."
 msgstr "増分更新の生成後、指定されたシステムに変更を適用します。現在、エラータのみがサポートされています。"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Alert"
 msgstr "警告"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "All Content Views"
 msgstr "すべてのコンテンツビュー"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 006_DrupalPO, document interface, author asasaki
+# translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "All Products"
 msgstr "すべての製品"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "All Repos"
 msgstr "すべてのリポジトリー"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "All Repositories"
 msgstr "すべてのリポジトリー"
 
@@ -537,18 +507,15 @@ msgstr "アーキテクチャー"
 msgid "Architecture: "
 msgstr "アーキテクチャー: "
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Are you sure you want to delete the %X selected distributor(s)?"
 msgstr "本当に %X の選択したディストリビューターを削除してもよいですか?"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Are you sure you want to remove this distributor?"
 msgstr "本当にこのディストリビューターを削除してもよいですか?"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0,
-# document foreman, author noriko
+# translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman, author noriko
 msgid "Are you sure?"
 msgstr "実行してもよろしいですか?"
 
@@ -581,33 +548,28 @@ msgid ""
 "view assigned to it"
 msgstr "1 つ以上のアクティベーションキーには、ライフサイクル環境の設定が必要であり、コンテンツビューをこれに割り当てる必要があります"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid ""
 "At least one environment is required to create or register distributors in "
 "your current organization."
 msgstr "現在の組織内にディストリビューターを作成したり、登録を行ったりする場合は 1 つ以上の環境が必要になります。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "At least one organization must exist."
 msgstr "1 つ以上の組織が存在している必要があります。"
 
-# translation auto-copied from project Subscription Manager, version 1.8.X,
-# document keys
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Attach"
 msgstr "割り当て"
 
-# translation auto-copied from project rhsm-web, version 0.0, document
-# management, author noriko
+# translation auto-copied from project rhsm-web, version 0.0, document management, author noriko
 msgid "Attach a subscription"
 msgstr "サブスクリプションを割り当てる"
 
 msgid "Attached Subscriptions"
 msgstr "割り当て済みサブスクリプション"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Author"
 msgstr "作成者"
 
@@ -628,36 +590,30 @@ msgstr "利用可能なサブスクリプションを組織内のすべてのシ
 msgid "Auto-attach subscriptions"
 msgstr "サブスクリプションの自動割り当て"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Auto-complete Product"
 msgstr "製品のオートコンプリート"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Auto-complete View"
 msgstr "ビューのオートコンプリート"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Auto-complete repository"
 msgstr "リポジトリーのオートコンプリート"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Available Subscriptions"
 msgstr "利用可能なサブスクリプション"
 
 msgid "Available search fields:"
 msgstr "使用できる検索フィールド:"
 
-# translation auto-copied from project Satellite6 Foreman Docker, version 6.1,
-# document locale/foreman_docker
+# translation auto-copied from project Satellite6 Foreman Docker, version 6.1, document locale/foreman_docker
 msgid "Back"
 msgstr "戻る"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Back to Results"
 msgstr "結果に戻る"
 
@@ -670,23 +626,19 @@ msgstr "無効にする Basearch"
 msgid "Basearch to enable"
 msgstr "有効にする Basearch"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Beta"
 msgstr "ベータ"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document
-# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "Bug Fix"
 msgstr "バグ修正"
 
-# translation auto-copied from project Satellite6 Bastion Katello, version
-# 6.1, document bastion_katello
+# translation auto-copied from project Satellite6 Bastion Katello, version 6.1, document bastion_katello
 msgid "Bugfix"
 msgstr "バグ修正"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Build Host"
 msgstr "ホストのビルド"
 
@@ -696,18 +648,15 @@ msgstr "ホストのビルド:"
 msgid "Bulk action"
 msgstr "一括処理"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "CDN loading error: %s not found"
 msgstr "CDN のロード中のエラー: %s が見つかりません"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "CDN loading error: access denied to %s"
 msgstr "CDN のロード中のエラー: %s へのアクセスが拒否されました"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "CDN loading error: access forbidden to %s"
 msgstr "CDN のロード中のエラー: %s へのアクセスは許可されていません"
 
@@ -723,13 +672,11 @@ msgstr "特定の環境に基づく適用可能なエラータの計算"
 msgid "Can only remove content from within the Default Content View"
 msgstr "デフォルトコンテンツビューからコンテンツのみを削除できます"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Can't update the '%s' environment"
 msgstr "'%s' 環境を更新できません"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Cancel"
 msgstr "取り消し"
 
@@ -780,8 +727,7 @@ msgid ""
 "a Content View"
 msgstr "Red Hat 製品またはコンテンツビューに公開されたリポジトリーのある製品を削除できません"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Cannot delete from %s, view does not exist there."
 msgstr "%s から削除できません。ビューはそこに存在しません。"
 
@@ -839,8 +785,7 @@ msgstr "非複合ビューのコンポーネントを指定できません"
 msgid "Cannot specify content for composite views"
 msgstr "複合ビューのコンテンツを指定できません"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document appe-Glossary_of_Terms
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document appe-Glossary_of_Terms
 msgid "Capsule"
 msgstr "Capsule"
 
@@ -850,83 +795,70 @@ msgstr "Capsule 設定"
 msgid "Changelog for %s"
 msgstr "%s の変更ログ"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 006_DrupalPO, document interface, author asasaki
+# translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "Changes"
 msgstr "変更"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Checked In"
 msgstr "チェックインしました"
 
 msgid "Checksums: "
 msgstr "チェックサム: "
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Choose Environment:"
 msgstr "環境の選択:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Choose a product.."
 msgstr "製品を選択.."
 
 msgid "Choose a repository:"
 msgstr "リポジトリーの選択:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Clear the Search"
 msgstr "検索をクリア"
 
 msgid "Click on the widget title text to drag and drop."
 msgstr "ウィジェットタイトルのテキストをクリックし、ドラッグアンドドロップします。"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Click to edit"
 msgstr "クリックして編集"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0,
-# document foreman, author ykatabam
+# translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman, author ykatabam
 msgid "Clone"
 msgstr "クローン"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Close"
 msgstr "閉じる"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Collapse"
 msgstr "折りたたむ"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author htaira
+# translation auto-copied from project CFSE, version sam-1.2, document app, author htaira
 msgid "Collapse All"
 msgstr "すべて折りたたむ"
 
 msgid "Compare Selected"
 msgstr "選択済みの比較"
 
-# translation auto-copied from project RHELOSP Deploying Enterprise Env,
-# version 5.0, document topics/Orchestration_-_Heat_Technical_Preview
+# translation auto-copied from project RHELOSP Deploying Enterprise Env, version 5.0, document topics/Orchestration_-_Heat_Technical_Preview
 msgid "Component"
 msgstr "コンポーネント"
 
 msgid "Composite content view"
 msgstr "複合コンテンツビュー"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Confirmation"
 msgstr "確認"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document appe-Glossary_of_Terms
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document appe-Glossary_of_Terms
 msgid "Content"
 msgstr "コンテンツ"
 
@@ -936,16 +868,14 @@ msgstr "コンテンツの入手先"
 msgid "Content Dashboard"
 msgstr "コンテンツダッシュボード"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Content Download URL: "
 msgstr "コンテンツダウンロード URL:"
 
 msgid "Content Host"
 msgstr "コンテンツホスト"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Using_the_CloudForms_System_Engine_Dashboard
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Using_the_CloudForms_System_Engine_Dashboard
 msgid "Content Host Subscription Status"
 msgstr "コンテンツホストのサブスクリプションの状態"
 
@@ -961,8 +891,7 @@ msgstr "コンテンツ検索"
 msgid "Content Source"
 msgstr "コンテンツソース"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Content View"
 msgstr "コンテンツビュー"
 
@@ -974,18 +903,15 @@ msgid ""
 "composites as well as one or more components to update."
 msgstr "増分更新を実行するためのコンテンツビューバージョン ID です。更新する複合および 1 つ以上のコンポーネントが含まれる場合があります。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Content View:"
 msgstr "コンテンツビュー:"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 20647-698348, author asasaki
+# translation auto-copied from project PressGang CCMS topics, version 1, document 20647-698348, author asasaki
 msgid "Content Views"
 msgstr "コンテンツビュー"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Using_the_CloudForms_System_Engine_Dashboard
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Using_the_CloudForms_System_Engine_Dashboard
 msgid "Content Views Overview"
 msgstr "コンテンツビューの概要"
 
@@ -1003,8 +929,7 @@ msgstr "アップロードするコンテンツファイルです。単一ファ
 msgid "Content override parameters"
 msgstr "コンテンツ上書きパラメーター"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Content view '%{view}' is not in environment '%{env}'"
 msgstr "コンテンツビュー '%{view}' は環境 '%{env}' にありません"
 
@@ -1023,13 +948,11 @@ msgstr "コンテンツビューの数値 ID"
 msgid "Content view version identifier"
 msgstr "コンテンツビューのバージョン ID"
 
-# translation auto-copied from project Subscription Manager, version 1.8.X,
-# document keys
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Contract"
 msgstr "コントラクト"
 
-# translation auto-copied from project control-center, version 3.8.6, document
-# gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
 msgid "Copy"
 msgstr "コピー"
 
@@ -1115,8 +1038,7 @@ msgstr "コンテンツホストのコンテンツビュー ID  '%s' が見つ�
 msgid "Couldn't find content host environment '%s'"
 msgstr "コンテンツホストの環境 '%s' が見つかりませんでした"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Couldn't find content view '%s'"
 msgstr "コンテンツビュー '%s' が見つかりませんでした"
 
@@ -1126,8 +1048,7 @@ msgstr "コンテンツビューのバージョン '%s' が見つかりません
 msgid "Couldn't find content view versions '%s'"
 msgstr "コンテンツビューのバージョン '%s' が見つかりませんでした"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Couldn't find environment '%s'"
 msgstr "環境 '%s' が見つかりませんでした"
 
@@ -1149,8 +1070,7 @@ msgstr "事前の環境 '%s' が見つかりませんでした"
 msgid "Couldn't find product '%s'"
 msgstr "製品 '%s' が見つかりませんでした"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Couldn't find product with id '%s'"
 msgstr "ID  '%s' の製品が見つかりませんでした"
 
@@ -1159,8 +1079,7 @@ msgid ""
 "'%{env}' and content view '%{view}'"
 msgstr "ライフサイクル環境 '%{env}' とコンテンツビュー '%{view}' に関連付けられた Puppet 環境が見つかりませんでした"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Couldn't find repository '%s'"
 msgstr "リポジトリー '%s' が見つかりませんでした"
 
@@ -1170,16 +1089,14 @@ msgstr "ID  '%s' のリポジトリーが見つかりませんでした。"
 msgid "Couldn't find subject of synchronization"
 msgstr "同期の件名が見つかりませんでした"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Couldn't find sync plan '%{plan}' in organization '%{org}'"
 msgstr "同期プラン '%{plan}' が組織 '%{org}' 内に見つかりませんでした"
 
 msgid "Couldn't find system '%s'"
 msgstr "システム '%s' が見つかりませんでした"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager, author noriko
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author noriko
 msgid "Create"
 msgstr "作成"
 
@@ -1203,8 +1120,7 @@ msgstr "GPG キーの作成"
 msgid "Create a host collection"
 msgstr "ホストコレクションの作成"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Create a host group"
 msgstr "ホストグループの作成"
 
@@ -1232,13 +1148,11 @@ msgstr "アーキテクチャーの作成"
 msgid "Create organization"
 msgstr "組織の作成"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Created (UTC)"
 msgstr "作成 (UTC)"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Created / Last Checked In"
 msgstr "作成 / 最終チェックイン"
 
@@ -1249,47 +1163,40 @@ msgstr "重大"
 msgid "Current Subscription Totals"
 msgstr "現在のサブスクリプションの合計"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Current Subscriptions"
 msgstr "現在のサブスクリプション"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Current organization is being deleted, switch to a different one."
 msgstr "現在の組織が削除されています。別の組織に切り替えてください。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Custom Content Repositories"
 msgstr "カスタムコンテンツリポジトリー"
 
 msgid "Custom Content Repository Product"
 msgstr "カスタムコンテンツリポジトリー製品"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Custom Information"
 msgstr "カスタム情報"
 
 msgid "Custom repositories cannot be disabled."
 msgstr "カスタムリポジトリーを無効にできません。"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 8315-717793
+# translation auto-copied from project PressGang CCMS topics, version 1, document 8315-717793
 msgid "Date"
 msgstr "日付"
 
 msgid "Date format is incorrect."
 msgstr "日付の形式が正しくありません。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Debug Certificate"
 msgstr "デバッグ証明書"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Debug RPMs"
 msgstr "RPM のデバッグ"
 
@@ -1320,31 +1227,26 @@ msgstr "新規オペレーティングシステムのデフォルトプロビジ
 msgid "Default user data for new Operating Systems"
 msgstr "新規オペレーティングシステムのデフォルトユーザーデータ"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Delete"
 msgstr "削除"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Delete %s?"
 msgstr "%s を削除しますか?"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document
-# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "Delete Activation Key"
 msgstr "アクティベーションキーの削除"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Delete All"
 msgstr "すべてを削除"
 
 msgid "Delete Lifecycle Environment"
 msgstr "ライフサイクル環境の削除"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Delete Manifest"
 msgstr "マニフェストの削除"
 
@@ -1384,8 +1286,7 @@ msgstr "%{environment} から削除されました"
 msgid "Dependencies: "
 msgstr "依存関係: "
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0,
-# document foreman, author nnakakit
+# translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman, author nnakakit
 msgid "Description"
 msgstr "説明"
 
@@ -1398,16 +1299,14 @@ msgstr "新規に公開されたコンテンツビューバージョンの説明
 msgid "Description of the content host"
 msgstr "コンテンツホストについての説明"
 
-# translation auto-copied from project Customer Portal Translations, version
-# Portal-Case-Management, document Template, author asasaki
+# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author asasaki
 msgid "Description:"
 msgstr "説明:"
 
 msgid "Description: "
 msgstr "説明: "
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Destroy"
 msgstr "破棄"
 
@@ -1453,13 +1352,11 @@ msgstr "1 つ以上のシステムの破棄"
 msgid "Details"
 msgstr "詳細"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Difference"
 msgstr "差集合"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Difference:"
 msgstr "差集合:"
 
@@ -1472,72 +1369,60 @@ msgstr "セットのリポジトリーを無効化"
 msgid "Discover Repositories"
 msgstr "リポジトリーの検出"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Display"
 msgstr "表示"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document
-# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "Distribution"
 msgstr "ディストリビューション"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Distribution '%s' not found within the repository"
 msgstr "ディストリビューション '%s' がリポジトリー内に見つかりません"
 
 msgid "Distribution with id '%s' not found"
 msgstr "ID  '%s' のディストリビューションが見つかりません"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Distributor"
 msgstr "ディストリビューター"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Distributor '%s' was created."
 msgstr "ディストリビューター '%s' が作成されました。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Distributor '%s' was updated."
 msgstr "ディストリビューター '%s' が更新されました。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Distributor Events"
 msgstr "ディストリビューターのイベント"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Distributor Info"
 msgstr "ディストリビューター情報"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Distributor Properties"
 msgstr "ディストリビューターのプロパティー"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Distributor subscriptions updated."
 msgstr "ディストリビューターのサブスクリプションが更新されました。"
 
 msgid "Distributor with uuid %s not found"
 msgstr "UUID  %s のディストリビューターが見つかりません"
 
-# translation auto-copied from project rhsm-web, version 0.0, document
-# management
+# translation auto-copied from project rhsm-web, version 0.0, document management
 msgid "Distributors"
 msgstr "ディストリビューター"
 
 msgid "Do not include this array of content views"
 msgstr "このコンテンツビューの配列を組み込まない"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid ""
 "Do you want to set this GPG Key as the key for all repositories within this "
 "product?"
@@ -1546,8 +1431,7 @@ msgstr "この製品内のすべてのリポジトリーに対するキーとし
 msgid "Docker Image"
 msgstr "Docker イメージ"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 012_June_RHEL, document downloads.html, author asasaki
+# translation auto-copied from project Customer Portal Translations, version 012_June_RHEL, document downloads.html, author asasaki
 msgid "Docker Images"
 msgstr "Docker イメージ"
 
@@ -1557,31 +1441,26 @@ msgstr "Docker タグ"
 msgid "Docker Tags"
 msgstr "Docker タグ"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 006_DrupalPO, document interface, author asasaki
+# translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "Download"
 msgstr "ダウンロード"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Download Manifest"
 msgstr "マニフェストのダウンロード"
 
 msgid "Download a debug certificate"
 msgstr "デバッグ証明書のダウンロード"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 006_DrupalPO, document interface, author asasaki
+# translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "Duration"
 msgstr "期間"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Edit"
 msgstr "編集"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Edit Environment"
 msgstr "環境の編集"
 
@@ -1594,48 +1473,40 @@ msgstr ""
 msgid "Either environments or versions must be specified."
 msgstr "環境またはバージョンのいずれかを指定する必要があります"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Either organization ID or environment ID needs to be specified"
 msgstr "組織 ID または環境 ID のいずれかを指定する必要があります"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Either packages or groups  must be provided"
 msgstr "パッケージまたはグループのいずれかを指定する必要があります。"
 
 msgid "Enable"
 msgstr "有効"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Enable Red Hat Repositories"
 msgstr "Red Hat リポジトリーを有効にする"
 
 msgid "Enable a repository from the set"
 msgstr "セットのリポジトリーを有効化"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Enabled by Default: "
 msgstr "デフォルトで有効化:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asasaki
 msgid "Enabled?"
 msgstr "有効にされていますか?"
 
-# translation auto-copied from project Customer Portal Translations, version
-# RHJBossMiddlewareOperationsNetworkProduc, document
-# RHJBossMiddlewareOperationsNetworkProductUpdate.html, author asasaki
+# translation auto-copied from project Customer Portal Translations, version RHJBossMiddlewareOperationsNetworkProduc, document RHJBossMiddlewareOperationsNetworkProductUpdate.html, author asasaki
 msgid "End"
 msgstr "終了"
 
 msgid "End date that Errata was issued on to filter by"
 msgstr "フィルターするエラータ発行の終了日"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document
-# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "Enhancement"
 msgstr "機能強化"
 
@@ -1646,21 +1517,18 @@ msgstr "環境: "
 msgid "Environment"
 msgstr "環境"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Environment cannot be in its own promotion path"
 msgstr "環境をそれ自体のプロモーションパスに存在させることはできません。"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Environment:"
 msgstr "環境:"
 
 msgid "Errata"
 msgstr "エラータ"
 
-# translation auto-copied from project Satellite6 Hammer CLI Katello, version
-# 6.1, document hammer-cli-katello
+# translation auto-copied from project Satellite6 Hammer CLI Katello, version 6.1, document hammer-cli-katello
 msgid "Errata ID"
 msgstr "エラータ ID"
 
@@ -1670,8 +1538,7 @@ msgstr "エラータのインストール"
 msgid "Errata Install scheduled by %s"
 msgstr "%s によりエラータのインストールがスケジュールされました"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Using_the_CloudForms_System_Engine_Dashboard
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Using_the_CloudForms_System_Engine_Dashboard
 msgid "Errata Overview"
 msgstr "エラータの概要"
 
@@ -1690,8 +1557,7 @@ msgstr "エラータ"
 msgid "Erratum Install Canceled"
 msgstr "エラータのインストールが取り消されました"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Erratum Install Complete"
 msgstr "エラータのインストールが完了しました"
 
@@ -1701,23 +1567,19 @@ msgstr "エラータのインストールが失敗しました"
 msgid "Erratum Install Timed Out"
 msgstr "エラータのインストールがタイムアウトになりました"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Error"
 msgstr "エラー"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Error on Install"
 msgstr "インストール時のエラー"
 
-# translation auto-copied from project firewalld, version 0.3.8, document
-# firewalld
+# translation auto-copied from project firewalld, version 0.3.8, document firewalld
 msgid "Error:"
 msgstr "エラー:"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Errors"
 msgstr "エラー"
 
@@ -1725,18 +1587,15 @@ msgstr "エラー"
 msgid "Event"
 msgstr "イベント"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Example Searches:"
 msgstr "サンプル検索:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Expand"
 msgstr "展開"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author htaira
+# translation auto-copied from project CFSE, version sam-1.2, document app, author htaira
 msgid "Expand All"
 msgstr "すべて展開"
 
@@ -1751,8 +1610,7 @@ msgstr ""
 msgid "Expected attribute is missing:"
 msgstr "予期される属性がありません:"
 
-# translation auto-copied from project libvirt, version 1.1.1, document
-# libvirt
+# translation auto-copied from project libvirt, version 1.1.1, document libvirt
 msgid "FAIL"
 msgstr "失敗"
 
@@ -1762,8 +1620,7 @@ msgstr "ファクトが正常に更新されました。"
 msgid "Failed"
 msgstr "失敗"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Failed for distributor(s):"
 msgstr "ディストリビューターに対して失敗しました:"
 
@@ -1787,8 +1644,7 @@ msgstr "システムの適用可能なエラータを取得します。"
 msgid "Field to sort the results on"
 msgstr "結果をソートするフィールド"
 
-# translation auto-copied from project RHELOSP Deploying Learning Env, version
-# 5.0, document chap-Nagios_Installation
+# translation auto-copied from project RHELOSP Deploying Learning Env, version 5.0, document chap-Nagios_Installation
 msgid "File Name"
 msgstr "ファイル名"
 
@@ -1825,8 +1681,7 @@ msgstr "UUID でコンテンツホストをフィルター"
 msgid "Filter content view filters by name"
 msgstr "名前でコンテンツビューフィルターをフィルター"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Filter on loaded Events..."
 msgstr "ロード済みのイベントをフィルター..."
 
@@ -1863,29 +1718,25 @@ msgstr "バージョン番号でバージョンをフィルター"
 msgid "Filter versions that are components in the specified composite version"
 msgstr "指定された複合バージョンのコンポーネントであるバージョンをフィルター"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Filter..."
 msgstr "フィルター..."
 
 msgid "For more information see "
 msgstr "詳細は、以下を参照してください: "
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "GPG Key URL: "
 msgstr "GPG キー URL:"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 31337-708757, author asasaki
+# translation auto-copied from project PressGang CCMS topics, version 1, document 31337-708757, author asasaki
 msgid "GPG Keys"
 msgstr "GPG キー"
 
 msgid "GPG keys"
 msgstr "GPG キー"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Generate and Download"
 msgstr "生成してダウンロード"
 
@@ -1924,13 +1775,12 @@ msgid "Get status of synchronisation for given repository"
 msgstr "指定リポジトリーの同期状態を取得"
 
 msgid ""
-"Given a set of systems and errata, lists the content view versions"
-"                                                                   and "
-"environments that need updating."
+"Given a set of systems and errata, lists the content view versions           "
+"                                                        and environments "
+"that need updating."
 msgstr "システムおよびエラータのセットに基づいて、更新の必要なコンテンツビューのバージョンおよび環境を一覧表示します。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Go"
 msgstr "移動する"
 
@@ -1946,8 +1796,7 @@ msgstr "ホストアドバイザリー"
 msgid "Host Collection name"
 msgstr "ホストコレクション名"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Using_the_CloudForms_System_Engine_Dashboard
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Using_the_CloudForms_System_Engine_Dashboard
 msgid "Host Collections"
 msgstr "ホストコレクション"
 
@@ -1972,16 +1821,14 @@ msgstr "ソートされた結果を順序付ける方法 (例:  ascending (昇�
 msgid "Hypervisor"
 msgstr "ハイパーバイザー"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Hypervisor does not support this action"
 msgstr "ハイパーバイザーはこのアクションに対応していません。"
 
 msgid "Hypervisors do not have software products"
 msgstr "ハイパーバイザーにソフトウェア製品はありません。"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "ID"
 msgstr "ID"
 
@@ -2030,8 +1877,7 @@ msgstr "有効にするリポジトリーセットの ID"
 msgid "ID of the sync plan"
 msgstr "同期プランの ID"
 
-# translation auto-copied from project Customer Portal Translations, version
-# management_page, document Management_Prototype.html, author asasaki
+# translation auto-copied from project Customer Portal Translations, version management_page, document Management_Prototype.html, author asasaki
 msgid "ID:"
 msgstr "ID:"
 
@@ -2041,13 +1887,11 @@ msgstr "ID: %s が存在しません"
 msgid "IDs of the virtual guests running on this content host"
 msgstr "このコンテンツホスト上で実行される仮想ゲストの ID"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "IRC"
 msgstr "IRC"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "ISOs"
 msgstr "ISO"
 
@@ -2075,8 +1919,7 @@ msgstr "マニフェストのインポート"
 msgid "Import facts"
 msgstr "ファクトのインポート"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Import in progress (%M)"
 msgstr "インポートの処理中 (%M)"
 
@@ -2103,8 +1946,7 @@ msgstr "エラータのインデックス作成"
 msgid "Informable Type must be one of the following [ %{list} ]"
 msgstr "情報タイプは以下のいずれかでなければなりません [ %{list} ]"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Initial Creation Params"
 msgstr "初期の作成パラメーター"
 
@@ -2114,8 +1956,7 @@ msgstr "初期の登録パラメーター"
 msgid "Install Applicable Errata"
 msgstr "適用できるエラータのインストール"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Install Finished"
 msgstr "インストールが完了しました"
 
@@ -2125,8 +1966,7 @@ msgstr "コンテンツの 1 つ以上のシステムへのインストール"
 msgid "Install erratum"
 msgstr "エラータのインストール"
 
-# translation auto-copied from project gnome-packagekit, version 3.8.2,
-# document gnome-packagekit
+# translation auto-copied from project gnome-packagekit, version 3.8.2, document gnome-packagekit
 msgid "Install package"
 msgstr "パッケージのインストール"
 
@@ -2136,13 +1976,11 @@ msgstr "パッケージグループのインストール"
 msgid "Install packages remotely"
 msgstr "パッケージのリモートインストール"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Installed Packages"
 msgstr "インストール済みパッケージ"
 
-# translation auto-copied from project anaconda, version 19.31.34, document
-# anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document anaconda
 msgid "Installing"
 msgstr "インストール中"
 
@@ -2155,26 +1993,22 @@ msgstr "パッケージグループのインストール中..."
 msgid "Installing Package..."
 msgstr "パッケージのインストール中..."
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Insufficient Subscriptions"
 msgstr "サブスクリプションの不足"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Intersection"
 msgstr "共通集合"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Intersection:"
 msgstr "共通集合:"
 
 msgid "Interval"
 msgstr "間隔"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Invalid Subscriptions"
 msgstr "無効なサブスクリプション"
 
@@ -2223,15 +2057,13 @@ msgstr ""
 "無効なフィルタールールが指定されました。'version' を 'min_version' または 'max_version' "
 "と同じ組で指定することはできません"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid ""
 "Invalid parameters sent in the request for this operation. Please contact a "
 "system administrator."
 msgstr "無効なパラメーターがこの動作の要求に送信されました。システム管理者に連絡してください。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid ""
 "Invalid parameters sent. You may have mistyped the address. If you continue "
 "having trouble with this, please contact an Administrator."
@@ -2251,13 +2083,11 @@ msgstr ""
 "無効な puppet モジュールです。puppet モジュールに metadata.json "
 "ファイルが含まれており、正常に圧縮されていることを確認してください。"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Issue tracker"
 msgstr "問題トラッカー"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Issued"
 msgstr "発行"
 
@@ -2289,29 +2119,25 @@ msgstr "コンテンツホスト固有ファクトのキーと値のハッシュ
 msgid "Keyname"
 msgstr "キー名"
 
-# translation auto-copied from project RHN Satellite Installation Guide,
-# version 5.6, document Importing_and_Synchronizing
+# translation auto-copied from project RHN Satellite Installation Guide, version 5.6, document Importing_and_Synchronizing
 msgid "Kickstarts"
 msgstr "キックスタート"
 
 msgid "Label of the content"
 msgstr "コンテンツのラベル"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Last Checked in Date"
 msgstr "最終チェックイン日"
 
 msgid "Last check-in time of this content host"
 msgstr "このコンテンツホストの最終チェックイン時間"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Using_the_CloudForms_System_Engine_Dashboard
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Using_the_CloudForms_System_Engine_Dashboard
 msgid "Latest Notifications"
 msgstr "最新の通知"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Level"
 msgstr "レベル"
 
@@ -2325,16 +2151,14 @@ msgstr "比較を制限するためのライブラリーのリポジトリー ID
 msgid "License"
 msgstr "ライセンス"
 
-# translation auto-copied from project system-config-printer, version 1.4.1,
-# document system-config-printer
+# translation auto-copied from project system-config-printer, version 1.4.1, document system-config-printer
 msgid "License:"
 msgstr "ライセンス:"
 
 msgid "License: "
 msgstr "ライセンス:"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Host_Groups
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Host_Groups
 msgid "Lifecycle Environment"
 msgstr "ライフサイクル環境"
 
@@ -2345,8 +2169,8 @@ msgstr "ライフサイクル環境 %s には後継があります。パス上�
 
 msgid ""
 "Lifecycle Environment %s has associated Activation Keys. Please change or "
-"remove the associated Activation Keys before trying to delete this lifecycle"
-" environment."
+"remove the associated Activation Keys before trying to delete this lifecycle "
+"environment."
 msgstr ""
 "ライフサイクル環境 %s "
 "には関連付けられたアクティベーションキーがあります。このライフサイクル環境を削除する前に、関連付けられたアクティベーションキーの変更または削除を行なってください。"
@@ -2359,10 +2183,7 @@ msgstr ""
 "ライフサイクル環境 %s "
 "には関連付けられたコンテンツホストがあります。ライフサイクル環境を￥削除する前に、関連付けられたコンテンツホストの登録解除または移動を行なってください。"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document chap-
-# Configuring_Organizations_Locations_and_Lifecycle_Environments, author
-# asasaki
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document chap-Configuring_Organizations_Locations_and_Lifecycle_Environments, author asasaki
 msgid "Lifecycle Environments"
 msgstr "ライフサイクル環境"
 
@@ -2379,16 +2200,14 @@ msgstr ""
 msgid "Lifecyle Environments"
 msgstr "ライフサイクル環境"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Limits"
 msgstr "制限"
 
 msgid "List :resource_id"
 msgstr ":resource_id を一覧表示"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "List Actions"
 msgstr "アクションを一覧表示"
 
@@ -2582,8 +2401,7 @@ msgstr "製品のリポジトリーセットの一覧表示"
 msgid "List sync plans"
 msgstr "同期プランの一覧表示"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Mailing lists"
 msgstr "メーリングリスト"
 
@@ -2597,18 +2415,15 @@ msgstr "ホストコレクションのコピー作成"
 msgid "Make this your default organization."
 msgstr "これをユーザーのデフォルトの組織にします。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Manage Environments"
 msgstr "環境の管理"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Manifest %s failed"
 msgstr "マニフェスト %s が失敗しました"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Manifest subscriptions unchanged from previous"
 msgstr "マニフェストサブスクリプションは前回より変更されていません"
 
@@ -2636,18 +2451,15 @@ msgid ""
 "rule."
 msgstr "ID ルールを、既存のタイプまたはデータ範囲ルールのあるフィルターに追加することはできません。"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Message"
 msgstr "メッセージ"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "More >>"
 msgstr "詳細 >>"
 
-# translation auto-copied from project policycoreutils, version 2.1.14,
-# document policycoreutils, author noriko
+# translation auto-copied from project policycoreutils, version 2.1.14, document policycoreutils, author noriko
 msgid "More..."
 msgstr "詳細..."
 
@@ -2666,8 +2478,7 @@ msgstr "コンテンツホストの名前"
 msgid "Name of the content view"
 msgstr "コンテンツビューの名前"
 
-# translation auto-copied from project RHELOSP Deploying Learning Env, version
-# 5.0, document topics/Installation_Prerequisites_Checklists
+# translation auto-copied from project RHELOSP Deploying Learning Env, version 5.0, document topics/Installation_Prerequisites_Checklists
 msgid "Name:"
 msgstr "名前:"
 
@@ -2680,8 +2491,7 @@ msgstr "名前: %{module_name}、バージョン: %{version}"
 msgid "Names and labels must be unique across all organizations"
 msgstr "名前とラベルはすべての組織間で一意である必要があります"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Nest"
 msgstr "ネスト"
 
@@ -2703,8 +2513,7 @@ msgstr "新規 ISO: %s"
 msgid "New content view name"
 msgstr "新規コンテンツビューの名前"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "New distributor"
 msgstr "新規ディストリビューター"
 
@@ -2726,19 +2535,17 @@ msgstr "リポジトリーの新規の名前"
 msgid "New packages: %{count} (%{size})."
 msgstr "新規パッケージ: %{count} (%{size})。"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 10186-726104, author myamamot
+# translation auto-copied from project PressGang CCMS topics, version 1, document 10186-726104, author myamamot
 msgid "No"
 msgstr "No"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "No Content View"
 msgstr "コンテンツビューがありません"
 
 msgid ""
-"No Red Hat products currently exist, please import a manifest <a "
-"href='/subscriptions'>here</a> to receive Red Hat content."
+"No Red Hat products currently exist, please import a manifest <a href='/"
+"subscriptions'>here</a> to receive Red Hat content."
 msgstr ""
 "Red Hat 製品は現在ありません。<a href='/subscriptions'>こちら</a> からマニフェストをインポートし、Red Hat "
 "コンテンツを受信してください。"
@@ -2748,8 +2555,8 @@ msgid "No Service Level Preference"
 msgstr "サービスレベルの設定がありません"
 
 msgid ""
-"No Version of Content View %{component} already exists as a component of the"
-" composite Content View %{composite} version %{version}"
+"No Version of Content View %{component} already exists as a component of the "
+"composite Content View %{composite} version %{version}"
 msgstr ""
 "コンテンツビュー %{component} のいずれのバージョンも、複合コンテンツビュー %{composite} のバージョン %{version} "
 "のコンポーネントとして存在しません"
@@ -2763,11 +2570,10 @@ msgstr "コンテンビューの履歴イベントが見つかりません。"
 msgid "No content_view_version_ids provided"
 msgstr "content_view_version_ids が指定されていません"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid ""
-"No environments are currently available in this organization.  Please either"
-" add some to the organization or select an organization that has an "
+"No environments are currently available in this organization.  Please either "
+"add some to the organization or select an organization that has an "
 "environment to set user default."
 msgstr ""
 "この組織で現在利用できる環境がありません。組織に利用できる環境を追加するか、またはユーザーのデフォルトを設定できる環境のある別の組織を選択してください。"
@@ -2799,8 +2605,7 @@ msgstr " %s のパッケージプロファイルが受信されていません"
 msgid "No package uuids provided"
 msgstr "パッケージ UUID が指定されていません"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "No packages are currently filtered."
 msgstr "現在フィルター済みのパッケージはありません。"
 
@@ -2810,13 +2615,11 @@ msgstr "削除済みのパッケージはありません"
 msgid "No packages updated"
 msgstr "更新済みのパッケージはありません"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "No products are available containing this content type."
 msgstr "このコンテンツタイプを含む利用可能な製品はありません。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "No products or repositories are currently associated."
 msgstr "現在関連付けられている製品またはリポジトリーはありません。"
 
@@ -2826,8 +2629,7 @@ msgstr "選択されている製品またはリポジトリーはありません
 msgid "No puppet repository selected."
 msgstr "選択されている puppet リポジトリーはありません。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "No recently synced products."
 msgstr "最近同期された製品はありません。"
 
@@ -2840,8 +2642,7 @@ msgstr "%s 同期レポートの受信者が見つかりません"
 msgid "No start time currently available."
 msgstr "現在選択できる開始時刻はありません。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "No systems found."
 msgstr "システムが見つかりません。"
 
@@ -2869,8 +2670,7 @@ msgstr ""
 "注意: "
 "括弧内の数字は、ホストで利用できないライブラリー環境にあるすべての適用可能なエラータを反映しています。このコンテンツを利用可能にするには、関連するコンテンツビューにこれをプロモートする必要があります。"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Notifications"
 msgstr "通知"
 
@@ -2880,47 +2680,40 @@ msgstr "戻されるページごとの結果数"
 msgid "Number of sockets must be higher than 0 for system %s"
 msgstr "システム %s に対するソケット数は 0 より大きくなければなりません。"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "OK"
 msgstr "OK"
 
-# translation auto-copied from project system-config-language, version 1.4.0,
-# document system-config-language, author noriko
+# translation auto-copied from project system-config-language, version 1.4.0, document system-config-language, author noriko
 msgid "Ok"
 msgstr "OK"
 
 msgid "One of parameters [ %s ] required but not specified."
 msgstr "[ %s ] パラメーターのいずれかが必要ですが、指定されていません。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "One or more of the groups provided has an action pending."
 msgstr "1 つ以上の指定されるグループに保留中のアクションがあります。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "One or more of the packages provided has an action pending."
 msgstr "1 つ以上の指定されるパッケージに保留中のアクションがあります。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "One or more package names are invalid."
 msgstr "1 つ以上のパッケージ名が無効です。"
 
 msgid "One or more packages failed to sync properly."
 msgstr "1 つ以上のパッケージが正常に同期しませんでした。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Only %s favorites may be created."
 msgstr "作成できるお気に入りは %s 件のみです。"
 
 msgid "Only one Red Hat provider permitted for an Organization"
 msgstr "1 組織に対し 1 Red Hat プロバイダーのみが許可されます"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Operators"
 msgstr "演算子"
 
@@ -2930,8 +2723,7 @@ msgstr "組織"
 msgid "Organization %s is being deleted."
 msgstr "組織 %s は削除されています。"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document
-# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "Organization ID"
 msgstr "組織 ID"
 
@@ -2954,8 +2746,7 @@ msgid ""
 "Organizations disabled, try allowing them in foreman/config/settings.yaml"
 msgstr "無効にされた組織です。foreman/config/settings.yaml でそれらの許可を試行してください。"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 38695-678029, author jito
+# translation auto-copied from project PressGang CCMS topics, version 1, document 38695-678029, author jito
 msgid "Other"
 msgstr "その他"
 
@@ -2965,14 +2756,11 @@ msgstr "activation_key のコンテンツを上書き"
 msgid "Override to 0/1, or 'default'"
 msgstr "0/1 に上書きまたは 'default'"
 
-# translation auto-copied from project rhn-client-tools, version 6.5, document
-# rhn-client-tools
+# translation auto-copied from project rhn-client-tools, version 6.5, document rhn-client-tools
 msgid "Package"
 msgstr "パッケージ"
 
-# translation auto-copied from project RHEL Virtualization Host Configuration
-# and Guest Installation Guide, version 6.4, document Host_Installation,
-# author kmoriguc
+# translation auto-copied from project RHEL Virtualization Host Configuration and Guest Installation Guide, version 6.4, document Host_Installation, author kmoriguc
 msgid "Package Group"
 msgstr "パッケージグループ"
 
@@ -2982,8 +2770,7 @@ msgstr "パッケージグループのインストール"
 msgid "Package Group Install Canceled"
 msgstr "パッケージグループのインストールが取り消されました"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Package Group Install Complete"
 msgstr "パッケージグループのインストールが完了しました"
 
@@ -3002,8 +2789,7 @@ msgstr "パッケージグループの削除"
 msgid "Package Group Remove Canceled"
 msgstr "パッケージグループの削除が取り消されました"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Package Group Remove Complete"
 msgstr "パッケージグループの削除が完了しました"
 
@@ -3031,8 +2817,7 @@ msgstr "パッケージのインストール"
 msgid "Package Install Canceled"
 msgstr "パッケージのインストールが取り消されました"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Package Install Complete"
 msgstr "パッケージのインストールが完了しました"
 
@@ -3051,8 +2836,7 @@ msgstr "パッケージの削除"
 msgid "Package Remove Canceled"
 msgstr "パッケージの削除が取り消されました"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Package Remove Complete"
 msgstr "パッケージの削除が完了しました"
 
@@ -3071,8 +2855,7 @@ msgstr "パッケージの更新"
 msgid "Package Update Canceled"
 msgstr "パッケージの更新が取り消されました"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Package Update Complete"
 msgstr "パッケージの更新が完了しました"
 
@@ -3085,23 +2868,19 @@ msgstr "パッケージの更新がタイムアウトになりました"
 msgid "Package Update scheduled by %s"
 msgstr "%s によりパッケージの更新がスケジュールされました"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Package group update canceled"
 msgstr "パッケージグループの更新が取り消されました"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Package group update complete"
 msgstr "パッケージグループの更新が完了しました"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Package group update failed"
 msgstr "パッケージグループの更新が失敗しました"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Package group update timed out"
 msgstr "パッケージグループの更新がタイムアウトになりました"
 
@@ -3121,26 +2900,22 @@ msgstr "パッケージ (%s)"
 msgid "Packages must be provided"
 msgstr "パッケージを指定してください"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Packages:"
 msgstr "パッケージ:"
 
 msgid "Page number, starting at 1"
 msgstr "1 から始まるページ番号"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Parameters"
 msgstr "パラメーター"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Paused"
 msgstr "一時停止中"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Pending"
 msgstr "保留"
 
@@ -3152,8 +2927,7 @@ msgid ""
 "organization '%{org}'."
 msgstr "パーミッションが拒否されました。ユーザー '%{user}' には組織 '%{org}' にアクセスするパーミッションがありません。"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Physical"
 msgstr "物理"
 
@@ -3168,8 +2942,7 @@ msgid ""
 "the menu."
 msgstr "メニューの一番左側にあるセレクターを使用して組織を選択してください。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Please request the required privileges from an administrator."
 msgstr "管理者に必要な特権を要求してください。"
 
@@ -3182,13 +2955,11 @@ msgstr "メタデータの処理中"
 msgid "Processing metadata."
 msgstr "メタデータの処理中です。"
 
-# translation auto-copied from project Customer Portal Translations, version
-# Portal-Case-Management, document Template, author asasaki
+# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author asasaki
 msgid "Product"
 msgstr "製品"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Product Name: "
 msgstr "製品名:"
 
@@ -3222,29 +2993,25 @@ msgstr "%{environment} にプロモート"
 msgid "Promotion"
 msgstr "プロモーション"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid ""
 "Providers provide many types of content such as packages, errata, kickstart "
 "trees, and installation disc images.  A provider may be delivering all of "
 "your paid content or it could simply be a local yum repository providing a "
 "few yum repos."
 msgstr ""
-"プロバイダーは、パッケージ、エラータ、キックスタートツリー、インストールディスクイメージなど多くの種類のコンテンツを提供します。プロバイダーは、すべての有料コンテンツを配信するか、または"
-" yum リポジトリーを提供するローカルの yum リポジトリーである場合があります。"
+"プロバイダーは、パッケージ、エラータ、キックスタートツリー、インストールディスクイメージなど多くの種類のコンテンツを提供します。プロバイダーは、すべての有料コンテンツを配信するか、または "
+"yum リポジトリーを提供するローカルの yum リポジトリーである場合があります。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Provides"
 msgstr "提供"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Provides:"
 msgstr "提供:"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Publish"
 msgstr "公開"
 
@@ -3254,13 +3021,11 @@ msgstr "コンテンツビューの公開"
 msgid "Published new version"
 msgstr "新規バージョンを公開しました"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Pulp not running"
 msgstr "Pulp は実行されていません"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid ""
 "Pulp service unavailable during creating repository '%s', please try again "
 "later."
@@ -3272,8 +3037,7 @@ msgstr "Pulp タスクのエラー"
 msgid "Pulp task error.  Refer to task for more details."
 msgstr "Pulp タスクのエラーです。詳細はタスクを参照してください。"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Puppet Environment"
 msgstr "Puppet 環境"
 
@@ -3287,8 +3051,7 @@ msgid ""
 "Puppet Module with name='%{name}' and author='%{author}' does not exist"
 msgstr "name='%{name}' および author='%{author}' の Puppet モジュールはありません"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Puppet Modules"
 msgstr "Puppet モジュール"
 
@@ -3298,8 +3061,7 @@ msgstr "Puppet モジュール (%s)"
 msgid "Puppet module conflict: '%{mod}' is in %{versions}."
 msgstr "Puppet モジュールの競合: '%{mod}' が  %{versions} にあります。"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Quantity"
 msgstr "数量"
 
@@ -3312,13 +3074,11 @@ msgstr "追加するこのサブスクリプションの数量"
 msgid "RAM: %s GB"
 msgstr "RAM: %s GB"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 30483-691333, author jito
+# translation auto-copied from project PressGang CCMS topics, version 1, document 30483-691333, author jito
 msgid "RPMs"
 msgstr "RPM"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Reason: %s"
 msgstr "理由: %s"
 
@@ -3328,13 +3088,11 @@ msgstr "Red Hat CDN URL"
 msgid "Red Hat Docker Registry URL"
 msgstr "Red Hat Docker レジストリー URL"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 004_messages, document messages, author asasaki
+# translation auto-copied from project Customer Portal Translations, version 004_messages, document messages, author asasaki
 msgid "Red Hat Product"
 msgstr "Red Hat 製品"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Red Hat Repositories"
 msgstr "Red Hat リポジトリー"
 
@@ -3350,16 +3108,14 @@ msgstr "Red Hat プロバイダーは削除できません"
 msgid "Red Hat repositories cannot be manipulated."
 msgstr "Red Hat リポジトリーを操作することはできません。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "References:"
 msgstr "参照:"
 
 msgid "Refresh Manifest"
 msgstr "マニフェストの更新"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Refresh Results"
 msgstr "結果の更新"
 
@@ -3376,8 +3132,7 @@ msgstr "コンテンツホストの登録"
 msgid "Register a content host in environment"
 msgstr "環境内のコンテンツホストの登録"
 
-# translation auto-copied from project CFSE-cli, version sam-1.2, document
-# keys, author noriko
+# translation auto-copied from project CFSE-cli, version sam-1.2, document keys, author noriko
 msgid "Registered"
 msgstr "登録済み"
 
@@ -3393,26 +3148,22 @@ msgstr "有効にする Releasever"
 msgid "Reload data"
 msgstr "データの再ロード"
 
-# translation auto-copied from project Subscription Manager, version 1.8.X,
-# document keys
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Remove"
 msgstr "削除"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Remove All"
 msgstr "すべてを削除"
 
 msgid "Remove Content"
 msgstr "コンテンツの削除"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Remove Distributor"
 msgstr "ディストリビューターの削除"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Remove Distributor(s)"
 msgstr "ディストリビューターの削除"
 
@@ -3462,8 +3213,8 @@ msgid "Remove repository"
 msgstr "リポジトリーの削除"
 
 msgid ""
-"Remove versions and/or environments from a content view and reassign systems"
-" and keys"
+"Remove versions and/or environments from a content view and reassign systems "
+"and keys"
 msgstr "コンテンツビューからバージョンおよび/または環境を削除し、システムおよびキーを再度割り当てる"
 
 msgid "Removing Package Group..."
@@ -3478,22 +3229,18 @@ msgstr "レンダリング 404:"
 msgid "Rendering 500:"
 msgstr "レンダリング 500:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Repo Type: "
 msgstr "リポジトリーのタイプ:"
 
-# translation auto-copied from project JBoss SOA5.2 DS Metadata Repository
-# Reference Guide, version 5.2, document content/jcr/configuration, author
-# tnagamot
+# translation auto-copied from project JBoss SOA5.2 DS Metadata Repository Reference Guide, version 5.2, document content/jcr/configuration, author tnagamot
 msgid "Repositories"
 msgstr "リポジトリー"
 
 msgid "Repositories from published Content Views are not allowed."
 msgstr "公開されたコンテンツビューからのリポジトリーは許可されません。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Repository"
 msgstr "リポジトリー"
 
@@ -3505,19 +3252,17 @@ msgstr "リポジトリー %s は公開されたコンテンツビューにす�
 msgid "Repository %s cannot be deleted since they are Red Hat repositories."
 msgstr "リポジトリー %s は Red Hat リポジトリーであるため、削除できません。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Repository Comparison"
 msgstr "リポジトリーの比較"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Repository Set"
 msgstr "リポジトリーセット"
 
 msgid ""
-"Repository URL or Upstream Name is empty. Both are required for syncing from"
-" the upstream."
+"Repository URL or Upstream Name is empty. Both are required for syncing from "
+"the upstream."
 msgstr "リポジトリー URL またはアップストリーム名は空です。これらの両方は、アップストリームの同期に必要です。"
 
 msgid ""
@@ -3527,22 +3272,19 @@ msgid ""
 msgstr ""
 "リポジトリーは公開されたコンテンツビューにすでに含まれるため、削除できません。この削除を試行する前にこのリポジトリーに含まれるすべてのコンテンツビューバージョンを削除してください。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Repository cannot be disabled since it has already been promoted."
 msgstr "リポジトリーはすでにプロモート済みのため無効にできません。"
 
 msgid "Repository conflict: '%{repo}' is in %{versions}."
 msgstr "リポジトリーの競合: '%{repo}' が  %{versions} にあります。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid ""
 "Repository has already been cloned to %{cv_name} in environment %{to_env}"
 msgstr "リポジトリーのクローンはすでに環境 %{to_env} の %{cv_name} に作成されています。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Repository has already been promoted to %{to_env}"
 msgstr "リポジトリーはすでに %{to_env} にプロモートされています。"
 
@@ -3558,18 +3300,15 @@ msgstr "リポジトリーが見つかりません"
 msgid "Repository set name to search on"
 msgstr "検索するリポジトリーセット名"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Repository sets are not available for custom products."
 msgstr "リポジトリーセットはカスタム製品で利用できません。"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document
-# java/code/src/com/redhat/rhn/frontend/strings/java/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/java/StringResource
 msgid "Request"
 msgstr "要求"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Requires"
 msgstr "必要項目"
 
@@ -3579,13 +3318,11 @@ msgstr "必要項目:"
 msgid "Resource %s does not support custom information"
 msgstr "リソース %s はカスタム情報をサポートしません"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 7336-719185-122041, author Ykatabam
+# translation auto-copied from project PressGang CCMS topics, version 1, document 7336-719185-122041, author Ykatabam
 msgid "Result"
 msgstr "結果"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 22680-539018, author myamamot
+# translation auto-copied from project PressGang CCMS topics, version 1, document 22680-539018, author myamamot
 msgid "Results"
 msgstr "結果"
 
@@ -3616,18 +3353,15 @@ msgstr "システムに一致するサブスクリプションを戻す"
 msgid "Return the content of a repo gpg key, used directly by yum"
 msgstr "yum で直接使用されるリポジトリー GPG キーのコンテンツを戻す"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Route does not exist:"
 msgstr "ルートが存在しません:"
 
-# translation auto-copied from project virt-manager, version 0.10.0, document
-# virt-manager
+# translation auto-copied from project virt-manager, version 0.10.0, document virt-manager
 msgid "Running"
 msgstr "実行中"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "SLA"
 msgstr "SLA"
 
@@ -3646,49 +3380,41 @@ msgstr "Satellite 同期要約"
 msgid "Satellite Sync Summary for %s"
 msgstr "%s についての Satellite 同期要約"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Save"
 msgstr "保存"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Save as Favorite"
 msgstr "お気に入りとして保存"
 
-# translation auto-copied from project virt-manager, version 0.10.0, document
-# virt-manager
+# translation auto-copied from project virt-manager, version 0.10.0, document virt-manager
 msgid "Saved"
 msgstr "保存済み"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Saving..."
 msgstr "保存中です..."
 
 msgid "Schedule errata for installation"
 msgstr "エラータのインストールをスケジュール"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Search"
 msgstr "検索"
 
 msgid "Search modules"
 msgstr "モジュールの検索"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Search packages"
 msgstr "パッケージの検索"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Search repositories"
 msgstr "リポジトリーの検索"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document
-# java/code/src/com/redhat/rhn/frontend/strings/java/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/java/StringResource
 msgid "Search string"
 msgstr "検索文字列"
 
@@ -3702,69 +3428,57 @@ msgstr "検索..."
 msgid "Searching by exact name and author:"
 msgstr "完全に一致する名前と作成者で検索中:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Searching by exact name:"
 msgstr "完全一致する名前で検索中:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Searching by name and arch:"
 msgstr "名前とアーキテクチャーで検索中:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Searching for a specific arch:"
 msgstr "特定のアーキテクチャーを検索中:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Searching for a specific minor version:"
 msgstr "特定のマイナーバージョンを検索中:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Searching for all repositories containing the word \"Server\""
 msgstr "\"Server\" という語を含むすべてのリポジトリーを検索中"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Searching for an exact package:"
 msgstr "完全に一致するパッケージを検索中:"
 
 msgid "Searching for name starting with lib:"
 msgstr "lib で始まる名前を検索中:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Searching starting with kernel:"
 msgstr "カーネルで検索を開始:"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 10346-734525, author Ykatabam
+# translation auto-copied from project PressGang CCMS topics, version 1, document 10346-734525, author Ykatabam
 msgid "Security"
 msgstr "セキュリティー"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Select All"
 msgstr "すべてを選択"
 
 msgid "Select Content View"
 msgstr "コンテンツビューの選択"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Select None"
 msgstr "すべてを選択解除"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0,
-# document foreman, author nnakakit
+# translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman, author nnakakit
 msgid "Select Organization"
 msgstr "組織の選択"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Select Repositories: "
 msgstr "リポジトリーの選択:"
 
@@ -3819,23 +3533,19 @@ msgstr "選択された組織には Pulp または Pulp ノード機能を持つ
 msgid "Service Level %s"
 msgstr "サービスレベル %s"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Severity"
 msgstr "重要度"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager, author noriko
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author noriko
 msgid "Shared"
 msgstr "共有"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Show"
 msgstr "表示"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Show %P more"
 msgstr "%P 以上を表示"
 
@@ -3875,8 +3585,7 @@ msgstr "サブスクリプションの表示"
 msgid "Show a sync plan"
 msgstr "同期プランの表示"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Show all results regardless of which columns they exist in."
 msgstr "どの列に属するかに関係なく、すべての結果を表示します。"
 
@@ -3901,13 +3610,11 @@ msgstr "フィルター情報の表示"
 msgid "Show filter rule info"
 msgstr "フィルタールール情報の表示"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Show only results that do not exist in all selected columns."
 msgstr "選択したすべての列に存在しない結果だけを表示します。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Show only results that exist in all selected columns."
 msgstr "選択したすべての列に存在する結果のみを表示します。"
 
@@ -3926,21 +3633,18 @@ msgstr "システムとそのサブコンポーネントの状態を表示"
 msgid "Shows version information"
 msgstr "バージョン情報の表示"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 12041-564034, author asasaki
+# translation auto-copied from project PressGang CCMS topics, version 1, document 12041-564034, author asasaki
 msgid "Signature"
 msgstr "署名"
 
 msgid "Signature:"
 msgstr "署名:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Sockets: %s"
 msgstr "ソケット: %s"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid ""
 "Sorry about that! It seems something went wrong.  If you continue having "
 "trouble with this, please contact an Administrator."
@@ -3949,8 +3653,7 @@ msgstr "申し訳ありません! 不具合が発生したようです。この�
 msgid "Sort field and order, eg. 'name DESC'"
 msgstr "フィールドと順序のソート (例:  'name DESC')"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Source RPMs"
 msgstr "ソース RPM"
 
@@ -3969,34 +3672,29 @@ msgstr "ホストコレクションを配列として指定"
 msgid "Specify the organization"
 msgstr "組織の指定"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Start"
 msgstr "開始"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Start Date"
 msgstr "開始日"
 
 msgid "Start Date and Time can't be blank"
 msgstr "開始日時を空白にしないでください。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Start Time"
 msgstr "開始時刻"
 
 msgid "Start date that Errata was issued on to filter by"
 msgstr "フィルターするエラータ発行の開始日"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.0,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.0, document foreman
 msgid "Status"
 msgstr "状態"
 
-# translation auto-copied from project Subscription Manager, version 1.8.X,
-# document keys
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Subscription"
 msgstr "サブスクリプション"
 
@@ -4018,8 +3716,7 @@ msgstr "プロバイダー '%s' のサブスクリプションマニフェスト
 msgid "Subscription manifest file"
 msgstr "サブスクリプションのマニフェストファイル"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Subscription manifest import for provider '%s' skipped"
 msgstr "プロバイダー '%s' のサブスクリプションマニフェストのインポートがスキップされました。"
 
@@ -4038,8 +3735,7 @@ msgstr "選択されたアクティベーションキーに基づくサブスク
 msgid "Success"
 msgstr "成功"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Successful for distributor(s): "
 msgstr "ディストリビューターに対して成功:"
 
@@ -4080,8 +3776,7 @@ msgstr "ホストコレクション %{host_collection} から %{count} コンテ
 msgid "Successfully updated custom information"
 msgstr "カスタム情報が正常に更新されました"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Summary"
 msgstr "要約"
 
@@ -4091,26 +3786,22 @@ msgstr "要約: "
 msgid "Sychronize capsule content"
 msgstr "Capsule コンテンツの同期"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Sync Canceled"
 msgstr "同期が取り消されました"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Sync Cancelled"
 msgstr "同期が取り消されました"
 
 msgid "Sync Incomplete"
 msgstr "同期が完了していません"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Using_the_CloudForms_System_Engine_Dashboard
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Using_the_CloudForms_System_Engine_Dashboard
 msgid "Sync Overview"
 msgstr "同期の概要"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Sync Plans"
 msgstr "同期プラン"
 
@@ -4120,16 +3811,14 @@ msgstr "同期の状態"
 msgid "Sync a repository"
 msgstr "リポジトリーの同期"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Sync complete."
 msgstr "同期が完了しました。"
 
 msgid "Sync one or more products"
 msgstr "1 つ以上の製品の同期"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Sync plan"
 msgstr "同期プラン"
 
@@ -4139,8 +3828,7 @@ msgstr "割り当てる同期プラン ID "
 msgid "Synchronize"
 msgstr "同期"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Synchronize Now"
 msgstr "今すぐ同期"
 
@@ -4156,8 +3844,7 @@ msgstr "システム UUID"
 msgid "Systems [%s] not found."
 msgstr "システム [%s] が見つかりません。"
 
-# translation auto-copied from project shotwell-core, version 0.14.1, document
-# shotwell-core
+# translation auto-copied from project shotwell-core, version 0.14.1, document shotwell-core
 msgid "Tag"
 msgstr "タグ"
 
@@ -4196,13 +3883,11 @@ msgstr "エラータタイプは配列でなくてはなりません。無効な
 msgid "The following hosts have errata that apply to them: "
 msgstr "以下のホストにはこれらに適用されるエラータがあります:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid ""
-"The label requested is already used by another %s; therefore, a unique label"
-" was assigned.  If you would like a different label, please delete the %s "
-"and recreate it with a unique label.  Requested label: %s, Assigned label: "
-"%s"
+"The label requested is already used by another %s; therefore, a unique label "
+"was assigned.  If you would like a different label, please delete the %s and "
+"recreate it with a unique label.  Requested label: %s, Assigned label: %s"
 msgstr ""
 "要求されたラベルはすでに別の %s により使用されているため、一意のレベルが割り当てられました。異なるラベルにしたい場合は、%s "
 "を削除して、一意のラベルで再度作成してください。要求されたラベル: %s、割り当てられたラベル: %s"
@@ -4229,8 +3914,8 @@ msgstr ""
 "件の必要なエラータをホストにインストールできます。"
 
 msgid ""
-"The puppet environment %{name} is in use by %{count} Host Group(s) including"
-" %{names}"
+"The puppet environment %{name} is in use by %{count} Host Group(s) including "
+"%{names}"
 msgstr "Puppet 環境 %{name} は %{count} ホストグループで使用されています (%{names} を含む)"
 
 msgid ""
@@ -4256,8 +3941,7 @@ msgid ""
 "'package_group' and 'errata'."
 msgstr "コンテンツのタイプです。次のタイプがサポートされています。'package'、'package_group' および 'errata'"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "There are currently no subscriptions attached to the distributor"
 msgstr "現在このディストリビューターに割り当てられているサブスクリプションはありません"
 
@@ -4265,28 +3949,24 @@ msgid ""
 "There are no errata that need to be applied to registered content hosts."
 msgstr "登録済みコンテンツホストへの適用が必要なエラータはありません。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "There are no events to display."
 msgstr "表示するイベントはありません。"
 
 msgid "There are no files in this package."
 msgstr "このパッケージにはファイルがありません。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "There are no more subscriptions available."
 msgstr "利用可能なサブスクリプションはありません。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid ""
-"There are no products or repositories enabled. Try enabling via %{custom} or"
-" %{redhat}."
+"There are no products or repositories enabled. Try enabling via %{custom} or "
+"%{redhat}."
 msgstr "有効な製品またはリポジトリーはありません。%{custom} または %{redhat} から有効にするように試行してください。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "There are no products to display."
 msgstr "表示する製品はありません。"
 
@@ -4298,8 +3978,7 @@ msgstr ""
 "いずれの環境またはバージョンも指定されていないか、または無効な環境/バージョンが指定されています。environment_ids と "
 "content_view_version_ids パラメーターを確認してください。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid ""
 "There is already an active sync process for the '%s' repository. Please try "
 "again later"
@@ -4311,8 +3990,7 @@ msgstr "このリポジトリーの有効化/無効化の試行中にエラー�
 msgid "There was an error attempting to retrieve the repository list:"
 msgstr "リポジトリー一覧取得の試行中にエラーが発生しました:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "There was an error retrieving that row:"
 msgstr "その行の取得時にエラーが発生しました:"
 
@@ -4337,20 +4015,17 @@ msgstr "このサービスは未認証ユーザーが使用できます"
 msgid "This service is only available for authenticated users"
 msgstr "このサービスは認証ユーザーのみが使用できます"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid ""
 "This will override any GPG keys already associated with a repository within "
 "this product"
 msgstr "これにより、この製品内のリポジトリーにすでに関連付けられている GPG キーがすべて上書きされます。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Time"
 msgstr "時間"
 
-# translation auto-copied from project Fedora Installation Guide, version
-# f17-alt, document DiskEncryptionUserGuide
+# translation auto-copied from project Fedora Installation Guide, version f17-alt, document DiskEncryptionUserGuide
 msgid "Title"
 msgstr "タイトル"
 
@@ -4358,13 +4033,12 @@ msgstr "タイトル"
 msgid "Title: "
 msgstr "タイトル: "
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid ""
-"To view the details of an item on the left, simply click on a single "
-"row.<br/><br/>To select multiple rows, hold the Control Key and click "
-"multiple rows.<br/><br/>If you don't need this help anymore, please click "
-"the close button in the top right of this box."
+"To view the details of an item on the left, simply click on a single row.<br/"
+"><br/>To select multiple rows, hold the Control Key and click multiple rows."
+"<br/><br/>If you don't need this help anymore, please click the close button "
+"in the top right of this box."
 msgstr ""
 "左側にある項目の詳細を表示するには、1 つの行をクリックします。 <br/><br/>複数の行を選択する場合は、コントロールキー (Ctrl) "
 "を押しながら複数の行をクリックします。<br/> <br/>このヘルプを表示させたくない場合は、 "
@@ -4382,8 +4056,7 @@ msgstr "モジュール数合計: %s."
 msgid "Trigger a refresh of subscriptions, auto-attaching if enabled"
 msgstr "サブスクリプションの更新、自動割り当てをトリガー (有効にされている場合)"
 
-# translation auto-copied from project Satellite6 Hammer CLI Katello, version
-# 6.1, document hammer-cli-katello, author Ykatabam
+# translation auto-copied from project Satellite6 Hammer CLI Katello, version 6.1, document hammer-cli-katello, author Ykatabam
 msgid "Type"
 msgstr "タイプ"
 
@@ -4396,8 +4069,7 @@ msgstr "コンテンツホストのタイプです。常に  'システム' に�
 msgid "URL for post sync notification from pulp"
 msgstr "Pulp からの同期後の通知に使用する URL"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "UUID"
 msgstr "UUID"
 
@@ -4465,8 +4137,7 @@ msgid ""
 msgstr ""
 "システムの再割り当てを実行できません。system_content_view_id と system_environment_id を確認してください。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid ""
 "Unable to retrieve release versions from Repository URL %{url}. Error "
 "message: %{error}"
@@ -4492,45 +4163,37 @@ msgstr "予期しないリポジトリーのタイプ %s"
 msgid "Uninstall packages remotely"
 msgstr "パッケージのリモートでのアンインストール"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Union"
 msgstr "和集合"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Union:"
 msgstr "和集合:"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Unique"
 msgstr "固有"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Unknown"
 msgstr "不明"
 
 msgid "Unknown registration date"
 msgstr "不明な登録日"
 
-# translation auto-copied from project Customer Portal Translations, version
-# RedHatCloudFormsLifeCycle, document RedHatCouldFormsLifeCycle.html, author
-# kmoriguc
+# translation auto-copied from project Customer Portal Translations, version RedHatCloudFormsLifeCycle, document RedHatCouldFormsLifeCycle.html, author kmoriguc
 msgid "Unlimited"
 msgstr "無制限"
 
 msgid "Unregister a content host"
 msgstr "コンテンツホストの登録解除"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "Unsupported URL protocol %s."
 msgstr "非対応の URL プロトコル  %s です。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Up to date"
 msgstr "最新"
 
@@ -4573,8 +4236,8 @@ msgid "Update a sync plan"
 msgstr "同期プランの更新"
 
 msgid ""
-"Update all editable and applicable systems, not just ones using the selected"
-" Content View Versions and Environments"
+"Update all editable and applicable systems, not just ones using the selected "
+"Content View Versions and Environments"
 msgstr "選択されたコンテンツビューバージョンおよび環境を使用するシステムだけでなく、すべての編集可能で適用可能なシステムを更新します。"
 
 msgid "Update an activation key"
@@ -4610,8 +4273,7 @@ msgstr "有効にされたリポジトリーについての情報を更新"
 msgid "Update without content"
 msgstr "コンテンツなしの更新"
 
-# translation auto-copied from project anaconda, version 19.31.34, document
-# anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document anaconda
 msgid "Updates"
 msgstr "更新"
 
@@ -4624,8 +4286,7 @@ msgstr "パッケージを更新しています..."
 msgid "Updating package group..."
 msgstr "パッケージグループを更新しています..."
 
-# translation auto-copied from project Customer Portal Translations, version
-# 004_messages, document messages
+# translation auto-copied from project Customer Portal Translations, version 004_messages, document messages
 msgid "Upload"
 msgstr "アップロード"
 
@@ -4647,16 +4308,14 @@ msgstr "情報のアップロード"
 msgid "Upload request id"
 msgstr "要求 ID のアップロード"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Uploading"
 msgstr "アップロードしています"
 
 msgid "Upstream identity certificate not available"
 msgstr "アップストリームの ID 証明書が利用できません"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Use Browser Locale"
 msgstr "ブラウザーロケールの使用"
 
@@ -4671,8 +4330,7 @@ msgstr "ユーザー '%s' は組織 ID を指定しなかったため、デフ�
 msgid "User '%{user}' does not belong to Organization '%{organization}'."
 msgstr "ユーザー '%{user}' は組織 '%{organization}' に属していません。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "User Notifications"
 msgstr "ユーザー通知"
 
@@ -4682,20 +4340,17 @@ msgstr "ユーザーは組織に属していません。"
 msgid "User must be logged in."
 msgstr "ユーザーはログインしている必要があります。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid ""
 "User notifications lists all notifications generated by a user as well as "
 "global notifications that are sent to all users."
 msgstr "ユーザー通知は、すべてのユーザーに送られるグローバル通知とユーザーが生成するすべての通知を一覧表示します。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "Validation Failed:"
 msgstr "検証が失敗しました:"
 
-# translation auto-copied from project Satellite6 Bastion, version 6.1,
-# document bastion
+# translation auto-copied from project Satellite6 Bastion, version 6.1, document bastion
 msgid "Value"
 msgstr "値"
 
@@ -4708,18 +4363,15 @@ msgstr "バージョン"
 msgid "Version:"
 msgstr "バージョン:"
 
-# translation auto-copied from project rhn-client-tools, version 6.5, document
-# rhn-client-tools
+# translation auto-copied from project rhn-client-tools, version 6.5, document rhn-client-tools
 msgid "Version: "
 msgstr "バージョン: "
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 8734-717738, author myamamot
+# translation auto-copied from project PressGang CCMS topics, version 1, document 8734-717738, author myamamot
 msgid "View"
 msgstr "表示"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "View %{view} has not been promoted to %{env}"
 msgstr "ビュー %{view} は %{env} にプロモートされていません。"
 
@@ -4729,48 +4381,39 @@ msgstr "パッケージの変更ログを表示"
 msgid "View package files"
 msgstr "パッケージファイルを表示"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Viewing %C of %T"
 msgstr "%C / %T を表示中"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Viewing %X of %Y results"
 msgstr "%Y 件中 %X 件の結果を表示中"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Viewing %X of %Y results (%Z Total)"
 msgstr "%Y 件中 %X 件の結果を表示中 (合計: %Z 件)"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "Viewing %{current} of %{results} results (%{items} Total %{name})"
 msgstr "%{results} 件中 %{current} 件の結果を表示中 (合計 %{items} %{name} )"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-
-# applet, author asasaki
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet, author asasaki
 msgid "Virtual"
 msgstr "仮想"
 
-# translation auto-copied from project RHN Satellite UI, version 5.6, document
-# java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+# translation auto-copied from project RHN Satellite UI, version 5.6, document java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 msgid "Virtual Guest"
 msgstr "仮想ゲスト"
 
-# translation auto-copied from project CFSE-cli, version sam-1.2, document
-# keys, author nnakakit
+# translation auto-copied from project CFSE-cli, version sam-1.2, document keys, author nnakakit
 msgid "Waiting"
 msgstr "待機中"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Warning"
 msgstr "警告"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "Welcome"
 msgstr "ようこそ"
 
@@ -4786,8 +4429,7 @@ msgstr "ホストコレクションに無制限のコンテンツホストが設
 msgid "Whether or not to show all results"
 msgstr "すべての結果を表示するかどうか"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 10186-726104, author myamamot
+# translation auto-copied from project PressGang CCMS topics, version 1, document 10186-726104, author myamamot
 msgid "Yes"
 msgstr "Yes"
 
@@ -4797,8 +4439,7 @@ msgstr "環境 %s にプロモートすることはできません"
 msgid "You are not allowed to publish Content View %s"
 msgstr "コンテンツビュー %s を公開することはできません"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "You are not authorised to perform this action."
 msgstr "このアクションを実行する権限がありません。"
 
@@ -4820,8 +4461,7 @@ msgstr "組織の親を設定することはできません。この機能は無
 msgid "You cannot set an organization's parent_id. This feature is disabled."
 msgstr "組織の parent_id を設定できません。この機能は無効にされています。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid ""
 "You do not currently have access to any organizations.  Please contact an "
 "administrator to get permission to access an organization."
@@ -4831,15 +4471,14 @@ msgid "You do not have permissions to delete %s"
 msgstr "%s を削除するパーミッションがありません。"
 
 msgid ""
-"You do not have valid credentials to access this system. Please contact your"
-" administrator."
+"You do not have valid credentials to access this system. Please contact your "
+"administrator."
 msgstr "このシステムにアクセスする有効な資格情報がありません。管理者に連絡してください。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid ""
-"You have entered an incorrect username/password combination, or your account"
-" may currently be disabled. Please try again or contact your administrator."
+"You have entered an incorrect username/password combination, or your account "
+"may currently be disabled. Please try again or contact your administrator."
 msgstr ""
 "入力したユーザー名とパスワードの組み合わせが誤っているか、または "
 "現在ユーザーのアカウントが無効になっている可能性があります。もう一度やり直すか、または管理者に連絡してください。"
@@ -4847,21 +4486,18 @@ msgstr ""
 msgid "You have not set a default organization on the user %s."
 msgstr "ユーザー %s にデフォルト組織を設定していません。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "You may have mistyped the address or the page may have moved."
 msgstr "アドレスの入力間違いか、またはページが移動した可能性があります。"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "You might want to log out and log back in again to clear your cookies."
 msgstr "ログアウトした後に再度ログインして、クッキーをクリアにすることをお勧めします。"
 
 msgid "You must be logged in to access that page."
 msgstr "そのページにアクセスするにはログインする必要があります。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid ""
 "You need to create an environment for this org before you can create a "
 "distributor."
@@ -4879,11 +4515,10 @@ msgstr "%s を削除することはできません"
 msgid "You were not allowed to sync %s"
 msgstr "%s を同期することはできません"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid ""
-"Your current organization is no longer valid. It is possible that either the"
-" organization has been deleted or your permissions revoked, please log back "
+"Your current organization is no longer valid. It is possible that either the "
+"organization has been deleted or your permissions revoked, please log back "
 "in to continue."
 msgstr ""
 "現在の組織は無効になりました。組織が削除されたか、またはユーザーのパーミッションが取り消された可能性があります。ログインし直してから続行してください。"
@@ -4983,8 +4618,7 @@ msgstr "Nill にしないでください"
 msgid "cannot be set because unlimited content hosts is set"
 msgstr "無制限のコンテンツホストが設定されているため設定できません"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "cannot contain blank keynames"
 msgstr "空白のキー名を含めることはできません"
 
@@ -4998,8 +4632,7 @@ msgid ""
 "cannot contain filters whose repositories do not belong to this content view"
 msgstr "このコンテンツビューに属さないリポジトリーのフィルターを含めることはできません"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "cannot contain more than %s characters"
 msgstr "%s を超える文字を含めることはできません"
 
@@ -5046,13 +4679,11 @@ msgstr "削除するコンテンツビューバージョン ID"
 msgid "content view versions to compare"
 msgstr "比較するコンテンツビューバージョン"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 006_DrupalPO, document interface, author asasaki
+# translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "delete"
 msgstr "削除"
 
-# translation auto-copied from project anaconda, version 19.31.34, document
-# anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document anaconda
 msgid "description"
 msgstr "説明"
 
@@ -5062,16 +4693,14 @@ msgstr "環境の説明"
 msgid "description of the filter"
 msgstr "フィルターの説明"
 
-# translation auto-copied from project rhsm-web, version 0.0, document
-# management
+# translation auto-copied from project rhsm-web, version 0.0, document management
 msgid "distributors"
 msgstr "ディストリビューター"
 
 msgid "enables or disables synchronization"
 msgstr "同期の有効化または無効化"
 
-# translation auto-copied from project Red Hat Subscription Manager, version
-# 1.0, document SAM-Setup, author nnakakit
+# translation auto-copied from project Red Hat Subscription Manager, version 1.0, document SAM-Setup, author nnakakit
 msgid "environment"
 msgstr "環境"
 
@@ -5154,8 +4783,7 @@ msgstr "すでに使用されています"
 msgid "has already been taken for this product."
 msgstr "この製品に対してすでに使用されています。"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "here"
 msgstr "こちら"
 
@@ -5174,8 +4802,7 @@ msgstr "GPG キーの ID"
 msgid "ids to filter content by"
 msgstr "コンテンツのフィルターに使用する ID"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 11565-301230
+# translation auto-copied from project PressGang CCMS topics, version 1, document 11565-301230
 msgid "import"
 msgstr "インポート"
 
@@ -5203,8 +4830,7 @@ msgstr "Capsule にすでに割り当て済み"
 msgid "is invalid"
 msgstr "無効になります。"
 
-# translation auto-copied from project Satellite6 Foreman, version 6.1,
-# document foreman
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 msgid "issue tracker"
 msgstr "問題トラッカー"
 
@@ -5237,8 +4863,7 @@ msgstr "0 に設定することはできません。"
 msgid "module name to restrict modules for"
 msgstr "モジュールを制限するためのモジュール名"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author noriko
+# translation auto-copied from project CFSE, version sam-1.2, document app, author noriko
 msgid "must be a positive integer value."
 msgstr "正の整数値でなければなりません。"
 
@@ -5251,13 +4876,11 @@ msgstr "%d 文字以上である必要があります。"
 msgid "must be one of the following: %s"
 msgstr "以下のいずれかでなければなりません: %s"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "must be unique within one organization"
 msgstr "1 つの組織内で一意である必要があります"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "must contain '%s'"
 msgstr "'%s' を含めてください"
 
@@ -5273,13 +4896,11 @@ msgstr "有効な公開 GPG 鍵を含めてください"
 msgid "must contain valid Public GPG Key"
 msgstr "有効な公開 GPG 鍵を含めてください"
 
-# translation auto-copied from project CFSE, version sam-1.2, document app,
-# author nnakakit
+# translation auto-copied from project CFSE, version sam-1.2, document app, author nnakakit
 msgid "must not contain leading or trailing white spaces."
 msgstr "先頭または末尾に空白を含めることはできません。"
 
-# translation auto-copied from project anaconda, version 19.31.34, document
-# anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document anaconda
 msgid "name"
 msgstr "名前"
 
@@ -5322,8 +4943,7 @@ msgstr "オブジェクトに正常に作用しています。"
 msgid "obtain manifest history for subscriptions"
 msgstr "サブスクリプションのマニフェスト履歴の取得"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "of Unlimited"
 msgstr "(無制限)"
 
@@ -5424,8 +5044,8 @@ msgid "show repositories in Library and the default content view"
 msgstr "ライブラリーのリポジトリーおよびデフォルトコンテンツビューの表示"
 
 msgid ""
-"specifies if content should be included or excluded, default: "
-"inclusion=false"
+"specifies if content should be included or excluded, default: inclusion="
+"false"
 msgstr "コンテンツの組み込みまたは除外の指定。デフォルト: inclusion=false"
 
 msgid "start datetime of synchronization"
@@ -5443,8 +5063,7 @@ msgstr "同期プランの数値 ID"
 msgid "system identifier"
 msgstr "システム ID"
 
-# translation auto-copied from project rhsm-web, version 0.0, document
-# management, author nnakakit
+# translation auto-copied from project rhsm-web, version 0.0, document management, author nnakakit
 msgid "systems"
 msgstr "システム"
 
@@ -5491,7 +5110,6 @@ msgstr "パッケージを更新しています..."
 msgid "url not defined."
 msgstr "URL は定義されていません。"
 
-# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0,
-# document katello, author kmoriguc
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author kmoriguc
 msgid "version %s"
 msgstr "バージョン %s"
