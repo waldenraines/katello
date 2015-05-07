@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.38
+Version: 2.2.0.39
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,18 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue May 05 2015 Mike McCune <mmccune@redhat.com> 2.2.0.39-1
+- Fixes #10227: remove tipsy to fix tooltip issues, BZ 1213556.
+  (walden@redhat.com)
+- fixes #6781 - provide a way to restart capsule services (stbenjam@redhat.com)
+- fixes #10229 - centralizing and isolating capsule communication
+  (jsherril@redhat.com)
+- Merge branch 'translations' into 'SATELLITE-6.1.0' (bkearney@redhat.com)
+- Fixes #10249 - treat canceled tasks as errors (inecas@redhat.com)
+- Pull in final french strings from zanata (bkearney@redhat.com)
+- Fixes BZ 1192333: Include translations file to fix i18n in bation_katello.
+  (walden@redhat.com)
+
 * Tue Apr 28 2015 Mike McCune <mmccune@redhat.com> 2.2.0.38-1
 - Add in bastion strings from zanata. All but french are done
   (bkearney@redhat.com)
