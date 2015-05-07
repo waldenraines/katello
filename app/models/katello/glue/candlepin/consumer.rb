@@ -233,7 +233,7 @@ module Katello
       end
 
       def virtual_guest
-        Foreman::Cast.to_bool(facts["virt.is_guest"])
+        ::Foreman::Cast.to_bool(facts["virt.is_guest"])
       end
 
       def virtual_guest=(val)

@@ -31,11 +31,11 @@ module Katello
 
     def custom_index_relation(collection)
       collection = filter_by_cve(params[:cve], collection) if params[:cve]
-      if Foreman::Cast.to_bool(params[:errata_restrict_applicable])
+      if ::Foreman::Cast.to_bool(params[:errata_restrict_applicable])
         collection = collection.applicable_to_systems(System.readable)
       end
 
-      if Foreman::Cast.to_bool(params[:errata_restrict_installable])
+      if ::Foreman::Cast.to_bool(params[:errata_restrict_installable])
         collection = collection.installable_for_systems(System.readable)
       end
       collection
