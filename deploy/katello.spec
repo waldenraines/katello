@@ -24,7 +24,7 @@
 %global confdir common
 
 Name:           katello
-Version:        2.2.0.8
+Version:        2.2.0.9
 Release:        1%{?dist}
 Summary:        A package for managing application life-cycle for Linux systems
 BuildArch:      noarch
@@ -186,6 +186,13 @@ Package that installs only the Subscription and basic Content Management parts o
 %files sam
 
 %changelog
+* Thu May 07 2015 Mike McCune <mmccune@redhat.com> 2.2.0.9-1
+- fixes #6781 - provide a way to restart capsule services (stbenjam@redhat.com)
+- Fixes #9867: Update katello-remove for latest packages.
+  (ericdhelms@gmail.com)
+- Refs #8710 - katello-debug script is no longer a symlink
+  (lzap+git@redhat.com)
+
 * Tue Mar 17 2015 Jason Montleon <jmontleo@redhat.com> 2.2.0.8-1
 - Fixed #9530 - installer logs are collected again by debug script
   (lzap+git@redhat.com)
