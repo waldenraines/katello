@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.39
+Version: 2.2.0.40
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,27 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue May 12 2015 Mike McCune <mmccune@redhat.com> 2.2.0.40-1
+- fixes #10424 - remove required flag from content host update params
+  (thomasmckay@redhat.com)
+- Fixes #10426: Ensure content host exists before updating in migration.
+- Fixes #10257: Connect capsule and its content host at the DB level.
+  (ericdhelms@gmail.com)
+- Fixes #10383: change errata issued/updated columns to date, BZ1215756.
+  (walden@redhat.com)
+- fixes #10396 - display better errors on repo metadata sync fail
+  (jsherril@redhat.com)
+- fixes #10225 - handle candlepin events cleanly (thomasmckay@redhat.com)
+- fixes #10422 - send hash to capsule sync plan as expected
+  (stbenjam@redhat.com)
+- fixes #10428 - katello-service package should actually have katello-service
+  (stbenjam@redhat.com)
+- fixes #10028 - Fixes issue with enabling non-yum repos (cfouant@redhat.com)
+- Fixes #10309: prevent ISE on CH bulk actions errata BZ1216195.
+  (walden@redhat.com)
+- Fixes #bz1203641 - Remove separate katello info from about/support since SAT6
+  is an integrated solution (sshtein@redhat.com)
+
 * Tue May 05 2015 Mike McCune <mmccune@redhat.com> 2.2.0.39-1
 - Fixes #10227: remove tipsy to fix tooltip issues, BZ 1213556.
   (walden@redhat.com)
