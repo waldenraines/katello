@@ -26,7 +26,7 @@ module Katello
         self.cols ||= {}
         self.id ||= build_id
 
-        case unit.class.name.underscore
+        case type
         when "package"
           self.name ||= package_display(unit)
           self.value ||= unit.nvrea
@@ -44,7 +44,7 @@ module Katello
       end
 
       def type
-        unit.class.name.underscore
+        unit.class.name.gsub('Katello::', '').underscore
       end
 
       def short_details_erratum_path(*args)
