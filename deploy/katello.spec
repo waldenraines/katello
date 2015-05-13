@@ -24,7 +24,7 @@
 %global confdir common
 
 Name:           katello
-Version:        2.2.0.9
+Version:        2.2.0.10
 Release:        1%{?dist}
 Summary:        A package for managing application life-cycle for Linux systems
 BuildArch:      noarch
@@ -187,6 +187,10 @@ Package that installs only the Subscription and basic Content Management parts o
 %files sam
 
 %changelog
+* Wed May 13 2015 Mike McCune <mmccune@redhat.com> 2.2.0.10-1
+- fixes #10428 - katello-service package should actually have katello-service
+  (stbenjam@redhat.com)
+
 * Thu May 07 2015 Mike McCune <mmccune@redhat.com> 2.2.0.9-1
 - fixes #6781 - provide a way to restart capsule services (stbenjam@redhat.com)
 - Fixes #9867: Update katello-remove for latest packages.
