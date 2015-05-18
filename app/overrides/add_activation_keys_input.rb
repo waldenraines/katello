@@ -17,3 +17,13 @@ Deface::Override.new(:virtual_path => "hosts/_form",
                      :name => "hosts_update_environments_select",
                      :replace => 'code[erb-loud]:contains("select_f"):contains(":environment_id")',
                      :partial => '../overrides/foreman/activation_keys/host_environment_select')
+
+Deface::Override.new(:virtual_path => "hostgroups/_form",
+                     :name => "hostgroups_add_proxies_select",
+                     :insert_before => 'code[erb-loud]:contains("puppet_master_fields")',
+                     :partial => '../overrides/foreman/activation_keys/host_proxy_select')
+
+Deface::Override.new(:virtual_path => "hosts/_form",
+                     :name => "hosts_add_proxies_select",
+                     :insert_before => 'code[erb-loud]:contains("puppet_master_fields")',
+                     :partial => '../overrides/foreman/activation_keys/host_proxy_select')
