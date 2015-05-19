@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.40
+Version: 2.2.0.41
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,8 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue May 19 2015 Daniel Lobato <elobatocs@gmail.com> 2.2.0.41-1
+- Fixes for: 1216200 1198807 1222658 1222660 1136081 1208193 1211090 1220861 1222135 1221738 1220557 1217694 1191711 1208193
 * Tue May 12 2015 Mike McCune <mmccune@redhat.com> 2.2.0.40-1
 - fixes #10424 - remove required flag from content host update params
   (thomasmckay@redhat.com)
