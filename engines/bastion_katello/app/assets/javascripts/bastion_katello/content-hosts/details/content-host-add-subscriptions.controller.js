@@ -31,7 +31,8 @@ angular.module('Bastion.content-hosts').controller('ContentHostAddSubscriptionsC
     function ($scope, $location, translate, CurrentOrganization, Subscription, ContentHost, SubscriptionsHelper) {
         
         $scope.addSubscriptionsTable = $scope.addSubscriptionsPane.table;
-        $scope.isAdding  = false;
+        $scope.addSubscriptionsPane.refresh();
+        $scope.isAdding = false;
         $scope.addSubscriptionsTable.closeItem = function () {};
 
         $scope.groupedSubscriptions = {};
