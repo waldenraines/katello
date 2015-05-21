@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.42
+Version: 2.2.0.43
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,11 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Thu May 21 2015 Mike McCune <mmccune@redhat.com> 2.2.0.43-1
+- Fixes #10575: add available content to AK products index BZ 1223743.
+  (walden@redhat.com)
+- Fixes #10498: Content view comparison wasn't showing repositories.
+
 * Tue May 19 2015 Mike McCune <mmccune@redhat.com> 2.2.0.42-1
 - 1208188 - updating repoid to correct pattern (mmccune@redhat.com)
 
