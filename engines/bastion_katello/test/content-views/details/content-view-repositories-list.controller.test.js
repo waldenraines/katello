@@ -27,7 +27,7 @@ describe('Controller: ContentViewRepositoriesListController', function() {
             this.getAllSelectedResults = function () {
                 return {included: {ids: [1, 2]}};
             };
-
+            this.load = function () {};
             this.table = {};
         };
 

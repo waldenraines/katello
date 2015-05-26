@@ -33,6 +33,7 @@ describe('Controller: ContentViewCompositeAvailableContentViewsController', func
                 };
             };
 
+            this.load = function () {};
             this.table = {};
             this.setParams = function () {};
             this.refresh = function () {};

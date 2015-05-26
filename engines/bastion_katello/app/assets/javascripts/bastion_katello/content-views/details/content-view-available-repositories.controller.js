@@ -41,6 +41,8 @@ angular.module('Bastion.content-views').controller('ContentViewAvailableReposito
         },
         'queryUnpaged');
 
+        nutupane.load();
+
         nutupane.searchTransform = function () {
             return "NOT ( content_view_ids:" + $scope.$stateParams.contentViewId + " )";
         };
