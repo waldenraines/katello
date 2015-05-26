@@ -222,7 +222,7 @@ module Katello
         'Fedora Repository',
         'http://www.google.com',
         'yum',
-        nil,
+        true,
         nil,
         nil
       ])
@@ -231,6 +231,7 @@ module Katello
       product.expect(:gpg_key, nil)
       product.expect(:organization, @organization)
       product.expect(:redhat?, false)
+      product.expect(:unprotected?, true)
       assert_sync_task(::Actions::Katello::Repository::Create, @repository, false, true)
 
       Product.stub(:find, product) do
@@ -251,7 +252,7 @@ module Katello
         'Fedora Repository',
         nil,
         'yum',
-        nil,
+        true,
         nil,
         nil
       ])
@@ -285,7 +286,7 @@ module Katello
         'Fedora Repository',
         'http://www.google.com',
         'yum',
-        nil,
+        true,
         key,
         nil
       ])
@@ -311,7 +312,7 @@ module Katello
         'Fedora Repository',
         nil,
         'yum',
-        nil,
+        true,
         nil,
         'sha256'
       ])
@@ -328,6 +329,70 @@ module Katello
                       :url => '',
                       :content_type => 'yum',
                       :checksum_type => 'sha256'
+
+        assert_response :success
+        assert_template 'api/v2/repositories/show'
+      end
+    end
+
+    def test_create_with_protected_true
+      product = MiniTest::Mock.new
+      product.expect(:add_repo, @repository, [
+        'Fedora_Repository',
+        'Fedora Repository',
+        'http://www.google.com',
+        'yum',
+        false,
+        nil,
+        nil
+      ])
+
+      product.expect(:editable?, @product.editable?)
+      product.expect(:gpg_key, nil)
+      product.expect(:organization, @organization)
+      product.expect(:redhat?, false)
+      product.expect(:unprotected?, false)
+      assert_sync_task(::Actions::Katello::Repository::Create, @repository, false, true)
+
+      Product.stub(:find, product) do
+        post :create, :name => 'Fedora Repository',
+                      :product_id => @product.id,
+                      :url => 'http://www.google.com',
+                      :content_type => 'yum',
+                      :unprotected => false
+
+        assert_response :success
+        assert_template 'api/v2/repositories/show'
+      end
+    end
+
+    def test_create_with_protected_docker
+      docker_upstream_name = "busybox"
+      product = MiniTest::Mock.new
+      product.expect(:add_repo, @repository, [
+        'Fedora_Repository',
+        'Fedora Repository',
+        'http://hub.registry.com',
+        'docker',
+        true,
+        nil,
+        nil
+      ])
+
+      product.expect(:editable?, @product.editable?)
+      product.expect(:gpg_key, nil)
+      product.expect(:organization, @organization)
+      product.expect(:redhat?, false)
+      product.expect(:unprotected?, true)
+      product.expect(:docker_upstream_name, docker_upstream_name)
+      assert_sync_task(::Actions::Katello::Repository::Create, @repository, false, true)
+
+      Product.stub(:find, product) do
+        post :create, :name => 'Fedora Repository',
+                      :product_id => @product.id,
+                      :url => 'http://hub.registry.com',
+                      :content_type => 'docker',
+                      :docker_upstream_name => "busybox"
 
         assert_response :success
         assert_template 'api/v2/repositories/show'
