@@ -115,6 +115,8 @@ KT.dashboard = (function(){
                 if (proc) {
                     proc();
                 }
+
+                newDiv.parent().find('.spinner').hide();
             }
         });
     },
