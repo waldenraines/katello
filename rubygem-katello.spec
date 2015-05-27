@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.44
+Version: 2.2.0.45
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,10 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue May 26 2015 Mike McCune <mmccune@redhat.com> 2.2.0.45-1
+- Fixes BZ 1223542: hide spinner after dashboard panel is loaded.
+  (walden@redhat.com)
+
 * Tue May 26 2015 Mike McCune <mmccune@redhat.com> 2.2.0.44-1
 - Merge branch '10575-downstream' into 'SATELLITE-6.1.0' (bkearney@redhat.com)
 - Fixes #9924 - Fixing content view history bug in elasticsearch
