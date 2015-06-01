@@ -1,15 +1,3 @@
-#
-# Copyright 2014 Red Hat, Inc.
-#
-# This software is licensed to you under the GNU General Public
-# License as published by the Free Software Foundation; either version
-# 2 of the License (GPLv2) or (at your option) any later version.
-# There is NO WARRANTY for this software, express or implied,
-# including the implied warranties of MERCHANTABILITY,
-# NON-INFRINGEMENT, or FITNESS FOR A PARTICULAR PURPOSE. You should
-# have received a copy of GPLv2 along with this software; if not, see
-# http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt.
-
 require 'katello_test_helper'
 
 module Katello
@@ -18,7 +6,7 @@ module Katello
       @user = User.current = User.find(users('admin'))
 
       FactoryGirl.create(:mail_notification,
-                         :name => 'katello_host_advisory',
+                         :name => 'satellite_host_advisory',
                          :description => 'A summary of available and applicable errata for your hosts',
                          :mailer => 'Katello::ErrataMailer',
                          :method => 'host_errata',
@@ -38,7 +26,7 @@ module Katello
                          :method => 'promote_errata',
                          :subscription_type => 'alert')
 
-      @user.mail_notifications << MailNotification[:katello_host_advisory]
+      @user.mail_notifications << MailNotification[:satellite_host_advisory]
       @user.mail_notifications << MailNotification[:satellite_sync_errata]
       @user.mail_notifications << MailNotification[:satellite_promote_errata]
 
@@ -56,15 +44,15 @@ module Katello
     def test_sync_errata
       ActionMailer::Base.deliveries = []
       repo = katello_repositories(:rhel_6_x86_64)
-      last_updated = 10.years.ago
-      MailNotification[:satellite_sync_errata].deliver(:repo => repo.id, :last_updated => last_updated.to_s)
+      errata = ::Katello::Erratum.where(:id => repo.repository_errata.where('katello_repository_errata.updated_at > ?', 10.years.ago).pluck(:erratum_id))
+      MailNotification[:satellite_sync_errata].deliver(:users => [@user], :repo => repo, :errata => errata)
       email = ActionMailer::Base.deliveries.first
       assert email.body.encoded.include? katello_errata(:security).errata_id
     end
 
     def test_promote_errata
       ActionMailer::Base.deliveries = []
-      MailNotification[:satellite_promote_errata].deliver(:content_view => @errata_system.content_view_id, :environment => @errata_system.environment_id)
+      MailNotification[:satellite_promote_errata].deliver(:users => [@user], :content_view => @errata_system.content_view, :environment => @errata_system.environment)
       email = ActionMailer::Base.deliveries.first
       assert email.body.encoded.include? 'RHSA-1999-1231'
     end
