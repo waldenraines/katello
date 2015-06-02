@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.45
+Version: 2.2.0.46
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,38 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Jun 02 2015 Mike McCune <mmccune@redhat.com> 2.2.0.46-1
+- Automatic commit of package [katello] release [2.2.0.11-1-sat].
+  (mmccune@redhat.com)
+- fixes #10655 - fix organization delete (jsherril@redhat.com)
+- Revert "fixes #10655 - fix organization delete" (bkearney@redhat.com)
+- fixes #10428 - katello-service and related scripts shouldn't be symlinks
+  (stbenjam@redhat.com)
+- Fixes #10631: hide errata confirm if no errata IDs BZ 1223963.
+  (walden@redhat.com)
+- fixes #10655 - fix organization delete (jsherril@redhat.com)
+- fixes #10669 - Fixes issue with actkey name not updating, BZ1221685
+  (cfouant@redhat.com)
+- Merge branch 'SATELLITE-6.1.0' into 'SATELLITE-6.1.0' (bkearney@redhat.com)
+- fixes #10281 - do not display inaccessible red hat repos for enable
+  (thomasmckay@redhat.com)
+- Merge branch '1192162' into 'SATELLITE-6.1.0' (bkearney@redhat.com)
+- Fixes #10014 - Move version api to scoped search BZ1192162
+  (daviddavis@redhat.com)
+- fixes #10614 - omit device network option on el5 kickstart
+  (jsherril@redhat.com)
+- fixes #10537 - Fixes toggle issue when switching between subscription panes
+  on content host, BZ1207488 (cfouant@redhat.com)
+- Fixes #10588: Fix typo that broke listing puppet modules for a version.
+  (ericdhelms@gmail.com)
+- fixes 10598 - hammer content-host errata list failed, BZ1223926
+  (komidore64@gmail.com)
+- Fixes #10620 - Repos no longer protected by default (paji@redhat.com)
+- Merge branch 'SATELLITE-6.1.0' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/katello into SATELLITE-6.1.0
+  (bkearney@redhat.com)
+- fixes #10523 - use admin user for facts updating (jsherril@redhat.com)
+
 * Tue May 26 2015 Mike McCune <mmccune@redhat.com> 2.2.0.45-1
 - Fixes BZ 1223542: hide spinner after dashboard panel is loaded.
   (walden@redhat.com)
