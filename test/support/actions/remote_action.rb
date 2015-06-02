@@ -13,13 +13,12 @@ module Support
   module Actions
     module RemoteAction
       def stub_remote_user(admin = false)
-        if admin
-          User.current = users(:admin)
-          User.current.remote_id = 'admin'
-        else
-          User.current = users(:one)
-          User.current.remote_id = 'one'
-        end
+        usr = mock('user', remote_id: 'user', login: 'user')
+        usr.stubs(:admin?).returns(admin)
+        usr.stubs(:location_and_child_ids).returns([])
+        usr.stubs(:organization_and_child_ids).returns([])
+
+        User.stubs(:current).returns usr
       end
 
       # runcible_expects(action, :extensions, :consumer, :create).with('uuid')
