@@ -24,7 +24,7 @@
 %global confdir common
 
 Name:           katello
-Version:        2.2.0.10
+Version:        2.2.0.11
 Release:        1%{?dist}
 Summary:        A package for managing application life-cycle for Linux systems
 BuildArch:      noarch
@@ -186,6 +186,10 @@ Package that installs only the Subscription and basic Content Management parts o
 %files sam
 
 %changelog
+* Tue Jun 02 2015 Mike McCune <mmccune@redhat.com> 2.2.0.11-1
+- fixes #10428 - katello-service and related scripts shouldn't be symlinks
+  (stbenjam@redhat.com)
+
 * Wed May 13 2015 Mike McCune <mmccune@redhat.com> 2.2.0.10-1
 - fixes #10428 - katello-service package should actually have katello-service
   (stbenjam@redhat.com)
