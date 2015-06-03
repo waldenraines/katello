@@ -76,6 +76,8 @@ module Katello
       sync_task(::Actions::Katello::Organization::Create, @organization)
       @organization.reload
       process_response @organization
+    rescue
+      process_resource_error
     end
 
     api :DELETE, '/organizations/:id', N_('Delete an organization')
