@@ -134,5 +134,13 @@ module Katello
       refute_includes errata, @bugfix
       refute_includes errata, @enhancement
     end
+
+    def test_installable_for_systems_dev_environment_with_repos
+      #Tests issue #10681
+      errata = Erratum.installable_for_systems([@errata_server_dev, @simple_server]).in_repositories(@repo)
+      assert_includes errata, @security
+      refute_includes errata, @bugfix
+      refute_includes errata, @enhancement
+    end
   end
 end
