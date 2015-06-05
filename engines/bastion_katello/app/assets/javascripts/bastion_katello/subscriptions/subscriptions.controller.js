@@ -19,7 +19,7 @@
 angular.module('Bastion.subscriptions').controller('SubscriptionsController',
     ['$scope', '$filter', '$location', 'translate', 'Nutupane', 'Subscription', 'Organization', 'CurrentOrganization', 'SubscriptionsHelper',
     function ($scope, $filter, $location, translate, Nutupane, Subscription, Organization, CurrentOrganization, SubscriptionsHelper) {
-        var params, nutupane;
+        var params, nutupane, goToManifestIfApplicable;
 
         params = {
             'organization_id': CurrentOrganization,
@@ -31,6 +31,13 @@ angular.module('Bastion.subscriptions').controller('SubscriptionsController',
         };
 
         nutupane = new Nutupane(Subscription, params);
+
+        goToManifestIfApplicable = function () {
+            if ($scope.subscriptions.results.length < 1) {
+                $scope.transitionTo('subscriptions.manifest.import');
+            }
+        };
+
         $scope.table = nutupane.table;
         $scope.refreshTable = nutupane.refresh;
         $scope.successMessages = [];
@@ -60,12 +67,8 @@ angular.module('Bastion.subscriptions').controller('SubscriptionsController',
 
         $scope.redhatProvider = Organization.redhatProvider();
 
-        $scope.subscriptions = Subscription.queryPaged();
+        $scope.subscriptions = Subscription.queryPaged(goToManifestIfApplicable);
 
-        $scope.subscriptions.$promise.then(function () {
-            if ($scope.subscriptions.results.length < 1) {
-                $scope.transitionTo('subscriptions.manifest.import');
-            }
-        });
+        goToManifestIfApplicable();
     }]
 );
