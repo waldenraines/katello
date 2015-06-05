@@ -68,12 +68,8 @@ namespace :katello do
           notes = []
           facts = fetch_resource { object.pulp_facts }
           notes << "Pulp Consumer #{object.uuid} was not found." if facts.nil?
-
-          if object.uuid
-            candlepin_consumer_info = fetch_resource { ::Katello::Resources::Candlepin::Consumer.get(object.uuid) }
-            notes << "Candlepin Consumer was not available for #{object.name}." if candlepin_consumer_info.nil?
-          end
-
+          candlepin_consumer_info = fetch_resource { object.candlepin_consumer_info }
+          notes << "Candlepin Consumer was not available for #{object.name}." if candlepin_consumer_info.nil?
           notes << "Foreman Host was not available for #{object.name}." if object.foreman_host.nil?
 
           log_error "Notes:\n #{notes.join("\n")}" unless notes.empty?
