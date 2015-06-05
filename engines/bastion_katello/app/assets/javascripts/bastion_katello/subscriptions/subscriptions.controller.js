@@ -69,6 +69,8 @@ angular.module('Bastion.subscriptions').controller('SubscriptionsController',
 
         $scope.subscriptions = Subscription.queryPaged(goToManifestIfApplicable);
 
-        goToManifestIfApplicable();
+        if ($scope.subscriptions.$resolved) {
+            goToManifestIfApplicable();
+        }
     }]
 );

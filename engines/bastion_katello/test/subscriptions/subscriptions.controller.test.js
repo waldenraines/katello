@@ -21,7 +21,7 @@ describe('Controller: SubscriptionsController', function() {
 
     beforeEach(inject(function($controller, $rootScope, $location, $injector, $filter) {
         $scope = $rootScope.$new();
-        Subscription = $injector.get('MockResource').$new(),
+        Subscription = $injector.get('MockResource').$new();
         Provider = $injector.get('MockResource').$new();
         Provider.redhatProvider = function() {};
 
