@@ -21,7 +21,6 @@ describe('Controller: SubscriptionsController', function() {
 
     beforeEach(inject(function($controller, $rootScope, $location, $injector, $filter) {
         $scope = $rootScope.$new();
-        $q = $injector.get('$q');
         Subscription = $injector.get('MockResource').$new(),
         Provider = $injector.get('MockResource').$new();
         Provider.redhatProvider = function() {};
@@ -32,7 +31,6 @@ describe('Controller: SubscriptionsController', function() {
         unlimitedFilterFilter = $filter('unlimitedFilter');
         $controller('SubscriptionsController', {
             $scope: $scope,
-            $q: $q,
             $location: $location,
             translate: translate,
             Nutupane: Nutupane,
