@@ -17,6 +17,7 @@ module Katello
     include OrganizationHelperMethods
 
     before(:each) do
+      stub_ping
       disable_foreman_tasks_hooks_execution(Organization)
       disable_env_orchestration
       Organization.any_instance.stubs(:ensure_not_in_transaction!)
