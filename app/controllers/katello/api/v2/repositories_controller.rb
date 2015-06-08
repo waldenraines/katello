@@ -9,6 +9,7 @@ module Katello
                                               :import_uploads, :gpg_key_content]
     before_filter :find_organization_from_repo, :only => [:update]
     before_filter :find_gpg_key, :only => [:create, :update]
+    before_filter :find_content_view_version, :only => [:index]
     before_filter :error_on_rh_product, :only => [:create]
     before_filter :error_on_rh_repo, :only => [:update, :destroy]
 
@@ -52,9 +53,8 @@ module Katello
         version = ContentViewVersion.in_environment(params[:environment_id]).where(:content_view_id => params[:content_view_id])
         repositories = repositories.where(:content_view_version_id => version)
       elsif params[:content_view_id]
-        repositories = repositories
-                         .joins(:content_view_repositories)
-                         .where("#{ContentViewRepository.table_name}.content_view_id" => params[:content_view_id])
+        repositories = repositories.joins(:content_view_repositories).
+            where("#{ContentViewRepository.table_name}.content_view_id" => params[:content_view_id])
       end
 
       repositories = repositories.where(:content_view_version_id => params[:content_view_version_id]) if params[:content_view_version_id]
@@ -69,6 +69,8 @@ module Katello
         instance_ids = instances.pluck(:library_instance_id).reject(&:blank?)
         instance_ids += instances.where(:library_instance_id => nil)
         repositories = Repository.where(:id => instance_ids)
+      elsif params[:library] && params[:content_view_version_id]
+        repositories = repositories.where(:environment_id => @content_view_version.organization.library.id, :content_view_version_id => params[:content_view_version_id])
       elsif (params[:library] && !params[:environment_id]) || (params[:environment_id].blank? && params[:content_view_version_id].blank? && params[:content_view_id].blank?)
         repositories = repositories.where(:content_view_version_id => @organization.default_content_view.versions.first.id)
       end
@@ -246,6 +248,10 @@ module Katello
       end
     end
 
+    def find_content_view_version
+      @content_view_version = ContentViewVersion.find(params[:content_view_version_id]) if params[:content_view_version_id]
+    end
+    
     def repository_params
       keys = [:url, :gpg_key_id, :unprotected, :name, :checksum_type, :docker_upstream_name]
       keys += [:label, :content_type] if params[:action] == "create"
