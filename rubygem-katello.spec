@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.47
+Version: 2.2.0.48
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,9 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Jun 09 2015 Mike McCune <mmccune@redhat.com> 2.2.0.48-1
+- Fixes #10724 - Peppier katello:reindex (paji@redhat.com)
+
 * Tue Jun 09 2015 Mike McCune <mmccune@redhat.com> 2.2.0.47-1
 - bump version (mmccune@redhat.com)
 - Fixes #10640: only show one repo per CVV BZ 1223699. (walden@redhat.com)
