@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.46
+Version: 2.2.0.47
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,26 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Jun 09 2015 Mike McCune <mmccune@redhat.com> 2.2.0.47-1
+- bump version (mmccune@redhat.com)
+- Fixes #10640: only show one repo per CVV BZ 1223699. (walden@redhat.com)
+- fixes #10718 - correctly show repos
+- Fixes #10671 - Fix upload on gpg_key BZ1204602
+- refs #10655 - fixing a couple more issues with org delete
+  (jsherril@redhat.com)
+- Fixes #7162 - timeout capsule sync task
+- fixes #10572 - send e-mail to all subscribers (stbenjam@redhat.com)
+- fixes #10696 - Fixes org creation error from 500 to 422 (cfouant@redhat.com)
+- Fixes #10617: don't use scroll on unpaged tables BZ 1223968.
+  (walden@redhat.com)
+- Fixes #10704: correct text on errata confirm page, BZ 1228281.
+  (walden@redhat.com)
+- Fixes #10705: fix errata CH installable filter BZ 1228292.
+  (walden@redhat.com)
+- Fixes #10681:  show correct installable count BZ 1226997. (walden@redhat.com)
+- Fixes #10697 - Improved CP SetContent add/delete logic (paji@redhat.com)
+- fixes #8586 - fixing race condition on errata index (jsherril@redhat.com)
+
 * Tue Jun 02 2015 Mike McCune <mmccune@redhat.com> 2.2.0.46-1
 - Automatic commit of package [katello] release [2.2.0.11-1-sat].
   (mmccune@redhat.com)
