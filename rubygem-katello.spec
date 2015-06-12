@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.48
+Version: 2.2.0.49
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,9 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Fri Jun 12 2015 Mike McCune <mmccune@redhat.com> 2.2.0.49-1
+- Fixes #10804 - Fixing full_path for docker repos BZ1230777
+
 * Tue Jun 09 2015 Mike McCune <mmccune@redhat.com> 2.2.0.48-1
 - Fixes #10724 - Peppier katello:reindex (paji@redhat.com)
 
