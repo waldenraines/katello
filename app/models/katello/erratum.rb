@@ -22,7 +22,7 @@ module Katello
     scoped_search :on => :errata_id, :rename => :id, :complete_value => true
     scoped_search :on => :title, :only_explicit => true
     scoped_search :on => :severity, :complete_value => true
-    scoped_search :on => :errata_type, :rename => :type, :complete_value => true
+    scoped_search :on => :errata_type, :rename => :type, :complete_value => true, :default_operator => :like
     scoped_search :on => :issued, :complete_value => true
     scoped_search :on => :updated, :complete_value => true
     scoped_search :in => :cves, :on => :cve_id, :rename => :cve
@@ -33,7 +33,6 @@ module Katello
     before_save lambda { |erratum| erratum.title = erratum.title.truncate(255) unless erratum.title.blank? }
 
     def self.of_type(type)
-      debugger
       where(:errata_type => type)
     end
 
