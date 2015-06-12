@@ -3,10 +3,10 @@
   <div data-block="header"></div>
   <div data-block="selection-summary"></div>
 
-  <span class="input-group-addon" data-block="search-filter">
+  <div data-block="filters">
     <select ng-model="repository" ng-options="repository.name for (id, repository) in repositories">
     </select>
-  </span>
+  </div>
 
   <table data-block="table" class="table table-striped table-bordered">
     <thead>
