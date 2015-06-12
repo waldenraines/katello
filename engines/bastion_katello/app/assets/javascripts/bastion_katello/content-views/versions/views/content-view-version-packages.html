@@ -3,10 +3,12 @@
   <div data-block="header"></div>
   <div data-block="selection-summary"></div>
 
-  <div class="row">
-    <div data-block="filters" class="form-group col-sm-4">
-      <select ng-model="repository" ng-options="repository.name for (id, repository) in repositories">
-      </select>
+  <div data-block="filters">
+    <div class="row">
+      <div class="form-group col-sm-4">
+        <select ng-model="repository" ng-options="repository.name for (id, repository) in repositories">
+        </select>
+      </div>
     </div>
   </div>
 
