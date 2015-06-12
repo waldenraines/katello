@@ -33,7 +33,7 @@ module Katello
     before_save lambda { |erratum| erratum.title = erratum.title.truncate(255) unless erratum.title.blank? }
 
     def self.of_type(type)
-      where(:errata_type => type)
+      where(:errata_type => type.downcase)
     end
 
     scope :security, of_type(Erratum::SECURITY)
