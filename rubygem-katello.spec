@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.49
+Version: 2.2.0.50
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,13 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Mon Jun 15 2015 Mike McCune <mmccune@redhat.com> 2.2.0.50-1
+- Fixes #10790 - Package groups aren't listed in content view package group
+  filter rules (jomitsch@redhat.com)
+- refs #7162 - fixing capsule sync timeout
+- Fixes #10822 - Don't clean up env content during CV remove
+  (daviddavis@redhat.com)
+
 * Fri Jun 12 2015 Mike McCune <mmccune@redhat.com> 2.2.0.49-1
 - Fixes #10804 - Fixing full_path for docker repos BZ1230777
 
