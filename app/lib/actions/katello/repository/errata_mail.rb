@@ -23,10 +23,10 @@ module Actions
           ::User.current = ::User.anonymous_admin
 
           repo = ::Katello::Repository.find(input[:repo])
-          users = ::User.select { |user| user.receives?(:katello_sync_errata) && user.can?(:view_products, repo.product) }.compact
+          users = ::User.select { |user| user.receives?(:satellite_sync_errata) && user.can?(:view_products, repo.product) }.compact
           errata = ::Katello::Erratum.where(:id => repo.repository_errata.where('katello_repository_errata.updated_at > ?', input[:last_updated].to_datetime).pluck(:erratum_id))
 
-          MailNotification[:katello_sync_errata].deliver(:users => users, :repo => repo, :errata => errata) unless users.blank?
+          MailNotification[:satellite_sync_errata].deliver(:users => users, :repo => repo, :errata => errata) unless users.blank?
         end
 
         def finalize

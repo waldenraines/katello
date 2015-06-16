@@ -23,9 +23,9 @@ module Actions
 
           content_view = ::Katello::ContentView.find(input[:content_view])
           environment = ::Katello::KTEnvironment.find(input[:environment])
-          users = ::User.select { |user| user.receives?(:katello_promote_errata) && user.can?(:view_content_views, content_view) }
+          users = ::User.select { |user| user.receives?(:satellite_promote_errata) && user.can?(:view_content_views, content_view) }
 
-          MailNotification[:katello_promote_errata].deliver(:users => users, :content_view => content_view, :environment  => environment) unless users.blank?
+          MailNotification[:satellite_promote_errata].deliver(:users => users, :content_view => content_view, :environment  => environment) unless users.blank?
         end
 
         def finalize
