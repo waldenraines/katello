@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.50
+Version: 2.2.0.51
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,9 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Mon Jun 15 2015 Mike McCune <mmccune@redhat.com> 2.2.0.51-1
+- bump version (mmccune@redhat.com)
+
 * Mon Jun 15 2015 Mike McCune <mmccune@redhat.com> 2.2.0.50-1
 - Fixes #10790 - Package groups aren't listed in content view package group
   filter rules (jomitsch@redhat.com)
