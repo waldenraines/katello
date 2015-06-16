@@ -164,7 +164,7 @@ module Katello
         version_environment[:environments] << cve.environment unless version_environment[:environments].include?(cve.environment)
         version_environment[:next_version] ||= version.next_incremental_version
         version_environment[:content_host_count] ||= 0
-        version_environment[:content_host_count] += systems.where(:content_view_id => cve.content_view).where(:environment_id => cve.environment).count
+        version_environment[:content_host_count] += systems.where(:content_view_id => cve.content_view).where(:environment_id => cve.environment).pluck("#{System.table_name}.uuid").count
 
         if version.content_view.composite?
           version_environment[:components] = version.components_needing_errata(@errata)
