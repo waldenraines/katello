@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.51
+Version: 2.2.0.52
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,8 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Jun 23 2015 Daniel Lobato <elobatocs@gmail.com> 2.2.0.52-1
+Fixes for 1230273, 1212003, 1230782, 1228292, 1233901, 1231975, 1169876, 1229909, 1230408, 1191018, 1225949, 1228390, 1228316,1198349,1222365,1222673,1228278,1232510, 1191018, 1232372, 1211607
 * Mon Jun 15 2015 Mike McCune <mmccune@redhat.com> 2.2.0.51-1
 - bump version (mmccune@redhat.com)
 
