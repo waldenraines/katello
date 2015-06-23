@@ -28,7 +28,7 @@
 Summary: Katello
 Name: %{?scl_prefix}rubygem-%{gem_name}
 
-Version: 2.2.0.54
+Version: 2.2.0.55
 Release: 1%{dist}
 Group: Development/Ruby
 License: Distributable
@@ -235,6 +235,9 @@ ln -s %{gem_instdir}/public/assets/bastion_katello %{buildroot}%{foreman_dir}/pu
 %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Tue Jun 23 2015 Daniel Lobato <elobatocs@gmail.com> 2.2.0.55-1
+-
+
 * Tue Jun 23 2015 Daniel Lobato <elobatocs@gmail.com> 2.2.0.54-1
 - bump version (elobatocs@gmail.com)
 
