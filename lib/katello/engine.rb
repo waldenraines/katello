@@ -2,9 +2,13 @@ module Katello
   class Engine < ::Rails::Engine
     isolate_namespace Katello
 
-    initializer 'katello.mount_engine', :after => :build_middleware_stack do |app|
-      app.routes_reloader.paths << "#{Katello::Engine.root}/config/routes/mount_engine.rb"
-    end
+#    initializer 'katello.silenced_logger', :before => :build_middleware_stack do |app|
+#      app.config.middleware.swap Rails::Rack::Logger, Katello::Middleware::SilencedLogger, {}
+#    end
+
+#    initializer 'katello.mount_engine', :after => :build_middleware_stack do |app|
+#      app.routes_reloader.paths << "#{Katello::Engine.root}/config/routes/mount_engine.rb"
+#    end
 
     initializer 'katello.load_default_settings', :before => :load_config_initializers do
       require_dependency File.expand_path('../../../app/models/setting/katello.rb', __FILE__) if (Setting.table_exists? rescue(false))
@@ -40,7 +44,9 @@ module Katello
     end
 
     initializer "katello.load_app_instance_data" do |app|
-      app.config.paths['db/migrate'] += Katello::Engine.paths['db/migrate'].existent
+      Katello::Engine.paths['db/migrate'].existent.each do |path|
+        app.config.paths['db/migrate'] << path
+      end
       app.config.autoload_paths += Dir["#{config.root}/app/lib"]
       app.config.autoload_paths += Dir["#{config.root}/app/presenters"]
       app.config.autoload_paths += Dir["#{config.root}/app/services/katello"]
