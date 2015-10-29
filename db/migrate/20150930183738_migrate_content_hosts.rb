@@ -88,6 +88,21 @@ class MigrateContentHosts < ActiveRecord::Migration
     system_hostnames
   end
 
+  def ensure_one_system_per_hostname(systems)
+    # ensure only one system exists per hostname and unregister all except the last registered
+    systems = get_systems_with_facts(systems)
+    system_hostnames = group_systems_by_hostname(systems)
+
+    system_hostnames.each do |system|
+      hostname = system.facts['network.hostname']
+
+      if system_hostnames[hostname].count > 1
+        logger.warn("Multiple content hosts with the hostname #{hostname} found, unregistering all except last registered.")
+        unregister_all_but_last_system(system_hostnames[hostname])
+      end
+    end
+  end
+
   def unregister_system(system)
     logger.warn("Unregistering content host with UUID: #{system.uuid}")
 
@@ -125,7 +140,6 @@ class MigrateContentHosts < ActiveRecord::Migration
 
   # rubocop:disable MethodLength
   def up
-
     if User.where(:login => User::ANONYMOUS_API_ADMIN).first.nil?
       logger.warn("Foreman anonymous admin does not exist, skipping content host migration.")
       return
@@ -133,19 +147,12 @@ class MigrateContentHosts < ActiveRecord::Migration
 
     User.current = User.anonymous_api_admin
 
-    systems = get_systems_with_facts(Katello::System.all)
-    system_hostnames = group_systems_by_hostname(systems)
+    systems = ensure_one_system_per_hostname(Katello::System.all)
 
     systems.each do |system|
       hostname = system.facts['network.hostname']
 
       logger.info("Processing content host #{system.uuid} #{hostname}")
-
-      # ensure only one system exists per hostname and unregister all except the last registered
-      if system_hostnames[hostname].count > 1
-        logger.warn("Multiple content hosts with the hostname #{hostname} found, unregistering all except last registered.")
-        system = unregister_all_but_last_system(system_hostnames[hostname])
-      end
 
       if hostname.nil?
         logger.warn("Content host #{system.uuid} does not have a hostname, removing.")
