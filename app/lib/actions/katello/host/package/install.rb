@@ -1,26 +1,26 @@
 module Actions
   module Katello
-    module System
-      module PackageGroup
+    module Host
+      module Package
         class Install < Actions::EntryAction
           include Helpers::Presenter
 
-          def plan(system, groups)
-            Type! system, ::Katello::System
+          def plan(host, packages)
+            Type! host, ::Katello::System
 
-            action_subject(system, :groups => groups)
+            action_subject(host, :packages => packages)
             plan_action(Pulp::Consumer::ContentInstall,
-                        consumer_uuid: system.uuid,
-                        type:          'package_group',
-                        args:          groups)
+                        consumer_uuid: host.system.uuid,
+                        type:          'rpm',
+                        args:          packages)
           end
 
           def humanized_name
-            _("Install package group")
+            _("Install package")
           end
 
           def humanized_input
-            [input[:groups].join(", ")] + super
+            [input[:packages].join(", ")] + super
           end
 
           def presenter
