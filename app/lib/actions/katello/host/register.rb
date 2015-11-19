@@ -16,7 +16,6 @@ module Actions
             fail _('Content View and Environment not set for registration.') if content_view_environment.nil?
 
             system = plan_system(system, content_view_environment, consumer_params)
-            system.disable_auto_reindex!
             system.save!
 
             host.content_aspect = plan_content_aspect(host, content_view_environment)

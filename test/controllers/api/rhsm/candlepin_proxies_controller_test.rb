@@ -174,7 +174,7 @@ module Katello
       it "hypervisors_update_correct_env_cv" do
         @controller.stubs(:authorize_client_or_admin)
         System.stubs(:first).returns(@system)
-        uuid = @system.uuid
+        uuid = @host.subscription_aspect.uuid
         User.stubs(:consumer?).returns(true)
         User.stubs(:current).returns(CpConsumerUser.new(:uuid => uuid, :login => uuid))
         System.stubs(:register_hypervisors).returns({})
@@ -187,7 +187,7 @@ module Katello
       it "hypervisors_update_ignore_params" do
         @controller.stubs(:authorize_client_or_admin)
         System.stubs(:first).returns(@system)
-        uuid = @system.uuid
+        uuid = @host.subscription_aspect.uuid
         User.stubs(:consumer?).returns(true)
         User.stubs(:current).returns(CpConsumerUser.new(:uuid => uuid, :login => uuid))
         System.stubs(:register_hypervisors).returns({})
