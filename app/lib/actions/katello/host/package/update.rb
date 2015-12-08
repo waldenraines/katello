@@ -6,7 +6,7 @@ module Actions
           include Helpers::Presenter
 
           def plan(host, packages)
-            Type! host, ::Katello::System
+            Type! host, ::Host::Managed
 
             action_subject(host, :packages => packages)
             plan_action(Pulp::Consumer::ContentUpdate,
