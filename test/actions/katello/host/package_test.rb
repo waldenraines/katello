@@ -6,10 +6,12 @@ module ::Actions::Katello::Host::Package
     include Support::Actions::Fixtures
 
     let(:system) { mock('a_system', uuid: 'uuid').mimic!(::Katello::System) }
+    let(:host) { mock('a_host', system: system).mimic!(::Host::Managed) }
+
     let(:action) do
       action = create_action action_class
-      action.stubs(:action_subject).with(system, :packages => packages = %w(vim vi))
-      plan_action action, system, packages
+      action.stubs(:action_subject).with(host, :packages => packages = %w(vim vi))
+      plan_action action, host, packages
     end
   end
 
