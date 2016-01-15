@@ -21,6 +21,10 @@ module Actions
             [input[:groups].join(', ')] + super
           end
 
+          def resource_locks
+            :content_update
+          end
+
           def presenter
             Helpers::Presenter::Delegated.new(
                 self, planned_actions(Pulp::Consumer::ContentUninstall))
