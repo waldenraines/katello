@@ -29,7 +29,7 @@ module Actions
             end
 
             if systems.any? && !content[:errata_ids].blank? #content[:errata_ids] are uuids
-              plan_action(::Actions::BulkAction, ::Actions::Katello::System::Erratum::ApplicableErrataInstall, systems, content[:errata_ids])
+              plan_action(::Actions::BulkAction, ::Actions::Katello::Host::Erratum::ApplicableErrataInstall, systems, content[:errata_ids])
             end
             plan_self(:version_outputs => output_for_version_ids)
           end

@@ -59,8 +59,9 @@ module Katello
 
     def index_relation
       if params[:erratum_id] || params[:errata_ids]
-        errata_ids = params.fetch(:errata_ids, [])
-        collection = systems_by_errata(errata_ids, params[:erratum_restrict_installable],
+        errata_ids = [params[:erratum_id]] if params[:erratum_id]
+        errata_ids = params.fetch(:errata_ids, []) if params[:errata_ids]
+        collection = hosts_by_errata(errata_ids, params[:erratum_restrict_installable],
             params[:erratum_restrict_non_installable])
       else
         collection = System.readable
@@ -347,7 +348,8 @@ module Katello
       end
     end
 
-    def systems_by_errata(errata_uuids, installable, non_installable)
+    def hosts_by_errata(errata_uuids, installable, non_installable)
+      hosts = ::Host::Managed.authorized("view_hosts")
       installable = ::Foreman::Cast.to_bool(installable)
       non_installable = ::Foreman::Cast.to_bool(non_installable)
 
@@ -357,12 +359,13 @@ module Katello
       end
 
       if installable
-        System.readable.with_installable_errata(errata)
+        content_facets = Katello::Host::ContentFacet.with_installable_errata(errata)
       elsif non_installable
-        System.readable.with_non_installable_errata(errata)
+        content_facets = Katello::Host::ContentFacet.with_non_installable_errata(errata)
       else
-        System.readable.with_applicable_errata(errata)
+        content_facets = Katello::Host::ContentFacet.with_applicable_errata(errata)
       end
+      hosts.where(:id => content_facets.pluck(:host_id))
     end
 
     def authorize_environment
