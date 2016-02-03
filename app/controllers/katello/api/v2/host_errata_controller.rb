@@ -2,7 +2,8 @@ module Katello
   class Api::V2::HostErrataController < Api::V2::ApiController
     include Katello::Concerns::FilteredAutoCompleteSearch
 
-    before_filter :find_host
+    before_filter :find_host, :only => :index
+    before_filter :find_host_editable, :except => :index
     before_filter :find_errata_ids, :only => :apply
     before_filter :find_environment, :only => :index
     before_filter :find_content_view, :only => :index
@@ -66,6 +67,11 @@ module Katello
 
     def find_host
       @host = resource_finder(::Host::Managed.authorized("view_hosts"), params[:host_id])
+      fail HttpErrors::NotFound, _("Couldn't find host '%s'") % params[:host_id] if @host.nil?
+      @host
+    end
+
+    def find_host_editable
       @host = resource_finder(::Host::Managed.authorized("edit_hosts"), params[:host_id])
       fail HttpErrors::NotFound, _("Couldn't find host '%s'") % params[:host_id] if @host.nil?
       @host
