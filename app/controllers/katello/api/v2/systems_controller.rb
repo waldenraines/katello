@@ -74,6 +74,7 @@ module Katello
       end
 
       collection = collection.where(:content_view_id => params[:content_view_id]) if params[:content_view_id]
+      debugger
       collection = collection.where(:id => Organization.find(params[:organization_id]).systems.map(&:id)) if params[:organization_id]
       collection = collection.where(:environment_id => params[:environment_id]) if params[:environment_id]
       collection = collection.where(:id => HostCollection.find(params[:host_collection_id]).systems) if params[:host_collection_id]
