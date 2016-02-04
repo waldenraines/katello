@@ -5,9 +5,14 @@
     <h4 translate>Content Host Package Management</h4>
 
 
-    <form name="systemContentForm" class="form" ng-hide="content.workingMode || denied('edit_content_hosts', contentHost)">
+    <form id="packageActionForm" name="systemContentForm" class="form" ng-hide="content.workingMode || denied('edit_content_hosts', contentHost)">
 
       <div>
+        <input type="hidden" name="remote_action"/>
+        <input type="hidden" name="scoped_search"/>
+        <input type="hidden" name="content_host_ids"/>
+        <input type="hidden" name="authenticity_token"/>
+        <input type="hidden" name="customize"/>
         <input type="radio"
                ng-model="content.contentType"
                ng-change="updatePlaceholder(content.contentType)"
@@ -26,7 +31,7 @@
 
       <div class="form-group">
         <input class="form-control"
-               name="label"
+               name="name"
                type="text"
                placeholder="{{ content.placeholder }}"
                ng-model="content.content"
@@ -35,30 +40,66 @@
       </div>
 
       <div>
-        <button class="btn btn-default"
-                translate
-                ng-hide="denied('edit_content_hosts', contentHost)"
-                ng-click="confirmContentAction('install', content)"
-                ng-disabled="(table.numSelected === 0) || !systemContentForm.$valid || content.confirm">
-          Install
-        </button>
+        <span class="input-group-btn">
+          <button class="btn btn-default"
+                  translate
+                  ng-hide="denied('edit_content_hosts', contentHost)"
+                  ng-click="confirmContentAction('install', content)"
+                  ng-disabled="(table.numSelected === 0) || !systemContentForm.$valid || content.confirm">
+            Install
+          </button>
+          <button class="btn btn-default dropdown-toggle"
+                  ng-hide="denied('edit_content_hosts', contentHost)"
+                  ng-disabled="(table.numSelected === 0) || !systemContentForm.$valid || content.confirm"
+                  type="button" id="use-remote-execution" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="use-remote-execution">
+            <li role="presentation"><a ng-click="performViaRemoteExecution('install', false)" role="menuitem" tabindex="-1" href="#" translate>via remote execution</a></li>
+            <li role="presentation"><a ng-click="performViaRemoteExecution('install', true)" role="menuitem" tabindex="-1" href="#" translate>via remote execution - customize first</a></li>
+          </ul>
+        </span>
 
-        <button class="btn btn-default"
-                translate
-                ng-hide="denied('edit_content_hosts', contentHost)"
-                ng-click="confirmContentAction('update', content)"
-                ng-disabled="(table.numSelected === 0) || !systemContentForm.$valid || content.confirm"
-                ng-hide="content.contentType == 'errata'">
-          Update
-        </button>
+        <span class="input-group-btn">
+          <button class="btn btn-default"
+                  translate
+                  ng-hide="denied('edit_content_hosts', contentHost)"
+                  ng-click="confirmContentAction('update', content)"
+                  ng-disabled="(table.numSelected === 0) || !systemContentForm.$valid || content.confirm"
+                  ng-hide="content.contentType == 'errata'">
+            Update
+          </button>
+          <button class="btn btn-default dropdown-toggle"
+                  ng-hide="denied('edit_content_hosts', contentHost)"
+                  ng-disabled="(table.numSelected === 0) || !systemContentForm.$valid || content.confirm"
+                  type="button" id="use-remote-execution" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="use-remote-execution">
+            <li role="presentation"><a ng-click="performViaRemoteExecution('update', false)" role="menuitem" tabindex="-1" href="#" translate>via remote execution</a></li>
+            <li role="presentation"><a ng-click="performViaRemoteExecution('update', true)" role="menuitem" tabindex="-1" href="#" translate>via remote execution - customize first</a></li>
+          </ul>
+        </span>
 
-        <button class="btn btn-default"
-                translate
-                ng-hide="content.contentType == 'errata' || denied('edit_content_hosts', contentHost)"
-                ng-click="confirmContentAction('remove', content)"
-                ng-disabled="(table.numSelected === 0) || !systemContentForm.$valid || content.confirm">
-          Remove
-        </button>
+        <span class="input-group-btn">
+          <button class="btn btn-default"
+                  translate
+                  ng-hide="content.contentType == 'errata' || denied('edit_content_hosts', contentHost)"
+                  ng-click="confirmContentAction('remove', content)"
+                  ng-disabled="(table.numSelected === 0) || !systemContentForm.$valid || content.confirm">
+            Remove
+          </button>
+          <button class="btn btn-default dropdown-toggle"
+                  ng-hide="denied('edit_content_hosts', contentHost)"
+                  ng-disabled="(table.numSelected === 0) || !systemContentForm.$valid || content.confirm"
+                  type="button" id="use-remote-execution" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="use-remote-execution">
+            <li role="presentation"><a ng-click="performViaRemoteExecution('remove', false)" role="menuitem" tabindex="-1" href="#" translate>via remote execution</a></li>
+            <li role="presentation"><a ng-click="performViaRemoteExecution('remove', true)" role="menuitem" tabindex="-1" href="#" translate>via remote execution - customize first</a></li>
+          </ul>
+        </span>
       </div>
 
       <div class="inline-confirmation" ng-show="content.confirm">

@@ -60,6 +60,16 @@ angular.module('Bastion.content-hosts').controller('ContentHostPackagesControlle
             packageActions[action](terms);
         };
 
+        $scope.performViaRemoteExecution = function(customize) {
+            form = $('#remoteActionForm');
+            form.attr('action', '/katello/remote_execution');
+            form.attr('method', 'post');
+            form.find('input[name=authenticity_token]').val(AUTH_TOKEN.replace(/&quot;/g,''));
+            form.find('input[name=customize]').val(customize);
+            form.find('input[name=host_ids]').val($scope.contentHost.host.id);
+            form.submit();
+        };
+
         packageActions = {
             packageInstall: function (termList) {
                 HostPackage.install({id: $scope.host.id, packages: termList}, openEventInfo, errorHandler);

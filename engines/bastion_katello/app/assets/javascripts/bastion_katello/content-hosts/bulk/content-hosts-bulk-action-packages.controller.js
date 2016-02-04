@@ -83,5 +83,22 @@ angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionPackag
             return deferred.promise;
         };
 
+        $scope.performViaRemoteExecution = function(action, customize) {
+            var remoteAction, selectedHosts = $scope.nutupane.getAllSelectedResults();
+            if ($scope.content.contentType == "package_group") {
+                remoteAction = "group_" + action;
+            } else if ($scope.content.contentType == "package") {
+                remoteAction = "package_" + action;
+            }
+            form = $('#packageActionForm');
+            form.attr('action', '/katello/remote_execution');
+            form.attr('method', 'post');
+            form.find('input[name=remote_action]').val(remoteAction);
+            form.find('input[name=authenticity_token]').val(AUTH_TOKEN.replace(/&quot;/g,''));
+            form.find('input[name=customize]').val(customize);
+            form.find('input[name=content_host_ids]').val(selectedHosts.included.ids.join(','));
+            form.find('input[name=scoped_search]').val(selectedHosts.included.search);
+            form.submit();
+        };
     }]
 );

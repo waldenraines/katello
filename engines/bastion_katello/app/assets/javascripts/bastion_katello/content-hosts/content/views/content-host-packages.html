@@ -12,10 +12,10 @@
     </span>
   </p>
   <section>
-    <form ng-submit="performPackageAction()" role="form" class="row">
+    <form ng-submit="performPackageAction()" role="form" class="row" id="remoteActionForm">
 
       <div class="col-sm-2">
-        <select class="form-control" ng-model="packageAction.actionType" required>
+        <select class="form-control" ng-model="packageAction.actionType" name="remote_action" required>
           <option value="packageInstall" translate>Package Install</option>
           <option value="packageUpdate" translate>Package Update</option>
           <option value="packageRemove" translate>Package Remove</option>
@@ -25,9 +25,13 @@
       </div>
 
       <div class="input-group col-sm-5">
+        <input type="hidden" name="host_ids"/>
+        <input type="hidden" name="authenticity_token"/>
+        <input type="hidden" name="customize"/>
         <input class="form-control"
                type="text"
                placeholder="{{ 'Package/Group Name' | translate}}"
+               name="name"
                ng-model="packageAction.term"/>
 
         <span class="input-group-btn">
@@ -36,6 +40,16 @@
                   ng-disabled="working || packageAction.term === undefined || packageAction.term.length === 0"
                   translate>
             Perform</button>
+            <button class="btn btn-default dropdown-toggle"
+                    ng-hide="denied('edit_content_hosts', contentHost)"
+                    ng-disabled="working || packageAction.term === undefined || packageAction.term.length === 0"
+                    type="button" id="use-remote-execution" data-toggle="dropdown">
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="use-remote-execution">
+              <li role="presentation"><a ng-click="performViaRemoteExecution(false)" role="menuitem" tabindex="-1" href="#" translate>via remote execution</a></li>
+              <li role="presentation"><a ng-click="performViaRemoteExecution(true)" role="menuitem" tabindex="-1" href="#" translate>via remote execution - customize first</a></li>
+            </ul>
         </span>
       </div>
     </form>
