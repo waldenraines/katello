@@ -243,4 +243,9 @@ module Katello
       load "#{Katello::Engine.root}/lib/katello/tasks/upgrades/2.5/add_export_distributor.rake"
     end
   end
+
+  # check whether foreman_remote_execution to integrate is available in the system
+  def self.with_remote_execution?
+    (RemoteExecutionFeature rescue false) ? true : false
+  end
 end

@@ -11,8 +11,8 @@
  *   Provides the functionality for the content host packages list and actions.
  */
 angular.module('Bastion.content-hosts').controller('ContentHostPackagesController',
-    ['$scope', 'HostPackage', 'translate', 'Nutupane',
-    function ($scope, HostPackage, translate, Nutupane) {
+    ['$scope', 'HostPackage', 'translate', 'Nutupane', 'BastionConfig',
+    function ($scope, HostPackage, translate, Nutupane, BastionConfig) {
         var packagesNutupane, packageActions, openEventInfo, errorHandler;
 
         openEventInfo = function (event) {
@@ -34,6 +34,8 @@ angular.module('Bastion.content-hosts').controller('ContentHostPackagesControlle
         $scope.packageAction = {actionType: 'packageInstall'}; //default to packageInstall
         $scope.errorMessages = [];
         $scope.working = false;
+        $scope.remoteExecutionPresent = BastionConfig.remoteExecutionPresent;
+        $scope.remoteExecutionByDefault = BastionConfig.remoteExecutionByDefault;
 
         $scope.updateAll = function () {
             $scope.working = true;
@@ -53,6 +55,14 @@ angular.module('Bastion.content-hosts').controller('ContentHostPackagesControlle
         };
 
         $scope.performPackageAction = function () {
+            if ($scope.remoteExecutionByDefault) {
+                $scope.performViaRemoteExecution();
+            } else {
+                $scope.performViaKatelloAgent();
+            }
+        };
+
+        $scope.performViaKatelloAgent = function () {
             var action, terms;
             action = $scope.packageAction.actionType;
             terms = $scope.packageAction.term.split(/ *, */);

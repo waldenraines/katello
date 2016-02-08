@@ -8,6 +8,7 @@
     <form id="packageActionForm" name="systemContentForm" class="form" ng-hide="content.workingMode || denied('edit_content_hosts', contentHost)">
 
       <div>
+        <input type="hidden" name="name"/>
         <input type="hidden" name="remote_action"/>
         <input type="hidden" name="scoped_search"/>
         <input type="hidden" name="content_host_ids"/>
@@ -31,7 +32,6 @@
 
       <div class="form-group">
         <input class="form-control"
-               name="name"
                type="text"
                placeholder="{{ content.placeholder }}"
                ng-model="content.content"
@@ -49,12 +49,13 @@
             Install
           </button>
           <button class="btn btn-default dropdown-toggle"
-                  ng-hide="denied('edit_content_hosts', contentHost)"
+                  ng-hide="!remoteExecutionPresent || denied('edit_content_hosts', contentHost)"
                   ng-disabled="(table.numSelected === 0) || !systemContentForm.$valid || content.confirm"
                   type="button" id="use-remote-execution" data-toggle="dropdown">
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="use-remote-execution">
+            <li role="presentation"><a ng-click="performViaKatelloAgent('install', content)" role="menuitem" tabindex="-1" href="#" translate>via Katello Agent</a></li>
             <li role="presentation"><a ng-click="performViaRemoteExecution('install', false)" role="menuitem" tabindex="-1" href="#" translate>via remote execution</a></li>
             <li role="presentation"><a ng-click="performViaRemoteExecution('install', true)" role="menuitem" tabindex="-1" href="#" translate>via remote execution - customize first</a></li>
           </ul>
@@ -70,12 +71,13 @@
             Update
           </button>
           <button class="btn btn-default dropdown-toggle"
-                  ng-hide="denied('edit_content_hosts', contentHost)"
+                  ng-hide="!remoteExecutionPresent || denied('edit_content_hosts', contentHost)"
                   ng-disabled="(table.numSelected === 0) || !systemContentForm.$valid || content.confirm"
                   type="button" id="use-remote-execution" data-toggle="dropdown">
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="use-remote-execution">
+            <li role="presentation"><a ng-click="performViaKatelloAgent('update', content)" role="menuitem" tabindex="-1" href="#" translate>via Katello Agent</a></li>
             <li role="presentation"><a ng-click="performViaRemoteExecution('update', false)" role="menuitem" tabindex="-1" href="#" translate>via remote execution</a></li>
             <li role="presentation"><a ng-click="performViaRemoteExecution('update', true)" role="menuitem" tabindex="-1" href="#" translate>via remote execution - customize first</a></li>
           </ul>
@@ -90,12 +92,13 @@
             Remove
           </button>
           <button class="btn btn-default dropdown-toggle"
-                  ng-hide="denied('edit_content_hosts', contentHost)"
+                  ng-hide="!remoteExecutionPresent || denied('edit_content_hosts', contentHost)"
                   ng-disabled="(table.numSelected === 0) || !systemContentForm.$valid || content.confirm"
                   type="button" id="use-remote-execution" data-toggle="dropdown">
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="use-remote-execution">
+            <li role="presentation"><a ng-click="performViaKatelloAgent('remove', content)" role="menuitem" tabindex="-1" href="#" translate>via Katello Agent</a></li>
             <li role="presentation"><a ng-click="performViaRemoteExecution('remove', false)" role="menuitem" tabindex="-1" href="#" translate>via remote execution</a></li>
             <li role="presentation"><a ng-click="performViaRemoteExecution('remove', true)" role="menuitem" tabindex="-1" href="#" translate>via remote execution - customize first</a></li>
           </ul>

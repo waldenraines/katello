@@ -8,13 +8,14 @@
  * @requires HostBulkAction
  * @requires CurrentOrganization
  * @requires translate
+ * @requires BastionConfig
  *
  * @description
  *   A controller for providing bulk action functionality to the content hosts page.
  */
 angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionPackagesController',
-    ['$scope', '$q', '$location', 'HostBulkAction', 'CurrentOrganization', 'translate',
-    function ($scope, $q, $location, HostBulkAction, CurrentOrganization, translate) {
+    ['$scope', '$q', '$location', 'HostBulkAction', 'CurrentOrganization', 'translate', 'BastionConfig'
+    function ($scope, $q, $location, HostBulkAction, CurrentOrganization, translate, BastionConfig) {
 
         function successMessage(type) {
             var messages = {
@@ -33,6 +34,8 @@ angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionPackag
             return params;
         }
 
+        $scope.remoteExecutionPresent = BastionConfig.remoteExecutionPresent;
+        $scope.remoteExecutionByDefault = BastionConfig.remoteExecutionByDefault;
         $scope.setState(false, [], []);
 
         $scope.content = {
@@ -56,7 +59,23 @@ angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionPackag
         };
 
         $scope.performContentAction = function () {
+            if ($scope.remoteExecutionByDefault) {
+                $scope.performViaRemoteExecution();
+            } else {
+                $scope.performViaKatelloAgent();
+            }
+        }
+
+        $scope.performViaKatelloAgent = function (action, actionInput) {
             var success, error, params, deferred = $q.defer();
+
+            if (action) {
+                $scope.content.action = action;
+            }
+
+            if (actionInput) {
+                $scope.content.actionInput = actionInput;
+            }
 
             $scope.content.confirm = false;
             $scope.setState(true, [], []);
@@ -85,17 +104,24 @@ angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionPackag
 
         $scope.performViaRemoteExecution = function(action, customize) {
             var remoteAction, selectedHosts = $scope.nutupane.getAllSelectedResults();
-            if ($scope.content.contentType == "package_group") {
-                remoteAction = "group_" + action;
-            } else if ($scope.content.contentType == "package") {
-                remoteAction = "package_" + action;
+            $scope.content.confirm = false;
+
+            if (!action) {
+                action = $scope.content.action;
+            }
+
+            if ($scope.content.contentType === 'package_group') {
+                remoteAction = 'group_' + action;
+            } else if ($scope.content.contentType === 'package') {
+                remoteAction = 'package_' + action;
             }
             form = $('#packageActionForm');
             form.attr('action', '/katello/remote_execution');
             form.attr('method', 'post');
+            form.find('input[name=name]').val($scope.content.content);
             form.find('input[name=remote_action]').val(remoteAction);
             form.find('input[name=authenticity_token]').val(AUTH_TOKEN.replace(/&quot;/g,''));
-            form.find('input[name=customize]').val(customize);
+            form.find('input[name=customize]').val(customize || false);
             form.find('input[name=content_host_ids]').val(selectedHosts.included.ids.join(','));
             form.find('input[name=scoped_search]').val(selectedHosts.included.search);
             form.submit();
