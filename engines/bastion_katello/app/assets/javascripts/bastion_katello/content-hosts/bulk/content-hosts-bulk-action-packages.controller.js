@@ -64,7 +64,7 @@ angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionPackag
             } else {
                 $scope.performViaKatelloAgent();
             }
-        }
+        };
 
         $scope.performViaKatelloAgent = function (action, actionInput) {
             var success, error, params, deferred = $q.defer();

@@ -49,7 +49,7 @@
             Install
           </button>
           <button class="btn btn-default dropdown-toggle"
-                  ng-hide="!remoteExecutionPresent || denied('edit_content_hosts', contentHost)"
+                  ng-hide="!remoteExecutionPresent"
                   ng-disabled="(table.numSelected === 0) || !systemContentForm.$valid || content.confirm"
                   type="button" id="use-remote-execution" data-toggle="dropdown">
             <span class="caret"></span>

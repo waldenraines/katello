@@ -32,7 +32,11 @@ module Katello
       end
 
       def inputs
-        { :package => params[:name] }
+        if feature_name == 'katello_errata_install'
+          { :errata => params[:name] }
+        else
+          { :package => params[:name] }
+        end
       end
 
       def feature_name

@@ -11,13 +11,14 @@
  * @requires CurrentOrganization
  * @requires Erratum
  * @requires translate
+ * @requires BastionConfig
  *
  * @description
  *   A controller for providing bulk action functionality to the content hosts page.
  */
 angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionErrataController',
-    ['$scope', '$q', '$location', 'HostBulkAction', 'HostCollection', 'Nutupane', 'CurrentOrganization', 'Erratum',
-    function ($scope, $q, $location, HostBulkAction, HostCollection, Nutupane, CurrentOrganization, Erratum) {
+    ['$scope', '$q', '$location', 'HostBulkAction', 'HostCollection', 'Nutupane', 'CurrentOrganization', 'Erratum', 'BastionConfig',
+    function ($scope, $q, $location, HostBulkAction, HostCollection, Nutupane, CurrentOrganization, Erratum, BastionConfig) {
 
         var nutupane;
 
@@ -40,7 +41,8 @@ angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionErrata
         $scope.detailsTable.initialLoad = false;
         $scope.outOfDate = false;
         $scope.initialLoad = true;
-
+        $scope.remoteExecutionPresent = BastionConfig.remoteExecutionPresent;
+        $scope.remoteExecutionByDefault = BastionConfig.remoteExecutionByDefault;
         $scope.setState(false, [], []);
 
         $scope.fetchErrata = function () {
@@ -83,6 +85,14 @@ angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionErrata
         };
 
         $scope.installErrata = function () {
+            if ($scope.remoteExecutionByDefault) {
+                $scope.installErrataViaRemoteExecution();
+            } else {
+                $scope.installErrataViaKatelloAgent(false);
+            }
+        };
+
+        $scope.installErrataViaKatelloAgent = function () {
             var params = installParams();
             $scope.setState(true, [], []);
             HostBulkAction.installContent(params,
@@ -93,6 +103,21 @@ angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionErrata
                 function (data) {
                     $scope.setState(false, [], data.errors);
                 });
+        };
+
+        $scope.installErrataViaRemoteExecution = function(customize) {
+            var errataIds = _.pluck($scope.detailsTable.getSelected(), 'errata_id'),
+                selectedHosts = $scope.nutupane.getAllSelectedResults();
+            form = $('#errataBulkActionForm');
+            form.attr('action', '/katello/remote_execution');
+            form.attr('method', 'post');
+            form.find('input[name=remote_action]').val('errata_install');
+            form.find('input[name=name]').val(errataIds.join(','));
+            form.find('input[name=authenticity_token]').val(AUTH_TOKEN.replace(/&quot;/g,''));
+            form.find('input[name=customize]').val(customize);
+            form.find('input[name=content_host_ids]').val(selectedHosts.included.ids.join(','));
+            form.find('input[name=scoped_search]').val(selectedHosts.included.search);
+            form.submit();
         };
 
     }]
