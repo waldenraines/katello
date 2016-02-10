@@ -115,7 +115,7 @@ angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionErrata
             form.find('input[name=name]').val(errataIds.join(','));
             form.find('input[name=authenticity_token]').val(AUTH_TOKEN.replace(/&quot;/g,''));
             form.find('input[name=customize]').val(customize);
-            form.find('input[name=content_host_ids]').val(selectedHosts.included.ids.join(','));
+            form.find('input[name=host_ids]').val(selectedHosts.included.ids.join(','));
             form.find('input[name=scoped_search]').val(selectedHosts.included.search);
             form.submit();
         };

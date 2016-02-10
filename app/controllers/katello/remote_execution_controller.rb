@@ -24,8 +24,6 @@ module Katello
       def hosts
         if params[:scoped_search].present?
           params[:scoped_search]
-        elsif params[:content_host_ids].present?
-          ::Host.joins(:content_host).where(:katello_systems => {:uuid => params[:content_host_ids]})
         else
           ::Host.where(:id => params[:host_ids])
         end

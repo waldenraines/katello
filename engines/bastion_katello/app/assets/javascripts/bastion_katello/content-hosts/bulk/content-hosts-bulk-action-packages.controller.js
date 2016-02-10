@@ -14,7 +14,7 @@
  *   A controller for providing bulk action functionality to the content hosts page.
  */
 angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionPackagesController',
-    ['$scope', '$q', '$location', 'HostBulkAction', 'CurrentOrganization', 'translate', 'BastionConfig'
+    ['$scope', '$q', '$location', 'HostBulkAction', 'CurrentOrganization', 'translate', 'BastionConfig',
     function ($scope, $q, $location, HostBulkAction, CurrentOrganization, translate, BastionConfig) {
 
         function successMessage(type) {
@@ -122,7 +122,7 @@ angular.module('Bastion.content-hosts').controller('ContentHostsBulkActionPackag
             form.find('input[name=remote_action]').val(remoteAction);
             form.find('input[name=authenticity_token]').val(AUTH_TOKEN.replace(/&quot;/g,''));
             form.find('input[name=customize]').val(customize || false);
-            form.find('input[name=content_host_ids]').val(selectedHosts.included.ids.join(','));
+            form.find('input[name=host_ids]').val(selectedHosts.included.ids.join(','));
             form.find('input[name=scoped_search]').val(selectedHosts.included.search);
             form.submit();
         };
