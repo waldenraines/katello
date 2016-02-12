@@ -1,14 +1,19 @@
 class MigrateContentHosts < ActiveRecord::Migration
-  class Katello::HostCollectionAssociation < ActiveRecord::Base
+  class Katello::SystemRepository < ActiveRecord::Base
+    self.table_name = "katello_system_repositories"
+    belongs_to :system, :inverse_of => :system_repositories, :class_name => 'Katello::System'
+    belongs_to :repository, :inverse_of => :system_repositories, :class_name => 'Katello::Repository'
+  end
+
+  class Katello::SystemHostCollections < ActiveRecord::Base
     self.table_name = "katello_system_host_collections"
   end
 
-  class Katello::ErrataAssociation < ActiveRecord::Base
+  class Katello::SystemErratum < ActiveRecord::Base
     self.table_name = "katello_system_errata"
-  end
 
-  class Katello::RepositoryAssociation < ActiveRecord::Base
-    self.table_name = "katello_system_repositories"
+    belongs_to :system, :inverse_of => :system_errata, :class_name => 'Katello::System'
+    belongs_to :erratum, :inverse_of => :system_errata, :class_name => 'Katello::Erratum'
   end
 
   class Katello::System < ActiveRecord::Base
@@ -29,13 +34,12 @@ class MigrateContentHosts < ActiveRecord::Migration
              :after_remove => :remove_activation_key
     belongs_to :content_view, :inverse_of => :systems
     belongs_to :environment, :class_name => "Katello::KTEnvironment", :inverse_of => :systems
-    has_many :errata_associations, :class_name => "Katello::ErrataAssociation", :dependent => :destroy
-    has_many :repository_associations, :class_name => "Katello::RepositoryAssociation", :dependent => :destroy
-    has_many :host_collections, :class_name => "Katello::HostCollectionAssociation", :dependent => :destroy
+    has_many :host_collections, :class_name => "Katello::SystemHostCollections", :dependent => :destroy
     has_many :applicable_errata, :through => :system_errata, :class_name => "Katello::Erratum", :source => :erratum
     has_many :system_errata, :class_name => "Katello::SystemErratum", :dependent => :destroy, :inverse_of => :system
     has_many :bound_repositories, :through => :system_repositories, :class_name => "Katello::Repository", :source => :repository
     has_many :system_repositories, :class_name => "Katello::SystemRepository", :dependent => :destroy, :inverse_of => :system
+
   end
 
   def logger
@@ -45,7 +49,7 @@ class MigrateContentHosts < ActiveRecord::Migration
   def create_content_facet(host, system)
     logger.info("Creating content facet for host #{host.name}.")
     content_facet = host.content_facet = ::Katello::Host::ContentFacet.new(:content_view => system.content_view,
-                                                                              :lifecycle_environment => system.environment)
+                                                                           :lifecycle_environment => system.environment)
     content_facet.uuid = system.uuid
     content_facet.bound_repositories = system.bound_repositories
     content_facet.applicable_errata = system.applicable_errata
@@ -182,9 +186,7 @@ class MigrateContentHosts < ActiveRecord::Migration
       hosts = ::Host.where(:name => hostname)
       if hosts.empty? # no host exists
         logger.info("No host exists with hostname #{hostname}, creating new host.")
-        params = system.attributes.to_options
-        params[:facts] = system.facts
-        host = Katello::Host::SubscriptionFacet.new_host_from_rhsm_params(params, system.environment.organization, Location.default_location)
+        host = Katello::Host::SubscriptionFacet.new_host_from_facts(system.facts, system.environment.organization, Location.default_location)
         host.save!
 
         create_content_facet(host, system)
