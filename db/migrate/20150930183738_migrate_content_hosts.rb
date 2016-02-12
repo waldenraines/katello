@@ -21,14 +21,14 @@ class MigrateContentHosts < ActiveRecord::Migration
 
     has_many :content_facets, :class_name => "MigrateContentHosts::ContentFacet", :foreign_key => :lifecycle_environment_id,
              :inverse_of => :lifecycle_environment, :dependent => :restrict_with_exception
-    has_many :systems, :class_name => "MigrateContentHosts::System", :inverse_of => :environment,
+    has_many :systems, :class_name => "MigrateContentHosts::MigrateSystemModel", :inverse_of => :environment,
              :dependent => :restrict_with_exception, :foreign_key => :environment_id
   end
 
   class ContentView < ActiveRecord::Base
     self.table_name = "katello_content_views"
 
-    has_many :systems, :class_name => "MigrateContentHosts::System", :dependent => :restrict_with_exception
+    has_many :systems, :class_name => "MigrateContentHosts::MigrateSystemModel", :dependent => :restrict_with_exception
     has_many :content_facets, :class_name => "MigrateContentHosts::ContentFacet", :foreign_key => :content_view_id,
              :inverse_of => :content_view, :dependent => :restrict_with_exception
   end
@@ -42,7 +42,7 @@ class MigrateContentHosts < ActiveRecord::Migration
 
   class SystemRepository < ActiveRecord::Base
     self.table_name = "katello_system_repositories"
-    belongs_to :system, :inverse_of => :system_repositories, :class_name => 'MigrateContentHosts::System'
+    belongs_to :system, :inverse_of => :system_repositories, :class_name => 'MigrateContentHosts::MigrateSystemModel'
     belongs_to :repository, :inverse_of => :system_repositories, :class_name => 'MigrateContentHosts::Repository'
   end
 
@@ -50,26 +50,26 @@ class MigrateContentHosts < ActiveRecord::Migration
     self.table_name = "katello_host_collection"
 
     has_many :system_host_collections, :class_name => "MigrateContentHosts::SystemHostCollection", :dependent => :destroy
-    has_many :systems, :through => :system_host_collections, :class_name => "MigrateContentHosts::System"
+    has_many :systems, :through => :system_host_collections, :class_name => "MigrateContentHosts::MigrateSystemModel"
   end
 
   class SystemHostCollections < ActiveRecord::Base
     self.table_name = "katello_system_host_collections"
 
-    belongs_to :system, :inverse_of => :system_host_collections, :class_name => 'MigrateContentHosts::System'
+    belongs_to :system, :inverse_of => :system_host_collections, :class_name => 'MigrateContentHosts::MigrateSystemModel'
     belongs_to :host_collection, :inverse_of => :system_host_collections
   end
 
   class Erratum < ActiveRecord::Base
     self.table_name = "katello_errata"
 
-    has_many :systems_applicable, :through => :system_errata, :class_name => "MigrateContentHosts::System", :source => :system
+    has_many :systems_applicable, :through => :system_errata, :class_name => "MigrateContentHosts::MigrateSystemModel", :source => :system
   end
 
   class SystemErratum < ActiveRecord::Base
     self.table_name = "katello_system_errata"
 
-    belongs_to :system, :inverse_of => :system_errata, :class_name => 'MigrateContentHosts::System'
+    belongs_to :system, :inverse_of => :system_errata, :class_name => 'MigrateContentHosts::MigrateSystemModel'
     belongs_to :erratum, :inverse_of => :system_errata, :class_name => 'MigrateContentHosts::Erratum'
   end
 
@@ -93,7 +93,7 @@ class MigrateContentHosts < ActiveRecord::Migration
     belongs_to :location, :class_name => "MigrateContentHosts::Location"
   end
 
-  class System < ActiveRecord::Base
+  class MigrateSystemModel < ActiveRecord::Base
     def backend_data
       @data ||= ::Katello::Resources::Candlepin::Consumer.get(uuid)
     end
@@ -284,9 +284,9 @@ class MigrateContentHosts < ActiveRecord::Migration
 
     User.current = User.anonymous_api_admin
 
-    ensure_one_system_per_hostname(MigrateContentHosts::System.all)
+    ensure_one_system_per_hostname(MigrateContentHosts::MigrateSystemModel.all)
 
-    systems = get_systems_with_facts(MigrateContentHosts::System.all)
+    systems = get_systems_with_facts(MigrateContentHosts::MigrateSystemModel.all)
 
     systems.each do |system|
       hostname = system.facts['network.hostname']
