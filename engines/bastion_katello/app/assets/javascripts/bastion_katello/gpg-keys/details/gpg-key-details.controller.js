@@ -19,6 +19,7 @@ angular.module('Bastion.gpg-keys').controller('GPGKeyDetailsController',
         $scope.panel = $scope.panel || {error: false, loading: false};
 
         $scope.gpgKey = GPGKey.get({id: $scope.$stateParams.gpgKeyId}, function () {
+            $scope.panel.error = false;
             $scope.panel.loading = false;
         }, function (response) {
             $scope.panel.loading = false;
