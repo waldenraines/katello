@@ -13,6 +13,9 @@
 angular.module('Bastion.subscriptions').controller('SubscriptionDetailsController',
     ['$scope', 'translate', 'Subscription', 'ApiErrorHandler',
     function ($scope, translate, Subscription, ApiErrorHandler) {
+        $scope.successMessages = [];
+        $scope.errorMessages = [];
+
         $scope.panel = {
             error: false,
             loading: true

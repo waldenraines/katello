@@ -14,6 +14,9 @@
 angular.module('Bastion.docker-tags').controller('DockerTagsDetailsController',
     ['$scope', '$location', 'Nutupane', 'DockerTag', 'CurrentOrganization', 'ApiErrorHandler',
     function ($scope, $location, Nutupane, DockerTag, CurrentOrganization, ApiErrorHandler) {
+        $scope.successMessages = [];
+        $scope.errorMessages = [];
+        
         $scope.panel = {
             error: false,
             loading: true
