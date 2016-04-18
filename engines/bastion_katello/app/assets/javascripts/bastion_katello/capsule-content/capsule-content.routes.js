@@ -1,16 +1,16 @@
 /**
- * @ngdoc object
- * @name Bastion.capsule-content.config
- *
- * @requires $stateProvider
- *
- * @description
- *   Used for systems level configuration such as setting up the ui state machine.
- */
+* @ngdoc object
+* @name Bastion.capsule-content.config
+*
+* @requires $stateProvider
+* @requires $urlRouterProvider
+*
+* @description
+*   Used for systems level configuration such as setting up the ui state machine.
+*/
 angular.module('Bastion.capsule-content').config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
-
-    // Catch the url to prevent the router to perform redirect.
-    $urlRouterProvider.when('/smart_proxies/:proxyId', ['$match', '$stateParams', function ($match, $stateParams) {
+    //Catch the url to prevent the router to perform redirect.
+    $urlRouterProvider.when('/smart_proxies/:proxyId#pagelet-id-content', ['$match', '$stateParams', function ($match, $stateParams) {
         $stateParams.pageName = 'smart_proxies/detail';
         return true;
     }]);
@@ -26,4 +26,12 @@ angular.module('Bastion.capsule-content').config(['$stateProvider', '$urlRouterP
         }
     });
 
+    $urlRouterProvider.otherwise(function ($injector) {
+        var $window = $injector.get('$window'),
+            $timeout = $injector.get('$timeout');
+
+        $timeout(function () {
+            $window.setTab();
+        });
+    });
 }]);
