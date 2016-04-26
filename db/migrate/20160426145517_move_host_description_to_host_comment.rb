@@ -1,17 +1,16 @@
 class MoveHostDescriptionToHostComment < ActiveRecord::Migration
-  class System < ActiveRecord::Base
-    self.table_name = "katello_systems"
+  class Host < ActiveRecord::Base
+    self.table_name = "hosts"
   end
 
   def up
-    System.find_each do |system|
-      if system.foreman_host.comment.empty?
-        system.foreman_host.comment = system.foreman_host.description
+    Host.find_each do |host|
+      if host.comment.empty?
+        host.comment = host.description
       else
-        system.foreman_host.comment = [system.foreman_host.comment, system.foreman_host.description].join("\n")
+        host.comment = [host.comment, host.description].join("\n") unless host.description.empty?
       end
-
-      system.foreman_host.save!
+      host.save!
     end
 
     remove_column :hosts, :description
@@ -20,10 +19,10 @@ class MoveHostDescriptionToHostComment < ActiveRecord::Migration
   def down
     add_column :hosts, :description, :text
 
-    System.find_each do |system|
-      system.foreman_host.description = system.foreman_host.comment
-      system.foreman_host.comment = nil
-      system.foreman_host.save!
+    Host.find_each do |host|
+      host.description = host.comment
+      host.comment = nil
+      host.save!
     end
   end
 end
