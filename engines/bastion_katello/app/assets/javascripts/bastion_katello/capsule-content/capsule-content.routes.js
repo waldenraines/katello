@@ -40,7 +40,7 @@ angular.module('Bastion.capsule-content').config(['$stateProvider', '$urlRouterP
  *   Ensure foreman's setTab() function is called on capsule content pages.
  */
 angular.module('Bastion.capsule-content').run(['$rootScope', '$location', '$window', '$timeout', function ($rootScope, $location, $window, $timeout) {
-    var smartProxiesRegex = new RegExp("/smart-proxies/.+/.+");
+    var smartProxiesRegex = new RegExp("/smart-proxies/.+#.+");
     $rootScope.$on('$locationChangeStart', function (event, newUrl) {
         if (newUrl.match(smartProxiesRegex)) {
             console.log("match!");
