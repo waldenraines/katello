@@ -25,13 +25,27 @@ angular.module('Bastion.capsule-content').config(['$stateProvider', '$urlRouterP
             $window.location.href = $location.path();
         }
     });
+}]);
 
-    $urlRouterProvider.otherwise(function ($injector) {
-        var $window = $injector.get('$window'),
-            $timeout = $injector.get('$timeout');
-
-        $timeout(function () {
-            $window.setTab();
-        });
+/**
+ * @ngdoc run
+ * @name Bastion.capsule-content.run
+ *
+ * @requires $rootScope
+ * @requires $location
+ * @requires $window
+ * @requires $timeout
+ *
+ * @description
+ *   Ensure foreman's setTab() function is called on capsule content pages.
+ */
+angular.module('Bastion.capsule-content').run(['$rootScope', '$location', '$window', '$timeout', function ($rootScope, $location, $window, $timeout) {
+    var smartProxiesRegex = new RegExp("/smart-proxies/(.+/)");
+    $rootScope.$on('$locationChangeStart', function (event, newUrl) {
+        if (newUrl.match(smartProxiesRegex)) {
+            $timeout(function () {
+                $window.setTab();
+            });
+        }
     });
 }]);
