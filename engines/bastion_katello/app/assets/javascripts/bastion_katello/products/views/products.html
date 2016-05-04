@@ -7,25 +7,32 @@
   </div>
 
   <div data-block="actions">
-    <button class="btn btn-default"
-            ng-show="permitted('edit_products') || permitted('destroy_products')"
-            ui-sref="products.bulk-actions.sync">
-      <i class="fa fa-group leading-icon"></i>
-      {{ "Bulk Actions" | translate }}
-    </button>
+    <li role="menuitem">
+      <a ui-sref="products.new.form"
+         bst-feature-flag="custom_products"
+         ng-disabled="denied('create_products')">
+        <i class="fa fa-plus"></i>
+        <span translate>New Product</span>
+      </a>
+    </li>
 
-    <button class="btn btn-default"
-            bst-feature-flag="custom_products"
-            ng-hide="denied('edit_products')"
-            ui-sref="products.discovery.scan">
-      <i class="fa fa-crosshairs"></i>
-      {{ "Repo Discovery" | translate }}
-    </button>
+    <li role="menuitem">
+      <a ui-sref="products.bulk-actions.sync"
+         ng-disabled="denied('edit_products') || denied('destroy_products')">
+        <i class="fa fa-group leading-icon"></i>
+        <span translate>Bulk Actions</span>
+      </a>
+    </li>
 
-    <button class="btn btn-primary" bst-feature-flag="custom_products" ui-sref="products.new.form" ng-hide="denied('create_products')">
-      <i class="fa fa-plus"></i>
-      {{ "New Product" | translate }}
-    </button>
+    <li role="menuitem">
+      <a ui-sref="products.discovery.scan"
+         bst-feature-flag="custom_products"
+         ng-disabled="denied('edit_products')">
+        <i class="fa fa-crosshairs"></i>
+        <span translate>Repo Discovery</span>
+      </a>
+    </li>
+
   </div>
 
   <span data-block="no-rows-message" translate>
