@@ -20,7 +20,7 @@ angular.module('Bastion.repositories').controller('NewRepositoryController',
         function success(response) {
             $scope.detailsTable.rows.push(response);
             GlobalNotification.setSuccessMessage(translate('Repository %s successfully created.').replace('%s', $scope.repository.name));
-            $scope.transitionTo('products.details.repositories.index', {productId: $scope.$stateParams.productId});
+            $scope.transitionTo('product.repositories.index', {productId: $scope.$stateParams.productId});
         }
 
         function error(response) {

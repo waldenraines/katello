@@ -44,10 +44,6 @@ describe('Controller: RepositoryDetailsInfoController', function() {
         });
     }));
 
-    it('retrieves and puts a repository on the scope', function() {
-        expect($scope.repository).toBeDefined();
-    });
-
     it('provides a method to retrieve available gpg keys', function() {
         var promise = $scope.gpgKeys();
 
@@ -121,63 +117,5 @@ describe('Controller: RepositoryDetailsInfoController', function() {
         expect($scope.uploadSuccessMessages.length).toBe(1);
         expect($scope.repository.$get).toHaveBeenCalled();
         expect($scope.detailsTable.replaceRow).toHaveBeenCalledWith($scope.repository);
-    });
-
-    it('should provide a method to determine if a repository is currently being syncd', function() {
-        expect($scope.syncInProgress($scope.repository['sync_state'])).toBe(false);
-    });
-
-    it('should provide a method to determine if a repository is currently being syncd', function() {
-        var lastSync = {state: 'running'};
-        expect($scope.syncInProgress(lastSync)).toBe(true);
-    });
-
-    it("provides a way to sync a repository", function() {
-        spyOn($state, 'go');
-        spyOn($scope.detailsTable, 'replaceRow');
-
-        $scope.syncRepository($scope.repository);
-        expect($state.go).toHaveBeenCalled();
-        expect($scope.detailsTable.replaceRow).toHaveBeenCalledWith($scope.repository);
-    });
-
-    it("should provide a valid reason for a repo deletion disablement", function() {
-        var product = {id: 100, $resolved: true},
-            repository = {id: 200, $resolved: true};
-
-        $scope.denied = function (perm, prod) {
-            expect(perm).toBe("destroy_products");
-            return true;
-        };
-        expect($scope.getRepoNonDeletableReason(repository, product)).toBe("permissions");
-        expect($scope.canRemove(repository, product)).toBe(false);
-
-        $scope.denied = function (perm, prod) {
-            return false;
-        };
-        repository.promoted = true;
-        expect($scope.getRepoNonDeletableReason(repository, product)).toBe("published");
-        expect($scope.canRemove(repository, product)).toBe(false);
-
-        repository.promoted = false;
-        repository.product_type = "redhat";
-        expect($scope.getRepoNonDeletableReason(repository, product)).toBe("redhat");
-        expect($scope.canRemove(repository, product)).toBe(false);
-
-        repository.product_type = "custom";
-        expect($scope.getRepoNonDeletableReason(repository, product)).toBe(null);
-        expect($scope.canRemove(repository, product)).toBe(true);
-    });
-
-    it('should provide a way to remove a repository', function() {
-        repository.id = 1;
-
-        spyOn($scope.detailsTable, 'removeRow');
-        spyOn($scope, 'transitionTo');
-
-        $scope.removeRepository(repository);
-
-        expect($scope.detailsTable.removeRow).toHaveBeenCalledWith(1);
-        expect($scope.transitionTo).toHaveBeenCalledWith('products.details.repositories.index', {productId: 1});
     });
 });

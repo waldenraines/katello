@@ -16,6 +16,7 @@ angular.module('Bastion.repositories', [
     'Bastion.components',
     'Bastion.components.formatters',
     'Bastion.packages',
+    'Bastion.products',
     'Bastion.docker-manifests'
 ]);
 

@@ -14,19 +14,19 @@ angular.module('Bastion.products').controller('ProductDetailsController',
     ['$scope', '$state', 'Product', 'ApiErrorHandler', function ($scope, $state, Product, ApiErrorHandler) {
         $scope.successMessages = [];
         $scope.errorMessages = [];
-        $scope.panel = {
+        $scope.page = {
             error: false,
             loading: true
         };
 
         if ($scope.product) {
-            $scope.panel.loading = false;
+            $scope.page.loading = false;
         }
 
         $scope.product = Product.get({id: $scope.$stateParams.productId}, function () {
-            $scope.panel.loading = false;
+            $scope.page.loading = false;
         }, function (response) {
-            $scope.panel.loading = false;
+            $scope.page.loading = false;
             ApiErrorHandler.handleGETRequestErrors(response, $scope);
         });
 
@@ -36,8 +36,17 @@ angular.module('Bastion.products').controller('ProductDetailsController',
             product.$delete(function (data) {
                 $scope.removeRow(id);
                 $scope.$emit('productDelete', data.id);
-                $scope.transitionTo('products.index');
+                $scope.transitionTo('products');
             });
+        };
+
+        $scope.syncProduct = function () {
+            Product.sync({id: $scope.product.id}, function (task) {
+                    $state.go('product.tasks.details', {taskId: task.id});
+                },
+                function (response) {
+                    $scope.errorMessages = response.data.errors;
+                });
         };
 
         $scope.productDeletable = function(product) {

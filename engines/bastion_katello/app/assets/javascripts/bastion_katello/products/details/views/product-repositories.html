@@ -18,7 +18,7 @@
             {{ message }}
           </li>
         </ol>
-        <a ui-sref="products.details.tasks.details({taskId: warningTaskId})" translate>Click here to see the task for the successful removals.</a>
+        <a ui-sref="product.tasks.details({taskId: warningTaskId})" translate>Click here to see the task for the successful removals.</a>
       </div>
     </div>
 
@@ -62,7 +62,6 @@
           <span>{{ "Removing Repositories" | translate }}</span>
         </span>
         <span ng-hide="removingRepositories">
-          <i class="fa fa-trash-o"></i>
           {{ "Remove Repositories" | translate }}
         </span>
 
@@ -72,16 +71,13 @@
               ng-click="syncSelectedRepositories()"
               ng-hide="denied('sync_products', product)"
               ng-disabled="syncInProgress || detailsTable.numSelected == 0">
-        <i class="fa fa-spinner fa-spin" ng-show="syncInProgress"></i>
-        <span ng-show="syncInProgress" translate>Syncing...</span>
-        <i ng-hide="syncInProgress" class="fa fa-refresh"></i>
-        <span ng-hide="syncInProgress" translate>Sync Now</span>
+        <span translate>Sync Now</span>
       </button>
       <button class="btn btn-primary"
               bst-feature-flag="custom_products"
               ng-hide="denied('edit_products', product)"
               ng-disabled="product.redhat"
-              ui-sref="products.details.repositories.new({productId: product.id})">
+              ui-sref="product.repositories.new({productId: product.id})">
         <span translate>Create Repository</span>
       </button>
     </div>
@@ -112,7 +108,7 @@
               row-select="repository"
               ng-repeat="repository in detailsTable.rows | filter:repositorySearch">
             <td bst-table-cell>
-              <a ng-href="/products/{{ product.id }}/repositories/{{ repository.id }}">{{ repository.name }}</a>
+              <a ui-sref="repository.details.info({productId: product.id, repositoryId: repository.id})" ng-href="/products/{{ product.id }}/repositories/{{ repository.id }}">{{ repository.name }}</a>
             </td>
             <td bst-table-cell>{{ repository.content_type }}</td>
             <td bst-table-cell>
@@ -132,14 +128,14 @@
             </td>
             <td bst-table-cell>
               <span ng-show="repository.content_type == 'puppet'">
-                <a translate ui-sref="products.details.repositories.manage-content.puppet-modules({productId: product.id, repositoryId: repository.id})">
+                <a translate ui-sref="repository.manage-content.puppet-modules({productId: product.id, repositoryId: repository.id})">
                   {{ repository.content_counts.puppet_module || 0 }} Puppet Modules
                 </a>
               </span>
 
               <span ng-show="repository.content_type == 'yum'">
                 <div>
-                  <a translate ui-sref="products.details.repositories.manage-content.packages({productId: product.id, repositoryId: repository.id})">
+                  <a translate ui-sref="repository.manage-content.packages({productId: product.id, repositoryId: repository.id})">
                     {{ repository.content_counts.rpm || 0 }} Packages
                   </a>
                 </div>

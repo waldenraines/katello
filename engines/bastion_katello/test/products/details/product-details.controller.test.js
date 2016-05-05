@@ -8,6 +8,8 @@ describe('Controller: ProductDetailsController', function() {
             $state = $injector.get('$state'),
             Product = $injector.get('MockResource').$new();
 
+        Product.sync = function() {};
+
         $scope = $injector.get('$rootScope').$new();
 
         $scope.$stateParams = {productId: 1};
@@ -30,7 +32,7 @@ describe('Controller: ProductDetailsController', function() {
 
         $scope.removeProduct($scope.product);
 
-        expect($scope.transitionTo).toHaveBeenCalledWith('products.index');
+        expect($scope.transitionTo).toHaveBeenCalledWith('products');
         expect($scope.removeRow).toHaveBeenCalledWith($scope.product.id);
     });
 
@@ -58,5 +60,14 @@ describe('Controller: ProductDetailsController', function() {
             product.redhat = true;
             expect($scope.getReadOnlyReason(product)).toBe('redhat');
         });
+    });
+
+    it('provides a way to sync a product', function() {
+        spyOn(Product, 'sync');
+
+        $scope.syncProduct();
+
+        expect(Product.sync).toHaveBeenCalledWith({id: $scope.$stateParams.productId},
+            jasmine.any(Function), jasmine.any(Function));
     });
 });

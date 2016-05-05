@@ -9,6 +9,14 @@ describe('Controller: ProductsBulkActionController', function() {
             removeProducts: function() {
                 var deferred = $q.defer();
                 return {$promise: deferred.promise};
+            },
+            syncProducts: function() {
+                var deferred = $q.defer();
+                return {$promise: deferred.promise};
+            },
+            updateProductSyncPlan: function() {
+                var deferred = $q.defer();
+                return {$promise: deferred.promise};
             }
         };
         translate = function() {};
@@ -39,6 +47,32 @@ describe('Controller: ProductsBulkActionController', function() {
         $scope.removeProducts();
 
         expect(ProductBulkAction.removeProducts).toHaveBeenCalledWith(_.extend({ids: [1, 2, 3]}, {'organization_id': 'foo'}),
+            jasmine.any(Function), jasmine.any(Function));
+    });
+
+    it("can sync products", function() {
+        spyOn(ProductBulkAction, 'syncProducts').and.callThrough();
+        $scope.syncProducts();
+
+        expect(ProductBulkAction.syncProducts).toHaveBeenCalledWith({ids: [1, 2, 3], 'organization_id': 'foo'},
+            jasmine.any(Function), jasmine.any(Function));
+    });
+
+    it("allows the updating of the sync plan", function() {
+        spyOn(ProductBulkAction, 'updateProductSyncPlan').and.callThrough();
+
+        $scope.updateSyncPlan({id: 10});
+
+        expect(ProductBulkAction.updateProductSyncPlan).toHaveBeenCalledWith({ids: [1, 2, 3], 'organization_id': 'foo', 'plan_id': 10},
+            jasmine.any(Function), jasmine.any(Function));
+    });
+
+    it("allows the removal of the sync plan", function() {
+        spyOn(ProductBulkAction, 'updateProductSyncPlan').and.callThrough();
+
+        $scope.removeSyncPlan();
+
+        expect(ProductBulkAction.updateProductSyncPlan).toHaveBeenCalledWith({ids: [1, 2, 3], 'organization_id': 'foo', 'plan_id': null},
             jasmine.any(Function), jasmine.any(Function));
     });
 });

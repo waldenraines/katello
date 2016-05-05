@@ -71,7 +71,7 @@ angular.module('Bastion.products').controller('DiscoveryFormController',
                     createNextRepo();
                 }, repoCreateError);
             } else {
-                $scope.transitionTo('products.details.repositories.index',
+                $scope.transitionTo('product.repositories.index',
                     {productId: $scope.createRepoChoices.existingProductId});
             }
         }
@@ -86,7 +86,7 @@ angular.module('Bastion.products').controller('DiscoveryFormController',
         }
 
         $scope.discovery = $scope.discovery || {selected: []};
-        $scope.panel = {loading: true};
+        $scope.page = {loading: true};
         $scope.$watch('createRepoChoices.product.name', function () {
             FormUtils.labelize($scope.createRepoChoices.product);
         });
@@ -118,7 +118,7 @@ angular.module('Bastion.products').controller('DiscoveryFormController',
             } else {
                 $scope.createRepoChoices.newProduct = "true";
             }
-            $scope.panel.loading = false;
+            $scope.page.loading = false;
         });
 
         $scope.creating = function () {

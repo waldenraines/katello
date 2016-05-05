@@ -3,6 +3,8 @@
  * @name  Bastion.products.controller:ProductsController
  *
  * @requires $scope
+ * @requires $state
+ * @requires $sce
  * @requires $location
  * @requires Nutupane
  * @requires Product
@@ -14,8 +16,8 @@
  *   within the table.
  */
 angular.module('Bastion.products').controller('ProductsController',
-    ['$scope', '$sce', '$location', 'Nutupane', 'Product', 'CurrentOrganization', 'GlobalNotification',
-    function ($scope, $sce, $location, Nutupane, Product, CurrentOrganization, GlobalNotification) {
+    ['$scope', '$state', '$sce', '$location', 'Nutupane', 'Product', 'CurrentOrganization', 'GlobalNotification',
+    function ($scope, $state, $sce, $location, Nutupane, Product, CurrentOrganization, GlobalNotification) {
         var taskUrl, taskLink;
 
         var params = {
@@ -33,7 +35,7 @@ angular.module('Bastion.products').controller('ProductsController',
         $scope.controllerName = 'katello_products';
 
         $scope.productTable.closeItem = function () {
-            $scope.transitionTo('products.index');
+            $scope.transitionTo('products');
         };
 
         $scope.$on('productDelete', function (event, taskId) {
@@ -63,6 +65,5 @@ angular.module('Bastion.products').controller('ProductsController',
             }
             return state;
         };
-
     }]
 );
