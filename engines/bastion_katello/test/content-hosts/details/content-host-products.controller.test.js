@@ -71,7 +71,7 @@ describe('Controller: ContentHostProductsController', function () {
     });
 
     it('should initialize product content successfully', function () {
-        var newObject = $scope.products.product_name;
+        var newObject = $scope.product_name;
         expect(newObject[0].content).toBe(mockProductContent.results[0].content);
     });
 

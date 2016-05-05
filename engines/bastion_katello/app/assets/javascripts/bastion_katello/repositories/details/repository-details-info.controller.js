@@ -127,7 +127,7 @@ angular.module('Bastion.repositories').controller('RepositoryDetailsInfoControll
 
         $scope.syncRepository = function (repository) {
             Repository.sync({id: repository.id}, function (task) {
-                $state.go('products.details.tasks.details', {taskId: task.id});
+                $state.go('product.tasks.details', {taskId: task.id});
             });
             updateRepositoriesTable();
         };
@@ -156,7 +156,7 @@ angular.module('Bastion.repositories').controller('RepositoryDetailsInfoControll
             var success, error, repositoryName = repository.name;
 
             success = function () {
-                $scope.transitionTo('products.details.repositories.index', {productId: $scope.$stateParams.productId});
+                $scope.transitionTo('product.repositories.index', {productId: $scope.$stateParams.productId});
                 $scope.$parent.successMessages = [translate('Repository "%s" successfully deleted').replace('%s', repositoryName)];
             };
 

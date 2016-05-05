@@ -178,6 +178,6 @@ describe('Controller: RepositoryDetailsInfoController', function() {
         $scope.removeRepository(repository);
 
         expect($scope.detailsTable.removeRow).toHaveBeenCalledWith(1);
-        expect($scope.transitionTo).toHaveBeenCalledWith('products.details.repositories.index', {productId: 1});
+        expect($scope.transitionTo).toHaveBeenCalledWith('product.repositories.index', {productId: 1});
     });
 });

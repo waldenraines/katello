@@ -60,7 +60,7 @@ angular.module('Bastion.products').controller('ProductRepositoriesController',
             var params = getParams();
 
             RepositoryBulkAction.syncRepositories(params, function (task) {
-                $state.go('products.details.tasks.details', {taskId: task.id});
+                $state.go('product.tasks.details', {taskId: task.id});
             },
             function (response) {
                 $scope.errorMessages = response.data.errors;
@@ -81,7 +81,7 @@ angular.module('Bastion.products').controller('ProductRepositoriesController',
         $scope.removeRepository = function (repository) {
             repositoriesNutupane.removeRow(repository.id);
             repository.$delete(function () {
-                $scope.transitionTo('products.details.repositories.index', {productId: $scope.$stateParams.productId});
+                $scope.transitionTo('product.repositories.index', {productId: $scope.$stateParams.productId});
             });
         };
 
