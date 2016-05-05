@@ -55,7 +55,7 @@ describe('Controller: ProductFormController', function() {
 
         expect(product.$save).toHaveBeenCalled();
         expect($scope.productTable.addRow).toHaveBeenCalled();
-        expect($scope.transitionTo).toHaveBeenCalledWith('products.details.repositories.index',
+        expect($scope.transitionTo).toHaveBeenCalledWith('product.repositories.index',
                                                          {productId: $scope.product.id})
     });
 

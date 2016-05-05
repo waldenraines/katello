@@ -64,7 +64,7 @@ describe('Controller: NewRepositoryController', function() {
 
         expect(repository.$save).toHaveBeenCalled();
         expect(GlobalNotification.setSuccessMessage).toHaveBeenCalled();
-        expect($scope.transitionTo).toHaveBeenCalledWith('products.details.repositories.index', {productId: 1});
+        expect($scope.transitionTo).toHaveBeenCalledWith('product.repositories.index', {productId: 1});
     });
 
     it('should fail to save a new repository resource', function() {

@@ -36,7 +36,7 @@ angular.module('Bastion.products').controller('ProductDetailsController',
             product.$delete(function (data) {
                 $scope.removeRow(id);
                 $scope.$emit('productDelete', data.id);
-                $scope.transitionTo('products.index');
+                $scope.transitionTo('products');
             });
         };
 

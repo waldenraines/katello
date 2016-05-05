@@ -71,7 +71,7 @@ angular.module('Bastion.products').controller('DiscoveryFormController',
                     createNextRepo();
                 }, repoCreateError);
             } else {
-                $scope.transitionTo('products.details.repositories.index',
+                $scope.transitionTo('product.repositories.index',
                     {productId: $scope.createRepoChoices.existingProductId});
             }
         }

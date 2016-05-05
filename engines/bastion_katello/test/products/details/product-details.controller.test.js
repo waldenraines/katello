@@ -30,7 +30,7 @@ describe('Controller: ProductDetailsController', function() {
 
         $scope.removeProduct($scope.product);
 
-        expect($scope.transitionTo).toHaveBeenCalledWith('products.index');
+        expect($scope.transitionTo).toHaveBeenCalledWith('products');
         expect($scope.removeRow).toHaveBeenCalledWith($scope.product.id);
     });
 

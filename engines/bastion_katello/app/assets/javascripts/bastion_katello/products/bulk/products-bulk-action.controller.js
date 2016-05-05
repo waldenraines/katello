@@ -48,7 +48,7 @@ angular.module('Bastion.products').controller('ProductsBulkActionController',
                 });
 
                 $scope.removingProducts = false;
-                $scope.transitionTo('products.index');
+                $scope.transitionTo('products');
             };
 
             error = function (response) {

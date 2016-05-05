@@ -4,7 +4,7 @@
 
   <header>
     <h5>
-      <i class="fa fa-double-angle-left" ui-sref="products.details.repositories.index({productId: $scope.product.id})"></i>
+      <i class="fa fa-double-angle-left" ui-sref="product.repositories.index({productId: $scope.product.id})"></i>
       {{ "Add New Repository" | translate }}
     </h5>
   </header>
@@ -126,7 +126,7 @@
     </div>
 
     <div bst-form-buttons ng-show="repository.content_type !== undefined"
-         on-cancel="transitionTo('products.details.repositories.index', {productId: repository.product_id})"
+         on-cancel="transitionTo('product.repositories.index', {productId: repository.product_id})"
          on-save="save(repository)"
          working="working">
     </div>

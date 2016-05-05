@@ -33,7 +33,7 @@ angular.module('Bastion.products').controller('ProductsController',
         $scope.controllerName = 'katello_products';
 
         $scope.productTable.closeItem = function () {
-            $scope.transitionTo('products.index');
+            $scope.transitionTo('products');
         };
 
         $scope.$on('productDelete', function (event, taskId) {

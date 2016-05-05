@@ -20,7 +20,7 @@ describe('Controller: RepositoryManageContentController', function() {
             productId: 1,
             repositoryId: 1,
         };
-        $state = { current: { name: 'products.details.repositories.manage-content.packages' } };
+        $state = { current: { name: 'product.repositories.manage-content.packages' } };
 
         Nutupane = function() {
             this.table = {

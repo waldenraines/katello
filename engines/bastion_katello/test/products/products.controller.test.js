@@ -37,7 +37,7 @@ describe('Controller: ProductsController', function() {
         spyOn($scope, "transitionTo");
         $scope.productTable.closeItem();
 
-        expect($scope.transitionTo).toHaveBeenCalledWith('products.index');
+        expect($scope.transitionTo).toHaveBeenCalledWith('products');
     });
 
     it('properly detects most important sync state error', function () {

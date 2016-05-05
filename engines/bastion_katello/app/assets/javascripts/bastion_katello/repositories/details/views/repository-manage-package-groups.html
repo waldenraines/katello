@@ -1,6 +1,6 @@
 <span page-title ng-model="repository">{{ 'Package Groups for Repository:' | translate }} {{ repository.name }}</span>
 
-<a ui-sref="products.details.repositories.info({productId: product.id, repositoryId: repository.id})">
+<a ui-sref="product.repositories.info({productId: product.id, repositoryId: repository.id})">
   <i class="fa fa-double-angle-left"></i>
   {{ "Back to Repository Details" | translate }}
 </a>

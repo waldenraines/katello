@@ -69,7 +69,7 @@ angular.module('Bastion.repositories').controller('RepositoryManageContentContro
         };
 
         $scope.taskUrl = function () {
-            return $scope.$state.href('products.details.tasks.details', {productId: $scope.product.id,
+            return $scope.$state.href('product.tasks.details', {productId: $scope.product.id,
                 taskId: $scope.generationTaskId});
         };
 
