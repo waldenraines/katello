@@ -14,7 +14,7 @@
 
       <div class="col-sm-6">
         <div class="fr">
-          <a class="btn btn-primary" ng-click="go(content-views.details.publish)"
+          <a class="btn btn-primary" ng-click="$state.go('content-views.details.publish')"
              ng-disabled="pendingVersionTask"
              ng-hide="denied('publish_content_views', contentView)">
             <i class="fa fa-paste"></i>
