@@ -15,7 +15,7 @@
                 event.preventDefault();
                 console.log(toState);
                 console.log($state.href(toState, {}, {absolute: true}));
-                $rootScope.transitionTo('organizations.select', {toState: $state.href(toState, {}, {absolute: true})});
+                $rootScope.transitionTo('organizations.select', {toState: $state.href('^' + toState.name, {}, {absolute: true})});
 
             }
         });
