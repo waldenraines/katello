@@ -13,6 +13,7 @@
         $rootScope.$on('$stateChangeStart', function (event, toState) {
             if (CurrentOrganization === "" && FencedPages.isFenced(toState)) {
                 event.preventDefault();
+                console.log(toState);
                 $rootScope.transitionTo('organizations.select', {toState: toState.url});
             }
         });
