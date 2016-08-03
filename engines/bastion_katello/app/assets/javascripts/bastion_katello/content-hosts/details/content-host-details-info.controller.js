@@ -34,11 +34,19 @@ angular.module('Bastion.content-hosts').controller('ContentHostDetailsInfoContro
             return doubleColonObject;
         }
 
+        function loadContentViews () {
+            ContentView.queryUnpaged({ 'environment_id': $scope.host.content_facet_attributes.lifecycle_environment.id}, function (response) {
+                $scope.contentViews = response.results;
+            });
+        }
+
         $scope.host.$promise.then(function (host) {
             $scope.hostFactsAsObject = doubleColonNotationToObject(host.facts);
             if (host.hasContent()) {
                 $scope.originalEnvironment = host.content_facet_attributes.lifecycle_environment;
             }
+
+            loadContentViews();
         });
 
         $scope.successMessages = [];
@@ -48,6 +56,7 @@ angular.module('Bastion.content-hosts').controller('ContentHostDetailsInfoContro
         $scope.editContentView = false;
         $scope.disableEnvironmentSelection = false;
         $scope.environments = [];
+        $scope.contentViews = [];
 
         $scope.environments = Organization.readableEnvironments({id: CurrentOrganization});
 
@@ -102,18 +111,6 @@ angular.module('Bastion.content-hosts').controller('ContentHostDetailsInfoContro
         $scope.clearServiceLevel = function () {
             $scope.host.subscription_facet_attributes['service_level'] = '';
             $scope.saveSubscriptionFacet($scope.host);
-        };
-
-        $scope.contentViews = function () {
-            var deferred = $q.defer();
-
-            ContentView.queryUnpaged({ 'environment_id': $scope.host.content_facet_attributes.lifecycle_environment.id}, function (response) {
-                deferred.resolve(response.results);
-                $scope.contentViews = response.results;
-                console.log($scope.contentViews);
-            });
-
-            return deferred.promise;
         };
 
         $scope.getActivationKeyLink = function (activationKey) {
