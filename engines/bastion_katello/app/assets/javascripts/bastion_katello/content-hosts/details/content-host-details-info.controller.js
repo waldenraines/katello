@@ -110,6 +110,7 @@ angular.module('Bastion.content-hosts').controller('ContentHostDetailsInfoContro
             ContentView.queryUnpaged({ 'environment_id': $scope.host.content_facet_attributes.lifecycle_environment.id}, function (response) {
                 deferred.resolve(response.results);
                 $scope.contentViews = response.results;
+                console.log($scope.contentViews);
             });
 
             return deferred.promise;
