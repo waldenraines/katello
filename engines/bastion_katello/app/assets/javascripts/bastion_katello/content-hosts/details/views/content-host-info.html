@@ -231,12 +231,15 @@
               bst-edit-select="host.content_facet_attributes.content_view.name"
               readonly="denied('edit_hosts', host)"
               selector="host.content_facet_attributes.content_view.id"
-              options="contentViews"
+              options="contentViews()"
               on-cancel="cancelContentViewUpdate()"
               on-save="saveContentView(host)"
               edit-trigger="editContentView">
         </span>
       </div>
+
+      <select ng-options="contentViews()"></select>
+
 
       <div class="detail" bst-feature-flag="lifecycle_environments">
         <div alert type="'info'" ng-show="editContentView">
