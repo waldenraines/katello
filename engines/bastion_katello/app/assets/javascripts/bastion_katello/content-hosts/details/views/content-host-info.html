@@ -238,9 +238,6 @@
         </span>
       </div>
 
-      <select ng-model="blahContentView" ng-options="contentView.id as contentView.name for contentView in contentViews"></select>
-
-
       <div class="detail" bst-feature-flag="lifecycle_environments">
         <div alert type="'info'" ng-show="editContentView">
           <p translate ng-show="contentViews.length === 0">
