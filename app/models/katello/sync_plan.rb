@@ -94,9 +94,7 @@ module Katello
           next_sync = now.advance(:hours => hours, :minutes => minutes, :seconds => seconds)
         when WEEKLY
           days = self.sync_date.wday - now.wday
-          if days <= 0
-            days += 7
-          end
+          days += 7 if days <= 0
           next_sync = now.change(:hour => self.sync_date.hour, :min => self.sync_date.min,
                                  :sec => self.sync_date.sec).advance(:days => days)
         end
