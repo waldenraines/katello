@@ -3,11 +3,11 @@
 <div data-extend-template="layouts/panel.html">
   <div bst-alerts success-messages="successMessages" error-messages="errorMessages"></div>
 
-  <div data-block="content">
-    <header>
-      <h2 translate>{{ product.name }}</h2>
-    </header>
+  <header data-block="header">
+    <h2 translate>{{ product.name }}</h2>
+  </header>
 
+  <div data-block="content">
     <nav data-block="navigation">
       <ul class="nav nav-pills">
         <li ng-class="{active: stateIncludes('product.info')}">
