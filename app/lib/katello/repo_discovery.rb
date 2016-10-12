@@ -2,10 +2,9 @@ module Katello
   class RepoDiscovery
     attr_reader :found, :crawled, :to_follow
 
-    def initialize(url, proxy = {}, crawled = [], found = [], to_follow = [])
-      #add a / on the end, as directories require it or else
-      #  They will get double slahes on them
+    def initialize(url, content_type, proxy = {}, crawled = [], found = [], to_follow = [])
       @uri = uri(url)
+      @content_type = content_type
       @found = found
       @crawled = crawled
       @to_follow = to_follow
@@ -13,21 +12,35 @@ module Katello
     end
 
     def uri(url)
-      url += '/' unless url.ends_with?('/')
+      #add a / on the end, as directories require it or else
+      #  They will get double slahes on them
+      url += '/' unless url.ends_with?('/') if @content_type == 'yum'
       URI(url)
     end
 
     def run(resume_point)
-      if @uri.scheme == 'file'
-        file_crawl(uri(resume_point))
-      elsif %w(http https).include?(@uri.scheme)
-        http_crawl(uri(resume_point))
+      if @content_type == 'docker'
+        docker_search(uri(resume_point))
       else
-        fail _("Unsupported URL protocol %s.") % @uri.scheme
+        if @uri.scheme == 'file'
+          file_crawl(uri(resume_point))
+        elsif %w(http https).include?(@uri.scheme)
+          http_crawl(uri(resume_point))
+        else
+          fail _("Unsupported URL protocol %s.") % @uri.scheme
+        end
       end
     end
 
     private
+
+    def docker_search(resume_point)
+      # TODO: what's the best call here to also include proxy, etc.?
+      results = Net::HTTP.get(@uri)
+      JSON.parse(results)['results'].each do |result|
+        @found << result['name']
+      end
+    end
 
     def http_crawl(resume_point)
       Anemone.crawl(resume_point, @proxy) do |anemone|
