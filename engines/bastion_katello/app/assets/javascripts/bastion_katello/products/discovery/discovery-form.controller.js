@@ -35,14 +35,24 @@ angular.module('Bastion.products').controller('DiscoveryFormController',
         }
 
         function convertToResource(repo) {
-            return new Repository({
+            var repoParams = {
                 name: repo.name,
                 label: repo.label,
-                'content_type': 'yum',
-                url: repo.url,
+                'content_type': repo.content_type,
                 'product_id': $scope.createRepoChoices.existingProductId,
                 unprotected: $scope.createRepoChoices.unprotected
-            });
+                // download_policy
+                // verify_ssl_on_sync
+                // checksum_type
+                // gpg_key_id
+            };
+            if ($scope.discovery.content_type === 'docker') {
+                repoParams.url = $scope.discovery.url;
+                repoParams.docker_upstream_name = repo.name;
+            } else {
+                repoParams.url = repo.url;
+            }
+            return new Repository(repoParams);
         }
 
         function getNextRepoToCreate() {

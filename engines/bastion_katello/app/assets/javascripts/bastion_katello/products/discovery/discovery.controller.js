@@ -9,16 +9,17 @@
  * @requires Task
  * @requires Organization
  * @requires CurrentOrganization
+ * @requires Repository
  *
  * @description
  *   Provides the functionality for the repo discovery action pane.
  */
 angular.module('Bastion.products').controller('DiscoveryController',
-    ['$scope', '$q', '$timeout', '$http', 'Task', 'Organization', 'CurrentOrganization',
-    function ($scope, $q, $timeout, $http, Task, Organization, CurrentOrganization) {
+    ['$scope', '$q', '$timeout', '$http', 'Task', 'Organization', 'CurrentOrganization', 'Repository',
+    function ($scope, $q, $timeout, $http, Task, Organization, CurrentOrganization, Repository) {
         var transformRows, setDiscoveryDetails;
 
-        $scope.discovery = {url: ''};
+        $scope.discovery = {url: '', content_type: 'yum'};
         $scope.page = {loading: false};
 
         if (!$scope.discoveryTable) {
@@ -58,15 +59,28 @@ angular.module('Bastion.products').controller('DiscoveryController',
             var baseUrl, toRet;
             baseUrl = $scope.discovery.url;
 
-            toRet = _.map(urls, function (url) {
-                var path = url.replace(baseUrl, "");
-                return {
-                    url: url,
-                    path: path,
-                    name: $scope.defaultName(path),
-                    label: ''
-                };
-            });
+            if ($scope.discovery.content_type === 'yum') {
+              toRet = _.map(urls, function (url) {
+                  var path = url.replace(baseUrl, "");
+                  return {
+                      url: url,
+                      path: path,
+                      name: $scope.defaultName(path),
+                      label: '',
+                      content_type: $scope.discovery.content_type
+                  };
+              });
+            } else if ($scope.discovery.content_type == 'docker') {
+              toRet = _.map(urls, function (image) {
+                  return {
+                      url: $scope.discovery.url,
+                      path: image,
+                      name: image,
+                      label: '',
+                      content_type: $scope.discovery.content_type
+                  };
+              });
+            }
 
             return _.sortBy(toRet, function (item) {
                 return item.url;
@@ -84,10 +98,15 @@ angular.module('Bastion.products').controller('DiscoveryController',
             $scope.discovery.pending = true;
             $scope.discoveryTable.rows = [];
             $scope.discoveryTable.selectAll(false);
-            Organization.repoDiscover({id: CurrentOrganization, url: $scope.discovery.url}, function (task) {
+            Organization.repoDiscover({id: CurrentOrganization, url: $scope.discovery.url,
+                                       content_type: $scope.discovery.content_type}, function (task) {
                 $scope.taskSearchId = Task.registerSearch({ 'type': 'task', 'task_id': task.id }, $scope.updateTask);
             });
         };
 
+        Repository.repositoryTypes({'creatable': true}, function (data) {
+            // TODO: pull out yum and docker if present
+            $scope.repositoryTypes = data;
+        });
     }]
 );

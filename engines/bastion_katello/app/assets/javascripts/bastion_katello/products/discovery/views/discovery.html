@@ -4,6 +4,14 @@
   <form ng-submit="discover()" name="discoveryForm" class="col-sm-6">
     <div class="input-group">
 
+      <div bst-form-group label="{{ 'Type' | translate }}">
+        <select required
+                id="content_type"
+                name="content_type"
+                ng-model="discovery.content_type"
+                ng-options="type.name as type.name for type in repositoryTypes">
+        </select>
+      </div>
       <input type="text"
              ng-pattern="/^(file:\/\/|http:\/\/|https:\/\/).+/"
              class="form-control input-lg"

@@ -92,9 +92,10 @@ module Katello
     api :PUT, "/organizations/:id/repo_discover", N_("Discover Repositories")
     param :id, :number, :desc => N_("Organization ID"), :required => true
     param :url, String, :desc => N_("base url to perform repo discovery on")
+    param :content_type, String, :desc => N_("????")
     def repo_discover
       fail _("url not defined.") if params[:url].blank?
-      task = async_task(::Actions::Katello::Repository::Discover, params[:url])
+      task = async_task(::Actions::Katello::Repository::Discover, params[:url], params[:content_type])
       respond_for_async :resource => task
     end
 

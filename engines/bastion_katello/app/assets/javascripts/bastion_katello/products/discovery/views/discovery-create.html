@@ -26,7 +26,7 @@
     </div>
 
     <div class="form-group">
-      <div class="col-md-5" ng-hide="createRepoChoices.newProduct">
+      <div class="col-md-5" ng-hide="createRepoChoices.newProduct === true">
         <select class="form-control" ng-disabled="creating()"
                 ng-model="createRepoChoices.existingProductId"
                 ng-options="product.id as product.name for product in products">
@@ -34,7 +34,7 @@
       </div>
     </div>
 
-    <div ng-show="createRepoChoices.newProduct">
+    <div ng-show="createRepoChoices.newProduct === true">
 
       <div bst-alerts error-messages="productErrorMessages"></div>
 
@@ -76,7 +76,7 @@
      </div>
   </section>
 
-  <section>
+  <section ng-show="discovery.content_type === 'yum'">
     <h4 translate>Options:</h4>
     <div class="checkbox">
       <label>
@@ -84,19 +84,52 @@
                id="unprotected"
                ng-model="createRepoChoices.unprotected"
                ng-disabled="creating()"/>
-        <span translate>Serve via HTTP.</span>
+        <span translate>Serve via HTTP</span>
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"
+               id="unprotected"
+               ng-model="createRepoChoices.verifyssl"
+               ng-disabled="creating()"/>
+        <span translate>Verify SSL</span>
       </label>
     </div>
   </section>
 
-  <section>
+  <section ng-show="discovery.content_type === 'docker'">
+    <h4 translate>Options:</h4>
+      <div class="form-group required">
+        <label class="control-label col-sm-1" translate>URL</label>
+        <div class="col-sm-4 input">
+          <input ng-model="discovery.url"
+                 ng-disabled="creating() || repo.created"
+                 name="repo_name"
+                 type="text"
+                 class="form-control"
+                 required/>
+        </div>
+      </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"
+               id="unprotected"
+               ng-model="createRepoChoices.verifyssl"
+               ng-disabled="creating()"/>
+        <span translate>Verify SSL</span>
+      </label>
+    </div>
+  </section>
+
+  <section ng-show="discovery.content_type === 'yum'">
     <h4 ng-show="discovery.selected.length > 0" translate>Selected URLs:</h4>
 
     <div ng-repeat="repo in discovery.selected">
 
       <div class="col-sm-offset-0 bottom-padding">
         <i class="fa fa-circle"></i>
-        <span>{{  repo.url }}</span>
+        <span>{{ repo.url }}</span>
         <i class="fa fa-check" ng-show="repo.created"></i>
       </div>
 
@@ -112,6 +145,56 @@
         </div>
       </div>
 
+      <div class="form-group required">
+        <label class="control-label col-sm-1" translate>Label</label>
+        <div class="col-sm-4 input">
+          <input ng-model="repo.label"
+                 ng-disabled="creating() || repo.created"
+                 name="repo_label"
+                 type="text"
+                 class="form-control"
+                 required/>
+        </div>
+      </div>
+    </div>
+
+    <div class="form">
+      <div class="control-group buttons">
+        <div class="input">
+          <button ng-click="createRepos()"
+                  ng-disabled="creating() || !requiredFieldsEnabled()"
+                  translate
+                  class="btn btn-primary btn-large">
+            <i class="fa fa-spinner fa-spin" ng-show="creating()"></i>
+            Create
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section ng-show="discovery.content_type === 'docker'">
+    <h4 ng-show="discovery.selected.length > 0" translate>Selected Docker Repositories:</h4>
+
+    <div ng-repeat="repo in discovery.selected">
+
+      <div class="col-sm-offset-0 bottom-padding">
+        <i class="fa fa-circle"></i>
+        <span>{{  repo.url }}</span>
+        <i class="fa fa-check" ng-show="repo.created"></i>
+      </div>
+
+      <div class="form-group required">
+        <label class="control-label col-sm-1" translate>Upstream Repository Name</label>
+        <div class="col-sm-4 input">
+          <input ng-model="repo.name"
+                 ng-disabled="creating() || repo.created"
+                 name="docker_upstream_name"
+                 type="text"
+                 class="form-control"
+                 required/>
+        </div>
+      </div>
       <div class="form-group required">
         <label class="control-label col-sm-1" translate>Label</label>
         <div class="col-sm-4 input">
