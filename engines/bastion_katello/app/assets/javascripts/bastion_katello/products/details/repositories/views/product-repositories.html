@@ -23,7 +23,7 @@
 <div data-extend-template="layouts/partials/table.html">
   <div data-block="list-actions">
     <button class="btn btn-default"
-            ui-sref="product.repositories.new({productId: product.id})"
+            ng-click="goToNewRepository()"
             ng-hide="denied('edit_products', product) || product.redhat">
       <span translate>New Repository</span>
     </button>

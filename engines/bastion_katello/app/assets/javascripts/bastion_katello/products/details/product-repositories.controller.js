@@ -49,11 +49,15 @@ angular.module('Bastion.products').controller('ProductRepositoriesController',
             $scope.removingTasks.splice(index, 1);
         };
 
-
         $scope.removingTasks = [];
 
         $scope.checksums = [{name: translate('Default'), id: null}, {id: 'sha256', name: 'sha256'}, {id: 'sha1', name: 'sha1'}];
         $scope.table = repositoriesNutupane.table;
+
+        $scope.goToNewRepository = function () {
+            repositoriesNutupane.invalidate();
+            $state.go('product.repositories.new', {productId: $scope.product.id});
+        };
 
         $scope.syncSelectedRepositories = function () {
             var params = getParams();
@@ -82,12 +86,7 @@ angular.module('Bastion.products').controller('ProductRepositoriesController',
 
             removalPromise.finally(function () {
                 $scope.removingRepositories = false;
-            });
-        };
-
-        $scope.removeRepository = function (repository) {
-            repository.$delete(function () {
-                $scope.transitionTo('product.repositories', {productId: $scope.$stateParams.productId});
+                repositoriesNutupane.invalidate();
             });
         };
 
