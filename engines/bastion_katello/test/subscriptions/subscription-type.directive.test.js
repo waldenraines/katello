@@ -40,7 +40,7 @@ describe('Directive: subscriptionType', function() {
         element = '<div subscription-type="subscription"></div>';
         element = $compile(element)($scope);
         $scope.$digest();
-        expect(element.text().trim()).toEqual("Guests of\n  hypervisor");
+        expect(element.text().trim()).toEqual("Guests of hypervisor");
     });
 
     it("subscription type Temporary when unmapped_guest is true", function() {
