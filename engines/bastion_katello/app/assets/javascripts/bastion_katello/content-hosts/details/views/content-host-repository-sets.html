@@ -23,6 +23,13 @@
              ng-model="repositorySetFilter"/>
     </div>
 
+    <div data-block="filters">
+      <label class="checkbox-inline" title="{{ 'Only show Repository Sets provided by subscriptions' | translate }}">
+        <input type="checkbox" ng-model="showMatchHost" ng-change="toggleFilters()"/>
+        <span translate>Subscriptions Only</span>
+      </label>
+    </div>
+
     <div data-block="list-actions">
       <div class="btn-group" uib-dropdown keyboard-nav>
 
