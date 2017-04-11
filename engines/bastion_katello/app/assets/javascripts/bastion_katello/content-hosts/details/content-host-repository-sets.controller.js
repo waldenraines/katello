@@ -30,6 +30,13 @@ angular.module('Bastion.content-hosts').controller('ContentHostRepositorySetsCon
         nutupane = new Nutupane(HostSubscription, params, 'repositorySets');
         $scope.table = nutupane.table;
 
+        $scope.contentAccessModeAll = true;
+        $scope.toggleFilters = function () {
+            $scope.nutupane.table.params['show_all'] = $scope.contentAccessModeAll;
+            $scope.nutupane.refresh();
+        };
+
+
         success = function () {
             $scope.table.working = false;
             GlobalNotification.setSuccessMessage(translate('Repository Sets settings saved successfully.'));
