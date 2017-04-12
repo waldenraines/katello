@@ -168,7 +168,7 @@ module Katello
     api :GET, "/hosts/:host_id/subscriptions/product_content", N_("Get content and overrides for the host")
     param :host_id, String, :desc => N_("Id of the host"), :required => true
     def product_content
-      content = @host.subscription_facet.candlepin_consumer.available_product_content
+      content = @host.subscription_facet.candlepin_consumer.available_product_content(params[:limit])
       overrides = @host.subscription_facet.candlepin_consumer.content_overrides
       results = content.map { |product_content| Katello::ProductContentPresenter.new(product_content, overrides) }
 

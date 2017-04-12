@@ -27,12 +27,21 @@ angular.module('Bastion.content-hosts').controller('ContentHostRepositorySetsCon
         };
 
         $scope.controllerName = 'katello_products';
-        nutupane = new Nutupane(HostSubscription, params, 'repositorySets');
-        $scope.table = nutupane.table;
+        $scope.nutupane = new Nutupane(HostSubscription, params, 'repositorySets');
+        $scope.table = $scope.nutupane.table;
 
-        $scope.contentAccessModeAll = true;
+        $scope.contentAccessModeAll = false;
+        $scope.xyz = false;
         $scope.toggleFilters = function () {
-            $scope.nutupane.table.params['show_all'] = $scope.contentAccessModeAll;
+            var limit = "subscriptions";
+
+            if ($scope.contentAccessModeAll === true) {
+                limit = "all";
+            }
+            if ($scope.xyz === true) {
+                limit = "all";
+            }
+            $scope.nutupane.table.params['limit'] = limit;
             $scope.nutupane.refresh();
         };
 

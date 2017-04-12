@@ -121,8 +121,13 @@ module Katello
         Katello::Product.joins(:subscriptions => :pools).where("#{Katello::Pool.table_name}.cp_id" => pool_ids).enabled.uniq
       end
 
-      def available_product_content
-        products.flat_map(&:available_content)
+      def available_product_content(limit=nil)
+        if limit == "all"
+          all_products = Katello::Product.joins(:subscriptions => :pools).all.enabled.uniq
+          all_products.flat_map(&:available_content)
+        else
+          products.flat_map(&:available_content)
+        end
       end
 
       def compliance_reasons
