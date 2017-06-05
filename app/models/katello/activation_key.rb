@@ -105,7 +105,7 @@ module Katello
     end
 
     def all_products
-      Katello::Product.joins(:subscriptions => :pools).where(:organization_id => organization.id).enabled.uniq
+      organization.products.enabled.uniq
     end
 
     def available_content(content_access_mode_all = false, content_access_mode_env = false)
