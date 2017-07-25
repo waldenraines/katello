@@ -26,7 +26,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency "rest-client"
 
   gem.add_dependency "rabl"
-  gem.add_dependency "foreman-tasks", "~> 0.8"
+  gem.add_dependency "foreman-tasks", "0.9.6"
+  gem.add_dependency  "foreman-tasks-core", "0.1.8"
   gem.add_dependency "foreman_docker", ">= 0.2.0"
 
   gem.add_dependency "qpid_messaging"
