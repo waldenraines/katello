@@ -24,6 +24,10 @@
         <pre><code>subscription-manager register --org="{{ organization.label }}" --environment="Library"</code></pre>
       </li>
       <li>
+        <p translate>If you want to use client tools such as katello-agent or puppet, the satellite-tools repository will need to be enabled</p>
+        <pre><code>subscription-manager repos --enable=rhel-\*-satellite-tools-\*-rpms</code></pre>
+      </li>
+      <li>
         <p translate>Install katello-agent for remote actions and displaying errata information:</p>
         <pre><code>yum -y install katello-agent</code></pre>
       </li>
