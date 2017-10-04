@@ -49,6 +49,7 @@ module Katello
     end
 
     # rubocop:disable Metrics/MethodLength
+    # rubocop:disable Metrics/AbcSize
     # rubocop:disable Metrics/PerceivedComplexity
     def scoped_search(query, default_sort_by, default_sort_order, options = {})
       resource = options[:resource_class] || resource_class
@@ -65,12 +66,18 @@ module Katello
       query = query.select(group).group(group) if group
       sub_total = total.zero? ? 0 : scoped_search_total(query, group)
 
+      if params[:order]
+        (params[:sort_by], params[:sort_order]) = params[:order].split(' ')
+      end
+
       sort_attr = params[:sort_by] || default_sort_by
 
       if sort_attr
         sort_order = (params[:sort_order] || default_sort_order).to_s.downcase
         sort_order = default_sort_order unless ['desc', 'asc'].include?(sort_order)
         query = query.order(sort_attr => sort_order.to_sym)
+        params[:sort_by] = sort_attr
+        params[:sort_order] = sort_order
       elsif options[:custom_sort]
         query = options[:custom_sort].call(query)
       end
@@ -87,8 +94,13 @@ module Katello
       query = (total.zero? || sub_total.zero?) ? [] : query
 
       scoped_search_results(query, sub_total, total, page, per_page)
-    rescue ScopedSearch::QueryNotSupported => error
-      return scoped_search_results([], sub_total, total, page, per_page, error.message)
+    rescue ScopedSearch::QueryNotSupported, ActiveRecord::StatementInvalid => error
+      message = error.message
+      if error.class == ActiveRecord::StatementInvalid
+        Rails.logger.error("Invalid search: #{error.message}")
+        message = _('Your search query was invalid. Please revise it and try again. The full error has been sent to the application logs.')
+      end
+      scoped_search_results([], sub_total, total, page, per_page, message)
     end
 
     protected

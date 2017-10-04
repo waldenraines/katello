@@ -102,6 +102,17 @@ module Katello
       assert_equal ["RHBA-2014-013", "RHEA-2014-111", "RHEA-2017-007", "RHSA-1999-1231"], results.map(&:errata_id)
     end
 
+    def test_scoped_search_order_via_hammer_order
+      params = {:order => "errata_id DESC"}
+      @controller.stubs(:params).returns(params)
+
+      query = Erratum.all
+      options = {resource_class: Katello::Erratum}
+
+      results = @controller.scoped_search(query, "errata_id", "desc", options)[:results]
+      assert_equal ["RHBA-2014-013", "RHEA-2014-111", "RHEA-2017-007", "RHSA-1999-1231"].sort.reverse, results.map(&:errata_id)
+    end
+
     def test_scoped_search_group
       types = Katello::Erratum.pluck(:errata_type).uniq
       4.times do
@@ -115,6 +126,36 @@ module Katello
       assert_equal types.count, results[:subtotal]
       assert_equal types.count, results[:total]
       assert_equal types.sort, results[:results].map { |i| i['errata_type'] }.sort
+    end
+
+    def test_scoped_search_not_supported_error
+      @controller.stubs(:params).returns({})
+      error_message = 'invalid query'
+      @controller.stubs(:scoped_search_total).raises(ScopedSearch::QueryNotSupported.new(error_message))
+
+      results = @controller.scoped_search(@query, 'errata_type', @default_sort[1], @options)
+
+      assert_equal [], results[:results]
+      assert_nil results[:subtotal]
+      assert_nil results[:total]
+      assert_nil results[:page]
+      assert_nil results[:per_page]
+      assert_equal error_message, results[:error]
+    end
+
+    def test_scoped_search_statement_invalid_error
+      @controller.stubs(:params).returns({})
+      @controller.stubs(:scoped_search_total).raises(ActiveRecord::StatementInvalid.new('invalid statement'))
+      error_message = 'Your search query was invalid. Please revise it and try again. The full error has been sent to the application logs.'
+
+      results = @controller.scoped_search(@query, 'errata_type', @default_sort[1], @options)
+
+      assert_equal [], results[:results]
+      assert_nil results[:subtotal]
+      assert_nil results[:total]
+      assert_nil results[:page]
+      assert_nil results[:per_page]
+      assert_equal error_message, results[:error]
     end
   end
 end
