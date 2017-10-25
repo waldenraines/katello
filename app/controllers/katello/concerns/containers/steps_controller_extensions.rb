@@ -26,15 +26,23 @@ module Katello
             end
 
             if params[:tag] && params[:tag][:id]
-              tag = DockerTag.where(:id => params[:tag][:id]).first
+              tag = DockerMetaTag.where(:id => params[:tag][:id]).first
             end
             if params[:capsule] && params[:capsule][:id]
               capsule_id = params[:capsule][:id]
             end
-            @docker_container_wizard_states_image = @state.build_image(:repository_name => repo.try(:pulp_id),
+
+            katello_content = {
+              organization_id: params[:organization_id],
+              environment_id: params.fetch(:kt_environment, {})[:id],
+              content_view_id: params.fetch(:content_view, {})[:id],
+              repository_id: repo.try(:id),
+              tag_id: tag.try(:id)
+            }
+            @docker_container_wizard_states_image = @state.build_image(:repository_name => repo.try(:container_repository_name),
                                 :tag => tag.try(:name),
                                 :capsule_id => capsule_id,
-                                :katello => true)
+                                :katello => true, :katello_content => katello_content)
           else
             build_state_without_katello
           end
