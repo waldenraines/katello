@@ -18,6 +18,7 @@ node :content_counts do |repo|
     :docker_manifest => repo.docker_manifests.count,
     :docker_tag => repo.docker_meta_tag_count,
     :rpm => repo.rpms.count,
+    :srpm => repo.srpms.count,
     :package => repo.rpms.count,
     :package_group => repo.package_groups.count,
     :erratum => repo.errata.count,
