@@ -12,4 +12,7 @@ FactoryGirl.define do
   trait :latest do
     name "latest"
   end
+  trait :with_uuid do
+    uuid { SecureRandom.hex }
+  end
 end
