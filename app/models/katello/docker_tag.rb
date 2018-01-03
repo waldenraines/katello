@@ -39,6 +39,7 @@ module Katello
     end
 
     def self.import_all(uuids = nil, options = {})
+      ::Katello::DockerTag.destroy_all if uuids.blank?
       super
       ::Katello::DockerTag.where(:repository_id => nil).destroy_all
       if uuids
@@ -47,6 +48,11 @@ module Katello
       else
         ::Katello::DockerMetaTag.import_meta_tags(::Katello::Repository.docker_type)
       end
+    end
+
+    def self.import_for_repository(repository)
+      ::Katello::DockerTag.where(:repository_id => repository).destroy_all
+      super(repository, true)
     end
 
     def self.manage_repository_association

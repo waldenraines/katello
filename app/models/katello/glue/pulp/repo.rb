@@ -735,7 +735,7 @@ module Katello
         self.import_distribution_data
       elsif self.docker?
         Katello::DockerManifest.import_for_repository(self)
-        Katello::DockerTag.import_for_repository(self, true)
+        Katello::DockerTag.import_for_repository(self)
       elsif self.puppet?
         Katello::PuppetModule.import_for_repository(self)
       elsif self.ostree?
