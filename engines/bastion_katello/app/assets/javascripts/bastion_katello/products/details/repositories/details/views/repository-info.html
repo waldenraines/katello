@@ -83,6 +83,15 @@
             readonly="denied('edit_products', product)">
         </dd>
       </span>
+      <span>
+        <dt translate>Ignore Global HTTP Proxy</dt>
+        <dd bst-edit-checkbox="repository.ignore_global_proxy"
+            formatter="booleanToYesNo"
+            on-save="save(repository)"
+            readonly="denied('edit_products', product)">
+        </dd>
+      </span>
+
       <dt translate>Publish via HTTPS</dt>
       <dd translate>Yes</dd>
 
