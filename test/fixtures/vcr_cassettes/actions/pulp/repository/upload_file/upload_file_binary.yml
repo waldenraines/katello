@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: https://dev.example.com/pulp/api/v2/content/uploads/0dd38252-12eb-43bc-83ca-d2ca845986ce/0//
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/content/uploads/45b4fcd7-5878-45a6-b718-421d7072f809/0//
     body:
       encoding: ASCII-8BIT
       base64_string: |
@@ -376,13 +376,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 24 Feb 2017 17:01:41 GMT
+      - Wed, 10 Jan 2018 19:30:06 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Content-Length:
       - '4'
-      Connection:
-      - close
       Content-Type:
       - application/json; charset=utf-8
     body:
@@ -390,5 +388,5 @@ http_interactions:
       base64_string: |
         bnVsbA==
     http_version: 
-  recorded_at: Fri, 24 Feb 2017 17:01:41 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Wed, 10 Jan 2018 19:30:06 GMT
+recorded_with: VCR 3.0.3

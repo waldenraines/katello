@@ -2,30 +2,30 @@
 http_interactions:
 - request:
     method: post
-    uri: https://obelix.example.com/pulp/api/v2/repositories/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/
     body:
       encoding: UTF-8
       base64_string: |
         eyJpZCI6IkZlZG9yYV8xNyIsImRpc3BsYXlfbmFtZSI6IkZlZG9yYSAxNyB4
         ODZfNjQiLCJpbXBvcnRlcl90eXBlX2lkIjoieXVtX2ltcG9ydGVyIiwiaW1w
         b3J0ZXJfY29uZmlnIjp7ImZlZWQiOiJmaWxlOi8vL3Zhci93d3cvdGVzdF9y
-        ZXBvcy96b28iLCJzc2xfY2FfY2VydCI6bnVsbCwic3NsX2NsaWVudF9jZXJ0
-        IjpudWxsLCJzc2xfY2xpZW50X2tleSI6bnVsbCwic3NsX3ZhbGlkYXRpb24i
-        Om51bGwsImRvd25sb2FkX3BvbGljeSI6bnVsbCwicmVtb3ZlX21pc3Npbmci
-        Om51bGx9LCJub3RlcyI6eyJfcmVwby10eXBlIjoicnBtLXJlcG8ifSwiZGlz
-        dHJpYnV0b3JzIjpbeyJkaXN0cmlidXRvcl90eXBlX2lkIjoieXVtX2Rpc3Ry
-        aWJ1dG9yIiwiZGlzdHJpYnV0b3JfY29uZmlnIjp7InJlbGF0aXZlX3VybCI6
-        InRlc3RfcGF0aCIsImh0dHAiOmZhbHNlLCJodHRwcyI6dHJ1ZSwicHJvdGVj
-        dGVkIjp0cnVlfSwiYXV0b19wdWJsaXNoIjp0cnVlLCJkaXN0cmlidXRvcl9p
-        ZCI6IkZlZG9yYV8xNyJ9LHsiZGlzdHJpYnV0b3JfdHlwZV9pZCI6ImV4cG9y
-        dF9kaXN0cmlidXRvciIsImRpc3RyaWJ1dG9yX2NvbmZpZyI6eyJodHRwIjpm
-        YWxzZSwiaHR0cHMiOmZhbHNlLCJyZWxhdGl2ZV91cmwiOiJ0ZXN0X3BhdGgi
-        fSwiYXV0b19wdWJsaXNoIjpmYWxzZSwiZGlzdHJpYnV0b3JfaWQiOiJleHBv
-        cnRfZGlzdHJpYnV0b3IifSx7ImRpc3RyaWJ1dG9yX3R5cGVfaWQiOiJ5dW1f
-        Y2xvbmVfZGlzdHJpYnV0b3IiLCJkaXN0cmlidXRvcl9jb25maWciOnsiZGVz
-        dGluYXRpb25fZGlzdHJpYnV0b3JfaWQiOiJGZWRvcmFfMTcifSwiYXV0b19w
-        dWJsaXNoIjpmYWxzZSwiZGlzdHJpYnV0b3JfaWQiOiJGZWRvcmFfMTdfY2xv
-        bmUifV19
+        ZXBvcy96b28iLCJkb3dubG9hZF9wb2xpY3kiOm51bGwsInJlbW92ZV9taXNz
+        aW5nIjpudWxsLCJzc2xfY2xpZW50X2NlcnQiOm51bGwsInNzbF9jbGllbnRf
+        a2V5IjpudWxsLCJzc2xfY2FfY2VydCI6bnVsbCwicHJveHlfaG9zdCI6bnVs
+        bCwic3NsX3ZhbGlkYXRpb24iOm51bGx9LCJub3RlcyI6eyJfcmVwby10eXBl
+        IjoicnBtLXJlcG8ifSwiZGlzdHJpYnV0b3JzIjpbeyJkaXN0cmlidXRvcl90
+        eXBlX2lkIjoieXVtX2Rpc3RyaWJ1dG9yIiwiZGlzdHJpYnV0b3JfY29uZmln
+        Ijp7InJlbGF0aXZlX3VybCI6InRlc3RfcGF0aCIsImh0dHAiOmZhbHNlLCJo
+        dHRwcyI6dHJ1ZSwicHJvdGVjdGVkIjp0cnVlfSwiYXV0b19wdWJsaXNoIjp0
+        cnVlLCJkaXN0cmlidXRvcl9pZCI6IkZlZG9yYV8xNyJ9LHsiZGlzdHJpYnV0
+        b3JfdHlwZV9pZCI6ImV4cG9ydF9kaXN0cmlidXRvciIsImRpc3RyaWJ1dG9y
+        X2NvbmZpZyI6eyJodHRwIjpmYWxzZSwiaHR0cHMiOmZhbHNlLCJyZWxhdGl2
+        ZV91cmwiOiJ0ZXN0X3BhdGgifSwiYXV0b19wdWJsaXNoIjpmYWxzZSwiZGlz
+        dHJpYnV0b3JfaWQiOiJleHBvcnRfZGlzdHJpYnV0b3IifSx7ImRpc3RyaWJ1
+        dG9yX3R5cGVfaWQiOiJ5dW1fY2xvbmVfZGlzdHJpYnV0b3IiLCJkaXN0cmli
+        dXRvcl9jb25maWciOnsiZGVzdGluYXRpb25fZGlzdHJpYnV0b3JfaWQiOiJG
+        ZWRvcmFfMTcifSwiYXV0b19wdWJsaXNoIjpmYWxzZSwiZGlzdHJpYnV0b3Jf
+        aWQiOiJGZWRvcmFfMTdfY2xvbmUifV19
     headers:
       Accept:
       - application/json
@@ -34,7 +34,7 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '861'
+      - '879'
       User-Agent:
       - Ruby
   response:
@@ -43,13 +43,13 @@ http_interactions:
       message: CREATED
     headers:
       Date:
-      - Fri, 29 Jul 2016 18:56:56 GMT
+      - Wed, 10 Jan 2018 19:29:59 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Content-Length:
       - '320'
       Location:
-      - https://obelix.example.com/pulp/api/v2/repositories/Fedora_17/
+      - https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/Fedora_17/
       Content-Type:
       - application/json; charset=utf-8
     body:
@@ -60,14 +60,14 @@ http_interactions:
         ZWQiOiBudWxsLCAibm90ZXMiOiB7Il9yZXBvLXR5cGUiOiAicnBtLXJlcG8i
         fSwgImxhc3RfdW5pdF9yZW1vdmVkIjogbnVsbCwgImNvbnRlbnRfdW5pdF9j
         b3VudHMiOiB7fSwgIl9ucyI6ICJyZXBvcyIsICJfaWQiOiB7IiRvaWQiOiAi
-        NTc5YmE2Zjg3MGJlNmYwZGIyYjMzMjNmIn0sICJpZCI6ICJGZWRvcmFfMTci
+        NWE1NjY5YjcyZDFiYzI2MDEyNzAzY2JjIn0sICJpZCI6ICJGZWRvcmFfMTci
         LCAiX2hyZWYiOiAiL3B1bHAvYXBpL3YyL3JlcG9zaXRvcmllcy9GZWRvcmFf
         MTcvIn0=
     http_version: 
-  recorded_at: Fri, 29 Jul 2016 18:56:56 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:00 GMT
 - request:
     method: get
-    uri: https://obelix.example.com/pulp/api/v2/repositories/Fedora_17/importers/yum_importer/schedules/sync/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/Fedora_17/importers/yum_importer/schedules/sync/
     body:
       encoding: US-ASCII
       base64_string: ''
@@ -86,7 +86,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 29 Jul 2016 18:56:56 GMT
+      - Wed, 10 Jan 2018 19:30:00 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Content-Length:
@@ -98,10 +98,10 @@ http_interactions:
       base64_string: |
         W10=
     http_version: 
-  recorded_at: Fri, 29 Jul 2016 18:56:56 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:00 GMT
 - request:
     method: post
-    uri: https://obelix.example.com/pulp/api/v2/repositories/Fedora_17/importers/yum_importer/schedules/sync/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/Fedora_17/importers/yum_importer/schedules/sync/
     body:
       encoding: UTF-8
       base64_string: |
@@ -123,38 +123,38 @@ http_interactions:
       message: CREATED
     headers:
       Date:
-      - Fri, 29 Jul 2016 18:56:56 GMT
+      - Wed, 10 Jan 2018 19:30:00 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Content-Length:
       - '648'
       Location:
-      - https://obelix.example.com/pulp/api/v2/repositories/Fedora_17/importers/yum_importer/schedules/sync/579ba6f870be6f0db2b33245/
+      - https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/Fedora_17/importers/yum_importer/schedules/sync/5a5669b82d1bc26012703cc2/
       Content-Type:
       - application/json; charset=utf-8
     body:
       encoding: UTF-8
       base64_string: |
-        eyJuZXh0X3J1biI6ICIyMDE2LTA3LTI5VDE4OjU2OjU2WiIsICJyZW1haW5p
-        bmdfcnVucyI6IDEsICJsYXN0X3VwZGF0ZWQiOiAxNDY5ODE4NjE2Ljk4NDky
-        OSwgImZpcnN0X3J1biI6ICIwMzAxLTAxLTAxVDA1OjAwOjAwWiIsICJ0b3Rh
+        eyJuZXh0X3J1biI6ICIyMDE4LTAxLTEwVDE5OjMwOjAwWiIsICJyZW1haW5p
+        bmdfcnVucyI6IDEsICJsYXN0X3VwZGF0ZWQiOiAxNTE1NjEyNjAwLjgzMDg4
+        MywgImZpcnN0X3J1biI6ICIwMzAxLTAxLTAxVDA1OjAwOjAwWiIsICJ0b3Rh
         bF9ydW5fY291bnQiOiAwLCAic2NoZWR1bGUiOiAiUjEvMDMwLTAxLTAxVDA1
         OjAwOjAwWi9QMUQiLCAia3dhcmdzIjogeyJvdmVycmlkZXMiOiB7fSwgInNj
-        aGVkdWxlZF9jYWxsX2lkIjogIjU3OWJhNmY4NzBiZTZmMGRiMmIzMzI0NSJ9
+        aGVkdWxlZF9jYWxsX2lkIjogIjVhNTY2OWI4MmQxYmMyNjAxMjcwM2NjMiJ9
         LCAiYXJncyI6IFsiRmVkb3JhXzE3Il0sICJlbmFibGVkIjogdHJ1ZSwgImxh
         c3RfcnVuX2F0IjogbnVsbCwgInRhc2siOiAicHVscC5zZXJ2ZXIudGFza3Mu
         cmVwb3NpdG9yeS5zeW5jX3dpdGhfYXV0b19wdWJsaXNoIiwgImZhaWx1cmVf
         dGhyZXNob2xkIjogbnVsbCwgInJlc291cmNlIjogInB1bHA6aW1wb3J0ZXI6
-        RmVkb3JhXzE3Onl1bV9pbXBvcnRlciIsICJfaWQiOiAiNTc5YmE2Zjg3MGJl
-        NmYwZGIyYjMzMjQ1IiwgImNvbnNlY3V0aXZlX2ZhaWx1cmVzIjogMCwgIl9o
+        RmVkb3JhXzE3Onl1bV9pbXBvcnRlciIsICJfaWQiOiAiNWE1NjY5YjgyZDFi
+        YzI2MDEyNzAzY2MyIiwgImNvbnNlY3V0aXZlX2ZhaWx1cmVzIjogMCwgIl9o
         cmVmIjogIi9wdWxwL2FwaS92Mi9yZXBvc2l0b3JpZXMvRmVkb3JhXzE3L2lt
-        cG9ydGVycy95dW1faW1wb3J0ZXIvc2NoZWR1bGVzL3N5bmMvNTc5YmE2Zjg3
-        MGJlNmYwZGIyYjMzMjQ1LyJ9
+        cG9ydGVycy95dW1faW1wb3J0ZXIvc2NoZWR1bGVzL3N5bmMvNWE1NjY5Yjgy
+        ZDFiYzI2MDEyNzAzY2MyLyJ9
     http_version: 
-  recorded_at: Fri, 29 Jul 2016 18:56:56 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:00 GMT
 - request:
     method: get
-    uri: https://obelix.example.com/pulp/api/v2/repositories/Fedora_17/importers/yum_importer/schedules/sync/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/Fedora_17/importers/yum_importer/schedules/sync/
     body:
       encoding: US-ASCII
       base64_string: ''
@@ -173,7 +173,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 29 Jul 2016 18:56:57 GMT
+      - Wed, 10 Jan 2018 19:30:01 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
@@ -185,26 +185,26 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       base64_string: |
-        W3sibmV4dF9ydW4iOiAiMjAxNi0wNy0yOVQxODo1Njo1N1oiLCAicmVtYWlu
-        aW5nX3J1bnMiOiAxLCAibGFzdF91cGRhdGVkIjogMTQ2OTgxODYxNi45ODQ5
-        MjksICJmaXJzdF9ydW4iOiAiMDMwMS0wMS0wMVQwNTowMDowMFoiLCAidG90
+        W3sibmV4dF9ydW4iOiAiMjAxOC0wMS0xMFQxOTozMDowMVoiLCAicmVtYWlu
+        aW5nX3J1bnMiOiAxLCAibGFzdF91cGRhdGVkIjogMTUxNTYxMjYwMC44MzA4
+        ODMsICJmaXJzdF9ydW4iOiAiMDMwMS0wMS0wMVQwNTowMDowMFoiLCAidG90
         YWxfcnVuX2NvdW50IjogMCwgInNjaGVkdWxlIjogIlIxLzAzMC0wMS0wMVQw
         NTowMDowMFovUDFEIiwgImt3YXJncyI6IHsib3ZlcnJpZGVzIjoge30sICJz
-        Y2hlZHVsZWRfY2FsbF9pZCI6ICI1NzliYTZmODcwYmU2ZjBkYjJiMzMyNDUi
+        Y2hlZHVsZWRfY2FsbF9pZCI6ICI1YTU2NjliODJkMWJjMjYwMTI3MDNjYzIi
         fSwgImFyZ3MiOiBbIkZlZG9yYV8xNyJdLCAiZW5hYmxlZCI6IHRydWUsICJs
         YXN0X3J1bl9hdCI6IG51bGwsICJ0YXNrIjogInB1bHAuc2VydmVyLnRhc2tz
         LnJlcG9zaXRvcnkuc3luY193aXRoX2F1dG9fcHVibGlzaCIsICJmYWlsdXJl
         X3RocmVzaG9sZCI6IG51bGwsICJyZXNvdXJjZSI6ICJwdWxwOmltcG9ydGVy
-        OkZlZG9yYV8xNzp5dW1faW1wb3J0ZXIiLCAiX2lkIjogIjU3OWJhNmY4NzBi
-        ZTZmMGRiMmIzMzI0NSIsICJjb25zZWN1dGl2ZV9mYWlsdXJlcyI6IDAsICJf
+        OkZlZG9yYV8xNzp5dW1faW1wb3J0ZXIiLCAiX2lkIjogIjVhNTY2OWI4MmQx
+        YmMyNjAxMjcwM2NjMiIsICJjb25zZWN1dGl2ZV9mYWlsdXJlcyI6IDAsICJf
         aHJlZiI6ICIvcHVscC9hcGkvdjIvcmVwb3NpdG9yaWVzL0ZlZG9yYV8xNy9p
-        bXBvcnRlcnMveXVtX2ltcG9ydGVyL3NjaGVkdWxlcy9zeW5jLzU3OWJhNmY4
-        NzBiZTZmMGRiMmIzMzI0NS8ifV0=
+        bXBvcnRlcnMveXVtX2ltcG9ydGVyL3NjaGVkdWxlcy9zeW5jLzVhNTY2OWI4
+        MmQxYmMyNjAxMjcwM2NjMi8ifV0=
     http_version: 
-  recorded_at: Fri, 29 Jul 2016 18:56:57 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:01 GMT
 - request:
     method: put
-    uri: https://obelix.example.com/pulp/api/v2/repositories/Fedora_17/importers/yum_importer/schedules/sync/579ba6f870be6f0db2b33245/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/Fedora_17/importers/yum_importer/schedules/sync/5a5669b82d1bc26012703cc2/
     body:
       encoding: UTF-8
       base64_string: |
@@ -226,7 +226,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 29 Jul 2016 18:56:57 GMT
+      - Wed, 10 Jan 2018 19:30:01 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
@@ -238,26 +238,26 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       base64_string: |
-        eyJuZXh0X3J1biI6ICIyMDE2LTA3LTI5VDE4OjU2OjU3WiIsICJyZW1haW5p
-        bmdfcnVucyI6IDEsICJsYXN0X3VwZGF0ZWQiOiAxNDY5ODE4NjE3LjI2OTY3
-        MywgImZpcnN0X3J1biI6ICIwMzAxLTAxLTAxVDA1OjAwOjAwWiIsICJ0b3Rh
+        eyJuZXh0X3J1biI6ICIyMDE4LTAxLTEwVDE5OjMwOjAxWiIsICJyZW1haW5p
+        bmdfcnVucyI6IDEsICJsYXN0X3VwZGF0ZWQiOiAxNTE1NjEyNjAxLjI4NjYy
+        NywgImZpcnN0X3J1biI6ICIwMzAxLTAxLTAxVDA1OjAwOjAwWiIsICJ0b3Rh
         bF9ydW5fY291bnQiOiAwLCAic2NoZWR1bGUiOiAiUjEvMDMwLTAxLTAxVDA1
         OjAwOjAwWi9QMUQiLCAia3dhcmdzIjogeyJvdmVycmlkZXMiOiB7fSwgInNj
-        aGVkdWxlZF9jYWxsX2lkIjogIjU3OWJhNmY4NzBiZTZmMGRiMmIzMzI0NSJ9
+        aGVkdWxlZF9jYWxsX2lkIjogIjVhNTY2OWI4MmQxYmMyNjAxMjcwM2NjMiJ9
         LCAiYXJncyI6IFsiRmVkb3JhXzE3Il0sICJlbmFibGVkIjogdHJ1ZSwgImxh
         c3RfcnVuX2F0IjogbnVsbCwgInRhc2siOiAicHVscC5zZXJ2ZXIudGFza3Mu
         cmVwb3NpdG9yeS5zeW5jX3dpdGhfYXV0b19wdWJsaXNoIiwgImZhaWx1cmVf
         dGhyZXNob2xkIjogbnVsbCwgInJlc291cmNlIjogInB1bHA6aW1wb3J0ZXI6
-        RmVkb3JhXzE3Onl1bV9pbXBvcnRlciIsICJfaWQiOiAiNTc5YmE2Zjg3MGJl
-        NmYwZGIyYjMzMjQ1IiwgImNvbnNlY3V0aXZlX2ZhaWx1cmVzIjogMCwgIl9o
+        RmVkb3JhXzE3Onl1bV9pbXBvcnRlciIsICJfaWQiOiAiNWE1NjY5YjgyZDFi
+        YzI2MDEyNzAzY2MyIiwgImNvbnNlY3V0aXZlX2ZhaWx1cmVzIjogMCwgIl9o
         cmVmIjogIi9wdWxwL2FwaS92Mi9yZXBvc2l0b3JpZXMvRmVkb3JhXzE3L2lt
-        cG9ydGVycy95dW1faW1wb3J0ZXIvc2NoZWR1bGVzL3N5bmMvNTc5YmE2Zjg3
-        MGJlNmYwZGIyYjMzMjQ1LyJ9
+        cG9ydGVycy95dW1faW1wb3J0ZXIvc2NoZWR1bGVzL3N5bmMvNWE1NjY5Yjgy
+        ZDFiYzI2MDEyNzAzY2MyLyJ9
     http_version: 
-  recorded_at: Fri, 29 Jul 2016 18:56:57 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:01 GMT
 - request:
     method: get
-    uri: https://obelix.example.com/pulp/api/v2/repositories/Fedora_17/importers/yum_importer/schedules/sync/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/Fedora_17/importers/yum_importer/schedules/sync/
     body:
       encoding: US-ASCII
       base64_string: ''
@@ -276,7 +276,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 29 Jul 2016 18:56:57 GMT
+      - Wed, 10 Jan 2018 19:30:01 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
@@ -288,26 +288,26 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       base64_string: |
-        W3sibmV4dF9ydW4iOiAiMjAxNi0wNy0yOVQxODo1Njo1N1oiLCAicmVtYWlu
-        aW5nX3J1bnMiOiAxLCAibGFzdF91cGRhdGVkIjogMTQ2OTgxODYxNy4yNjk2
-        NzMsICJmaXJzdF9ydW4iOiAiMDMwMS0wMS0wMVQwNTowMDowMFoiLCAidG90
+        W3sibmV4dF9ydW4iOiAiMjAxOC0wMS0xMFQxOTozMDowMVoiLCAicmVtYWlu
+        aW5nX3J1bnMiOiAxLCAibGFzdF91cGRhdGVkIjogMTUxNTYxMjYwMS4yODY2
+        MjcsICJmaXJzdF9ydW4iOiAiMDMwMS0wMS0wMVQwNTowMDowMFoiLCAidG90
         YWxfcnVuX2NvdW50IjogMCwgInNjaGVkdWxlIjogIlIxLzAzMC0wMS0wMVQw
         NTowMDowMFovUDFEIiwgImt3YXJncyI6IHsib3ZlcnJpZGVzIjoge30sICJz
-        Y2hlZHVsZWRfY2FsbF9pZCI6ICI1NzliYTZmODcwYmU2ZjBkYjJiMzMyNDUi
+        Y2hlZHVsZWRfY2FsbF9pZCI6ICI1YTU2NjliODJkMWJjMjYwMTI3MDNjYzIi
         fSwgImFyZ3MiOiBbIkZlZG9yYV8xNyJdLCAiZW5hYmxlZCI6IHRydWUsICJs
         YXN0X3J1bl9hdCI6IG51bGwsICJ0YXNrIjogInB1bHAuc2VydmVyLnRhc2tz
         LnJlcG9zaXRvcnkuc3luY193aXRoX2F1dG9fcHVibGlzaCIsICJmYWlsdXJl
         X3RocmVzaG9sZCI6IG51bGwsICJyZXNvdXJjZSI6ICJwdWxwOmltcG9ydGVy
-        OkZlZG9yYV8xNzp5dW1faW1wb3J0ZXIiLCAiX2lkIjogIjU3OWJhNmY4NzBi
-        ZTZmMGRiMmIzMzI0NSIsICJjb25zZWN1dGl2ZV9mYWlsdXJlcyI6IDAsICJf
+        OkZlZG9yYV8xNzp5dW1faW1wb3J0ZXIiLCAiX2lkIjogIjVhNTY2OWI4MmQx
+        YmMyNjAxMjcwM2NjMiIsICJjb25zZWN1dGl2ZV9mYWlsdXJlcyI6IDAsICJf
         aHJlZiI6ICIvcHVscC9hcGkvdjIvcmVwb3NpdG9yaWVzL0ZlZG9yYV8xNy9p
-        bXBvcnRlcnMveXVtX2ltcG9ydGVyL3NjaGVkdWxlcy9zeW5jLzU3OWJhNmY4
-        NzBiZTZmMGRiMmIzMzI0NS8ifV0=
+        bXBvcnRlcnMveXVtX2ltcG9ydGVyL3NjaGVkdWxlcy9zeW5jLzVhNTY2OWI4
+        MmQxYmMyNjAxMjcwM2NjMi8ifV0=
     http_version: 
-  recorded_at: Fri, 29 Jul 2016 18:56:57 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:01 GMT
 - request:
     method: delete
-    uri: https://obelix.example.com/pulp/api/v2/repositories/Fedora_17/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/Fedora_17/
     body:
       encoding: US-ASCII
       base64_string: ''
@@ -326,7 +326,7 @@ http_interactions:
       message: ACCEPTED
     headers:
       Date:
-      - Fri, 29 Jul 2016 18:56:57 GMT
+      - Wed, 10 Jan 2018 19:30:01 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Content-Length:
@@ -337,14 +337,14 @@ http_interactions:
       encoding: UTF-8
       base64_string: |
         eyJzcGF3bmVkX3Rhc2tzIjogW3siX2hyZWYiOiAiL3B1bHAvYXBpL3YyL3Rh
-        c2tzLzcxNzNkOTJkLTUxZjYtNGMwMC1hZDI2LTE5MGJkYjdmODM1ZS8iLCAi
-        dGFza19pZCI6ICI3MTczZDkyZC01MWY2LTRjMDAtYWQyNi0xOTBiZGI3Zjgz
-        NWUifV0sICJyZXN1bHQiOiBudWxsLCAiZXJyb3IiOiBudWxsfQ==
+        c2tzLzM2MGYwNWE0LTk0YjgtNDU5Ny05ZjFjLWRkZTc2NmEyYTQ4YS8iLCAi
+        dGFza19pZCI6ICIzNjBmMDVhNC05NGI4LTQ1OTctOWYxYy1kZGU3NjZhMmE0
+        OGEifV0sICJyZXN1bHQiOiBudWxsLCAiZXJyb3IiOiBudWxsfQ==
     http_version: 
-  recorded_at: Fri, 29 Jul 2016 18:56:57 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:01 GMT
 - request:
     method: get
-    uri: https://obelix.example.com/pulp/api/v2/tasks/7173d92d-51f6-4c00-ad26-190bdb7f835e/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/tasks/360f05a4-94b8-4597-9f1c-dde766a2a48a/
     body:
       encoding: US-ASCII
       base64_string: ''
@@ -363,13 +363,13 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 29 Jul 2016 18:56:57 GMT
+      - Wed, 10 Jan 2018 19:30:01 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
       - Accept-Encoding
       Content-Length:
-      - '633'
+      - '665'
       Content-Type:
       - application/json; charset=utf-8
     body:
@@ -377,24 +377,24 @@ http_interactions:
       base64_string: |
         eyJleGNlcHRpb24iOiBudWxsLCAidGFza190eXBlIjogInB1bHAuc2VydmVy
         LnRhc2tzLnJlcG9zaXRvcnkuZGVsZXRlIiwgIl9ocmVmIjogIi9wdWxwL2Fw
-        aS92Mi90YXNrcy83MTczZDkyZC01MWY2LTRjMDAtYWQyNi0xOTBiZGI3Zjgz
-        NWUvIiwgInRhc2tfaWQiOiAiNzE3M2Q5MmQtNTFmNi00YzAwLWFkMjYtMTkw
-        YmRiN2Y4MzVlIiwgInRhZ3MiOiBbInB1bHA6cmVwb3NpdG9yeTpGZWRvcmFf
+        aS92Mi90YXNrcy8zNjBmMDVhNC05NGI4LTQ1OTctOWYxYy1kZGU3NjZhMmE0
+        OGEvIiwgInRhc2tfaWQiOiAiMzYwZjA1YTQtOTRiOC00NTk3LTlmMWMtZGRl
+        NzY2YTJhNDhhIiwgInRhZ3MiOiBbInB1bHA6cmVwb3NpdG9yeTpGZWRvcmFf
         MTciLCAicHVscDphY3Rpb246ZGVsZXRlIl0sICJmaW5pc2hfdGltZSI6IG51
         bGwsICJfbnMiOiAidGFza19zdGF0dXMiLCAic3RhcnRfdGltZSI6IG51bGws
         ICJ0cmFjZWJhY2siOiBudWxsLCAic3Bhd25lZF90YXNrcyI6IFtdLCAicHJv
         Z3Jlc3NfcmVwb3J0Ijoge30sICJxdWV1ZSI6ICJyZXNlcnZlZF9yZXNvdXJj
-        ZV93b3JrZXItMUBvYmVsaXguZXhhbXBsZS5jb20uZHEiLCAic3RhdGUiOiAi
-        d2FpdGluZyIsICJ3b3JrZXJfbmFtZSI6ICJyZXNlcnZlZF9yZXNvdXJjZV93
-        b3JrZXItMUBvYmVsaXguZXhhbXBsZS5jb20iLCAicmVzdWx0IjogbnVsbCwg
-        ImVycm9yIjogbnVsbCwgIl9pZCI6IHsiJG9pZCI6ICI1NzliYTZmOTdiYzI1
-        YWFmMDk1NjJiZjcifSwgImlkIjogIjU3OWJhNmY5N2JjMjVhYWYwOTU2MmJm
-        NyJ9
+        ZV93b3JrZXItMUBjZW50b3M3LWRldmVsLndpbmRoZWxtLmV4YW1wbGUuY29t
+        LmRxIiwgInN0YXRlIjogIndhaXRpbmciLCAid29ya2VyX25hbWUiOiAicmVz
+        ZXJ2ZWRfcmVzb3VyY2Vfd29ya2VyLTFAY2VudG9zNy1kZXZlbC53aW5kaGVs
+        bS5leGFtcGxlLmNvbSIsICJyZXN1bHQiOiBudWxsLCAiZXJyb3IiOiBudWxs
+        LCAiX2lkIjogeyIkb2lkIjogIjVhNTY2OWI5OWQwYWEzZWRmZjJhYTZmMiJ9
+        LCAiaWQiOiAiNWE1NjY5Yjk5ZDBhYTNlZGZmMmFhNmYyIn0=
     http_version: 
-  recorded_at: Fri, 29 Jul 2016 18:56:57 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:01 GMT
 - request:
     method: get
-    uri: https://obelix.example.com/pulp/api/v2/tasks/7173d92d-51f6-4c00-ad26-190bdb7f835e/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/tasks/360f05a4-94b8-4597-9f1c-dde766a2a48a/
     body:
       encoding: US-ASCII
       base64_string: ''
@@ -413,13 +413,13 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 29 Jul 2016 18:56:58 GMT
+      - Wed, 10 Jan 2018 19:30:02 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
       - Accept-Encoding
       Content-Length:
-      - '670'
+      - '702'
       Content-Type:
       - application/json; charset=utf-8
     body:
@@ -427,19 +427,20 @@ http_interactions:
       base64_string: |
         eyJleGNlcHRpb24iOiBudWxsLCAidGFza190eXBlIjogInB1bHAuc2VydmVy
         LnRhc2tzLnJlcG9zaXRvcnkuZGVsZXRlIiwgIl9ocmVmIjogIi9wdWxwL2Fw
-        aS92Mi90YXNrcy83MTczZDkyZC01MWY2LTRjMDAtYWQyNi0xOTBiZGI3Zjgz
-        NWUvIiwgInRhc2tfaWQiOiAiNzE3M2Q5MmQtNTFmNi00YzAwLWFkMjYtMTkw
-        YmRiN2Y4MzVlIiwgInRhZ3MiOiBbInB1bHA6cmVwb3NpdG9yeTpGZWRvcmFf
+        aS92Mi90YXNrcy8zNjBmMDVhNC05NGI4LTQ1OTctOWYxYy1kZGU3NjZhMmE0
+        OGEvIiwgInRhc2tfaWQiOiAiMzYwZjA1YTQtOTRiOC00NTk3LTlmMWMtZGRl
+        NzY2YTJhNDhhIiwgInRhZ3MiOiBbInB1bHA6cmVwb3NpdG9yeTpGZWRvcmFf
         MTciLCAicHVscDphY3Rpb246ZGVsZXRlIl0sICJmaW5pc2hfdGltZSI6ICIy
-        MDE2LTA3LTI5VDE4OjU2OjU3WiIsICJfbnMiOiAidGFza19zdGF0dXMiLCAi
-        c3RhcnRfdGltZSI6ICIyMDE2LTA3LTI5VDE4OjU2OjU3WiIsICJ0cmFjZWJh
+        MDE4LTAxLTEwVDE5OjMwOjAxWiIsICJfbnMiOiAidGFza19zdGF0dXMiLCAi
+        c3RhcnRfdGltZSI6ICIyMDE4LTAxLTEwVDE5OjMwOjAxWiIsICJ0cmFjZWJh
         Y2siOiBudWxsLCAic3Bhd25lZF90YXNrcyI6IFtdLCAicHJvZ3Jlc3NfcmVw
         b3J0Ijoge30sICJxdWV1ZSI6ICJyZXNlcnZlZF9yZXNvdXJjZV93b3JrZXIt
-        MUBvYmVsaXguZXhhbXBsZS5jb20uZHEiLCAic3RhdGUiOiAiZmluaXNoZWQi
-        LCAid29ya2VyX25hbWUiOiAicmVzZXJ2ZWRfcmVzb3VyY2Vfd29ya2VyLTFA
-        b2JlbGl4LmV4YW1wbGUuY29tIiwgInJlc3VsdCI6IG51bGwsICJlcnJvciI6
-        IG51bGwsICJfaWQiOiB7IiRvaWQiOiAiNTc5YmE2Zjk3YmMyNWFhZjA5NTYy
-        YmY3In0sICJpZCI6ICI1NzliYTZmOTdiYzI1YWFmMDk1NjJiZjcifQ==
+        MUBjZW50b3M3LWRldmVsLndpbmRoZWxtLmV4YW1wbGUuY29tLmRxIiwgInN0
+        YXRlIjogImZpbmlzaGVkIiwgIndvcmtlcl9uYW1lIjogInJlc2VydmVkX3Jl
+        c291cmNlX3dvcmtlci0xQGNlbnRvczctZGV2ZWwud2luZGhlbG0uZXhhbXBs
+        ZS5jb20iLCAicmVzdWx0IjogbnVsbCwgImVycm9yIjogbnVsbCwgIl9pZCI6
+        IHsiJG9pZCI6ICI1YTU2NjliOTlkMGFhM2VkZmYyYWE2ZjIifSwgImlkIjog
+        IjVhNTY2OWI5OWQwYWEzZWRmZjJhYTZmMiJ9
     http_version: 
-  recorded_at: Fri, 29 Jul 2016 18:56:58 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Wed, 10 Jan 2018 19:30:02 GMT
+recorded_with: VCR 3.0.3

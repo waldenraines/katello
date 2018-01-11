@@ -2,25 +2,25 @@
 http_interactions:
 - request:
     method: post
-    uri: https://centos7-devel.example.com/pulp/api/v2/repositories/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/
     body:
       encoding: UTF-8
       base64_string: |
         eyJpZCI6IjQiLCJkaXNwbGF5X25hbWUiOiJQIEZvcmdlIiwiaW1wb3J0ZXJf
         dHlwZV9pZCI6InB1cHBldF9pbXBvcnRlciIsImltcG9ydGVyX2NvbmZpZyI6
         eyJmZWVkIjoiaHR0cDovL2RhdmlkZC5mZWRvcmFwZW9wbGUub3JnL3JlcG9z
-        L3JhbmRvbV9wdXBwZXQvIiwic3NsX2NhX2NlcnQiOiJmb28iLCJzc2xfY2xp
-        ZW50X2NlcnQiOiJmb28iLCJzc2xfY2xpZW50X2tleSI6ImZvbyIsInNzbF92
-        YWxpZGF0aW9uIjpudWxsfSwibm90ZXMiOnsiX3JlcG8tdHlwZSI6InB1cHBl
-        dC1yZXBvIn0sImRpc3RyaWJ1dG9ycyI6W3siZGlzdHJpYnV0b3JfdHlwZV9p
-        ZCI6InB1cHBldF9pbnN0YWxsX2Rpc3RyaWJ1dG9yIiwiZGlzdHJpYnV0b3Jf
-        Y29uZmlnIjp7Imluc3RhbGxfcGF0aCI6Ii92YXIvbGliL3B1bHAvcHVibGlz
-        aGVkL3B1cHBldF9rYXRlbGxvX3Rlc3QiLCJhdXRvX3B1Ymxpc2giOnRydWV9
-        LCJhdXRvX3B1Ymxpc2giOnRydWUsImRpc3RyaWJ1dG9yX2lkIjoiNCJ9LHsi
-        ZGlzdHJpYnV0b3JfdHlwZV9pZCI6InB1cHBldF9kaXN0cmlidXRvciIsImRp
-        c3RyaWJ1dG9yX2NvbmZpZyI6eyJzZXJ2ZV9odHRwIjpmYWxzZSwic2VydmVf
-        aHR0cHMiOnRydWV9LCJhdXRvX3B1Ymxpc2giOnRydWUsImRpc3RyaWJ1dG9y
-        X2lkIjoiNF9wdXBwZXQifV19
+        L3JhbmRvbV9wdXBwZXQvIiwicHJveHlfaG9zdCI6bnVsbCwic3NsX2NhX2Nl
+        cnQiOiJmb28iLCJzc2xfY2xpZW50X2NlcnQiOiJmb28iLCJzc2xfY2xpZW50
+        X2tleSI6ImZvbyIsInNzbF92YWxpZGF0aW9uIjpudWxsfSwibm90ZXMiOnsi
+        X3JlcG8tdHlwZSI6InB1cHBldC1yZXBvIn0sImRpc3RyaWJ1dG9ycyI6W3si
+        ZGlzdHJpYnV0b3JfdHlwZV9pZCI6InB1cHBldF9pbnN0YWxsX2Rpc3RyaWJ1
+        dG9yIiwiZGlzdHJpYnV0b3JfY29uZmlnIjp7Imluc3RhbGxfcGF0aCI6Ii92
+        YXIvbGliL3B1bHAvcHVibGlzaGVkL3B1cHBldF9rYXRlbGxvX3Rlc3QiLCJh
+        dXRvX3B1Ymxpc2giOnRydWV9LCJhdXRvX3B1Ymxpc2giOnRydWUsImRpc3Ry
+        aWJ1dG9yX2lkIjoiNCJ9LHsiZGlzdHJpYnV0b3JfdHlwZV9pZCI6InB1cHBl
+        dF9kaXN0cmlidXRvciIsImRpc3RyaWJ1dG9yX2NvbmZpZyI6eyJzZXJ2ZV9o
+        dHRwIjpmYWxzZSwic2VydmVfaHR0cHMiOnRydWV9LCJhdXRvX3B1Ymxpc2gi
+        OnRydWUsImRpc3RyaWJ1dG9yX2lkIjoiNF9wdXBwZXQifV19
     headers:
       Accept:
       - application/json
@@ -29,7 +29,7 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '648'
+      - '666'
       User-Agent:
       - Ruby
   response:
@@ -38,13 +38,13 @@ http_interactions:
       message: CREATED
     headers:
       Date:
-      - Thu, 26 Oct 2017 19:42:44 GMT
+      - Wed, 10 Jan 2018 19:30:38 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Content-Length:
       - '298'
       Location:
-      - https://centos7-devel.example.com/pulp/api/v2/repositories/4/
+      - https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/4/
       Content-Type:
       - application/json; charset=utf-8
     body:
@@ -54,14 +54,14 @@ http_interactions:
         ICJkZXNjcmlwdGlvbiI6IG51bGwsICJsYXN0X3VuaXRfYWRkZWQiOiBudWxs
         LCAibm90ZXMiOiB7Il9yZXBvLXR5cGUiOiAicHVwcGV0LXJlcG8ifSwgImxh
         c3RfdW5pdF9yZW1vdmVkIjogbnVsbCwgImNvbnRlbnRfdW5pdF9jb3VudHMi
-        OiB7fSwgIl9ucyI6ICJyZXBvcyIsICJfaWQiOiB7IiRvaWQiOiAiNTlmMjNh
-        YjQ5NmNmYmMzZmQzYjM5NGUzIn0sICJpZCI6ICI0IiwgIl9ocmVmIjogIi9w
+        OiB7fSwgIl9ucyI6ICJyZXBvcyIsICJfaWQiOiB7IiRvaWQiOiAiNWE1NjY5
+        ZGUyZDFiYzI2MDEyNzAzY2U3In0sICJpZCI6ICI0IiwgIl9ocmVmIjogIi9w
         dWxwL2FwaS92Mi9yZXBvc2l0b3JpZXMvNC8ifQ==
     http_version: 
-  recorded_at: Thu, 26 Oct 2017 19:42:44 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:38 GMT
 - request:
     method: get
-    uri: https://centos7-devel.example.com/pulp/api/v2/repositories/4/?details=true
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/4/?details=true
     body:
       encoding: US-ASCII
       base64_string: ''
@@ -80,7 +80,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 26 Oct 2017 19:42:44 GMT
+      - Wed, 10 Jan 2018 19:30:39 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
@@ -94,47 +94,47 @@ http_interactions:
       base64_string: |
         eyJzY3JhdGNocGFkIjoge30sICJkaXNwbGF5X25hbWUiOiAiUCBGb3JnZSIs
         ICJkZXNjcmlwdGlvbiI6IG51bGwsICJkaXN0cmlidXRvcnMiOiBbeyJyZXBv
-        X2lkIjogIjQiLCAibGFzdF91cGRhdGVkIjogIjIwMTctMTAtMjZUMTk6NDI6
-        NDRaIiwgIl9ocmVmIjogIi9wdWxwL2FwaS92Mi9yZXBvc2l0b3JpZXMvNC9k
+        X2lkIjogIjQiLCAibGFzdF91cGRhdGVkIjogIjIwMTgtMDEtMTBUMTk6MzA6
+        MzhaIiwgIl9ocmVmIjogIi9wdWxwL2FwaS92Mi9yZXBvc2l0b3JpZXMvNC9k
         aXN0cmlidXRvcnMvNF9wdXBwZXQvIiwgImxhc3Rfb3ZlcnJpZGVfY29uZmln
         Ijoge30sICJsYXN0X3B1Ymxpc2giOiBudWxsLCAiZGlzdHJpYnV0b3JfdHlw
         ZV9pZCI6ICJwdXBwZXRfZGlzdHJpYnV0b3IiLCAiYXV0b19wdWJsaXNoIjog
         dHJ1ZSwgInNjcmF0Y2hwYWQiOiB7fSwgIl9ucyI6ICJyZXBvX2Rpc3RyaWJ1
-        dG9ycyIsICJfaWQiOiB7IiRvaWQiOiAiNTlmMjNhYjQ5NmNmYmMzZmQzYjM5
-        NGU2In0sICJjb25maWciOiB7InNlcnZlX2h0dHBzIjogdHJ1ZSwgInNlcnZl
+        dG9ycyIsICJfaWQiOiB7IiRvaWQiOiAiNWE1NjY5ZGUyZDFiYzI2MDEyNzAz
+        Y2VhIn0sICJjb25maWciOiB7InNlcnZlX2h0dHBzIjogdHJ1ZSwgInNlcnZl
         X2h0dHAiOiBmYWxzZX0sICJpZCI6ICI0X3B1cHBldCJ9LCB7InJlcG9faWQi
-        OiAiNCIsICJsYXN0X3VwZGF0ZWQiOiAiMjAxNy0xMC0yNlQxOTo0Mjo0NFoi
+        OiAiNCIsICJsYXN0X3VwZGF0ZWQiOiAiMjAxOC0wMS0xMFQxOTozMDozOFoi
         LCAiX2hyZWYiOiAiL3B1bHAvYXBpL3YyL3JlcG9zaXRvcmllcy80L2Rpc3Ry
         aWJ1dG9ycy80LyIsICJsYXN0X292ZXJyaWRlX2NvbmZpZyI6IHt9LCAibGFz
         dF9wdWJsaXNoIjogbnVsbCwgImRpc3RyaWJ1dG9yX3R5cGVfaWQiOiAicHVw
         cGV0X2luc3RhbGxfZGlzdHJpYnV0b3IiLCAiYXV0b19wdWJsaXNoIjogdHJ1
         ZSwgInNjcmF0Y2hwYWQiOiB7fSwgIl9ucyI6ICJyZXBvX2Rpc3RyaWJ1dG9y
-        cyIsICJfaWQiOiB7IiRvaWQiOiAiNTlmMjNhYjQ5NmNmYmMzZmQzYjM5NGU1
+        cyIsICJfaWQiOiB7IiRvaWQiOiAiNWE1NjY5ZGUyZDFiYzI2MDEyNzAzY2U5
         In0sICJjb25maWciOiB7Imluc3RhbGxfcGF0aCI6ICIvdmFyL2xpYi9wdWxw
         L3B1Ymxpc2hlZC9wdXBwZXRfa2F0ZWxsb190ZXN0IiwgImF1dG9fcHVibGlz
         aCI6IHRydWV9LCAiaWQiOiAiNCJ9XSwgImxhc3RfdW5pdF9hZGRlZCI6IG51
         bGwsICJub3RlcyI6IHsiX3JlcG8tdHlwZSI6ICJwdXBwZXQtcmVwbyJ9LCAi
         bGFzdF91bml0X3JlbW92ZWQiOiBudWxsLCAiY29udGVudF91bml0X2NvdW50
         cyI6IHt9LCAiX25zIjogInJlcG9zIiwgImltcG9ydGVycyI6IFt7InJlcG9f
-        aWQiOiAiNCIsICJsYXN0X3VwZGF0ZWQiOiAiMjAxNy0xMC0yNlQxOTo0Mjo0
-        NFoiLCAiX2hyZWYiOiAiL3B1bHAvYXBpL3YyL3JlcG9zaXRvcmllcy80L2lt
+        aWQiOiAiNCIsICJsYXN0X3VwZGF0ZWQiOiAiMjAxOC0wMS0xMFQxOTozMDoz
+        OFoiLCAiX2hyZWYiOiAiL3B1bHAvYXBpL3YyL3JlcG9zaXRvcmllcy80L2lt
         cG9ydGVycy9wdXBwZXRfaW1wb3J0ZXIvIiwgIl9ucyI6ICJyZXBvX2ltcG9y
         dGVycyIsICJpbXBvcnRlcl90eXBlX2lkIjogInB1cHBldF9pbXBvcnRlciIs
         ICJsYXN0X292ZXJyaWRlX2NvbmZpZyI6IHt9LCAibGFzdF9zeW5jIjogbnVs
-        bCwgInNjcmF0Y2hwYWQiOiBudWxsLCAiX2lkIjogeyIkb2lkIjogIjU5ZjIz
-        YWI0OTZjZmJjM2ZkM2IzOTRlNCJ9LCAiY29uZmlnIjogeyJmZWVkIjogImh0
+        bCwgInNjcmF0Y2hwYWQiOiBudWxsLCAiX2lkIjogeyIkb2lkIjogIjVhNTY2
+        OWRlMmQxYmMyNjAxMjcwM2NlOCJ9LCAiY29uZmlnIjogeyJmZWVkIjogImh0
         dHA6Ly9kYXZpZGQuZmVkb3JhcGVvcGxlLm9yZy9yZXBvcy9yYW5kb21fcHVw
         cGV0LyIsICJzc2xfY2FfY2VydCI6ICJmb28iLCAic3NsX2NsaWVudF9jZXJ0
         IjogImZvbyIsICJzc2xfY2xpZW50X2tleSI6ICJmb28ifSwgImlkIjogInB1
         cHBldF9pbXBvcnRlciJ9XSwgImxvY2FsbHlfc3RvcmVkX3VuaXRzIjogMCwg
-        Il9pZCI6IHsiJG9pZCI6ICI1OWYyM2FiNDk2Y2ZiYzNmZDNiMzk0ZTMifSwg
+        Il9pZCI6IHsiJG9pZCI6ICI1YTU2NjlkZTJkMWJjMjYwMTI3MDNjZTcifSwg
         InRvdGFsX3JlcG9zaXRvcnlfdW5pdHMiOiAwLCAiaWQiOiAiNCIsICJfaHJl
         ZiI6ICIvcHVscC9hcGkvdjIvcmVwb3NpdG9yaWVzLzQvIn0=
     http_version: 
-  recorded_at: Thu, 26 Oct 2017 19:42:44 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:39 GMT
 - request:
     method: post
-    uri: https://centos7-devel.example.com/pulp/api/v2/repositories/4/actions/publish/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/4/actions/publish/
     body:
       encoding: UTF-8
       base64_string: |
@@ -156,7 +156,7 @@ http_interactions:
       message: ACCEPTED
     headers:
       Date:
-      - Thu, 26 Oct 2017 19:42:45 GMT
+      - Wed, 10 Jan 2018 19:30:39 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Content-Length:
@@ -167,14 +167,14 @@ http_interactions:
       encoding: UTF-8
       base64_string: |
         eyJzcGF3bmVkX3Rhc2tzIjogW3siX2hyZWYiOiAiL3B1bHAvYXBpL3YyL3Rh
-        c2tzLzBmMTVkNGViLWM1M2QtNGEzMi04NDQwLTAxZjFlZDY3ZWI5Mi8iLCAi
-        dGFza19pZCI6ICIwZjE1ZDRlYi1jNTNkLTRhMzItODQ0MC0wMWYxZWQ2N2Vi
-        OTIifV0sICJyZXN1bHQiOiBudWxsLCAiZXJyb3IiOiBudWxsfQ==
+        c2tzLzdjODQxYTVkLTU4MGMtNDI1NS04NjBkLWU0ZDI5YmQwNzljZC8iLCAi
+        dGFza19pZCI6ICI3Yzg0MWE1ZC01ODBjLTQyNTUtODYwZC1lNGQyOWJkMDc5
+        Y2QifV0sICJyZXN1bHQiOiBudWxsLCAiZXJyb3IiOiBudWxsfQ==
     http_version: 
-  recorded_at: Thu, 26 Oct 2017 19:42:45 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:39 GMT
 - request:
     method: get
-    uri: https://centos7-devel.example.com/pulp/api/v2/tasks/0f15d4eb-c53d-4a32-8440-01f1ed67eb92/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/tasks/7c841a5d-580c-4255-860d-e4d29bd079cd/
     body:
       encoding: US-ASCII
       base64_string: ''
@@ -193,13 +193,13 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 26 Oct 2017 19:42:45 GMT
+      - Wed, 10 Jan 2018 19:30:39 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
       - Accept-Encoding
       Content-Length:
-      - '548'
+      - '682'
       Content-Type:
       - application/json; charset=utf-8
     body:
@@ -207,22 +207,25 @@ http_interactions:
       base64_string: |
         eyJleGNlcHRpb24iOiBudWxsLCAidGFza190eXBlIjogInB1bHAuc2VydmVy
         Lm1hbmFnZXJzLnJlcG8ucHVibGlzaC5wdWJsaXNoIiwgIl9ocmVmIjogIi9w
-        dWxwL2FwaS92Mi90YXNrcy8wZjE1ZDRlYi1jNTNkLTRhMzItODQ0MC0wMWYx
-        ZWQ2N2ViOTIvIiwgInRhc2tfaWQiOiAiMGYxNWQ0ZWItYzUzZC00YTMyLTg0
-        NDAtMDFmMWVkNjdlYjkyIiwgInRhZ3MiOiBbInB1bHA6cmVwb3NpdG9yeTo0
+        dWxwL2FwaS92Mi90YXNrcy83Yzg0MWE1ZC01ODBjLTQyNTUtODYwZC1lNGQy
+        OWJkMDc5Y2QvIiwgInRhc2tfaWQiOiAiN2M4NDFhNWQtNTgwYy00MjU1LTg2
+        MGQtZTRkMjliZDA3OWNkIiwgInRhZ3MiOiBbInB1bHA6cmVwb3NpdG9yeTo0
         IiwgInB1bHA6YWN0aW9uOnB1Ymxpc2giXSwgImZpbmlzaF90aW1lIjogbnVs
-        bCwgIl9ucyI6ICJ0YXNrX3N0YXR1cyIsICJzdGFydF90aW1lIjogbnVsbCwg
-        InRyYWNlYmFjayI6IG51bGwsICJzcGF3bmVkX3Rhc2tzIjogW10sICJwcm9n
-        cmVzc19yZXBvcnQiOiB7fSwgInF1ZXVlIjogIk5vbmUuZHEiLCAic3RhdGUi
-        OiAid2FpdGluZyIsICJ3b3JrZXJfbmFtZSI6IG51bGwsICJyZXN1bHQiOiBu
-        dWxsLCAiZXJyb3IiOiBudWxsLCAiX2lkIjogeyIkb2lkIjogIjU5ZjIzYWI1
-        NTY5ZjYwNDM2NTZmNjQyNyJ9LCAiaWQiOiAiNTlmMjNhYjU1NjlmNjA0MzY1
-        NmY2NDI3In0=
+        bCwgIl9ucyI6ICJ0YXNrX3N0YXR1cyIsICJzdGFydF90aW1lIjogIjIwMTgt
+        MDEtMTBUMTk6MzA6MzlaIiwgInRyYWNlYmFjayI6IG51bGwsICJzcGF3bmVk
+        X3Rhc2tzIjogW10sICJwcm9ncmVzc19yZXBvcnQiOiB7fSwgInF1ZXVlIjog
+        InJlc2VydmVkX3Jlc291cmNlX3dvcmtlci0xQGNlbnRvczctZGV2ZWwud2lu
+        ZGhlbG0uZXhhbXBsZS5jb20uZHEiLCAic3RhdGUiOiAicnVubmluZyIsICJ3
+        b3JrZXJfbmFtZSI6ICJyZXNlcnZlZF9yZXNvdXJjZV93b3JrZXItMUBjZW50
+        b3M3LWRldmVsLndpbmRoZWxtLmV4YW1wbGUuY29tIiwgInJlc3VsdCI6IG51
+        bGwsICJlcnJvciI6IG51bGwsICJfaWQiOiB7IiRvaWQiOiAiNWE1NjY5ZGY5
+        ZDBhYTNlZGZmMmFhNzEyIn0sICJpZCI6ICI1YTU2NjlkZjlkMGFhM2VkZmYy
+        YWE3MTIifQ==
     http_version: 
-  recorded_at: Thu, 26 Oct 2017 19:42:45 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:39 GMT
 - request:
     method: get
-    uri: https://centos7-devel.example.com/pulp/api/v2/tasks/0f15d4eb-c53d-4a32-8440-01f1ed67eb92/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/tasks/7c841a5d-580c-4255-860d-e4d29bd079cd/
     body:
       encoding: US-ASCII
       base64_string: ''
@@ -241,13 +244,13 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 26 Oct 2017 19:42:45 GMT
+      - Wed, 10 Jan 2018 19:30:39 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
       - Accept-Encoding
       Content-Length:
-      - '1064'
+      - '1082'
       Content-Type:
       - application/json; charset=utf-8
     body:
@@ -255,33 +258,34 @@ http_interactions:
       base64_string: |
         eyJleGNlcHRpb24iOiBudWxsLCAidGFza190eXBlIjogInB1bHAuc2VydmVy
         Lm1hbmFnZXJzLnJlcG8ucHVibGlzaC5wdWJsaXNoIiwgIl9ocmVmIjogIi9w
-        dWxwL2FwaS92Mi90YXNrcy8wZjE1ZDRlYi1jNTNkLTRhMzItODQ0MC0wMWYx
-        ZWQ2N2ViOTIvIiwgInRhc2tfaWQiOiAiMGYxNWQ0ZWItYzUzZC00YTMyLTg0
-        NDAtMDFmMWVkNjdlYjkyIiwgInRhZ3MiOiBbInB1bHA6cmVwb3NpdG9yeTo0
+        dWxwL2FwaS92Mi90YXNrcy83Yzg0MWE1ZC01ODBjLTQyNTUtODYwZC1lNGQy
+        OWJkMDc5Y2QvIiwgInRhc2tfaWQiOiAiN2M4NDFhNWQtNTgwYy00MjU1LTg2
+        MGQtZTRkMjliZDA3OWNkIiwgInRhZ3MiOiBbInB1bHA6cmVwb3NpdG9yeTo0
         IiwgInB1bHA6YWN0aW9uOnB1Ymxpc2giXSwgImZpbmlzaF90aW1lIjogIjIw
-        MTctMTAtMjZUMTk6NDI6NDVaIiwgIl9ucyI6ICJ0YXNrX3N0YXR1cyIsICJz
-        dGFydF90aW1lIjogIjIwMTctMTAtMjZUMTk6NDI6NDVaIiwgInRyYWNlYmFj
+        MTgtMDEtMTBUMTk6MzA6MzlaIiwgIl9ucyI6ICJ0YXNrX3N0YXR1cyIsICJz
+        dGFydF90aW1lIjogIjIwMTgtMDEtMTBUMTk6MzA6MzlaIiwgInRyYWNlYmFj
         ayI6IG51bGwsICJzcGF3bmVkX3Rhc2tzIjogW10sICJwcm9ncmVzc19yZXBv
-        cnQiOiB7fSwgInF1ZXVlIjogInJlc2VydmVkX3Jlc291cmNlX3dvcmtlci0w
-        QGNlbnRvczctZGV2ZWwuZXhhbXBsZS5jb20uZHEiLCAic3RhdGUiOiAiZmlu
-        aXNoZWQiLCAid29ya2VyX25hbWUiOiAicmVzZXJ2ZWRfcmVzb3VyY2Vfd29y
-        a2VyLTBAY2VudG9zNy1kZXZlbC5leGFtcGxlLmNvbSIsICJyZXN1bHQiOiB7
-        InJlc3VsdCI6ICJzdWNjZXNzIiwgImV4Y2VwdGlvbiI6IG51bGwsICJyZXBv
-        X2lkIjogIjQiLCAic3RhcnRlZCI6ICIyMDE3LTEwLTI2VDE5OjQyOjQ1WiIs
-        ICJfbnMiOiAicmVwb19wdWJsaXNoX3Jlc3VsdHMiLCAiY29tcGxldGVkIjog
-        IjIwMTctMTAtMjZUMTk6NDI6NDVaIiwgInRyYWNlYmFjayI6IG51bGwsICJk
-        aXN0cmlidXRvcl90eXBlX2lkIjogInB1cHBldF9pbnN0YWxsX2Rpc3RyaWJ1
-        dG9yIiwgInN1bW1hcnkiOiAic3VjY2VzcyIsICJlcnJvcl9tZXNzYWdlIjog
-        bnVsbCwgImRpc3RyaWJ1dG9yX2lkIjogIjQiLCAiaWQiOiAiNTlmMjNhYjU5
-        NmNmYmM0MTA1MGMzYWFjIiwgImRldGFpbHMiOiB7ImVycm9ycyI6IFtdLCAi
-        c3VjY2Vzc191bml0X2tleXMiOiBbXX19LCAiZXJyb3IiOiBudWxsLCAiX2lk
-        IjogeyIkb2lkIjogIjU5ZjIzYWI1NTY5ZjYwNDM2NTZmNjQyNyJ9LCAiaWQi
-        OiAiNTlmMjNhYjU1NjlmNjA0MzY1NmY2NDI3In0=
+        cnQiOiB7fSwgInF1ZXVlIjogInJlc2VydmVkX3Jlc291cmNlX3dvcmtlci0x
+        QGNlbnRvczctZGV2ZWwud2luZGhlbG0uZXhhbXBsZS5jb20uZHEiLCAic3Rh
+        dGUiOiAiZmluaXNoZWQiLCAid29ya2VyX25hbWUiOiAicmVzZXJ2ZWRfcmVz
+        b3VyY2Vfd29ya2VyLTFAY2VudG9zNy1kZXZlbC53aW5kaGVsbS5leGFtcGxl
+        LmNvbSIsICJyZXN1bHQiOiB7InJlc3VsdCI6ICJzdWNjZXNzIiwgImV4Y2Vw
+        dGlvbiI6IG51bGwsICJyZXBvX2lkIjogIjQiLCAic3RhcnRlZCI6ICIyMDE4
+        LTAxLTEwVDE5OjMwOjM5WiIsICJfbnMiOiAicmVwb19wdWJsaXNoX3Jlc3Vs
+        dHMiLCAiY29tcGxldGVkIjogIjIwMTgtMDEtMTBUMTk6MzA6MzlaIiwgInRy
+        YWNlYmFjayI6IG51bGwsICJkaXN0cmlidXRvcl90eXBlX2lkIjogInB1cHBl
+        dF9pbnN0YWxsX2Rpc3RyaWJ1dG9yIiwgInN1bW1hcnkiOiAic3VjY2VzcyIs
+        ICJlcnJvcl9tZXNzYWdlIjogbnVsbCwgImRpc3RyaWJ1dG9yX2lkIjogIjQi
+        LCAiaWQiOiAiNWE1NjY5ZGYyZDFiYzI2MTE1MzYyNTA0IiwgImRldGFpbHMi
+        OiB7ImVycm9ycyI6IFtdLCAic3VjY2Vzc191bml0X2tleXMiOiBbXX19LCAi
+        ZXJyb3IiOiBudWxsLCAiX2lkIjogeyIkb2lkIjogIjVhNTY2OWRmOWQwYWEz
+        ZWRmZjJhYTcxMiJ9LCAiaWQiOiAiNWE1NjY5ZGY5ZDBhYTNlZGZmMmFhNzEy
+        In0=
     http_version: 
-  recorded_at: Thu, 26 Oct 2017 19:42:45 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:39 GMT
 - request:
     method: get
-    uri: https://centos7-devel.example.com/pulp/api/v2/repositories/4/?details=true
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/4/?details=true
     body:
       encoding: US-ASCII
       base64_string: ''
@@ -300,7 +304,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 26 Oct 2017 19:42:46 GMT
+      - Wed, 10 Jan 2018 19:30:39 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
@@ -314,48 +318,48 @@ http_interactions:
       base64_string: |
         eyJzY3JhdGNocGFkIjoge30sICJkaXNwbGF5X25hbWUiOiAiUCBGb3JnZSIs
         ICJkZXNjcmlwdGlvbiI6IG51bGwsICJkaXN0cmlidXRvcnMiOiBbeyJyZXBv
-        X2lkIjogIjQiLCAibGFzdF91cGRhdGVkIjogIjIwMTctMTAtMjZUMTk6NDI6
-        NDRaIiwgIl9ocmVmIjogIi9wdWxwL2FwaS92Mi9yZXBvc2l0b3JpZXMvNC9k
+        X2lkIjogIjQiLCAibGFzdF91cGRhdGVkIjogIjIwMTgtMDEtMTBUMTk6MzA6
+        MzhaIiwgIl9ocmVmIjogIi9wdWxwL2FwaS92Mi9yZXBvc2l0b3JpZXMvNC9k
         aXN0cmlidXRvcnMvNF9wdXBwZXQvIiwgImxhc3Rfb3ZlcnJpZGVfY29uZmln
         Ijoge30sICJsYXN0X3B1Ymxpc2giOiBudWxsLCAiZGlzdHJpYnV0b3JfdHlw
         ZV9pZCI6ICJwdXBwZXRfZGlzdHJpYnV0b3IiLCAiYXV0b19wdWJsaXNoIjog
         dHJ1ZSwgInNjcmF0Y2hwYWQiOiB7fSwgIl9ucyI6ICJyZXBvX2Rpc3RyaWJ1
-        dG9ycyIsICJfaWQiOiB7IiRvaWQiOiAiNTlmMjNhYjQ5NmNmYmMzZmQzYjM5
-        NGU2In0sICJjb25maWciOiB7InNlcnZlX2h0dHBzIjogdHJ1ZSwgInNlcnZl
+        dG9ycyIsICJfaWQiOiB7IiRvaWQiOiAiNWE1NjY5ZGUyZDFiYzI2MDEyNzAz
+        Y2VhIn0sICJjb25maWciOiB7InNlcnZlX2h0dHBzIjogdHJ1ZSwgInNlcnZl
         X2h0dHAiOiBmYWxzZX0sICJpZCI6ICI0X3B1cHBldCJ9LCB7InJlcG9faWQi
-        OiAiNCIsICJsYXN0X3VwZGF0ZWQiOiAiMjAxNy0xMC0yNlQxOTo0Mjo0NFoi
+        OiAiNCIsICJsYXN0X3VwZGF0ZWQiOiAiMjAxOC0wMS0xMFQxOTozMDozOFoi
         LCAiX2hyZWYiOiAiL3B1bHAvYXBpL3YyL3JlcG9zaXRvcmllcy80L2Rpc3Ry
         aWJ1dG9ycy80LyIsICJsYXN0X292ZXJyaWRlX2NvbmZpZyI6IHt9LCAibGFz
-        dF9wdWJsaXNoIjogIjIwMTctMTAtMjZUMTk6NDI6NDVaIiwgImRpc3RyaWJ1
+        dF9wdWJsaXNoIjogIjIwMTgtMDEtMTBUMTk6MzA6MzlaIiwgImRpc3RyaWJ1
         dG9yX3R5cGVfaWQiOiAicHVwcGV0X2luc3RhbGxfZGlzdHJpYnV0b3IiLCAi
         YXV0b19wdWJsaXNoIjogdHJ1ZSwgInNjcmF0Y2hwYWQiOiB7fSwgIl9ucyI6
-        ICJyZXBvX2Rpc3RyaWJ1dG9ycyIsICJfaWQiOiB7IiRvaWQiOiAiNTlmMjNh
-        YjQ5NmNmYmMzZmQzYjM5NGU1In0sICJjb25maWciOiB7Imluc3RhbGxfcGF0
+        ICJyZXBvX2Rpc3RyaWJ1dG9ycyIsICJfaWQiOiB7IiRvaWQiOiAiNWE1NjY5
+        ZGUyZDFiYzI2MDEyNzAzY2U5In0sICJjb25maWciOiB7Imluc3RhbGxfcGF0
         aCI6ICIvdmFyL2xpYi9wdWxwL3B1Ymxpc2hlZC9wdXBwZXRfa2F0ZWxsb190
         ZXN0IiwgImF1dG9fcHVibGlzaCI6IHRydWV9LCAiaWQiOiAiNCJ9XSwgImxh
         c3RfdW5pdF9hZGRlZCI6IG51bGwsICJub3RlcyI6IHsiX3JlcG8tdHlwZSI6
         ICJwdXBwZXQtcmVwbyJ9LCAibGFzdF91bml0X3JlbW92ZWQiOiBudWxsLCAi
         Y29udGVudF91bml0X2NvdW50cyI6IHt9LCAiX25zIjogInJlcG9zIiwgImlt
         cG9ydGVycyI6IFt7InJlcG9faWQiOiAiNCIsICJsYXN0X3VwZGF0ZWQiOiAi
-        MjAxNy0xMC0yNlQxOTo0Mjo0NFoiLCAiX2hyZWYiOiAiL3B1bHAvYXBpL3Yy
+        MjAxOC0wMS0xMFQxOTozMDozOFoiLCAiX2hyZWYiOiAiL3B1bHAvYXBpL3Yy
         L3JlcG9zaXRvcmllcy80L2ltcG9ydGVycy9wdXBwZXRfaW1wb3J0ZXIvIiwg
         Il9ucyI6ICJyZXBvX2ltcG9ydGVycyIsICJpbXBvcnRlcl90eXBlX2lkIjog
         InB1cHBldF9pbXBvcnRlciIsICJsYXN0X292ZXJyaWRlX2NvbmZpZyI6IHt9
         LCAibGFzdF9zeW5jIjogbnVsbCwgInNjcmF0Y2hwYWQiOiBudWxsLCAiX2lk
-        IjogeyIkb2lkIjogIjU5ZjIzYWI0OTZjZmJjM2ZkM2IzOTRlNCJ9LCAiY29u
+        IjogeyIkb2lkIjogIjVhNTY2OWRlMmQxYmMyNjAxMjcwM2NlOCJ9LCAiY29u
         ZmlnIjogeyJmZWVkIjogImh0dHA6Ly9kYXZpZGQuZmVkb3JhcGVvcGxlLm9y
         Zy9yZXBvcy9yYW5kb21fcHVwcGV0LyIsICJzc2xfY2FfY2VydCI6ICJmb28i
         LCAic3NsX2NsaWVudF9jZXJ0IjogImZvbyIsICJzc2xfY2xpZW50X2tleSI6
         ICJmb28ifSwgImlkIjogInB1cHBldF9pbXBvcnRlciJ9XSwgImxvY2FsbHlf
-        c3RvcmVkX3VuaXRzIjogMCwgIl9pZCI6IHsiJG9pZCI6ICI1OWYyM2FiNDk2
-        Y2ZiYzNmZDNiMzk0ZTMifSwgInRvdGFsX3JlcG9zaXRvcnlfdW5pdHMiOiAw
+        c3RvcmVkX3VuaXRzIjogMCwgIl9pZCI6IHsiJG9pZCI6ICI1YTU2NjlkZTJk
+        MWJjMjYwMTI3MDNjZTcifSwgInRvdGFsX3JlcG9zaXRvcnlfdW5pdHMiOiAw
         LCAiaWQiOiAiNCIsICJfaHJlZiI6ICIvcHVscC9hcGkvdjIvcmVwb3NpdG9y
         aWVzLzQvIn0=
     http_version: 
-  recorded_at: Thu, 26 Oct 2017 19:42:46 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:39 GMT
 - request:
     method: delete
-    uri: https://centos7-devel.example.com/pulp/api/v2/repositories/4/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/repositories/4/
     body:
       encoding: US-ASCII
       base64_string: ''
@@ -374,7 +378,7 @@ http_interactions:
       message: ACCEPTED
     headers:
       Date:
-      - Thu, 26 Oct 2017 19:42:46 GMT
+      - Wed, 10 Jan 2018 19:30:40 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Content-Length:
@@ -385,14 +389,14 @@ http_interactions:
       encoding: UTF-8
       base64_string: |
         eyJzcGF3bmVkX3Rhc2tzIjogW3siX2hyZWYiOiAiL3B1bHAvYXBpL3YyL3Rh
-        c2tzLzYwY2Y0OTI5LWZkODktNGNjOC1hZjFjLWQ2Mjk4MGJhNWI5Zi8iLCAi
-        dGFza19pZCI6ICI2MGNmNDkyOS1mZDg5LTRjYzgtYWYxYy1kNjI5ODBiYTVi
-        OWYifV0sICJyZXN1bHQiOiBudWxsLCAiZXJyb3IiOiBudWxsfQ==
+        c2tzLzA4ODVjOGNhLWM5NzItNDAxYS1hNTdmLTczYmFmZmMwYThkNC8iLCAi
+        dGFza19pZCI6ICIwODg1YzhjYS1jOTcyLTQwMWEtYTU3Zi03M2JhZmZjMGE4
+        ZDQifV0sICJyZXN1bHQiOiBudWxsLCAiZXJyb3IiOiBudWxsfQ==
     http_version: 
-  recorded_at: Thu, 26 Oct 2017 19:42:46 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:40 GMT
 - request:
     method: get
-    uri: https://centos7-devel.example.com/pulp/api/v2/tasks/60cf4929-fd89-4cc8-af1c-d62980ba5b9f/
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/tasks/0885c8ca-c972-401a-a57f-73baffc0a8d4/
     body:
       encoding: US-ASCII
       base64_string: ''
@@ -411,13 +415,13 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 26 Oct 2017 19:42:46 GMT
+      - Wed, 10 Jan 2018 19:30:40 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
       - Accept-Encoding
       Content-Length:
-      - '657'
+      - '541'
       Content-Type:
       - application/json; charset=utf-8
     body:
@@ -425,70 +429,68 @@ http_interactions:
       base64_string: |
         eyJleGNlcHRpb24iOiBudWxsLCAidGFza190eXBlIjogInB1bHAuc2VydmVy
         LnRhc2tzLnJlcG9zaXRvcnkuZGVsZXRlIiwgIl9ocmVmIjogIi9wdWxwL2Fw
-        aS92Mi90YXNrcy82MGNmNDkyOS1mZDg5LTRjYzgtYWYxYy1kNjI5ODBiYTVi
-        OWYvIiwgInRhc2tfaWQiOiAiNjBjZjQ5MjktZmQ4OS00Y2M4LWFmMWMtZDYy
-        OTgwYmE1YjlmIiwgInRhZ3MiOiBbInB1bHA6cmVwb3NpdG9yeTo0IiwgInB1
+        aS92Mi90YXNrcy8wODg1YzhjYS1jOTcyLTQwMWEtYTU3Zi03M2JhZmZjMGE4
+        ZDQvIiwgInRhc2tfaWQiOiAiMDg4NWM4Y2EtYzk3Mi00MDFhLWE1N2YtNzNi
+        YWZmYzBhOGQ0IiwgInRhZ3MiOiBbInB1bHA6cmVwb3NpdG9yeTo0IiwgInB1
         bHA6YWN0aW9uOmRlbGV0ZSJdLCAiZmluaXNoX3RpbWUiOiBudWxsLCAiX25z
-        IjogInRhc2tfc3RhdHVzIiwgInN0YXJ0X3RpbWUiOiAiMjAxNy0xMC0yNlQx
-        OTo0Mjo0NloiLCAidHJhY2ViYWNrIjogbnVsbCwgInNwYXduZWRfdGFza3Mi
-        OiBbXSwgInByb2dyZXNzX3JlcG9ydCI6IHt9LCAicXVldWUiOiAicmVzZXJ2
-        ZWRfcmVzb3VyY2Vfd29ya2VyLTBAY2VudG9zNy1kZXZlbC5leGFtcGxlLmNv
-        bS5kcSIsICJzdGF0ZSI6ICJydW5uaW5nIiwgIndvcmtlcl9uYW1lIjogInJl
-        c2VydmVkX3Jlc291cmNlX3dvcmtlci0wQGNlbnRvczctZGV2ZWwuZXhhbXBs
-        ZS5jb20iLCAicmVzdWx0IjogbnVsbCwgImVycm9yIjogbnVsbCwgIl9pZCI6
-        IHsiJG9pZCI6ICI1OWYyM2FiNjU2OWY2MDQzNjU2ZjY0MjgifSwgImlkIjog
-        IjU5ZjIzYWI2NTY5ZjYwNDM2NTZmNjQyOCJ9
-    http_version: 
-  recorded_at: Thu, 26 Oct 2017 19:42:46 GMT
-- request:
-    method: get
-    uri: https://centos7-devel.example.com/pulp/api/v2/tasks/60cf4929-fd89-4cc8-af1c-d62980ba5b9f/
-    body:
-      encoding: US-ASCII
-      base64_string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Thu, 26 Oct 2017 19:42:46 GMT
-      Server:
-      - Apache/2.4.6 (CentOS)
-      Vary:
-      - Accept-Encoding
-      Content-Length:
-      - '676'
-      Content-Type:
-      - application/json; charset=utf-8
-    body:
-      encoding: ASCII-8BIT
-      base64_string: |
-        eyJleGNlcHRpb24iOiBudWxsLCAidGFza190eXBlIjogInB1bHAuc2VydmVy
-        LnRhc2tzLnJlcG9zaXRvcnkuZGVsZXRlIiwgIl9ocmVmIjogIi9wdWxwL2Fw
-        aS92Mi90YXNrcy82MGNmNDkyOS1mZDg5LTRjYzgtYWYxYy1kNjI5ODBiYTVi
-        OWYvIiwgInRhc2tfaWQiOiAiNjBjZjQ5MjktZmQ4OS00Y2M4LWFmMWMtZDYy
-        OTgwYmE1YjlmIiwgInRhZ3MiOiBbInB1bHA6cmVwb3NpdG9yeTo0IiwgInB1
-        bHA6YWN0aW9uOmRlbGV0ZSJdLCAiZmluaXNoX3RpbWUiOiAiMjAxNy0xMC0y
-        NlQxOTo0Mjo0NloiLCAiX25zIjogInRhc2tfc3RhdHVzIiwgInN0YXJ0X3Rp
-        bWUiOiAiMjAxNy0xMC0yNlQxOTo0Mjo0NloiLCAidHJhY2ViYWNrIjogbnVs
-        bCwgInNwYXduZWRfdGFza3MiOiBbXSwgInByb2dyZXNzX3JlcG9ydCI6IHt9
-        LCAicXVldWUiOiAicmVzZXJ2ZWRfcmVzb3VyY2Vfd29ya2VyLTBAY2VudG9z
-        Ny1kZXZlbC5leGFtcGxlLmNvbS5kcSIsICJzdGF0ZSI6ICJmaW5pc2hlZCIs
-        ICJ3b3JrZXJfbmFtZSI6ICJyZXNlcnZlZF9yZXNvdXJjZV93b3JrZXItMEBj
-        ZW50b3M3LWRldmVsLmV4YW1wbGUuY29tIiwgInJlc3VsdCI6IG51bGwsICJl
-        cnJvciI6IG51bGwsICJfaWQiOiB7IiRvaWQiOiAiNTlmMjNhYjY1NjlmNjA0
-        MzY1NmY2NDI4In0sICJpZCI6ICI1OWYyM2FiNjU2OWY2MDQzNjU2ZjY0Mjgi
+        IjogInRhc2tfc3RhdHVzIiwgInN0YXJ0X3RpbWUiOiBudWxsLCAidHJhY2Vi
+        YWNrIjogbnVsbCwgInNwYXduZWRfdGFza3MiOiBbXSwgInByb2dyZXNzX3Jl
+        cG9ydCI6IHt9LCAicXVldWUiOiAiTm9uZS5kcSIsICJzdGF0ZSI6ICJ3YWl0
+        aW5nIiwgIndvcmtlcl9uYW1lIjogbnVsbCwgInJlc3VsdCI6IG51bGwsICJl
+        cnJvciI6IG51bGwsICJfaWQiOiB7IiRvaWQiOiAiNWE1NjY5ZTA5ZDBhYTNl
+        ZGZmMmFhNzEzIn0sICJpZCI6ICI1YTU2NjllMDlkMGFhM2VkZmYyYWE3MTMi
         fQ==
     http_version: 
-  recorded_at: Thu, 26 Oct 2017 19:42:46 GMT
+  recorded_at: Wed, 10 Jan 2018 19:30:40 GMT
+- request:
+    method: get
+    uri: https://centos7-devel.windhelm.example.com/pulp/api/v2/tasks/0885c8ca-c972-401a-a57f-73baffc0a8d4/
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 10 Jan 2018 19:30:41 GMT
+      Server:
+      - Apache/2.4.6 (CentOS)
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '694'
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      base64_string: |
+        eyJleGNlcHRpb24iOiBudWxsLCAidGFza190eXBlIjogInB1bHAuc2VydmVy
+        LnRhc2tzLnJlcG9zaXRvcnkuZGVsZXRlIiwgIl9ocmVmIjogIi9wdWxwL2Fw
+        aS92Mi90YXNrcy8wODg1YzhjYS1jOTcyLTQwMWEtYTU3Zi03M2JhZmZjMGE4
+        ZDQvIiwgInRhc2tfaWQiOiAiMDg4NWM4Y2EtYzk3Mi00MDFhLWE1N2YtNzNi
+        YWZmYzBhOGQ0IiwgInRhZ3MiOiBbInB1bHA6cmVwb3NpdG9yeTo0IiwgInB1
+        bHA6YWN0aW9uOmRlbGV0ZSJdLCAiZmluaXNoX3RpbWUiOiAiMjAxOC0wMS0x
+        MFQxOTozMDo0MFoiLCAiX25zIjogInRhc2tfc3RhdHVzIiwgInN0YXJ0X3Rp
+        bWUiOiAiMjAxOC0wMS0xMFQxOTozMDo0MFoiLCAidHJhY2ViYWNrIjogbnVs
+        bCwgInNwYXduZWRfdGFza3MiOiBbXSwgInByb2dyZXNzX3JlcG9ydCI6IHt9
+        LCAicXVldWUiOiAicmVzZXJ2ZWRfcmVzb3VyY2Vfd29ya2VyLTFAY2VudG9z
+        Ny1kZXZlbC53aW5kaGVsbS5leGFtcGxlLmNvbS5kcSIsICJzdGF0ZSI6ICJm
+        aW5pc2hlZCIsICJ3b3JrZXJfbmFtZSI6ICJyZXNlcnZlZF9yZXNvdXJjZV93
+        b3JrZXItMUBjZW50b3M3LWRldmVsLndpbmRoZWxtLmV4YW1wbGUuY29tIiwg
+        InJlc3VsdCI6IG51bGwsICJlcnJvciI6IG51bGwsICJfaWQiOiB7IiRvaWQi
+        OiAiNWE1NjY5ZTA5ZDBhYTNlZGZmMmFhNzEzIn0sICJpZCI6ICI1YTU2Njll
+        MDlkMGFhM2VkZmYyYWE3MTMifQ==
+    http_version: 
+  recorded_at: Wed, 10 Jan 2018 19:30:41 GMT
 recorded_with: VCR 3.0.3
