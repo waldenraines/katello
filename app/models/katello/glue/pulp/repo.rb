@@ -162,7 +162,7 @@ module Katello
           Runcible::Models::IsoImporter.new(importer_connection_options(capsule).merge(:feed => importer_feed_url(capsule)))
         when Repository::PUPPET_TYPE
           options = {:feed => importer_feed_url(capsule)}
-          Runcible::Models::PuppetImporter.new(importer_ssl_options(capsule).merge(options))
+          Runcible::Models::PuppetImporter.new(importer_connection_options(capsule).merge(options))
         when Repository::DOCKER_TYPE
           options = {}
           options[:upstream_name] = capsule.default_capsule? ? self.docker_upstream_name : self.container_repository_name
