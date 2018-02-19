@@ -296,7 +296,7 @@ module Katello
     end
 
     def duplicate_repositories_to_publish
-      repositories_to_publish_by_library_instance.select { |_key, val| val.count > 1 }.keys
+      repositories_to_publish_by_library_instance.select { |key, val| val.count > 1 && key.present? }.keys
     end
 
     def components_with_repo(library_instance)

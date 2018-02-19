@@ -4,7 +4,7 @@ module Actions
   describe Katello::Repository::CloneYumMetadata do
     include Dynflow::Testing
     include Support::Actions::Fixtures
-    include FactoryBot::Syntax::Methods
+    include FactoryGirl::Syntax::Methods
 
     let(:action_class) { ::Actions::Katello::Repository::CloneToVersion }
     let(:yum_repo) { katello_repositories(:rhel_6_x86_64) }
