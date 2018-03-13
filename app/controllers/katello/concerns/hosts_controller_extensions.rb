@@ -5,7 +5,7 @@ module Katello
       include ForemanTasks::Triggers
       included do
         def destroy
-          sync_task(::Actions::Katello::Host::Destroy, @host)
+          Katello::RegistrationManager.unregister_host(@host, :unregistering => false)
           process_success(:success_redirect => hosts_path)
         rescue StandardError => ex
           process_error(:object => @host, :error_msg => ex.message)

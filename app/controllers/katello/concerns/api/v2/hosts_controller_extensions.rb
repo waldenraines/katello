@@ -8,7 +8,7 @@ module Katello
         alias_method_chain :action_permission, :katello
 
         def destroy
-          sync_task(::Actions::Katello::Host::Destroy, @host)
+          Katello::RegistrationManager.unregister_host(@host, :unregistering => false)
           process_response(:object => @host)
         end
 

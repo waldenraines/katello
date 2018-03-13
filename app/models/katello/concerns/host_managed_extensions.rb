@@ -10,7 +10,7 @@ module Katello
         alias_method_chain :info, :katello
         alias_method_chain :smart_proxy_ids, :katello
 
-        has_many :host_installed_packages, :class_name => "::Katello::HostInstalledPackage", :foreign_key => :host_id, :dependent => :destroy
+        has_many :host_installed_packages, :class_name => "::Katello::HostInstalledPackage", :foreign_key => :host_id, :dependent => :delete_all
         has_many :installed_packages, :class_name => "::Katello::InstalledPackage", :through => :host_installed_packages
         has_many :host_traces, :class_name => "::Katello::HostTracer", :foreign_key => :host_id, :dependent => :destroy
 
