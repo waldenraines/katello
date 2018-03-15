@@ -227,6 +227,16 @@ module Katello
 
       assert composite.update_attributes(component_ids: [v1.id, v2.id])
       assert_equal 0, composite.errors.count # docker and yum repos
+      refute_empty composite.duplicate_repositories_to_publish
+    end
+
+    def test_repo_conflicts_non_composite
+      view = ContentView.new
+      view.repositories << katello_repositories(:fedora_17_x86_64)
+      view.repositories << katello_repositories(:rhel_6_x86_64)
+
+      assert view.repositories.to_a.all? { |repo| repo.library_instance? } #should all be library instances
+      assert_empty view.duplicate_repositories_to_publish
     end
 
     def test_puppet_module_conflicts

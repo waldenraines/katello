@@ -129,6 +129,10 @@ module Katello
           ostree_branches.count != pulp_counts['ostree'].to_i
       end
 
+      def empty_in_pulp?
+        pulp_repo_facts[:content_unit_counts].values.all? { |value| value == 0 }
+      end
+
       def create_pulp_repo
         #if we are in library, no need for an distributor, but need to sync
         if self.environment.try(:library?)
@@ -731,13 +735,39 @@ module Katello
       end
     end
 
-    def index_content(full_index = false)
-      if self.yum?
+    def index_yum_content(full_index = false)
+      if self.master?
         Katello::Rpm.import_for_repository(self, full_index)
         Katello::Srpm.import_for_repository(self, full_index)
         Katello::Erratum.import_for_repository(self)
         Katello::PackageGroup.import_for_repository(self)
         self.import_distribution_data
+      else
+        index_linked_repo
+      end
+    end
+
+    def index_linked_repo
+      if (base_repo = self.target_repository)
+        Rpm.copy_repository_associations(base_repo, self)
+        Erratum.copy_repository_associations(base_repo, self)
+        PackageGroup.copy_repository_associations(base_repo, self)
+        self.update_attributes!(
+          :distribution_version => base_repo.distribution_version,
+          :distribution_arch => base_repo.distribution_arch,
+          :distribution_family => base_repo.distribution_family,
+          :distribution_variant => base_repo.distribution_variant,
+          :distribution_uuid => base_repo.distribution_uuid,
+          :distribution_bootable => base_repo.distribution_bootable
+        )
+      else
+        Rails.logger.error("Cannot index #{self.id}, no target repository found.")
+      end
+    end
+
+    def index_content(full_index = false)
+      if self.yum?
+        index_yum_content(full_index)
       elsif self.docker?
         Katello::DockerManifest.import_for_repository(self)
         Katello::DockerTag.import_for_repository(self, true)

@@ -11,7 +11,8 @@ module Actions
             if clone.new_record?
               plan_action(Repository::Create, clone, true, false)
             else
-              plan_action(Repository::Clear, clone)
+              #only clear if it should be empty, but its not
+              plan_action(Repository::Clear, clone) if (!clone.yum? || !clone.empty_in_pulp?)
               clone.copy_library_instance_attributes
               clone.save!
 
@@ -21,7 +22,7 @@ module Actions
             end
 
             if repository.yum?
-              plan_action(Repository::CloneYumContent, repository, clone, [], false,
+              plan_action(Repository::CloneYumMetadata, repository, clone,
                           :force_yum_metadata_regeneration => options[:force_yum_metadata_regeneration])
             elsif repository.docker?
               plan_action(Repository::CloneDockerContent, repository, clone, [])

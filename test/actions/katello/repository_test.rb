@@ -387,6 +387,7 @@ module ::Actions::Katello::Repository
       action.expects(:find_or_build_environment_clone).returns(clone)
       clone.expects(:new_record?).returns(false)
       clone.expects(:copy_library_instance_attributes)
+      clone.expects(:yum?).returns(false)
       clone.expects(:save!)
       ::Katello::Repository.expects(:needs_distributor_updates).with([clone], capsule_content).returns([])
 
@@ -424,6 +425,7 @@ module ::Actions::Katello::Repository
       action.expects(:find_or_build_environment_clone).returns(clone)
       clone.expects(:new_record?).returns(false)
       clone.expects(:copy_library_instance_attributes)
+      clone.expects(:yum?).returns(false)
       clone.expects(:save!)
       ::Katello::Repository.expects(:needs_distributor_updates).with([clone], capsule_content).returns([])
 
@@ -487,6 +489,21 @@ module ::Actions::Katello::Repository
       end
       assert_action_planed_with(action, ::Actions::Pulp::RepositoryGroup::Delete,
                                 :id => "8")
+    end
+
+    it 'plans with unit copy if needed' do
+      # required for export pre-run validation to succeed
+      Setting['pulp_export_destination'] = '/tmp'
+
+      action.stubs(:action_subject)
+      repository.stubs(:link?).returns(true)
+      repository.stubs(:target_repository).returns(custom_repository)
+
+      plan_action(action, [repository], false, nil, 0, "8")
+      assert_action_planed_with(action, ::Actions::Katello::Repository::Clear,
+                                repository)
+      assert_action_planed_with(action, ::Actions::Katello::Repository::CloneYumContent, custom_repository, repository, [], false,
+                                    :generate_metadata => false, :index_content => false)
     end
 
     it 'plans without export destination' do

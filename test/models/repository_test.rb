@@ -168,6 +168,16 @@ module Katello
       end
     end
 
+    def test_archived_instance
+      archived_repo = katello_repositories(:fedora_17_x86_64_dev_archive)
+      env_repo = katello_repositories(:fedora_17_x86_64_dev)
+
+      assert_equal archived_repo, env_repo.archived_instance
+      assert_equal archived_repo, archived_repo.archived_instance
+
+      assert_equal @fedora_17_x86_64, @fedora_17_x86_64.archived_instance
+    end
+
     def test_content_type
       @repo.content_type = "puppet"
       @repo.download_policy = nil
@@ -291,6 +301,39 @@ module Katello
       @repo.ostree_upstream_sync_policy = 'custom'
       @repo.ostree_upstream_sync_depth = sync_depth
       assert_equal sync_depth, @repo.compute_ostree_upstream_sync_depth
+    end
+
+    def test_master_link
+      assert @puppet_forge.master?
+
+      assert @fedora_17_x86_64.master?
+      refute @fedora_17_x86_64.link?
+
+      assert @fedora_17_x86_64_dev.link?
+      refute @fedora_17_x86_64_dev.master?
+      assert_equal @fedora_17_x86_64_dev.target_repository, katello_repositories(:fedora_17_x86_64_dev_archive)
+
+      archive = katello_repositories(:fedora_17_x86_64_dev_archive)
+      assert archive.master?
+      refute archive.link?
+    end
+
+    def test_master_link_composite
+      version = katello_content_view_versions(:composite_view_version_1)
+      version_env_repo = katello_repositories(:rhel_6_x86_64_composite_view_version_1)
+      version_archive_repo = version_env_repo.archived_instance
+
+      assert version_env_repo.link?
+      assert_equal version_archive_repo.target_repository, version_env_repo.target_repository
+
+      assert version_archive_repo.link?
+      assert_equal version_env_repo.content_view_version.components.first.repositories.where(:library_instance_id => version_env_repo.library_instance_id,
+                                                                                             :environment_id => nil).first,
+                   version_archive_repo.target_repository
+
+      #now add a 2nd component to make the archive a "master", due to 'conflicting' repos
+      version.components << katello_content_view_versions(:library_view_version_2)
+      assert version_archive_repo.master?
     end
   end
 

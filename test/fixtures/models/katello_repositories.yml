@@ -39,9 +39,30 @@ fedora_17_x86_64_dev:
   distribution_uuid: 'xyz123'
   download_policy: immediate
 
+fedora_17_x86_64_dev_archive:
+  name:                 Fedora 17 x86_64 dev
+  pulp_id:              2_archive
+  content_id:           1
+  content_type:         yum
+  library_instance:     fedora_17_x86_64
+  label:                fedora_17_x86_64_dev_label
+  relative_path:        'ACME_Corporation/dev/fedora_17_dev_label'
+  environment_id:
+  product_id:           <%= ActiveRecord::FixtureSet.identify(:fedora) %>
+  gpg_key_id:           <%= ActiveRecord::FixtureSet.identify(:fedora_gpg_key) %>
+  content_view_version_id: <%= ActiveRecord::FixtureSet.identify(:library_dev_view_version) %>
+  url:                 "http://myrepo.com"
+  distribution_arch: "x86_64"
+  distribution_version: "2.1"
+  distribution_family: "Test Family"
+  distribution_variant: "TestVariant"
+  distribution_bootable: false
+  distribution_uuid: 'xyz123'
+  download_policy: immediate
+
 fedora_17_x86_64_duplicate:
   name:                 Fedora 17 x86_64 duplicate
-  pulp_id:              2
+  pulp_id:              2_duplicate
   content_id:           1
   content_type:         yum
   label:                fedora_17_x86_64_duplicate_label
@@ -168,6 +189,23 @@ rhel_6_x86_64_dev:
   url:                 'https://cdn.example.com/rhel/6/os'
   download_policy: on_demand
 
+rhel_6_x86_64_dev_archive:
+  name:                 RHEL 6 x86_64
+  pulp_id:              8_arch
+  content_id:           69
+  major:                6
+  minor:                6Server
+  content_type:         yum
+  label:                rhel_6_x86_64_label
+  relative_path:        'ACME_Corporation/library/rhel_6_label'
+  url:                 'https://cdn.example.com/rhel/6/os'
+  product_id:           <%= ActiveRecord::FixtureSet.identify(:redhat) %>
+  gpg_key_id:           <%= ActiveRecord::FixtureSet.identify(:fedora_gpg_key) %>
+  library_instance_id:  <%= ActiveRecord::FixtureSet.identify(:rhel_6_x86_64) %>
+  content_view_version_id: <%= ActiveRecord::FixtureSet.identify(:library_view_version_2) %>
+  url:                 'https://cdn.example.com/rhel/6/os'
+  download_policy: on_demand
+
 fedora_17_no_arch:
   name:                 Fedora 17 no arch
   pulp_id:              1
@@ -188,7 +226,7 @@ fedora_17_no_arch:
 
 rhel_7_no_arch:
   name:                 RHEL 7 no_arch
-  pulp_id:              9
+  pulp_id:              9_noarch
   content_id:           1
   major:                7
   minor:                7Server
@@ -244,8 +282,8 @@ dev_p_forge:
   content_view_version_id: <%= ActiveRecord::FixtureSet.identify(:library_view_version_2) %>
 
 rhel_6_x86_64_library_view_1:
-  name:                 RHEL 6 x86_64
-  pulp_id:              8
+  name:                 RHEL 6 x86_64 library view 1
+  pulp_id:              8_view1
   content_id:           1
   major:                6
   minor:                6Server
@@ -255,12 +293,28 @@ rhel_6_x86_64_library_view_1:
   environment_id:       <%= ActiveRecord::FixtureSet.identify(:library) %>
   product_id:           <%= ActiveRecord::FixtureSet.identify(:redhat) %>
   gpg_key_id:           <%= ActiveRecord::FixtureSet.identify(:fedora_gpg_key) %>
+  library_instance_id:  <%= ActiveRecord::FixtureSet.identify(:rhel_6_x86_64) %>
+  content_view_version_id: <%= ActiveRecord::FixtureSet.identify(:library_view_version_1) %>
+  download_policy: on_demand
+
+rhel_6_x86_64_library_view_1_archive:
+  name:                 RHEL 6 x86_64 library view 1 archive
+  pulp_id:              8_view1_archive
+  content_id:           1
+  major:                6
+  minor:                6Server
+  content_type:         yum
+  label:                rhel_6_x86_64_label
+  relative_path:        'ACME_Corporation/library/rhel_6_label'
+  product_id:           <%= ActiveRecord::FixtureSet.identify(:redhat) %>
+  gpg_key_id:           <%= ActiveRecord::FixtureSet.identify(:fedora_gpg_key) %>
+  library_instance_id:  <%= ActiveRecord::FixtureSet.identify(:rhel_6_x86_64) %>
   content_view_version_id: <%= ActiveRecord::FixtureSet.identify(:library_view_version_1) %>
   download_policy: on_demand
 
 fedora_17_x86_64_library_view_1:
   name:                 Fedora 17 x86_64 lib view 1
-  pulp_id:              3
+  pulp_id:              3_view1
   content_id:           1
   label:                fedora_17_x86_64_label
   library_instance:     fedora_17_x86_64
@@ -273,7 +327,7 @@ fedora_17_x86_64_library_view_1:
 
 fedora_17_x86_64_library_view_2:
   name:                 Fedora 17 x86_64 lib view 2
-  pulp_id:              3
+  pulp_id:              3_view2
   content_id:           1
   label:                fedora_17_x86_64_label
   library_instance:     fedora_17_x86_64
@@ -286,7 +340,7 @@ fedora_17_x86_64_library_view_2:
 
 fedora_17_x86_64_library_view_2_library:
   name:                 Fedora 17 x86_64 lib view 2 lib
-  pulp_id:              3
+  pulp_id:              3_view2_library
   content_id:           1
   label:                fedora_17_x86_64_label
   library_instance:     fedora_17_x86_64
@@ -333,7 +387,7 @@ srpm_repo:
   relative_path:        'ACME_Corporation/library/LibraryView/source_rpm'
   environment_id:       <%= ActiveRecord::FixtureSet.identify(:library) %>
   product_id:           <%= ActiveRecord::FixtureSet.identify(:puppet_product) %>
-  content_view_version_id: <%= ActiveRecord::FixtureSet.identify(:library_view_version_1) %>
+  content_view_version_id: <%= ActiveRecord::FixtureSet.identify(:library_default_version) %>
   download_policy: on_demand
 
 
@@ -434,8 +488,8 @@ busybox_view2:
 
 rhel_6_x86_64_composite_view_version_1:
   name:                 RHEL 6 x86_64
-  pulp_id:              8
-  content_id:           1
+  pulp_id:              8_composite_version1
+  content_id:           69
   major:                6
   minor:                6Server
   content_type:         yum
@@ -444,6 +498,23 @@ rhel_6_x86_64_composite_view_version_1:
   environment_id:       <%= ActiveRecord::FixtureSet.identify(:library) %>
   product_id:           <%= ActiveRecord::FixtureSet.identify(:redhat) %>
   gpg_key_id:           <%= ActiveRecord::FixtureSet.identify(:fedora_gpg_key) %>
+  library_instance_id:  <%= ActiveRecord::FixtureSet.identify(:rhel_6_x86_64) %>
+  content_view_version_id: <%= ActiveRecord::FixtureSet.identify(:composite_view_version_1) %>
+  download_policy: on_demand
+
+
+rhel_6_x86_64_composite_view_version_1_archive:
+  name:                 RHEL 6 x86_64
+  pulp_id:              8_composite_version1_archive
+  content_id:           69
+  major:                6
+  minor:                6Server
+  content_type:         yum
+  label:                rhel_6_x86_64_label_composite_view_version_1
+  relative_path:        'ACME_Corporation/library/composite/rhel_6_label'
+  product_id:           <%= ActiveRecord::FixtureSet.identify(:redhat) %>
+  gpg_key_id:           <%= ActiveRecord::FixtureSet.identify(:fedora_gpg_key) %>
+  library_instance_id:  <%= ActiveRecord::FixtureSet.identify(:rhel_6_x86_64) %>
   content_view_version_id: <%= ActiveRecord::FixtureSet.identify(:composite_view_version_1) %>
   download_policy: on_demand
 
