@@ -39,6 +39,23 @@ const mapQuantities = (pools) => {
   return quantityMap;
 };
 
+const groupSubscriptionsByProductId = (subscriptions) => {
+  const grouped = {};
+
+  for (let offset = 0; offset < subscriptions.length; offset += 1) {
+    const subscription = subscriptions[offset];
+
+    if (grouped[subscription.product_id] === undefined) {
+      grouped[subscription.product_id] = [];
+    }
+
+    grouped[subscription.product_id].push(subscription);
+  }
+
+  console.log(grouped);
+  return grouped;
+};
+
 export default (state = initialState, action) => {
   switch (action.type) {
     case SUBSCRIPTIONS_REQUEST:
@@ -52,7 +69,7 @@ export default (state = initialState, action) => {
       } = action.response;
 
       return state.merge({
-        results,
+        results: groupSubscriptionsByProductId(results),
         loading: false,
         searchIsActive: !!action.search,
         search: action.search,
